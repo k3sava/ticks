@@ -303,6 +303,20 @@ button:focus:not(:focus-visible){outline:none}
   .detail-panel{width:min(440px,92vw)}
   .list-scroll{padding:1rem}
 }
+/* FOOTER */
+.site-footer{flex-shrink:0;border-top:1px solid var(--b1);padding:7px 20px;font-family:var(--fm);font-size:9.5px;color:var(--t4);display:flex;align-items:center;justify-content:center;gap:8px;background:var(--bg)}
+.site-footer a{color:var(--t4);text-decoration:none;transition:color .15s}
+.site-footer a:hover{color:var(--t2)}
+.site-footer .sep{opacity:.3}
+@media(max-width:540px){
+  .site-footer .long-text{display:none}
+  .site-footer{padding:5px 12px;gap:6px}
+  .tb-suggest,.tb-export{display:none}
+}
+/* NAV GITHUB LINK */
+.nav-gh{display:flex;align-items:center;padding:0 8px;color:var(--t4);transition:color .15s;flex-shrink:0;text-decoration:none}
+.nav-gh:hover{color:var(--t2)}
+.nav-gh svg{display:block}
 </style>
 </head>
 <body>
@@ -319,6 +333,9 @@ button:focus:not(:focus-visible){outline:none}
       <button class="nv" data-view="genealogy">genealogy</button>
       <button class="nv" data-view="cinematic">cinematic</button>
     </div>
+    <a href="https://github.com/k3sava/ticks" target="_blank" rel="noopener" class="nav-gh" title="GitHub · MIT">
+      <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" width="15" height="15"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+    </a>
   </div>
   <div class="toolbar-row">
     <div class="tb-search"><span class="tb-search-icon">⌕</span><input type="text" id="globalSearch" placeholder="Search ticks..."></div>
@@ -369,6 +386,11 @@ button:focus:not(:focus-visible){outline:none}
     <div class="cine-nav"><button class="cn-btn" id="cn-prev">←</button><div class="cn-progress"><div class="cn-bar" id="cn-bar"></div></div><span class="cn-counter" id="cn-counter"></span><button class="cn-btn" id="cn-next">→</button><button class="cn-auto" id="cn-auto">▶ auto</button><span class="cine-hint" id="cine-hint">← → to navigate · space for auto-play</span></div>
   </div>
 </div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <span>ticks</span><span class="sep">·</span><span class="long-text">1,022 constraint-dissolving moments</span><span class="long-text sep">·</span><a href="https://iamkesava.com" target="_blank" rel="noopener">Kesava</a><span class="sep">·</span><a href="https://github.com/k3sava/ticks" target="_blank" rel="noopener">GitHub</a><span class="sep">·</span><span>MIT</span>
+</footer>
 
 <!-- HELP OVERLAY -->
 <div class="help-overlay" id="help-overlay">
@@ -2551,7 +2573,7 @@ document.querySelectorAll('.nv').forEach(btn=>{
     document.querySelectorAll('.nv').forEach(b=>b.classList.remove('active'));
     document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
     btn.classList.add('active');document.getElementById('v-'+v).classList.add('active');
-    activeView=v;if(viewInits[v])viewInits[v]();if(typeof flashHint==='function')flashHint();
+    activeView=v;if(typeof flashHint==='function')flashHint();requestAnimationFrame(()=>{if(viewInits[v])viewInits[v]();});
   });
 });
 
@@ -2623,9 +2645,12 @@ renderList();updateCount();
 /* ═══ TIMELINE VIEW ═══ */
 let tlReady=false;
 viewInits.timeline=function(){
-  if(tlReady)return;tlReady=true;
+  if(tlReady)return;
   const main=document.getElementById('tl-main');
-  const canvas=document.getElementById('tl-canvas');
+  if(!main.clientWidth){requestAnimationFrame(()=>{if(activeView==='timeline')viewInits.timeline();});return;}
+  tlReady=true;
+  const oldTl=document.getElementById('tl-canvas');const ncTl=oldTl.cloneNode(false);oldTl.parentNode.replaceChild(ncTl,oldTl);
+  const canvas=ncTl;
   const ctx=canvas.getContext('2d');
   const tip=document.getElementById('tl-tip');
   const dk=isDark();
@@ -2764,6 +2789,11 @@ viewInits.timeline=function(){
   main.onmousedown=e=>{drag=true;dx=e.clientX;fadeTlHelp()};
   window.addEventListener('mousemove',e=>{if(!drag)return;panX-=e.clientX-dx;panX=Math.max(0,Math.min(VW*zoom-W,panX));dx=e.clientX;draw();updateUI()});
   window.addEventListener('mouseup',()=>drag=false);
+  // Touch: drag to pan, pinch to zoom
+  let tlTouch=null,tlTouch2=null,tlPinchD0=0,tlZoom0=1;
+  main.addEventListener('touchstart',e=>{e.preventDefault();fadeTlHelp();if(e.touches.length===1){tlTouch={x:e.touches[0].clientX};drag=false}else if(e.touches.length===2){tlTouch2=true;tlPinchD0=Math.hypot(e.touches[0].clientX-e.touches[1].clientX,e.touches[0].clientY-e.touches[1].clientY);tlZoom0=zoom}},{passive:false});
+  main.addEventListener('touchmove',e=>{e.preventDefault();if(e.touches.length===1&&tlTouch){const nx=e.touches[0].clientX;panX-=nx-tlTouch.x;panX=Math.max(0,Math.min(VW*zoom-W,panX));tlTouch.x=nx;draw();updateUI()}else if(e.touches.length===2&&tlTouch2){const d=Math.hypot(e.touches[0].clientX-e.touches[1].clientX,e.touches[0].clientY-e.touches[1].clientY);const mx=W/2;const yrM=x2yr(mx);zoom=Math.max(.8,Math.min(60,tlZoom0*(d/tlPinchD0)));panX=yr2t(yrM)*VW*zoom-mx;panX=Math.max(0,Math.min(VW*zoom-W,panX));draw();updateUI()}},{passive:false});
+  main.addEventListener('touchend',()=>{tlTouch=null;tlTouch2=null});
 
   main.addEventListener('wheel',e=>{
     e.preventDefault();fadeTlHelp();
@@ -2799,6 +2829,13 @@ viewInits.timeline=function(){
   // Refresh on filter change: rebuild dots from filtered data
   viewRefresh.timeline=()=>{dots=getFiltered().map(t=>({t,yr:yearNum(t.year)}));draw();updateUI()};
 
+  // Resize: reinit when container changes size
+  const tlRO=new ResizeObserver(entries=>{
+    if(!entries[0].contentRect.width||!tlReady)return;
+    tlReady=false;requestAnimationFrame(()=>{if(activeView==='timeline')viewInits.timeline();});
+  });
+  tlRO.observe(main);
+
   // Keyboard pan/zoom when timeline is active
   document.addEventListener('keydown',e=>{
     if(activeView!=='timeline'||e.target.tagName==='INPUT')return;
@@ -2810,15 +2847,18 @@ viewInits.timeline=function(){
 };
 
 /* ═══ SPIRAL VIEW ═══ */
-let spiralReady=false;
+let spiralReady=false,spiralRO=null;
 viewInits.spiral=function(){
-  if(spiralReady)return;spiralReady=true;
+  if(spiralReady)return;
   const wrap=document.querySelector('.spiral-wrap');
-  const canvas=document.getElementById('spiral-canvas');
+  if(!wrap.clientWidth){requestAnimationFrame(()=>{if(activeView==='spiral')viewInits.spiral();});return;}
+  spiralReady=true;
+  const oldSp=document.getElementById('spiral-canvas');const ncSp=oldSp.cloneNode(false);oldSp.parentNode.replaceChild(ncSp,oldSp);
+  const canvas=ncSp;
   const ctx=canvas.getContext('2d');
   const tip=document.getElementById('spiral-tip');
   const dk=isDark();
-  let sz=Math.min(wrap.clientWidth,wrap.clientHeight)-16;sz=Math.max(360,sz);
+  let sz=Math.min(wrap.clientWidth,wrap.clientHeight)-16;sz=Math.max(220,sz);
   const dpr=window.devicePixelRatio||1;
   canvas.width=sz*dpr;canvas.height=sz*dpr;canvas.style.width=sz+'px';canvas.style.height=sz+'px';
   ctx.scale(dpr,dpr);
@@ -2844,6 +2884,12 @@ viewInits.spiral=function(){
   }
   drawS();
   viewRefresh.spiral=drawS;
+  if(spiralRO)spiralRO.disconnect();
+  spiralRO=new ResizeObserver(entries=>{
+    if(!entries[0].contentRect.width||!spiralReady)return;
+    spiralReady=false;requestAnimationFrame(()=>{if(activeView==='spiral')viewInits.spiral();});
+  });
+  spiralRO.observe(wrap);
 
   canvas.addEventListener('wheel',e=>{
     e.preventDefault();
@@ -2869,14 +2915,22 @@ viewInits.spiral=function(){
   });
   canvas.onmouseleave=()=>tip.style.display='none';
   canvas.onclick=e=>{const rect=canvas.getBoundingClientRect();const sc=sz/rect.width;const mx=(e.clientX-rect.left)*sc,my=(e.clientY-rect.top)*sc;let near=null,md=Infinity;sDots.forEach(d=>{const dist=Math.hypot(d.x-mx,d.y-my);if(dist<md){md=dist;near=d}});if(near&&md<18)openDetail(near.tick)};
+  // Touch: pinch to zoom, tap to open
+  let spTouch=null,spPinchD0=0,spZ0=1,spOx0=0,spOy0=0;
+  canvas.addEventListener('touchstart',e=>{e.preventDefault();if(e.touches.length===1){spTouch={x:e.touches[0].clientX,y:e.touches[0].clientY,ox:sOx,oy:sOy}}else if(e.touches.length===2){spPinchD0=Math.hypot(e.touches[0].clientX-e.touches[1].clientX,e.touches[0].clientY-e.touches[1].clientY);spZ0=sZ;spOx0=sOx;spOy0=sOy}},{passive:false});
+  canvas.addEventListener('touchmove',e=>{e.preventDefault();if(e.touches.length===1&&spTouch){const rect=canvas.getBoundingClientRect();const sc=sz/rect.width;sOx=spTouch.ox+(spTouch.x-e.touches[0].clientX)*sc;sOy=spTouch.oy+(spTouch.y-e.touches[0].clientY)*sc;drawS()}else if(e.touches.length===2){const d=Math.hypot(e.touches[0].clientX-e.touches[1].clientX,e.touches[0].clientY-e.touches[1].clientY);sZ=Math.max(.6,Math.min(25,spZ0*(d/spPinchD0)));drawS()}},{passive:false});
+  canvas.addEventListener('touchend',e=>{if(e.changedTouches.length===1&&spTouch&&Math.hypot(e.changedTouches[0].clientX-spTouch.x,e.changedTouches[0].clientY-spTouch.y)<8){const rect=canvas.getBoundingClientRect();const sc=sz/rect.width;const mx=(e.changedTouches[0].clientX-rect.left)*sc,my=(e.changedTouches[0].clientY-rect.top)*sc;let near=null,md=Infinity;sDots.forEach(d=>{const dist=Math.hypot(d.x-mx,d.y-my);if(dist<md){md=dist;near=d}});if(near&&md<24)openDetail(near.tick)}spTouch=null});
 };
 
 /* ═══ FORCE VIEW ═══ */
-let forceReady=false,forceSim=null;
+let forceReady=false,forceSim=null,forceRO=null;
 viewInits.force=function(){
-  if(forceReady)return;forceReady=true;
+  if(forceReady)return;
   const wrap=document.querySelector('.force-wrap');
-  const canvas=document.getElementById('force-canvas');
+  if(!wrap.clientWidth){requestAnimationFrame(()=>{if(activeView==='force')viewInits.force();});return;}
+  forceReady=true;
+  const oldFc=document.getElementById('force-canvas');const ncFc=oldFc.cloneNode(false);oldFc.parentNode.replaceChild(ncFc,oldFc);
+  const canvas=ncFc;
   const ctx=canvas.getContext('2d');
   const tip=document.getElementById('force-tip');
   const dk=isDark();
@@ -2947,6 +3001,13 @@ viewInits.force=function(){
     render();
   });
   viewRefresh.force=()=>{visibleSet=new Set(getFiltered().map(t=>t.name));render()};
+  if(forceRO)forceRO.disconnect();
+  forceRO=new ResizeObserver(entries=>{
+    if(!entries[0].contentRect.width||!forceReady)return;
+    if(forceSim){forceSim.stop();forceSim=null;}
+    forceReady=false;requestAnimationFrame(()=>{if(activeView==='force')viewInits.force();});
+  });
+  forceRO.observe(wrap);
 
   d3.select(canvas).call(d3.zoom().scaleExtent([.1,10]).on('zoom',e=>{tr=e.transform;render()}));
 
@@ -2968,7 +3029,7 @@ viewInits.force=function(){
     else tip.style.display='none'});
   canvas.onmouseleave=()=>tip.style.display='none';
 };
-viewCleanups.force=()=>{if(forceSim){forceSim.stop();forceSim=null;forceReady=false}};
+viewCleanups.force=()=>{if(forceSim){forceSim.stop();forceSim=null;}forceReady=false;if(forceRO){forceRO.disconnect();forceRO=null;}};
 
 /* ═══ HEATMAP VIEW ═══ */
 viewRefresh.heatmap=function(){
