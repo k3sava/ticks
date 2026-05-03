@@ -162,8 +162,8 @@ function renderWalk(){
           ${escapeHtml(t.constraint.toLowerCase())}.
         </div>
         ${t.detail ? `<div class='walk-detail'>${escapeHtml(t.detail)}</div>` : ''}
-        ${t.links?.length ? `<div class='walk-links'>${t.links.map(l => `<a href='${escapeHtml(l.url)}' target='_blank' rel='noopener' style='font-family:var(--mono);font-size:.78rem;color:var(--muted);border-bottom:1px solid var(--line);padding-bottom:1px;margin-right:14px'>→ ${escapeHtml(l.label)}</a>`).join('')}</div>` : ''}
-        <a href='https://github.com/k3sava/ticks/issues/new?title=${encodeURIComponent('Edit: ' + t.name)}&body=${encodeURIComponent('Tick: ' + t.id + '\\n\\nWhat needs fixing:\\n\\nSource:')}' target='_blank' rel='noopener' style='font-family:var(--mono);font-size:.7rem;color:var(--faint);margin-top:8px'>↗ suggest an edit</a>
+        ${t.links?.length ? `<div class='walk-links'>${t.links.map(l => `<a href='${escapeHtml(l.url)}' target='_blank' rel='noopener' style='font-family:var(--mono);font-size:.78rem;color:var(--muted);border-bottom:1px solid var(--line);padding:4px 0'>→ ${escapeHtml(l.label)}</a>`).join('')}</div>` : ''}
+        <a class='walk-suggest' href='https://github.com/k3sava/ticks/issues/new?title=${encodeURIComponent('Edit: ' + t.name)}&body=${encodeURIComponent('Tick: ' + t.id + '\\n\\nWhat needs fixing:\\n\\nSource:')}' target='_blank' rel='noopener' style='font-family:var(--mono);font-size:.78rem;color:var(--faint);margin-top:4px;padding:8px 0;display:inline-block'>↗ suggest an edit</a>
       </div>
 
       <div class='walk-flow'>
@@ -188,6 +188,26 @@ function renderWalk(){
   `;
   document.getElementById('wPrev').onclick = () => { walkIdx = Math.max(0, walkIdx-1); renderWalk(); };
   document.getElementById('wNext').onclick = () => { walkIdx = Math.min(TICKS_SORTED.length-1, walkIdx+1); renderWalk(); };
+  // Touch swipe (left/right) on the walk stage
+  const stage = document.querySelector('.walk');
+  if (stage){
+    let sx = 0, sy = 0, swiping = false;
+    stage.addEventListener('touchstart', (e) => {
+      if (e.touches.length !== 1) return;
+      sx = e.touches[0].clientX; sy = e.touches[0].clientY; swiping = true;
+    }, { passive: true });
+    stage.addEventListener('touchend', (e) => {
+      if (!swiping) return;
+      swiping = false;
+      const t = e.changedTouches[0];
+      const dx = t.clientX - sx, dy = t.clientY - sy;
+      // Horizontal swipe > 60px and clearly horizontal (not a scroll)
+      if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5){
+        if (dx < 0){ walkIdx = Math.min(TICKS_SORTED.length-1, walkIdx+1); renderWalk(); }
+        else      { walkIdx = Math.max(0, walkIdx-1); renderWalk(); }
+      }
+    }, { passive: true });
+  }
 }
 
 /* ========== hunt — walk backward through what unlocked X ========== */
@@ -486,7 +506,63 @@ function drawMap(){
     }
   };
   canvas.onmouseleave = () => { tip.classList.remove('show'); last = null; };
-  canvas.onclick = () => { if (last) location.hash = '#/walk/' + last.t.id; };
+  canvas.onclick = (e) => {
+    // Touch / click parity: locate hit by coordinates if `last` not set (touch devices don't fire mousemove first)
+    if (!last){
+      const rect = canvas.getBoundingClientRect();
+      const mx = e.clientX - rect.left, my = e.clientY - rect.top;
+      for (let i = dots.length-1; i >= 0; i--){
+        const dt = dots[i];
+        if (Math.hypot(dt.x-mx, dt.y-my) <= dt.r * 1.6){ last = dt; break; }
+      }
+    }
+    if (last){
+      // Touch: show tooltip briefly first. If already showing for same dot, navigate.
+      const sameAsLastTap = canvas._lastTapId === last.t.id;
+      if (!tip.classList.contains('show') || !sameAsLastTap){
+        tip.classList.add('show');
+        tip.textContent = `${last.t.year} · ${last.t.name} (tap again to open)`;
+        const rect = canvas.getBoundingClientRect();
+        tip.style.left = (e.clientX - rect.left + 12) + 'px';
+        tip.style.top = (e.clientY - rect.top + 12) + 'px';
+        canvas._lastTapId = last.t.id;
+        setTimeout(() => { canvas._lastTapId = null; tip.classList.remove('show'); }, 2400);
+      } else {
+        location.hash = '#/walk/' + last.t.id;
+      }
+    }
+  };
+  // Keyboard navigation: Tab to focus canvas, arrow keys cycle through dots, Enter opens
+  canvas.tabIndex = 0;
+  canvas.setAttribute('aria-label', 'Tick map. Press Tab to focus, arrow keys to navigate dots, Enter to open.');
+  let kbdIdx = -1;
+  const drawHighlight = (i) => {
+    drawMap();
+    if (i < 0 || i >= dots.length) return;
+    const ctx = canvas.getContext('2d');
+    const dpr = window.devicePixelRatio || 1;
+    ctx.save();
+    ctx.scale(dpr, dpr);
+    const d = dots[i];
+    ctx.strokeStyle = getComputedStyle(document.documentElement).getPropertyValue('--accent') || '#C2410C';
+    ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.arc(d.x, d.y, 8, 0, Math.PI*2); ctx.stroke();
+    tip.classList.add('show');
+    tip.textContent = `${d.t.year} · ${d.t.name}`;
+    tip.style.left = (d.x + 12) + 'px';
+    tip.style.top = (d.y + 12) + 'px';
+    ctx.restore();
+  };
+  canvas.onkeydown = (e) => {
+    if (!dots.length) return;
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown'){
+      kbdIdx = (kbdIdx + 1) % dots.length; drawHighlight(kbdIdx); e.preventDefault();
+    } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp'){
+      kbdIdx = (kbdIdx - 1 + dots.length) % dots.length; drawHighlight(kbdIdx); e.preventDefault();
+    } else if (e.key === 'Enter' && kbdIdx >= 0){
+      location.hash = '#/walk/' + dots[kbdIdx].t.id; e.preventDefault();
+    }
+  };
 }
 
 /* ========== browse ========== */
@@ -593,6 +669,7 @@ function bindMobileMenu(){
   const back = document.getElementById('mobileBackdrop');
   btn.onclick = () => { menu.classList.add('open'); back.classList.add('show'); };
   back.onclick = closeMobileMenu;
+  document.getElementById('menuClose')?.addEventListener('click', closeMobileMenu);
   menu.querySelectorAll('a').forEach(a => a.onclick = closeMobileMenu);
 }
 function closeMobileMenu(){
@@ -609,12 +686,14 @@ function bindTheme(){
     try { if (t) localStorage.setItem('ticks-theme', t); else localStorage.removeItem('ticks-theme'); } catch(e){}
   };
   try { const saved = localStorage.getItem('ticks-theme'); if (saved) apply(saved); } catch(e){}
-  btn.onclick = () => {
+  const toggle = () => {
     const cur = document.documentElement.dataset.theme;
     const sysDark = matchMedia('(prefers-color-scheme: dark)').matches;
     const next = cur === 'dark' ? 'light' : cur === 'light' ? (sysDark ? 'dark' : null) : (sysDark ? 'light' : 'dark');
     apply(next);
   };
+  btn.onclick = toggle;
+  document.getElementById('themeBtnMobile')?.addEventListener('click', toggle);
 }
 
 /* ========== scroll header ========== */

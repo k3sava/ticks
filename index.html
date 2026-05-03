@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="style.css?v=1" />
+<link rel="stylesheet" href="style.css?v=2" />
 </head>
 <body>
   <header id="hdr">
@@ -41,6 +41,14 @@
 
   <div id="mobileBackdrop"></div>
   <nav id="mobileMenu" aria-label="Mobile menu">
+    <div class="mm-head">
+      <button class="mm-theme" id="themeBtnMobile" type="button" aria-label="Toggle theme">
+        <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M13 8.5A5 5 0 0 1 7.5 3a.5.5 0 0 0-.7-.5A6 6 0 1 0 13.5 9.2a.5.5 0 0 0-.5-.7Z"/></svg>
+      </button>
+      <button class="mm-close" id="menuClose" type="button" aria-label="Close menu">
+        <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 3l10 10M13 3 3 13"/></svg>
+      </button>
+    </div>
     <a href="#/walk">walk</a>
     <a href="#/map">map</a>
     <a href="#/hunt">hunt</a>
@@ -61,6 +69,6 @@
     <span>MIT</span>
   </footer>
 
-  <script src="app.js?v=1" type="module"></script>
+  <script src="app.js?v=2" type="module"></script>
 </body>
 </html>

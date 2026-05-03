@@ -209,11 +209,13 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
   border:1px solid var(--line);border-radius:10px;background:var(--paper);
   text-decoration:none;color:inherit;transition:border-color .15s,background .15s,transform .15s;
 }
-.walk-flow-card:hover{
+.walk-flow-card:hover,.walk-flow-card:focus-visible,.walk-flow-card:active{
   border-color:color-mix(in oklab,var(--dc,var(--accent)) 60%,var(--line-2));
   background:color-mix(in oklab,var(--dc,var(--accent)) 5%,var(--paper));
   transform:translateY(-1px);
+  outline:none;
 }
+.walk-flow-card:focus-visible{box-shadow:0 0 0 3px color-mix(in oklab,var(--accent) 30%,transparent)}
 .walk-flow-card .yr{font-family:var(--mono);font-size:.7rem;color:var(--muted);font-variant-numeric:tabular-nums}
 .walk-flow-card .nm{font-family:var(--serif);font-weight:500;font-size:.98rem;line-height:1.3;color:var(--ink)}
 .walk-flow-empty{
@@ -493,3 +495,96 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
 }
+
+/* ========== ACCESSIBILITY POLISH (kbd / mouse / touch parity) ========== */
+
+/* Strong focus ring on every interactive element */
+:focus-visible{
+  outline:2px solid var(--accent);
+  outline-offset:2px;
+  border-radius:4px;
+}
+button:focus-visible,a:focus-visible{outline-offset:3px}
+
+/* Walk source links wrap on narrow viewports */
+.walk-links{display:flex;flex-wrap:wrap;gap:14px;row-gap:8px;margin-top:8px}
+.walk-stage > a[href*="github.com"]{display:inline-block;padding:8px 4px;min-height:44px;line-height:1.5}
+
+/* Walk-controls — stack on narrow, hide kbd hints on coarse pointers */
+@media (max-width:720px){
+  .walk-controls{
+    flex-wrap:wrap;
+    justify-content:space-between;
+    gap:8px;padding:14px 0;
+  }
+  .walk-controls button{padding:10px 16px;min-height:44px;flex:1;max-width:48%;text-align:center}
+  .walk-keys{display:none}
+}
+@media (pointer:coarse){
+  .walk-keys{display:none}
+}
+
+/* Mobile-stack walk-flow at narrow */
+@media (max-width:520px){
+  .walk-flow{grid-template-columns:1fr}
+  .walk-flow-card{min-height:64px;padding:14px 16px}
+}
+
+/* Suggest-an-edit link: bigger touch target */
+.walk-stage > a[style*="color:var(--faint)"],
+a[href*="issues/new"]{
+  display:inline-block;
+  min-height:44px;
+  padding:12px 8px;
+  font-size:.78rem !important;
+  line-height:1.6;
+}
+
+/* Mobile menu — close button + theme toggle inside */
+.mm-head{
+  position:absolute;top:14px;right:14px;
+  display:flex;gap:8px;align-items:center;
+}
+.mm-close,.mm-theme{
+  width:44px;height:44px;display:flex;align-items:center;justify-content:center;
+  border-radius:10px;color:var(--ink-2);background:transparent;
+}
+.mm-close:hover,.mm-theme:hover{background:var(--paper-2);color:var(--ink)}
+
+/* Map mobile — taller era labels with rotated text */
+@media (max-width:720px){
+  .map-canvas-wrap{}
+  .map-eras .map-era-label{
+    writing-mode:vertical-rl;
+    transform:rotate(180deg);
+    height:auto !important;
+    top:8px !important;
+    bottom:auto;
+  }
+  .map-eras .map-era-label .nm{font-size:.6rem}
+  .map-eras .map-era-label .rng{display:none}
+  .map-canvas{height:480px}
+  .map-y-labels{width:90px}
+  .map-y-label{padding-left:10px;font-size:.64rem}
+}
+
+/* Map canvas keyboard focus ring */
+.map-canvas:focus-visible{
+  outline:2px solid var(--accent);
+  outline-offset:2px;
+}
+
+/* Browse rows: ≥44px touch target */
+.browse-row{min-height:48px}
+
+/* Hunt suggest tiles: ≥44px */
+.hunt-suggest-grid button{min-height:64px;padding:14px 16px}
+
+/* Header buttons: ≥44px touch */
+#randomBtn,#randomBtnMobile,#themeBtn,#menuBtn{min-height:38px}
+@media (max-width:720px){
+  #menuBtn{width:44px;height:44px}
+}
+
+/* Home CTA buttons: ≥44px */
+.home-cta-buttons a{min-height:44px;display:inline-flex;align-items:center}
