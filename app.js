@@ -84,7 +84,7 @@ function home(){
     <section class='home-hero'>
       <div class='home-thesis'>
         <div class='eyebrow'>1,022 moments that changed what comes next</div>
-        <h1>Someone invents the right container, and <em>everything flows</em>.</h1>
+        <h1>The right breakpoint, and <em>everything flows</em>.</h1>
         <p class='home-sub'>A tick is the moment a constraint dissolved. Before it, you couldn't. After it, the world could.</p>
       </div>
 
@@ -623,7 +623,7 @@ function about(){
       <h1>About ticks</h1>
       <p class='lede'>A tick is the moment a constraint dissolved. Before it, you couldn't. After it, the world could — and what came next required it.</p>
       <p>This site is a database of 1,022 such moments across 14 domains of human history. It is small enough to walk through in an afternoon and dense enough to surprise you for years.</p>
-      <p>The thesis is simple: <em>history is a chain of containers</em>. Someone invents the right unit of abstraction — recursive language, written script, the joint-stock company, the transistor — and a flood of new things become possible. Each tick is a unit of abstraction that did not exist the day before.</p>
+      <p>The thesis is simple: <em>history is a chain of breakpoints</em>. A constraint dissolves — recursive language, written script, the joint-stock company, the transistor — and a flood of new things become possible that simply weren't before. Each tick is a moment when one of those breakpoints came through.</p>
       <h2>Four ways to play</h2>
       <div class='modes'>
         <a class='mode-tile' href='#/walk'><h3>walk →</h3><p>One tick at a time. Year is loud. Click anything that flowed from it to keep walking.</p></a>
