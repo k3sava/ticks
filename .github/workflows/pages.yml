@@ -21,7 +21,8 @@ jobs:
       - name: Stage site
         run: |
           mkdir -p _site
-          cp ticks.html _site/index.html
+          cp index.html app.js style.css data.json _site/
+          cp ticks.html _site/legacy.html
       - uses: actions/configure-pages@v5
         with:
           enablement: true
