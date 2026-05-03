@@ -85,7 +85,7 @@ function home(){
       <div class='home-thesis'>
         <div class='eyebrow'>1,022 moments that changed what comes next</div>
         <h1>The right breakpoint, and <em>everything flows</em>.</h1>
-        <p class='home-sub'>A tick is the moment a constraint dissolved. Before it, you couldn't. After it, the world could.</p>
+        <p class='home-sub'>A tick is the moment a constraint dissolved.<span class='home-sub-2'>Before it, we couldn't. After it, things kinda blew up.</span></p>
       </div>
 
       <div class='home-show'>
@@ -621,7 +621,7 @@ function about(){
   app.innerHTML = `
     <article class='about'>
       <h1>About ticks</h1>
-      <p class='lede'>A tick is the moment a constraint dissolved. Before it, you couldn't. After it, the world could — and what came next required it.</p>
+      <p class='lede'>A tick is the moment a constraint dissolved. Before it, we couldn't. After it, things kinda blew up — and what came next required it.</p>
       <p>This site is a database of 1,022 such moments across 14 domains of human history. It is small enough to walk through in an afternoon and dense enough to surprise you for years.</p>
       <p>The thesis is simple: <em>history is a chain of breakpoints</em>. A constraint dissolves — recursive language, written script, the joint-stock company, the transistor — and a flood of new things become possible that simply weren't before. Each tick is a moment when one of those breakpoints came through.</p>
       <h2>Four ways to play</h2>

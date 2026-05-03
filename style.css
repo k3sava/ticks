@@ -589,3 +589,9 @@ a[href*="issues/new"]{
 
 /* Home CTA buttons: ≥44px */
 .home-cta-buttons a{min-height:44px;display:inline-flex;align-items:center}
+
+/* Home sub: second sentence inline on mobile, blocks below on tablet+ */
+.home-sub-2{margin-left:.4em}
+@media (min-width:768px){
+  .home-sub-2{display:block;margin-left:0;margin-top:.25em}
+}
