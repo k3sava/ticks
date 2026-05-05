@@ -1,0 +1,273 @@
+# Chain breaks
+
+Total ticks: 1061
+No successors: 125  (frontier ≥2020: legit)
+No predecessors: 134
+
+## Missing successors (pre-frontier — should likely link forward)
+
+-    2700 BC  [computing  ]  sumerian-abacus  —  Sumerian abacus / first calculating device
+-     600 BC  [agriculture]  crop-rotation-ancient-mediterranean  —  Crop rotation (ancient Mediterranean)
+-     486 BC  [religion   ]  buddhas-parinirvana-institutionalized-buddhism  —  Buddha's parinirvana / institutionalized Buddhism
+-     450 BC  [law        ]  twelve-tables-romes-first-written-law  —  Twelve Tables / Rome's first written law
+-     450 BC  [mind       ]  buddha-five-aggregates-skandhas  —  Buddha / five aggregates analysis of mind
+-     440 BC  [art        ]  greek-tragedy-as-art-form-sophocles-euripides  —  Greek tragedy as art form (Sophocles/Euripides)
+-     380 BC  [mind       ]  plato-meno-knowledge-as-recollection  —  Plato's Meno / knowledge as recollection
+-     350 BC  [biology    ]  aristotle-historia-animalium  —  Aristotle's Historia Animalium / first systematic zoology
+-     300 BC  [biology    ]  theophrastus-historia-plantarum  —  Theophrastus / Historia Plantarum (founding of botany)
+-     200 BC  [mind       ]  patanjali-yoga-sutras-chitta-vritti  —  Patanjali Yoga Sutras / chitta-vritti
+-     150 BC  [computing  ]  hipparchus-astrolabe  —  Astrolabe / analog astronomical computer
+-     129 BC  [physics    ]  hipparchus-precession-of-equinoxes  —  Hipparchus discovers precession of the equinoxes
+-     100 BC  [computing  ]  antikythera-mechanism  —  Antikythera mechanism / first analog computer
+-       4 BC  [religion   ]  christianity-universal-salvation-message  —  Christianity / universal salvation message
+-      62 AD  [physics    ]  heron-aeolipile-first-steam-device  —  Heron of Alexandria's aeolipile / first steam device
+-     170 AD  [mind       ]  galen-brain-as-seat-of-cognition  —  Galen / brain as seat of cognition
+-     177 AD  [biology    ]  galen-anatomical-procedures  —  Galen's De Anatomicis Administrationibus / experimental anatomy
+-     212 AD  [society    ]  constitutio-antoniniana-universal-roman-citizenship  —  Constitutio Antoniniana / universal Roman citizenship
+-     398 AD  [mind       ]  augustine-confessions-introspection  —  Augustine's Confessions / introspection
+-     984 AD  [physics    ]  ibn-sahl-law-of-refraction  —  Ibn Sahl's law of refraction
+-    1021 AD  [mind       ]  ibn-al-haytham-intromission-theory-of-vision  —  Ibn al-Haytham / intromission theory of vision
+-    1021 AD  [physics    ]  ibn-al-haytham-book-of-optics  —  Ibn al-Haytham's Book of Optics / experimental method
+-    1242 AD  [biology    ]  ibn-al-nafis-pulmonary-circulation  —  Ibn al-Nafis describes pulmonary circulation
+-    1265 AD  [mind       ]  aquinas-aristotelian-psychology-synthesis  —  Aquinas / Aristotelian-Christian psychology
+-    1320 AD  [physics    ]  ockhams-razor-principle-of-parsimony  —  Ockham's razor / principle of parsimony
+-    1494 AD  [economics  ]  pacioli-double-entry-bookkeeping  —  Double-entry bookkeeping (Pacioli)
+-    1543 AD  [biology    ]  vesalius-de-humani-corporis-fabrica  —  Vesalius / De humani corporis fabrica
+-    1609 AD  [physics    ]  keplers-first-two-laws-astronomia-nova  —  Kepler's first two laws (Astronomia Nova)
+-    1619 AD  [physics    ]  keplers-third-law-harmonice-mundi  —  Kepler's third law (Harmonice Mundi)
+-    1621 AD  [physics    ]  snells-law-of-refraction  —  Snell's law of refraction
+-    1628 AD  [biology    ]  harvey-de-motu-cordis-circulation  —  Harvey / De Motu Cordis (blood circulation)
+-    1642 AD  [computing  ]  pascaline-1642  —  Pascaline / first mechanical calculator
+-    1643 AD  [physics    ]  torricelli-mercury-barometer  —  Torricelli's mercury barometer / sustained vacuum
+-    1648 AD  [physics    ]  pascal-puy-de-dome-atmospheric-pressure  —  Pascal's Puy-de-Dome experiment / atmospheric pressure
+-    1665 AD  [biology    ]  hooke-micrographia-cell  —  Hooke's Micrographia / coining 'cell'
+-    1673 AD  [computing  ]  leibniz-step-reckoner  —  Leibniz step reckoner / four operations mechanized
+-    1676 AD  [biology    ]  leeuwenhoek-animalcules-bacteria  —  Leeuwenhoek observes microorganisms ('animalcules')
+-    1678 AD  [physics    ]  hookes-law-of-elasticity  —  Hooke's law of elasticity
+-    1689 AD  [mind       ]  locke-tabula-rasa  —  Locke / tabula rasa
+-    1690 AD  [physics    ]  huygens-wave-theory-of-light  —  Huygens' wave theory of light (Traite de la Lumiere)
+-    1710 AD  [mind       ]  berkeley-subjective-idealism  —  Berkeley / esse est percipi
+-    1738 AD  [physics    ]  bernoulli-hydrodynamica  —  Bernoulli's Hydrodynamica / fluid dynamics
+-    1749 AD  [biology    ]  buffon-histoire-naturelle  —  Buffon's Histoire Naturelle
+-    1781 AD  [mind       ]  kant-transcendental-categories  —  Kant / transcendental categories of understanding
+-    1785 AD  [physics    ]  coulombs-law-electric-force  —  Coulomb's law / electric force quantified
+-    1798 AD  [physics    ]  cavendish-weighs-the-earth  —  Cavendish weighs the Earth / measures G
+-    1801 AD  [physics    ]  young-double-slit-wave-light  —  Young's double-slit experiment / wave nature of light
+-    1804 AD  [computing  ]  jacquard-loom  —  Jacquard loom / programmable punched cards
+-    1809 AD  [biology    ]  lamarck-philosophie-zoologique  —  Lamarck's Philosophie Zoologique / first evolutionary theory
+-    1824 AD  [physics    ]  carnot-heat-engine-cycle  —  Carnot's Reflections on the Motive Power of Fire
+-    1826 AD  [physics    ]  ampere-electrodynamics-formula  —  Ampere's electrodynamics formula
+-    1827 AD  [physics    ]  ohms-law-of-electrical-resistance  —  Ohm's law of electrical resistance
+-    1831 AD  [physics    ]  faraday-electromagnetic-induction  —  Faraday's electromagnetic induction
+-    1845 AD  [physics    ]  joule-mechanical-equivalent-of-heat  —  Joule's mechanical equivalent of heat
+-    1851 AD  [physics    ]  foucault-pendulum-earth-rotates  —  Foucault pendulum demonstrates Earth's rotation
+-    1855 AD  [biology    ]  virchow-omnis-cellula  —  Virchow / 'omnis cellula e cellula'
+-    1858 AD  [biology    ]  darwin-wallace-linnean-1858  —  Darwin-Wallace joint paper at the Linnean Society
+-    1861 AD  [mind       ]  broca-aphasia-speech-localization  —  Broca / speech localization in the brain
+-    1864 AD  [biology    ]  pasteur-germ-theory-fermentation  —  Pasteur disproves spontaneous generation / germ theory of fermentation
+-    1864 AD  [biology    ]  pasteurization-invented  —  Pasteurization invented
+-    1867 AD  [mind       ]  helmholtz-unconscious-inference  —  Helmholtz / unconscious inference
+-    1872 AD  [physics    ]  boltzmann-h-theorem-statistical-mechanics  —  Boltzmann's H-theorem / statistical mechanics
+-    1882 AD  [biology    ]  koch-tubercle-bacillus  —  Koch isolates the tubercle bacillus
+-    1885 AD  [mind       ]  ebbinghaus-forgetting-curve  —  Ebbinghaus / forgetting curve
+-    1887 AD  [physics    ]  hertz-detects-radio-waves  —  Hertz detects electromagnetic / radio waves
+-    1890 AD  [mind       ]  principles-of-psychology-william-james  —  Principles of Psychology (William James)
+-    1895 AD  [physics    ]  roentgen-discovers-x-rays  —  Roentgen discovers X-rays
+-    1896 AD  [physics    ]  becquerel-discovers-radioactivity  —  Becquerel discovers radioactivity
+-    1898 AD  [physics    ]  curie-radium-polonium-isolation  —  Curies isolate polonium and radium
+-    1902 AD  [biology    ]  sutton-boveri-chromosome-theory  —  Sutton-Boveri chromosome theory of inheritance
+-    1903 AD  [mind       ]  pavlov-classical-conditioning  —  Pavlov / classical conditioning
+-    1906 AD  [religion   ]  global-spread-of-pentecostalism-charismatic-christianity  —  Azusa Street Revival / Pentecostalism founded
+-    1912 AD  [mind       ]  wertheimer-phi-phenomenon-gestalt  —  Wertheimer / phi phenomenon and Gestalt psychology
+-    1926 AD  [physics    ]  schrodinger-wave-equation  —  Schrodinger's wave equation
+-    1928 AD  [biology    ]  fleming-discovers-penicillin  —  Fleming discovers penicillin
+-    1932 AD  [mind       ]  bartlett-schema-reconstructive-memory  —  Bartlett / schema and reconstructive memory
+-    1937 AD  [biology    ]  krebs-citric-acid-cycle  —  Krebs cycle / citric acid cycle elucidated
+-    1941 AD  [computing  ]  zuse-z3  —  Zuse Z3 / first programmable digital computer
+-    1943 AD  [mind       ]  mcculloch-pitts-first-mathematical-neuron  —  McCulloch-Pitts / first mathematical neuron
+-    1944 AD  [computing  ]  colossus-bletchley  —  Colossus / first programmable electronic computer
+-    1944 AD  [computing  ]  harvard-mark-i  —  Harvard Mark I / first automatic large-scale calculator
+-    1948 AD  [law        ]  universal-declaration-of-human-rights  —  Universal Declaration of Human Rights
+-    1948 AD  [mind       ]  tolman-cognitive-maps  —  Tolman / cognitive maps
+-    1952 AD  [biology    ]  hershey-chase-blender-experiment  —  Hershey-Chase blender experiment confirms DNA is the genetic material
+-    1957 AD  [mind       ]  chomsky-syntactic-structures-universal-grammar  —  Chomsky / Syntactic Structures and universal grammar
+-    1957 AD  [mind       ]  hm-hippocampus-memory-case  —  Patient H.M. / hippocampus and memory
+-    1959 AD  [mind       ]  hubel-wiesel-visual-cortex-receptive-fields  —  Hubel and Wiesel / visual cortex receptive fields
+-    1960 AD  [mind       ]  sperling-iconic-memory  —  Sperling / iconic memory
+-    1961 AD  [mind       ]  bandura-bobo-doll-social-learning  —  Bandura / Bobo doll and social learning
+-    1963 AD  [computing  ]  sketchpad-sutherland  —  Sketchpad (Sutherland) / interactive computer graphics
+-    1966 AD  [computing  ]  eliza-weizenbaum  —  ELIZA (Weizenbaum) / first chatbot
+-    1967 AD  [biology    ]  margulis-endosymbiotic-theory  —  Margulis endosymbiotic theory of eukaryotic cells
+-    1970 AD  [computing  ]  intel-1103-dram  —  Intel 1103 / DRAM kills magnetic core
+-    1972 AD  [computing  ]  plato-iv-touchscreen  —  PLATO IV touch panel / first touchscreen in classroom
+-    1972 AD  [computing  ]  smalltalk-72  —  Smalltalk-72 (Kay) / object-oriented language
+-    1973 AD  [biology    ]  cohen-boyer-recombinant-dna  —  Cohen-Boyer recombinant DNA / genetic engineering
+-    1974 AD  [computing  ]  sql-sequel-1974  —  SQL / SEQUEL relational query language
+-    1974 AD  [mind       ]  loftus-palmer-misinformation-effect  —  Loftus and Palmer / misinformation effect
+-    1974 AD  [biology    ]  lucy-australopithecus-afarensis  —  Lucy / Australopithecus afarensis discovered
+-    1977 AD  [computing  ]  rsa-encryption-1977  —  RSA encryption / practical public-key crypto
+-    1977 AD  [biology    ]  woese-archaea-three-domains  —  Woese discovers archaea / three domains of life
+-    1982 AD  [computing  ]  smtp-rfc-821  —  SMTP / email protocol standardized
+-    1986 AD  [computing  ]  backpropagation-1986  —  Backpropagation (Rumelhart, Hinton, Williams)
+-    1990 AD  [computing  ]  html-1990  —  HTML (Berners-Lee) / hypertext markup language
+-    1993 AD  [computing  ]  apple-newton-1993  —  Apple Newton MessagePad / PDA category named
+-    1995 AD  [computing  ]  gps-foc-1995  —  GPS Full Operational Capability
+-    1995 AD  [physics    ]  first-bose-einstein-condensate-observed  —  First Bose-Einstein condensate observed (Cornell/Wieman)
+-    1996 AD  [computing  ]  palm-pilot-1996  —  PalmPilot 1000 / PDA goes mainstream
+-    1997 AD  [computing  ]  deep-blue-1997  —  Deep Blue defeats Kasparov
+-    2002 AD  [computing  ]  microsoft-tablet-pc-2002  —  Microsoft Tablet PC / pen computing mainstreamed
+-    2006 AD  [computing  ]  jeff-han-multitouch-2006  —  Jeff Han multi-touch demo (TED 2006)
+-    2015 AD  [mind       ]  large-scale-replication-crisis-formalized  —  Large-scale replication crisis formalized
+
+## Missing successors (frontier ≥2020 — likely OK)
+
+-    2020 AD  [economics  ]  covid-pandemic-remote-work-as-default  —  COVID pandemic / remote work as default
+-    2020 AD  [society    ]  george-floyd-murder-global-racial-justice-reckoning  —  George Floyd murder / global racial justice reckoning
+-    2022 AD  [war        ]  ukraine-war-commercial-drones-and-osint  —  Ukraine war / commercial drones and OSINT
+-    2023 AD  [agriculture]  ai-optimized-precision-agriculture  —  AI-optimized precision agriculture
+-    2023 AD  [law        ]  ai-regulation-begins-eu-ai-act-eo-14110  —  AI regulation begins (EU AI Act, EO 14110)
+-    2024 AD  [computing  ]  reasoning-models-o1-o3-chain-of-thought-at-inference  —  Reasoning models (o1/o3, chain-of-thought at inference)
+-    2024 AD  [art        ]  sora-video-generation-at-world-model-fidelity  —  Sora / video generation at world-model fidelity
+-    2024 AD  [computing  ]  o1-test-time-compute-and-chain-of-thought-reasoning  —  o1 / test-time compute and chain-of-thought reasoning
+-    2025 AD  [computing  ]  vibe-coding-natural-language-software-development  —  Vibe coding / natural language software development
+-    2025 AD  [computing  ]  gemini-2-0-flash-real-time-multimodal-ai  —  Gemini 2.0 Flash / real-time multimodal AI
+-    2025 AD  [medicine   ]  ai-in-drug-discovery-first-ai-designed-drug-trials  —  AI in drug discovery / first AI-designed drug trials
+-    2025 AD  [computing  ]  deepseek-r1-china-reaches-frontier-ai  —  DeepSeek R1 / China reaches frontier AI
+-    2025 AD  [computing  ]  claude-4-sustained-reasoning-and-multi-hour-tasks  —  Claude 4 / sustained reasoning and multi-hour tasks
+
+## Missing predecessors (should likely link backward — except earliest few)
+
+-  70,000 BC  [language   ]  recursive-language  —  Recursive language
+-  70,000 BC  [philosophy ]  collective-fiction  —  Collective fiction
+-   32000 BC  [art        ]  chauvet-cave-paintings-naturalistic-art  —  Chauvet Cave paintings / naturalistic art
+-  10,000 BC  [agriculture]  wheat-domestication  —  Wheat domestication
+-  10,000 BC  [agriculture]  animal-domestication  —  Animal domestication
+-   5,000 BC  [economics  ]  loom-weaving  —  Loom weaving
+-    5000 BC  [society    ]  social-stratification-first-hierarchies  —  Social stratification / first hierarchies
+-    3200 BC  [language   ]  proto-cuneiform-accounting-tokens  —  Proto-cuneiform accounting tokens
+-   3,100 BC  [medicine   ]  trepanation-skull-drilling  —  Trepanation (skull drilling)
+-   3,000 BC  [economics  ]  mesopotamian-clay-tablet-record-keeping  —  Mesopotamian clay-tablet record-keeping
+-    3000 BC  [war        ]  organized-warfare-first-armies  —  Organized warfare (first armies)
+-    3000 BC  [war        ]  bronze-weapons-military-metallurgy  —  Bronze weapons / military metallurgy
+-    2700 BC  [computing  ]  sumerian-abacus  —  Sumerian abacus / first calculating device
+-    2600 BC  [economics  ]  interest-bearing-debt-mesopotamian-credit  —  Interest-bearing debt / Mesopotamian credit
+-    2100 BC  [religion   ]  gilgamesh-epic-first-literary-theology  —  Gilgamesh Epic / first literary theology
+-    1600 BC  [physics    ]  sundial-first-time-measurement-instrument  —  Sundial / first time measurement instrument
+-     580 BC  [philosophy ]  pre-socratic-natural-philosophy  —  Pre-Socratic natural philosophy
+-     450 BC  [mind       ]  buddha-five-aggregates-skandhas  —  Buddha / five aggregates analysis of mind
+-     400 BC  [medicine   ]  sushruta-samhita-surgical-manual  —  Sushruta Samhita (surgical manual)
+-     400 BC  [medicine   ]  hippocratic-corpus-natural-disease-causation  —  Hippocratic corpus / natural disease causation
+-     380 BC  [mind       ]  plato-meno-knowledge-as-recollection  —  Plato's Meno / knowledge as recollection
+-     350 BC  [biology    ]  aristotle-historia-animalium  —  Aristotle's Historia Animalium / first systematic zoology
+-     300 BC  [biology    ]  theophrastus-historia-plantarum  —  Theophrastus / Historia Plantarum (founding of botany)
+-     200 BC  [mind       ]  patanjali-yoga-sutras-chitta-vritti  —  Patanjali Yoga Sutras / chitta-vritti
+-     150 BC  [computing  ]  hipparchus-astrolabe  —  Astrolabe / analog astronomical computer
+-     129 BC  [physics    ]  hipparchus-precession-of-equinoxes  —  Hipparchus discovers precession of the equinoxes
+-     100 BC  [computing  ]  antikythera-mechanism  —  Antikythera mechanism / first analog computer
+-      62 AD  [physics    ]  heron-aeolipile-first-steam-device  —  Heron of Alexandria's aeolipile / first steam device
+-     170 AD  [mind       ]  galen-brain-as-seat-of-cognition  —  Galen / brain as seat of cognition
+-     177 AD  [biology    ]  galen-anatomical-procedures  —  Galen's De Anatomicis Administrationibus / experimental anatomy
+-     398 AD  [mind       ]  augustine-confessions-introspection  —  Augustine's Confessions / introspection
+-     984 AD  [physics    ]  ibn-sahl-law-of-refraction  —  Ibn Sahl's law of refraction
+-    1021 AD  [mind       ]  ibn-al-haytham-intromission-theory-of-vision  —  Ibn al-Haytham / intromission theory of vision
+-    1021 AD  [physics    ]  ibn-al-haytham-book-of-optics  —  Ibn al-Haytham's Book of Optics / experimental method
+-    1242 AD  [biology    ]  ibn-al-nafis-pulmonary-circulation  —  Ibn al-Nafis describes pulmonary circulation
+-    1265 AD  [mind       ]  aquinas-aristotelian-psychology-synthesis  —  Aquinas / Aristotelian-Christian psychology
+-    1320 AD  [physics    ]  ockhams-razor-principle-of-parsimony  —  Ockham's razor / principle of parsimony
+-    1543 AD  [biology    ]  vesalius-de-humani-corporis-fabrica  —  Vesalius / De humani corporis fabrica
+-    1609 AD  [physics    ]  keplers-first-two-laws-astronomia-nova  —  Kepler's first two laws (Astronomia Nova)
+-    1619 AD  [physics    ]  keplers-third-law-harmonice-mundi  —  Kepler's third law (Harmonice Mundi)
+-    1621 AD  [physics    ]  snells-law-of-refraction  —  Snell's law of refraction
+-    1628 AD  [biology    ]  harvey-de-motu-cordis-circulation  —  Harvey / De Motu Cordis (blood circulation)
+-    1642 AD  [computing  ]  pascaline-1642  —  Pascaline / first mechanical calculator
+-    1643 AD  [physics    ]  torricelli-mercury-barometer  —  Torricelli's mercury barometer / sustained vacuum
+-    1648 AD  [physics    ]  pascal-puy-de-dome-atmospheric-pressure  —  Pascal's Puy-de-Dome experiment / atmospheric pressure
+-    1665 AD  [biology    ]  hooke-micrographia-cell  —  Hooke's Micrographia / coining 'cell'
+-    1673 AD  [computing  ]  leibniz-step-reckoner  —  Leibniz step reckoner / four operations mechanized
+-    1676 AD  [biology    ]  leeuwenhoek-animalcules-bacteria  —  Leeuwenhoek observes microorganisms ('animalcules')
+-    1678 AD  [physics    ]  hookes-law-of-elasticity  —  Hooke's law of elasticity
+-    1689 AD  [mind       ]  locke-tabula-rasa  —  Locke / tabula rasa
+-    1690 AD  [physics    ]  huygens-wave-theory-of-light  —  Huygens' wave theory of light (Traite de la Lumiere)
+-    1710 AD  [mind       ]  berkeley-subjective-idealism  —  Berkeley / esse est percipi
+-    1738 AD  [physics    ]  bernoulli-hydrodynamica  —  Bernoulli's Hydrodynamica / fluid dynamics
+-    1749 AD  [biology    ]  buffon-histoire-naturelle  —  Buffon's Histoire Naturelle
+-    1755 AD  [language   ]  johnsons-dictionary-lexicographic-authority  —  Johnson's dictionary / lexicographic authority
+-    1781 AD  [mind       ]  kant-transcendental-categories  —  Kant / transcendental categories of understanding
+-    1785 AD  [physics    ]  coulombs-law-electric-force  —  Coulomb's law / electric force quantified
+-    1796 AD  [medicine   ]  jenners-cowpox-vaccination-immunization-principle  —  Jenner's cowpox vaccination / immunization principle
+-    1798 AD  [physics    ]  cavendish-weighs-the-earth  —  Cavendish weighs the Earth / measures G
+-    1801 AD  [physics    ]  young-double-slit-wave-light  —  Young's double-slit experiment / wave nature of light
+-    1804 AD  [computing  ]  jacquard-loom  —  Jacquard loom / programmable punched cards
+-    1809 AD  [biology    ]  lamarck-philosophie-zoologique  —  Lamarck's Philosophie Zoologique / first evolutionary theory
+-    1824 AD  [physics    ]  carnot-heat-engine-cycle  —  Carnot's Reflections on the Motive Power of Fire
+-    1826 AD  [physics    ]  ampere-electrodynamics-formula  —  Ampere's electrodynamics formula
+-    1827 AD  [physics    ]  ohms-law-of-electrical-resistance  —  Ohm's law of electrical resistance
+-    1831 AD  [physics    ]  faraday-electromagnetic-induction  —  Faraday's electromagnetic induction
+-    1845 AD  [physics    ]  joule-mechanical-equivalent-of-heat  —  Joule's mechanical equivalent of heat
+-    1851 AD  [physics    ]  foucault-pendulum-earth-rotates  —  Foucault pendulum demonstrates Earth's rotation
+-    1855 AD  [biology    ]  virchow-omnis-cellula  —  Virchow / 'omnis cellula e cellula'
+-    1858 AD  [biology    ]  darwin-wallace-linnean-1858  —  Darwin-Wallace joint paper at the Linnean Society
+-    1861 AD  [mind       ]  broca-aphasia-speech-localization  —  Broca / speech localization in the brain
+-    1864 AD  [biology    ]  pasteur-germ-theory-fermentation  —  Pasteur disproves spontaneous generation / germ theory of fermentation
+-    1864 AD  [biology    ]  pasteurization-invented  —  Pasteurization invented
+-    1867 AD  [mind       ]  helmholtz-unconscious-inference  —  Helmholtz / unconscious inference
+-    1872 AD  [physics    ]  boltzmann-h-theorem-statistical-mechanics  —  Boltzmann's H-theorem / statistical mechanics
+-    1882 AD  [biology    ]  koch-tubercle-bacillus  —  Koch isolates the tubercle bacillus
+-    1885 AD  [mind       ]  ebbinghaus-forgetting-curve  —  Ebbinghaus / forgetting curve
+-    1887 AD  [language   ]  international-auxiliary-language-esperanto-use  —  Esperanto / engineered international auxiliary language
+-    1887 AD  [physics    ]  hertz-detects-radio-waves  —  Hertz detects electromagnetic / radio waves
+-    1895 AD  [physics    ]  roentgen-discovers-x-rays  —  Roentgen discovers X-rays
+-    1896 AD  [physics    ]  becquerel-discovers-radioactivity  —  Becquerel discovers radioactivity
+-    1898 AD  [physics    ]  curie-radium-polonium-isolation  —  Curies isolate polonium and radium
+-    1899 AD  [medicine   ]  first-psychiatric-classification-kraepelin  —  First psychiatric classification (Kraepelin)
+-    1902 AD  [biology    ]  sutton-boveri-chromosome-theory  —  Sutton-Boveri chromosome theory of inheritance
+-    1903 AD  [mind       ]  pavlov-classical-conditioning  —  Pavlov / classical conditioning
+-    1905 AD  [physics    ]  einsteins-annus-mirabilis-four-papers  —  Einstein's annus mirabilis (four papers)
+-    1912 AD  [mind       ]  wertheimer-phi-phenomenon-gestalt  —  Wertheimer / phi phenomenon and Gestalt psychology
+-    1926 AD  [physics    ]  schrodinger-wave-equation  —  Schrodinger's wave equation
+-    1928 AD  [medicine   ]  eeg-electroencephalogram  —  EEG (electroencephalogram)
+-    1928 AD  [biology    ]  fleming-discovers-penicillin  —  Fleming discovers penicillin
+-    1932 AD  [mind       ]  bartlett-schema-reconstructive-memory  —  Bartlett / schema and reconstructive memory
+-    1936 AD  [computing  ]  church-turing-thesis-what-computation-is  —  Church-Turing thesis / what computation is
+-    1937 AD  [biology    ]  krebs-citric-acid-cycle  —  Krebs cycle / citric acid cycle elucidated
+-    1941 AD  [computing  ]  zuse-z3  —  Zuse Z3 / first programmable digital computer
+-    1943 AD  [mind       ]  maslows-hierarchy-motivation-theory  —  Maslow's hierarchy / motivation theory
+-    1943 AD  [mind       ]  craik-computational-theory-of-mind  —  Craik / computational theory of mind
+-    1944 AD  [economics  ]  bretton-woods-dollar-as-world-reserve-currency  —  Bretton Woods / dollar as world reserve currency
+-    1944 AD  [computing  ]  colossus-bletchley  —  Colossus / first programmable electronic computer
+-    1944 AD  [computing  ]  harvard-mark-i  —  Harvard Mark I / first automatic large-scale calculator
+-    1945 AD  [law        ]  nuremberg-charter-crimes-against-humanity  —  Nuremberg Charter / crimes against humanity
+-    1948 AD  [mind       ]  tolman-cognitive-maps  —  Tolman / cognitive maps
+-    1952 AD  [biology    ]  hershey-chase-blender-experiment  —  Hershey-Chase blender experiment confirms DNA is the genetic material
+-    1957 AD  [mind       ]  chomsky-syntactic-structures-universal-grammar  —  Chomsky / Syntactic Structures and universal grammar
+-    1957 AD  [mind       ]  hm-hippocampus-memory-case  —  Patient H.M. / hippocampus and memory
+-    1959 AD  [mind       ]  hubel-wiesel-visual-cortex-receptive-fields  —  Hubel and Wiesel / visual cortex receptive fields
+-    1960 AD  [mind       ]  sperling-iconic-memory  —  Sperling / iconic memory
+-    1961 AD  [mind       ]  bandura-bobo-doll-social-learning  —  Bandura / Bobo doll and social learning
+-    1963 AD  [computing  ]  sketchpad-sutherland  —  Sketchpad (Sutherland) / interactive computer graphics
+-    1966 AD  [computing  ]  eliza-weizenbaum  —  ELIZA (Weizenbaum) / first chatbot
+-    1967 AD  [biology    ]  margulis-endosymbiotic-theory  —  Margulis endosymbiotic theory of eukaryotic cells
+-    1970 AD  [computing  ]  intel-1103-dram  —  Intel 1103 / DRAM kills magnetic core
+-    1972 AD  [computing  ]  plato-iv-touchscreen  —  PLATO IV touch panel / first touchscreen in classroom
+-    1972 AD  [computing  ]  smalltalk-72  —  Smalltalk-72 (Kay) / object-oriented language
+-    1973 AD  [biology    ]  cohen-boyer-recombinant-dna  —  Cohen-Boyer recombinant DNA / genetic engineering
+-    1974 AD  [computing  ]  sql-sequel-1974  —  SQL / SEQUEL relational query language
+-    1974 AD  [mind       ]  loftus-palmer-misinformation-effect  —  Loftus and Palmer / misinformation effect
+-    1974 AD  [biology    ]  lucy-australopithecus-afarensis  —  Lucy / Australopithecus afarensis discovered
+-    1977 AD  [computing  ]  rsa-encryption-1977  —  RSA encryption / practical public-key crypto
+-    1977 AD  [biology    ]  woese-archaea-three-domains  —  Woese discovers archaea / three domains of life
+-    1982 AD  [art        ]  cd-rom-digital-storage-for-audio  —  CD-ROM / digital storage for audio
+-    1982 AD  [computing  ]  smtp-rfc-821  —  SMTP / email protocol standardized
+-    1986 AD  [computing  ]  backpropagation-1986  —  Backpropagation (Rumelhart, Hinton, Williams)
+-    1990 AD  [computing  ]  html-1990  —  HTML (Berners-Lee) / hypertext markup language
+-    1993 AD  [computing  ]  apple-newton-1993  —  Apple Newton MessagePad / PDA category named
+-    1995 AD  [computing  ]  gps-foc-1995  —  GPS Full Operational Capability
+-    1995 AD  [physics    ]  first-bose-einstein-condensate-observed  —  First Bose-Einstein condensate observed (Cornell/Wieman)
+-    1996 AD  [computing  ]  palm-pilot-1996  —  PalmPilot 1000 / PDA goes mainstream
+-    1997 AD  [computing  ]  deep-blue-1997  —  Deep Blue defeats Kasparov
+-    1998 AD  [computing  ]  google-web-search-becomes-useful  —  Google / web search becomes useful
+-    2002 AD  [computing  ]  microsoft-tablet-pc-2002  —  Microsoft Tablet PC / pen computing mainstreamed
+-    2006 AD  [computing  ]  jeff-han-multitouch-2006  —  Jeff Han multi-touch demo (TED 2006)
+-    2024 AD  [computing  ]  gemini-1-5-1m-token-context-window  —  Gemini 1.5 / 1M token context window
+-    2024 AD  [computing  ]  ai-agents-autonomous-task-completion  —  AI agents / autonomous task completion
+-    2025 AD  [computing  ]  claude-4-sustained-reasoning-and-multi-hour-tasks  —  Claude 4 / sustained reasoning and multi-hour tasks
