@@ -13,7 +13,8 @@
   --accent-2:#9A3412;
   --gut:24px;
   --hdr-h:60px;
-  --maxw:min(1800px,92vw);
+  --maxw:min(880px,92vw);
+  --maxw-wide:min(1800px,92vw);
   --serif:'Newsreader',Georgia,'Iowan Old Style',serif;
   --sans:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
   --mono:'JetBrains Mono','SF Mono',Menlo,monospace;
@@ -139,6 +140,7 @@ img,svg{display:block;max-width:100%}
 /* ========== MAIN ========== */
 main{max-width:var(--maxw);margin:0 auto;padding:32px var(--gut) 80px;width:100%}
 main.full-bleed{max-width:none;padding:0}
+main.wide{max-width:var(--maxw-wide)}
 
 /* ========== FOOTER ========== */
 footer{

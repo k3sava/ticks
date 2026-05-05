@@ -57,6 +57,7 @@ function render(){
   const handler = routes[base + (arg ? '/:id' : '')] || routes[base] || home;
   app.className = '';
   if (base === '/walk') app.classList.add('full-bleed');
+  else if (base === '/map') app.classList.add('wide');
   handler(arg);
   window.scrollTo({top:0, behavior:'instant'});
   closeMobileMenu();
@@ -313,20 +314,44 @@ function renderHuntPicker(){
 
 function renderHuntSuggest(){
   const picks = [
+    // tech / computing
     'iphone-touchscreen-computing',
-    'penicillin-fleming',
-    'gutenbergs-printing-press',
-    'electric-light-edisons-grid-system',
-    'dna-double-helix-watson-crick-franklin',
-    'vaccination-jenner',
-    'public-key-cryptography-diffie-hellman',
-    'the-jazz-singer-sound-film',
-    'athenian-democracy',
-    'steam-engine-watts-rotary-motion',
-    'the-pill-oral-contraceptive',
-    'chatgpt-rlhf-alignment',
     'mosaic-browser-internet-as-publishing-medium',
+    'chatgpt-rlhf-alignment',
+    'public-key-cryptography-diffie-hellman',
+    'transistor-bell-labs-shockley-bardeen-brattain',
+    // medicine / biology
+    'penicillin-fleming',
+    'vaccination-jenner',
+    'dna-double-helix-watson-crick-franklin',
     'crispr-discovery-doudna-charpentier',
+    'the-pill-oral-contraceptive',
+    // physics / energy
+    'steam-engine-watts-rotary-motion',
+    'electric-light-edisons-grid-system',
+    'general-relativity-einstein',
+    // language / media
+    'gutenbergs-printing-press',
+    'the-jazz-singer-sound-film',
+    'radio-broadcasting-of-music',
+    // society / law
+    'athenian-democracy',
+    'magna-carta-rule-of-law-over-divine-right',
+    'universal-declaration-of-human-rights',
+    'declaration-of-the-rights-of-man',
+    // economics
+    'pacioli-double-entry-bookkeeping',
+    'dutch-east-india-company-first-joint-stock-co',
+    'amsterdam-stock-exchange',
+    // religion / philosophy
+    'christianity-universal-salvation-message',
+    'buddhas-parinirvana-institutionalized-buddhism',
+    // war / agriculture / art
+    'gunpowder-weaponized-china-then-west',
+    'haber-bosch-nitrogen-fixation',
+    'brunelleschis-florence-urban-planning-as-art',
+    'cave-painting-symbolic-art',
+    'impressionism-painting-en-plein-air',
   ];
   const items = picks.map(id => TICK_BY_ID[id]).filter(Boolean);
   if (!items.length){
