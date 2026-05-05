@@ -84,7 +84,7 @@ function home(){
   app.innerHTML = `
     <section class='home-hero'>
       <div class='home-thesis'>
-        <div class='eyebrow'>1,022 moments that changed what comes next</div>
+        <div class='eyebrow'>1,061 moments that changed what comes next</div>
         <h1>The right breakpoint, and <em>everything flows</em>.</h1>
         <p class='home-sub'>A tick is the moment a constraint dissolved.<span class='home-sub-2'>Before it, we couldn't. After it, things kinda blew up.</span></p>
       </div>
@@ -109,7 +109,7 @@ function home(){
       <div class='home-cta'>
         <div class='home-cta-buttons'>
           <a href='#/walk'>start walking →</a>
-          <a class='secondary' href='#/map'>see all 1,022</a>
+          <a class='secondary' href='#/map'>see all 1,061</a>
           <a class='secondary' href='#/hunt'>walk backward from a thing you know</a>
         </div>
         <div class='home-counter'>
@@ -602,7 +602,7 @@ function browse(){
   app.innerHTML = `
     <section class='browse-page'>
       <div class='browse-head'>
-        <h1>Browse all 1,022</h1>
+        <h1>Browse all 1,061</h1>
         <p>Grouped by era. Click any tick to open it. Search to narrow.</p>
       </div>
       <div class='browse-toolbar'>
@@ -647,12 +647,12 @@ function about(){
     <article class='about'>
       <h1>About ticks</h1>
       <p class='lede'>A tick is the moment a constraint dissolved. Before it, we couldn't. After it, things kinda blew up — and what came next required it.</p>
-      <p>This site is a database of 1,022 such moments across 14 domains of human history. It is small enough to walk through in an afternoon and dense enough to surprise you for years.</p>
+      <p>This site is a database of 1,061 such moments across 14 domains of human history. It is small enough to walk through in an afternoon and dense enough to surprise you for years.</p>
       <p>The thesis is simple: <em>history is a chain of breakpoints</em>. A constraint dissolves — recursive language, written script, the joint-stock company, the transistor — and a flood of new things become possible that simply weren't before. Each tick is a moment when one of those breakpoints came through.</p>
       <h2>Four ways to play</h2>
       <div class='modes'>
         <a class='mode-tile' href='#/walk'><h3>walk →</h3><p>One tick at a time. Year is loud. Click anything that flowed from it to keep walking.</p></a>
-        <a class='mode-tile' href='#/map'><h3>map →</h3><p>All 1,022 plotted across 12 eras. The acceleration becomes a thing you feel.</p></a>
+        <a class='mode-tile' href='#/map'><h3>map →</h3><p>All 1,061 plotted across 12 eras. The acceleration becomes a thing you feel.</p></a>
         <a class='mode-tile' href='#/hunt'><h3>hunt →</h3><p>Pick something modern. Walk backward through every constraint that had to dissolve.</p></a>
         <a class='mode-tile' href='#/browse'><h3>browse →</h3><p>The full list, grouped by era, with search.</p></a>
       </div>
