@@ -49,17 +49,32 @@ def main():
     existing_slug_names = {slugify(t['name']) for t in ticks}
     existing_ids = {t['id'] for t in ticks}
 
-    # Aggregate all drafts
-    drafts = []
+    # Aggregate all drafts; cap per-domain to keep corpus balanced.
+    PER_DOMAIN_CAP = 130  # max NEW ticks per domain in this expansion
+    drafts_by_dom = {}
     for f in sorted(DRAFTS.glob('*.json')):
         try:
             arr = json.loads(f.read_text())
         except: continue
+        dom = f.stem
         for it in arr:
             if not isinstance(it, dict) or it.get('reject'): continue
-            it['_dom_file'] = f.stem
-            drafts.append(it)
-    print(f"Total raw drafts: {len(drafts)}")
+            it['_dom_file'] = dom
+            drafts_by_dom.setdefault(dom, []).append(it)
+    # Prioritize: spread across eras for each domain
+    drafts = []
+    for dom, arr in drafts_by_dom.items():
+        # bucket by era (yearN range)
+        # Sort arr by yearN, then take a balanced sample
+        arr_sorted = sorted(arr, key=lambda x: x.get('yearN') or 0)
+        if len(arr_sorted) <= PER_DOMAIN_CAP:
+            drafts.extend(arr_sorted)
+        else:
+            # Stride sampling for even time distribution
+            step = len(arr_sorted) / PER_DOMAIN_CAP
+            picked = [arr_sorted[int(i * step)] for i in range(PER_DOMAIN_CAP)]
+            drafts.extend(picked)
+    print(f"Total raw drafts after per-domain cap ({PER_DOMAIN_CAP}): {len(drafts)}")
 
     # Validate + dedupe
     new_ticks = []
