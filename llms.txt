@@ -1,46 +1,51 @@
 # Ticks
 
-> 2,648 moments in human history when a constraint dissolved and everything downstream became possible. Each tick names the constraint, dates the dissolution, attributes the source, and links to the cascade of things it unlocked.
+> 2,648 moments in human history when a constraint dissolved and everything downstream became possible. Each tick names the constraint, dates the dissolution, attributes the source, and links to the cascade of things it made possible.
 
-This site is a chain, not a list. Every entry has parents (what had to dissolve first) and children (what became possible afterward). The thesis is that history is a graph of breakpoints, and walking the edges teaches you more than memorizing the nodes.
+This site is a chain, not a list. Every entry has parents (what had to dissolve first) and children (what became possible afterward). The thesis is that history is a graph of breakpoints. Walking the edges teaches you more than memorizing the nodes.
 
-Authored and curated by Kesava Mandiga (https://github.com/k3sava). MIT licensed. Drafted with language-model assistance and audited against Wikipedia and primary sources; ongoing audits documented in /AUDIT-CHAIN.md, /AUDIT-CLAIMS.md, /AUDIT-DEADLINKS.md, /AUDIT-DUPS.md, /ANACHRONISMS.md.
+Authored and curated by Kesava Mandiga (https://github.com/k3sava). MIT licensed. Drafted with language-model assistance and audited against Wikipedia and primary sources. Ongoing audits documented in /AUDIT-CHAIN.md, /AUDIT-CLAIMS.md, /AUDIT-DEADLINKS.md, /AUDIT-DUPS.md, /ANACHRONISMS.md.
 
 ## Schema (per tick)
 
-- id — slug
-- name — short title
-- year, yearN — display string ("1905 AD", "32,000 BC", "1.5 million years ago") and signed integer year
-- zone — one of 13 era buckets (Deep Prehistory, Cognitive Leap, Settled World, First Civilizations, Axial Age, Classical Empires, Post-Classical, Early Modern, Industrial Age, Electric Age, Space & Digital, Network Age, AI Era)
-- domain — one of 14 (computing, biology, society, mind, physics, language, law, philosophy, religion, art, medicine, economics, war, agriculture)
-- constraint — what was true before the tick, in plain English ("communication limited to immediate reality")
-- detail — 1–3 sentence editorial gloss
-- links — labeled URLs to primary or canonical sources
-- unlocks / unlockedBy — chain edges (in /data.json under top-level keys of the same name)
+- id: slug
+- name: short title
+- year, yearN: display string ("1905 AD", "32,000 BC", "1.5 million years ago") and signed integer year
+- zone: one of 13 era buckets (Deep Prehistory, Cognitive Leap, Settled World, First Civilizations, Axial Age, Classical Empires, Post-Classical, Early Modern, Industrial Age, Electric Age, Space & Digital, Network Age, AI Era)
+- domain: one of 14 (computing, biology, society, mind, physics, language, law, philosophy, religion, art, medicine, economics, war, agriculture)
+- constraint: what was true before the tick, in plain English ("communication limited to immediate reality")
+- detail: 1 to 3 sentence editorial gloss
+- links: labeled URLs to primary or canonical sources
+- unlocks, unlockedBy: chain edges (top-level keys in /data.json, keyed by tick id)
 
 ## Data
 
-- /data.json — full machine-readable corpus (~2,648 ticks, ~13 zones, ~14 domains, edge graph)
-- /AUDIT-CHAIN.md — chain-edge audit log
-- /AUDIT-CLAIMS.md — claim-verification audit log
-- /AUDIT-DEADLINKS.md — link-integrity audit log
-- /AUDIT-DUPS.md — deduplication audit log
-- /ANACHRONISMS.md — known anachronism resolutions
+- /data.json: full machine-readable corpus (2,648 ticks, 13 zones, 14 domains, edge graph)
+- /search-index.json: lightweight subset for fast client-side search and AI agent ingest
+- /AUDIT-CHAIN.md: chain-edge audit log
+- /AUDIT-CLAIMS.md: claim-verification audit log
+- /AUDIT-DEADLINKS.md: link-integrity audit log
+- /AUDIT-DUPS.md: deduplication audit log
+- /ANACHRONISMS.md: known anachronism resolutions
 
 ## Modes (hash-routed; fragments are stable permalinks)
 
-- /#/walk        — single tick, year-loud; ←/→ traverses chronologically, ↑ jumps to ancestry
-- /#/walk/{id}   — opens a specific tick
-- /#/map         — log-time canvas, all ticks, swim-laned by domain
-- /#/hunt        — pick anything modern, walk backward through every constraint that had to dissolve
-- /#/hunt/{id}   — ancestry chain for a specific tick
-- /#/browse      — full list grouped by era, searchable
-- /#/about       — thesis and method
+- /#/walk: single tick, year-loud. Left and right arrow keys traverse chronologically. Up jumps to ancestry.
+- /#/walk/{id}: opens a specific tick
+- /#/map: log-time canvas, all ticks, swim-laned by domain
+- /#/hunt: pick anything modern, walk backward through every constraint that had to dissolve
+- /#/hunt/{id}: ancestry chain for a specific tick
+- /#/browse: full list grouped by era, searchable
+- /#/about: thesis and method
 
 ## How to cite
 
-Mandiga, Kesava. "Ticks — {tick name} ({year})." https://k3sava.github.io/ticks/#/walk/{id}.
+Mandiga, Kesava. "Ticks · {tick name} ({year})." https://k3sava.github.io/ticks/#/walk/{id}.
 
-## Provenance & corrections
+## Provenance and corrections
 
-Every tick has 2–3 source links. Corrections welcome at https://github.com/k3sava/ticks/issues. Each tick page links a pre-filled "suggest an edit" issue.
+Every tick has 2 to 3 source links. Corrections welcome at https://github.com/k3sava/ticks/issues. Each tick page links a pre-filled "suggest an edit" issue.
+
+## Voice
+
+Operator voice, plain English. Constraints are phrased in everyday language: "communication limited to immediate reality" (not "pre-symbolic information transfer paradigms"). The corpus avoids weasel words and consultant-speak. If a word does no work, the sentence won't miss it.

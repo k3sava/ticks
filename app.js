@@ -60,8 +60,13 @@ function render(){
   else if (base === '/map') app.classList.add('wide');
   handler(arg);
   updateMeta(base, arg);
+  injectArticleSchema(base, arg);
   window.scrollTo({top:0, behavior:'instant'});
+  // Focus discipline: shift focus to <main> on every route change so screen
+  // readers and keyboard users land in the new content, not on the same nav link.
+  app.focus({preventScroll:true});
   closeMobileMenu();
+  closeShareMenu();
 }
 
 /* Per-route document.title + meta description so previews and tab titles
@@ -89,8 +94,8 @@ function updateMeta(base, arg){
     const t = TICK_BY_ID[arg];
     const verb = base === '/walk' ? 'A tick' : 'How we got here';
     setMeta(
-      `${t.name} (${t.year}) — ${SITE_TITLE}`,
-      `${t.year}. ${t.name}. Before this, ${t.constraint.toLowerCase().replace(/\.$/, '')}. ${verb} from ${SITE_TITLE} — ${SITE_TAGLINE}.`
+      `${t.name} (${t.year}) · ${SITE_TITLE}`,
+      `${t.year}. ${t.name}. Before this, ${t.constraint.toLowerCase().replace(/\.$/, '')}. ${verb} from ${SITE_TITLE}, ${SITE_TAGLINE}.`
     );
     return;
   }
@@ -102,8 +107,8 @@ function updateMeta(base, arg){
     '/about':  ['About', `${SITE_TITLE} is a database of ${TICKS.length.toLocaleString()} moments when a constraint dissolved. A chain, not a list.`],
   };
   const [name, desc] = titles[base] || [null, null];
-  if (name) setMeta(`${name} — ${SITE_TITLE}`, desc);
-  else setMeta(`${SITE_TITLE} — ${SITE_TAGLINE}`,
+  if (name) setMeta(`${name} · ${SITE_TITLE}`, desc);
+  else setMeta(`${SITE_TITLE} · ${SITE_TAGLINE}`,
     `${TICKS.length.toLocaleString()} moments in history when a constraint dissolved and everything downstream became possible. Walk the chain forward, or backward from a thing you already know.`);
 }
 
@@ -219,12 +224,12 @@ function renderWalk(){
       </div>
 
       <div class='walk-flow'>
-        <div class='walk-flow-head'>${flow.length ? `everything that flowed from this (${flow.length})` : 'no recorded downstream — a quiet tick'}</div>
+        <div class='walk-flow-head'>${flow.length ? `everything that flowed from this (${flow.length})` : 'no recorded downstream. a quiet tick.'}</div>
         ${flow.length ? flow.map(f => `
           <a class='walk-flow-card' href='#/walk/${f.id}' style='${domStyle(f.domain)}'>
             <span class='yr'>${escapeHtml(f.year)}</span>
             <span class='nm'>${escapeHtml(f.name)}</span>
-          </a>`).join('') : '<div class="walk-flow-empty">A frontier tick — what flows from this is still being written. Press → to keep walking.</div>'}
+          </a>`).join('') : '<div class="walk-flow-empty">A frontier tick. What flows from this is still being written. Press → to keep walking.</div>'}
       </div>
 
       <div class='walk-controls'>
@@ -240,9 +245,9 @@ function renderWalk(){
   `;
   document.getElementById('wPrev').onclick = () => { walkIdx = Math.max(0, walkIdx-1); renderWalk(); };
   document.getElementById('wNext').onclick = () => { walkIdx = Math.min(TICKS_SORTED.length-1, walkIdx+1); renderWalk(); };
-  // Share button — native share where available, copy link as fallback
+  // Share button: opens the share menu anchored under the trigger.
   const shareBtn = app.querySelector('[data-act="share"]');
-  if (shareBtn) shareBtn.onclick = () => shareTick(t);
+  if (shareBtn) shareBtn.onclick = (e) => { e.stopPropagation(); shareTick(t, shareBtn); };
   // Touch swipe (left/right) on the walk stage
   const stage = document.querySelector('.walk');
   if (stage){
@@ -342,7 +347,7 @@ function renderHuntPicker(){
       </div>
       <div class='hunt-search'>
         <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="7" r="5"/><path d="m11 11 3 3"/></svg>
-        <input id='huntQ' type='search' placeholder='search any tick — penicillin, the iPhone, jazz, democracy…' autocomplete='off' />
+        <input id='huntQ' type='search' placeholder='search any tick. penicillin, the iPhone, jazz, democracy…' autocomplete='off' />
       </div>
       <div id='huntResults' style='margin-bottom:32px'></div>
       <div class='hunt-suggest'>
@@ -432,7 +437,7 @@ function map(){
     <section class='map-page'>
       <div class='map-head'>
         <h1>The acceleration</h1>
-        <p>Every tick, plotted on a log-scale time axis. Each row is a domain. Sixty thousand years of nothing — then everything.</p>
+        <p>Every tick, plotted on a log-scale time axis. Each row is a domain. Sixty thousand years of nothing. Then everything.</p>
         <div class='map-stats'>
           <span><strong>${TICKS.length.toLocaleString()}</strong> moments</span>
           <span><strong>${domains.length}</strong> domains</span>
@@ -700,9 +705,9 @@ function about(){
   app.innerHTML = `
     <article class='about'>
       <h1>About ticks</h1>
-      <p class='lede'>A tick is the moment a constraint dissolved. Before it, we couldn't. After it, things kinda blew up — and what came next required it.</p>
-      <p>This site is a database of ${TICKS.length.toLocaleString()} such moments across 14 domains of human history. It is small enough to walk through in an afternoon and dense enough to surprise you for years.</p>
-      <p>The thesis is simple: <em>history is a chain of breakpoints</em>. A constraint dissolves — recursive language, written script, the joint-stock company, the transistor — and a flood of new things become possible that simply weren't before. Each tick is a moment when one of those breakpoints came through.</p>
+      <p class='lede'>A tick is the moment a constraint dissolved. Before it, we couldn't. After it, things kinda blew up. What came next required it.</p>
+      <p>This site is a database of ${TICKS.length.toLocaleString()} such moments across 14 domains of human history. Small enough to walk through in an afternoon. Dense enough to surprise you for years.</p>
+      <p>The thesis is simple. <em>History is a chain of breakpoints.</em> A constraint dissolves (recursive language, written script, the joint-stock company, the transistor) and a flood of new things become possible that simply weren't before. Each tick is a moment when one of those breakpoints came through.</p>
       <h2>Four ways to play</h2>
       <div class='modes'>
         <a class='mode-tile' href='#/walk'><h3>walk →</h3><p>One tick at a time. Year is loud. Click anything that flowed from it to keep walking.</p></a>
@@ -712,7 +717,7 @@ function about(){
       </div>
       <h2>A note on accuracy</h2>
       <p>This is an editorial sketch, not a peer-reviewed reference. The dates and the chain-of-influence edges are one person's reading of history, drafted with the help of language models. Some entries oversimplify ("iPhone / touchscreen computing" undersells two decades of prior touchscreen work). Some intermediate ticks are missing. Some ancestry edges are associative rather than strictly causal.</p>
-      <p>A full audit pass — verifying each tick against primary sources and tightening the chain — is the next project. In the meantime: <a href='https://github.com/k3sava/ticks/issues/new' target='_blank' rel='noopener' style='color:var(--accent);border-bottom:1px solid var(--accent)'>open an issue</a> to flag corrections, or send a PR. Every tick has 2–3 source links you can verify.</p>
+      <p>A full audit pass, verifying each tick against primary sources and tightening the chain, is the next project. In the meantime, <a href='https://github.com/k3sava/ticks/issues/new' target='_blank' rel='noopener' style='color:var(--accent);border-bottom:1px solid var(--accent)'>open an issue</a> to flag corrections, or send a PR. Every tick has 2–3 source links you can verify.</p>
       <h2>Credit</h2>
       <p class='credit'>Made by <a href='https://github.com/k3sava' target='_blank' rel='noopener' style='color:var(--ink-2);border-bottom:1px solid var(--line)'>Kesava</a> · MIT · <a href='https://github.com/k3sava/ticks' target='_blank' rel='noopener' style='color:var(--ink-2);border-bottom:1px solid var(--line)'>source on GitHub</a></p>
     </article>
@@ -720,10 +725,37 @@ function about(){
 }
 
 /* ========== keyboard ========== */
+let _gPending = 0;  // timestamp of last 'g' for two-key chords
 window.addEventListener('keydown', (e) => {
+  // Esc: close any open overlay regardless of focus context.
+  if (e.key === 'Escape'){
+    if (closeKbdHelp()) { e.preventDefault(); return; }
+    const menu = document.getElementById('shareMenu');
+    if (menu && !menu.hidden){ closeShareMenu(); e.preventDefault(); return; }
+  }
   if (e.target.matches('input, textarea')) return;
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+
   const k = e.key.toLowerCase();
+
+  // g+<letter> chord navigation
+  if (k === 'g'){ _gPending = Date.now(); e.preventDefault(); return; }
+  if (_gPending && (Date.now() - _gPending) < 1200){
+    _gPending = 0;
+    const map = { h:'#/', w:'#/walk', m:'#/map', n:'#/hunt', b:'#/browse', a:'#/about' };
+    if (map[k]){ location.hash = map[k]; e.preventDefault(); return; }
+  }
+
+  if (k === '?' || (e.key === '/' && e.shiftKey)){ openKbdHelp(); e.preventDefault(); return; }
+  if (e.key === '/'){
+    const q = document.getElementById('huntQ') || document.getElementById('brQ');
+    if (q){ q.focus(); e.preventDefault(); return; }
+  }
   if (k === 'r'){ const t = TICKS[Math.floor(Math.random()*TICKS.length)]; location.hash = '#/walk/' + t.id; e.preventDefault(); return; }
+  if (k === 's' && location.hash.startsWith('#/walk')){
+    const t = TICKS_SORTED[walkIdx];
+    if (t){ shareTick(t, document.querySelector('[data-act="share"]') || document.body); e.preventDefault(); return; }
+  }
   if (location.hash.startsWith('#/walk')){
     if (e.key === 'ArrowRight'){ walkIdx = Math.min(TICKS_SORTED.length-1, walkIdx+1); renderWalk(); }
     else if (e.key === 'ArrowLeft'){ walkIdx = Math.max(0, walkIdx-1); renderWalk(); }
@@ -734,6 +766,72 @@ window.addEventListener('keydown', (e) => {
   }
 });
 
+/* ========== keyboard help dialog ========== */
+function openKbdHelp(){
+  const d = document.getElementById('kbdHelp');
+  if (!d) return;
+  d.hidden = false;
+  d.querySelector('.kbd-close')?.focus();
+}
+function closeKbdHelp(){
+  const d = document.getElementById('kbdHelp');
+  if (!d || d.hidden) return false;
+  d.hidden = true;
+  return true;
+}
+function bindKbdHelp(){
+  const d = document.getElementById('kbdHelp');
+  if (!d) return;
+  d.querySelector('.kbd-close')?.addEventListener('click', closeKbdHelp);
+  d.addEventListener('click', (e) => { if (e.target === d) closeKbdHelp(); });
+}
+
+/* ========== close share menu on outside click ========== */
+document.addEventListener('click', (e) => {
+  const menu = document.getElementById('shareMenu');
+  if (!menu || menu.hidden) return;
+  if (menu.contains(e.target)) return;
+  if (e.target.closest('[data-act="share"]')) return;
+  closeShareMenu();
+}, true);
+
+/* ========== per-tick JSON-LD Article schema (AEO/GEO) ========== */
+function injectArticleSchema(base, arg){
+  let el = document.getElementById('tickArticleLD');
+  if (base !== '/walk' || !arg || !TICK_BY_ID[arg]){
+    if (el) el.remove();
+    return;
+  }
+  const t = TICK_BY_ID[arg];
+  const url = `${location.origin}${location.pathname}#/walk/${t.id}`;
+  const data = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    'headline': `${t.name} (${t.year})`,
+    'name': t.name,
+    'about': `${t.year}. ${t.name}. The moment ${t.constraint.toLowerCase().replace(/\.$/, '')} stopped being a constraint.`,
+    'url': url,
+    'mainEntityOfPage': url,
+    'inLanguage': 'en',
+    'isPartOf': { '@id': 'https://k3sava.github.io/ticks/#dataset' },
+    'author': { '@type': 'Person', 'name': 'Kesava Mandiga', 'url': 'https://github.com/k3sava' },
+    'publisher': { '@type': 'Person', 'name': 'Kesava Mandiga' },
+    'license': 'https://opensource.org/licenses/MIT',
+    'keywords': [t.domain, 'history', 'breakthrough', 'constraint dissolved'],
+    'articleSection': t.domain,
+    'description': `${t.year}. ${t.name}. Before this, ${t.constraint.toLowerCase().replace(/\.$/, '')}.`,
+  };
+  if (t.detail) data.articleBody = t.detail;
+  if (t.links?.length) data.citation = t.links.map(l => ({ '@type': 'CreativeWork', 'name': l.label, 'url': l.url }));
+  if (!el){
+    el = document.createElement('script');
+    el.id = 'tickArticleLD';
+    el.type = 'application/ld+json';
+    document.head.appendChild(el);
+  }
+  el.textContent = JSON.stringify(data);
+}
+
 /* ========== random button ========== */
 function bindRandom(){
   const fire = () => { const t = TICKS[Math.floor(Math.random()*TICKS.length)]; location.hash = '#/walk/' + t.id; };
@@ -742,16 +840,81 @@ function bindRandom(){
 }
 
 /* ========== share + toast ========== */
-async function shareTick(t){
+function payloadFor(t){
   const url = `${location.origin}${location.pathname}#/walk/${t.id}`;
-  const title = `${t.name} (${t.year}) — Ticks`;
+  const title = `${t.name} (${t.year}) · Ticks`;
   const text = `${t.year}. ${t.name}. Before this, ${t.constraint.toLowerCase().replace(/\.$/, '')}.`;
+  return { url, title, text };
+}
+function openShareMenu(triggerEl, t){
+  const menu = document.getElementById('shareMenu');
+  if (!menu) return;
+  const { url, title, text } = payloadFor(t);
+  const nativeBtn = menu.querySelector('[data-act="native"]');
+  const canNative = !!(navigator.share && navigator.canShare?.({ title, url }));
+  nativeBtn.hidden = !canNative;
+
+  // Position relative to the trigger
+  const r = triggerEl.getBoundingClientRect();
+  menu.hidden = false;
+  const mw = menu.offsetWidth;
+  const mh = menu.offsetHeight;
+  let left = Math.max(8, r.left + window.scrollX);
+  if (left + mw > window.innerWidth - 8) left = window.innerWidth - mw - 8;
+  let top = r.bottom + 6 + window.scrollY;
+  if (r.bottom + mh + 12 > window.innerHeight) top = r.top - mh - 6 + window.scrollY;
+  menu.style.left = left + 'px';
+  menu.style.top = top + 'px';
+
+  const acts = {
+    native: async () => {
+      try { await navigator.share({ url, title, text }); }
+      catch(e){ if (e?.name !== 'AbortError') toast('share failed', { error:true }); }
+    },
+    copy: async () => {
+      try { await navigator.clipboard.writeText(url); toast('link copied'); }
+      catch { toast('couldn\'t copy. long-press the URL.', { error:true }); }
+    },
+    x: () => {
+      const tweet = `${text}\n\n`;
+      window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(tweet)}&url=${encodeURIComponent(url)}`, '_blank', 'noopener,noreferrer');
+    },
+    linkedin: () => {
+      window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`, '_blank', 'noopener,noreferrer');
+    },
+    email: () => {
+      const subject = title;
+      const body = `${text}\n\n${url}`;
+      location.href = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    },
+  };
+  if (!menu.dataset.wired){
+    menu.addEventListener('click', (e) => {
+      const btn = e.target.closest('.share-opt');
+      if (!btn) return;
+      const handler = menu._acts?.[btn.dataset.act];
+      closeShareMenu();
+      handler?.();
+    });
+    menu.dataset.wired = 'true';
+  }
+  menu._acts = acts;
+  setTimeout(() => menu.querySelector('.share-opt:not([hidden])')?.focus(), 20);
+}
+function closeShareMenu(){
+  const menu = document.getElementById('shareMenu');
+  if (menu) menu.hidden = true;
+}
+async function shareTick(t, triggerEl){
+  if (triggerEl){ openShareMenu(triggerEl, t); return; }
+  // Fallback (keyboard "s"): native if available, else copy.
+  const { url, title, text } = payloadFor(t);
   if (navigator.share && navigator.canShare?.({ url, title })){
     try { await navigator.share({ url, title, text }); return; }
     catch(e){ if (e?.name === 'AbortError') return; }
   }
   try { await navigator.clipboard.writeText(url); toast('link copied'); }
-  catch { toast('couldn\'t copy — long-press the URL', { error:true }); }
+  catch { toast('couldn\'t copy. long-press the URL.', { error:true }); }
 }
 let _toastT;
 function toast(msg, opts={}){
@@ -813,7 +976,7 @@ function bindScrollHeader(){
 
 /* ========== boot ========== */
 loadData().then(() => {
-  bindRandom(); bindMobileMenu(); bindTheme(); bindScrollHeader();
+  bindRandom(); bindMobileMenu(); bindTheme(); bindScrollHeader(); bindKbdHelp();
   render();
 }).catch(err => {
   app.innerHTML = `<div style='padding:48px;font-family:var(--mono);color:var(--muted)'>Failed to load ticks: ${escapeHtml(err.message)}</div>`;

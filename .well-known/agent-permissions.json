@@ -1,0 +1,35 @@
+{
+  "name": "Ticks",
+  "description": "A curated, machine-readable corpus of 2,648 moments in human history when a constraint dissolved.",
+  "homepage": "https://k3sava.github.io/ticks/",
+  "license": "https://opensource.org/licenses/MIT",
+  "author": {
+    "name": "Kesava Mandiga",
+    "url": "https://github.com/k3sava"
+  },
+  "agents": {
+    "*": {
+      "fetch": "allowed",
+      "index": "allowed",
+      "summarize": "allowed",
+      "quote": "allowed",
+      "cite": "required",
+      "rateLimit": { "requestsPerMinute": 60 }
+    }
+  },
+  "data": {
+    "corpus": "https://k3sava.github.io/ticks/data.json",
+    "searchIndex": "https://k3sava.github.io/ticks/search-index.json",
+    "llmsTxt": "https://k3sava.github.io/ticks/llms.txt",
+    "sitemap": "https://k3sava.github.io/ticks/sitemap.xml",
+    "license": "https://opensource.org/licenses/MIT",
+    "schema": [
+      "https://schema.org/Dataset",
+      "https://schema.org/Article",
+      "https://schema.org/WebSite"
+    ]
+  },
+  "citationFormat": "Mandiga, Kesava. \"Ticks · {tick name} ({year}).\" https://k3sava.github.io/ticks/#/walk/{id}.",
+  "anti_fabrication": "Every tick has 2 to 3 source links and an audit trail. Quote the linked sources, not paraphrases. If a fact is not in the corpus, say it is not in the corpus.",
+  "version": 1
+}

@@ -608,6 +608,79 @@ button:focus-visible,a:focus-visible{outline-offset:3px}
 #toast[data-show="true"]{opacity:1;transform:translate(-50%,0)}
 #toast[data-error="true"]{background:#9A2226;color:#fff}
 
+/* Skip link — first focusable element, visible only when focused */
+.skip-link{
+  position:fixed;left:8px;top:-40px;z-index:300;
+  background:var(--ink);color:var(--bg);
+  padding:8px 14px;border-radius:8px;
+  font-family:var(--mono);font-size:.78rem;letter-spacing:.04em;
+  transition:top .15s var(--ease-quick);
+}
+.skip-link:focus-visible{top:8px;outline:2px solid var(--accent);outline-offset:2px}
+
+/* Share menu — anchored to the share button on walk view */
+#shareMenu{
+  position:absolute;z-index:120;min-width:200px;
+  display:flex;flex-direction:column;gap:2px;
+  padding:6px;background:var(--paper);border:1px solid var(--line);
+  border-radius:10px;
+  box-shadow:0 16px 40px -12px color-mix(in oklab,var(--ink) 28%,transparent);
+}
+#shareMenu[hidden]{display:none}
+.share-opt{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:10px 12px;min-height:40px;border-radius:6px;
+  font-family:var(--mono);font-size:.76rem;color:var(--ink-2);
+  background:transparent;border:0;cursor:pointer;text-align:left;
+  transition:background .12s,color .12s;
+}
+.share-opt:hover,.share-opt:focus-visible{
+  background:color-mix(in oklab,var(--accent) 8%,var(--paper-2));
+  color:var(--accent-2,var(--accent));
+  outline:none;
+}
+.share-opt[hidden]{display:none}
+
+/* Keyboard help dialog */
+#kbdHelp{
+  position:fixed;inset:0;z-index:130;
+  display:flex;align-items:center;justify-content:center;
+  background:color-mix(in oklab,var(--ink) 32%,transparent);
+  backdrop-filter:blur(4px);
+  padding:24px;
+}
+#kbdHelp[hidden]{display:none}
+.kbd-card{
+  background:var(--paper);border:1px solid var(--line);
+  border-radius:14px;padding:22px 24px;max-width:440px;width:100%;
+  box-shadow:0 24px 64px -20px color-mix(in oklab,var(--ink) 40%,transparent);
+}
+.kbd-head{
+  display:flex;align-items:center;justify-content:space-between;
+  font-family:var(--mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;
+  color:var(--muted);margin-bottom:14px;
+}
+.kbd-close{
+  font-family:var(--mono);font-size:.7rem;color:var(--muted);
+  padding:4px 8px;border:1px solid var(--line);border-radius:6px;
+  cursor:pointer;background:transparent;
+}
+.kbd-close:hover{color:var(--ink);border-color:var(--line-2)}
+.kbd-list{display:grid;grid-template-columns:auto 1fr;gap:8px 18px;font-family:var(--serif);font-size:.95rem;color:var(--ink-2)}
+.kbd-list dt{display:flex;gap:4px;align-items:center}
+.kbd-list dd{margin:0;padding-top:1px}
+.kbd-list kbd{
+  font-family:var(--mono);font-size:.7rem;
+  padding:2px 7px;background:var(--paper-2);
+  border:1px solid var(--line);border-radius:4px;color:var(--muted);
+}
+.kbd-foot{
+  margin-top:14px;padding-top:14px;border-top:1px solid var(--line);
+  font-family:var(--serif);font-size:.88rem;color:var(--muted);
+}
+.kbd-foot kbd{font-family:var(--mono);font-size:.7rem;padding:1px 5px;background:var(--paper-2);border:1px solid var(--line);border-radius:3px;margin:0 1px}
+.kbd-foot code{font-family:var(--mono);font-size:.78rem;background:var(--paper-2);padding:1px 5px;border-radius:3px}
+
 /* Walk-controls — stack on narrow, hide kbd hints on coarse pointers */
 @media (max-width:720px){
   .walk-controls{

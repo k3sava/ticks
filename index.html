@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-<title>Ticks — moments that unlocked everything next</title>
+<title>Ticks · moments that unlocked everything next</title>
 <meta name="description" content="2,648 moments in history when a constraint dissolved and everything downstream became possible. Walk the chain forward, or backward from a thing you already know." />
 <meta name="author" content="Kesava Mandiga" />
 <meta name="robots" content="index,follow,max-image-preview:large" />
@@ -13,21 +13,22 @@
 
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Ticks" />
-<meta property="og:title" content="Ticks — moments that unlocked everything next" />
+<meta property="og:title" content="Ticks · moments that unlocked everything next" />
 <meta property="og:description" content="2,648 moments in history when a constraint dissolved. Walk the chain forward, or backward from a thing you already know." />
 <meta property="og:url" content="https://k3sava.github.io/ticks/" />
 <meta property="og:locale" content="en_US" />
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Ticks — moments that unlocked everything next" />
+<meta name="twitter:title" content="Ticks · moments that unlocked everything next" />
 <meta name="twitter:description" content="2,648 moments in history when a constraint dissolved. Walk the chain forward, or backward from a thing you already know." />
 
-<link rel="alternate" type="application/json" href="data.json" title="Ticks — full corpus (JSON)" />
+<link rel="alternate" type="application/json" href="data.json" title="Ticks · full corpus (JSON)" />
+<link rel="alternate" type="application/json" href="search-index.json" title="Ticks · search index" />
 <link rel="preload" href="data.json" as="fetch" crossorigin="anonymous" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="style.css?v=5" />
+<link rel="stylesheet" href="style.css?v=6" />
 
 <script type="application/ld+json">
 {
@@ -46,7 +47,7 @@
     {
       "@type": "Dataset",
       "@id": "https://k3sava.github.io/ticks/#dataset",
-      "name": "Ticks — a curated corpus of constraint-dissolving moments",
+      "name": "Ticks · a curated corpus of constraint-dissolving moments",
       "description": "2,648 moments across 14 domains and 13 eras of human history, each tagged with the constraint it dissolved and the chain of downstream effects.",
       "url": "https://k3sava.github.io/ticks/",
       "keywords": "history, breakthroughs, science, technology, society, chain of influence, constraints",
@@ -68,6 +69,7 @@
 </script>
 </head>
 <body>
+  <a class="skip-link" href="#app">Skip to content</a>
   <header id="hdr">
     <a class="brand" href="#/" aria-label="Ticks home">
       <span class="brand-mark"></span>
@@ -109,7 +111,48 @@
     <button id="randomBtnMobile" type="button">surprise me</button>
   </nav>
 
-  <main id="app" aria-live="polite"></main>
+  <main id="app" tabindex="-1" aria-live="polite"></main>
+  <div id="shareMenu" role="menu" aria-label="Share this tick" hidden>
+    <button class="share-opt" role="menuitem" data-act="native" hidden>
+      <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 1v9M5 4l3-3 3 3M3 9v4a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V9"/></svg>
+      share via…
+    </button>
+    <button class="share-opt" role="menuitem" data-act="copy">
+      <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="5" width="9" height="9" rx="1.5"/><path d="M3 11V3a1 1 0 0 1 1-1h7"/></svg>
+      copy link
+    </button>
+    <button class="share-opt" role="menuitem" data-act="x">
+      <svg viewBox="0 0 16 16" width="12" height="12" fill="currentColor"><path d="M9.4 6.7 14.5 1h-1.3L8.8 6 5.4 1H1l5.4 7.7L1 15h1.3l4.7-5.4L10.6 15H15M2.7 1.9h1.9l9 12.3h-2"/></svg>
+      post on X
+    </button>
+    <button class="share-opt" role="menuitem" data-act="linkedin">
+      <svg viewBox="0 0 16 16" width="13" height="13" fill="currentColor"><path d="M3 6h2v8H3V6Zm1-3.4a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4ZM7 6h1.9v1.1A2.1 2.1 0 0 1 10.8 6c2 0 2.4 1.3 2.4 3v5h-2v-4.5c0-1-.4-1.6-1.3-1.6-1 0-1.4.7-1.4 1.6V14H7V6Z"/></svg>
+      share on LinkedIn
+    </button>
+    <button class="share-opt" role="menuitem" data-act="email">
+      <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3.5" width="12" height="9" rx="1"/><path d="m2.5 4.5 5.5 4 5.5-4"/></svg>
+      send by email
+    </button>
+  </div>
+  <div id="kbdHelp" role="dialog" aria-modal="true" aria-label="Keyboard shortcuts" hidden>
+    <div class="kbd-card">
+      <div class="kbd-head"><span>Keyboard shortcuts</span><button class="kbd-close" aria-label="Close">esc</button></div>
+      <dl class="kbd-list">
+        <dt><kbd>g</kbd> <kbd>h</kbd></dt><dd>home</dd>
+        <dt><kbd>g</kbd> <kbd>w</kbd></dt><dd>walk</dd>
+        <dt><kbd>g</kbd> <kbd>m</kbd></dt><dd>map</dd>
+        <dt><kbd>g</kbd> <kbd>n</kbd></dt><dd>hunt</dd>
+        <dt><kbd>g</kbd> <kbd>b</kbd></dt><dd>browse</dd>
+        <dt><kbd>g</kbd> <kbd>a</kbd></dt><dd>about</dd>
+        <dt><kbd>r</kbd></dt><dd>random tick</dd>
+        <dt><kbd>s</kbd></dt><dd>share current tick</dd>
+        <dt><kbd>/</kbd></dt><dd>focus search (on hunt or browse)</dd>
+        <dt><kbd>?</kbd></dt><dd>this dialog</dd>
+        <dt><kbd>esc</kbd></dt><dd>close dialog or menu</dd>
+      </dl>
+      <p class="kbd-foot">On <code>walk</code>: <kbd>←</kbd> <kbd>→</kbd> traverse, <kbd>↑</kbd> jumps to ancestry.</p>
+    </div>
+  </div>
 
   <footer>
     <span class="ftr-name">ticks</span>
@@ -121,6 +164,6 @@
     <span>MIT</span>
   </footer>
 
-  <script src="app.js?v=5" type="module"></script>
+  <script src="app.js?v=6" type="module"></script>
 </body>
 </html>
