@@ -206,6 +206,38 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
   font-family:var(--mono);font-size:.7rem;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;
   position:relative;padding-bottom:10px;
 }
+
+/* Walk ancestry trail: three quietest of the chain that produced this tick.
+   Reads top-to-bottom, oldest first. Tap to walk to that ancestor. */
+.walk-trail{
+  display:flex;flex-direction:column;align-items:center;gap:6px;
+  max-width:1100px;margin:14px auto 0;width:100%;
+  font-family:var(--mono);
+}
+.walk-trail-step{
+  display:flex;flex-direction:column;align-items:center;gap:1px;
+  text-decoration:none;color:var(--muted);
+  padding:4px 10px;border-radius:8px;
+  transition:color .18s,background .18s,opacity .18s;
+  opacity:.62;
+  max-width:min(560px,92vw);
+}
+.walk-trail-step .yr{font-size:.62rem;letter-spacing:.06em;color:var(--faint);font-variant-numeric:tabular-nums}
+.walk-trail-step .nm{font-family:var(--serif);font-style:italic;font-size:.92rem;color:var(--ink-2);text-align:center;line-height:1.25;letter-spacing:0}
+.walk-trail-step:hover{
+  opacity:1;color:var(--accent);
+  background:color-mix(in oklab,var(--dc,var(--accent)) 6%,transparent);
+}
+.walk-trail-step:hover .nm{color:var(--accent)}
+.walk-trail-link{
+  color:var(--faint);font-size:.7rem;line-height:1;
+  opacity:.55;
+}
+.walk-trail-here{color:var(--ink-2);opacity:.85}
+
+@media (max-width:560px){
+  .walk-trail-step .nm{font-size:.86rem}
+}
 .walk-meta .zone-name{color:var(--ink-2)}
 .walk-meta .pos{font-variant-numeric:tabular-nums}
 /* hairline progress bar across the walk position */
@@ -324,15 +356,21 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 .hunt-step-name:hover{color:var(--accent)}
 .hunt-step-before{font-family:var(--serif);font-style:italic;color:var(--ink-2);font-size:.95rem}
 .hunt-step-meta{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+/* Hunt step bridge: instead of an empty "required ↓" arrow, name the
+   constraint that the next step dissolves. The chain teaches itself. */
 .hunt-arrow{
-  color:var(--faint);font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;
-  display:flex;align-items:center;gap:10px;padding-left:138px;margin:-4px 0 -4px 0;
+  display:flex;align-items:flex-start;gap:14px;
+  padding-left:138px;margin:-2px 0 -2px;
+  font-family:var(--serif);font-style:italic;color:var(--ink-2);
+  font-size:.92rem;line-height:1.4;
 }
 .hunt-arrow::before{
-  content:"";width:1px;height:24px;
-  background:linear-gradient(180deg,transparent,var(--line-2) 30%,var(--line-2) 70%,transparent);
+  content:"";flex:none;width:1px;height:36px;margin-top:4px;
+  background:linear-gradient(180deg,transparent,var(--line-2) 22%,var(--line-2) 78%,transparent);
   display:inline-block;
 }
+.hunt-arrow-rule{max-width:46ch;color:var(--ink-2)}
+.hunt-arrow-rule em{color:var(--accent);font-style:italic}
 .hunt-empty{font-family:var(--serif);font-style:italic;color:var(--muted);padding:32px 0}
 
 @media (max-width:560px){

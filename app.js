@@ -183,6 +183,51 @@ function pickHero(){
   return best;
 }
 
+/* ========== chain helpers ========== */
+// Pick up to N ancestors using the same scoring as hunt: foundational
+// (high downstream count), illuminating (different domain), with a
+// reasonable temporal gap (favor decades over millennia).
+function pickAncestors(id, n){
+  const out = [];
+  const seen = new Set([id]);
+  let cur = id;
+  while (out.length < n){
+    const t = TICK_BY_ID[cur];
+    if (!t) break;
+    const parents = (UNLOCKED_BY[cur] || [])
+      .filter(p => !seen.has(p))
+      .map(p => TICK_BY_ID[p]).filter(Boolean)
+      .map(p => {
+        const dt = (t.yearN ?? 0) - (p.yearN ?? 0);
+        if (dt <= 0) return null;
+        let score = 0;
+        score += (UNLOCKS[p.id]?.length || 0) * 2;
+        if (p.domain !== t.domain) score += 3;
+        score += Math.min(Math.log10(Math.max(1, dt)), 4);
+        return { p, score };
+      })
+      .filter(Boolean)
+      .sort((a, b) => b.score - a.score);
+    if (!parents.length) break;
+    const next = parents[0].p;
+    out.unshift(next);                      // oldest first when read top-to-bottom
+    seen.add(next.id);
+    cur = next.id;
+  }
+  return out;
+}
+// How many additional ticks are reachable in two hops minus the depth-1 set.
+function countDepth2(id){
+  const d1 = new Set(UNLOCKS[id] || []);
+  const d2 = new Set();
+  for (const k of d1){
+    for (const kk of (UNLOCKS[k] || [])){
+      if (kk !== id && !d1.has(kk)) d2.add(kk);
+    }
+  }
+  return d2.size;
+}
+
 /* ========== walk ========== */
 let walkIdx = 0;
 function walk(id){
@@ -196,6 +241,8 @@ function renderWalk(){
   if (!t){ app.innerHTML = '<p style="padding:48px">No tick.</p>'; return; }
   const zone = ZONES.find(z => z.id === t.zone);
   const flow = (UNLOCKS[t.id] || []).map(id => TICK_BY_ID[id]).filter(Boolean);
+  const ancestors = pickAncestors(t.id, 3);
+  const flowDepth2 = countDepth2(t.id);
 
   app.innerHTML = `
     <section class='walk' style='${domStyle(t.domain)}'>
@@ -204,6 +251,15 @@ function renderWalk(){
         <span class='pos'>${walkIdx+1} / ${TICKS_SORTED.length}</span>
         <div class='walk-progress' style='width:${((walkIdx+1)/TICKS_SORTED.length*100).toFixed(2)}%'></div>
       </div>
+      ${ancestors.length ? `
+      <nav class='walk-trail' aria-label='What had to dissolve before this'>
+        ${ancestors.map(a => `
+          <a class='walk-trail-step' href='#/walk/${a.id}' style='${domStyle(a.domain)}'>
+            <span class='yr'>${escapeHtml(a.year)}</span>
+            <span class='nm'>${escapeHtml(a.name)}</span>
+          </a>`).join('<span class="walk-trail-link" aria-hidden="true">↓</span>')}
+        <span class='walk-trail-link walk-trail-here' aria-hidden="true">↓</span>
+      </nav>` : ''}
       <div class='walk-stage'>
         <div class='dom walk-domain' style='${domStyle(t.domain)}'>${t.domain}</div>
         <div class='walk-year'>${escapeHtml(t.year)}</div>
@@ -224,7 +280,7 @@ function renderWalk(){
       </div>
 
       <div class='walk-flow'>
-        <div class='walk-flow-head'>${flow.length ? `everything that flowed from this (${flow.length})` : 'no recorded downstream. a quiet tick.'}</div>
+        <div class='walk-flow-head'>${flow.length ? `everything that flowed from this (${flow.length}${flowDepth2 ? `, ${flowDepth2.toLocaleString()} more two steps out` : ''})` : 'no recorded downstream. a quiet tick.'}</div>
         ${flow.length ? flow.map(f => `
           <a class='walk-flow-card' href='#/walk/${f.id}' style='${domStyle(f.domain)}'>
             <span class='yr'>${escapeHtml(f.year)}</span>
@@ -286,7 +342,10 @@ function hunt(id){
         <p>Walking backward through the constraints that had to dissolve first. Each step required the one above.</p>
       </div>
       <div class='hunt-chain'>
-        ${chain.length === 0 ? '<div class="hunt-empty">No recorded ancestors. Pick another below.</div>' : chain.map((t, i) => `
+        ${chain.length === 0 ? '<div class="hunt-empty">No recorded ancestors. Pick another below.</div>' : chain.map((t, i) => {
+          const next = chain[i+1];
+          const bridge = next ? `before <em>${escapeHtml(next.name.toLowerCase())}</em>, ${escapeHtml(next.constraint.toLowerCase())}.` : '';
+          return `
           <div class='hunt-step' style='${domStyle(t.domain)}'>
             <div class='hunt-step-yr'>${escapeHtml(t.year)}</div>
             <div class='hunt-step-body'>
@@ -295,8 +354,8 @@ function hunt(id){
               <div class='hunt-step-meta'><span class='dom' style='${domStyle(t.domain)}'>${t.domain}</span></div>
             </div>
           </div>
-          ${i < chain.length-1 ? `<div class='hunt-arrow'>required ↓</div>` : ''}
-        `).join('')}
+          ${next ? `<div class='hunt-arrow'><span class='hunt-arrow-rule'>${bridge}</span></div>` : ''}
+        `;}).join('')}
       </div>
       <div class='hunt-suggest' style='margin-top:64px'>
         <div class='hunt-suggest-head'>try another</div>
