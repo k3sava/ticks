@@ -13,34 +13,34 @@ DRAFTS = ROOT/'.audit-cache'/'drafts'
 DRAFTS.mkdir(parents=True, exist_ok=True)
 ASK_FLASH = Path.home()/'bin'/'ask-flash'
 
-PROMPT = """You are drafting a "tick" for a database of constraint-dissolving moments in history.
+PROMPT_TMPL = """You are drafting a "tick" for a database of constraint-dissolving moments in history.
 
 A tick captures the moment a constraint dissolved — before it, X was impossible; after it, a flood of new things became possible.
 
 Below is a candidate: a name, a year, the constraint dissolved (rough draft), and a Wikipedia extract that you should treat as ground truth.
 
-Your job: produce the final structured tick. Use ONLY facts present in the Wikipedia extract. If the extract contradicts the proposed year, use the year the extract supports. If the extract is too thin to write a confident tick, return {"reject": "reason"}.
+Your job: produce the final structured tick. Use ONLY facts present in the Wikipedia extract. If the extract contradicts the proposed year, use the year the extract supports. If the extract is too thin to write a confident tick, return {{"reject": "reason"}}.
 
 Output ONLY a JSON object:
-{
+{{
   "id": "kebab-case-slug-derived-from-name",
   "year": "1769 AD" or "350 BC" formatted exactly,
   "yearN": -350 (signed integer; negative for BC),
   "name": "Polished tick name (≤9 words). No 'first' if redundant; lead with the entity.",
-  "domain": "{domain}",
+  "domain": "__DOMAIN__",
   "constraint": "lowercase one-line description of what was impossible/limited before. Plain English.",
   "detail": "2-4 sentences. The first sentence states what happened. The second states what it dissolved or unlocked. Optional third gives a vivid concrete consequence. No throat-clearing. No 'this was a turning point' filler.",
-  "wiki_url": "{wiki_url}"
-}
+  "wiki_url": "__WIKI_URL__"
+}}
 
 Tick:
-NAME: {name}
-PROPOSED YEAR: {year}
-CONSTRAINT (rough): {constraint_dissolved}
-WIKI TITLE: {wiki_title}
+NAME: __NAME__
+PROPOSED YEAR: __YEAR__
+CONSTRAINT (rough): __CONSTRAINT__
+WIKI TITLE: __WIKI_TITLE__
 
 WIKIPEDIA EXTRACT:
-{wiki_extract}
+__EXTRACT__
 """
 
 def call_flash(prompt, temp=0.2, tokens=900):
@@ -68,13 +68,14 @@ def parse_json_object(text):
     return None
 
 def draft_one(item, dom):
-    prompt = PROMPT.format(
-        domain=dom,
-        name=item['name'], year=item['year'],
-        wiki_url=item['wiki_url'],
-        wiki_title=item.get('wiki_title',''),
-        constraint_dissolved=item.get('constraint_dissolved',''),
-        wiki_extract=item['wiki_extract'][:4000],
+    prompt = (PROMPT_TMPL
+        .replace('__DOMAIN__', dom)
+        .replace('__NAME__', item.get('name',''))
+        .replace('__YEAR__', str(item.get('year','')))
+        .replace('__WIKI_URL__', item.get('wiki_url',''))
+        .replace('__WIKI_TITLE__', item.get('wiki_title','') or '')
+        .replace('__CONSTRAINT__', item.get('constraint_dissolved','') or '')
+        .replace('__EXTRACT__', (item.get('wiki_extract','') or '')[:2500])
     )
     out = call_flash(prompt)
     obj = parse_json_object(out)
@@ -100,7 +101,7 @@ def main():
             continue
         results = list(prior)
         t0 = time.time()
-        with ThreadPoolExecutor(max_workers=4) as ex:
+        with ThreadPoolExecutor(max_workers=12) as ex:
             futs = {ex.submit(draft_one, item, dom): item for item in todo}
             done = 0
             for fut in as_completed(futs):

@@ -153,6 +153,7 @@ function renderWalk(){
       <div class='walk-meta'>
         <span class='zone-name'>${escapeHtml(zone?.name || t.zone)}</span>
         <span class='pos'>${walkIdx+1} / ${TICKS_SORTED.length}</span>
+        <div class='walk-progress' style='width:${((walkIdx+1)/TICKS_SORTED.length*100).toFixed(2)}%'></div>
       </div>
       <div class='walk-stage'>
         <div class='dom walk-domain' style='${domStyle(t.domain)}'>${t.domain}</div>

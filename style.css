@@ -102,6 +102,14 @@ img,svg{display:block;max-width:100%}
   width:10px;height:10px;border-radius:50%;
   background:var(--accent);
   box-shadow:0 0 0 3px color-mix(in oklab,var(--accent) 18%,transparent);
+  animation:brand-breathe 4.2s var(--ease-quick) infinite;
+}
+@keyframes brand-breathe{
+  0%,100%{box-shadow:0 0 0 3px color-mix(in oklab,var(--accent) 18%,transparent)}
+  50%{box-shadow:0 0 0 5px color-mix(in oklab,var(--accent) 10%,transparent)}
+}
+@media (prefers-reduced-motion:reduce){
+  .brand-mark{animation:none}
 }
 .brand-name{font-style:italic}
 #nav{display:flex;align-items:center;gap:2px}
@@ -196,9 +204,20 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 .walk-meta{
   display:flex;align-items:center;justify-content:space-between;gap:16px;
   font-family:var(--mono);font-size:.7rem;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;
+  position:relative;padding-bottom:10px;
 }
 .walk-meta .zone-name{color:var(--ink-2)}
 .walk-meta .pos{font-variant-numeric:tabular-nums}
+/* hairline progress bar across the walk position */
+.walk-meta::after{
+  content:"";position:absolute;left:0;right:0;bottom:0;height:1px;
+  background:var(--line);
+}
+.walk-progress{
+  position:absolute;left:0;bottom:0;height:1px;
+  background:var(--accent);
+  transition:width .6s var(--ease-stage);
+}
 .walk-stage{
   display:flex;flex-direction:column;justify-content:center;align-items:flex-start;
   max-width:1100px;margin:0 auto;width:100%;padding:32px 0;gap:24px;
