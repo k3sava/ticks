@@ -183,6 +183,26 @@ function pickHero(){
   return best;
 }
 
+/* ========== editorial constants ========== */
+// One sentence per era: what was true before it began. Curated, not
+// generated. Each line reads like a marginalia ribbon under the map
+// or a chapter title in browse.
+const ERA_RULES = {
+  'deep-prehistory':    "human intelligence had no record outside of bone, stone, and instinct.",
+  'cognitive-leap':     "communication couldn't outrun what was in the room.",
+  'settled-world':      "every calorie required a hunt or a forage.",
+  'first-civilizations':"no surplus survived a season.",
+  'axial-age':          "the gods were local. so was justice.",
+  'classical-empires':  "law ended where the legion did.",
+  'post-classical':     "the world fit on as much paper as a scribe could copy.",
+  'early-modern':       "the printing press, joint stock, and ocean ship hadn't compounded yet.",
+  'industrial':         "muscle and water still moved everything.",
+  'electric-age':       "darkness and silence ended where the wire did.",
+  'space-digital':      "computation was rare and bounded.",
+  'network-age':        "publishing required a publisher.",
+  'ai-era':             "thinking needed a thinker.",
+};
+
 /* ========== chain helpers ========== */
 // Pick up to N ancestors using the same scoring as hunt: foundational
 // (high downstream count), illuminating (different domain), with a
@@ -515,7 +535,10 @@ function map(){
         <div class='map-eras' id='mapEras'></div>
         <div class='map-tooltip' id='mapTip'></div>
       </div>
-      <p style='font-family:var(--mono);font-size:.7rem;color:var(--muted);margin-top:14px'>Click any dot to open the tick. Hover for details.</p>
+      <p class='map-marginalia' id='mapMarginalia' role='status' aria-live='polite'>
+        <span class='map-marginalia-hint'>Hover a column. Each era named what was true before it began.</span>
+      </p>
+      <p class='map-help'>Click any dot to open the tick. Hover for details.</p>
     </section>
   `;
   document.querySelectorAll('.map-domains button').forEach(b => b.onclick = () => {
@@ -626,7 +649,22 @@ function drawMap(){
 
   // Hover + click
   const tip = document.getElementById('mapTip');
+  const marginalia = document.getElementById('mapMarginalia');
   let last = null;
+  let lastZoneIdx = -1;
+  const setMarginalia = (i) => {
+    if (i === lastZoneIdx) return;
+    lastZoneIdx = i;
+    if (i < 0 || !marginalia) return;
+    const z = ZONES[i];
+    if (!z) return;
+    const rule = ERA_RULES[z.id];
+    const yrFrom = z.from < 0 ? Math.abs(z.from).toLocaleString()+' BC' : z.from+' AD';
+    const yrTo = z.to < 0 ? Math.abs(z.to).toLocaleString()+' BC' : z.to+' AD';
+    marginalia.innerHTML = rule
+      ? `<span class='map-marginalia-era'>${escapeHtml(z.name)}</span><span class='map-marginalia-rng'>${yrFrom} – ${yrTo}</span><span class='map-marginalia-rule'>before this, ${escapeHtml(rule)}</span>`
+      : `<span class='map-marginalia-era'>${escapeHtml(z.name)}</span><span class='map-marginalia-rng'>${yrFrom} – ${yrTo}</span>`;
+  };
   canvas.onmousemove = (e) => {
     const rect = canvas.getBoundingClientRect();
     const mx = e.clientX - rect.left, my = e.clientY - rect.top;
@@ -634,6 +672,11 @@ function drawMap(){
     for (let i = dots.length-1; i >= 0; i--){
       const d = dots[i];
       if (Math.hypot(d.x-mx, d.y-my) <= d.r){ hit = d; break; }
+    }
+    // Marginalia: figure out which era column the cursor is over.
+    if (mx >= padL && mx <= W - padR){
+      const zi = Math.min(ZONES.length - 1, Math.max(0, Math.floor((mx - padL) / zoneW)));
+      setMarginalia(zi);
     }
     if (hit){
       tip.classList.add('show');
@@ -709,7 +752,7 @@ function drawMap(){
 }
 
 /* ========== browse ========== */
-const BROWSE_STATE = { q: '' };
+const BROWSE_STATE = { q: '', collapsed: new Set() };
 function browse(){
   const q = BROWSE_STATE.q.toLowerCase();
   const filtered = q ? TICKS.filter(t => t.name.toLowerCase().includes(q) || t.constraint.toLowerCase().includes(q) || (t.detail||'').toLowerCase().includes(q)) : TICKS;
@@ -717,6 +760,8 @@ function browse(){
   filtered.forEach(t => { (byZone[t.zone] = byZone[t.zone] || []).push(t); });
   ZONES.forEach(z => { if (byZone[z.id]) byZone[z.id].sort((a,b) => (a.yearN||0)-(b.yearN||0)); });
 
+  // While searching, force-expand all eras so hits are visible.
+  const allCollapsed = !q && BROWSE_STATE.collapsed.size === ZONES.filter(z => byZone[z.id]).length;
   app.innerHTML = `
     <section class='browse-page'>
       <div class='browse-head'>
@@ -728,35 +773,62 @@ function browse(){
           <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="7" r="5"/><path d="m11 11 3 3"/></svg>
           <input id='brQ' type='search' value='${escapeHtml(BROWSE_STATE.q)}' placeholder='search ticks…' />
         </div>
-        <div class='browse-meta'>${filtered.length.toLocaleString()} of ${TICKS.length.toLocaleString()}</div>
+        <div class='browse-meta'>
+          <span>${filtered.length.toLocaleString()} of ${TICKS.length.toLocaleString()}</span>
+          <button class='browse-toggle' id='brToggle' type='button'>${allCollapsed ? 'expand all' : 'collapse all'}</button>
+        </div>
       </div>
       ${ZONES.map(z => {
         const items = byZone[z.id];
         if (!items?.length) return '';
         const range = z.from < 0 ? `${Math.abs(z.from).toLocaleString()} BC` : `${z.from} AD`;
         const rangeTo = z.to < 0 ? `${Math.abs(z.to).toLocaleString()} BC` : `${z.to} AD`;
+        const collapsed = !q && BROWSE_STATE.collapsed.has(z.id);
+        const rule = ERA_RULES[z.id] || '';
         return `
-          <section class='browse-zone'>
-            <header class='browse-zone-head'>
+          <section class='browse-zone${collapsed ? ' is-collapsed' : ''}' data-zone='${z.id}'>
+            <header class='browse-zone-head' role='button' tabindex='0' aria-expanded='${!collapsed}'>
+              <span class='browse-chev' aria-hidden='true'>${collapsed ? '▸' : '▾'}</span>
               <h2>${escapeHtml(z.name)}</h2>
               <span class='range'>${range} → ${rangeTo}</span>
+              ${rule ? `<span class='rule'>before this, ${escapeHtml(rule)}</span>` : ''}
               <span class='ct'>${items.length}</span>
             </header>
-            ${items.map(t => `
-              <a class='browse-row' href='#/walk/${t.id}' style='${domStyle(t.domain)}'>
-                <span class='yr'>${escapeHtml(t.year)}</span>
-                <div class='body'>
-                  <span class='nm'>${escapeHtml(t.name)}</span>
-                  <span class='be'>before this, ${escapeHtml(t.constraint.toLowerCase())}.</span>
-                </div>
-                <span class='dom' style='${domStyle(t.domain)}'>${t.domain}</span>
-              </a>`).join('')}
+            <div class='browse-zone-body'>
+              ${items.map(t => `
+                <a class='browse-row' href='#/walk/${t.id}' style='${domStyle(t.domain)}'>
+                  <span class='yr'>${escapeHtml(t.year)}</span>
+                  <div class='body'>
+                    <span class='nm'>${escapeHtml(t.name)}</span>
+                    <span class='be'>before this, ${escapeHtml(t.constraint.toLowerCase())}.</span>
+                  </div>
+                  <span class='dom' style='${domStyle(t.domain)}'>${t.domain}</span>
+                </a>`).join('')}
+            </div>
           </section>`;
       }).join('')}
     </section>
   `;
   const qEl = document.getElementById('brQ');
   qEl.addEventListener('input', (e) => { BROWSE_STATE.q = e.target.value; clearTimeout(window._brT); window._brT = setTimeout(browse, 120); });
+  // Era headers: click or Enter/Space to collapse/expand
+  app.querySelectorAll('.browse-zone-head').forEach(h => {
+    const z = h.parentElement.dataset.zone;
+    const flip = () => {
+      if (BROWSE_STATE.q) return; // no collapsing while searching
+      if (BROWSE_STATE.collapsed.has(z)) BROWSE_STATE.collapsed.delete(z);
+      else BROWSE_STATE.collapsed.add(z);
+      browse();
+    };
+    h.addEventListener('click', flip);
+    h.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' '){ e.preventDefault(); flip(); } });
+  });
+  document.getElementById('brToggle').onclick = () => {
+    if (BROWSE_STATE.q) return;
+    if (allCollapsed) BROWSE_STATE.collapsed.clear();
+    else ZONES.forEach(z => BROWSE_STATE.collapsed.add(z.id));
+    browse();
+  };
 }
 
 /* ========== about ========== */

@@ -444,6 +444,26 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 }
 .map-y-label:last-child{border-bottom:none}
 
+/* Marginalia ribbon below the canvas. Names what was true before the
+   currently-hovered era began. Editorial, not a tooltip. */
+.map-marginalia{
+  margin:14px 0 6px;padding:10px 14px;
+  border-left:2px solid var(--accent);
+  background:color-mix(in oklab,var(--accent) 5%,transparent);
+  font-family:var(--serif);font-size:1rem;color:var(--ink-2);
+  display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;
+  min-height:42px;
+  transition:background .2s var(--ease-quick);
+}
+.map-marginalia-hint{font-style:italic;color:var(--muted);font-size:.92rem}
+.map-marginalia-era{
+  font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;
+  color:var(--ink-2);
+}
+.map-marginalia-rng{font-family:var(--mono);font-size:.68rem;color:var(--faint);font-variant-numeric:tabular-nums}
+.map-marginalia-rule{font-style:italic;color:var(--ink-2);font-size:1rem;line-height:1.4;flex:1 1 320px;min-width:0}
+.map-help{font-family:var(--mono);font-size:.7rem;color:var(--muted);margin-top:8px}
+
 /* ========== BROWSE ========== */
 .browse-page{padding-top:8px}
 .browse-head{margin-bottom:24px}
@@ -463,12 +483,40 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 
 .browse-zone{margin-bottom:48px}
 .browse-zone-head{
-  display:flex;align-items:baseline;gap:14px;margin-bottom:16px;padding-bottom:10px;
+  display:grid;grid-template-columns:auto auto auto 1fr auto;
+  align-items:baseline;gap:14px;margin-bottom:16px;padding:10px 0;
   border-bottom:1px solid var(--line);
+  cursor:pointer;border-radius:6px;
 }
+.browse-zone-head:hover{background:color-mix(in oklab,var(--accent) 4%,transparent)}
+.browse-zone-head:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.browse-zone-head .browse-chev{
+  font-family:var(--mono);font-size:.8rem;color:var(--muted);width:14px;display:inline-block;text-align:center;
+  transition:color .15s;
+}
+.browse-zone-head:hover .browse-chev{color:var(--accent)}
 .browse-zone-head h2{font-family:var(--serif);font-weight:500;font-size:1.6rem;letter-spacing:-.01em}
 .browse-zone-head .range{font-family:var(--mono);font-size:.72rem;color:var(--muted)}
-.browse-zone-head .ct{font-family:var(--mono);font-size:.72rem;color:var(--muted);margin-left:auto}
+.browse-zone-head .rule{
+  font-family:var(--serif);font-style:italic;color:var(--ink-2);
+  font-size:.96rem;line-height:1.35;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0;
+}
+.browse-zone-head .ct{font-family:var(--mono);font-size:.72rem;color:var(--muted)}
+.browse-zone.is-collapsed .browse-zone-body{display:none}
+
+.browse-toolbar .browse-meta{display:flex;align-items:center;gap:14px}
+.browse-toggle{
+  font-family:var(--mono);font-size:.7rem;color:var(--ink-2);
+  padding:6px 12px;border:1px solid var(--line-2);border-radius:999px;
+  cursor:pointer;background:transparent;transition:border-color .15s,color .15s;
+}
+.browse-toggle:hover{border-color:var(--accent);color:var(--accent)}
+
+@media (max-width:760px){
+  .browse-zone-head{grid-template-columns:auto auto 1fr auto;gap:10px}
+  .browse-zone-head .rule{display:none}
+}
 
 .browse-row{
   display:grid;grid-template-columns:90px 1fr auto;gap:18px;
