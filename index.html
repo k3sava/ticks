@@ -4,16 +4,68 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
 <title>Ticks — moments that unlocked everything next</title>
-<meta name="description" content="1,061 moments in history when a constraint dissolved and everything downstream became possible. Walk the chain forward or backward." />
+<meta name="description" content="2,648 moments in history when a constraint dissolved and everything downstream became possible. Walk the chain forward, or backward from a thing you already know." />
+<meta name="author" content="Kesava Mandiga" />
+<meta name="robots" content="index,follow,max-image-preview:large" />
 <meta name="theme-color" content="#FAFAF9" media="(prefers-color-scheme: light)" />
 <meta name="theme-color" content="#0C0A09" media="(prefers-color-scheme: dark)" />
-<meta property="og:title" content="Ticks" />
-<meta property="og:description" content="1,061 moments. Each one dissolved a constraint. Each one made the next one possible." />
+<link rel="canonical" href="https://k3sava.github.io/ticks/" />
+
 <meta property="og:type" content="website" />
+<meta property="og:site_name" content="Ticks" />
+<meta property="og:title" content="Ticks — moments that unlocked everything next" />
+<meta property="og:description" content="2,648 moments in history when a constraint dissolved. Walk the chain forward, or backward from a thing you already know." />
+<meta property="og:url" content="https://k3sava.github.io/ticks/" />
+<meta property="og:locale" content="en_US" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Ticks — moments that unlocked everything next" />
+<meta name="twitter:description" content="2,648 moments in history when a constraint dissolved. Walk the chain forward, or backward from a thing you already know." />
+
+<link rel="alternate" type="application/json" href="data.json" title="Ticks — full corpus (JSON)" />
+<link rel="preload" href="data.json" as="fetch" crossorigin="anonymous" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="style.css?v=4" />
+<link rel="stylesheet" href="style.css?v=5" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://k3sava.github.io/ticks/#website",
+      "url": "https://k3sava.github.io/ticks/",
+      "name": "Ticks",
+      "description": "2,648 moments in history when a constraint dissolved and everything downstream became possible.",
+      "inLanguage": "en",
+      "license": "https://opensource.org/licenses/MIT",
+      "author": { "@type": "Person", "name": "Kesava Mandiga", "url": "https://github.com/k3sava" }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://k3sava.github.io/ticks/#dataset",
+      "name": "Ticks — a curated corpus of constraint-dissolving moments",
+      "description": "2,648 moments across 14 domains and 13 eras of human history, each tagged with the constraint it dissolved and the chain of downstream effects.",
+      "url": "https://k3sava.github.io/ticks/",
+      "keywords": "history, breakthroughs, science, technology, society, chain of influence, constraints",
+      "license": "https://opensource.org/licenses/MIT",
+      "isAccessibleForFree": true,
+      "creator": { "@type": "Person", "name": "Kesava Mandiga", "url": "https://github.com/k3sava" },
+      "distribution": {
+        "@type": "DataDownload",
+        "encodingFormat": "application/json",
+        "contentUrl": "https://k3sava.github.io/ticks/data.json"
+      }
+    }
+  ]
+}
+</script>
+<script>
+// Apply theme override before paint to avoid flash
+(function(){try{var t=localStorage.getItem('ticks-theme');if(t==='dark'||t==='light')document.documentElement.dataset.theme=t;}catch(e){}})();
+</script>
 </head>
 <body>
   <header id="hdr">
@@ -62,13 +114,13 @@
   <footer>
     <span class="ftr-name">ticks</span>
     <span class="ftr-sep">·</span>
-    <span id="ftrCount">1,061 moments</span>
+    <span id="ftrCount">2,648 moments</span>
     <span class="ftr-sep">·</span>
     <a href="https://github.com/k3sava/ticks" target="_blank" rel="noopener">GitHub</a>
     <span class="ftr-sep">·</span>
     <span>MIT</span>
   </footer>
 
-  <script src="app.js?v=4" type="module"></script>
+  <script src="app.js?v=5" type="module"></script>
 </body>
 </html>

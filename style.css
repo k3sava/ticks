@@ -224,8 +224,12 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 }
 .walk-year{
   font-family:var(--serif);font-style:italic;font-weight:500;
-  font-size:clamp(3rem,12vw,10rem);line-height:.92;letter-spacing:-.045em;color:var(--ink);
+  font-size:clamp(3rem,12vw,9rem);line-height:1.05;letter-spacing:-.045em;color:var(--ink);
   font-feature-settings:'lnum','tnum';
+  /* Italic Newsreader has tall ascenders; padding + line-height ≥ 1 prevents the
+     gradient mask from clipping the top of glyphs at large sizes. */
+  padding:.06em 0 .04em;
+  overflow:visible;
   background:linear-gradient(180deg, var(--ink) 0%, color-mix(in oklab,var(--ink) 70%,var(--bg)) 100%);
   -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
 }
@@ -290,7 +294,7 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 /* ========== HUNT (backward chain) ========== */
 .hunt{padding-top:8px}
 .hunt-head{margin-bottom:32px}
-.hunt-head h1{font-family:var(--serif);font-weight:500;font-size:clamp(1.8rem,4.5vw,3.2rem);line-height:1;letter-spacing:-.02em;margin-bottom:12px}
+.hunt-head h1{font-family:var(--serif);font-weight:500;font-size:clamp(1.8rem,4.5vw,3.2rem);line-height:1.08;letter-spacing:-.02em;margin-bottom:12px;padding-top:.04em}
 .hunt-head p{font-family:var(--serif);font-style:italic;color:var(--ink-2);font-size:1.1rem;max-width:none}
 
 .hunt-search{display:flex;align-items:center;gap:10px;border:1px solid var(--line-2);border-radius:14px;background:var(--paper);padding:14px 18px;margin-bottom:32px;max-width:640px}
@@ -405,7 +409,7 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 /* ========== BROWSE ========== */
 .browse-page{padding-top:8px}
 .browse-head{margin-bottom:24px}
-.browse-head h1{font-family:var(--serif);font-weight:500;font-size:clamp(1.8rem,4.5vw,3.2rem);line-height:1;letter-spacing:-.02em;margin-bottom:12px}
+.browse-head h1{font-family:var(--serif);font-weight:500;font-size:clamp(1.8rem,4.5vw,3.2rem);line-height:1.08;letter-spacing:-.02em;margin-bottom:12px;padding-top:.04em}
 .browse-head p{font-family:var(--serif);font-style:italic;color:var(--ink-2);max-width:none}
 
 .browse-toolbar{
@@ -458,7 +462,7 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 .tick-dlg-close{padding:6px 10px;border-radius:8px;color:var(--muted)}
 .tick-dlg-close:hover{background:var(--paper-2);color:var(--ink)}
 .tick-dlg-body{padding:24px 28px 28px;overflow-y:auto}
-.tick-dlg-yr{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(2rem,5vw,3.4rem);line-height:.95;color:var(--ink);margin-bottom:6px}
+.tick-dlg-yr{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(2rem,5vw,3.4rem);line-height:1.05;color:var(--ink);margin-bottom:6px;padding-top:.04em}
 .tick-dlg-name{font-family:var(--serif);font-weight:500;font-size:clamp(1.3rem,2.6vw,1.9rem);line-height:1.15;color:var(--ink);margin-bottom:14px;letter-spacing:-.01em}
 .tick-dlg-before{font-family:var(--serif);font-style:italic;color:var(--ink-2);font-size:1.05rem;margin-bottom:12px}
 .tick-dlg-detail{font-family:var(--serif);color:var(--ink-2);font-size:1rem;line-height:1.55;margin-bottom:18px}
@@ -499,8 +503,9 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 .home-thesis .eyebrow{font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-bottom:18px}
 .home-thesis h1{
   font-family:var(--serif);font-weight:500;
-  font-size:clamp(2rem,6.5vw,5rem);line-height:1.02;letter-spacing:-.025em;
+  font-size:clamp(2rem,6.5vw,5rem);line-height:1.06;letter-spacing:-.025em;
   color:var(--ink);max-width:18ch;
+  padding-top:.04em;
 }
 .home-thesis h1 em{
   font-style:italic;color:var(--accent);font-weight:500;
@@ -518,7 +523,7 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
   padding:24px 0;
 }
 .home-show-tick{display:flex;flex-direction:column;gap:14px}
-.home-show-tick .yr{font-family:var(--serif);font-style:italic;font-size:clamp(2.4rem,6vw,4.5rem);line-height:.95;color:var(--ink);font-weight:500;font-feature-settings:'lnum'}
+.home-show-tick .yr{font-family:var(--serif);font-style:italic;font-size:clamp(2.4rem,6vw,4.5rem);line-height:1.05;color:var(--ink);font-weight:500;font-feature-settings:'lnum';padding:.04em 0;overflow:visible}
 .home-show-tick .nm{font-family:var(--serif);font-weight:500;font-size:clamp(1.3rem,2.4vw,1.9rem);line-height:1.15;color:var(--ink);max-width:24ch}
 .home-show-tick .be{font-family:var(--serif);font-style:italic;color:var(--ink-2);font-size:1.05rem;max-width:42ch}
 .home-show-flow{display:flex;flex-direction:column;gap:10px;border-left:2px solid var(--line);padding-left:24px}
@@ -572,7 +577,36 @@ button:focus-visible,a:focus-visible{outline-offset:3px}
 
 /* Walk source links wrap on narrow viewports */
 .walk-links{display:flex;flex-wrap:wrap;gap:14px;row-gap:8px;margin-top:8px}
-.walk-stage > a[href*="github.com"]{display:inline-block;padding:8px 4px;min-height:44px;line-height:1.5}
+.walk-links a{
+  font-family:var(--mono);font-size:.78rem;color:var(--muted);
+  border-bottom:1px solid var(--line);padding:4px 0;
+  transition:color .15s,border-color .15s;
+}
+.walk-links a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+
+/* Walk actions (share + suggest edit) */
+.walk-actions{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-top:8px}
+.walk-action{
+  display:inline-flex;align-items:center;gap:6px;
+  font-family:var(--mono);font-size:.76rem;color:var(--faint);
+  padding:8px 0;min-height:44px;background:transparent;border:0;cursor:pointer;
+  transition:color .15s;
+}
+.walk-action:hover{color:var(--accent)}
+.walk-action svg{opacity:.8}
+
+/* Toast — copies the ab-codex idiom: bottom-center, monospace, brief, accessible */
+#toast{
+  position:fixed;left:50%;bottom:28px;transform:translate(-50%,12px);
+  background:var(--ink);color:var(--bg);
+  padding:10px 16px;border-radius:8px;
+  font-family:var(--mono);font-size:.74rem;letter-spacing:.04em;
+  box-shadow:0 12px 32px -10px color-mix(in oklab,var(--ink) 60%,transparent);
+  opacity:0;pointer-events:none;z-index:200;
+  transition:opacity .18s var(--ease-quick),transform .22s var(--ease-stage);
+}
+#toast[data-show="true"]{opacity:1;transform:translate(-50%,0)}
+#toast[data-error="true"]{background:#9A2226;color:#fff}
 
 /* Walk-controls — stack on narrow, hide kbd hints on coarse pointers */
 @media (max-width:720px){

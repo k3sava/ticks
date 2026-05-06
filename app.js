@@ -59,8 +59,52 @@ function render(){
   if (base === '/walk') app.classList.add('full-bleed');
   else if (base === '/map') app.classList.add('wide');
   handler(arg);
+  updateMeta(base, arg);
   window.scrollTo({top:0, behavior:'instant'});
   closeMobileMenu();
+}
+
+/* Per-route document.title + meta description so previews and tab titles
+   are accurate even on a hash-routed site. */
+const SITE_TITLE = 'Ticks';
+const SITE_TAGLINE = 'moments that unlocked everything next';
+function setMeta(title, description){
+  document.title = title;
+  const setAttr = (sel, attr, val) => {
+    const el = document.querySelector(sel);
+    if (el && val != null) el.setAttribute(attr, val);
+  };
+  setAttr('meta[name="description"]', 'content', description);
+  setAttr('meta[property="og:title"]', 'content', title);
+  setAttr('meta[property="og:description"]', 'content', description);
+  setAttr('meta[name="twitter:title"]', 'content', title);
+  setAttr('meta[name="twitter:description"]', 'content', description);
+  const url = location.origin + location.pathname + location.hash;
+  setAttr('meta[property="og:url"]', 'content', url);
+  setAttr('link[rel="canonical"]', 'href', url);
+}
+function updateMeta(base, arg){
+  if (!TICKS.length) return;
+  if ((base === '/walk' || base === '/hunt') && arg && TICK_BY_ID[arg]){
+    const t = TICK_BY_ID[arg];
+    const verb = base === '/walk' ? 'A tick' : 'How we got here';
+    setMeta(
+      `${t.name} (${t.year}) — ${SITE_TITLE}`,
+      `${t.year}. ${t.name}. Before this, ${t.constraint.toLowerCase().replace(/\.$/, '')}. ${verb} from ${SITE_TITLE} — ${SITE_TAGLINE}.`
+    );
+    return;
+  }
+  const titles = {
+    '/walk':   ['Walk', 'One tick at a time. Year is loud. Click anything that flowed from it to keep walking.'],
+    '/map':    ['Map', `All ${TICKS.length.toLocaleString()} ticks plotted across 13 eras. The acceleration becomes a thing you feel.`],
+    '/hunt':   ['Hunt', 'Pick anything modern. Walk backward through every constraint that had to dissolve to make it possible.'],
+    '/browse': ['Browse', `The full list of ${TICKS.length.toLocaleString()} ticks, grouped by era, with search.`],
+    '/about':  ['About', `${SITE_TITLE} is a database of ${TICKS.length.toLocaleString()} moments when a constraint dissolved. A chain, not a list.`],
+  };
+  const [name, desc] = titles[base] || [null, null];
+  if (name) setMeta(`${name} — ${SITE_TITLE}`, desc);
+  else setMeta(`${SITE_TITLE} — ${SITE_TAGLINE}`,
+    `${TICKS.length.toLocaleString()} moments in history when a constraint dissolved and everything downstream became possible. Walk the chain forward, or backward from a thing you already know.`);
 }
 
 function setActiveNav(base){
@@ -164,8 +208,14 @@ function renderWalk(){
           ${escapeHtml(t.constraint.toLowerCase())}.
         </div>
         ${t.detail ? `<div class='walk-detail'>${escapeHtml(t.detail)}</div>` : ''}
-        ${t.links?.length ? `<div class='walk-links'>${t.links.map(l => `<a href='${escapeHtml(l.url)}' target='_blank' rel='noopener' style='font-family:var(--mono);font-size:.78rem;color:var(--muted);border-bottom:1px solid var(--line);padding:4px 0'>→ ${escapeHtml(l.label)}</a>`).join('')}</div>` : ''}
-        <a class='walk-suggest' href='https://github.com/k3sava/ticks/issues/new?title=${encodeURIComponent('Edit: ' + t.name)}&body=${encodeURIComponent('Tick: ' + t.id + '\\n\\nWhat needs fixing:\\n\\nSource:')}' target='_blank' rel='noopener' style='font-family:var(--mono);font-size:.78rem;color:var(--faint);margin-top:4px;padding:8px 0;display:inline-block'>↗ suggest an edit</a>
+        ${t.links?.length ? `<div class='walk-links'>${t.links.map(l => `<a href='${escapeHtml(l.url)}' target='_blank' rel='noopener'>→ ${escapeHtml(l.label)}</a>`).join('')}</div>` : ''}
+        <div class='walk-actions'>
+          <button class='walk-action' data-act='share' aria-label='Share this tick'>
+            <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M11 5.5a2 2 0 1 0-2-2 2 2 0 0 0 2 2Zm-6 5a2 2 0 1 0-2-2 2 2 0 0 0 2 2Zm6 4a2 2 0 1 0-2-2 2 2 0 0 0 2 2Zm-1.5-9-3 2.4M9.5 13l-3-2.4"/></svg>
+            share
+          </button>
+          <a class='walk-action' href='https://github.com/k3sava/ticks/issues/new?title=${encodeURIComponent('Edit: ' + t.name)}&body=${encodeURIComponent('Tick: ' + t.id + '\\n\\nWhat needs fixing:\\n\\nSource:')}' target='_blank' rel='noopener'>↗ suggest an edit</a>
+        </div>
       </div>
 
       <div class='walk-flow'>
@@ -190,6 +240,9 @@ function renderWalk(){
   `;
   document.getElementById('wPrev').onclick = () => { walkIdx = Math.max(0, walkIdx-1); renderWalk(); };
   document.getElementById('wNext').onclick = () => { walkIdx = Math.min(TICKS_SORTED.length-1, walkIdx+1); renderWalk(); };
+  // Share button — native share where available, copy link as fallback
+  const shareBtn = app.querySelector('[data-act="share"]');
+  if (shareBtn) shareBtn.onclick = () => shareTick(t);
   // Touch swipe (left/right) on the walk stage
   const stage = document.querySelector('.walk');
   if (stage){
@@ -653,7 +706,7 @@ function about(){
       <h2>Four ways to play</h2>
       <div class='modes'>
         <a class='mode-tile' href='#/walk'><h3>walk →</h3><p>One tick at a time. Year is loud. Click anything that flowed from it to keep walking.</p></a>
-        <a class='mode-tile' href='#/map'><h3>map →</h3><p>All ${TICKS.length.toLocaleString()} plotted across 12 eras. The acceleration becomes a thing you feel.</p></a>
+        <a class='mode-tile' href='#/map'><h3>map →</h3><p>All ${TICKS.length.toLocaleString()} plotted across ${ZONES.length} eras. The acceleration becomes a thing you feel.</p></a>
         <a class='mode-tile' href='#/hunt'><h3>hunt →</h3><p>Pick something modern. Walk backward through every constraint that had to dissolve.</p></a>
         <a class='mode-tile' href='#/browse'><h3>browse →</h3><p>The full list, grouped by era, with search.</p></a>
       </div>
@@ -686,6 +739,35 @@ function bindRandom(){
   const fire = () => { const t = TICKS[Math.floor(Math.random()*TICKS.length)]; location.hash = '#/walk/' + t.id; };
   document.getElementById('randomBtn').onclick = fire;
   document.getElementById('randomBtnMobile').onclick = fire;
+}
+
+/* ========== share + toast ========== */
+async function shareTick(t){
+  const url = `${location.origin}${location.pathname}#/walk/${t.id}`;
+  const title = `${t.name} (${t.year}) — Ticks`;
+  const text = `${t.year}. ${t.name}. Before this, ${t.constraint.toLowerCase().replace(/\.$/, '')}.`;
+  if (navigator.share && navigator.canShare?.({ url, title })){
+    try { await navigator.share({ url, title, text }); return; }
+    catch(e){ if (e?.name === 'AbortError') return; }
+  }
+  try { await navigator.clipboard.writeText(url); toast('link copied'); }
+  catch { toast('couldn\'t copy — long-press the URL', { error:true }); }
+}
+let _toastT;
+function toast(msg, opts={}){
+  let el = document.getElementById('toast');
+  if (!el){
+    el = document.createElement('div');
+    el.id = 'toast';
+    el.setAttribute('role','status');
+    el.setAttribute('aria-live','polite');
+    document.body.appendChild(el);
+  }
+  el.textContent = msg;
+  el.dataset.show = 'true';
+  el.dataset.error = opts.error ? 'true' : '';
+  clearTimeout(_toastT);
+  _toastT = setTimeout(() => { el.dataset.show = ''; }, opts.duration || 2200);
 }
 
 /* ========== mobile menu ========== */
