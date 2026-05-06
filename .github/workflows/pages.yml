@@ -22,8 +22,12 @@ jobs:
         run: |
           mkdir -p _site
           cp index.html app.js style.css data.json _site/
-          cp llms.txt robots.txt sitemap.xml _site/
-          cp ticks.html _site/legacy.html
+                    cp llms.txt robots.txt sitemap.xml _site/
+          [ -f rss.xml ] && cp rss.xml _site/ || true
+          [ -f search-index.json ] && cp search-index.json _site/ || true
+          mkdir -p _site/.well-known
+          [ -f .well-known/agent-permissions.json ] && cp .well-known/agent-permissions.json _site/.well-known/ || true
+cp ticks.html _site/legacy.html
       - uses: actions/configure-pages@v5
         with:
           enablement: true
