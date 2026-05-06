@@ -73,7 +73,18 @@ function render(){
    are accurate even on a hash-routed site. */
 const SITE_TITLE = 'Ticks';
 const SITE_TAGLINE = 'moments that unlocked everything next';
-function setMeta(title, description){
+const HOME_OG = 'og.png';
+let OG_AVAILABLE = new Set();
+async function loadOgManifest(){
+  try {
+    const r = await fetch('og-manifest.json', { cache: 'force-cache' });
+    if (r.ok){
+      const j = await r.json();
+      OG_AVAILABLE = new Set(j.ids || []);
+    }
+  } catch { /* network or 404; keep empty set, fall back to homepage og */ }
+}
+function setMeta(title, description, imgPath){
   document.title = title;
   const setAttr = (sel, attr, val) => {
     const el = document.querySelector(sel);
@@ -87,15 +98,22 @@ function setMeta(title, description){
   const url = location.origin + location.pathname + location.hash;
   setAttr('meta[property="og:url"]', 'content', url);
   setAttr('link[rel="canonical"]', 'href', url);
+  // og:image — use per-tick where available, homepage everywhere else.
+  const base = location.origin + location.pathname;
+  const imgUrl = base + (imgPath || HOME_OG);
+  setAttr('meta[property="og:image"]', 'content', imgUrl);
+  setAttr('meta[name="twitter:image"]', 'content', imgUrl);
 }
 function updateMeta(base, arg){
   if (!TICKS.length) return;
   if ((base === '/walk' || base === '/hunt') && arg && TICK_BY_ID[arg]){
     const t = TICK_BY_ID[arg];
     const verb = base === '/walk' ? 'A tick' : 'How we got here';
+    const img = OG_AVAILABLE.has(t.id) ? `og/${t.id}.png` : null;
     setMeta(
       `${t.name} (${t.year}) · ${SITE_TITLE}`,
-      `${t.year}. ${t.name}. Before this, ${t.constraint.toLowerCase().replace(/\.$/, '')}. ${verb} from ${SITE_TITLE}, ${SITE_TAGLINE}.`
+      `${t.year}. ${t.name}. Before this, ${t.constraint.toLowerCase().replace(/\.$/, '')}. ${verb} from ${SITE_TITLE}, ${SITE_TAGLINE}.`,
+      img
     );
     return;
   }
@@ -1218,7 +1236,7 @@ function rewriteFromQuery(){
 }
 
 /* ========== boot ========== */
-loadData().then(() => {
+Promise.all([loadData(), loadOgManifest()]).then(() => {
   rewriteFromQuery();
   bindRandom(); bindMobileMenu(); bindTheme(); bindScrollHeader(); bindKbdHelp();
   render();
