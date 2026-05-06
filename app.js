@@ -173,7 +173,7 @@ function renderWalk(){
           <a class='walk-flow-card' href='#/walk/${f.id}' style='${domStyle(f.domain)}'>
             <span class='yr'>${escapeHtml(f.year)}</span>
             <span class='nm'>${escapeHtml(f.name)}</span>
-          </a>`).join('') : '<div class="walk-flow-empty">It still mattered. Hit → for the next moment in time.</div>'}
+          </a>`).join('') : '<div class="walk-flow-empty">A frontier tick — what flows from this is still being written. Press → to keep walking.</div>'}
       </div>
 
       <div class='walk-controls'>
