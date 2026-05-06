@@ -2,18 +2,10 @@
 
 Verdicts gathered: 1009 ticks. Two independent passes, agreement required.
 
-## Auto-applied year corrections (4)
+## Auto-applied year corrections (0)
 
 Both passes flagged year as WRONG and suggested years within tolerance; existing year was off by >50/10%.
 
-- **babylonian-quadratic-equations** (Babylonian quadratic equations): `2,000 BC → 1,770 BC`
-  > The text of this Babylonian tablet, dating from the reign of Hammurabi the Great between 1790 and 1750 BCE
-- **zoroaster-cosmic-dualism** (Zoroaster's teaching / cosmic dualism): `1,200 BC → 600 BC`
-  > Zoroastrianism dates back to the 6th century BCE.
-- **braille-system-standardized** (Braille system standardized): `1878 AD → 1837 AD`
-  > The second revision, published in 1837, was the first binary form of writing
-- **diplomatic-correspondence-in-italian-lingua-franca** (Diplomatic correspondence in Italian (lingua franca)): `1450 AD → 1600 AD`
-  > 'the use of Italian as a lingua franca on the Barbary Coast of the seventeenth century'
 
 ## Flagged: claim says WRONG (both passes) — needs human review (1)
 
@@ -21,7 +13,7 @@ Both passes flagged year as WRONG and suggested years within tolerance; existing
   - A: Source is about International Mathematical Olympiad, not AlphaProof AI solving IMO problems.
   - B: Source describes IMO history and format; no mention of AlphaProof or AI solving IMO problems
 
-## Flagged: year disagreement between passes (26)
+## Flagged: year disagreement between passes (27)
 
 - **irrigation-canals** (8,000 BC): year disagree: A=WRONG B=UNCERTAIN
   - A_sugg=-6000: Irrigation has been a key aspect of agriculture for over 5,000 years.
@@ -101,8 +93,11 @@ Both passes flagged year as WRONG and suggested years within tolerance; existing
 - **ai-regulation-begins-eu-ai-act-eo-14110** (2023 AD): year disagree: A=UNCERTAIN B=WRONG
   - A_sugg=None: Source is the Bletchley Declaration (2023) but does not mention EU AI Act or EO 14110.
   - B_sugg=2023: The Bletchley Declaration on AI Safety announces a new global effort... Published 1 November 2023.
+- **hiv-identified-aids-crisis-response** (1983 AD): year disagree: A=CORRECT B=WRONG
+  - A_sugg=None: AIDS is caused by a human immunodeficiency virus (HIV), which originated in non-human primates
+  - B_sugg=1920: the present pandemic had its origins in the emergence of one specific strain – HIV-1 subgroup M – in Léopoldville … in the 1920s.
 
-## Flagged: claim disagreement between passes (91)
+## Flagged: claim disagreement between passes (93)
 
 - **irrigation-canals** (8,000 BC): claim disagree: A=CORRECT B=WRONG
 - **recursive-language** (70,000 BC): claim disagree: A=CORRECT B=WRONG
@@ -110,10 +105,11 @@ Both passes flagged year as WRONG and suggested years within tolerance; existing
 - **loom-weaving** (5,000 BC): claim disagree: A=CORRECT B=WRONG
 - **egyptian-hieroglyphics-phonetic-principle** (3,100 BC): claim disagree: A=CORRECT B=WRONG
 - **city-state-governance** (3,000 BC): claim disagree: A=CORRECT B=WRONG
+- **babylonian-quadratic-equations** (1,770 BC): claim disagree: A=UNCERTAIN B=WRONG
 - **on-the-origin-of-species-darwin** (1859 AD): claim disagree: A=UNCERTAIN B=WRONG
 - **blood-typing-landsteiner** (1901 AD): claim disagree: A=CORRECT B=WRONG
 - **cajal-neuron-doctrine** (1906 AD): claim disagree: A=CORRECT B=WRONG
-- **shannons-information-theory** (1936 AD): claim disagree: A=CORRECT B=WRONG
+- **shannons-information-theory** (1948 AD): claim disagree: A=CORRECT B=WRONG
 - **nuremberg-trials-simultaneous-interpretation** (1945 AD): claim disagree: A=UNCERTAIN B=WRONG
 - **higgs-mechanism-theoretical** (1964 AD): claim disagree: A=CORRECT B=WRONG
 - **gps-made-available-to-civilians** (1983 AD): claim disagree: A=UNCERTAIN B=WRONG
@@ -189,6 +185,7 @@ Both passes flagged year as WRONG and suggested years within tolerance; existing
 - **newtons-apple-gravity-as-universal** (1666 AD): claim disagree: A=CORRECT B=WRONG
 - **medici-banking-letters-of-credit** (1400 AD): claim disagree: A=UNCERTAIN B=WRONG
 - **maize-domestication-teosinte** (5,000 BC): claim disagree: A=UNCERTAIN B=WRONG
+- **diplomatic-correspondence-in-italian-lingua-franca** (1600 AD): claim disagree: A=CORRECT B=WRONG
 - **viticulture-wine-production-begins** (4,000 BC): claim disagree: A=UNCERTAIN B=WRONG
 - **spanish-flu-pandemic-preparedness-as-concept** (1918 AD): claim disagree: A=UNCERTAIN B=WRONG
 - **tractor-displaces-draft-animals-mass-adoption** (1921 AD): claim disagree: A=UNCERTAIN B=WRONG

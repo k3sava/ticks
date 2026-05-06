@@ -46,14 +46,18 @@ def main():
         a_sugg = parse_year(A.get('year_suggestion'))
         b_sugg = parse_year(B.get('year_suggestion'))
 
-        # Auto-fix year: both WRONG, both have suggestions, suggestions agree ±10% (or ±15 post-1500)
+        # Auto-fix year: both passes WRONG with suggestions
         if a_year == 'WRONG' and b_year == 'WRONG' and a_sugg is not None and b_sugg is not None:
-            tol = max(15, int(0.1 * abs(t['yearN']))) if t['yearN'] < 1500 else 15
+            cur = t['yearN']
+            tol = max(15, int(0.1 * abs(cur))) if cur < 1500 else 15
             if abs(a_sugg - b_sugg) <= tol:
-                # off from existing by enough?
-                cur = t['yearN']
                 avg = (a_sugg + b_sugg) // 2
-                deviation_threshold = max(50, int(0.1 * abs(cur))) if cur < 1500 else 30
+                # high-confidence: both passes name the SAME year exactly → apply if off by ≥3 years
+                if a_sugg == b_sugg and abs(avg - cur) >= 3:
+                    auto_year_fixes.append((tid, cur, avg, A.get('evidence','')[:120]))
+                    continue
+                # partial agreement: apply if off by significant deviation
+                deviation_threshold = max(50, int(0.1 * abs(cur))) if cur < 1500 else 20
                 if abs(avg - cur) > deviation_threshold:
                     auto_year_fixes.append((tid, cur, avg, A.get('evidence','')[:120]))
                     continue
