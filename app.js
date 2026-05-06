@@ -130,12 +130,13 @@ function home(){
   const ancientSpan = Math.abs(ancientTen[ancientTen.length-1].yearN - ancientTen[0].yearN);
   const recentSpan = recentSeventy[recentSeventy.length-1].yearN - recentSeventy[0].yearN;
 
+  const opening = pickOpening();
   app.innerHTML = `
     <section class='home-hero'>
       <div class='home-thesis'>
         <div class='eyebrow'>${TICKS.length.toLocaleString()} moments that changed what comes next</div>
-        <h1>The right breakpoint, and <em>everything flows</em>.</h1>
-        <p class='home-sub'>A tick is the moment a constraint dissolved.<span class='home-sub-2'>Before it, we couldn't. After it, things kinda blew up.</span></p>
+        <h1>${opening.h}</h1>
+        <p class='home-sub'>${escapeHtml(opening.sub)}<span class='home-sub-2'>${escapeHtml(opening.sub2)}</span></p>
       </div>
 
       <div class='home-show'>
@@ -184,6 +185,70 @@ function pickHero(){
 }
 
 /* ========== editorial constants ========== */
+// Three hand-written hero openings. Same voice, different doors.
+// Picked deterministically by date so the homepage feels alive but a
+// shared link on the same day shows the same opener.
+const HERO_OPENINGS = [
+  { h: "The right breakpoint, and <em>everything flows</em>.",
+    sub: "A tick is the moment a constraint dissolved.",
+    sub2: "Before it, we couldn't. After it, things kinda blew up." },
+  { h: "History, but <em>only the moments that mattered</em>.",
+    sub: "A tick is the moment a constraint dissolved.",
+    sub2: "Walk forward, or backward from a thing you already know." },
+  { h: "Each one made the <em>next one</em> possible.",
+    sub: "A tick is the moment a constraint dissolved.",
+    sub2: "The chain teaches you more than the list ever could." },
+];
+function pickOpening(){
+  // Stable per-day so a shared morning link matches the noon link.
+  const d = new Date();
+  const key = d.getUTCFullYear() * 367 + (d.getUTCMonth() + 1) * 31 + d.getUTCDate();
+  return HERO_OPENINGS[key % HERO_OPENINGS.length];
+}
+
+// Pull-quote seasoning: a hand-written one-liner that says what a tick
+// feels like in retrospect. Italic, after the constraint, before the
+// detail. Restraint: a few dozen of the foundational ticks, never a
+// generated quip. Fallback: nothing renders if a tick has no note.
+const EDITORIAL_NOTES = {
+  'recursive-language':
+    "the moment a sentence could be about a sentence. everything is downstream of that.",
+  'collective-fiction':
+    "money, gods, and nations are the same trick, run on different schedules.",
+  'wheat-domestication':
+    "we didn't tame wheat. wheat tamed us. it kept us standing in the same field.",
+  'sumerian-writing-first-literature':
+    "memory left the brain. the receipt outlived the merchant.",
+  'printing-press-gutenberg':
+    "a copy stopped being a luxury. an idea stopped needing a sponsor.",
+  'gutenbergs-printing-press':
+    "a copy stopped being a luxury. an idea stopped needing a sponsor.",
+  'transistor':
+    "thinking became something a slab of sand could do for a watt and a half.",
+  'transistor-bell-labs-shockley-bardeen-brattain':
+    "thinking became something a slab of sand could do for a watt and a half.",
+  'the-internet-tcp-ip':
+    "the network stopped caring what was on either end. that one decision is most of the next forty years.",
+  'penicillin-fleming':
+    "a contaminated petri dish. a medicine cabinet, on the other side of it.",
+  'dna-double-helix-watson-crick-franklin':
+    "biology stopped being a story and became an instruction set.",
+  'general-relativity-einstein':
+    "gravity stopped being a force and became geometry. space, time, and falling all became one shape.",
+  'pacioli-double-entry-bookkeeping':
+    "every transaction left a footprint. capitalism started counting on it.",
+  'public-key-cryptography-diffie-hellman':
+    "two strangers could agree on a secret without ever meeting. the internet learned to whisper.",
+  'crispr-discovery-doudna-charpentier':
+    "editing DNA stopped being surgery and became search-and-replace.",
+  'chatgpt-rlhf-alignment':
+    "the prompt became the program. the program became the conversation.",
+  'athenian-democracy':
+    "for a few decades, the answer to 'who decides?' stopped being 'whoever has the bigger sword.'",
+  'magna-carta-rule-of-law-over-divine-right':
+    "the king discovered there was something even he could not do. the rest is two centuries of footnotes.",
+};
+
 // One sentence per era: what was true before it began. Curated, not
 // generated. Each line reads like a marginalia ribbon under the map
 // or a chapter title in browse.
@@ -288,6 +353,7 @@ function renderWalk(){
           <span class='label'>before this</span>
           ${escapeHtml(t.constraint.toLowerCase())}.
         </div>
+        ${EDITORIAL_NOTES[t.id] ? `<aside class='walk-note' aria-label='Editorial note'>${escapeHtml(EDITORIAL_NOTES[t.id])}</aside>` : ''}
         ${t.detail ? `<div class='walk-detail'>${escapeHtml(t.detail)}</div>` : ''}
         ${t.links?.length ? `<div class='walk-links'>${t.links.map(l => `<a href='${escapeHtml(l.url)}' target='_blank' rel='noopener'>→ ${escapeHtml(l.label)}</a>`).join('')}</div>` : ''}
         <div class='walk-actions'>

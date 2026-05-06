@@ -285,6 +285,16 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 }
 .walk-before .label{font-style:normal;font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);display:block;margin-bottom:6px}
 .walk-detail{font-family:var(--serif);font-size:1.05rem;color:var(--ink-2);max-width:62ch;line-height:1.55;text-wrap:pretty;hyphens:auto}
+/* Editorial seasoning: appears only on a hand-picked subset of foundational
+   ticks. One italic sentence saying what the tick feels like in retrospect. */
+.walk-note{
+  font-family:var(--serif);font-style:italic;font-weight:500;
+  font-size:clamp(1.05rem,1.7vw,1.25rem);line-height:1.45;
+  color:var(--ink);max-width:50ch;
+  padding:8px 0 8px 18px;
+  border-left:2px solid var(--accent);
+  margin-top:6px;
+}
 .walk-domain{align-self:flex-start}
 
 .walk-flow{
