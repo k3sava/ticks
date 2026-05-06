@@ -42,6 +42,7 @@ const routes = {
   '/hunt/:id': (id) => hunt(id),
   '/browse': browse,
   '/about': about,
+  '/play': play,
 };
 
 function parseHash(){
@@ -54,10 +55,13 @@ function parseHash(){
 function render(){
   const [base, arg] = parseHash();
   setActiveNav(base);
+  // Stop any auto-play tour from a previous route.
+  if (base !== '/play') stopPlay();
   const handler = routes[base + (arg ? '/:id' : '')] || routes[base] || home;
   app.className = '';
   if (base === '/walk') app.classList.add('full-bleed');
   else if (base === '/map') app.classList.add('wide');
+  else if (base === '/play') app.classList.add('full-bleed');
   handler(arg);
   updateMeta(base, arg);
   injectArticleSchema(base, arg);
@@ -179,6 +183,7 @@ function home(){
           <a href='#/walk'>start walking →</a>
           <a class='secondary' href='#/map'>see all ${TICKS.length.toLocaleString()}</a>
           <a class='secondary' href='#/hunt'>walk backward from a thing you know</a>
+          <a class='secondary' href='#/play'>play the chain (60s)</a>
         </div>
         <div class='home-counter'>
           <span><strong>${ancientSpan.toLocaleString()}</strong> years for the first 10</span>
@@ -915,6 +920,116 @@ function browse(){
   };
 }
 
+/* ========== play (acceleration finale) ========== */
+// 60-second auto-tour of the corpus. Year-loud, single tick at a time,
+// with five "world inverted" beats that hold an extra moment.
+const PLAY_BEATS = new Set([
+  'recursive-language',
+  'wheat-domestication',
+  'sumerian-writing-first-literature',
+  'gutenbergs-printing-press',
+  'transistor-bell-labs-shockley-bardeen-brattain',
+  'transistor-invention',
+  'chatgpt-rlhf-alignment',
+]);
+let _playTimer = null;
+let _playState = null;
+
+function play(){
+  // Build the playlist: prefer featured.json items if loaded, else top-200
+  // by parents+children. Sort by yearN ascending. Cap at 180 items so a
+  // 60s playback at ≈333ms/tick fits with beat pauses.
+  const features = (window.__features || []).map(id => TICK_BY_ID[id]).filter(Boolean);
+  const baseList = features.length ? features : (() => {
+    const scored = TICKS.map(t => ({
+      t,
+      score: (UNLOCKS[t.id]?.length || 0) * 2 + (UNLOCKED_BY[t.id]?.length || 0),
+    })).sort((a, b) => b.score - a.score).slice(0, 180);
+    return scored.map(s => s.t);
+  })();
+  const list = [...baseList].sort((a, b) => (a.yearN || 0) - (b.yearN || 0));
+
+  app.innerHTML = `
+    <section class='play' aria-label='Acceleration finale'>
+      <div class='play-meta'>
+        <span class='play-counter' id='playCount'>1 / ${list.length}</span>
+        <span class='play-help'>space pauses · [ slows · ] speeds · esc exits</span>
+      </div>
+      <div class='play-stage' id='playStage'></div>
+      <div class='play-progress' aria-hidden='true'><div class='play-progress-fill' id='playFill'></div></div>
+      <div class='play-controls'>
+        <button id='playToggle' type='button'>pause</button>
+        <a class='play-exit' href='#/'>exit</a>
+      </div>
+    </section>
+  `;
+
+  _playState = { list, idx: 0, paused: false, baseDelay: 333, beatDelay: 1500 };
+  renderPlayFrame();
+  schedulePlay();
+
+  document.getElementById('playToggle').onclick = togglePlay;
+}
+
+function renderPlayFrame(){
+  const s = _playState;
+  if (!s) return;
+  const t = s.list[s.idx];
+  if (!t) return;
+  const stage = document.getElementById('playStage');
+  if (!stage) return;
+  const isBeat = PLAY_BEATS.has(t.id);
+  stage.innerHTML = `
+    <div class='play-frame ${isBeat ? 'is-beat' : ''}' style='${domStyle(t.domain)}'>
+      <div class='play-dom dom' style='${domStyle(t.domain)}'>${t.domain}</div>
+      <div class='play-year'>${escapeHtml(t.year)}</div>
+      <div class='play-name'>${escapeHtml(t.name)}</div>
+      <div class='play-constraint'>before this, ${escapeHtml(t.constraint.toLowerCase().replace(/\.$/, ''))}.</div>
+      ${isBeat ? '<div class="play-beat-mark">the world inverted here</div>' : ''}
+    </div>
+  `;
+  const count = document.getElementById('playCount');
+  if (count) count.textContent = `${s.idx + 1} / ${s.list.length}`;
+  const fill = document.getElementById('playFill');
+  if (fill) fill.style.width = `${((s.idx + 1) / s.list.length) * 100}%`;
+}
+
+function schedulePlay(){
+  clearTimeout(_playTimer);
+  const s = _playState;
+  if (!s || s.paused) return;
+  const t = s.list[s.idx];
+  const delay = (t && PLAY_BEATS.has(t.id)) ? s.beatDelay : s.baseDelay;
+  _playTimer = setTimeout(() => {
+    s.idx++;
+    if (s.idx >= s.list.length){
+      s.paused = true;
+      const btn = document.getElementById('playToggle');
+      if (btn) btn.textContent = 'replay';
+      btn.onclick = () => { s.idx = 0; s.paused = false; btn.textContent = 'pause'; btn.onclick = togglePlay; renderPlayFrame(); schedulePlay(); };
+      return;
+    }
+    renderPlayFrame();
+    schedulePlay();
+  }, delay);
+}
+
+function togglePlay(){
+  const s = _playState;
+  if (!s) return;
+  s.paused = !s.paused;
+  const btn = document.getElementById('playToggle');
+  if (btn) btn.textContent = s.paused ? 'play' : 'pause';
+  if (!s.paused) schedulePlay();
+  else clearTimeout(_playTimer);
+}
+
+function stopPlay(){
+  clearTimeout(_playTimer);
+  _playTimer = null;
+  _playState = null;
+}
+
 /* ========== about ========== */
 function about(){
   app.innerHTML = `
@@ -982,6 +1097,12 @@ window.addEventListener('keydown', (e) => {
   if (e.key === '/'){
     const q = document.getElementById('huntQ') || document.getElementById('brQ');
     if (q){ q.focus(); e.preventDefault(); return; }
+  }
+  // Play-mode controls
+  if (location.hash.startsWith('#/play') && _playState){
+    if (e.key === ' '){ togglePlay(); e.preventDefault(); return; }
+    if (e.key === '['){ _playState.baseDelay = Math.min(900, _playState.baseDelay + 80); return; }
+    if (e.key === ']'){ _playState.baseDelay = Math.max(120, _playState.baseDelay - 80); return; }
   }
   if (k === 'r'){ const t = TICKS[Math.floor(Math.random()*TICKS.length)]; location.hash = '#/walk/' + t.id; e.preventDefault(); return; }
   if (k === 's' && location.hash.startsWith('#/walk')){
