@@ -915,10 +915,27 @@ function about(){
       <h2>A note on accuracy</h2>
       <p>This is an editorial sketch, not a peer-reviewed reference. The dates and the chain-of-influence edges are one person's reading of history, drafted with the help of language models. Some entries oversimplify ("iPhone / touchscreen computing" undersells two decades of prior touchscreen work). Some intermediate ticks are missing. Some ancestry edges are associative rather than strictly causal.</p>
       <p>A full audit pass, verifying each tick against primary sources and tightening the chain, is the next project. In the meantime, <a href='https://github.com/k3sava/ticks/issues/new' target='_blank' rel='noopener' style='color:var(--accent);border-bottom:1px solid var(--accent)'>open an issue</a> to flag corrections, or send a PR. Every tick has 2–3 source links you can verify.</p>
+      <h2>How to cite</h2>
+      <p>If you write about a tick, please link to it. The corpus is open and the chain is the value; a citation that points back lets someone walk it themselves.</p>
+      <pre class='cite'><code id='citeText'>Mandiga, Kesava. "Ticks · ${escapeHtml(TICKS.length.toLocaleString())} moments." https://k3sava.github.io/ticks/.</code></pre>
+      <button class='cite-copy' id='citeCopy' type='button'>copy citation</button>
+      <h2>For machines</h2>
+      <p>Three machine-readable surfaces, in increasing density:</p>
+      <ul class='about-list'>
+        <li><a href='featured.json'>featured.json</a>: the 200 most-connected ticks. Curated tour, not a corpus dump.</li>
+        <li><a href='search-index.json'>search-index.json</a>: one row per tick (id, name, year, zone, domain, constraint, parents and children counts).</li>
+        <li><a href='data.json'>data.json</a>: the full corpus, including the edge graph, source links, and editorial detail.</li>
+      </ul>
+      <p>Schema is documented in <a href='llms.txt'>llms.txt</a>. Agent permissions and citation format live in <a href='.well-known/agent-permissions.json'>.well-known/agent-permissions.json</a>.</p>
       <h2>Credit</h2>
       <p class='credit'>Made by <a href='https://github.com/k3sava' target='_blank' rel='noopener' style='color:var(--ink-2);border-bottom:1px solid var(--line)'>Kesava</a> · MIT · <a href='https://github.com/k3sava/ticks' target='_blank' rel='noopener' style='color:var(--ink-2);border-bottom:1px solid var(--line)'>source on GitHub</a></p>
     </article>
   `;
+  document.getElementById('citeCopy')?.addEventListener('click', async () => {
+    const text = document.getElementById('citeText')?.textContent || '';
+    try { await navigator.clipboard.writeText(text); toast('citation copied'); }
+    catch { toast('couldn\'t copy. select the text manually.', { error:true }); }
+  });
 }
 
 /* ========== keyboard ========== */
@@ -1171,8 +1188,38 @@ function bindScrollHeader(){
   window.addEventListener('scroll', onScroll, { passive: true });
 }
 
+/* ========== querystring permalinks (for crawlers + share-tools that
+   strip the hash) ============================================== */
+// Accept ?tick=ID or ?walk=ID or ?hunt=ID and convert to a hash route
+// before render. Keeps the address bar stable for users who land via
+// a stripped-hash share link.
+function rewriteFromQuery(){
+  const u = new URL(location.href);
+  const params = u.searchParams;
+  const map = { tick: 'walk', walk: 'walk', hunt: 'hunt' };
+  for (const k of Object.keys(map)){
+    const id = params.get(k);
+    if (id){
+      params.delete(k);
+      const newSearch = params.toString();
+      const newUrl = `${u.pathname}${newSearch ? '?' + newSearch : ''}#/${map[k]}/${encodeURIComponent(id)}`;
+      history.replaceState(null, '', newUrl);
+      return;
+    }
+  }
+  // ?random=1 → pick one and replace
+  if (params.has('random')){
+    params.delete('random');
+    const t = TICKS[Math.floor(Math.random() * TICKS.length)] || null;
+    const ns = params.toString();
+    const newUrl = `${u.pathname}${ns ? '?' + ns : ''}#/walk/${t ? t.id : ''}`;
+    history.replaceState(null, '', newUrl);
+  }
+}
+
 /* ========== boot ========== */
 loadData().then(() => {
+  rewriteFromQuery();
   bindRandom(); bindMobileMenu(); bindTheme(); bindScrollHeader(); bindKbdHelp();
   render();
 }).catch(err => {

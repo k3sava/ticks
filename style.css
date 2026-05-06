@@ -606,6 +606,27 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 .about .mode-tile h3{font-family:var(--serif);font-weight:500;font-size:1.1rem;margin-bottom:4px;color:var(--ink)}
 .about .mode-tile p{font-family:var(--serif);font-style:italic;font-size:.92rem;color:var(--ink-2);margin:0}
 .about .credit{font-family:var(--mono);font-size:.78rem;color:var(--muted);margin-top:48px;padding-top:18px;border-top:1px solid var(--line)}
+.about .cite{
+  font-family:var(--mono);font-size:.82rem;
+  background:var(--paper-2);border:1px solid var(--line);border-radius:8px;
+  padding:14px 16px;margin:6px 0 10px;overflow-x:auto;
+  color:var(--ink-2);
+}
+.about .cite code{font-family:inherit;background:transparent;padding:0;color:inherit;white-space:pre-wrap;word-break:break-word}
+.cite-copy{
+  font-family:var(--mono);font-size:.74rem;color:var(--ink-2);
+  padding:7px 14px;border:1px solid var(--line-2);border-radius:999px;
+  background:transparent;cursor:pointer;
+  transition:border-color .15s,color .15s,background .15s;
+}
+.cite-copy:hover{border-color:var(--accent);color:var(--accent);background:color-mix(in oklab,var(--accent) 4%,transparent)}
+.about-list{list-style:none;padding:0;margin:8px 0 18px;display:flex;flex-direction:column;gap:8px}
+.about-list li{
+  font-family:var(--serif);font-size:1rem;color:var(--ink-2);line-height:1.5;
+  padding-left:14px;border-left:1px dashed var(--line-2);
+}
+.about-list a{color:var(--ink);border-bottom:1px solid var(--line-2);padding-bottom:1px}
+.about-list a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 
 /* ========== HOME (intro page) ========== */
 .home{padding:0}

@@ -24,6 +24,7 @@
 
 <link rel="alternate" type="application/json" href="data.json" title="Ticks · full corpus (JSON)" />
 <link rel="alternate" type="application/json" href="search-index.json" title="Ticks · search index" />
+<link rel="alternate" type="application/json" href="featured.json" title="Ticks · featured 200 (most-connected)" />
 <link rel="preload" href="data.json" as="fetch" crossorigin="anonymous" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -112,6 +113,23 @@
   </nav>
 
   <main id="app" tabindex="-1" aria-live="polite"></main>
+  <noscript>
+    <article style="max-width:680px;margin:48px auto;padding:0 24px;font-family:Georgia,serif;line-height:1.6;color:#1C1917">
+      <h1 style="font-size:2.4rem;line-height:1.1;margin:0 0 12px">Ticks</h1>
+      <p style="font-style:italic;font-size:1.2rem;color:#44403C;margin:0 0 24px">
+        2,648 moments in human history when a constraint dissolved and everything downstream became possible.
+      </p>
+      <p>The site is a JavaScript single-page app. Without JavaScript, the corpus and the chain are not interactive, but the data is still readable and citable.</p>
+      <ul>
+        <li><a href="data.json">data.json</a> &mdash; the full corpus (2,648 ticks, 13 zones, 14 domains, edge graph)</li>
+        <li><a href="search-index.json">search-index.json</a> &mdash; one row per tick: id, name, year, zone, domain, constraint, parents/children counts</li>
+        <li><a href="featured.json">featured.json</a> &mdash; the 200 most-connected ticks</li>
+        <li><a href="llms.txt">llms.txt</a> &mdash; schema, modes, citation format, in plain English</li>
+        <li><a href="https://github.com/k3sava/ticks">source on GitHub</a> (MIT licensed)</li>
+      </ul>
+      <p style="font-family:ui-monospace,monospace;font-size:.78rem;color:#78716C;margin-top:32px">Cite as: Mandiga, Kesava. "Ticks &middot; {tick name} ({year})." https://k3sava.github.io/ticks/#/walk/{id}.</p>
+    </article>
+  </noscript>
   <div id="shareMenu" role="menu" aria-label="Share this tick" hidden>
     <button class="share-opt" role="menuitem" data-act="native" hidden>
       <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 1v9M5 4l3-3 3 3M3 9v4a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V9"/></svg>
