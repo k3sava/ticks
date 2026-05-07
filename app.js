@@ -1462,7 +1462,7 @@ const PLAY_BEATS = new Set([
   'newton-principia',
   'einsteins-special-relativity',
   'arpanet-first-message',
-  'world-wide-web-tim-berners-lee',
+  'world-wide-web-berners-lee',
   'iphone-touchscreen-computing',
 ]);
 
@@ -1502,13 +1502,123 @@ function pickRandomReel(){
 function getReel(reelId){
   return REELS.find(r => r.id === reelId) || REELS[0];
 }
+/* Hand-picked reel curations override the algorithmic top-N. Each curation
+   is an ordered list of tick IDs chosen for narrative arc (start → middle
+   → end with clear inflection), beat moments every 6-8 ticks, and minimal
+   same-domain repeats. If a curation is missing or empty, we fall back to
+   the algorithmic top-N so a partial curation doesn't break a reel. */
+const REEL_CURATIONS = {
+  acceleration: [
+    'recursive-language',
+    'collective-fiction',
+    'cave-painting-symbolic-art',
+    'wheat-domestication',
+    'animal-domestication',
+    'pottery-fired-clay',
+    'plow-invention-ard',
+    'cuneiform-writing',
+    'mesopotamian-clay-tablet-record-keeping',
+    'babylonian-quadratic-equations',
+    'greek-alphabet-with-vowels',
+    'athenian-democracy',
+    'p-inis-sanskrit-grammar',
+    'roman-citizenship-universal-civic-identity',
+    'paper-cai-lun-han-dynasty',
+    'ptolemys-coordinate-system',
+    'justinians-corpus-juris-civilis-roman-law-codified',
+    'algebra-al-khwarizmi',
+    'diamond-sutra-first-dated-printed-book',
+    'magna-carta-rule-of-law-over-divine-right',
+    'gutenbergs-printing-press',
+    'pacioli-double-entry-bookkeeping',
+    'luthers-95-theses-reformation',
+    'descartes-method-of-doubt',
+    'newtons-calculus-mathematics-of-change',
+    'lockes-two-treatises-natural-rights',
+    'daltons-atomic-theory-atoms-as-real',
+    'emancipation-proclamation',
+    'maxwells-equations-unified-electromagnetism',
+    'first-telephone-call-voice-transmission',
+    'general-relativity-einstein',
+    'penicillin-fleming',
+    'transistor-bell-labs-shockley-bardeen-brattain',
+    'dna-double-helix-watson-crick-franklin',
+    'dartmouth-workshop-ai-as-a-field',
+    'xerox-parc-modern-computing-interface',
+    'public-key-cryptography-diffie-hellman',
+    'world-wide-web-berners-lee',
+    'crispr-cas9-as-genome-editing-tool-doudna-charpentier',
+    'alphafold-2-protein-structure-prediction',
+    'chatgpt-rlhf-alignment',
+  ],
+  mind: [
+    'recursive-language',
+    'collective-fiction',
+    'cuneiform-writing',
+    'sumerian-writing-first-literature',
+    'epic-of-gilgamesh-first-narrative-literature',
+    'greek-alphabet-with-vowels',
+    'p-inis-sanskrit-grammar',
+    'algebra-al-khwarizmi',
+    'descartes-method-of-doubt',
+    'lockes-two-treatises-natural-rights',
+    'newtons-calculus-mathematics-of-change',
+    'hume-bundle-theory-of-the-self',
+    'rawls-theory-of-justice',
+    'nietzsche-death-of-god',
+    'set-theory-cantor',
+    'turings-universal-machine',
+    'saussures-course-in-general-linguistics',
+    'putnams-twin-earth-thought-experiment',
+    'dartmouth-workshop-ai-as-a-field',
+    'unicode-standard-universal-character-encoding',
+    'oxford-english-dictionary-completed',
+    'gpt-3-175b-parameters',
+    'attention-is-all-you-need-transformer-paper',
+    'chatgpt-rlhf-alignment',
+  ],
+  tools: [
+    'cave-painting-symbolic-art',
+    'pottery-fired-clay',
+    'plow-invention-ard',
+    'galvani-bioelectricity',
+    'newtons-calculus-mathematics-of-change',
+    'daltons-atomic-theory-atoms-as-real',
+    'maxwells-equations-unified-electromagnetism',
+    'first-telephone-call-voice-transmission',
+    'phonograph-edison',
+    'general-relativity-einstein',
+    'quantum-mechanics-heisenberg-schr-dinger',
+    'nuclear-magnetic-resonance-discovered',
+    'turings-universal-machine',
+    'transistor-bell-labs-shockley-bardeen-brattain',
+    'difference-engine-babbage-concept',
+    'hollerith-tabulating-machine-us-census',
+    'dartmouth-workshop-ai-as-a-field',
+    'xerox-parc-modern-computing-interface',
+    'public-key-cryptography-diffie-hellman',
+    'rsa-encryption-1977',
+    'world-wide-web-berners-lee',
+    'attention-is-all-you-need-transformer-paper',
+    'gpt-3-175b-parameters',
+    'alphafold-2-protein-structure-prediction',
+    'chatgpt-rlhf-alignment',
+  ],
+};
+
 function buildReelPlaylist(reelId){
   const reel = getReel(reelId);
+  // Hand-curated path — each curation is an ordered ID list. Filter for
+  // ticks that actually exist (so a stale ID doesn't crash the reel).
+  const curation = REEL_CURATIONS[reelId];
+  if (curation && curation.length){
+    const picked = curation.map(id => TICK_BY_ID[id]).filter(Boolean);
+    if (picked.length >= 8) return picked;  // require minimum length for safety
+  }
   const pool = reel.domains
     ? TICKS.filter(t => reel.domains.includes(t.domain))
     : TICKS;
-  // For "acceleration" specifically, prefer featured.json if loaded. Themed
-  // reels always score within their domain pool so the curation feels real.
+  // Algorithmic fallback: prefer featured.json for acceleration if loaded.
   if (!reel.domains){
     const features = (window.__features || []).map(id => TICK_BY_ID[id]).filter(Boolean);
     if (features.length) return [...features].sort((a, b) => (a.yearN || 0) - (b.yearN || 0));
