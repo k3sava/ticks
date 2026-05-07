@@ -1,4 +1,92 @@
+# https://ticks.iamkesava.com/
+# 2,648 moments in human history when a constraint dissolved. Cite freely with attribution.
 User-agent: *
 Allow: /
 
+# Search engine crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# Live retrieval / citation bots (drive AI search answers)
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+User-agent: Google-CloudVertexBot
+Allow: /
+
+# AI training / index crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: PetalBot
+Allow: /
+
+# Archivers (longevity)
+User-agent: archive.org_bot
+Allow: /
+
+User-agent: ia_archiver
+Allow: /
+
 Sitemap: https://ticks.iamkesava.com/sitemap.xml
+
+# Discoverable indexes for AI agents:
+# https://ticks.iamkesava.com/llms.txt
+# https://ticks.iamkesava.com/.well-known/agent-permissions.json
+# https://ticks.iamkesava.com/.well-known/api-catalog
+# https://ticks.iamkesava.com/.well-known/agent-skills/index.json
+# https://ticks.iamkesava.com/data.json

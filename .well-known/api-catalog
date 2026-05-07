@@ -1,0 +1,14 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://ticks.iamkesava.com/",
+      "links": [
+        { "rel": "service-doc", "href": "https://ticks.iamkesava.com/llms.txt" },
+        { "rel": "describedby", "href": "https://ticks.iamkesava.com/.well-known/agent-permissions.json" },
+        { "rel": "sitemap", "href": "https://ticks.iamkesava.com/sitemap.xml" },
+        { "rel": "index", "href": "https://ticks.iamkesava.com/data.json" },
+        { "rel": "search", "href": "https://ticks.iamkesava.com/search-index.json" }
+      ]
+    }
+  ]
+}

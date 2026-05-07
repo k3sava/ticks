@@ -171,8 +171,9 @@ footer{
   border-top:1px solid var(--line);
   padding:18px var(--gut);
   font-family:var(--mono);font-size:.7rem;color:var(--muted);letter-spacing:.03em;
-  display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;
 }
+.ftr-sister,.ftr-meta,.ftr-credit{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap}
 .ftr-name{color:var(--ink-2)}
 .ftr-sep{opacity:.6}
 footer a{color:var(--ink-2);border-bottom:1px solid var(--line);padding-bottom:1px}
@@ -1055,8 +1056,7 @@ a[href*="issues/new"]{
 
 /* Footer separators wrap gracefully on narrow */
 @media (max-width:520px){
-  footer{gap:6px;font-size:.66rem}
-  .ftr-sep{display:none}
+  footer{gap:8px;font-size:.66rem}
 }
 
 /* Hairline for keyboard help dialog */

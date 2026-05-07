@@ -1,0 +1,23 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "browse-ticks",
+      "type": "skill-md",
+      "description": "Browse 2,648 historical moments where a constraint dissolved, indexed by zone (era) and domain.",
+      "url": "https://ticks.iamkesava.com/data.json"
+    },
+    {
+      "name": "search-ticks",
+      "type": "skill-md",
+      "description": "Search the full corpus by name, constraint, year, zone, or domain.",
+      "url": "https://ticks.iamkesava.com/search-index.json"
+    },
+    {
+      "name": "featured-ticks",
+      "type": "skill-md",
+      "description": "Top 200 most-connected ticks: the breakpoints with the densest downstream cascades.",
+      "url": "https://ticks.iamkesava.com/featured.json"
+    }
+  ]
+}

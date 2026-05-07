@@ -6,6 +6,27 @@ This site is a chain, not a list. Every entry has parents (what had to dissolve 
 
 Authored and curated by Kesava Mandiga (https://github.com/k3sava). MIT licensed. Drafted with language-model assistance and audited against Wikipedia and primary sources. Ongoing audits documented in /AUDIT-CHAIN.md, /AUDIT-CLAIMS.md, /AUDIT-DEADLINKS.md, /AUDIT-DUPS.md, /ANACHRONISMS.md.
 
+## Index
+
+- [Home](https://ticks.iamkesava.com/): the corpus, browse by zone or domain.
+- [Sitemap](https://ticks.iamkesava.com/sitemap.xml): every canonical URL.
+- [data.json](https://ticks.iamkesava.com/data.json): full machine-readable corpus.
+- [search-index.json](https://ticks.iamkesava.com/search-index.json): flat searchable index.
+- [featured.json](https://ticks.iamkesava.com/featured.json): top 200 most-connected ticks.
+
+## Agent discovery
+
+- [Agent permissions](https://ticks.iamkesava.com/.well-known/agent-permissions.json): use rights, attribution, license.
+- [API catalog](https://ticks.iamkesava.com/.well-known/api-catalog): RFC 9727 linkset to discoverable resources.
+- [Agent skills](https://ticks.iamkesava.com/.well-known/agent-skills/index.json): Agent Skills Discovery v0.2 index.
+
+## Sister sites by Kesava
+
+- [apps.iamkesava.com](https://apps.iamkesava.com/): apps and AI playground experiments.
+- [tools.iamkesava.com](https://tools.iamkesava.com/): browser tools, ad-free.
+- [toys.iamkesava.com](https://toys.iamkesava.com/): creative experiments.
+- [codex.iamkesava.com](https://codex.iamkesava.com/): operator insight library.
+
 ## Schema (per tick)
 
 - id: slug
