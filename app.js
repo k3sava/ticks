@@ -53,6 +53,154 @@ function setAmbient(domain){
   window.addEventListener('pointermove', onMove, { passive: true });
 })();
 
+/* ========== oblivion primitives (helpers) ==========
+   Inline-SVG strings for the five primitives. Returned as HTML so
+   they can be interpolated into innerHTML templates. Pointer-events
+   are disabled in CSS; primitives never block clicks. */
+function obRingsHtml({ size = 100, spin = 'cw' } = {}){
+  const cls = `ob-rings ob-rings--spin-${spin}`;
+  // Three nested circles at 1.4× / 2.1× / 3.2× of `size` (radius scale).
+  // SVG is centered on (0,0) via CSS; circles use vector-effect non-scaling.
+  const r1 = (size * 1.4) / 2, r2 = (size * 2.1) / 2, r3 = (size * 3.2) / 2;
+  return `<span class='${cls}' aria-hidden='true'><svg viewBox='-${r3} -${r3} ${r3*2} ${r3*2}' xmlns='http://www.w3.org/2000/svg'>
+    <circle class='ob-r1' r='${r1.toFixed(0)}'></circle>
+    <circle class='ob-r2' r='${r2.toFixed(0)}'></circle>
+    <circle class='ob-r3' r='${r3.toFixed(0)}'></circle>
+  </svg></span>`;
+}
+function obBracketsHtml(){
+  return `<span class='ob-brackets' aria-hidden='true'><span></span><span></span><span></span><span></span></span>`;
+}
+function obScanTickHtml(){
+  return `<span class='ob-scan-tick' aria-hidden='true'></span>`;
+}
+function obTetraHtml(){
+  // Hairline tetrahedron outline — 2D projection of a regular tetra:
+  // outer triangle (apex top) + inner edges to a hidden back vertex
+  // rendered behind the apex, giving the classic 4-vertex look.
+  return `<span class='ob-tetra' aria-hidden='true'><svg viewBox='0 0 12 12' xmlns='http://www.w3.org/2000/svg'>
+    <path d='M6 1 L11 10 L1 10 Z'/>
+    <path d='M6 1 L6 8 M1 10 L6 8 M11 10 L6 8'/>
+  </svg></span>`;
+}
+
+/* ========== motion primitives ==========
+   - Route scan: top→bottom 1px sweep on every render() call.
+   - Hover ring pulse: a single shared SVG overlay paints a ring on
+     mouseenter for any [data-hover-pulse] element.
+   - Focus bracket: tracks a single fixed bracket overlay around the
+     currently hovered/focused [data-track-focus] element.
+   - Walk slide: wrapper around renderWalk that animates the previous
+     stage off and the new one in.
+   All gated by `prefers-reduced-motion`. */
+function fireRouteScan(){
+  if (reduced) return;
+  const el = document.getElementById('routeScan');
+  if (!el) return;
+  // Restart animation by toggling class.
+  el.classList.remove('run');
+  // Force reflow so the animation actually replays.
+  void el.offsetWidth;
+  el.classList.add('run');
+}
+
+(function initHoverRingPulse(){
+  if (reduced) return;
+  const overlay = document.getElementById('ringOverlay');
+  if (!overlay) return;
+  // Lazily resize the SVG viewBox to viewport.
+  const sync = () => {
+    overlay.setAttribute('viewBox', `0 0 ${window.innerWidth} ${window.innerHeight}`);
+    overlay.style.width = window.innerWidth + 'px';
+    overlay.style.height = window.innerHeight + 'px';
+  };
+  sync();
+  window.addEventListener('resize', sync, { passive: true });
+
+  // Delegate mouseenter via mouseover — single listener, low overhead.
+  document.addEventListener('mouseover', (e) => {
+    const target = e.target.closest('[data-hover-pulse], .walk-flow-card, .walk-trail-step, .hunt-step, .hunt-suggest-grid button, .home-show-flow .row, .browse-row, .map-domains button, .browse-zone-head');
+    if (!target) return;
+    // Don't pulse if mouse moved within the same target (mouseover bubbles).
+    if (target === overlay._lastTarget) return;
+    overlay._lastTarget = target;
+    setTimeout(() => { if (overlay._lastTarget === target) overlay._lastTarget = null; }, 260);
+
+    const r = target.getBoundingClientRect();
+    if (r.width === 0 || r.height === 0) return;
+    const cx = r.left + r.width / 2;
+    const cy = r.top + r.height / 2;
+    // Ring radius starts at the half-bounding-diagonal of the element.
+    const radius = Math.max(r.width, r.height) / 2;
+
+    // Re-use the same circle node — minimal DOM thrash.
+    let circ = overlay._circle;
+    if (!circ){
+      circ = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+      overlay.appendChild(circ);
+      overlay._circle = circ;
+    }
+    circ.setAttribute('cx', cx.toFixed(1));
+    circ.setAttribute('cy', cy.toFixed(1));
+    circ.setAttribute('r', radius.toFixed(1));
+    // Pull --dc from the target's computed style so the ring color matches
+    // the element's domain tint.
+    const dc = getComputedStyle(target).getPropertyValue('--dc') || getComputedStyle(target).getPropertyValue('--accent') || '#FFB37A';
+    circ.setAttribute('stroke', dc.trim());
+    circ.setAttribute('transform', `translate(${cx}, ${cy}) translate(${-cx}, ${-cy})`);
+    circ.style.transformOrigin = `${cx}px ${cy}px`;
+    circ.classList.remove('run');
+    void circ.getBoundingClientRect();
+    circ.classList.add('run');
+  }, { passive: true });
+})();
+
+(function initFocusBracketTracker(){
+  if (reduced) return;
+  const fb = document.getElementById('focusBracket');
+  if (!fb) return;
+  let raf = 0;
+  const place = (target) => {
+    if (!target){
+      fb.classList.remove('show');
+      return;
+    }
+    const r = target.getBoundingClientRect();
+    if (r.width === 0 || r.height === 0) { fb.classList.remove('show'); return; }
+    fb.style.left = r.left + 'px';
+    fb.style.top = r.top + 'px';
+    fb.style.width = r.width + 'px';
+    fb.style.height = r.height + 'px';
+    fb.classList.add('show');
+  };
+  const queueFor = (el) => {
+    cancelAnimationFrame(raf);
+    raf = requestAnimationFrame(() => place(el));
+  };
+  // Track focus + hover for any element marked [data-track-focus].
+  document.addEventListener('mouseover', (e) => {
+    const el = e.target.closest('[data-track-focus]');
+    if (el) queueFor(el);
+  }, { passive: true });
+  document.addEventListener('focusin', (e) => {
+    const el = e.target.closest('[data-track-focus]');
+    if (el) queueFor(el);
+  }, { passive: true });
+  document.addEventListener('mouseout', (e) => {
+    if (!e.target.closest('[data-track-focus]')) return;
+    // Hide on leave unless another track-focus element is being entered.
+    const next = e.relatedTarget?.closest?.('[data-track-focus]');
+    if (!next) queueFor(null);
+  }, { passive: true });
+  document.addEventListener('focusout', (e) => {
+    if (!e.target.closest('[data-track-focus]')) return;
+    const next = e.relatedTarget?.closest?.('[data-track-focus]');
+    if (!next) queueFor(null);
+  }, { passive: true });
+  window.addEventListener('resize', () => queueFor(null), { passive: true });
+  window.addEventListener('scroll', () => queueFor(null), { passive: true });
+})();
+
 /* ========== loading ========== */
 function showBoot(){
   // Skeleton placeholder rendered while data.json (~3MB) streams in. Delayed
@@ -102,6 +250,9 @@ function parseHash(){
   return ['/'+parts[0], parts[1] ? decodeURIComponent(parts[1]) : null];
 }
 
+// Track the previous route base so we can skip route-scan on intra-route
+// navigation (walk → walk/:id) where the inner stage swap handles motion.
+let _lastRouteBase = null;
 function render(){
   const [base, arg] = parseHash();
   setActiveNav(base);
@@ -112,6 +263,12 @@ function render(){
   if (base === '/walk') app.classList.add('full-bleed');
   else if (base === '/map') app.classList.add('wide');
   else if (base === '/play') app.classList.add('full-bleed');
+  // Route-scan transition: fire only on actual route changes (not on
+  // walk→walk/:id transitions, which are handled by the inner-stage slide).
+  if (_lastRouteBase !== null && _lastRouteBase !== base){
+    fireRouteScan();
+  }
+  _lastRouteBase = base;
   handler(arg);
   updateMeta(base, arg);
   injectArticleSchema(base, arg);
@@ -214,7 +371,7 @@ function home(){
 
       <div class='home-show'>
         <div class='home-show-tick'>
-          <div class='dom' style='${domStyle(hero.domain)}'>${hero.domain}</div>
+          <div class='dom' style='${domStyle(hero.domain)}'>${obTetraHtml()}${hero.domain}</div>
           <div class='yr'>${escapeHtml(hero.year)}</div>
           <div class='nm'>${escapeHtml(hero.name)}</div>
           <div class='be'>before this, ${escapeHtml(cleanConstraint(hero.constraint).toLowerCase())}.</div>
@@ -222,7 +379,7 @@ function home(){
         <div class='home-show-flow'>
           <div class='label'>everything that flowed →</div>
           ${flow.length ? flow.map(t => `
-            <div class='row' onclick='location.hash="#/walk/${t.id}"'>
+            <div class='row' onclick='location.hash="#/walk/${t.id}"' data-hover-pulse>
               <span>${escapeHtml(t.name)}</span>
               <span class='y'>${escapeHtml(t.year)}</span>
             </div>`).join('') : '<div style="color:var(--muted);font-style:italic">a single thread; click walk to follow</div>'}
@@ -398,6 +555,7 @@ function countDepth2(id){
 
 /* ========== walk ========== */
 let walkIdx = 0;
+let _lastWalkIdx = -1;
 function walk(id){
   if (id && TICK_BY_ID[id]) walkIdx = TICKS_SORTED.findIndex(t => t.id === id);
   if (walkIdx < 0) walkIdx = 0;
@@ -423,15 +581,18 @@ function renderWalk(){
       <div class='walk-trail-area'>${ancestors.length ? `
       <nav class='walk-trail' aria-label='What had to dissolve before this'>
         ${ancestors.map(a => `
-          <a class='walk-trail-step' href='#/walk/${a.id}' style='${domStyle(a.domain)}'>
+          <a class='walk-trail-step' href='#/walk/${a.id}' style='${domStyle(a.domain)}' data-hover-pulse>
             <span class='yr'>${escapeHtml(a.year)}</span>
             <span class='nm'>${escapeHtml(a.name)}</span>
-          </a>`).join('<span class="walk-trail-link" aria-hidden="true">↓</span>')}
-        <span class='walk-trail-link walk-trail-here' aria-hidden="true">↓</span>
+          </a>`).join('<span class="walk-trail-link" aria-hidden="true"></span>')}
+        <span class='walk-trail-link walk-trail-here' aria-hidden="true"></span>
       </nav>` : ''}</div>
       <div class='walk-stage'>
-        <div class='dom walk-domain' style='${domStyle(t.domain)}'>${t.domain}</div>
-        <div class='walk-year'>${escapeHtml(t.year)}</div>
+        <div class='dom walk-domain' style='${domStyle(t.domain)}'>${obTetraHtml()}${t.domain}</div>
+        <div class='walk-year-host'>
+          ${obRingsHtml({size: 80, spin: 'cw'})}
+          <div class='walk-year'>${escapeHtml(t.year)}</div>
+        </div>
         <div class='walk-name'>${escapeHtml(t.name)}</div>
         <div class='walk-before'>
           <span class='label'>before this</span>
@@ -457,7 +618,8 @@ function renderWalk(){
       <div class='walk-flow'>
         <div class='walk-flow-head'>${flow.length ? `everything that flowed from this (${flow.length}${flowDepth2 ? `, ${flowDepth2.toLocaleString()} more two steps out` : ''})` : 'no recorded downstream. a quiet tick.'}</div>
         ${flow.length ? flow.map(f => `
-          <a class='walk-flow-card' href='#/walk/${f.id}' style='${domStyle(f.domain)}'>
+          <a class='walk-flow-card' href='#/walk/${f.id}' style='${domStyle(f.domain)}' data-hover-pulse data-track-focus>
+            ${obBracketsHtml()}
             <span class='yr'>${escapeHtml(f.year)}</span>
             <span class='nm'>${escapeHtml(f.name)}</span>
           </a>`).join('') : '<div class="walk-flow-empty">A frontier tick. What flows from this is still being written. Press → to keep walking.</div>'}
@@ -474,8 +636,8 @@ function renderWalk(){
       </div>
     </section>
   `;
-  document.getElementById('wPrev').onclick = () => { walkIdx = Math.max(0, walkIdx-1); renderWalk(); };
-  document.getElementById('wNext').onclick = () => { walkIdx = Math.min(TICKS_SORTED.length-1, walkIdx+1); renderWalk(); };
+  document.getElementById('wPrev').onclick = () => walkStep(-1);
+  document.getElementById('wNext').onclick = () => walkStep(+1);
   // Share button: opens the share menu anchored under the trigger.
   const shareBtn = app.querySelector('[data-act="share"]');
   if (shareBtn) shareBtn.onclick = (e) => { e.stopPropagation(); shareTick(t, shareBtn); };
@@ -494,11 +656,51 @@ function renderWalk(){
       const dx = t.clientX - sx, dy = t.clientY - sy;
       // Horizontal swipe > 60px and clearly horizontal (not a scroll)
       if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5){
-        if (dx < 0){ walkIdx = Math.min(TICKS_SORTED.length-1, walkIdx+1); renderWalk(); }
-        else      { walkIdx = Math.max(0, walkIdx-1); renderWalk(); }
+        if (dx < 0) walkStep(+1);
+        else        walkStep(-1);
       }
     }, { passive: true });
   }
+
+  // Tick-to-tick slide animation.
+  // If the stage was prepped with a direction, run an in-from animation;
+  // otherwise this is a first paint and the existing .walk @keyframes does
+  // its own fade-up. _lastWalkIdx is updated by walkStep before re-render.
+  const stageEl = document.querySelector('.walk-stage');
+  if (stageEl && _lastWalkIdx >= 0 && _lastWalkIdx !== walkIdx && !reduced){
+    const dir = walkIdx > _lastWalkIdx ? 'in-from-right' : 'in-from-left';
+    const walkRoot = document.querySelector('.walk');
+    if (walkRoot) walkRoot.dataset.noAnim = '1';
+    stageEl.dataset.walkAnim = dir;
+    setTimeout(() => { stageEl.removeAttribute('data-walk-anim'); }, 320);
+  }
+  _lastWalkIdx = walkIdx;
+}
+
+/* Slide-aware step. Phase 1: animate the current stage off in the arrow's
+   direction; phase 2: re-render at the new index, which animates the new
+   stage in from the opposite side. Falls back to immediate render under
+   prefers-reduced-motion. */
+function walkStep(delta){
+  const next = Math.max(0, Math.min(TICKS_SORTED.length - 1, walkIdx + delta));
+  if (next === walkIdx) return;
+  if (reduced){
+    walkIdx = next;
+    renderWalk();
+    return;
+  }
+  const stage = document.querySelector('.walk-stage');
+  if (!stage){
+    walkIdx = next;
+    renderWalk();
+    return;
+  }
+  const outDir = delta > 0 ? 'out-left' : 'out-right';
+  stage.dataset.walkAnim = outDir;
+  setTimeout(() => {
+    walkIdx = next;
+    renderWalk();
+  }, 220);
 }
 
 /* ========== hunt — walk backward through what unlocked X ========== */
@@ -517,17 +719,21 @@ function hunt(id){
         <h1>How did we get to <em>${escapeHtml(tick.name.toLowerCase())}</em>?</h1>
         <p>Walking backward through the constraints that had to dissolve first. Each step required the one above.</p>
       </div>
+      ${chain.length > 1 ? `<div class='hunt-trace'>T-${chain.length} :: TRACE COMPLETE</div>` : ''}
       <div class='hunt-chain'>
+        ${chain.length ? `<div class='hunt-rail' aria-hidden='true'></div>` : ''}
         ${chain.length === 0 ? '<div class="hunt-empty">No recorded ancestors. Pick another below.</div>' : chain.map((t, i) => {
           const next = chain[i+1];
           const bridge = next ? `before <em>${escapeHtml(next.name.toLowerCase())}</em>, ${escapeHtml(cleanConstraint(next.constraint).toLowerCase())}.` : '';
+          const firstCls = i === 0 ? ' hunt-step--first' : '';
           return `
-          <div class='hunt-step' style='${domStyle(t.domain)}'>
+          <div class='hunt-step${firstCls}' style='${domStyle(t.domain)}' data-hover-pulse>
+            ${i === 0 ? obBracketsHtml() : ''}
             <div class='hunt-step-yr'>${escapeHtml(t.year)}</div>
             <div class='hunt-step-body'>
               <div class='hunt-step-name' onclick='location.hash="#/walk/${t.id}"'>${escapeHtml(t.name)}</div>
               <div class='hunt-step-before'>before this, ${escapeHtml(cleanConstraint(t.constraint).toLowerCase())}.</div>
-              <div class='hunt-step-meta'><span class='dom' style='${domStyle(t.domain)}'>${t.domain}</span></div>
+              <div class='hunt-step-meta'><span class='dom' style='${domStyle(t.domain)}'>${obTetraHtml()}${t.domain}</span></div>
             </div>
           </div>
           ${next ? `<div class='hunt-arrow'><span class='hunt-arrow-rule'>${bridge}</span></div>` : ''}
@@ -599,7 +805,7 @@ function renderHuntPicker(){
     if (!q){ results.innerHTML = ''; return; }
     const hits = TICKS.filter(t => t.name.toLowerCase().includes(q)).slice(0, 8);
     results.innerHTML = hits.length ? `<div class='hunt-suggest-grid'>${hits.map(t => `
-      <button onclick='location.hash="#/hunt/${t.id}"' style='${domStyle(t.domain)}'>
+      <button onclick='location.hash="#/hunt/${t.id}"' style='${domStyle(t.domain)}' data-hover-pulse>
         <span class='nm'>${escapeHtml(t.name)}</span>
         <span class='yr'>${escapeHtml(t.year)} · ${t.domain}</span>
       </button>`).join('')}</div>` : '<div style="font-style:italic;color:var(--muted)">No matches. Try a fragment.</div>';
@@ -652,13 +858,13 @@ function renderHuntSuggest(){
     // fallback: ticks with most ancestors (deepest chains)
     const ranked = TICKS.map(t => ({ t, depth: (UNLOCKED_BY[t.id] || []).length })).sort((a,b) => b.depth - a.depth).slice(0, 12);
     return `<div class='hunt-suggest-grid'>${ranked.map(({t}) => `
-      <button onclick='location.hash="#/hunt/${t.id}"' style='${domStyle(t.domain)}'>
+      <button onclick='location.hash="#/hunt/${t.id}"' style='${domStyle(t.domain)}' data-hover-pulse>
         <span class='nm'>${escapeHtml(t.name)}</span>
         <span class='yr'>${escapeHtml(t.year)} · ${t.domain}</span>
       </button>`).join('')}</div>`;
   }
   return `<div class='hunt-suggest-grid'>${items.map(t => `
-    <button onclick='location.hash="#/hunt/${t.id}"' style='${domStyle(t.domain)}'>
+    <button onclick='location.hash="#/hunt/${t.id}"' style='${domStyle(t.domain)}' data-hover-pulse>
       <span class='nm'>${escapeHtml(t.name)}</span>
       <span class='yr'>${escapeHtml(t.year)} · ${t.domain}</span>
     </button>`).join('')}</div>`;
@@ -685,12 +891,16 @@ function map(){
       </div>
       <div class='map-canvas-wrap'>
         <div class='map-y-labels'>
-          ${domains.map(d => `<div class='map-y-label' style='${domStyle(d)};color:var(--dc)'>${d}</div>`).join('')}
+          ${domains.map(d => `<div class='map-y-label' style='${domStyle(d)};color:var(--dc)'>${obTetraHtml()}${d}</div>`).join('')}
         </div>
         <div class='map-mobile-scroller' id='mapScroller'>
           <canvas class='map-canvas' id='mapCanvas'></canvas>
           <div class='map-eras' id='mapEras'></div>
-          <div class='map-tooltip' id='mapTip'></div>
+          <div class='map-crosshair' id='mapCrosshair'>
+            <div class='map-crosshair-h'></div>
+            <div class='map-crosshair-v'></div>
+          </div>
+          <div class='map-tooltip' id='mapTip'>${obBracketsHtml()}<span class='map-tip-text'></span></div>
         </div>
       </div>
       <p class='map-marginalia' id='mapMarginalia' role='status' aria-live='polite'>
@@ -854,6 +1064,8 @@ function drawMap(){
       ? `<span class='map-marginalia-era'>${escapeHtml(z.name)}</span><span class='map-marginalia-rng'>${yrFrom} – ${yrTo}</span><span class='map-marginalia-rule'>before this, ${escapeHtml(rule)}</span>`
       : `<span class='map-marginalia-era'>${escapeHtml(z.name)}</span><span class='map-marginalia-rng'>${yrFrom} – ${yrTo}</span>`;
   };
+  const crosshair = document.getElementById('mapCrosshair');
+  const tipText = tip.querySelector('.map-tip-text') || tip;
   canvas.onmousemove = (e) => {
     const rect = canvas.getBoundingClientRect();
     const mx = e.clientX - rect.left, my = e.clientY - rect.top;
@@ -869,18 +1081,27 @@ function drawMap(){
     }
     if (hit){
       tip.classList.add('show');
-      tip.textContent = `${hit.t.year} · ${hit.t.name}`;
+      tipText.textContent = `${hit.t.year} · ${hit.t.name}`;
       tip.style.left = (mx+12) + 'px';
       tip.style.top = (my+12) + 'px';
       canvas.style.cursor = 'pointer';
       last = hit;
+      // Crosshair guides — extend from dot to canvas edges in domain color.
+      if (crosshair){
+        crosshair.classList.add('show');
+        const dc = DOMAINS[hit.t.domain] || '#888';
+        crosshair.style.setProperty('--dc', dc);
+        crosshair.querySelector('.map-crosshair-h').style.top = hit.y + 'px';
+        crosshair.querySelector('.map-crosshair-v').style.left = hit.x + 'px';
+      }
     } else {
       tip.classList.remove('show');
+      crosshair?.classList.remove('show');
       canvas.style.cursor = 'default';
       last = null;
     }
   };
-  canvas.onmouseleave = () => { tip.classList.remove('show'); last = null; };
+  canvas.onmouseleave = () => { tip.classList.remove('show'); crosshair?.classList.remove('show'); last = null; };
   // Hit-finder shared by mouse + touch. Slightly larger radius on touch.
   const hitAt = (mx, my, slop = 1) => {
     for (let i = dots.length-1; i >= 0; i--){
@@ -892,13 +1113,31 @@ function drawMap(){
   // Distinguish mouse vs touch so we don't double-fire (touch synthesizes a
   // click after touchend; we'd open twice if we listened to both naively).
   let _touchOpenedAt = 0;
+  // Click ripple — emits two expanding hairline rings in the dot's domain
+  // color, then routes to /walk/<id>. Ripple lives 260ms before route swap.
+  const emitRipple = (x, y, dc) => {
+    if (reduced) return;
+    const scroller = document.getElementById('mapScroller');
+    if (!scroller) return;
+    const r1 = document.createElement('div');
+    r1.className = 'map-ripple';
+    r1.style.left = x + 'px';
+    r1.style.top = y + 'px';
+    r1.style.borderColor = dc;
+    scroller.appendChild(r1);
+    const r2 = r1.cloneNode();
+    r2.classList.add('map-ripple--late');
+    scroller.appendChild(r2);
+    setTimeout(() => { r1.remove(); r2.remove(); }, 360);
+  };
   canvas.onclick = (e) => {
     if (Date.now() - _touchOpenedAt < 600) return; // touch already handled
     const rect = canvas.getBoundingClientRect();
     const mx = e.clientX - rect.left, my = e.clientY - rect.top;
     const hit = last || hitAt(mx, my, 1.6);
     if (!hit) return;
-    location.hash = '#/walk/' + hit.t.id;
+    emitRipple(hit.x, hit.y, DOMAINS[hit.t.domain] || '#888');
+    setTimeout(() => { location.hash = '#/walk/' + hit.t.id; }, reduced ? 0 : 180);
   };
   // Touch: single tap opens the tick directly. No double-tap-to-confirm
   // gauntlet on mobile — tooltips don't help on a small screen and most users
@@ -967,6 +1206,7 @@ function browse(){
       </div>
       <div class='browse-toolbar'>
         <div class='browse-search'>
+          ${obBracketsHtml()}
           <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="7" cy="7" r="5"/><path d="m11 11 3 3"/></svg>
           <input id='brQ' type='search' value='${escapeHtml(BROWSE_STATE.q)}' placeholder='search ticks…' />
         </div>
@@ -989,22 +1229,23 @@ function browse(){
         const rule = ERA_RULES[z.id] || '';
         return `
           <section class='browse-zone${collapsed ? ' is-collapsed' : ''}' data-zone='${z.id}'>
-            <header class='browse-zone-head' role='button' tabindex='0' aria-expanded='${!collapsed}'>
+            <header class='browse-zone-head' role='button' tabindex='0' aria-expanded='${!collapsed}' data-hover-pulse>
               <span class='browse-chev' aria-hidden='true'>${collapsed ? '▸' : '▾'}</span>
+              ${obScanTickHtml()}
               <h2>${escapeHtml(z.name)}</h2>
               <span class='range'>${range} → ${rangeTo}</span>
               ${rule ? `<span class='rule'>before this, ${escapeHtml(rule)}</span>` : ''}
-              <span class='ct'>${items.length}</span>
+              <span class='ct'><span class='ct-num'>${items.length}</span><span class='ct-zid'> :: T-ZONE-${escapeHtml(z.id.toUpperCase())}</span></span>
             </header>
             <div class='browse-zone-body'>
               ${items.map(t => `
-                <a class='browse-row' href='#/walk/${t.id}' style='${domStyle(t.domain)}'>
+                <a class='browse-row' href='#/walk/${t.id}' style='${domStyle(t.domain)}' data-hover-pulse>
                   <span class='yr'>${escapeHtml(t.year)}</span>
                   <div class='body'>
                     <span class='nm'>${escapeHtml(t.name)}</span>
                     <span class='be'>before this, ${escapeHtml(cleanConstraint(t.constraint).toLowerCase())}.</span>
                   </div>
-                  <span class='dom' style='${domStyle(t.domain)}'>${t.domain}</span>
+                  <span class='dom' style='${domStyle(t.domain)}'>${obTetraHtml()}${t.domain}</span>
                 </a>`).join('')}
             </div>
           </section>`;
@@ -1178,15 +1419,42 @@ function renderPlayFrame(){
   const stage = document.getElementById('playStage');
   if (!stage) return;
   const isBeat = PLAY_BEATS.has(t.id);
-  stage.innerHTML = `
-    <div class='play-frame ${isBeat ? 'is-beat' : ''}' style='${domStyle(t.domain)}'>
-      <div class='play-dom dom' style='${domStyle(t.domain)}'>${t.domain}</div>
-      <div class='play-year'>${escapeHtml(t.year)}</div>
-      <div class='play-name'>${escapeHtml(t.name)}</div>
-      <div class='play-constraint'>before this, ${escapeHtml(cleanConstraint(t.constraint).toLowerCase())}.</div>
-      ${isBeat ? '<div class="play-beat-mark">the world inverted here</div>' : ''}
+  // Stage scan sweep — left-to-right hairline that runs ahead of each new
+  // frame. Lives in stage so it inherits --dc (domain color) from the
+  // section. CSS animation; we just toggle the run class.
+  let scan = stage.querySelector('.play-stage-scan');
+  if (!scan){
+    scan = document.createElement('div');
+    scan.className = 'play-stage-scan';
+    stage.appendChild(scan);
+  }
+  if (!reduced){
+    scan.classList.remove('run');
+    void scan.offsetWidth;
+    scan.classList.add('run');
+  }
+  // Build the frame template with year-glyph rings host. On beats, also
+  // include a pulse ring + bracket flash overlay.
+  const frame = document.createElement('div');
+  frame.className = 'play-frame' + (isBeat ? ' is-beat' : '');
+  frame.style.cssText = domStyle(t.domain);
+  frame.innerHTML = `
+    <div class='play-dom dom' style='${domStyle(t.domain)}'>${obTetraHtml()}${t.domain}</div>
+    <div class='play-year-host'>
+      ${obRingsHtml({size: 70, spin: 'ccw'})}
+      ${obBracketsHtml().replace("class='ob-brackets'", "class='ob-brackets flash'")}
+      <span class='play-year'>${escapeHtml(t.year)}</span>
+      ${isBeat ? '<span class="play-pulse-ring"></span>' : ''}
     </div>
+    <div class='play-name'>${escapeHtml(t.name)}</div>
+    <div class='play-constraint'>before this, ${escapeHtml(cleanConstraint(t.constraint).toLowerCase())}.</div>
+    ${isBeat ? '<div class="play-beat-mark">the world inverted here</div>' : ''}
   `;
+  // Replace the old frame (preserve the .play-stage-scan element).
+  const oldFrame = stage.querySelector('.play-frame');
+  if (oldFrame) oldFrame.remove();
+  stage.appendChild(frame);
+
   const count = document.getElementById('playCount');
   if (count) count.textContent = `${s.idx + 1} / ${s.list.length}`;
   const fill = document.getElementById('playFill');
@@ -1311,8 +1579,8 @@ window.addEventListener('keydown', (e) => {
     if (t){ shareTick(t, document.querySelector('[data-act="share"]') || document.body); e.preventDefault(); return; }
   }
   if (location.hash.startsWith('#/walk')){
-    if (e.key === 'ArrowRight'){ walkIdx = Math.min(TICKS_SORTED.length-1, walkIdx+1); renderWalk(); }
-    else if (e.key === 'ArrowLeft'){ walkIdx = Math.max(0, walkIdx-1); renderWalk(); }
+    if (e.key === 'ArrowRight'){ walkStep(+1); }
+    else if (e.key === 'ArrowLeft'){ walkStep(-1); }
     else if (e.key === 'ArrowUp'){
       const t = TICKS_SORTED[walkIdx];
       if (t) location.hash = '#/hunt/' + t.id;
@@ -1519,19 +1787,40 @@ function closeMobileMenu(){
   document.getElementById('mobileBackdrop')?.classList.remove('show');
 }
 
-/* ========== theme ========== */
+/* ========== theme ==========
+   Three-theme cycle: light → dark → drone → light. Drone is the
+   Oblivion register: cool sky-cloud near-white, hairline geometry
+   leads, warm bloom recedes. The user's system preference wins on
+   first paint; once they cycle, we persist. */
+const THEMES = ['light', 'dark', 'drone'];
+const THEME_BG = { light: '#EEF1F6', dark: '#0A0A0F', drone: '#E8EFF3' };
 function bindTheme(){
   const btn = document.getElementById('themeBtn');
   const apply = (t) => {
     if (t) document.documentElement.dataset.theme = t;
     else delete document.documentElement.dataset.theme;
     try { if (t) localStorage.setItem('ticks-theme', t); else localStorage.removeItem('ticks-theme'); } catch(e){}
+    // Sync the active <meta name="theme-color"> so the iOS/Android chrome
+    // matches the active theme, including drone.
+    const meta = document.getElementById('themeColorActive');
+    if (meta){
+      const sysDark = matchMedia('(prefers-color-scheme: dark)').matches;
+      const eff = t || (sysDark ? 'dark' : 'light');
+      meta.setAttribute('content', THEME_BG[eff] || THEME_BG.dark);
+    }
   };
-  try { const saved = localStorage.getItem('ticks-theme'); if (saved) apply(saved); } catch(e){}
+  try { const saved = localStorage.getItem('ticks-theme'); if (saved) apply(saved); else apply(null); } catch(e){}
   const toggle = () => {
     const cur = document.documentElement.dataset.theme;
     const sysDark = matchMedia('(prefers-color-scheme: dark)').matches;
-    const next = cur === 'dark' ? 'light' : cur === 'light' ? (sysDark ? 'dark' : null) : (sysDark ? 'light' : 'dark');
+    // First click — start the cycle from the system-effective theme.
+    let next;
+    if (!cur){
+      next = sysDark ? 'light' : 'dark';
+    } else {
+      const i = THEMES.indexOf(cur);
+      next = THEMES[(i + 1) % THEMES.length];
+    }
     apply(next);
   };
   btn.onclick = toggle;

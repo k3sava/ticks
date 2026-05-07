@@ -1882,3 +1882,611 @@ a[href*="issues/new"]{
 @media (min-width:768px){
   .home-sub-2{display:block;margin-left:0;margin-top:.25em}
 }
+
+/* ============================================================
+   OBLIVION REGISTER — additive on top of Photon Glass
+   ============================================================
+   A second visual register: hairline geometry over the warm-bloom
+   glass. Five primitives (rings, brackets, scan-line, scan-tick,
+   tetrahedron) + a third theme (drone). In light/dark themes the
+   geometry is subtle and the bloom dominates; in drone the bloom
+   recedes and the geometry takes the lead.
+
+   `--ob-line` controls hairline tint and dim. Per-theme overrides
+   tune it. Default register is dim so light/dark keep their warm
+   feel; drone amps it up.
+*/
+:root{
+  --ob-line:rgba(244,243,250,.30);     /* hairline color (dark default) */
+  --ob-line-dim:rgba(244,243,250,.18);
+  --ob-line-soft:rgba(244,243,250,.10);
+  --ob-glow:0 0 6px rgba(244,243,250,.18);
+  --ease-cinema:cubic-bezier(.16,1,.3,1);
+}
+:root[data-theme="light"]{
+  --ob-line:rgba(14,17,32,.30);
+  --ob-line-dim:rgba(14,17,32,.18);
+  --ob-line-soft:rgba(14,17,32,.10);
+  --ob-glow:0 0 6px rgba(14,17,32,.16);
+}
+@media (prefers-color-scheme:light){
+  :root:not([data-theme="dark"]):not([data-theme="drone"]){
+    --ob-line:rgba(14,17,32,.30);
+    --ob-line-dim:rgba(14,17,32,.18);
+    --ob-line-soft:rgba(14,17,32,.10);
+    --ob-glow:0 0 6px rgba(14,17,32,.16);
+  }
+}
+
+/* ============================================================
+   DRONE THEME — third theme alongside light/dark
+   Cool sky-cloud near-white. Thinner glass, recede the bloom,
+   amp the hairline geometry. Cyan halo replaces warm halo.
+   ============================================================ */
+:root[data-theme="drone"]{
+  --bg:#E8EFF3;
+  --bg-2:#F2F6F9;
+  --paper:rgba(255,255,255,.34);
+  --paper-2:rgba(255,255,255,.5);
+  --line:rgba(15,35,48,.10);
+  --line-2:rgba(15,35,48,.18);
+  --ink:#0F2330;
+  --ink-2:rgba(15,35,48,.78);
+  --muted:rgba(15,35,48,.55);
+  --faint:rgba(15,35,48,.34);
+  --accent:#5FA5BC;
+  --accent-2:#B8D8E2;
+
+  --glass-thin-bg:rgba(255,255,255,.28);
+  --glass-thin-blur:saturate(140%) blur(18px);
+  --glass-bg:rgba(255,255,255,.34);
+  --glass-blur:saturate(140%) blur(22px);
+  --glass-thick-bg:rgba(255,255,255,.5);
+  --glass-thick-blur:saturate(150%) blur(30px);
+  --glass-edge:rgba(255,255,255,.7);
+  --glass-edge-strong:rgba(255,255,255,.92);
+  --glass-shadow:0 22px 50px -28px rgba(15,35,48,.16), 0 6px 18px -10px rgba(15,35,48,.10);
+  --glass-shadow-hi:0 30px 70px -28px rgba(15,35,48,.22), 0 10px 24px -10px rgba(15,35,48,.14);
+  --halo:rgba(95,165,188,.18);
+
+  /* Drone register: hairline geometry takes the lead */
+  --ob-line:rgba(15,35,48,.55);
+  --ob-line-dim:rgba(15,35,48,.32);
+  --ob-line-soft:rgba(15,35,48,.16);
+  --ob-glow:0 0 4px rgba(95,165,188,.30);
+}
+/* Drone: domain blooms at ~25% intensity (recede the warmth) */
+:root[data-theme="drone"] .glass::before,
+:root[data-theme="drone"] .glass-thin::before,
+:root[data-theme="drone"] .glass-thick::before,
+:root[data-theme="drone"] .walk-stage::before,
+:root[data-theme="drone"] .home-show::before,
+:root[data-theme="drone"] .walk-flow-card::before,
+:root[data-theme="drone"] .hunt-suggest-grid button::before{opacity:.25}
+:root[data-theme="drone"] .glass::after,
+:root[data-theme="drone"] .glass-thin::after,
+:root[data-theme="drone"] .glass-thick::after,
+:root[data-theme="drone"] .walk-stage::after,
+:root[data-theme="drone"] .home-show::after{mix-blend-mode:overlay;opacity:.5}
+:root[data-theme="drone"] body::before{
+  /* Cooler/softer drop-shadow & cyan halo prominence */
+  background:
+    radial-gradient(60vmax 60vmax at calc(var(--cx)*100%) calc(var(--cy)*100%),
+      var(--halo) 0%, transparent 50%),
+    radial-gradient(50vmax 60vmax at 18% 12%,
+      color-mix(in oklab, var(--dc, var(--accent)) 8%, transparent) 0%,
+      transparent 60%),
+    radial-gradient(60vmax 60vmax at 82% 88%,
+      color-mix(in oklab, var(--accent-2) 10%, transparent) 0%,
+      transparent 60%),
+    linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+}
+
+/* ============================================================
+   PRIMITIVE 1 — .ob-rings  (three concentric hairline circles)
+   ============================================================
+   Used as a halo around the year glyph (walk, play). Provide
+   spin variants for slow rotational motion. Scaled relative to
+   parent's bounding box via positioning host. */
+.ob-rings{
+  position:absolute;inset:50% 0 0 50%;
+  width:100%;height:100%;
+  pointer-events:none;
+  transform:translate(-50%,-50%);
+  color:var(--dc, var(--accent));
+}
+.ob-rings svg{position:absolute;inset:0;width:100%;height:100%;display:block;overflow:visible}
+.ob-rings circle{fill:none;stroke:currentColor;stroke-width:1;vector-effect:non-scaling-stroke}
+.ob-rings .ob-r1{opacity:.30;transform-origin:center;transform:scale(1.4)}
+.ob-rings .ob-r2{opacity:.20;transform-origin:center;transform:scale(2.1)}
+.ob-rings .ob-r3{opacity:.10;transform-origin:center;transform:scale(3.2)}
+.ob-rings--spin-cw  > svg{animation:ob-spin-cw 60s linear infinite}
+.ob-rings--spin-ccw > svg{animation:ob-spin-ccw 90s linear infinite}
+@keyframes ob-spin-cw {to{transform:rotate(360deg)}}
+@keyframes ob-spin-ccw{to{transform:rotate(-360deg)}}
+@media (prefers-reduced-motion:reduce){
+  .ob-rings--spin-cw > svg,.ob-rings--spin-ccw > svg{animation:none}
+}
+/* Drone: rings feel more present */
+:root[data-theme="drone"] .ob-rings{opacity:.95;color:color-mix(in oklab, var(--dc, var(--accent)) 60%, var(--ink))}
+/* Light/dark: rings recede, color tints with domain */
+:root[data-theme="dark"] .ob-rings,
+:root:not([data-theme]) .ob-rings,
+:root[data-theme="light"] .ob-rings{opacity:.55}
+
+/* PRIMITIVE 2 — .ob-brackets  (four corner brackets)
+   12px arm length, 1px stroke, 4px inset. Default: hidden +
+   slightly outscaled. On parent .is-active: scale(1) + visible.
+   Pointer-events:none so brackets never block underlying clicks. */
+.ob-brackets{
+  position:absolute;inset:-4px;pointer-events:none;
+  opacity:0;transform:scale(1.1);
+  transition:opacity .2s var(--ease-cinema), transform .2s var(--ease-cinema);
+  color:var(--dc, var(--accent));
+}
+.ob-brackets > span{
+  position:absolute;width:12px;height:12px;
+  border:0 solid currentColor;
+  border-color:currentColor;
+}
+.ob-brackets > span:nth-child(1){top:0;left:0;border-top-width:1px;border-left-width:1px}
+.ob-brackets > span:nth-child(2){top:0;right:0;border-top-width:1px;border-right-width:1px}
+.ob-brackets > span:nth-child(3){bottom:0;left:0;border-bottom-width:1px;border-left-width:1px}
+.ob-brackets > span:nth-child(4){bottom:0;right:0;border-bottom-width:1px;border-right-width:1px}
+.is-active > .ob-brackets,
+*:hover > .ob-brackets,
+*:focus-visible > .ob-brackets{opacity:.85;transform:scale(1)}
+@media (prefers-reduced-motion:reduce){
+  .ob-brackets{transition:opacity .01ms}
+}
+
+/* PRIMITIVE 3 — .ob-scan-line  (1px hairline with 2px outer glow) */
+.ob-scan-line{
+  display:block;height:1px;width:100%;
+  background:linear-gradient(90deg,
+    transparent 0%,
+    color-mix(in oklab, var(--dc, var(--accent)) 80%, transparent) 50%,
+    transparent 100%);
+  box-shadow:0 0 2px 0 color-mix(in oklab, var(--dc, var(--accent)) 50%, transparent);
+}
+.ob-scan-line--accent{
+  background:linear-gradient(90deg, transparent, var(--accent), transparent);
+  box-shadow:0 0 4px 0 color-mix(in oklab, var(--accent) 50%, transparent);
+}
+
+/* PRIMITIVE 4 — .ob-scan-tick  (4px filled circle inside 12px ring) */
+.ob-scan-tick{
+  position:relative;display:inline-block;
+  width:12px;height:12px;flex:none;vertical-align:middle;
+  color:var(--dc, var(--accent));
+}
+.ob-scan-tick::before{
+  content:"";position:absolute;inset:0;border-radius:50%;
+  border:1px solid currentColor;opacity:.6;
+}
+.ob-scan-tick::after{
+  content:"";position:absolute;left:50%;top:50%;
+  width:4px;height:4px;border-radius:50%;
+  background:currentColor;
+  transform:translate(-50%,-50%);
+  box-shadow:0 0 6px 0 currentColor;
+}
+
+/* PRIMITIVE 5 — .ob-tetrahedron  (12px hairline tetrahedron outline) */
+.ob-tetra{
+  display:inline-block;width:12px;height:12px;flex:none;
+  color:var(--dc, var(--accent));vertical-align:middle;
+}
+.ob-tetra svg{display:block;width:100%;height:100%;overflow:visible}
+.ob-tetra path{fill:none;stroke:currentColor;stroke-width:1;vector-effect:non-scaling-stroke}
+
+/* ============================================================
+   PER-VIEW — WALK
+   Year-glyph rings (centered behind year), trail polyline +
+   travelling dot, focused-card brackets, drone-only tetra dot.
+   ============================================================ */
+.walk-year{position:relative}
+.walk-year-host{position:relative;display:inline-block;isolation:isolate}
+/* The rings host wraps the year glyph and sizes itself to its
+   optical bounding box. Three concentric circles spin slowly
+   clockwise behind the glyph. The bloom remains the dominant
+   light source; the rings are a quiet halo. */
+.walk-year-host .ob-rings{
+  position:absolute;left:50%;top:50%;
+  width:1px;height:1px;            /* circles defined by SVG vbox */
+  transform:translate(-50%,-50%);
+  z-index:-1;pointer-events:none;
+}
+.walk-year-host .ob-rings svg{
+  position:absolute;left:50%;top:50%;width:0;height:0;overflow:visible;
+  transform:translate(-50%,-50%);
+}
+/* Override the absolute positioning above with explicit per-circle radii so
+   the rings are independent of inset rules. */
+.walk-year-host .ob-rings circle{
+  cx:0;cy:0;
+  fill:none;stroke:currentColor;stroke-width:1;vector-effect:non-scaling-stroke;
+}
+
+/* Walk trail polyline + travelling dot — replaces the ↓ separator */
+.walk-trail-link{
+  position:relative;
+  width:1px;height:24px;
+  background:linear-gradient(180deg,
+    transparent 0%,
+    color-mix(in oklab, var(--dc, var(--accent)) 50%, transparent) 50%,
+    transparent 100%);
+  font-size:0;line-height:0;color:transparent;
+  box-shadow:0 0 6px 1px color-mix(in oklab, var(--dc, var(--accent)) 25%, transparent);
+}
+.walk-trail-link::after{
+  content:"";position:absolute;left:50%;top:0;
+  width:3px;height:3px;border-radius:50%;
+  transform:translateX(-50%);
+  background:color-mix(in oklab, var(--dc, var(--accent)) 90%, var(--ink));
+  box-shadow:0 0 8px 1px color-mix(in oklab, var(--dc, var(--accent)) 80%, transparent);
+  animation:trail-dot 2.4s var(--ease-cinema) infinite;
+}
+@keyframes trail-dot{
+  0%{top:-4px;opacity:0}
+  10%{opacity:1}
+  90%{opacity:1}
+  100%{top:calc(100% + 4px);opacity:0}
+}
+@media (prefers-reduced-motion:reduce){
+  .walk-trail-link::after{animation:none;top:50%}
+}
+
+/* Focused/hovered flow-card brackets via .ob-brackets primitive */
+.walk-flow-card{position:relative}
+.walk-flow-card .ob-brackets{
+  inset:-2px;
+  color:color-mix(in oklab, var(--dc, var(--accent)) 80%, var(--ink));
+}
+
+/* Drone-only: domain chip prefix swaps from orb to tetrahedron */
+.dom .ob-tetra{display:none;width:10px;height:10px;margin-right:1px}
+:root[data-theme="drone"] .dom::before{display:none}
+:root[data-theme="drone"] .dom .ob-tetra{display:inline-block}
+
+/* ============================================================
+   PER-VIEW — MAP
+   Era column dividers go to 0.5px hairline; technical row labels;
+   crosshair guide lines + bracketed tooltip handled in JS.
+   ============================================================ */
+/* Map y-labels: hide the tetra prefix outside drone, show it in drone with
+   the technical look. */
+.map-y-label .ob-tetra{display:none;margin-right:6px}
+:root[data-theme="drone"] .map-y-label{
+  font-family:var(--mono);font-size:.62rem;
+  text-transform:uppercase;letter-spacing:.08em;
+  color:var(--ink-2);
+  padding-bottom:6px;
+  border-bottom:1px solid var(--ob-line-soft) !important;
+}
+:root[data-theme="drone"] .map-y-label .ob-tetra{display:inline-block}
+.map-tooltip{position:relative}
+.map-tooltip > .ob-brackets{opacity:1;transform:scale(1);inset:-4px}
+.map-tooltip.show > .ob-brackets{opacity:1}
+
+/* Map crosshair (drawn on hover via JS-injected element) */
+.map-crosshair{
+  position:absolute;pointer-events:none;z-index:3;
+  opacity:0;transition:opacity .12s var(--ease-cinema);
+}
+.map-crosshair.show{opacity:1}
+.map-crosshair-h,.map-crosshair-v{
+  position:absolute;background:color-mix(in oklab, var(--dc, var(--accent)) 60%, transparent);
+  box-shadow:0 0 4px 0 color-mix(in oklab, var(--dc, var(--accent)) 35%, transparent);
+}
+.map-crosshair-h{left:0;right:0;height:1px;}
+.map-crosshair-v{top:0;bottom:0;width:1px;}
+
+/* Map dot click-ripple (two expanding hairline rings) */
+.map-ripple{
+  position:absolute;pointer-events:none;z-index:4;
+  width:0;height:0;border-radius:50%;
+  border:1px solid color-mix(in oklab, var(--dc, var(--accent)) 80%, transparent);
+  transform:translate(-50%,-50%);
+  animation:map-ripple .26s var(--ease-cinema) forwards;
+}
+.map-ripple--late{animation-delay:.06s}
+@keyframes map-ripple{
+  from{width:0;height:0;opacity:.85}
+  to  {width:60px;height:60px;opacity:0}
+}
+@media (prefers-reduced-motion:reduce){
+  .map-ripple{animation:none;display:none}
+}
+
+/* ============================================================
+   PER-VIEW — HUNT  (left-rail timeline)
+   ============================================================ */
+.hunt-chain{position:relative}
+.hunt-rail{
+  position:absolute;left:11px;top:6px;bottom:6px;
+  width:1px;background:linear-gradient(180deg,
+    transparent 0%,
+    var(--ob-line) 8%,
+    var(--ob-line) 92%,
+    transparent 100%);
+  pointer-events:none;
+}
+.hunt-step{position:relative;padding-left:42px !important}
+.hunt-step::after{
+  content:"";position:absolute;left:6px;top:24px;
+  width:11px;height:11px;border-radius:50%;
+  border:1px solid color-mix(in oklab, var(--dc, var(--accent)) 80%, var(--ob-line));
+  background:radial-gradient(circle at 45% 45%,
+    color-mix(in oklab, var(--dc, var(--accent)) 90%, transparent) 0%,
+    color-mix(in oklab, var(--dc, var(--accent)) 30%, transparent) 50%,
+    transparent 80%);
+  box-shadow:0 0 8px 0 color-mix(in oklab, var(--dc, var(--accent)) 40%, transparent);
+}
+.hunt-step--first{position:relative}
+.hunt-step--first .ob-brackets{opacity:.85;transform:scale(1);inset:-4px;color:var(--accent)}
+.hunt-trace{
+  font-family:var(--mono);font-size:.66rem;
+  letter-spacing:.18em;text-transform:uppercase;
+  color:var(--accent);
+  padding-left:42px;margin:-4px 0 14px;
+  display:none;
+}
+:root[data-theme="drone"] .hunt-trace{display:block}
+.hunt-arrow{padding-left:42px !important}
+@media (max-width:560px){
+  .hunt-step{padding-left:36px !important}
+  .hunt-rail{left:8px}
+  .hunt-step::after{left:3px}
+  .hunt-arrow{padding-left:36px !important}
+}
+
+/* ============================================================
+   PER-VIEW — BROWSE
+   Search-field corner brackets + era scan-tick + result-id syntax.
+   ============================================================ */
+.browse-search{position:relative}
+.browse-search .ob-brackets{inset:-4px;color:var(--accent)}
+.browse-search:focus-within .ob-brackets{opacity:.85;transform:scale(1)}
+
+.browse-zone-head .ob-scan-tick{margin-right:6px}
+.browse-zone-head{position:relative}
+.browse-zone-head::after{
+  content:"";position:absolute;left:0;right:0;bottom:-10px;height:1px;
+  background:linear-gradient(90deg,
+    color-mix(in oklab, var(--dc, var(--accent)) 70%, transparent) 0%,
+    transparent 60%);
+  opacity:.45;pointer-events:none;
+}
+.browse-zone-head .ct-zid{display:none;color:var(--muted)}
+:root[data-theme="drone"] .browse-zone-head .ct{
+  font-family:var(--mono);font-size:.68rem;
+  text-transform:uppercase;letter-spacing:.06em;
+}
+:root[data-theme="drone"] .browse-zone-head .ct-zid{display:inline}
+:root[data-theme="drone"] .browse-meta{font-family:var(--mono);font-size:.7rem}
+
+/* ============================================================
+   PER-VIEW — PLAY
+   Beat ring-pulse, hairline chevrons, scan-line transition,
+   bracket flash, scan-line progress.
+   ============================================================ */
+.play-frame{position:relative}
+.play-year-host{position:relative;display:inline-block;line-height:0}
+.play-year-host .play-year{position:relative;z-index:1;display:inline-block;line-height:1.04}
+.play-year-host .ob-rings{
+  position:absolute;left:50%;top:50%;
+  width:1px;height:1px;
+  transform:translate(-50%,-50%);
+  z-index:0;
+}
+.play-year-host .ob-rings svg{
+  position:absolute;left:50%;top:50%;width:0;height:0;overflow:visible;
+  transform:translate(-50%,-50%);
+}
+.play-year-host .ob-rings circle{
+  cx:0;cy:0;fill:none;stroke:currentColor;stroke-width:1;vector-effect:non-scaling-stroke;
+}
+
+/* Beat ring-pulse — emits a single expanding ring on each beat */
+.play-frame.is-beat .play-pulse-ring{
+  position:absolute;left:50%;top:50%;
+  width:1px;height:1px;border-radius:50%;
+  border:1px solid color-mix(in oklab, var(--dc, var(--accent)) 80%, transparent);
+  transform:translate(-50%,-50%);
+  animation:play-pulse 220ms var(--ease-cinema) forwards;
+  pointer-events:none;
+}
+@keyframes play-pulse{
+  from{width:0;height:0;opacity:.9}
+  to  {width:520px;height:520px;opacity:0}
+}
+@media (prefers-reduced-motion:reduce){
+  .play-frame.is-beat .play-pulse-ring{animation:none;display:none}
+}
+
+/* Hairline chevrons — replace the unicode glyph with an inline arrow */
+.play-reel-chev{font-size:0 !important;position:relative}
+.play-reel-chev::before{
+  content:"";position:absolute;left:50%;top:50%;
+  width:9px;height:9px;
+  border-style:solid;border-color:currentColor;
+  border-width:1px 1px 0 0;
+  transform:translate(-50%,-50%) rotate(45deg);
+}
+#playPrevReel::before{
+  border-width:0 0 1px 1px;
+  transform:translate(-30%,-50%) rotate(45deg);
+}
+#playNextReel::before{
+  border-width:1px 1px 0 0;
+  transform:translate(-70%,-50%) rotate(45deg);
+}
+
+/* Progress bar already a hairline; add the scan-line glow */
+.play-progress,.play-progress-fill{position:relative}
+.play-progress-fill::after{
+  content:"";position:absolute;right:-2px;top:-1px;width:3px;height:3px;border-radius:50%;
+  background:var(--accent);
+  box-shadow:0 0 6px 1px color-mix(in oklab, var(--accent) 70%, transparent);
+}
+
+/* Stage scan sweep — left-to-right 1px line ahead of each frame */
+.play-stage{position:relative;overflow:hidden}
+.play-stage-scan{
+  position:absolute;left:0;top:0;bottom:0;width:1px;
+  background:linear-gradient(180deg,
+    transparent 0%,
+    color-mix(in oklab, var(--dc, var(--accent)) 80%, transparent) 30%,
+    color-mix(in oklab, var(--dc, var(--accent)) 80%, transparent) 70%,
+    transparent 100%);
+  box-shadow:0 0 12px 1px color-mix(in oklab, var(--dc, var(--accent)) 60%, transparent),
+             0 0 36px 4px color-mix(in oklab, var(--dc, var(--accent)) 30%, transparent);
+  opacity:0;pointer-events:none;z-index:5;
+  transform:translateX(-1px);
+}
+.play-stage-scan.run{
+  animation:play-scan 240ms var(--ease-cinema) forwards;
+}
+@keyframes play-scan{
+  0%   {opacity:0;left:-2px}
+  10%  {opacity:1}
+  90%  {opacity:1}
+  100% {opacity:0;left:calc(100% + 2px)}
+}
+@media (prefers-reduced-motion:reduce){
+  .play-stage-scan{display:none}
+}
+
+/* Beat bracket flash around year glyph */
+.play-year-host .ob-brackets{
+  inset:-12px -8px;color:var(--accent);
+  transition:none;
+}
+.play-frame.is-beat .play-year-host .ob-brackets.flash{
+  animation:play-bracket-flash 600ms var(--ease-cinema) forwards;
+}
+@keyframes play-bracket-flash{
+  0%  {opacity:0;transform:scale(1.1)}
+  20% {opacity:1;transform:scale(1)}
+  100%{opacity:0;transform:scale(1)}
+}
+
+/* ============================================================
+   GLOBAL MOTION — route scan, hover ring pulse, focus bracket,
+   ambient drift.
+   ============================================================ */
+/* Route-scan overlay — fixed 1px line that sweeps top→bottom */
+#routeScan{
+  position:fixed;left:0;right:0;top:-2px;height:1px;
+  pointer-events:none;z-index:140;opacity:0;
+  background:linear-gradient(90deg,
+    transparent 0%,
+    color-mix(in oklab, var(--accent) 90%, transparent) 50%,
+    transparent 100%);
+  box-shadow:0 0 12px 2px color-mix(in oklab, var(--accent) 60%, transparent),
+             0 0 80px 16px color-mix(in oklab, var(--accent) 25%, transparent);
+}
+#routeScan.run{animation:route-scan 320ms var(--ease-cinema) forwards}
+@keyframes route-scan{
+  0%   {top:-4px;opacity:0}
+  8%   {opacity:1}
+  92%  {opacity:1}
+  100% {top:calc(100vh + 4px);opacity:0}
+}
+@media (prefers-reduced-motion:reduce){
+  #routeScan{display:none}
+}
+
+/* Hover ring pulse — single SVG overlay, JS positions a circle */
+#ringOverlay{
+  position:fixed;inset:0;pointer-events:none;z-index:6;overflow:visible;
+}
+#ringOverlay circle{
+  fill:none;stroke:color-mix(in oklab, var(--dc, var(--accent)) 80%, transparent);
+  stroke-width:1;vector-effect:non-scaling-stroke;opacity:0;
+}
+#ringOverlay circle.run{animation:ring-pulse 240ms var(--ease-cinema) forwards}
+@keyframes ring-pulse{
+  0%   {opacity:.9;transform:scale(1)}
+  100% {opacity:0;transform:scale(1.3)}
+}
+@media (prefers-reduced-motion:reduce){
+  #ringOverlay{display:none}
+}
+
+/* Focus bracket overlay — JS animates position+size to wrap focused element */
+#focusBracket{
+  position:fixed;left:0;top:0;width:0;height:0;
+  pointer-events:none;z-index:5;opacity:0;
+  transition:opacity .18s var(--ease-cinema),
+             transform .2s var(--ease-cinema),
+             width .2s var(--ease-cinema),
+             height .2s var(--ease-cinema);
+  color:var(--accent);
+}
+#focusBracket.show{opacity:.85}
+#focusBracket .fb-c{
+  position:absolute;width:12px;height:12px;
+  border:0 solid currentColor;
+}
+#focusBracket .fb-tl{top:-3px;left:-3px;border-top-width:1px;border-left-width:1px}
+#focusBracket .fb-tr{top:-3px;right:-3px;border-top-width:1px;border-right-width:1px}
+#focusBracket .fb-bl{bottom:-3px;left:-3px;border-bottom-width:1px;border-left-width:1px}
+#focusBracket .fb-br{bottom:-3px;right:-3px;border-bottom-width:1px;border-right-width:1px}
+@media (prefers-reduced-motion:reduce){
+  #focusBracket{transition:none;display:none}
+}
+
+/* Idle ambient drift — slow orbit of the body backdrop radial gradients.
+   We achieve this by orbiting a custom property that the body::before reads.
+   Pure CSS via @keyframes on cx/cy. */
+@property --drift-x { syntax: '<percentage>'; initial-value: 18%; inherits: true }
+@property --drift-y { syntax: '<percentage>'; initial-value: 12%; inherits: true }
+@keyframes drift-orbit{
+  0%   {--drift-x:18%;--drift-y:12%}
+  25%  {--drift-x:32%;--drift-y:22%}
+  50%  {--drift-x:24%;--drift-y:18%}
+  75%  {--drift-x:14%;--drift-y:26%}
+  100% {--drift-x:18%;--drift-y:12%}
+}
+@supports (background:radial-gradient(50vmax 60vmax at var(--drift-x) var(--drift-y), red, transparent)) {
+  body::before{
+    background:
+      radial-gradient(60vmax 60vmax at calc(var(--cx)*100%) calc(var(--cy)*100%),
+        var(--halo) 0%, transparent 55%),
+      radial-gradient(50vmax 60vmax at var(--drift-x) var(--drift-y),
+        color-mix(in oklab, var(--dc, var(--accent)) 18%, transparent) 0%,
+        transparent 60%),
+      radial-gradient(60vmax 60vmax at calc(100% - var(--drift-x)) calc(100% - var(--drift-y)),
+        color-mix(in oklab, var(--accent-2) 14%, transparent) 0%,
+        transparent 60%),
+      linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+    animation:drift-orbit 90s var(--ease-cinema) infinite;
+  }
+}
+@media (prefers-reduced-motion:reduce){
+  body::before{animation:none}
+}
+
+/* ============================================================
+   WALK STAGE TICK-TO-TICK MOTION
+   Slide off in arrow direction, slide in opposite direction.
+   Wired to .walk-stage with data-walk-dir state.
+   ============================================================ */
+.walk-stage[data-walk-anim="out-right"]{animation:walk-out-right 280ms var(--ease-cinema) forwards}
+.walk-stage[data-walk-anim="out-left"] {animation:walk-out-left  280ms var(--ease-cinema) forwards}
+.walk-stage[data-walk-anim="in-from-left"] {animation:walk-in-from-left 280ms var(--ease-cinema) forwards}
+.walk-stage[data-walk-anim="in-from-right"]{animation:walk-in-from-right 280ms var(--ease-cinema) forwards}
+@keyframes walk-out-right{from{opacity:1;transform:translateX(0)}to{opacity:0;transform:translateX(12px)}}
+@keyframes walk-out-left {from{opacity:1;transform:translateX(0)}to{opacity:0;transform:translateX(-12px)}}
+@keyframes walk-in-from-left {from{opacity:0;transform:translateX(-12px)}to{opacity:1;transform:translateX(0)}}
+@keyframes walk-in-from-right{from{opacity:0;transform:translateX(12px)} to{opacity:1;transform:translateX(0)}}
+@media (prefers-reduced-motion:reduce){
+  .walk-stage[data-walk-anim]{animation:none}
+}
+
+/* The .walk root previously animated walk-in on every render — keep that
+   for first paint, but drop it for the inner-stage swap so we don't get
+   double-fades. */
+.walk[data-no-anim] {animation:none}
