@@ -505,6 +505,81 @@ const BECAUSE_BATCH = {
 
   'mauryan-state-monopoly-on-mining':
     "Mauryan state-building (~320 BC) under Chandragupta and Kautilya had organized fiscal extraction more thoroughly than any previous Indian polity. The Arthashastra codified the doctrine: mining of gold, silver, iron, gems, and salt was a royal monopoly. Private investment in extraction was forbidden. The Mauryas could fund standing armies and the largest infrastructure programs of their era — but also blocked the kind of private capital accumulation that would later drive industrial economies.",
+
+  'barbegal-aqueduct-and-mills':
+    "Roman aqueducts had supplied drinking water to provincial cities. The Barbegal mill complex (early 2nd century AD, near Arles) channeled an aqueduct down a hillside through 16 overshot waterwheels in two parallel cascades — the largest known industrial complex of antiquity. Estimated to have ground 4.5 tons of grain per day, enough for 12,000 people. The first known purpose-built industrial water-power site. The model was rare in antiquity but the scale demonstrated what was possible.",
+
+  'horse-collar-in-europe':
+    "Throat-and-girth harnesses had choked horses pulling heavy loads — pulling power was capped at roughly 500 lbs. The padded horse collar, invented in Han China (~100 AD) and slowly diffused west via Central Asia, transferred load to the chest and shoulders without restricting the windpipe. Wide European adoption around 1000 AD raised horse pulling power to 3,000 lbs. Heavy plows in clay soils, larger wagons, and the medieval agricultural surplus all depend on the collar.",
+
+  'antwerp-bourse-building':
+    "Italian merchant cities had hosted bourses informally on bridges or in churches since the 1300s. Bruges had a regular merchant gathering by 1400. Antwerp's purpose-built Bourse (1531) — a covered courtyard with arcades, dedicated to merchant gathering, with posted prices — was the first physical commodity exchange. The Latin motto over the door declared it for 'merchants of all nations and tongues.' Amsterdam (1611) and London (Royal Exchange, 1571) copied the building and the institution.",
+
+  'mfs-investment-management':
+    "Closed-end investment trusts had pooled capital for diversified portfolios since the 1860s, but their share prices traded at premiums or discounts to net asset value, locking out small investors at fair price. MFS's Massachusetts Investors Trust (March 1924) issued and redeemed shares daily at the underlying NAV — the first open-end mutual fund. Diversified portfolio access for retail investors at fair price. By 2000, mutual funds held a larger fraction of US wealth than any other vehicle.",
+
+  'first-online-stock-trade-k-aufhauser':
+    "Discount brokerages (Schwab, 1975) had cut commissions to retail levels. Quote services (1980s) gave individual investors near-real-time prices. The internet made the missing piece — order entry — possible. K. Aufhauser & Co. executed the first online stock trade in August 1994. E*TRADE (1996) made it mass-market. Day-trading, the dot-com retail bubble, and the eventual rise of Robinhood all run on the same infrastructure that started here.",
+
+  'nasdaq-crossing-5000':
+    "The NASDAQ had been the home of tech IPOs since the 1980s. Internet adoption (1995-2000), the IPO frenzy of 1999, and a wave of retail capital pushed the index from 1,000 in mid-1995 to 5,048 in March 2000 — a 400% rise in five years. The peak crossed within hours of the bubble's break. By October 2002 the index had fallen to 1,114. The largest reset in valuation since 1929. The dot-com era's institutional memory shapes every subsequent tech-cycle valuation discussion.",
+
+  'enron-scandal-and-bankruptcy':
+    "Mark-to-market accounting (allowed for energy traders since 1992), special-purpose entity vehicles (allowed under SFAS 140), and complicit auditing (Arthur Andersen) had let Enron book future revenues as current and shift debt off-balance-sheet for years. The Wall Street Journal's October 2001 investigation collapsed the company in two months. Andersen dissolved. Sarbanes-Oxley (2002) tightened audit oversight, mandated CEO/CFO certification, and made off-balance-sheet hiding much harder. The tick that produced US corporate-governance reform.",
+
+  'egyptian-hieroglyphs-mature':
+    "Early hieroglyphs had been administrative tags on goods. By the Middle Kingdom (~2000 BC), the system carried full literary, religious, and royal-monumental texts in about 900 distinct signs combining logograms, phonetic signs, and determinatives. Ramesside-era scribal training preserved the system's literary form for two millennia. The first writing system that could record narrative literature; a competitor to cuneiform that lasted longer than any of the empires that used it.",
+
+  'hebrew-script-transition-to-square-aramaic':
+    "Paleo-Hebrew had been the script of the Israelite kingdoms before the Babylonian exile. Aramaic — the lingua franca of the Persian Empire — became the working language of Jewish communities after 539 BC. By the 5th-4th centuries BC, Jewish scribes adopted the Aramaic 'square' script for Hebrew texts as well. The Dead Sea Scrolls show the transition complete by 200 BC. The Hebrew Bible's surviving manuscripts are all in the new script. Paleo-Hebrew survived only as a sacred archaism.",
+
+  'mozis-logical-and-linguistic-thought':
+    "Confucian and Daoist thought had focused on ethics and metaphysics. The Later Mohist canon (~300 BC) — the Dialectical Chapters of the Mozi — turned the lens on language itself: definitions, distinctions, paradoxes, classification, the relation between names and reality. The first systematic logical analysis in classical Chinese. Buried with the Qin book burnings (213 BC), rediscovered in the 19th century, and now read alongside Aristotle and Pāṇini as the third great independent emergence of formal logic.",
+
+  'library-of-alexandria-founded':
+    "Pre-Alexandria collections had been temple-sized — hundreds of clay tablets or papyrus scrolls stored as tax records. Ptolemy I's library (founded ~300 BC, expanded by Ptolemy II) aimed at universal coverage: every scroll on every ship docking at Alexandria copied for the collection. At peak, 400,000 to 700,000 scrolls. The first knowledge-aggregation institution at imperial scale. Eratosthenes calculated the Earth's circumference there. Most of what we have of Greek literature passed through the library's editorial copying.",
+
+  'photostat-machine':
+    "Document copying had meant hand-transcription, hand-press copying machines (which produced one wet-ink mirror copy), or photographic plate cameras. The Photostat machine (1907, Kodak's Rectigraph) used a built-in lens, a mirror, and a roll of photosensitive paper to produce a usable copy directly without negatives. Office adoption was slow and the machines were expensive. Carlson's xerography (1938) eventually replaced them. The first office machine that could copy a page in under a minute.",
+
+  'laser-printer-xerox':
+    "Xerox copiers (1959 onward) had used a fixed image to mark photoreceptor drums. Gary Starkweather (1969-1971) realized the same drum could be marked by a modulated laser beam — every page individually programmable. The Xerox SLOT (1971) was the first laser printer. The IBM 3800 (1976) made it commercial. The Apple LaserWriter (1985) made desktop publishing viable: every author could now produce typeset-quality pages without a press. Print quality was no longer a publisher's privilege.",
+
+  'voyager-golden-records':
+    "The Pioneer plaques (1972) had attached symbolic line-art to the Pioneer probes. Voyager 1 and 2 (1977) carried something larger: gold-plated copper records with 116 images, greetings in 55 languages, music from Bach to Chuck Berry, and the sound of a kiss. Carl Sagan led the curation committee. Etched on the cover: instructions for playing the record at the right speed and a star-positioning diagram identifying Earth. The first deliberate interstellar message designed to outlive the species that sent it.",
+
+  'mixture-of-experts':
+    "Dense neural networks ran every parameter for every input — capacity scaled with compute. Jacobs, Jordan, Nowlan, and Hinton's 1991 mixture-of-experts paper proposed routing inputs to specialized sub-networks (experts) via a gating function — capacity scaled while compute stayed roughly fixed. Mostly ignored for two decades. Switch Transformer (2021) and the GPT-4 architecture (rumored to be MoE) revived the idea. Most frontier 2024 models use sparsely-activated MoE under the hood.",
+
+  'hotmail-first-webmail-service':
+    "Email had been ISP-tied since the 1980s — your address was your-name@your-isp. Switching jobs or providers meant losing the address. Sabeer Bhatia and Jack Smith's Hotmail (July 4, 1996) put email behind a web page accessible from anywhere with a browser. The address persisted regardless of where you connected. Microsoft acquired Hotmail in 1997 for $400 million. Webmail became the default. Gmail's 1GB-free launch (2004) was Hotmail's grandchild.",
+
+  'earliest-known-use-of-poison-for-hunting':
+    "Stone-tipped projectiles had increased range; muscle still had to deliver lethal force in one shot. Residue analysis of stone arrowheads from Border Cave and Umhlatuzana Rock Shelter, South Africa (~60,000 BC) confirmed the deliberate application of plant alkaloids — ricinoleic acid from castor bean, in some cases. The first known chemical augmentation of weapons. Smaller hunters could now bring down larger prey. African hunting kits (and most San groups today) preserved the practice.",
+
+  'code-of-ur-nammu':
+    "Sumerian commercial life had run on customary law and case-by-case decisions. Ur-Nammu, founder of the Third Dynasty of Ur (~2100 BC), promulgated a written law code on stone — fifty-seven articles surviving — covering theft, assault, marital law, slavery, and crop-and-grain prices in fixed silver-shekel equivalents. The first written law code anywhere. Predates Hammurabi by three centuries. Standardized law was now portable; merchants and scribes could cite a tablet, not a ruling.",
+
+  'hittite-laws':
+    "Hammurabi's Code (1754 BC) had used 'an eye for an eye' retribution as the default. The Hittite Laws (~1650 BC, in Hittite cuneiform) substituted compensation in silver or livestock for most physical penalties — the first major legal code organized around restitution rather than retribution. Less brutal in nominal text; harshness reserved for slaves and certain specific crimes. The Hittite approach influenced later Anatolian and Aegean legal traditions.",
+
+  'laws-of-manu':
+    "The Vedas had supplied ritual law; the Dharmasūtras (600-200 BC) supplied caste and household duty. The Manusmriti or Laws of Manu (compiled ~200 BC-200 AD) systematized the lot: 2,685 verses on cosmology, the four varnas, householder duties, royal law, court procedure, and atonement. The most influential legal text in the Hindu tradition for two millennia. British colonial courts used Manu as Hindu personal law. Modern scholars debate its actual historical authority versus its Brahminic-canonical status.",
+
+  'creation-of-the-quaestio-perpetua':
+    "Roman criminal trials had been ad hoc — the senate or a popular assembly convened in response to specific cases. The lex Calpurnia de repetundis (149 BC) created the first standing jury court (quaestio perpetua) — for prosecuting magistrates accused of provincial extortion. By the late Republic there were at least eight standing courts, each with its own statute and procedure. The first permanent specialized criminal courts. The model survived into imperial Roman law and was rediscovered by medieval canon lawyers.",
+
+  'praetorian-edict-system-formalized':
+    "Roman praetors had issued an edict at the start of each annual term setting out the procedures they would follow. In practice, edicts were often modified during the year — a praetor could grant or refuse a remedy mid-case. The lex Cornelia de edictis (67 BC), part of Sulla's reforms, required the praetor to follow his own published edict for the whole year. The first explicit procedural rule of binding precedent. Roman jurisprudence's accumulating doctrine begins to be canonical.",
+
+  'paris-convention-for-the-protection-of-industrial-property':
+    "Patents and trademarks had been national monopolies — protected only within the granting country. International exhibitions (the 1873 Vienna World Exhibition, the 1878 Paris Exhibition) had exposed the awkwardness: foreign inventors withheld participation rather than have their work copied without protection. The Paris Convention (1883) created a treaty union: each member country would treat foreign inventors and brand-owners as if they were nationals. The first international IP regime. WIPO's 19th-century parent.",
+
+  'communications-decency-act-section-230':
+    "Pre-1996, online platforms were caught between Stratton Oakmont v. Prodigy (1995, finding moderation made you a publisher liable for content) and Cubby v. CompuServe (1991, finding non-moderation made you a distributor not liable). Section 230 of the Communications Decency Act (February 1996) gave platforms a third option: moderate without becoming a publisher. The 26 words ('No provider or user of an interactive computer service shall be treated as the publisher or speaker of any information provided by another information content provider') made the modern web possible. Every social platform's business model rests on Section 230.",
+
+  'a-m-records-v-napster':
+    "Sony Corp. v. Universal Studios (1984, the Betamax case) had immunized technology vendors from secondary liability for substantial non-infringing uses. Napster (1999) tested whether peer-to-peer file-sharing fit the Betamax umbrella. The Ninth Circuit (2001) said no: Napster's central index gave it knowledge of and control over infringing transfers, making it contributorily and vicariously liable. Napster shut down. Decentralized successors (Kazaa, BitTorrent) routed around the holding by removing the central index — the legal arms race that defined a decade of file-sharing.",
 };
 
 async function main(){
