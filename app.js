@@ -91,7 +91,8 @@ const routes = {
   '/hunt/:id': (id) => hunt(id),
   '/browse': browse,
   '/about': about,
-  '/play': play,
+  '/play': () => play(),
+  '/play/:id': (reelId) => play(reelId),
 };
 
 function parseHash(){
@@ -445,6 +446,10 @@ function renderWalk(){
             <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M11 5.5a2 2 0 1 0-2-2 2 2 0 0 0 2 2Zm-6 5a2 2 0 1 0-2-2 2 2 0 0 0 2 2Zm6 4a2 2 0 1 0-2-2 2 2 0 0 0 2 2Zm-1.5-9-3 2.4M9.5 13l-3-2.4"/></svg>
             share
           </button>
+          <a class='walk-action' href='#/play/${reelForDomain(t.domain)}' aria-label='Play a 60-second reel of this thread'>
+            <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 2.5v11l10-5.5z" stroke-linejoin="round"/></svg>
+            play this thread (60s)
+          </a>
           <a class='walk-action' href='https://github.com/k3sava/ticks/issues/new?title=${encodeURIComponent('Edit: ' + t.name)}&body=${encodeURIComponent('Tick: ' + t.id + '\\n\\nWhat needs fixing:\\n\\nSource:')}' target='_blank' rel='noopener'>↗ suggest an edit</a>
         </div>
       </div>
@@ -1028,9 +1033,12 @@ function browse(){
   };
 }
 
-/* ========== play (acceleration finale) ========== */
-// 60-second auto-tour of the corpus. Year-loud, single tick at a time,
-// with five "world inverted" beats that hold an extra moment.
+/* ========== play (acceleration reels) ==========
+   Seven curated reels through the corpus. Each is a 60-second auto-tour with
+   year-loud single-tick frames and "world inverted" beats that hold an extra
+   moment. Reels are randomized when /play has no arg; if the user arrives
+   from a walk, the route hands /play/:reelForDomain so the reel matches the
+   thread they were already on. Mid-play, chevrons cycle to the next reel. */
 const PLAY_BEATS = new Set([
   'recursive-language',
   'wheat-domestication',
@@ -1039,44 +1047,126 @@ const PLAY_BEATS = new Set([
   'transistor-bell-labs-shockley-bardeen-brattain',
   'transistor-invention',
   'chatgpt-rlhf-alignment',
+  'first-cities',
+  'agricultural-revolution',
+  'germ-theory-of-disease',
+  'penicillin-fleming',
+  'newton-principia',
+  'einsteins-special-relativity',
+  'arpanet-first-message',
+  'world-wide-web-tim-berners-lee',
+  'iphone-touchscreen-computing',
 ]);
+
+/* Reel taxonomy. domains:null means "all"; cap drives the playlist length.
+   Each reel scores ticks within its domain set by parents+children, picks the
+   top N, then sorts ascending by year. Order in the array is the cycle order
+   used by the chevrons + the keyboard shortcut. */
+const REELS = [
+  { id: 'acceleration', name: 'the acceleration',     tagline: 'every breakpoint that ever was',           domains: null,                                                cap: 180 },
+  { id: 'mind',         name: 'the mind awoke',        tagline: 'how thought learned to leave the skull',   domains: ['language','mind','philosophy'],                    cap: 38 },
+  { id: 'body',         name: 'the body unbound',      tagline: 'how we learned to keep ourselves alive',   domains: ['biology','medicine'],                              cap: 38 },
+  { id: 'tools',        name: 'tools of the gods',     tagline: 'matter, then energy, then light',          domains: ['physics','computing'],                             cap: 42 },
+  { id: 'civilization', name: 'the long settle',       tagline: 'from herds to cities to capital',          domains: ['agriculture','society','economics','law'],         cap: 42 },
+  { id: 'worlds',       name: 'pictures of the world', tagline: 'art, religion, the stories we shared',     domains: ['art','religion'],                                  cap: 32 },
+  { id: 'conflict',     name: 'force and counter-force',tagline: 'how power moved across history',          domains: ['war','law','economics'],                           cap: 30 },
+];
+
+/* Maps a tick's domain to the reel that best fits it. Lets a walk on a
+   transistor tick suggest "tools of the gods" for the 60s reel, etc. */
+const DOMAIN_TO_REEL = {
+  language: 'mind', mind: 'mind', philosophy: 'mind',
+  biology: 'body', medicine: 'body',
+  physics: 'tools', computing: 'tools',
+  agriculture: 'civilization', society: 'civilization', economics: 'civilization', law: 'civilization',
+  art: 'worlds', religion: 'worlds',
+  war: 'conflict',
+};
+function reelForDomain(domain){ return DOMAIN_TO_REEL[domain] || 'acceleration'; }
+function pickRandomReel(){
+  // Default to "acceleration" 30% of the time; otherwise random themed reel
+  // so a fresh visitor gets the everything-everywhere reel often, but repeat
+  // visitors are surprised.
+  if (Math.random() < 0.3) return 'acceleration';
+  const themed = REELS.filter(r => r.id !== 'acceleration');
+  return themed[Math.floor(Math.random() * themed.length)].id;
+}
+function getReel(reelId){
+  return REELS.find(r => r.id === reelId) || REELS[0];
+}
+function buildReelPlaylist(reelId){
+  const reel = getReel(reelId);
+  const pool = reel.domains
+    ? TICKS.filter(t => reel.domains.includes(t.domain))
+    : TICKS;
+  // For "acceleration" specifically, prefer featured.json if loaded. Themed
+  // reels always score within their domain pool so the curation feels real.
+  if (!reel.domains){
+    const features = (window.__features || []).map(id => TICK_BY_ID[id]).filter(Boolean);
+    if (features.length) return [...features].sort((a, b) => (a.yearN || 0) - (b.yearN || 0));
+  }
+  const scored = pool.map(t => ({
+    t,
+    score: (UNLOCKS[t.id]?.length || 0) * 2 + (UNLOCKED_BY[t.id]?.length || 0),
+  })).sort((a, b) => b.score - a.score).slice(0, reel.cap);
+  return scored.map(s => s.t).sort((a, b) => (a.yearN || 0) - (b.yearN || 0));
+}
+
 let _playTimer = null;
 let _playState = null;
 
-function play(){
-  // Build the playlist: prefer featured.json items if loaded, else top-200
-  // by parents+children. Sort by yearN ascending. Cap at 180 items so a
-  // 60s playback at ≈333ms/tick fits with beat pauses.
-  const features = (window.__features || []).map(id => TICK_BY_ID[id]).filter(Boolean);
-  const baseList = features.length ? features : (() => {
-    const scored = TICKS.map(t => ({
-      t,
-      score: (UNLOCKS[t.id]?.length || 0) * 2 + (UNLOCKED_BY[t.id]?.length || 0),
-    })).sort((a, b) => b.score - a.score).slice(0, 180);
-    return scored.map(s => s.t);
-  })();
-  const list = [...baseList].sort((a, b) => (a.yearN || 0) - (b.yearN || 0));
+function play(reelId){
+  // Resolve the reel: explicit arg wins; otherwise pick a random themed reel
+  // each visit. The home/walk CTAs pre-bake the reelId into the hash, so
+  // arriving from "play this thread" already lands on the right reel.
+  const id = reelId && getReel(reelId).id === reelId ? reelId : pickRandomReel();
+  const reel = getReel(id);
+  const list = buildReelPlaylist(id);
 
   app.innerHTML = `
-    <section class='play' aria-label='Acceleration finale'>
+    <section class='play' aria-label='Acceleration reel'>
       <div class='play-meta'>
+        <div class='play-reel-meta'>
+          <button class='play-reel-chev' id='playPrevReel' type='button' aria-label='Previous reel'>‹</button>
+          <div class='play-reel-name-block'>
+            <div class='play-reel-name' id='playReelName'>${escapeHtml(reel.name)}</div>
+            <div class='play-reel-tagline' id='playReelTagline'>${escapeHtml(reel.tagline)}</div>
+          </div>
+          <button class='play-reel-chev' id='playNextReel' type='button' aria-label='Next reel'>›</button>
+        </div>
         <span class='play-counter' id='playCount'>1 / ${list.length}</span>
-        <span class='play-help'>space pauses · [ slows · ] speeds · esc exits</span>
       </div>
       <div class='play-stage' id='playStage'></div>
       <div class='play-progress' aria-hidden='true'><div class='play-progress-fill' id='playFill'></div></div>
       <div class='play-controls'>
         <button id='playToggle' type='button'>pause</button>
+        <span class='play-help'>space pauses · ‹ › swap reel · esc exits</span>
         <a class='play-exit' href='#/'>exit</a>
       </div>
     </section>
   `;
 
-  _playState = { list, idx: 0, paused: false, baseDelay: 333, beatDelay: 1500 };
+  _playState = { reelId: id, list, idx: 0, paused: false, baseDelay: 333, beatDelay: 1500 };
+  // Set ambient using the FIRST tick's domain so the room lights up before
+  // the first frame renders. setAmbient is then called per-frame in render.
+  if (list[0]) setAmbient(list[0].domain);
   renderPlayFrame();
   schedulePlay();
 
   document.getElementById('playToggle').onclick = togglePlay;
+  document.getElementById('playPrevReel').onclick = () => switchReel(-1);
+  document.getElementById('playNextReel').onclick = () => switchReel(1);
+}
+
+function switchReel(dir){
+  const s = _playState;
+  if (!s) return;
+  const i = REELS.findIndex(r => r.id === s.reelId);
+  const next = REELS[(i + dir + REELS.length) % REELS.length];
+  // Update the URL without re-running the route handler — play() already
+  // does a full rebuild and that would re-trigger the route.
+  history.replaceState(null, '', `#/play/${next.id}`);
+  play(next.id);
 }
 
 function renderPlayFrame(){
@@ -1084,6 +1174,7 @@ function renderPlayFrame(){
   if (!s) return;
   const t = s.list[s.idx];
   if (!t) return;
+  setAmbient(t.domain);
   const stage = document.getElementById('playStage');
   if (!stage) return;
   const isBeat = PLAY_BEATS.has(t.id);
@@ -1211,6 +1302,8 @@ window.addEventListener('keydown', (e) => {
     if (e.key === ' '){ togglePlay(); e.preventDefault(); return; }
     if (e.key === '['){ _playState.baseDelay = Math.min(900, _playState.baseDelay + 80); return; }
     if (e.key === ']'){ _playState.baseDelay = Math.max(120, _playState.baseDelay - 80); return; }
+    if (e.key === 'ArrowLeft' || e.key === ','){ switchReel(-1); e.preventDefault(); return; }
+    if (e.key === 'ArrowRight' || e.key === '.'){ switchReel(1); e.preventDefault(); return; }
   }
   if (k === 'r'){ const t = TICKS[Math.floor(Math.random()*TICKS.length)]; location.hash = '#/walk/' + t.id; e.preventDefault(); return; }
   if (k === 's' && location.hash.startsWith('#/walk')){
