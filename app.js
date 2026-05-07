@@ -1411,13 +1411,13 @@ const PLAY_BEATS = new Set([
    top N, then sorts ascending by year. Order in the array is the cycle order
    used by the chevrons + the keyboard shortcut. */
 const REELS = [
-  { id: 'acceleration', name: 'the acceleration',     tagline: 'hand-axe to ChatGPT, in order',          domains: null,                                                cap: 180 },
-  { id: 'mind',         name: 'the mind awoke',        tagline: 'language, philosophy, AI',                domains: ['language','mind','philosophy'],                    cap: 38 },
-  { id: 'body',         name: 'the body unbound',      tagline: 'germs, vaccines, gene editing',           domains: ['biology','medicine'],                              cap: 38 },
-  { id: 'tools',        name: 'tools of the gods',     tagline: 'stone, fire, electricity, code',          domains: ['physics','computing'],                             cap: 42 },
-  { id: 'civilization', name: 'the long settle',       tagline: 'wheat, cities, money, law',                domains: ['agriculture','society','economics','law'],         cap: 42 },
-  { id: 'worlds',       name: 'pictures of the world', tagline: 'art and religion, the stories that stuck',domains: ['art','religion'],                                  cap: 32 },
-  { id: 'conflict',     name: 'force and counter-force',tagline: 'war and the rules around it',             domains: ['war','law','economics'],                           cap: 30 },
+  { id: 'acceleration', name: 'the acceleration',      tagline: 'From the hand-axe to ChatGPT — every step in between.',     domains: null,                                                cap: 180 },
+  { id: 'mind',         name: 'the recursive mind',    tagline: 'Once a sentence could be about a sentence, everything followed.', domains: ['language','mind','philosophy'],            cap: 38 },
+  { id: 'body',         name: 'we stopped dying',      tagline: 'What it took for a baby to reach school.',                  domains: ['biology','medicine'],                              cap: 38 },
+  { id: 'tools',        name: 'tools of the gods',     tagline: 'What we held in our hands decided what we thought next.',   domains: ['physics','computing'],                             cap: 42 },
+  { id: 'civilization', name: 'the long settle',       tagline: 'Wheat made cities possible. Cities made laws necessary.',   domains: ['agriculture','society','economics','law'],         cap: 42 },
+  { id: 'worlds',       name: 'the stories that stuck', tagline: 'The medium changed every century. The story didn\'t.',      domains: ['art','religion'],                                  cap: 32 },
+  { id: 'conflict',     name: 'force and counter-force', tagline: 'What changed between the spear and the H-bomb.',          domains: ['war','law','economics'],                           cap: 30 },
 ];
 
 /* Maps a tick's domain to the reel that best fits it. Lets a walk on a
@@ -1693,8 +1693,8 @@ function about(){
       <p>Agent permissions, skill catalog, and the RFC 9727 linkset live under <a href='.well-known/agent-permissions.json'>.well-known/agent-permissions.json</a>, <a href='.well-known/agent-skills/index.json'>.well-known/agent-skills/index.json</a>, and <a href='.well-known/api-catalog'>.well-known/api-catalog</a>. Fetch, index, summarize, and quote are explicitly allowed. Citation back to the canonical tick URL is required.</p>
 
       <h2>Sources</h2>
-      <p>Every tick has 2&ndash;3 source links you can follow. The bulk of factual claims trace to <strong>Wikipedia</strong>, the largest general-knowledge corpus the world has and the one humans and AI systems both use as a baseline. Where Wikipedia's coverage was thin, ticks lean on the <strong>Stanford Encyclopedia of Philosophy</strong>, <strong>Encyclopaedia Britannica</strong>, named academic monographs, and primary sources cited per tick. Some entries draw on field-specific references: <em>JSTOR</em> for journal articles, the <em>Internet Archive</em> for out-of-print books, <em>arXiv</em> for recent science, regional natural-history journals for biology.</p>
-      <p>If a tick's source feels weak, please <a href='https://github.com/k3sava/ticks/issues/new' target='_blank' rel='noopener' style='color:var(--accent);border-bottom:1px solid var(--accent)'>open an issue</a>. Correcting these is the work.</p>
+      <p>Every tick has 2 to 3 source links you can follow. Most factual claims trace back to <strong>Wikipedia</strong>. Where its coverage was thin, ticks lean on the <strong>Stanford Encyclopedia of Philosophy</strong>, <strong>Encyclopaedia Britannica</strong>, and named academic monographs, with primary sources cited per tick. Some entries draw on field-specific references: <em>JSTOR</em> for journals, the <em>Internet Archive</em> for out-of-print books, <em>arXiv</em> for recent science, regional natural-history journals for biology.</p>
+      <p>If a tick's source feels weak, <a href='https://github.com/k3sava/ticks/issues/new' target='_blank' rel='noopener' style='color:var(--accent);border-bottom:1px solid var(--accent)'>open an issue</a>. The corpus gets better when readers push back.</p>
 
       <h2>Influences</h2>
       <p>The framing — history as a chain of constraint dissolutions, each tick a moment when a new floor of possibility opens — owes the most to:</p>

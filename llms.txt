@@ -64,13 +64,13 @@ Authored and curated by Kesava Mandiga (https://github.com/k3sava). MIT licensed
 
 ## Reels (curated 60-second tours, in /play)
 
-- `acceleration`: every breakpoint that ever was. The full sweep, by year.
-- `mind`: how thought learned to leave the skull. Language, mind, philosophy.
-- `body`: how we learned to keep ourselves alive. Biology, medicine.
-- `tools`: matter, then energy, then light. Physics, computing.
-- `civilization`: from herds to cities to capital. Agriculture, society, economics, law.
-- `worlds`: art, religion, the stories we shared.
-- `conflict`: how power moved across history. War, law, economics.
+- `acceleration` — *the acceleration*: From the hand-axe to ChatGPT, every step in between.
+- `mind` — *the recursive mind*: Once a sentence could be about a sentence, everything followed. (language, mind, philosophy)
+- `body` — *we stopped dying*: What it took for a baby to reach school. (biology, medicine)
+- `tools` — *tools of the gods*: What we held in our hands decided what we thought next. (physics, computing)
+- `civilization` — *the long settle*: Wheat made cities possible. Cities made laws necessary. (agriculture, society, economics, law)
+- `worlds` — *the stories that stuck*: The medium changed every century. The story didn't. (art, religion)
+- `conflict` — *force and counter-force*: What changed between the spear and the H-bomb. (war, law, economics)
 
 ## Data files
 
