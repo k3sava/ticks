@@ -655,6 +655,81 @@ const BECAUSE_BATCH = {
 
   'hall-heroult-aluminum-process':
     "Aluminum had been more expensive than gold in the 1850s — Napoleon III used aluminum cutlery to honor his most distinguished guests. Charles Martin Hall (Ohio, US) and Paul Héroult (France) independently invented electrolytic smelting of alumina dissolved in molten cryolite in 1886. Aluminum prices dropped 99% within a decade. Aircraft, electrical conductors, beverage cans, and cookware became thinkable. The first metal mass-produced by electrochemistry.",
+
+  'wi-fi-standardized':
+    "Wireless local-area networking pre-1997 had been a Babel of incompatible proprietary protocols (Aloha, WaveLAN, HomeRF). The IEEE 802.11 standard (1997) and especially the 802.11b amendment (1999) gave the industry a single radio protocol to ship against. The Wi-Fi Alliance brand certification arrived the same year. Within five years every laptop shipped with a Wi-Fi card. The mobile internet's first scaffold and a textbook case of standardization breaking a market open.",
+
+  'room-temperature-maser-demonstrated':
+    "Masers (microwave-amplifying analogs of lasers) had required cryogenic temperatures since Townes's 1953 invention — the lattice noise above ~10K swamped the signal. Imperial College London's pentacene-doped p-terphenyl crystal maser (2018) operated at room temperature. The first practical room-temperature maser. Applications in deep-space communication amplifiers, radio astronomy, and quantum sensing all become more accessible without the dewar-and-helium overhead.",
+
+  'mungo-lady-cremation':
+    "Burial in shallow graves — sometimes with grave goods — had been documented from ~100,000 BC. Mungo Lady (LM1, ~24,000 BC, southwestern New South Wales) is the world's oldest known cremation. Bones partially burned, then crushed and reburied in a shallow grave. The first archaeological evidence that fire was being used as a transformative element in funerary ritual rather than just for cooking and warmth.",
+
+  'domestication-of-cattle-for-ritual-sacrifice':
+    "Cattle had been hunted in the wild and managed in semi-domesticated herds in southwest Asia by the early Holocene. By ~8000 BC at sites like Çatalhöyük and Göbekli Tepe, bull skulls and horns appear in ritual deposits, painted murals, and feasting middens. The first domestic species used at scale for communal ritual sacrifice. The cattle-as-sacred motif (Apis bull, Vedic cow, Cretan bull-leaping, Mithraic bull-slaying) all draw on this Neolithic foundation.",
+
+  'first-known-shrine-at-catalhoyuk':
+    "Earlier ritual sites (Göbekli Tepe, ~9500 BC) had been monumental and built apart from domestic life. Çatalhöyük (~7500 BC, central Anatolia) put ritual into the house: most of the 18 layers of mudbrick dwellings have wall paintings, bull-horn installations, and burials of family members under the floors. The first sustained merger of domestic and ritual space — the household as the unit of religious practice.",
+
+  'nabta-playa-stone-circle':
+    "Pre-Nabta time-keeping had been lunar (notched bones, ~28,000 BC). Nabta Playa (south of the Egyptian-Sudanese border, ~7500 BC) is a stone circle aligned to the summer solstice — the date of monsoon arrival, critical for the cattle-herding communities of the Neolithic Sahara. The first known megalithic alignment to a solar event. Stonehenge (~3000 BC) is downstream of the same idea.",
+
+  'first-known-ziggurat-construction-uruk':
+    "Sumerian temples in the early third millennium had been single-room mudbrick structures on platforms. Ur-Nammu's Great Ziggurat of Ur (c. 2100 BC, dedicated to the moon god Nanna) built three monumental tiers of mudbrick standing 30 meters above the city — the first stepped temple-tower at scale. Ziggurats spread across Mesopotamia for two millennia. The vertical-religious-monument form influenced Egyptian pyramids (already extant) and the Mesoamerican step pyramids of much later date.",
+
+  'catholic-emancipation-act-1829':
+    "The Test Act (1673) had barred Roman Catholics from Parliament and most state offices in England. Daniel O'Connell's Irish Catholic Association mobilized millions through penny subscriptions in the 1820s; his 1828 election to a parliamentary seat he was legally barred from holding forced the Tory government to act. The Roman Catholic Relief Act 1829 admitted Catholics to Parliament and most state offices. The first significant rollback of post-Reformation Protestant legal supremacy in the UK. Irish nationalism's modern political phase begins here.",
+
+  'salvation-army-founded':
+    "Mid-Victorian London had vast urban poverty that mainstream Methodism and the Church of England were not reaching. William and Catherine Booth's East London Christian Mission (1865) — renamed the Salvation Army in 1878 — combined evangelical preaching with a quasi-military hierarchy and a pragmatic social-services arm: shelters, soup kitchens, employment exchanges. The first sustained merger of revival religion with structured social work. Modern faith-based welfare organizations (St. Vincent de Paul Society, World Vision) inherit the Salvation Army template.",
+
+  'project-gutenberg-first-online-bible':
+    "ARPANET (1969) had given a few hundred academics the ability to send mail and remote-execute jobs. Michael Hart, a University of Illinois undergraduate with surplus mainframe time on July 4, 1971, typed the US Declaration of Independence into a file and made it available to download. The first electronic text in what became Project Gutenberg. The first deliberate digitization of a public-domain text for free distribution. Fifty years later, 70,000+ books.",
+
+  'world-wide-web-public-release':
+    "Tim Berners-Lee's WWW proposal (1989) and prototype (1990) had run on a single NeXT machine at CERN. CERN's April 30, 1993 release of the WWW software into the public domain — explicitly choosing not to patent — combined with the NCSA Mosaic browser (Andreessen and Bina) to put the web in millions of hands within eighteen months. The first sustained-scale demonstration that an open standard with a usable client could route around proprietary information services (CompuServe, AOL, Minitel).",
+
+  'capsule-networks-proposed-2':
+    "CNNs (LeCun, 1998; AlexNet, 2012) had achieved state-of-the-art image recognition by treating spatial features as bags of feature activations — losing the part-whole and pose information. Hinton's capsule networks (2017, with Sabour and Frosst) replaced scalar activations with vectors that carried pose, and replaced max-pooling with a routing-by-agreement procedure that explicitly modeled part-whole hierarchy. Capsule nets never displaced CNNs at scale; the architectural-bias question they raised remains open.",
+
+  'venus-figurine-3':
+    "Two-dimensional cave art (Chauvet, ~32,000 BC) and personal ornament (perforated shells, ~75,000 BC) had been the earliest representational practices. The Venus of Hohle Fels — a 6-cm fired-clay figurine of an exaggerated female form, ~35,000 BC — is the earliest known three-dimensional human depiction in fired clay. Venus figurines from this and the next twenty millennia show consistent stylistic conventions across Europe. The first portable, durable, anthropomorphic art form.",
+
+  'invention-of-the-plow-4':
+    "Pre-plow tilling had been done with hoes — slow, shallow, suitable only for soft floodplain soils. Wheel-less ox-drawn ards (~6000 BC, in the Fertile Crescent) and later iron-tipped plows could turn over heavier soils, expand the cultivable land, and increase yield per labor-hour. Surplus grain became feasible. The plow drove every subsequent agricultural intensification — Mesopotamian cities, Indo-European migrations, medieval European deep-soil reclamation.",
+
+  'first-known-use-of-copper-smelting-2':
+    "Native (already-pure) copper had been hammered into tools since ~9000 BC at Çayönü Tepesi. Smelting — heating ore with reducing fuel to extract metal — first appears in the Vinča culture (Plocnik, modern Serbia) around 5500 BC and at multiple Levantine sites by 4500 BC. The first metallurgical extraction process. Tin alloying (bronze) and iron working (~1200 BC) inherited the technology. The Bronze and Iron Ages descend from the smelting hearth.",
+
+  'founding-of-the-first-dynasty-of-egypt':
+    "Pre-dynastic Egypt had been culturally distinct in Upper and Lower Nile regions for centuries. Narmer (also called Menes), originally king of Upper Egypt, conquered and unified the Delta around 3150 BC. The Narmer Palette commemorates the unification with the dual-crown imagery used by every subsequent pharaoh. The first centralized state stretching ~700 miles along a single river. Egyptian dynastic continuity persisted for nearly three millennia after this.",
+
+  'development-of-first-postal-system-egypt':
+    "Pre-imperial communication had relied on traveling merchants or specially-dispatched messengers. The Old Kingdom Egyptian state developed an organized courier service by ~2400 BC: relay stations along the Nile, named couriers, dispatched correspondence between the pharaoh and provincial officials. The first organized message-relay system. Persia's Royal Road (Achaemenid, ~500 BC), the Roman cursus publicus, and every subsequent imperial postal system inherit the architecture.",
+
+  'cyrus-the-great-conquests':
+    "Pre-Persian Near Eastern empires (Assyria, Neo-Babylonia) had ruled subject peoples by deportation, suppression of local religion, and extraction. Cyrus the Great's Persian conquests (550-539 BC) explicitly preserved local customs and religions — restoring Babylonian temples, returning Jewish exiles to Jerusalem, leaving local administration in place. The first multi-ethnic empire that didn't try to assimilate its subjects. The Achaemenid model influenced Hellenistic, Roman imperial, and even Mughal governance.",
+
+  'canonization-of-the-quran-under-caliph-uthman':
+    "Variant Quranic recitations had multiplied during the rapid Islamic expansion (632-650 AD). Disputes over correct readings between Muslims from different regions threatened the new community's coherence. Caliph Uthman's Mushaf project (~644-650 AD) collected the variants from companions of the Prophet, used Hafsa's compiled copy as a master, fixed the consonantal text in a single recension, and ordered other variants destroyed. The Uthmanic codex remains the basis of every printed Quran. Textual standardization preserved the unity of an empire-spanning faith.",
+
+  'metropolitan-police':
+    "Pre-Peel English crime control had relied on parish constables, the Bow Street Runners (1749, an early professional force of ~10), and the army when crowds got large. London's industrial population growth had outpaced these. Sir Robert Peel's Metropolitan Police Act (1829) created a uniformed, full-time, civilian-led force of 1,000 constables ('peelers' or 'bobbies') focused on crime prevention through patrol presence. The model spread to every major city. 'Modern policing' as a profession begins here.",
+
+  'pearl-street-station-2':
+    "Edison's incandescent bulb (1879) and the dynamo had made electric light technically possible. Pearl Street Station (Lower Manhattan, September 4, 1882) made it commercial: a coal-fired generating plant supplying 82 customers with 400 lamps over an underground DC distribution grid. The first commercial centralized electric power station. Westinghouse and Tesla's AC system (1888-91) eventually replaced the DC architecture, but the centralized utility model — the grid — was Pearl Street's legacy.",
+
+  'moscow-washington-hotline':
+    "The Cuban Missile Crisis (October 1962) had revealed that diplomatic cables between Washington and Moscow took six hours each way through a relay of embassies — an unacceptable lag for nuclear-crisis decision-making. The Moscow-Washington hotline (June 1963) was a teletype link directly between the Kremlin and the Pentagon, with redundant routing. Every subsequent superpower crisis — Yom Kippur (1973), Soviet shootdown of KAL 007 (1983) — used it. The first piece of permanent crisis-communication infrastructure between adversary states.",
+
+  'dvd-region-coding':
+    "VHS tape distribution had been format-locked geographically (NTSC vs PAL/SECAM) but not artificially restricted. DVD's digital format made VHS-era distribution control obsolete. Region coding (1997) was the studios' answer: six geographical regions, each with its own player firmware, blocking cross-region playback. The first widespread digital rights management. Cracked within months. Subsequent DRM (CSS, Macrovision, AACS) followed the same arms-race trajectory.",
+
+  'invention-of-the-corbelled-arch':
+    "Stone-and-mudbrick construction had been able to span only as wide as a single lintel — limiting doorways, gates, and tunnels to 2-3 meters. The corbelled arch — successive stone courses each projecting slightly inward until they meet at the top — could span much wider gaps without the structural mathematics of the true arch. Newgrange passage tomb (Ireland, ~3200 BC), Mycenaean Treasury of Atreus, and Mayan structures all use it. A precondition for the true keyed arch and dome that came later.",
+
+  'roman-limitanei-and-comitatenses-system':
+    "Earlier Roman military doctrine (Augustus through Severus) had stationed legions at the frontier, expecting them to defend in place. Diocletian's reforms (~290 AD), expanded under Constantine, split the army into limitanei (frontier garrisons) and comitatenses (mobile field armies that could redeploy to threats from the interior). The first defense-in-depth strategy at empire scale. Byzantine military doctrine, Carolingian house troops, and many subsequent regimes echoed the structure.",
 };
 
 async function main(){
