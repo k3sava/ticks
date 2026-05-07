@@ -395,7 +395,7 @@ function renderWalk(){
         <span class='pos'>${walkIdx+1} / ${TICKS_SORTED.length}</span>
         <div class='walk-progress' style='width:${((walkIdx+1)/TICKS_SORTED.length*100).toFixed(2)}%'></div>
       </div>
-      ${ancestors.length ? `
+      <div class='walk-trail-area'>${ancestors.length ? `
       <nav class='walk-trail' aria-label='What had to dissolve before this'>
         ${ancestors.map(a => `
           <a class='walk-trail-step' href='#/walk/${a.id}' style='${domStyle(a.domain)}'>
@@ -403,7 +403,7 @@ function renderWalk(){
             <span class='nm'>${escapeHtml(a.name)}</span>
           </a>`).join('<span class="walk-trail-link" aria-hidden="true">↓</span>')}
         <span class='walk-trail-link walk-trail-here' aria-hidden="true">↓</span>
-      </nav>` : ''}
+      </nav>` : ''}</div>
       <div class='walk-stage'>
         <div class='dom walk-domain' style='${domStyle(t.domain)}'>${t.domain}</div>
         <div class='walk-year'>${escapeHtml(t.year)}</div>
@@ -757,23 +757,47 @@ function drawMap(){
   });
 
   // Plot dots — jitter slightly within row so density reads. When a domain is
-  // selected, we still render the full set but dim non-matches so the silhouette
-  // of the corpus stays visible — the alpha branch below handles the dimming.
-  const filtered = TICKS;
+  // selected, we render non-matches as a faint context layer FIRST (silhouette
+  // of the corpus) then matching dots solid on top. Non-matches are not
+  // hit-targets so taps land on the filtered set the user is actually looking
+  // at — that's what "filter" means to a reader, not "dim everything but
+  // still let me click any of it."
   const dots = [];
-  filtered.forEach(t => {
-    if (t.yearN == null) return;
+  const isFiltered = MAP_STATE.domain !== 'all';
+  const matches = (t) => !isFiltered || t.domain === MAP_STATE.domain;
+
+  // Pass 1: silhouette layer (non-matches only when filtered, else nothing).
+  if (isFiltered) {
+    ctx.globalAlpha = 0.06;
+    TICKS.forEach(t => {
+      if (t.yearN == null || matches(t)) return;
+      const cx = x(t.yearN);
+      const di = domains.indexOf(t.domain);
+      if (di < 0) return;
+      let h = 0; for (let i = 0; i < t.id.length; i++) h = (h*31 + t.id.charCodeAt(i)) | 0;
+      const jitter = ((h % 1000)/1000 - 0.5) * Math.min(rowH*0.6, 18);
+      const cy = padT + di*rowH + rowH/2 + jitter;
+      ctx.beginPath();
+      ctx.fillStyle = DOMAINS[t.domain] || '#888';
+      ctx.arc(cx, cy, 2.4, 0, Math.PI*2);
+      ctx.fill();
+    });
+    ctx.globalAlpha = 1;
+  }
+
+  // Pass 2: active set (matches). These are the only hit-targets registered.
+  TICKS.forEach(t => {
+    if (t.yearN == null || !matches(t)) return;
     const cx = x(t.yearN);
     const di = domains.indexOf(t.domain);
     if (di < 0) return;
-    // jitter Y a touch by hashing the id to spread overlapping dots
     let h = 0; for (let i = 0; i < t.id.length; i++) h = (h*31 + t.id.charCodeAt(i)) | 0;
     const jitter = ((h % 1000)/1000 - 0.5) * Math.min(rowH*0.6, 18);
     const cy = padT + di*rowH + rowH/2 + jitter;
     const c = DOMAINS[t.domain] || '#888';
     ctx.beginPath();
     ctx.fillStyle = c;
-    ctx.globalAlpha = MAP_STATE.domain !== 'all' && t.domain !== MAP_STATE.domain ? 0.06 : 0.82;
+    ctx.globalAlpha = 0.82;
     const radius = (UNLOCKS[t.id]?.length || 0) > 4 ? 4 : 2.8;
     ctx.arc(cx, cy, radius, 0, Math.PI*2);
     ctx.fill();
@@ -826,32 +850,40 @@ function drawMap(){
     }
   };
   canvas.onmouseleave = () => { tip.classList.remove('show'); last = null; };
-  canvas.onclick = (e) => {
-    // Touch / click parity: locate hit by coordinates if `last` not set (touch devices don't fire mousemove first)
-    if (!last){
-      const rect = canvas.getBoundingClientRect();
-      const mx = e.clientX - rect.left, my = e.clientY - rect.top;
-      for (let i = dots.length-1; i >= 0; i--){
-        const dt = dots[i];
-        if (Math.hypot(dt.x-mx, dt.y-my) <= dt.r * 1.6){ last = dt; break; }
-      }
+  // Hit-finder shared by mouse + touch. Slightly larger radius on touch.
+  const hitAt = (mx, my, slop = 1) => {
+    for (let i = dots.length-1; i >= 0; i--){
+      const dt = dots[i];
+      if (Math.hypot(dt.x-mx, dt.y-my) <= dt.r * slop) return dt;
     }
-    if (last){
-      // Touch: show tooltip briefly first. If already showing for same dot, navigate.
-      const sameAsLastTap = canvas._lastTapId === last.t.id;
-      if (!tip.classList.contains('show') || !sameAsLastTap){
-        tip.classList.add('show');
-        tip.textContent = `${last.t.year} · ${last.t.name} (tap again to open)`;
-        const rect = canvas.getBoundingClientRect();
-        tip.style.left = (e.clientX - rect.left + 12) + 'px';
-        tip.style.top = (e.clientY - rect.top + 12) + 'px';
-        canvas._lastTapId = last.t.id;
-        setTimeout(() => { canvas._lastTapId = null; tip.classList.remove('show'); }, 2400);
-      } else {
-        location.hash = '#/walk/' + last.t.id;
-      }
-    }
+    return null;
   };
+  // Distinguish mouse vs touch so we don't double-fire (touch synthesizes a
+  // click after touchend; we'd open twice if we listened to both naively).
+  let _touchOpenedAt = 0;
+  canvas.onclick = (e) => {
+    if (Date.now() - _touchOpenedAt < 600) return; // touch already handled
+    const rect = canvas.getBoundingClientRect();
+    const mx = e.clientX - rect.left, my = e.clientY - rect.top;
+    const hit = last || hitAt(mx, my, 1.6);
+    if (!hit) return;
+    location.hash = '#/walk/' + hit.t.id;
+  };
+  // Touch: single tap opens the tick directly. No double-tap-to-confirm
+  // gauntlet on mobile — tooltips don't help on a small screen and most users
+  // won't do the second tap. The slight finger-error margin is handled by
+  // 1.6× hit radius.
+  canvas.addEventListener('touchend', (e) => {
+    if (e.changedTouches.length !== 1) return;
+    const rect = canvas.getBoundingClientRect();
+    const t0 = e.changedTouches[0];
+    const mx = t0.clientX - rect.left, my = t0.clientY - rect.top;
+    const hit = hitAt(mx, my, 2.0);
+    if (!hit) return;
+    e.preventDefault();
+    _touchOpenedAt = Date.now();
+    location.hash = '#/walk/' + hit.t.id;
+  }, {passive: false});
   // Keyboard navigation: Tab to focus canvas, arrow keys cycle through dots, Enter opens
   canvas.tabIndex = 0;
   canvas.setAttribute('aria-label', 'Tick map. Press Tab to focus, arrow keys to navigate dots, Enter to open.');

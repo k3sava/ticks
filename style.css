@@ -190,9 +190,14 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 .dom::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--dc,var(--accent))}
 
 /* ========== WALK ========== */
+/* Layout discipline: sections occupy fixed reserved space so navigating tick
+   to tick swaps content WITHOUT shifting the surrounding chrome. Year + name
+   pin to the top of the stage area, detail flows below in a min-sized region,
+   the downstream-flow grid keeps its slot even when a tick has no children.
+   The reader's eye stays put; the content moves through. */
 .walk{
   min-height:calc(100vh - var(--hdr-h) - 80px);
-  display:grid;grid-template-rows:auto 1fr auto;
+  display:grid;grid-template-rows:auto auto 1fr auto auto;
   padding:24px var(--gut);
   position:relative;
   animation:walk-in .55s var(--ease-stage);
@@ -211,7 +216,10 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 }
 
 /* Walk ancestry trail: three quietest of the chain that produced this tick.
-   Reads top-to-bottom, oldest first. Tap to walk to that ancestor. */
+   Reads top-to-bottom, oldest first. Tap to walk to that ancestor.
+   Always reserves the same vertical slot (~200px) so navigating between a
+   tick with ancestors and one without doesn't shift the year + name below. */
+.walk-trail-area{min-height:200px;display:flex;align-items:flex-end;justify-content:center}
 .walk-trail{
   display:flex;flex-direction:column;align-items:center;gap:6px;
   max-width:1100px;margin:14px auto 0;width:100%;
@@ -254,9 +262,16 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
   transition:width .6s var(--ease-stage);
 }
 .walk-stage{
-  display:flex;flex-direction:column;justify-content:center;align-items:flex-start;
+  display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;
   max-width:1100px;margin:0 auto;width:100%;padding:32px 0;gap:24px;
+  /* Reserved height keeps the layout stable across ticks of varying detail
+     length. Detail can grow within; below the floor the page still feels
+     anchored on the year + name as the visual constant. */
+  min-height:60vh;
 }
+/* Detail can vary 1-3 sentences. Reserve a min slot so short ticks don't
+   collapse the stage; long detail flows naturally without overflow. */
+.walk-detail{min-height:5.5em}
 .walk-year{
   font-family:var(--serif);font-style:italic;font-weight:500;
   font-size:clamp(3rem,11vw,8rem);line-height:1.05;letter-spacing:-.045em;color:var(--ink);
@@ -304,6 +319,9 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
   border-top:1px solid var(--line);padding-top:20px;margin-top:24px;
   display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px;
   max-width:1100px;margin-left:auto;margin-right:auto;width:100%;
+  /* Reserved vertical slot keeps layout stable when the next tick has fewer
+     downstream cards (or none) than the current one. */
+  min-height:220px;
 }
 .walk-flow-head{
   grid-column:1/-1;font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:4px;
@@ -411,6 +429,20 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 .map-stats span strong{color:var(--ink-2);font-weight:500}
 
 .map-domains{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 8px}
+@media (max-width:720px){
+  /* On narrow screens, wrapping 14 domain pills + "all" pushes the canvas
+     down. Convert to a single horizontally-scrollable row so the canvas
+     stays at the top of viewport, and every domain is one swipe away. */
+  .map-domains{
+    flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:thin;
+    padding:2px 4px;margin-left:calc(var(--gut) * -1);margin-right:calc(var(--gut) * -1);
+    padding-left:var(--gut);padding-right:var(--gut);
+    scroll-snap-type:x proximity;
+  }
+  .map-domains button{flex:none;scroll-snap-align:start}
+}
 .map-domains button{
   font-family:var(--mono);font-size:.7rem;padding:5px 11px;border-radius:999px;
   background:var(--paper);border:1px solid var(--line);color:var(--muted);transition:all .15s;
