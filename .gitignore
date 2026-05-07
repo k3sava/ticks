@@ -1,3 +1,5 @@
 .audit-cache/
 .preview/
 .local/
+data.json.bak
+data.json.pre-voice-fix.bak
