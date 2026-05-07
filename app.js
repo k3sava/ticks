@@ -1063,13 +1063,13 @@ const PLAY_BEATS = new Set([
    top N, then sorts ascending by year. Order in the array is the cycle order
    used by the chevrons + the keyboard shortcut. */
 const REELS = [
-  { id: 'acceleration', name: 'the acceleration',     tagline: 'every breakpoint that ever was',           domains: null,                                                cap: 180 },
-  { id: 'mind',         name: 'the mind awoke',        tagline: 'how thought learned to leave the skull',   domains: ['language','mind','philosophy'],                    cap: 38 },
-  { id: 'body',         name: 'the body unbound',      tagline: 'how we learned to keep ourselves alive',   domains: ['biology','medicine'],                              cap: 38 },
-  { id: 'tools',        name: 'tools of the gods',     tagline: 'matter, then energy, then light',          domains: ['physics','computing'],                             cap: 42 },
-  { id: 'civilization', name: 'the long settle',       tagline: 'from herds to cities to capital',          domains: ['agriculture','society','economics','law'],         cap: 42 },
-  { id: 'worlds',       name: 'pictures of the world', tagline: 'art, religion, the stories we shared',     domains: ['art','religion'],                                  cap: 32 },
-  { id: 'conflict',     name: 'force and counter-force',tagline: 'how power moved across history',          domains: ['war','law','economics'],                           cap: 30 },
+  { id: 'acceleration', name: 'the acceleration',     tagline: 'hand-axe to ChatGPT, in order',          domains: null,                                                cap: 180 },
+  { id: 'mind',         name: 'the mind awoke',        tagline: 'language, philosophy, AI',                domains: ['language','mind','philosophy'],                    cap: 38 },
+  { id: 'body',         name: 'the body unbound',      tagline: 'germs, vaccines, gene editing',           domains: ['biology','medicine'],                              cap: 38 },
+  { id: 'tools',        name: 'tools of the gods',     tagline: 'stone, fire, electricity, code',          domains: ['physics','computing'],                             cap: 42 },
+  { id: 'civilization', name: 'the long settle',       tagline: 'wheat, cities, money, law',                domains: ['agriculture','society','economics','law'],         cap: 42 },
+  { id: 'worlds',       name: 'pictures of the world', tagline: 'art and religion, the stories that stuck',domains: ['art','religion'],                                  cap: 32 },
+  { id: 'conflict',     name: 'force and counter-force',tagline: 'war and the rules around it',             domains: ['war','law','economics'],                           cap: 30 },
 ];
 
 /* Maps a tick's domain to the reel that best fits it. Lets a walk on a
@@ -1116,11 +1116,20 @@ let _playTimer = null;
 let _playState = null;
 
 function play(reelId){
-  // Resolve the reel: explicit arg wins; otherwise pick a random themed reel
-  // each visit. The home/walk CTAs pre-bake the reelId into the hash, so
-  // arriving from "play this thread" already lands on the right reel.
-  const id = reelId && getReel(reelId).id === reelId ? reelId : pickRandomReel();
-  const reel = getReel(id);
+  // No reelId → land on the picker. The picker shows seven glass panes —
+  // one per curated reel — plus a "surprise me" affordance that picks one
+  // at random. /play/:reelId starts that specific reel directly. The walk
+  // CTA "play this thread" pre-bakes the domain-matched reelId so the
+  // reader who clicks it lands inside the reel, not on the picker.
+  if (!reelId) return renderPlayPicker();
+  if (reelId === 'random'){
+    const r = pickRandomReel();
+    history.replaceState(null, '', `#/play/${r}`);
+    return play(r);
+  }
+  const reel = getReel(reelId);
+  if (reel.id !== reelId) return renderPlayPicker();
+  const id = reelId;
   const list = buildReelPlaylist(id);
 
   app.innerHTML = `
@@ -1167,6 +1176,50 @@ function switchReel(dir){
   // does a full rebuild and that would re-trigger the route.
   history.replaceState(null, '', `#/play/${next.id}`);
   play(next.id);
+}
+
+/* The picker — seven curated reels as glass panes. Lands at /play with no
+   reelId. Each card is its own glass surface tinted by a representative
+   domain color, and links into /play/:reelId to start the reel. */
+function renderPlayPicker(){
+  // Pick a representative tick from each reel so the panel can borrow that
+  // domain's color via --dc. For "acceleration" use the broadest signal.
+  const reelDc = {
+    acceleration: '#FB923C',
+    mind: DOMAINS.mind || '#A78BFA',
+    body: DOMAINS.medicine || '#10B981',
+    tools: DOMAINS.computing || '#60A5FA',
+    civilization: DOMAINS.agriculture || '#F59E0B',
+    worlds: DOMAINS.art || '#EC4899',
+    conflict: DOMAINS.war || '#EF4444',
+  };
+  setAmbient(null);
+  app.innerHTML = `
+    <section class='play-picker' aria-label='Pick a reel'>
+      <header class='play-picker-head'>
+        <h1>Pick a thread</h1>
+        <p>Each reel is a curated 60-second walk through one strand of the corpus, year by year. Or <a href='#/play/random' class='play-picker-random'>surprise me</a>.</p>
+      </header>
+      <div class='play-picker-grid'>
+        ${REELS.map(r => {
+          const count = buildReelPlaylist(r.id).length;
+          return `
+          <a class='play-picker-card' href='#/play/${r.id}' style='--dc:${reelDc[r.id] || '#FB923C'}'>
+            <div class='play-picker-card-inner'>
+              <div class='play-picker-name'>${escapeHtml(r.name)}</div>
+              <div class='play-picker-tagline'>${escapeHtml(r.tagline)}</div>
+              <div class='play-picker-meta'>
+                <span class='play-picker-count'>${count} ticks</span>
+                <span class='play-picker-sep'>·</span>
+                <span class='play-picker-time'>~60 seconds</span>
+              </div>
+            </div>
+            <div class='play-picker-go' aria-hidden='true'>play →</div>
+          </a>`;
+        }).join('')}
+      </div>
+    </section>
+  `;
 }
 
 function renderPlayFrame(){
