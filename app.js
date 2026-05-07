@@ -25,6 +25,34 @@ function domStyle(domain){
   return `--dc:${DOMAINS[domain] || '#888'}`;
 }
 
+/* Ambient field — sets --dc on the root so the body backdrop (the slow drift
+   gradient under everything) tints with the active tick's domain color. The
+   panels still get their own per-element --dc for their bloom; this lights
+   the *room*, not the panel. */
+function setAmbient(domain){
+  const c = DOMAINS[domain];
+  if (c) document.documentElement.style.setProperty('--dc', c);
+  else document.documentElement.style.removeProperty('--dc');
+}
+
+/* Cursor halo — tracks the pointer once, RAF-throttled. The body::before
+   radial in style.css picks up --cx and --cy and renders a warm halo that
+   the glass refracts. Touch users get a centered halo (no chase). */
+(function initCursorHalo(){
+  if (matchMedia('(pointer:coarse)').matches) return;
+  let tx = 0.5, ty = 0.5, rafId = 0;
+  const onMove = (e) => {
+    tx = e.clientX / window.innerWidth;
+    ty = e.clientY / window.innerHeight;
+    if (!rafId) rafId = requestAnimationFrame(() => {
+      document.documentElement.style.setProperty('--cx', tx.toFixed(3));
+      document.documentElement.style.setProperty('--cy', ty.toFixed(3));
+      rafId = 0;
+    });
+  };
+  window.addEventListener('pointermove', onMove, { passive: true });
+})();
+
 /* ========== loading ========== */
 function showBoot(){
   // Skeleton placeholder rendered while data.json (~3MB) streams in. Delayed
@@ -167,6 +195,7 @@ window.addEventListener('hashchange', render);
 /* ========== home ========== */
 function home(){
   const hero = pickHero();
+  setAmbient(hero.domain);
   const flow = (UNLOCKS[hero.id] || []).slice(0, 4).map(id => TICK_BY_ID[id]).filter(Boolean);
   const ancientTen = TICKS_SORTED.slice(0, 10);
   const recentSeventy = TICKS_SORTED.slice(-76);
@@ -377,6 +406,7 @@ function walk(id){
 function renderWalk(){
   const t = TICKS_SORTED[walkIdx];
   if (!t){ app.innerHTML = '<p style="padding:48px">No tick.</p>'; return; }
+  setAmbient(t.domain);
   const zone = ZONES.find(z => z.id === t.zone);
   const flow = (UNLOCKS[t.id] || []).map(id => TICK_BY_ID[id]).filter(Boolean);
   const ancestors = pickAncestors(t.id, 3);
@@ -474,6 +504,7 @@ function hunt(id){
   }
   const tick = TICK_BY_ID[id];
   if (!tick){ renderHuntPicker(); return; }
+  setAmbient(tick.domain);
   const chain = buildAncestryChain(id, 12);
   app.innerHTML = `
     <section class='hunt'>

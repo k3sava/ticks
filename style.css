@@ -1,53 +1,110 @@
-/* ========== TOKENS ========== */
+/* ========== TOKENS ==========
+   Photon Glass — 2027-flavored evolution of Liquid Glass.
+   Surfaces are translucent slabs floating over a generative ambient field;
+   glass tints itself with the active domain color, refracts the cursor as a
+   warm halo, and stratifies into chrome / content / accent layers.
+
+   --dc is set per-tick by app.js (DOMAINS[t.domain]). It lights every glass
+   panel from the inside. --cx/--cy are set by JS to track the pointer; they
+   power the cursor halo and parallax shift. */
 :root{
-  --bg:#FAFAF9;
-  --paper:#FFFFFF;
-  --paper-2:#F5F5F4;
-  --line:#E7E5E4;
-  --line-2:#D6D3D1;
-  --ink:#1C1917;
-  --ink-2:#44403C;
-  --muted:#78716C;
-  --faint:#A8A29E;
-  --accent:#C2410C;
-  --accent-2:#9A3412;
+  --bg:#0A0A0F;
+  --bg-2:#101019;
+  --paper:rgba(255,255,255,.04);
+  --paper-2:rgba(255,255,255,.07);
+  --line:rgba(255,255,255,.08);
+  --line-2:rgba(255,255,255,.14);
+  --ink:#F4F3FA;
+  --ink-2:rgba(244,243,250,.78);
+  --muted:rgba(244,243,250,.55);
+  --faint:rgba(244,243,250,.34);
+  --accent:#FFB37A;
+  --accent-2:#FFD2A8;
+
+  /* Glass material tokens. Each level adds blur + saturation + brightness. */
+  --glass-thin-bg:rgba(255,255,255,.045);
+  --glass-thin-blur:saturate(160%) blur(18px);
+  --glass-bg:rgba(255,255,255,.06);
+  --glass-blur:saturate(180%) blur(28px);
+  --glass-thick-bg:rgba(255,255,255,.085);
+  --glass-thick-blur:saturate(200%) blur(40px);
+  --glass-edge:rgba(255,255,255,.18);
+  --glass-edge-strong:rgba(255,255,255,.32);
+  --glass-shadow:0 30px 60px -30px rgba(0,0,0,.7), 0 8px 24px -12px rgba(0,0,0,.5);
+  --glass-shadow-hi:0 40px 80px -28px rgba(0,0,0,.8), 0 14px 32px -14px rgba(0,0,0,.6);
+  --halo:rgba(255,179,122,.35);
+
+  /* Cursor position (0..1 across viewport). JS updates these. */
+  --cx:.5;
+  --cy:.5;
+
   --gut:24px;
   --hdr-h:60px;
   --maxw:min(880px,92vw);
   --maxw-wide:min(1800px,92vw);
+  --radius:22px;
+  --radius-lg:28px;
   --serif:'Newsreader',Georgia,'Iowan Old Style',serif;
   --sans:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
   --mono:'JetBrains Mono','SF Mono',Menlo,monospace;
   --ease-quick:cubic-bezier(.2,.7,.3,1);
   --ease-stage:cubic-bezier(.16,1,.3,1);
 }
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){
-    --bg:#0C0A09;
-    --paper:#1C1917;
-    --paper-2:#292524;
-    --line:#292524;
-    --line-2:#44403C;
-    --ink:#FAFAF9;
-    --ink-2:#D6D3D1;
-    --muted:#A8A29E;
-    --faint:#78716C;
-    --accent:#FB923C;
-    --accent-2:#FDBA74;
-  }
+
+/* Light theme override — used when user explicitly picks light, or in
+   prefers-color-scheme:light without override. Apple's iOS 26 lock-screen
+   approach: same glass language, brighter content beneath, cooler shadows. */
+:root[data-theme="light"]{
+  --bg:#EEF1F6;
+  --bg-2:#F7F8FB;
+  --paper:rgba(255,255,255,.55);
+  --paper-2:rgba(255,255,255,.7);
+  --line:rgba(15,18,32,.08);
+  --line-2:rgba(15,18,32,.14);
+  --ink:#0E1120;
+  --ink-2:rgba(14,17,32,.74);
+  --muted:rgba(14,17,32,.52);
+  --faint:rgba(14,17,32,.32);
+  --accent:#C2410C;
+  --accent-2:#9A3412;
+  --glass-thin-bg:rgba(255,255,255,.55);
+  --glass-thin-blur:saturate(180%) blur(20px);
+  --glass-bg:rgba(255,255,255,.62);
+  --glass-blur:saturate(200%) blur(30px);
+  --glass-thick-bg:rgba(255,255,255,.78);
+  --glass-thick-blur:saturate(220%) blur(40px);
+  --glass-edge:rgba(255,255,255,.85);
+  --glass-edge-strong:rgba(255,255,255,1);
+  --glass-shadow:0 30px 60px -30px rgba(20,24,40,.22), 0 8px 24px -12px rgba(20,24,40,.16);
+  --glass-shadow-hi:0 40px 80px -28px rgba(20,24,40,.3), 0 14px 32px -14px rgba(20,24,40,.22);
+  --halo:rgba(194,65,12,.22);
 }
-:root[data-theme="dark"]{
-  --bg:#0C0A09;
-  --paper:#1C1917;
-  --paper-2:#292524;
-  --line:#292524;
-  --line-2:#44403C;
-  --ink:#FAFAF9;
-  --ink-2:#D6D3D1;
-  --muted:#A8A29E;
-  --faint:#78716C;
-  --accent:#FB923C;
-  --accent-2:#FDBA74;
+@media (prefers-color-scheme:light){
+  :root:not([data-theme="dark"]){
+    --bg:#EEF1F6;
+    --bg-2:#F7F8FB;
+    --paper:rgba(255,255,255,.55);
+    --paper-2:rgba(255,255,255,.7);
+    --line:rgba(15,18,32,.08);
+    --line-2:rgba(15,18,32,.14);
+    --ink:#0E1120;
+    --ink-2:rgba(14,17,32,.74);
+    --muted:rgba(14,17,32,.52);
+    --faint:rgba(14,17,32,.32);
+    --accent:#C2410C;
+    --accent-2:#9A3412;
+    --glass-thin-bg:rgba(255,255,255,.55);
+    --glass-thin-blur:saturate(180%) blur(20px);
+    --glass-bg:rgba(255,255,255,.62);
+    --glass-blur:saturate(200%) blur(30px);
+    --glass-thick-bg:rgba(255,255,255,.78);
+    --glass-thick-blur:saturate(220%) blur(40px);
+    --glass-edge:rgba(255,255,255,.85);
+    --glass-edge-strong:rgba(255,255,255,1);
+    --glass-shadow:0 30px 60px -30px rgba(20,24,40,.22), 0 8px 24px -12px rgba(20,24,40,.16);
+    --glass-shadow-hi:0 40px 80px -28px rgba(20,24,40,.3), 0 14px 32px -14px rgba(20,24,40,.22);
+    --halo:rgba(194,65,12,.22);
+  }
 }
 
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -68,19 +125,120 @@ body{
   font-optical-sizing:auto;
   font-variant-numeric:lining-nums proportional-nums;
 }
-/* paper grain — gives the page tactility without dominating */
+/* Generative ambient field. Two slow-drifting radial gradients tinted by the
+   active domain (--dc, set on whatever section is rendered) plus a faint dot
+   grid. The cursor adds a third radial — a warm halo that the glass refracts
+   when it passes underneath. The whole field is fixed and pointer-disabled. */
 body::before{
-  content:"";position:fixed;inset:0;pointer-events:none;z-index:1;
-  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='1' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.06 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
-  mix-blend-mode:multiply;opacity:.55;
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:
+    radial-gradient(60vmax 60vmax at calc(var(--cx)*100%) calc(var(--cy)*100%),
+      var(--halo) 0%, transparent 55%),
+    radial-gradient(50vmax 60vmax at 18% 12%,
+      color-mix(in oklab, var(--dc, var(--accent)) 18%, transparent) 0%,
+      transparent 60%),
+    radial-gradient(60vmax 60vmax at 82% 88%,
+      color-mix(in oklab, var(--accent-2) 14%, transparent) 0%,
+      transparent 60%),
+    linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+  transition:background 1.4s var(--ease-stage);
 }
-:root[data-theme="dark"] body::before, :root:not([data-theme="light"]) body::before{
-  mix-blend-mode:screen;opacity:.35;
+/* Faint dot grid — gives the depth a measurable scale, like a holo lab floor.
+   Mask softens the edges so the grid feels infinite, not panel-sized. */
+body::after{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background-image:radial-gradient(circle at center,
+    color-mix(in oklab, var(--ink) 12%, transparent) 1px, transparent 1.4px);
+  background-size:38px 38px;
+  -webkit-mask-image:radial-gradient(60vmax 60vmax at 50% 50%, black 0%, transparent 75%);
+          mask-image:radial-gradient(60vmax 60vmax at 50% 50%, black 0%, transparent 75%);
+  opacity:.32;
 }
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]) body::before{mix-blend-mode:screen;opacity:.35}
+@media (prefers-reduced-motion:reduce){
+  body::before{transition:none}
 }
 #hdr,main,footer,#app,#mobileMenu{position:relative;z-index:2}
+
+/* ========== GLASS PRIMITIVES ==========
+   .glass / .glass-thin / .glass-thick are reusable surfaces. Each has:
+   - translucent background tinted by content beneath (--glass-bg)
+   - heavy backdrop blur + saturation (Apple Liquid Glass DNA)
+   - 1px hairline at the top edge (specular highlight, mimics real glass)
+   - soft drop shadow with depth
+   - rounded continuous-curve radius
+   - subtle tinted underglow from --dc (domain color, lit from behind)
+
+   The ::before + ::after layer on .glass paints the edge highlight and the
+   inner radial bloom that picks up --dc. */
+.glass,.glass-thin,.glass-thick{
+  position:relative;
+  border-radius:var(--radius);
+  background:var(--glass-bg);
+  -webkit-backdrop-filter:var(--glass-blur);
+          backdrop-filter:var(--glass-blur);
+  box-shadow:
+    inset 0 1px 0 0 var(--glass-edge),
+    inset 0 0 0 1px var(--line),
+    var(--glass-shadow);
+  isolation:isolate;
+  transition:background .35s var(--ease-quick), box-shadow .35s var(--ease-quick), transform .35s var(--ease-stage);
+}
+.glass-thin{
+  background:var(--glass-thin-bg);
+  -webkit-backdrop-filter:var(--glass-thin-blur);
+          backdrop-filter:var(--glass-thin-blur);
+}
+.glass-thick{
+  background:var(--glass-thick-bg);
+  -webkit-backdrop-filter:var(--glass-thick-blur);
+          backdrop-filter:var(--glass-thick-blur);
+  border-radius:var(--radius-lg);
+  box-shadow:
+    inset 0 1px 0 0 var(--glass-edge-strong),
+    inset 0 0 0 1px var(--line-2),
+    var(--glass-shadow-hi);
+}
+/* Inner bloom — domain color visible THROUGH the glass like a backlit panel.
+   The ::before sits behind text and is masked to the rounded panel edge. */
+.glass::before,.glass-thin::before,.glass-thick::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  border-radius:inherit;z-index:-1;
+  background:radial-gradient(120% 80% at 50% 0%,
+    color-mix(in oklab, var(--dc, var(--accent)) 18%, transparent) 0%,
+    transparent 70%);
+  opacity:.7;
+  transition:opacity .4s var(--ease-quick);
+}
+/* Specular sweep — a faint highlight that catches the top corners. */
+.glass::after,.glass-thin::after,.glass-thick::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  border-radius:inherit;
+  background:linear-gradient(135deg,
+    var(--glass-edge) 0%, transparent 18%,
+    transparent 82%, color-mix(in oklab, var(--dc, var(--accent)) 25%, transparent) 100%);
+  opacity:.4;mix-blend-mode:screen;
+}
+:root[data-theme="light"] .glass::after,
+:root[data-theme="light"] .glass-thin::after,
+:root[data-theme="light"] .glass-thick::after,
+:root:not([data-theme="dark"]) .glass::after,
+:root:not([data-theme="dark"]) .glass-thin::after,
+:root:not([data-theme="dark"]) .glass-thick::after{mix-blend-mode:overlay;opacity:.55}
+
+/* Reactive lift on hover — glass densifies (more saturated background, the
+   bloom brightens, panel rises ~2px). Applied via :is() so children of an
+   interactive .glass anchor (a button, a link) trigger the same response. */
+.glass.is-active,.glass:hover,.glass-thick:hover,.glass-thin:hover{
+  background:color-mix(in oklab, var(--glass-bg) 70%, color-mix(in oklab, var(--dc, var(--accent)) 8%, transparent));
+  box-shadow:
+    inset 0 1px 0 0 var(--glass-edge-strong),
+    inset 0 0 0 1px color-mix(in oklab, var(--dc, var(--accent)) 25%, var(--line-2)),
+    var(--glass-shadow-hi);
+}
+.glass:hover::before,.glass-thin:hover::before,.glass-thick:hover::before{opacity:1}
+@media (prefers-reduced-motion:reduce){
+  .glass,.glass-thin,.glass-thick{transition:none}
+}
 a{color:inherit;text-decoration:none}
 button{font:inherit;background:none;border:0;cursor:pointer;color:inherit}
 img,svg{display:block;max-width:100%}
@@ -92,23 +250,33 @@ img,svg{display:block;max-width:100%}
   display:flex;align-items:center;justify-content:space-between;
   height:var(--hdr-h);
   padding:0 var(--gut);
-  background:color-mix(in oklab,var(--bg) 84%,transparent);
-  backdrop-filter:blur(16px) saturate(140%);
-  -webkit-backdrop-filter:blur(16px) saturate(140%);
+  background:color-mix(in oklab,var(--bg) 70%,transparent);
+  backdrop-filter:saturate(180%) blur(22px);
+  -webkit-backdrop-filter:saturate(180%) blur(22px);
   border-bottom:1px solid transparent;
-  transition:border-color .25s var(--ease-quick);
+  box-shadow:inset 0 -1px 0 0 transparent;
+  transition:border-color .25s var(--ease-quick), box-shadow .25s var(--ease-quick);
 }
-#hdr.scrolled{border-bottom-color:var(--line)}
+#hdr.scrolled{
+  border-bottom-color:var(--line);
+  box-shadow:inset 0 -1px 0 0 var(--glass-edge);
+}
 .brand{display:flex;align-items:center;gap:10px;font-family:var(--serif);font-size:1.1rem;font-weight:500;letter-spacing:-.01em}
 .brand-mark{
   width:10px;height:10px;border-radius:50%;
   background:var(--accent);
-  box-shadow:0 0 0 3px color-mix(in oklab,var(--accent) 18%,transparent);
+  box-shadow:
+    0 0 0 3px color-mix(in oklab,var(--accent) 22%,transparent),
+    0 0 18px 2px color-mix(in oklab,var(--accent) 50%,transparent);
   animation:brand-breathe 4.2s var(--ease-quick) infinite;
 }
 @keyframes brand-breathe{
-  0%,100%{box-shadow:0 0 0 3px color-mix(in oklab,var(--accent) 18%,transparent)}
-  50%{box-shadow:0 0 0 5px color-mix(in oklab,var(--accent) 10%,transparent)}
+  0%,100%{box-shadow:
+    0 0 0 3px color-mix(in oklab,var(--accent) 22%,transparent),
+    0 0 18px 2px color-mix(in oklab,var(--accent) 50%,transparent)}
+  50%{box-shadow:
+    0 0 0 5px color-mix(in oklab,var(--accent) 12%,transparent),
+    0 0 26px 4px color-mix(in oklab,var(--accent) 38%,transparent)}
 }
 @media (prefers-reduced-motion:reduce){
   .brand-mark{animation:none}
@@ -125,25 +293,52 @@ img,svg{display:block;max-width:100%}
 .hdr-right{display:flex;align-items:center;gap:10px}
 #randomBtn,#randomBtnMobile{
   font-family:var(--sans);font-size:.82rem;color:var(--ink-2);
-  padding:7px 14px;border:1px solid var(--line-2);border-radius:999px;
-  background:var(--paper);transition:border-color .15s,color .15s,background .15s;
+  padding:7px 14px;border-radius:999px;
+  background:var(--glass-thin-bg);
+  -webkit-backdrop-filter:var(--glass-thin-blur);
+          backdrop-filter:var(--glass-thin-blur);
+  box-shadow:inset 0 1px 0 0 var(--glass-edge), inset 0 0 0 1px var(--line-2);
+  transition:color .15s, background .2s, box-shadow .2s;
 }
 #randomBtn:hover,#randomBtnMobile:hover{
-  border-color:var(--accent);color:var(--accent);background:color-mix(in oklab,var(--accent) 6%,var(--paper));
+  color:var(--accent);
+  background:color-mix(in oklab, var(--accent) 14%, var(--glass-thin-bg));
+  box-shadow:
+    inset 0 1px 0 0 var(--glass-edge-strong),
+    inset 0 0 0 1px color-mix(in oklab, var(--accent) 35%, var(--line-2)),
+    0 6px 18px -8px color-mix(in oklab, var(--accent) 50%, transparent);
 }
 #themeBtn{
   width:34px;height:34px;display:flex;align-items:center;justify-content:center;
   color:var(--muted);border-radius:999px;transition:color .15s,background .15s;
 }
-#themeBtn:hover{color:var(--ink);background:var(--paper-2)}
+#themeBtn:hover{
+  color:var(--ink);
+  background:var(--glass-thin-bg);
+  -webkit-backdrop-filter:var(--glass-thin-blur);
+          backdrop-filter:var(--glass-thin-blur);
+}
 #menuBtn{display:none;width:36px;height:36px;align-items:center;justify-content:center;color:var(--ink-2);border-radius:8px}
 
 /* Mobile menu */
-#mobileBackdrop{position:fixed;inset:0;background:#0008;backdrop-filter:blur(4px);opacity:0;pointer-events:none;transition:opacity .25s var(--ease-quick);z-index:60}
+#mobileBackdrop{
+  position:fixed;inset:0;
+  background:rgba(8,10,16,.55);
+  backdrop-filter:saturate(140%) blur(10px);
+  -webkit-backdrop-filter:saturate(140%) blur(10px);
+  opacity:0;pointer-events:none;
+  transition:opacity .25s var(--ease-quick);z-index:60;
+}
 #mobileBackdrop.show{opacity:1;pointer-events:auto}
 #mobileMenu{
   position:fixed;top:0;right:0;bottom:0;width:min(86vw,320px);z-index:61;
-  background:var(--paper);border-left:1px solid var(--line);
+  background:var(--glass-thick-bg);
+  -webkit-backdrop-filter:var(--glass-thick-blur);
+          backdrop-filter:var(--glass-thick-blur);
+  box-shadow:
+    inset 1px 0 0 0 var(--glass-edge-strong),
+    -1px 0 0 0 var(--line-2),
+    -24px 0 60px -16px rgba(0,0,0,.4);
   display:flex;flex-direction:column;gap:6px;
   padding:80px 24px 24px;
   transform:translateX(100%);transition:transform .3s var(--ease-stage);
@@ -151,10 +346,21 @@ img,svg{display:block;max-width:100%}
 #mobileMenu.open{transform:translateX(0)}
 #mobileMenu a{
   font-family:var(--sans);font-size:1rem;color:var(--ink-2);padding:14px 16px;border-radius:10px;
+  transition:background .15s, color .15s;
 }
-#mobileMenu a:hover,#mobileMenu a.active{background:var(--paper-2);color:var(--ink)}
-#mobileMenu > button{margin-top:14px;text-align:left;font-family:var(--sans);font-size:1rem;color:var(--accent);padding:14px 16px;border:1px solid var(--accent);border-radius:10px}
-#mobileMenu .mm-head button{margin:0;border:1px solid var(--line);color:var(--ink-2);padding:0}
+#mobileMenu a:hover,#mobileMenu a.active{
+  background:color-mix(in oklab, var(--accent) 10%, var(--glass-thin-bg));
+  color:var(--ink);
+}
+#mobileMenu > button{
+  margin-top:14px;text-align:left;font-family:var(--sans);font-size:1rem;
+  color:var(--accent);padding:14px 16px;border-radius:10px;
+  background:color-mix(in oklab, var(--accent) 12%, var(--glass-thin-bg));
+  box-shadow:inset 0 1px 0 0 var(--glass-edge), inset 0 0 0 1px color-mix(in oklab, var(--accent) 35%, var(--line-2));
+}
+#mobileMenu .mm-head button{
+  margin:0;color:var(--ink-2);padding:0;background:transparent;box-shadow:none;
+}
 
 @media (max-width:820px){
   #nav,.hdr-right{display:none}
@@ -180,14 +386,27 @@ footer a{color:var(--ink-2);border-bottom:1px solid var(--line);padding-bottom:1
 footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 
 /* ========== DOMAIN COLORS ========== */
+/* Domain chip — a small piece of tinted glass with a glowing orb. The orb's
+   color comes from --dc (set per-tick). The capsule itself is a thin glass
+   layer so the domain reads as a label, not a hard pill. */
 .dom{
-  display:inline-flex;align-items:center;gap:6px;
+  display:inline-flex;align-items:center;gap:7px;
   font-family:var(--mono);font-size:.65rem;text-transform:lowercase;letter-spacing:.04em;
-  padding:3px 9px;border-radius:999px;
-  background:color-mix(in oklab,var(--dc,var(--accent)) 14%,transparent);
-  color:var(--dc,var(--accent));
+  padding:5px 11px;border-radius:999px;
+  background:color-mix(in oklab,var(--dc,var(--accent)) 22%, var(--glass-thin-bg));
+  -webkit-backdrop-filter:var(--glass-thin-blur);
+          backdrop-filter:var(--glass-thin-blur);
+  box-shadow:
+    inset 0 1px 0 0 var(--glass-edge),
+    inset 0 0 0 1px color-mix(in oklab, var(--dc,var(--accent)) 35%, var(--line-2));
+  color:color-mix(in oklab, var(--dc,var(--accent)) 80%, var(--ink));
+  text-shadow:0 0 12px color-mix(in oklab, var(--dc,var(--accent)) 50%, transparent);
 }
-.dom::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--dc,var(--accent))}
+.dom::before{
+  content:"";width:7px;height:7px;border-radius:50%;
+  background:var(--dc,var(--accent));
+  box-shadow:0 0 10px 1px var(--dc,var(--accent));
+}
 
 /* ========== WALK ========== */
 /* Layout discipline: sections occupy fixed reserved space so navigating tick
@@ -225,26 +444,52 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
   max-width:1100px;margin:14px auto 0;width:100%;
   font-family:var(--mono);
 }
+/* Trail steps are tiny glass capsules. Each one tints with its own domain
+   color (the domStyle() rule injects --dc on the <a> element). The link
+   character between them is a thin vertical light trace, deliberately faint
+   on idle and brighter on hover (the chain "lights up"). */
 .walk-trail-step{
+  position:relative;
   display:flex;flex-direction:column;align-items:center;gap:1px;
-  text-decoration:none;color:var(--muted);
-  padding:4px 10px;border-radius:8px;
-  transition:color .18s,background .18s,opacity .18s;
-  opacity:.62;
+  text-decoration:none;color:var(--ink-2);
+  padding:7px 14px;border-radius:14px;
+  background:var(--glass-thin-bg);
+  -webkit-backdrop-filter:var(--glass-thin-blur);
+          backdrop-filter:var(--glass-thin-blur);
+  box-shadow:
+    inset 0 1px 0 0 var(--glass-edge),
+    inset 0 0 0 1px color-mix(in oklab, var(--dc, var(--accent)) 18%, var(--line));
+  transition:color .25s, transform .25s var(--ease-stage), box-shadow .25s, background .25s;
+  opacity:.78;
   max-width:min(560px,92vw);
 }
-.walk-trail-step .yr{font-size:.62rem;letter-spacing:.06em;color:var(--faint);font-variant-numeric:tabular-nums}
-.walk-trail-step .nm{font-family:var(--serif);font-style:italic;font-size:.92rem;color:var(--ink-2);text-align:center;line-height:1.25;letter-spacing:0}
+.walk-trail-step .yr{font-size:.62rem;letter-spacing:.06em;color:var(--muted);font-variant-numeric:tabular-nums}
+.walk-trail-step .nm{font-family:var(--serif);font-style:italic;font-size:.95rem;color:var(--ink);text-align:center;line-height:1.25;letter-spacing:0}
 .walk-trail-step:hover{
-  opacity:1;color:var(--accent);
-  background:color-mix(in oklab,var(--dc,var(--accent)) 6%,transparent);
+  opacity:1;transform:translateY(-1px);
+  background:color-mix(in oklab, var(--dc, var(--accent)) 12%, var(--glass-thin-bg));
+  box-shadow:
+    inset 0 1px 0 0 var(--glass-edge-strong),
+    inset 0 0 0 1px color-mix(in oklab, var(--dc, var(--accent)) 50%, var(--line-2)),
+    0 8px 24px -10px color-mix(in oklab, var(--dc, var(--accent)) 50%, transparent);
 }
-.walk-trail-step:hover .nm{color:var(--accent)}
+.walk-trail-step:hover .nm{color:color-mix(in oklab, var(--dc, var(--accent)) 70%, var(--ink))}
+/* Light trace between steps — replaces the plain ↓ arrow with a luminous
+   thread. Two-tone gradient mimics a fiber-optic strand. */
 .walk-trail-link{
-  color:var(--faint);font-size:.7rem;line-height:1;
-  opacity:.55;
+  display:block;width:1px;height:18px;
+  background:linear-gradient(180deg,
+    transparent 0%,
+    color-mix(in oklab, var(--dc, var(--accent)) 60%, transparent) 50%,
+    transparent 100%);
+  font-size:0;line-height:0;
+  box-shadow:0 0 8px 1px color-mix(in oklab, var(--dc, var(--accent)) 30%, transparent);
 }
-.walk-trail-here{color:var(--ink-2);opacity:.85}
+.walk-trail-here{
+  width:5px;height:5px;border-radius:50%;
+  background:var(--accent);
+  box-shadow:0 0 12px 2px color-mix(in oklab, var(--accent) 60%, transparent);
+}
 
 @media (max-width:560px){
   .walk-trail-step .nm{font-size:.86rem}
@@ -258,35 +503,90 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 }
 .walk-progress{
   position:absolute;left:0;bottom:0;height:1px;
-  background:var(--accent);
+  background:linear-gradient(90deg,
+    color-mix(in oklab, var(--dc, var(--accent)) 90%, transparent) 0%,
+    var(--accent) 100%);
+  box-shadow:0 0 8px 1px color-mix(in oklab, var(--dc, var(--accent)) 50%, transparent);
   transition:width .6s var(--ease-stage);
 }
+/* The stage is now a glass slab — content floats inside it, the slab floats
+   over the ambient field. Padding is generous so the year glyph has room
+   to breathe without the panel feeling cramped. */
 .walk-stage{
+  position:relative;
   display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;
-  max-width:1100px;margin:0 auto;width:100%;padding:32px 0;gap:24px;
-  /* Reserved height keeps the layout stable across ticks of varying detail
-     length. Detail can grow within; below the floor the page still feels
-     anchored on the year + name as the visual constant. */
+  max-width:1100px;margin:0 auto;width:100%;padding:40px 44px;gap:24px;
   min-height:60vh;
+  border-radius:var(--radius-lg);
+  background:var(--glass-bg);
+  -webkit-backdrop-filter:var(--glass-blur);
+          backdrop-filter:var(--glass-blur);
+  box-shadow:
+    inset 0 1px 0 0 var(--glass-edge),
+    inset 0 0 0 1px var(--line),
+    var(--glass-shadow);
+  isolation:isolate;
+  overflow:hidden;
 }
-/* Detail can vary 1-3 sentences. Reserve a min slot so short ticks don't
-   collapse the stage; long detail flows naturally without overflow. */
+/* Backlit bloom — the domain color glows from the top of the slab, so the
+   year reads as if a light source is behind it. Strongest near the year. */
+.walk-stage::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  border-radius:inherit;z-index:-1;
+  background:
+    radial-gradient(80% 50% at 30% 0%,
+      color-mix(in oklab, var(--dc, var(--accent)) 22%, transparent) 0%,
+      transparent 60%),
+    radial-gradient(60% 40% at 80% 100%,
+      color-mix(in oklab, var(--accent-2) 14%, transparent) 0%,
+      transparent 60%);
+  opacity:.85;
+}
+/* Specular sweep across the stage glass. */
+.walk-stage::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  border-radius:inherit;
+  background:linear-gradient(135deg,
+    var(--glass-edge) 0%, transparent 22%,
+    transparent 78%, color-mix(in oklab, var(--dc, var(--accent)) 30%, transparent) 100%);
+  opacity:.5;mix-blend-mode:screen;
+}
+:root[data-theme="light"] .walk-stage::after,
+:root:not([data-theme="dark"]) .walk-stage::after{mix-blend-mode:overlay;opacity:.7}
+
 .walk-detail{min-height:5.5em}
+
+/* The year is now a luminous object — an inner-glow gradient stroke + a soft
+   text-shadow halo + a slow breathing scale (≤1.5%). Italic Newsreader is
+   preserved; the glyph just gets lit from inside. */
 .walk-year{
+  position:relative;
   font-family:var(--serif);font-style:italic;font-weight:500;
-  font-size:clamp(3rem,11vw,8rem);line-height:1.05;letter-spacing:-.045em;color:var(--ink);
+  font-size:clamp(3rem,11vw,8rem);line-height:1.05;letter-spacing:-.045em;
+  color:var(--ink);
   font-feature-settings:'lnum','tnum';
-  /* Italic Newsreader has tall ascenders + a long right-side bearing on D/A.
-     Padding (top/bottom) + line-height ≥ 1 prevents the gradient mask from
-     clipping the top of glyphs. Right padding (.16em) gives the italic slant
-     of "D" room so the trailing letter doesn't get visually clipped at large
-     sizes / on narrow viewports. */
   padding:.06em .16em .04em 0;
   overflow:visible;
   width:fit-content;
   max-width:100%;
-  background:linear-gradient(180deg, var(--ink) 0%, color-mix(in oklab,var(--ink) 70%,var(--bg)) 100%);
+  background:linear-gradient(180deg,
+    var(--ink) 0%,
+    color-mix(in oklab, var(--ink) 60%, var(--dc, var(--accent))) 100%);
   -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  text-shadow:
+    0 0 38px color-mix(in oklab, var(--dc, var(--accent)) 30%, transparent),
+    0 0 90px color-mix(in oklab, var(--dc, var(--accent)) 18%, transparent);
+  filter:drop-shadow(0 8px 32px color-mix(in oklab, var(--dc, var(--accent)) 24%, transparent));
+  animation:year-breathe 7.5s var(--ease-quick) infinite;
+  transform-origin:left center;
+  will-change:transform, filter;
+}
+@keyframes year-breathe{
+  0%,100%{transform:scale(1);filter:drop-shadow(0 8px 32px color-mix(in oklab, var(--dc, var(--accent)) 24%, transparent))}
+  50%{transform:scale(1.012);filter:drop-shadow(0 12px 44px color-mix(in oklab, var(--dc, var(--accent)) 32%, transparent))}
+}
+@media (prefers-reduced-motion:reduce){
+  .walk-year{animation:none}
 }
 @supports not (background-clip:text){
   .walk-year{-webkit-text-fill-color:initial}
@@ -307,17 +607,37 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
    the bridge — naming the parents and explaining how each one made this
    particular dissolution possible. Visually emphasized over the rest of the
    stage so a reader walking the chain sees the causal seam first. */
+/* Because-panel — the explicit causal seam. Now a thin glass card with a
+   luminous left rail in the domain color. Reads as the "evidence file" the
+   reader is currently inspecting in the precrime sense. */
 .walk-because{
+  position:relative;
   font-family:var(--serif);font-size:clamp(1rem,1.4vw,1.15rem);
-  color:var(--ink-2);max-width:62ch;line-height:1.55;text-wrap:pretty;
-  border-left:2px solid color-mix(in oklab,var(--accent) 50%,var(--line));
-  padding:6px 0 6px 18px;
-  background:linear-gradient(90deg, color-mix(in oklab,var(--accent) 4%,transparent) 0%, transparent 70%);
+  color:var(--ink);max-width:62ch;line-height:1.6;text-wrap:pretty;
+  padding:18px 22px 18px 26px;
+  border-radius:14px;
+  background:var(--glass-thin-bg);
+  -webkit-backdrop-filter:var(--glass-thin-blur);
+          backdrop-filter:var(--glass-thin-blur);
+  box-shadow:
+    inset 0 1px 0 0 var(--glass-edge),
+    inset 0 0 0 1px var(--line);
+  overflow:hidden;
+}
+.walk-because::before{
+  content:"";position:absolute;left:0;top:14px;bottom:14px;width:2px;
+  background:linear-gradient(180deg,
+    transparent 0%,
+    color-mix(in oklab, var(--dc, var(--accent)) 90%, transparent) 30%,
+    color-mix(in oklab, var(--dc, var(--accent)) 90%, transparent) 70%,
+    transparent 100%);
+  box-shadow:0 0 12px 2px color-mix(in oklab, var(--dc, var(--accent)) 50%, transparent);
 }
 .walk-because .label{
   font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;
-  color:color-mix(in oklab,var(--accent) 70%,var(--muted));
-  display:block;margin-bottom:6px;
+  color:color-mix(in oklab, var(--dc, var(--accent)) 75%, var(--muted));
+  display:block;margin-bottom:8px;
+  text-shadow:0 0 10px color-mix(in oklab, var(--dc, var(--accent)) 30%, transparent);
 }
 .walk-detail{font-family:var(--serif);font-size:1.05rem;color:var(--ink-2);max-width:62ch;line-height:1.55;text-wrap:pretty;hyphens:auto}
 /* Editorial seasoning: appears only on a hand-picked subset of foundational
@@ -343,20 +663,58 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 .walk-flow-head{
   grid-column:1/-1;font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:4px;
 }
+/* Flow cards — glass tiles, lit from the bottom by the child's domain color.
+   Hovering pulls the card up + intensifies the bloom + traces the connection
+   thread (the ::after gradient line that anchors back to the year). */
 .walk-flow-card{
-  display:flex;flex-direction:column;gap:6px;padding:12px 14px;
-  border:1px solid var(--line);border-radius:10px;background:var(--paper);
-  text-decoration:none;color:inherit;transition:border-color .15s,background .15s,transform .15s;
+  position:relative;
+  display:flex;flex-direction:column;gap:8px;padding:14px 16px;
+  border-radius:14px;
+  background:var(--glass-thin-bg);
+  -webkit-backdrop-filter:var(--glass-thin-blur);
+          backdrop-filter:var(--glass-thin-blur);
+  box-shadow:
+    inset 0 1px 0 0 var(--glass-edge),
+    inset 0 0 0 1px var(--line);
+  text-decoration:none;color:inherit;
+  transition:transform .25s var(--ease-stage), box-shadow .25s, background .25s;
+  overflow:hidden;
+  isolation:isolate;
+}
+.walk-flow-card::before{
+  content:"";position:absolute;inset:0;border-radius:inherit;z-index:-1;
+  background:radial-gradient(120% 60% at 50% 110%,
+    color-mix(in oklab, var(--dc, var(--accent)) 28%, transparent) 0%,
+    transparent 70%);
+  opacity:.55;transition:opacity .25s var(--ease-quick);
+}
+.walk-flow-card::after{
+  content:"";position:absolute;left:50%;top:-1px;
+  width:0;height:1px;transform:translateX(-50%);
+  background:linear-gradient(90deg,
+    transparent 0%,
+    color-mix(in oklab, var(--dc, var(--accent)) 80%, transparent) 50%,
+    transparent 100%);
+  transition:width .35s var(--ease-stage);
 }
 .walk-flow-card:hover,.walk-flow-card:focus-visible,.walk-flow-card:active{
-  border-color:color-mix(in oklab,var(--dc,var(--accent)) 60%,var(--line-2));
-  background:color-mix(in oklab,var(--dc,var(--accent)) 5%,var(--paper));
-  transform:translateY(-1px);
+  transform:translateY(-3px);
+  background:color-mix(in oklab, var(--dc, var(--accent)) 10%, var(--glass-thin-bg));
+  box-shadow:
+    inset 0 1px 0 0 var(--glass-edge-strong),
+    inset 0 0 0 1px color-mix(in oklab, var(--dc, var(--accent)) 50%, var(--line-2)),
+    0 14px 28px -10px color-mix(in oklab, var(--dc, var(--accent)) 50%, transparent);
   outline:none;
 }
-.walk-flow-card:focus-visible{box-shadow:0 0 0 3px color-mix(in oklab,var(--accent) 30%,transparent)}
-.walk-flow-card .yr{font-family:var(--mono);font-size:.7rem;color:var(--muted);font-variant-numeric:tabular-nums}
-.walk-flow-card .nm{font-family:var(--serif);font-weight:500;font-size:.98rem;line-height:1.3;color:var(--ink)}
+.walk-flow-card:hover::before,.walk-flow-card:focus-visible::before{opacity:1}
+.walk-flow-card:hover::after,.walk-flow-card:focus-visible::after{width:60%}
+.walk-flow-card:focus-visible{box-shadow:
+  inset 0 1px 0 0 var(--glass-edge-strong),
+  inset 0 0 0 1px color-mix(in oklab, var(--dc, var(--accent)) 50%, var(--line-2)),
+  0 14px 28px -10px color-mix(in oklab, var(--dc, var(--accent)) 50%, transparent),
+  0 0 0 3px color-mix(in oklab, var(--accent) 35%, transparent)}
+.walk-flow-card .yr{font-family:var(--mono);font-size:.7rem;color:var(--muted);font-variant-numeric:tabular-nums;letter-spacing:.04em}
+.walk-flow-card .nm{font-family:var(--serif);font-weight:500;font-size:1rem;line-height:1.3;color:var(--ink)}
 .walk-flow-empty{
   grid-column:1/-1;font-family:var(--serif);font-style:italic;color:var(--muted);
   padding:8px 0;line-height:1.5;
@@ -364,18 +722,39 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 
 .walk-controls{
   display:flex;align-items:center;justify-content:space-between;gap:16px;
-  max-width:1100px;margin:0 auto;width:100%;padding:16px 0;
-  border-top:1px solid var(--line);font-family:var(--mono);font-size:.78rem;color:var(--muted);
+  max-width:1100px;margin:18px auto 0;width:100%;padding:16px 22px;
+  border-radius:14px;
+  background:var(--glass-thin-bg);
+  -webkit-backdrop-filter:var(--glass-thin-blur);
+          backdrop-filter:var(--glass-thin-blur);
+  box-shadow:inset 0 1px 0 0 var(--glass-edge), inset 0 0 0 1px var(--line);
+  font-family:var(--mono);font-size:.78rem;color:var(--muted);
 }
 .walk-controls button{
-  padding:8px 16px;border:1px solid var(--line-2);border-radius:999px;
-  font-family:var(--mono);font-size:.78rem;color:var(--ink-2);
-  transition:border-color .15s,color .15s;
+  padding:9px 16px;border-radius:999px;
+  font-family:var(--mono);font-size:.78rem;color:var(--ink);
+  background:var(--glass-thin-bg);
+  -webkit-backdrop-filter:var(--glass-thin-blur);
+          backdrop-filter:var(--glass-thin-blur);
+  box-shadow:inset 0 1px 0 0 var(--glass-edge), inset 0 0 0 1px var(--line-2);
+  transition:color .15s, background .2s, box-shadow .2s, transform .2s var(--ease-stage);
 }
-.walk-controls button:hover:not(:disabled){border-color:var(--accent);color:var(--accent)}
-.walk-controls button:disabled{opacity:.4;cursor:not-allowed}
+.walk-controls button:hover:not(:disabled){
+  color:var(--accent);transform:translateY(-1px);
+  background:color-mix(in oklab, var(--accent) 14%, var(--glass-thin-bg));
+  box-shadow:
+    inset 0 1px 0 0 var(--glass-edge-strong),
+    inset 0 0 0 1px color-mix(in oklab, var(--accent) 40%, var(--line-2)),
+    0 8px 18px -8px color-mix(in oklab, var(--accent) 50%, transparent);
+}
+.walk-controls button:disabled{opacity:.35;cursor:not-allowed}
 .walk-keys{display:flex;gap:8px}
-.walk-keys kbd{font-family:var(--mono);font-size:.7rem;padding:2px 7px;background:var(--paper-2);border:1px solid var(--line);border-radius:4px;color:var(--muted)}
+.walk-keys kbd{
+  font-family:var(--mono);font-size:.7rem;padding:2px 7px;border-radius:6px;
+  background:var(--glass-thin-bg);
+  box-shadow:inset 0 1px 0 0 var(--glass-edge), inset 0 0 0 1px var(--line-2);
+  color:var(--ink-2);
+}
 
 /* ========== HUNT (backward chain) ========== */
 .hunt{padding-top:8px}
@@ -383,44 +762,98 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 .hunt-head h1{font-family:var(--serif);font-weight:500;font-size:clamp(1.8rem,4.5vw,3.2rem);line-height:1.08;letter-spacing:-.02em;margin-bottom:12px;padding-top:.04em}
 .hunt-head p{font-family:var(--serif);font-style:italic;color:var(--ink-2);font-size:1.1rem;max-width:none}
 
-.hunt-search{display:flex;align-items:center;gap:10px;border:1px solid var(--line-2);border-radius:14px;background:var(--paper);padding:14px 18px;margin-bottom:32px;max-width:640px}
+.hunt-search{
+  display:flex;align-items:center;gap:10px;
+  border-radius:14px;padding:14px 18px;margin-bottom:32px;max-width:640px;
+  background:var(--glass-thin-bg);
+  -webkit-backdrop-filter:var(--glass-thin-blur);
+          backdrop-filter:var(--glass-thin-blur);
+  box-shadow:inset 0 1px 0 0 var(--glass-edge), inset 0 0 0 1px var(--line-2);
+  transition:box-shadow .2s, background .2s;
+}
+.hunt-search:focus-within{
+  background:color-mix(in oklab, var(--accent) 5%, var(--glass-thin-bg));
+  box-shadow:
+    inset 0 1px 0 0 var(--glass-edge-strong),
+    inset 0 0 0 1px color-mix(in oklab, var(--accent) 35%, var(--line-2)),
+    0 8px 22px -10px color-mix(in oklab, var(--accent) 35%, transparent);
+}
 .hunt-search input{flex:1;border:none;outline:none;background:transparent;font-family:var(--serif);font-size:1.1rem;color:var(--ink)}
+.hunt-search input::placeholder{color:var(--muted)}
 .hunt-search svg{color:var(--muted);flex:none}
 
 .hunt-suggest{margin-bottom:48px}
 .hunt-suggest-head{font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:14px}
 .hunt-suggest-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;max-width:900px}
 .hunt-suggest-grid button{
-  text-align:left;padding:14px 16px;border:1px solid var(--line);border-radius:10px;background:var(--paper);
-  display:flex;flex-direction:column;gap:6px;transition:border-color .15s,transform .15s;
+  position:relative;text-align:left;padding:14px 16px;border-radius:14px;
+  background:var(--glass-thin-bg);
+  -webkit-backdrop-filter:var(--glass-thin-blur);
+          backdrop-filter:var(--glass-thin-blur);
+  box-shadow:inset 0 1px 0 0 var(--glass-edge), inset 0 0 0 1px var(--line);
+  display:flex;flex-direction:column;gap:6px;
+  transition:transform .2s var(--ease-stage), box-shadow .2s, background .2s;
+  overflow:hidden;
 }
-.hunt-suggest-grid button:hover{border-color:color-mix(in oklab,var(--dc,var(--accent)) 60%,var(--line-2));transform:translateY(-1px)}
-.hunt-suggest-grid .nm{font-family:var(--serif);font-weight:500;color:var(--ink)}
-.hunt-suggest-grid .yr{font-family:var(--mono);font-size:.7rem;color:var(--muted)}
+.hunt-suggest-grid button::before{
+  content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;
+  background:radial-gradient(80% 50% at 50% 100%,
+    color-mix(in oklab, var(--dc, var(--accent)) 18%, transparent) 0%,
+    transparent 70%);
+  opacity:.45;transition:opacity .25s;
+}
+.hunt-suggest-grid button:hover{
+  transform:translateY(-2px);
+  background:color-mix(in oklab, var(--dc, var(--accent)) 8%, var(--glass-thin-bg));
+  box-shadow:
+    inset 0 1px 0 0 var(--glass-edge-strong),
+    inset 0 0 0 1px color-mix(in oklab, var(--dc, var(--accent)) 45%, var(--line-2)),
+    0 12px 24px -10px color-mix(in oklab, var(--dc, var(--accent)) 45%, transparent);
+}
+.hunt-suggest-grid button:hover::before{opacity:1}
+.hunt-suggest-grid .nm{position:relative;font-family:var(--serif);font-weight:500;color:var(--ink)}
+.hunt-suggest-grid .yr{position:relative;font-family:var(--mono);font-size:.7rem;color:var(--muted)}
 
-.hunt-chain{display:flex;flex-direction:column;gap:18px;max-width:780px}
+.hunt-chain{display:flex;flex-direction:column;gap:14px;max-width:780px}
 .hunt-step{
   display:grid;grid-template-columns:120px 1fr;gap:18px;align-items:start;
-  padding:16px 0;border-bottom:1px solid var(--line);position:relative;
+  padding:18px 22px;border-radius:14px;position:relative;
+  background:var(--glass-thin-bg);
+  -webkit-backdrop-filter:var(--glass-thin-blur);
+          backdrop-filter:var(--glass-thin-blur);
+  box-shadow:inset 0 1px 0 0 var(--glass-edge), inset 0 0 0 1px var(--line);
+  overflow:hidden;
 }
-.hunt-step:last-child{border-bottom:none}
+.hunt-step::before{
+  content:"";position:absolute;left:0;top:14px;bottom:14px;width:2px;
+  background:linear-gradient(180deg,
+    transparent,
+    color-mix(in oklab, var(--dc, var(--accent)) 70%, transparent) 30%,
+    color-mix(in oklab, var(--dc, var(--accent)) 70%, transparent) 70%,
+    transparent);
+  box-shadow:0 0 8px 1px color-mix(in oklab, var(--dc, var(--accent)) 40%, transparent);
+}
 .hunt-step-yr{font-family:var(--mono);font-size:.78rem;color:var(--muted);font-variant-numeric:tabular-nums;padding-top:3px;text-align:right}
 .hunt-step-body{display:flex;flex-direction:column;gap:6px}
-.hunt-step-name{font-family:var(--serif);font-weight:500;font-size:1.18rem;color:var(--ink);line-height:1.25;cursor:pointer}
-.hunt-step-name:hover{color:var(--accent)}
+.hunt-step-name{font-family:var(--serif);font-weight:500;font-size:1.18rem;color:var(--ink);line-height:1.25;cursor:pointer;transition:color .15s}
+.hunt-step-name:hover{color:color-mix(in oklab, var(--dc, var(--accent)) 70%, var(--ink))}
 .hunt-step-before{font-family:var(--serif);font-style:italic;color:var(--ink-2);font-size:.95rem}
 .hunt-step-meta{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
-/* Hunt step bridge: instead of an empty "required ↓" arrow, name the
-   constraint that the next step dissolves. The chain teaches itself. */
+/* Light trace between hunt steps. */
 .hunt-arrow{
   display:flex;align-items:flex-start;gap:14px;
-  padding-left:138px;margin:-2px 0 -2px;
+  padding-left:160px;margin:-4px 0 -4px;
   font-family:var(--serif);font-style:italic;color:var(--ink-2);
   font-size:.92rem;line-height:1.4;
 }
 .hunt-arrow::before{
   content:"";flex:none;width:1px;height:36px;margin-top:4px;
-  background:linear-gradient(180deg,transparent,var(--line-2) 22%,var(--line-2) 78%,transparent);
+  background:linear-gradient(180deg,
+    transparent,
+    color-mix(in oklab, var(--accent) 50%, transparent) 22%,
+    color-mix(in oklab, var(--accent) 50%, transparent) 78%,
+    transparent);
+  box-shadow:0 0 6px 1px color-mix(in oklab, var(--accent) 30%, transparent);
   display:inline-block;
 }
 .hunt-arrow-rule{max-width:46ch;color:var(--ink-2)}
@@ -461,31 +894,59 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
   .map-domains button{flex:none;scroll-snap-align:start}
 }
 .map-domains button{
-  font-family:var(--mono);font-size:.7rem;padding:5px 11px;border-radius:999px;
-  background:var(--paper);border:1px solid var(--line);color:var(--muted);transition:all .15s;
+  font-family:var(--mono);font-size:.7rem;padding:6px 12px;border-radius:999px;
+  background:var(--glass-thin-bg);
+  -webkit-backdrop-filter:var(--glass-thin-blur);
+          backdrop-filter:var(--glass-thin-blur);
+  box-shadow:inset 0 1px 0 0 var(--glass-edge), inset 0 0 0 1px var(--line);
+  color:var(--muted);transition:all .2s;
   text-transform:lowercase;letter-spacing:.04em;
 }
+.map-domains button:hover{color:var(--ink-2)}
 .map-domains button.active{
-  background:color-mix(in oklab,var(--dc,var(--accent)) 14%,transparent);
-  border-color:color-mix(in oklab,var(--dc,var(--accent)) 50%,var(--line));
-  color:var(--dc,var(--accent));
+  background:color-mix(in oklab, var(--dc, var(--accent)) 22%, var(--glass-thin-bg));
+  box-shadow:
+    inset 0 1px 0 0 var(--glass-edge-strong),
+    inset 0 0 0 1px color-mix(in oklab, var(--dc, var(--accent)) 50%, var(--line-2)),
+    0 0 18px -4px color-mix(in oklab, var(--dc, var(--accent)) 50%, transparent);
+  color:color-mix(in oklab, var(--dc, var(--accent)) 80%, var(--ink));
+  text-shadow:0 0 8px color-mix(in oklab, var(--dc, var(--accent)) 35%, transparent);
 }
 .map-domains .all{color:var(--ink-2)}
-.map-domains .all.active{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.map-domains .all.active{
+  background:color-mix(in oklab, var(--accent) 22%, var(--glass-thin-bg));
+  color:var(--ink);text-shadow:0 0 8px color-mix(in oklab, var(--accent) 40%, transparent);
+  box-shadow:
+    inset 0 1px 0 0 var(--glass-edge-strong),
+    inset 0 0 0 1px color-mix(in oklab, var(--accent) 50%, var(--line-2));
+}
 
 .map-canvas-wrap{
   position:relative;
-  background:var(--paper);
-  border:1px solid var(--line);border-radius:14px;
   margin-top:20px;
+  border-radius:var(--radius);
+  background:var(--glass-bg);
+  -webkit-backdrop-filter:var(--glass-blur);
+          backdrop-filter:var(--glass-blur);
+  box-shadow:
+    inset 0 1px 0 0 var(--glass-edge),
+    inset 0 0 0 1px var(--line),
+    var(--glass-shadow);
   overflow:hidden;
 }
 .map-canvas{width:100%;height:520px;display:block;cursor:grab}
 .map-canvas:active{cursor:grabbing}
 .map-tooltip{
   position:absolute;pointer-events:none;
-  background:var(--ink);color:var(--bg);
-  padding:8px 12px;border-radius:6px;
+  background:var(--glass-thick-bg);
+  -webkit-backdrop-filter:var(--glass-thick-blur);
+          backdrop-filter:var(--glass-thick-blur);
+  box-shadow:
+    inset 0 1px 0 0 var(--glass-edge-strong),
+    inset 0 0 0 1px var(--line-2),
+    0 12px 28px -8px rgba(0,0,0,.5);
+  color:var(--ink);
+  padding:9px 14px;border-radius:10px;
   font-family:var(--mono);font-size:.72rem;
   opacity:0;transition:opacity .15s;
   white-space:nowrap;max-width:320px;overflow:hidden;text-overflow:ellipsis;
@@ -544,24 +1005,50 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 
 .browse-toolbar{
   display:grid;grid-template-columns:1fr auto;gap:14px;align-items:center;
-  margin:24px 0 18px;padding-bottom:16px;border-bottom:1px solid var(--line);
+  margin:24px 0 18px;padding:16px 22px;border-radius:14px;
+  background:var(--glass-thin-bg);
+  -webkit-backdrop-filter:var(--glass-thin-blur);
+          backdrop-filter:var(--glass-thin-blur);
+  box-shadow:inset 0 1px 0 0 var(--glass-edge), inset 0 0 0 1px var(--line);
 }
 .browse-search{
-  display:flex;align-items:center;gap:10px;border:1px solid var(--line-2);border-radius:10px;background:var(--paper);padding:9px 14px;max-width:520px;
+  display:flex;align-items:center;gap:10px;border-radius:10px;
+  background:var(--glass-thin-bg);
+  -webkit-backdrop-filter:var(--glass-thin-blur);
+          backdrop-filter:var(--glass-thin-blur);
+  box-shadow:inset 0 1px 0 0 var(--glass-edge), inset 0 0 0 1px var(--line-2);
+  padding:9px 14px;max-width:520px;
+  transition:box-shadow .2s, background .2s;
+}
+.browse-search:focus-within{
+  background:color-mix(in oklab, var(--accent) 5%, var(--glass-thin-bg));
+  box-shadow:
+    inset 0 1px 0 0 var(--glass-edge-strong),
+    inset 0 0 0 1px color-mix(in oklab, var(--accent) 35%, var(--line-2));
 }
 .browse-search input{flex:1;border:none;outline:none;background:transparent;font-family:var(--serif);font-size:1rem;color:var(--ink)}
+.browse-search input::placeholder{color:var(--muted)}
 .browse-search svg{color:var(--muted)}
 .browse-meta{font-family:var(--mono);font-size:.72rem;color:var(--muted);font-variant-numeric:tabular-nums}
 
 .browse-zone{margin-bottom:48px}
 .browse-zone-head{
   display:grid;grid-template-columns:auto auto auto 1fr auto;
-  align-items:baseline;gap:14px;margin-bottom:16px;padding:14px 0;
-  border-bottom:1px solid var(--line);
-  cursor:pointer;border-radius:6px;
-  min-height:48px;
+  align-items:baseline;gap:14px;margin-bottom:16px;padding:14px 18px;
+  cursor:pointer;border-radius:14px;
+  background:var(--glass-thin-bg);
+  -webkit-backdrop-filter:var(--glass-thin-blur);
+          backdrop-filter:var(--glass-thin-blur);
+  box-shadow:inset 0 1px 0 0 var(--glass-edge), inset 0 0 0 1px var(--line);
+  min-height:52px;
+  transition:background .2s, box-shadow .2s;
 }
-.browse-zone-head:hover{background:color-mix(in oklab,var(--accent) 4%,transparent)}
+.browse-zone-head:hover{
+  background:color-mix(in oklab, var(--accent) 6%, var(--glass-thin-bg));
+  box-shadow:
+    inset 0 1px 0 0 var(--glass-edge-strong),
+    inset 0 0 0 1px color-mix(in oklab, var(--accent) 25%, var(--line-2));
+}
 .browse-zone-head:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 .browse-zone-head .browse-chev{
   font-family:var(--mono);font-size:.8rem;color:var(--muted);width:14px;display:inline-block;text-align:center;
@@ -581,10 +1068,20 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 .browse-toolbar .browse-meta{display:flex;align-items:center;gap:14px}
 .browse-toggle{
   font-family:var(--mono);font-size:.7rem;color:var(--ink-2);
-  padding:6px 12px;border:1px solid var(--line-2);border-radius:999px;
-  cursor:pointer;background:transparent;transition:border-color .15s,color .15s;
+  padding:7px 14px;border-radius:999px;cursor:pointer;
+  background:var(--glass-thin-bg);
+  -webkit-backdrop-filter:var(--glass-thin-blur);
+          backdrop-filter:var(--glass-thin-blur);
+  box-shadow:inset 0 1px 0 0 var(--glass-edge), inset 0 0 0 1px var(--line-2);
+  transition:color .15s, background .2s, box-shadow .2s;
 }
-.browse-toggle:hover{border-color:var(--accent);color:var(--accent)}
+.browse-toggle:hover{
+  color:var(--accent);
+  background:color-mix(in oklab, var(--accent) 12%, var(--glass-thin-bg));
+  box-shadow:
+    inset 0 1px 0 0 var(--glass-edge-strong),
+    inset 0 0 0 1px color-mix(in oklab, var(--accent) 40%, var(--line-2));
+}
 
 @media (max-width:760px){
   .browse-zone-head{grid-template-columns:auto auto 1fr auto;gap:10px}
@@ -593,10 +1090,17 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 
 .browse-row{
   display:grid;grid-template-columns:90px 1fr auto;gap:18px;
-  padding:12px 6px;align-items:baseline;border-bottom:1px solid var(--line);
-  text-decoration:none;color:inherit;transition:padding .15s,background .15s;cursor:pointer;
+  padding:14px 16px;align-items:baseline;
+  border-bottom:1px solid var(--line);
+  text-decoration:none;color:inherit;
+  transition:padding .2s, background .2s, box-shadow .2s;
+  cursor:pointer;border-radius:10px;
 }
-.browse-row:hover{padding-left:14px;background:color-mix(in oklab,var(--accent) 4%,transparent)}
+.browse-row:hover{
+  padding-left:24px;
+  background:color-mix(in oklab, var(--dc, var(--accent)) 8%, var(--glass-thin-bg));
+  box-shadow:inset 2px 0 0 0 color-mix(in oklab, var(--dc, var(--accent)) 80%, transparent);
+}
 .browse-row .yr{font-family:var(--mono);font-size:.74rem;color:var(--muted);font-variant-numeric:tabular-nums;text-align:right}
 .browse-row .body{display:flex;flex-direction:column;gap:4px;min-width:0}
 .browse-row .nm{font-family:var(--serif);font-weight:500;font-size:1.04rem;line-height:1.3;color:var(--ink)}
@@ -611,12 +1115,22 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 
 /* ========== TICK DETAIL DIALOG ========== */
 .tick-dlg{
-  border:none;padding:0;background:var(--paper);color:var(--ink);
-  border-radius:18px;max-width:min(720px,94vw);width:100%;
+  border:none;padding:0;color:var(--ink);
+  border-radius:var(--radius-lg);max-width:min(720px,94vw);width:100%;
   max-height:90vh;overflow:hidden;display:flex;flex-direction:column;
-  box-shadow:0 30px 80px -20px #0006;
+  background:var(--glass-thick-bg);
+  -webkit-backdrop-filter:var(--glass-thick-blur);
+          backdrop-filter:var(--glass-thick-blur);
+  box-shadow:
+    inset 0 1px 0 0 var(--glass-edge-strong),
+    inset 0 0 0 1px var(--line-2),
+    0 30px 80px -20px rgba(0,0,0,.6);
 }
-.tick-dlg::backdrop{background:#0009;backdrop-filter:blur(6px)}
+.tick-dlg::backdrop{
+  background:rgba(8,10,16,.55);
+  backdrop-filter:saturate(140%) blur(14px);
+  -webkit-backdrop-filter:saturate(140%) blur(14px);
+}
 .tick-dlg-head{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;border-bottom:1px solid var(--line);font-family:var(--mono);font-size:.72rem;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
 .tick-dlg-close{padding:6px 10px;border-radius:8px;color:var(--muted)}
 .tick-dlg-close:hover{background:var(--paper-2);color:var(--ink)}
@@ -737,14 +1251,32 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
   font-variant-caps:all-small-caps;
 }
 .about .modes{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin:18px 0}
-.about .mode-tile{padding:14px 16px;border:1px solid var(--line);border-radius:10px;background:var(--paper);text-decoration:none;color:inherit}
-.about .mode-tile:hover{border-color:var(--accent)}
+.about .mode-tile{
+  padding:16px 18px;border-radius:14px;text-decoration:none;color:inherit;
+  background:var(--glass-thin-bg);
+  -webkit-backdrop-filter:var(--glass-thin-blur);
+          backdrop-filter:var(--glass-thin-blur);
+  box-shadow:inset 0 1px 0 0 var(--glass-edge), inset 0 0 0 1px var(--line);
+  transition:transform .2s var(--ease-stage), box-shadow .2s, background .2s;
+}
+.about .mode-tile:hover{
+  transform:translateY(-2px);
+  background:color-mix(in oklab, var(--accent) 8%, var(--glass-thin-bg));
+  box-shadow:
+    inset 0 1px 0 0 var(--glass-edge-strong),
+    inset 0 0 0 1px color-mix(in oklab, var(--accent) 40%, var(--line-2)),
+    0 12px 24px -10px color-mix(in oklab, var(--accent) 40%, transparent);
+}
 .about .mode-tile h3{font-family:var(--serif);font-weight:500;font-size:1.1rem;margin-bottom:4px;color:var(--ink)}
 .about .mode-tile p{font-family:var(--serif);font-style:italic;font-size:.92rem;color:var(--ink-2);margin:0}
 .about .credit{font-family:var(--mono);font-size:.78rem;color:var(--muted);margin-top:48px;padding-top:18px;border-top:1px solid var(--line)}
 .about .cite{
   font-family:var(--mono);font-size:.82rem;
-  background:var(--paper-2);border:1px solid var(--line);border-radius:8px;
+  background:var(--glass-thin-bg);
+  -webkit-backdrop-filter:var(--glass-thin-blur);
+          backdrop-filter:var(--glass-thin-blur);
+  box-shadow:inset 0 1px 0 0 var(--glass-edge), inset 0 0 0 1px var(--line);
+  border-radius:10px;
   padding:14px 16px;margin:6px 0 10px;overflow-x:auto;
   color:var(--ink-2);
 }
@@ -792,38 +1324,105 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 .home-sub{font-family:var(--serif);font-style:italic;font-size:clamp(1rem,1.4vw,1.14rem);color:var(--ink-2);max-width:54ch;margin-top:8px;line-height:1.4}
 
 .home-show{
+  position:relative;
   display:grid;grid-template-columns:1.05fr 1fr;gap:32px;align-items:center;
-  padding:10px 0;
+  padding:32px 36px;margin:8px 0;
+  border-radius:var(--radius-lg);
+  background:var(--glass-bg);
+  -webkit-backdrop-filter:var(--glass-blur);
+          backdrop-filter:var(--glass-blur);
+  box-shadow:
+    inset 0 1px 0 0 var(--glass-edge),
+    inset 0 0 0 1px var(--line),
+    var(--glass-shadow);
+  isolation:isolate;
+  overflow:hidden;
 }
-.home-show-tick{display:flex;flex-direction:column;gap:6px}
-.home-show-tick .dom{align-self:flex-start;margin-bottom:2px}
-.home-show-tick .yr{font-family:var(--serif);font-style:italic;font-size:clamp(2rem,4.4vw,3.4rem);line-height:1.05;color:var(--ink);font-weight:500;font-feature-settings:'lnum';padding:.04em 0;overflow:visible;white-space:nowrap}
+.home-show::before{
+  content:"";position:absolute;inset:0;border-radius:inherit;z-index:-1;
+  background:radial-gradient(80% 60% at 25% 0%,
+    color-mix(in oklab, var(--dc, var(--accent)) 18%, transparent) 0%,
+    transparent 65%);
+  opacity:.85;
+}
+.home-show::after{
+  content:"";position:absolute;inset:0;border-radius:inherit;
+  background:linear-gradient(135deg,
+    var(--glass-edge) 0%, transparent 22%, transparent 80%,
+    color-mix(in oklab, var(--dc, var(--accent)) 28%, transparent) 100%);
+  opacity:.45;mix-blend-mode:screen;pointer-events:none;
+}
+:root[data-theme="light"] .home-show::after,
+:root:not([data-theme="dark"]) .home-show::after{mix-blend-mode:overlay;opacity:.65}
+.home-show-tick{display:flex;flex-direction:column;gap:8px}
+.home-show-tick .dom{align-self:flex-start;margin-bottom:4px}
+.home-show-tick .yr{
+  font-family:var(--serif);font-style:italic;font-weight:500;
+  font-size:clamp(2rem,4.4vw,3.4rem);line-height:1.05;
+  color:var(--ink);font-feature-settings:'lnum';padding:.04em 0;
+  overflow:visible;white-space:nowrap;
+  text-shadow:
+    0 0 26px color-mix(in oklab, var(--dc, var(--accent)) 28%, transparent),
+    0 0 60px color-mix(in oklab, var(--dc, var(--accent)) 14%, transparent);
+}
 .home-show-tick .nm{font-family:var(--serif);font-weight:500;font-size:clamp(1.1rem,1.6vw,1.4rem);line-height:1.15;color:var(--ink);max-width:24ch}
-.home-show-tick .be{font-family:var(--serif);font-style:italic;color:var(--ink-2);font-size:.94rem;max-width:42ch;line-height:1.4}
-.home-show-flow{display:flex;flex-direction:column;gap:4px;border-left:2px solid var(--line);padding-left:18px}
-.home-show-flow .label{font-family:var(--mono);font-size:.62rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:2px}
-.home-show-flow .row{display:flex;justify-content:space-between;gap:14px;padding:4px 0;font-family:var(--serif);font-size:.92rem;color:var(--ink-2);border-bottom:1px dashed var(--line);cursor:pointer;line-height:1.3}
-.home-show-flow .row:last-child{border-bottom:none}
-.home-show-flow .row:hover{color:var(--accent)}
+.home-show-tick .be{font-family:var(--serif);font-style:italic;color:var(--ink-2);font-size:.96rem;max-width:42ch;line-height:1.45}
+.home-show-flow{display:flex;flex-direction:column;gap:4px;padding-left:20px;position:relative}
+.home-show-flow::before{
+  content:"";position:absolute;left:0;top:6px;bottom:6px;width:2px;
+  background:linear-gradient(180deg,
+    transparent 0%,
+    color-mix(in oklab, var(--dc, var(--accent)) 70%, transparent) 30%,
+    color-mix(in oklab, var(--dc, var(--accent)) 70%, transparent) 70%,
+    transparent 100%);
+  box-shadow:0 0 8px 1px color-mix(in oklab, var(--dc, var(--accent)) 35%, transparent);
+}
+.home-show-flow .label{font-family:var(--mono);font-size:.62rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:6px}
+.home-show-flow .row{display:flex;justify-content:space-between;gap:14px;padding:6px 8px;font-family:var(--serif);font-size:.94rem;color:var(--ink-2);cursor:pointer;line-height:1.3;border-radius:8px;transition:color .15s, background .2s, padding .2s}
+.home-show-flow .row:hover{color:var(--ink);background:color-mix(in oklab, var(--dc, var(--accent)) 10%, transparent);padding-left:14px}
 .home-show-flow .row .y{font-family:var(--mono);font-size:.64rem;color:var(--muted)}
 
 .home-cta{
   display:flex;align-items:center;justify-content:space-between;gap:14px;
-  padding:12px 0 2px;border-top:1px solid var(--line);
+  padding:14px 0 2px;
   flex-wrap:wrap;
 }
 .home-cta-buttons{display:flex;gap:8px;flex:1 1 auto;min-width:0;flex-wrap:nowrap}
 .home-cta-buttons a{
-  padding:10px 16px;border-radius:999px;font-family:var(--sans);font-size:.84rem;font-weight:500;
-  background:var(--ink);color:var(--bg);min-height:38px;
+  padding:11px 18px;border-radius:999px;font-family:var(--sans);font-size:.86rem;font-weight:500;
+  color:var(--ink);min-height:40px;
   display:inline-flex;align-items:center;white-space:nowrap;
-  transition:transform .18s var(--ease-quick),box-shadow .18s var(--ease-quick),background .18s;
-  box-shadow:0 1px 0 0 color-mix(in oklab,var(--ink) 90%,#000), 0 6px 16px -8px color-mix(in oklab,var(--ink) 50%,transparent);
+  background:color-mix(in oklab, var(--accent) 35%, var(--glass-bg));
+  -webkit-backdrop-filter:var(--glass-blur);
+          backdrop-filter:var(--glass-blur);
+  box-shadow:
+    inset 0 1px 0 0 var(--glass-edge-strong),
+    inset 0 0 0 1px color-mix(in oklab, var(--accent) 50%, var(--line-2)),
+    0 8px 22px -10px color-mix(in oklab, var(--accent) 60%, transparent);
+  transition:transform .2s var(--ease-quick), box-shadow .2s var(--ease-quick), background .2s;
 }
-.home-cta-buttons a:hover{transform:translateY(-1.5px);box-shadow:0 1px 0 0 color-mix(in oklab,var(--ink) 90%,#000), 0 12px 24px -10px color-mix(in oklab,var(--ink) 60%,transparent)}
+.home-cta-buttons a:hover{
+  transform:translateY(-2px);
+  background:color-mix(in oklab, var(--accent) 50%, var(--glass-bg));
+  box-shadow:
+    inset 0 1px 0 0 var(--glass-edge-strong),
+    inset 0 0 0 1px color-mix(in oklab, var(--accent) 70%, var(--line-2)),
+    0 14px 32px -10px color-mix(in oklab, var(--accent) 70%, transparent);
+}
 .home-cta-buttons a:active{transform:translateY(0)}
-.home-cta-buttons a.secondary{background:transparent;color:var(--ink);border:1px solid var(--line-2);box-shadow:none}
-.home-cta-buttons a.secondary:hover{border-color:var(--ink);background:var(--paper-2);box-shadow:none}
+.home-cta-buttons a.secondary{
+  background:var(--glass-thin-bg);
+  color:var(--ink-2);
+  box-shadow:inset 0 1px 0 0 var(--glass-edge), inset 0 0 0 1px var(--line-2);
+}
+.home-cta-buttons a.secondary:hover{
+  color:var(--ink);
+  background:color-mix(in oklab, var(--ink) 8%, var(--glass-thin-bg));
+  box-shadow:
+    inset 0 1px 0 0 var(--glass-edge-strong),
+    inset 0 0 0 1px var(--line-2),
+    0 8px 20px -10px rgba(0,0,0,.4);
+}
 .home-counter{
   font-family:var(--mono);font-size:.72rem;color:var(--muted);
   display:flex;gap:14px;flex-wrap:wrap;align-items:baseline;flex:0 0 auto;
@@ -893,13 +1492,19 @@ main:focus,main:focus-visible{outline:none}
 .walk-action:hover{color:var(--accent)}
 .walk-action svg{opacity:.8}
 
-/* Toast — copies the ab-codex idiom: bottom-center, monospace, brief, accessible */
+/* Toast — bottom-center, glass, monospace */
 #toast{
   position:fixed;left:50%;bottom:28px;transform:translate(-50%,12px);
-  background:var(--ink);color:var(--bg);
-  padding:10px 16px;border-radius:8px;
+  color:var(--ink);
+  padding:11px 18px;border-radius:10px;
   font-family:var(--mono);font-size:.74rem;letter-spacing:.04em;
-  box-shadow:0 12px 32px -10px color-mix(in oklab,var(--ink) 60%,transparent);
+  background:var(--glass-thick-bg);
+  -webkit-backdrop-filter:var(--glass-thick-blur);
+          backdrop-filter:var(--glass-thick-blur);
+  box-shadow:
+    inset 0 1px 0 0 var(--glass-edge-strong),
+    inset 0 0 0 1px var(--line-2),
+    0 16px 36px -10px rgba(0,0,0,.55);
   opacity:0;pointer-events:none;z-index:200;
   transition:opacity .18s var(--ease-quick),transform .22s var(--ease-stage);
 }
@@ -920,21 +1525,26 @@ main:focus,main:focus-visible{outline:none}
 #shareMenu{
   position:absolute;z-index:120;min-width:200px;
   display:flex;flex-direction:column;gap:2px;
-  padding:6px;background:var(--paper);border:1px solid var(--line);
-  border-radius:10px;
-  box-shadow:0 16px 40px -12px color-mix(in oklab,var(--ink) 28%,transparent);
+  padding:6px;border-radius:14px;
+  background:var(--glass-thick-bg);
+  -webkit-backdrop-filter:var(--glass-thick-blur);
+          backdrop-filter:var(--glass-thick-blur);
+  box-shadow:
+    inset 0 1px 0 0 var(--glass-edge-strong),
+    inset 0 0 0 1px var(--line-2),
+    0 24px 60px -16px rgba(0,0,0,.6);
 }
 #shareMenu[hidden]{display:none}
 .share-opt{
   display:inline-flex;align-items:center;gap:10px;
-  padding:10px 12px;min-height:40px;border-radius:6px;
+  padding:10px 12px;min-height:40px;border-radius:8px;
   font-family:var(--mono);font-size:.76rem;color:var(--ink-2);
   background:transparent;border:0;cursor:pointer;text-align:left;
-  transition:background .12s,color .12s;
+  transition:background .15s, color .15s;
 }
 .share-opt:hover,.share-opt:focus-visible{
-  background:color-mix(in oklab,var(--accent) 8%,var(--paper-2));
-  color:var(--accent-2,var(--accent));
+  background:color-mix(in oklab, var(--accent) 14%, transparent);
+  color:var(--accent);
   outline:none;
 }
 .share-opt[hidden]{display:none}
@@ -943,15 +1553,22 @@ main:focus,main:focus-visible{outline:none}
 #kbdHelp{
   position:fixed;inset:0;z-index:130;
   display:flex;align-items:center;justify-content:center;
-  background:color-mix(in oklab,var(--ink) 32%,transparent);
-  backdrop-filter:blur(4px);
+  background:rgba(8,10,16,.5);
+  backdrop-filter:saturate(140%) blur(10px);
+  -webkit-backdrop-filter:saturate(140%) blur(10px);
   padding:24px;
 }
 #kbdHelp[hidden]{display:none}
 .kbd-card{
-  background:var(--paper);border:1px solid var(--line);
-  border-radius:14px;padding:22px 24px;max-width:440px;width:100%;
-  box-shadow:0 24px 64px -20px color-mix(in oklab,var(--ink) 40%,transparent);
+  border-radius:var(--radius);
+  padding:24px 26px;max-width:440px;width:100%;
+  background:var(--glass-thick-bg);
+  -webkit-backdrop-filter:var(--glass-thick-blur);
+          backdrop-filter:var(--glass-thick-blur);
+  box-shadow:
+    inset 0 1px 0 0 var(--glass-edge-strong),
+    inset 0 0 0 1px var(--line-2),
+    0 24px 64px -16px rgba(0,0,0,.6);
 }
 .kbd-head{
   display:flex;align-items:center;justify-content:space-between;
@@ -969,15 +1586,20 @@ main:focus,main:focus-visible{outline:none}
 .kbd-list dd{margin:0;padding-top:1px}
 .kbd-list kbd{
   font-family:var(--mono);font-size:.7rem;
-  padding:2px 7px;background:var(--paper-2);
-  border:1px solid var(--line);border-radius:4px;color:var(--muted);
+  padding:2px 7px;border-radius:6px;color:var(--ink-2);
+  background:var(--glass-thin-bg);
+  box-shadow:inset 0 1px 0 0 var(--glass-edge), inset 0 0 0 1px var(--line-2);
 }
 .kbd-foot{
   margin-top:14px;padding-top:14px;border-top:1px solid var(--line);
   font-family:var(--serif);font-size:.88rem;color:var(--muted);
 }
-.kbd-foot kbd{font-family:var(--mono);font-size:.7rem;padding:1px 5px;background:var(--paper-2);border:1px solid var(--line);border-radius:3px;margin:0 1px}
-.kbd-foot code{font-family:var(--mono);font-size:.78rem;background:var(--paper-2);padding:1px 5px;border-radius:3px}
+.kbd-foot kbd{
+  font-family:var(--mono);font-size:.7rem;padding:1px 6px;border-radius:5px;margin:0 1px;
+  background:var(--glass-thin-bg);
+  box-shadow:inset 0 1px 0 0 var(--glass-edge), inset 0 0 0 1px var(--line-2);
+}
+.kbd-foot code{font-family:var(--mono);font-size:.78rem;background:var(--glass-thin-bg);box-shadow:inset 0 0 0 1px var(--line-2);padding:1px 5px;border-radius:5px}
 
 /* Walk-controls — stack on narrow, hide kbd hints on coarse pointers */
 @media (max-width:720px){
