@@ -264,7 +264,7 @@ function pickHero(){
 // Picked deterministically by date so the homepage feels alive but a
 // shared link on the same day shows the same opener.
 const HERO_OPENINGS = [
-  { h: "History, <em>in ticks</em>.",
+  { h: "History, <em>in ticks</em>",
     sub: "A tick is the moment a constraint dissolved.",
     sub2: "Walk forward, or backward from a thing you already know." },
 ];
@@ -1259,8 +1259,26 @@ function about(){
         <li><a href='data.json'>data.json</a>: the full corpus, including the edge graph, source links, and editorial detail.</li>
       </ul>
       <p>Schema is documented in <a href='llms.txt'>llms.txt</a>. Agent permissions and citation format live in <a href='.well-known/agent-permissions.json'>.well-known/agent-permissions.json</a>.</p>
-      <h2>Credit</h2>
-      <p class='credit'>Made by <a href='https://github.com/k3sava' target='_blank' rel='noopener' style='color:var(--ink-2);border-bottom:1px solid var(--line)'>Kesava</a> · MIT · <a href='https://github.com/k3sava/ticks' target='_blank' rel='noopener' style='color:var(--ink-2);border-bottom:1px solid var(--line)'>source on GitHub</a></p>
+
+      <h2>Sources</h2>
+      <p>Every tick has 2&ndash;3 source links you can follow. The bulk of factual claims trace to <strong>Wikipedia</strong> &mdash; the largest, most up-to-date general-knowledge corpus the world has, and the one humans and AI systems both use as a baseline. Where Wikipedia's coverage was thin, ticks lean on the <strong>Stanford Encyclopedia of Philosophy</strong> for philosophy, <strong>Encyclopaedia Britannica</strong> for biographies and dates, and named academic monographs and primary sources cited per tick. Some entries draw on field-specific references &mdash; <em>Annals of the Bombay Natural History Society</em> for South Asian biology, <em>JSTOR</em> for cited journal articles, the <em>Internet Archive</em> for out-of-print books.</p>
+      <p>If a tick's source feels weak, please <a href='https://github.com/k3sava/ticks/issues/new' target='_blank' rel='noopener' style='color:var(--accent);border-bottom:1px solid var(--accent)'>open an issue</a> &mdash; correcting these is the work.</p>
+
+      <h2>Influences</h2>
+      <p>The framing &mdash; history as a chain of constraint dissolutions, each tick a moment when a new floor of possibility opens &mdash; owes the most to:</p>
+      <ul class='about-list'>
+        <li><strong>David Deutsch</strong>, <em>The Beginning of Infinity</em>. The thesis that all progress is constraint dissolution. The chain reasoning lives or dies by this idea.</li>
+        <li><strong>James Burke</strong>, <em>Connections</em> (BBC, 1978). The format that links technologies and ideas across centuries through specific causal traces, not just thematic adjacency.</li>
+        <li><strong>David Christian</strong>, <em>Maps of Time</em> &amp; the Big History project. The decision to put pre-language hominins and ChatGPT into a single corpus, sorted by year.</li>
+        <li><strong>Will and Ariel Durant</strong>, <em>The Story of Civilization</em>. The instinct that one person can hold all of recorded history in a single reading order, and that the synthesis is worth the inevitable simplifications.</li>
+        <li><strong>Joel Mokyr</strong>, <em>A Culture of Growth</em>. The argument that institutions, not just inventions, drive breakthroughs.</li>
+        <li><strong>Jared Diamond</strong>, <em>Guns, Germs, and Steel</em>. The reading of geography and biology as constraints that shape what's possible where.</li>
+        <li><strong>Yuval Noah Harari</strong>, <em>Sapiens</em>. The proof that popular history can take 70,000-year sweeps seriously without losing its reader.</li>
+        <li><strong>Andrej Karpathy</strong>, <a href='https://gist.github.com/karpathy/1dd0294ef9567971c1e4348a90d69285' target='_blank' rel='noopener' style='color:var(--ink-2);border-bottom:1px solid var(--line)'>the LLM wiki gist</a>. The pattern of using a language model as a synthesis substrate &mdash; this corpus is one such substrate.</li>
+        <li><strong>Edge.org</strong> annual questions. The discipline of compressing a thesis into one sentence and naming the breakpoint.</li>
+        <li><strong>Long Now Foundation</strong>. The reminder that a thousand-year frame changes which moments matter.</li>
+      </ul>
+      <p>Drafted with <strong>Anthropic's Claude</strong> as a research and writing partner. Editorial decisions, the chain edges, the curation, and any errors are the human author's.</p>
     </article>
   `;
   document.getElementById('citeCopy')?.addEventListener('click', async () => {

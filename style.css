@@ -1326,15 +1326,14 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 /* ========== ABOUT ========== */
 .about{max-width:min(720px,92vw);margin:0 auto;padding:48px var(--gut) 80px}
 .about h1{font-family:var(--serif);font-weight:500;font-size:clamp(2rem,5vw,3.4rem);letter-spacing:-.02em;line-height:1.08;margin-bottom:24px;padding-top:.04em}
-.about .lede{font-family:var(--serif);font-style:italic;font-size:1.3rem;color:var(--ink-2);line-height:1.45;margin-bottom:36px;max-width:48ch}
-/* Drop cap on the lede's first letter. Italic Newsreader leans naturally
-   into the line of body text. Hairline on the right hand-tunes the reveal. */
-.about .lede::first-letter{
-  font-family:var(--serif);font-style:italic;font-weight:600;
-  font-size:3.6em;line-height:.86;
-  float:left;margin:.04em .12em -.06em 0;
+.about .lede{
+  font-family:var(--serif);font-style:italic;
+  font-size:clamp(1.2rem,1.7vw,1.4rem);
   color:var(--ink);
-  letter-spacing:-.04em;
+  line-height:1.45;
+  margin-bottom:36px;
+  max-width:54ch;
+  text-wrap:pretty;
 }
 .about p{font-family:var(--serif);font-size:1.08rem;color:var(--ink-2);line-height:1.65;margin-bottom:18px;max-width:65ch}
 .about h2{
