@@ -1,23 +1,97 @@
 {
   "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "name": "Ticks",
+  "description": "A corpus of 2,648 historical breakpoints, moments when a constraint dissolved, connected by parent/child chain edges across 14 domains and 13 eras.",
+  "homepage": "https://ticks.iamkesava.com/",
+  "license": "https://opensource.org/licenses/MIT",
+  "author": {
+    "name": "Kesava Mandiga",
+    "url": "https://github.com/k3sava"
+  },
   "skills": [
     {
       "name": "browse-ticks",
       "type": "skill-md",
-      "description": "Browse 2,648 historical moments where a constraint dissolved, indexed by zone (era) and domain.",
-      "url": "https://ticks.iamkesava.com/data.json"
+      "description": "Browse the full corpus of 2,648 historical breakpoints, indexed by zone (era) and domain.",
+      "url": "https://ticks.iamkesava.com/data.json",
+      "method": "GET",
+      "returns": "application/json",
+      "shape": "{ ticks: Tick[], zones: Zone[], domains: Record<string,string>, unlocks: Record<id, id[]>, unlockedBy: Record<id, id[]> }"
     },
     {
       "name": "search-ticks",
       "type": "skill-md",
-      "description": "Search the full corpus by name, constraint, year, zone, or domain.",
-      "url": "https://ticks.iamkesava.com/search-index.json"
+      "description": "Search the corpus by name, constraint, year, zone, or domain. Lighter than data.json. One row per tick, no edge graph.",
+      "url": "https://ticks.iamkesava.com/search-index.json",
+      "method": "GET",
+      "returns": "application/json",
+      "shape": "Tick[] with { id, name, year, yearN, zone, domain, constraint, parentCount, childCount }"
     },
     {
       "name": "featured-ticks",
       "type": "skill-md",
-      "description": "Top 200 most-connected ticks: the breakpoints with the densest downstream cascades.",
-      "url": "https://ticks.iamkesava.com/featured.json"
+      "description": "Top 200 most-connected ticks: the breakpoints with the densest downstream cascades. Ranked by parent + child count. Use this for tours, summaries, or as a starting point when picking a thread.",
+      "url": "https://ticks.iamkesava.com/featured.json",
+      "method": "GET",
+      "returns": "application/json"
+    },
+    {
+      "name": "ancestry-trace",
+      "type": "skill-md",
+      "description": "Walk backward from a single tick through every constraint that had to dissolve before it. Read data.json, follow unlockedBy[id] recursively. Each step names the parent constraint in plain English. Returns a chain of breakpoints from origin to target.",
+      "url": "https://ticks.iamkesava.com/data.json",
+      "input": "tick id (e.g., 'iphone-touchscreen-computing')",
+      "output": "ordered list of {id, name, year, constraint} from earliest ancestor to target"
+    },
+    {
+      "name": "downstream-cascade",
+      "type": "skill-md",
+      "description": "Walk forward from a single tick through everything it made possible. Follow unlocks[id] recursively. Useful for 'what flowed from X' questions.",
+      "url": "https://ticks.iamkesava.com/data.json",
+      "input": "tick id",
+      "output": "tree of children, grandchildren, etc."
+    },
+    {
+      "name": "era-summary",
+      "type": "skill-md",
+      "description": "List the foundational ticks in a single era. Filter data.json by zone, sort by parent + child count, take the top N. Useful for chapter summaries.",
+      "url": "https://ticks.iamkesava.com/data.json",
+      "input": "zone id (e.g., 'first-civilizations')",
+      "output": "list of ticks in the era, ranked by connection density"
+    },
+    {
+      "name": "domain-walk",
+      "type": "skill-md",
+      "description": "List every tick in a single domain (e.g., computing, medicine, philosophy) in chronological order. Filter data.json by domain, sort by yearN.",
+      "url": "https://ticks.iamkesava.com/data.json",
+      "input": "domain id (e.g., 'computing')",
+      "output": "chronological list of ticks in the domain"
+    },
+    {
+      "name": "by-year-lookup",
+      "type": "skill-md",
+      "description": "Find all ticks within a year range. Filter data.json by yearN. Useful for 'what happened around 1450 AD' questions.",
+      "url": "https://ticks.iamkesava.com/data.json",
+      "input": "{ from: yearN, to: yearN }",
+      "output": "ticks where yearN falls within the range"
+    },
+    {
+      "name": "tick-detail",
+      "type": "skill-md",
+      "description": "Read one tick fully: name, year, zone, domain, constraint, detail, source links, parent and child IDs, and the hand-written 'because' field where present (~41% of ticks).",
+      "url": "https://ticks.iamkesava.com/data.json",
+      "input": "tick id",
+      "output": "full Tick object plus unlocks[id] and unlockedBy[id]"
+    },
+    {
+      "name": "play-reel",
+      "type": "skill-md",
+      "description": "Resolve a curated 60-second tour by reel id. Reels are: acceleration (full sweep), mind (language/mind/philosophy), body (biology/medicine), tools (physics/computing), civilization (agriculture/society/economics/law), worlds (art/religion), conflict (war/law/economics). Each reel scores ticks by connection density inside its domain set, takes the top N, returns chronological order.",
+      "url": "https://ticks.iamkesava.com/#/play/{reelId}",
+      "input": "reel id (acceleration | mind | body | tools | civilization | worlds | conflict)",
+      "output": "ordered list of ticks for the reel"
     }
-  ]
+  ],
+  "citationFormat": "Mandiga, Kesava. \"Ticks · {tick name} ({year}).\" https://ticks.iamkesava.com/#/walk/{id}.",
+  "version": 2
 }

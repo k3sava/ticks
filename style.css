@@ -510,12 +510,15 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
   transition:width .6s var(--ease-stage);
 }
 /* The stage is now a glass slab — content floats inside it, the slab floats
-   over the ambient field. Padding is generous so the year glyph has room
-   to breathe without the panel feeling cramped. */
+   over the ambient field. Padding is generous on desktop so the year glyph
+   has room to breathe without the panel feeling cramped, and tightens on
+   smaller viewports so the panel itself does not overflow the screen. */
 .walk-stage{
   position:relative;
   display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;
-  max-width:1100px;margin:0 auto;width:100%;padding:40px 44px;gap:24px;
+  max-width:1100px;margin:0 auto;width:100%;
+  padding:clamp(20px, 4vw, 40px) clamp(20px, 4vw, 44px);
+  gap:clamp(16px, 2.4vw, 24px);
   min-height:60vh;
   border-radius:var(--radius-lg);
   background:var(--glass-bg);
@@ -1089,17 +1092,23 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 }
 
 .browse-row{
-  display:grid;grid-template-columns:90px 1fr auto;gap:18px;
+  display:grid;grid-template-columns:130px minmax(0,1fr) auto;gap:18px;
   padding:14px 16px;align-items:baseline;
   border-bottom:1px solid var(--line);
   text-decoration:none;color:inherit;
   transition:padding .2s, background .2s, box-shadow .2s;
   cursor:pointer;border-radius:10px;
 }
+.browse-row .yr{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .browse-row:hover{
   padding-left:24px;
   background:color-mix(in oklab, var(--dc, var(--accent)) 8%, var(--glass-thin-bg));
   box-shadow:inset 2px 0 0 0 color-mix(in oklab, var(--dc, var(--accent)) 80%, transparent);
+}
+@media (max-width:760px){
+  .browse-row{grid-template-columns:1fr;gap:6px;padding:14px 8px}
+  .browse-row .yr{text-align:left;order:-1}
+  .browse-row .be{white-space:normal}
 }
 .browse-row .yr{font-family:var(--mono);font-size:.74rem;color:var(--muted);font-variant-numeric:tabular-nums;text-align:right}
 .browse-row .body{display:flex;flex-direction:column;gap:4px;min-width:0}

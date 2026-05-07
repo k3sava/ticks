@@ -260,9 +260,11 @@ function pickHero(){
 }
 
 /* ========== editorial constants ========== */
-// Three hand-written hero openings. Same voice, different doors.
+// Five hand-written hero openings. Same voice, different doors.
 // Picked deterministically by date so the homepage feels alive but a
 // shared link on the same day shows the same opener.
+// Hero is locked at a single entry per the user's instruction
+// ("hero headline should be 'History, in ticks' - do not rephrase it").
 const HERO_OPENINGS = [
   { h: "History, <em>in ticks</em>",
     sub: "A tick is the moment a constraint dissolved.",
@@ -316,6 +318,70 @@ const EDITORIAL_NOTES = {
     "for a few decades, the answer to 'who decides?' stopped being 'whoever has the bigger sword.'",
   'magna-carta-rule-of-law-over-divine-right':
     "the king discovered there was something even he could not do. the rest is two centuries of footnotes.",
+  'cave-painting-symbolic-art':
+    "the first hard drive. forty thousand years later we're still looking at it.",
+  'cuneiform-writing':
+    "writing began as a spreadsheet. the poetry came later, on the same clay.",
+  'epic-of-gilgamesh-first-narrative-literature':
+    "the first time a story was bigger than the storyteller, because the storyteller could die and the story would not.",
+  'greek-alphabet-with-vowels':
+    "literacy stopped being a guild. anyone with the letters could decode anything.",
+  'p-inis-sanskrit-grammar':
+    "a grammar that recurses. chomsky walks in 2,400 years late and finds the room already set up.",
+  'algebra-al-khwarizmi':
+    "x became a thing you could write down. every equation since walks through this door.",
+  'newtons-calculus-mathematics-of-change':
+    "before this, change was a story. after this, change had a derivative.",
+  'cell-theory-hooke-leeuwenhoek':
+    "you couldn't be a unit of life until someone said the word. hooke said the word.",
+  'linnaeus-binomial-nomenclature':
+    "two latin words and a botanist in stockholm could talk to a botanist in brazil. taxonomy is a kind of internet.",
+  'first-telephone-call-voice-transmission':
+    "distance stopped silencing voices. the line carried the tone, not just the news.",
+  'maxwells-equations-unified-electromagnetism':
+    "light became a kind of thing, not just a kind of seeing. radio, radar, and the rest were already in the math.",
+  'daltons-atomic-theory-atoms-as-real':
+    "atoms moved from a philosopher's guess to a chemist's accounting. mass started balancing.",
+  'galvani-bioelectricity':
+    "the nerve was electric, not mechanical. the brain stopped being plumbing and became a circuit.",
+  'set-theory-cantor':
+    "infinity got categories. some infinities are bigger than others. nothing in mathematics is the same after.",
+  'dna-sequencing-sanger-method':
+    "biology became a string you could read. cost falls a million-fold and a generation later you can sequence it at home.",
+  'crispr-cas9-as-genome-editing-tool-doudna-charpentier':
+    "editing dna stopped being a stunt and became a method. the search-and-replace bar opened up to biology.",
+  'dartmouth-workshop-ai-as-a-field':
+    "they named the field over a summer. seventy years later, half the cited references trace back to the ten people in that room.",
+  'xerox-parc-modern-computing-interface':
+    "the entire interface you're using right now was prototyped in one building in 1973 by people who didn't get rich.",
+  'world-wide-web-digital-art-and-net-art':
+    "the page became a place. publishing collapsed from a building down to a tag.",
+  'twitter-microblogging-and-public-real-time-discourse':
+    "a 140-character constraint, accidentally a literary form. half the consequential public discourse of fifteen years happened here.",
+  'youtube-video-democratized':
+    "video stopped requiring a tower. anyone with a camera became a channel.",
+  'price-mechanism-cantillons-essay':
+    "no one is in charge of the price, and yet the price knows things no one knows. cantillon noticed first.",
+  'arrow-debreu-model-general-equilibrium':
+    "they proved the invisible hand exists, and in the same proof, listed every condition under which it doesn't.",
+  'rawls-theory-of-justice':
+    "what would you choose if you didn't know who you'd be? every political philosophy debate since starts here.",
+  'nietzsche-death-of-god':
+    "the diagnosis: nihilism. the prescription: rebuild values from scratch. we're still working on it.",
+  'lockes-two-treatises-natural-rights':
+    "consent of the governed. the american declaration is almost a paraphrase, by hand.",
+  'paper-cai-lun-han-dynasty':
+    "the substrate became cheap. a civilization's memory tripled in size, and then tripled again.",
+  'shamanism-first-religious-specialists':
+    "the first division of labor: someone whose job was to talk to what wasn't there.",
+  'braille-system-standardized':
+    "the page became a thing fingers could read. independent access to written knowledge for the first time.",
+  'emancipation-proclamation':
+    "a war about union became a war about freedom. the legal end of slavery in america started here.",
+  'gravitational-waves-detected-ligo':
+    "we stopped just looking at the universe. we started listening to it.",
+  'quantum-mechanics-heisenberg-schr-dinger':
+    "matter at the smallest scale stopped behaving like matter. all of modern technology runs on the math of this strangeness.",
 };
 
 // One sentence per era: what was true before it began. Curated, not
@@ -460,7 +526,7 @@ function renderWalk(){
           <a class='walk-flow-card' href='#/walk/${f.id}' style='${domStyle(f.domain)}'>
             <span class='yr'>${escapeHtml(f.year)}</span>
             <span class='nm'>${escapeHtml(f.name)}</span>
-          </a>`).join('') : '<div class="walk-flow-empty">A frontier tick. What flows from this is still being written. Press → to keep walking.</div>'}
+          </a>`).join('') : '<div class="walk-flow-empty">A frontier tick. What flows from this hasn\'t been written yet. Press → to keep walking.</div>'}
       </div>
 
       <div class='walk-controls'>
@@ -1287,47 +1353,51 @@ function about(){
   app.innerHTML = `
     <article class='about'>
       <h1>About ticks</h1>
-      <p class='lede'>A tick is the moment a constraint dissolved. Before it, we couldn't. After it, things kinda blew up. What came next required it.</p>
-      <p>This site is a database of ${TICKS.length.toLocaleString()} such moments across 14 domains of human history. Small enough to walk through in an afternoon. Dense enough to surprise you for years.</p>
-      <p>The thesis is simple. <em>History is a chain of breakpoints.</em> A constraint dissolves (recursive language, written script, the joint-stock company, the transistor) and a flood of new things become possible that simply weren't before. Each tick is a moment when one of those breakpoints came through.</p>
-      <h2>Four ways to play</h2>
+      <p class='lede'>A tick is the moment a constraint dissolved. Before it, we couldn't. After it, the things downstream became possible.</p>
+      <p>This site is a corpus of ${TICKS.length.toLocaleString()} such moments across 14 domains of human history. Small enough to walk through in an afternoon. Dense enough to surprise you for years.</p>
+      <p>The thesis is simple. <em>History is a chain of breakpoints.</em> A constraint dissolves (recursive language, written script, the joint-stock company, the transistor) and a flood of new things become possible that simply weren't before. Every tick is one of those breakpoints, named in plain English, dated, attributed, and linked to what flowed from it.</p>
+      <p>The longer version of the argument lives in <a href='why.md' target='_blank' rel='noopener' style='color:var(--accent);border-bottom:1px solid var(--accent)'>why.md</a>: why a corpus of breakpoints, why now.</p>
+      <h2>Five ways in</h2>
       <div class='modes'>
         <a class='mode-tile' href='#/walk'><h3>walk →</h3><p>One tick at a time. Year is loud. Click anything that flowed from it to keep walking.</p></a>
         <a class='mode-tile' href='#/map'><h3>map →</h3><p>All ${TICKS.length.toLocaleString()} plotted across ${ZONES.length} eras. The acceleration becomes a thing you feel.</p></a>
         <a class='mode-tile' href='#/hunt'><h3>hunt →</h3><p>Pick something modern. Walk backward through every constraint that had to dissolve.</p></a>
         <a class='mode-tile' href='#/browse'><h3>browse →</h3><p>The full list, grouped by era, with search.</p></a>
+        <a class='mode-tile' href='#/play'><h3>play →</h3><p>A 60-second auto-tour. Seven curated reels. Sit back; the chain runs itself.</p></a>
       </div>
       <h2>A note on accuracy</h2>
-      <p>This is an editorial sketch, not a peer-reviewed reference. The dates and the chain-of-influence edges are one person's reading of history, drafted with the help of language models. Some entries oversimplify ("iPhone / touchscreen computing" undersells two decades of prior touchscreen work). Some intermediate ticks are missing. Some ancestry edges are associative rather than strictly causal.</p>
-      <p>A full audit pass, verifying each tick against primary sources and tightening the chain, is the next project. In the meantime, <a href='https://github.com/k3sava/ticks/issues/new' target='_blank' rel='noopener' style='color:var(--accent);border-bottom:1px solid var(--accent)'>open an issue</a> to flag corrections, or send a PR. Every tick has 2–3 source links you can verify.</p>
+      <p>This is an editorial sketch, not a peer-reviewed reference. The dates and the chain-of-influence edges are one person's reading of history, drafted with the help of language models, audited against primary sources. Some entries compress ("iPhone / touchscreen computing" elides two decades of prior touchscreen work). Some intermediate ticks are missing. Some ancestry edges are associative rather than strictly causal.</p>
+      <p>The chain is meant to be quibbled with. When you find an edge that should be cut or a tick that should be inserted, <a href='https://github.com/k3sava/ticks/issues/new' target='_blank' rel='noopener' style='color:var(--accent);border-bottom:1px solid var(--accent)'>open an issue</a>, or send a PR. Every tick has 2 to 3 source links you can verify. Ongoing audits live in <a href='AUDIT-CHAIN.md' target='_blank' rel='noopener' style='color:var(--ink-2);border-bottom:1px solid var(--line)'>AUDIT-CHAIN.md</a>, <a href='AUDIT-CLAIMS.md' target='_blank' rel='noopener' style='color:var(--ink-2);border-bottom:1px solid var(--line)'>AUDIT-CLAIMS.md</a>, and <a href='AUDIT-DEADLINKS.md' target='_blank' rel='noopener' style='color:var(--ink-2);border-bottom:1px solid var(--line)'>AUDIT-DEADLINKS.md</a>.</p>
       <h2>How to cite</h2>
-      <p>If you write about a tick, please link to it. The corpus is open and the chain is the value; a citation that points back lets someone walk it themselves.</p>
+      <p>If you write about a tick, please link to it. The corpus is open. The chain is the value. A citation that points back lets someone walk it themselves.</p>
       <pre class='cite'><code id='citeText'>Mandiga, Kesava. "Ticks · ${escapeHtml(TICKS.length.toLocaleString())} moments." https://ticks.iamkesava.com/.</code></pre>
       <button class='cite-copy' id='citeCopy' type='button'>copy citation</button>
+      <p style='margin-top:8px;color:var(--muted);font-size:.92em'>For a single tick: <code>Mandiga, Kesava. "Ticks · {tick name} ({year})." https://ticks.iamkesava.com/#/walk/{id}.</code></p>
       <h2>For machines</h2>
-      <p>Three machine-readable surfaces, in increasing density:</p>
+      <p>Four machine-readable surfaces. Use whichever fits.</p>
       <ul class='about-list'>
-        <li><a href='featured.json'>featured.json</a>: the 200 most-connected ticks. Curated tour, not a corpus dump.</li>
+        <li><a href='featured.json'>featured.json</a>: the 200 most-connected ticks. A curated tour, not a corpus dump.</li>
         <li><a href='search-index.json'>search-index.json</a>: one row per tick (id, name, year, zone, domain, constraint, parents and children counts).</li>
         <li><a href='data.json'>data.json</a>: the full corpus, including the edge graph, source links, and editorial detail.</li>
+        <li><a href='llms.txt'>llms.txt</a>: schema, modes, citation format, in plain English. Read this first.</li>
       </ul>
-      <p>Schema is documented in <a href='llms.txt'>llms.txt</a>. Agent permissions and citation format live in <a href='.well-known/agent-permissions.json'>.well-known/agent-permissions.json</a>.</p>
+      <p>Agent permissions, skill catalog, and the RFC 9727 linkset live under <a href='.well-known/agent-permissions.json'>.well-known/agent-permissions.json</a>, <a href='.well-known/agent-skills/index.json'>.well-known/agent-skills/index.json</a>, and <a href='.well-known/api-catalog'>.well-known/api-catalog</a>. Fetch, index, summarize, and quote are explicitly allowed. Citation back to the canonical tick URL is required.</p>
 
       <h2>Sources</h2>
-      <p>Every tick has 2&ndash;3 source links you can follow. The bulk of factual claims trace to <strong>Wikipedia</strong> &mdash; the largest, most up-to-date general-knowledge corpus the world has, and the one humans and AI systems both use as a baseline. Where Wikipedia's coverage was thin, ticks lean on the <strong>Stanford Encyclopedia of Philosophy</strong> for philosophy, <strong>Encyclopaedia Britannica</strong> for biographies and dates, and named academic monographs and primary sources cited per tick. Some entries draw on field-specific references &mdash; <em>Annals of the Bombay Natural History Society</em> for South Asian biology, <em>JSTOR</em> for cited journal articles, the <em>Internet Archive</em> for out-of-print books.</p>
-      <p>If a tick's source feels weak, please <a href='https://github.com/k3sava/ticks/issues/new' target='_blank' rel='noopener' style='color:var(--accent);border-bottom:1px solid var(--accent)'>open an issue</a> &mdash; correcting these is the work.</p>
+      <p>Every tick has 2&ndash;3 source links you can follow. The bulk of factual claims trace to <strong>Wikipedia</strong>, the largest general-knowledge corpus the world has and the one humans and AI systems both use as a baseline. Where Wikipedia's coverage was thin, ticks lean on the <strong>Stanford Encyclopedia of Philosophy</strong>, <strong>Encyclopaedia Britannica</strong>, named academic monographs, and primary sources cited per tick. Some entries draw on field-specific references: <em>JSTOR</em> for journal articles, the <em>Internet Archive</em> for out-of-print books, <em>arXiv</em> for recent science, regional natural-history journals for biology.</p>
+      <p>If a tick's source feels weak, please <a href='https://github.com/k3sava/ticks/issues/new' target='_blank' rel='noopener' style='color:var(--accent);border-bottom:1px solid var(--accent)'>open an issue</a>. Correcting these is the work.</p>
 
       <h2>Influences</h2>
-      <p>The framing &mdash; history as a chain of constraint dissolutions, each tick a moment when a new floor of possibility opens &mdash; owes the most to:</p>
+      <p>The framing — history as a chain of constraint dissolutions, each tick a moment when a new floor of possibility opens — owes the most to:</p>
       <ul class='about-list'>
         <li><strong>David Deutsch</strong>, <em>The Beginning of Infinity</em>. The thesis that all progress is constraint dissolution. The chain reasoning lives or dies by this idea.</li>
         <li><strong>James Burke</strong>, <em>Connections</em> (BBC, 1978). The format that links technologies and ideas across centuries through specific causal traces, not just thematic adjacency.</li>
-        <li><strong>David Christian</strong>, <em>Maps of Time</em> &amp; the Big History project. The decision to put pre-language hominins and ChatGPT into a single corpus, sorted by year.</li>
-        <li><strong>Will and Ariel Durant</strong>, <em>The Story of Civilization</em>. The instinct that one person can hold all of recorded history in a single reading order, and that the synthesis is worth the inevitable simplifications.</li>
+        <li><strong>David Christian</strong>, <em>Maps of Time</em> and the Big History project. The decision to put pre-language hominins and ChatGPT into a single corpus, sorted by year.</li>
+        <li><strong>Will and Ariel Durant</strong>, <em>The Story of Civilization</em>. The instinct that one person can hold all of recorded history in a single reading order.</li>
         <li><strong>Joel Mokyr</strong>, <em>A Culture of Growth</em>. The argument that institutions, not just inventions, drive breakthroughs.</li>
-        <li><strong>Jared Diamond</strong>, <em>Guns, Germs, and Steel</em>. The reading of geography and biology as constraints that shape what's possible where.</li>
+        <li><strong>Jared Diamond</strong>, <em>Guns, Germs, and Steel</em>. Reading geography and biology as constraints that shape what's possible where.</li>
         <li><strong>Yuval Noah Harari</strong>, <em>Sapiens</em>. The proof that popular history can take 70,000-year sweeps seriously without losing its reader.</li>
-        <li><strong>Andrej Karpathy</strong>, <a href='https://gist.github.com/karpathy/1dd0294ef9567971c1e4348a90d69285' target='_blank' rel='noopener' style='color:var(--ink-2);border-bottom:1px solid var(--line)'>the LLM wiki gist</a>. The pattern of using a language model as a synthesis substrate &mdash; this corpus is one such substrate.</li>
+        <li><strong>Andrej Karpathy</strong>, <a href='https://gist.github.com/karpathy/1dd0294ef9567971c1e4348a90d69285' target='_blank' rel='noopener' style='color:var(--ink-2);border-bottom:1px solid var(--line)'>the LLM wiki gist</a>. The pattern of using a language model as a synthesis substrate. This corpus is one such substrate.</li>
         <li><strong>Edge.org</strong> annual questions. The discipline of compressing a thesis into one sentence and naming the breakpoint.</li>
         <li><strong>Long Now Foundation</strong>. The reminder that a thousand-year frame changes which moments matter.</li>
       </ul>
