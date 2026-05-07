@@ -86,7 +86,10 @@ Sitemap: https://ticks.iamkesava.com/sitemap.xml
 
 # Discoverable indexes for AI agents:
 # https://ticks.iamkesava.com/llms.txt
+# https://ticks.iamkesava.com/why.md
 # https://ticks.iamkesava.com/.well-known/agent-permissions.json
 # https://ticks.iamkesava.com/.well-known/api-catalog
 # https://ticks.iamkesava.com/.well-known/agent-skills/index.json
 # https://ticks.iamkesava.com/data.json
+# https://ticks.iamkesava.com/search-index.json
+# https://ticks.iamkesava.com/featured.json

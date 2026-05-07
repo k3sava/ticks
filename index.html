@@ -49,30 +49,120 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "Person",
+      "@id": "https://iamkesava.com/#kesava",
+      "name": "Kesava Mandiga",
+      "givenName": "Kesava",
+      "familyName": "Mandiga",
+      "url": "https://iamkesava.com/",
+      "sameAs": [
+        "https://github.com/k3sava",
+        "https://www.linkedin.com/in/k3sava"
+      ],
+      "jobTitle": "Product marketing manager and indie builder"
+    },
+    {
       "@type": "WebSite",
       "@id": "https://ticks.iamkesava.com/#website",
       "url": "https://ticks.iamkesava.com/",
       "name": "Ticks",
+      "alternateName": "Ticks · moments that unlocked everything next",
       "description": "2,648 moments in history when a constraint dissolved and everything downstream became possible.",
       "inLanguage": "en",
       "license": "https://opensource.org/licenses/MIT",
-      "author": { "@type": "Person", "name": "Kesava Mandiga", "url": "https://github.com/k3sava" }
+      "author": { "@id": "https://iamkesava.com/#kesava" },
+      "creator": { "@id": "https://iamkesava.com/#kesava" },
+      "publisher": { "@id": "https://iamkesava.com/#kesava" },
+      "isBasedOn": "https://ticks.iamkesava.com/why.md",
+      "mainEntity": { "@id": "https://ticks.iamkesava.com/#dataset" },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://ticks.iamkesava.com/#/hunt",
+        "query-input": "required name=search_term_string"
+      }
     },
     {
       "@type": "Dataset",
       "@id": "https://ticks.iamkesava.com/#dataset",
       "name": "Ticks · a curated corpus of constraint-dissolving moments",
-      "description": "2,648 moments across 14 domains and 13 eras of human history, each tagged with the constraint it dissolved and the chain of downstream effects.",
+      "description": "2,648 moments across 14 domains and 13 eras of human history. Each tick names the constraint that dissolved, dates the dissolution, attributes 2 to 3 sources, and links to the cascade of things it made possible. About 41% of ticks carry a hand-written `because` field that names the parent ticks and walks through the causal mechanism.",
       "url": "https://ticks.iamkesava.com/",
-      "keywords": "history, breakthroughs, science, technology, society, chain of influence, constraints",
+      "sameAs": "https://github.com/k3sava/ticks",
+      "keywords": [
+        "history",
+        "history of science",
+        "history of technology",
+        "intellectual history",
+        "breakthroughs",
+        "constraints",
+        "chain of influence",
+        "causal graph",
+        "structured history",
+        "AI-readable history corpus"
+      ],
       "license": "https://opensource.org/licenses/MIT",
       "isAccessibleForFree": true,
-      "creator": { "@type": "Person", "name": "Kesava Mandiga", "url": "https://github.com/k3sava" },
-      "distribution": {
-        "@type": "DataDownload",
-        "encodingFormat": "application/json",
-        "contentUrl": "https://ticks.iamkesava.com/data.json"
-      }
+      "inLanguage": "en",
+      "temporalCoverage": "-300000/2026",
+      "spatialCoverage": "Earth",
+      "datePublished": "2025-09-01",
+      "dateModified": "2026-05-08",
+      "version": "2026-05",
+      "creator": { "@id": "https://iamkesava.com/#kesava" },
+      "publisher": { "@id": "https://iamkesava.com/#kesava" },
+      "size": "2,648 ticks across 14 domains and 13 eras",
+      "variableMeasured": [
+        "id", "name", "year", "yearN", "zone", "domain", "constraint", "detail", "because", "links", "unlocks", "unlockedBy"
+      ],
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "name": "Full corpus (data.json)",
+          "encodingFormat": "application/json",
+          "contentUrl": "https://ticks.iamkesava.com/data.json"
+        },
+        {
+          "@type": "DataDownload",
+          "name": "Search index (search-index.json)",
+          "encodingFormat": "application/json",
+          "contentUrl": "https://ticks.iamkesava.com/search-index.json"
+        },
+        {
+          "@type": "DataDownload",
+          "name": "Featured 200 (featured.json)",
+          "encodingFormat": "application/json",
+          "contentUrl": "https://ticks.iamkesava.com/featured.json"
+        }
+      ],
+      "citation": "Mandiga, Kesava. \"Ticks · {tick name} ({year}).\" https://ticks.iamkesava.com/#/walk/{id}."
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://ticks.iamkesava.com/#reels",
+      "name": "Ticks reels: seven curated 60-second tours",
+      "description": "Seven hand-curated 60-second auto-tours through the corpus. Each reel scores ticks within its domain set by parent and child count, picks the top N, and orders them chronologically.",
+      "numberOfItems": 7,
+      "itemListOrder": "https://schema.org/ItemListOrderAscending",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "the acceleration", "description": "every breakpoint that ever was", "url": "https://ticks.iamkesava.com/#/play/acceleration" },
+        { "@type": "ListItem", "position": 2, "name": "the mind awoke", "description": "how thought learned to leave the skull", "url": "https://ticks.iamkesava.com/#/play/mind" },
+        { "@type": "ListItem", "position": 3, "name": "the body unbound", "description": "how we learned to keep ourselves alive", "url": "https://ticks.iamkesava.com/#/play/body" },
+        { "@type": "ListItem", "position": 4, "name": "tools of the gods", "description": "matter, then energy, then light", "url": "https://ticks.iamkesava.com/#/play/tools" },
+        { "@type": "ListItem", "position": 5, "name": "the long settle", "description": "from herds to cities to capital", "url": "https://ticks.iamkesava.com/#/play/civilization" },
+        { "@type": "ListItem", "position": 6, "name": "pictures of the world", "description": "art, religion, the stories we shared", "url": "https://ticks.iamkesava.com/#/play/worlds" },
+        { "@type": "ListItem", "position": 7, "name": "force and counter-force", "description": "how power moved across history", "url": "https://ticks.iamkesava.com/#/play/conflict" }
+      ]
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://ticks.iamkesava.com/why.md",
+      "name": "Why a corpus of breakpoints",
+      "description": "A short essay on why history reads better as a graph of dissolved constraints than as a list of dates, and why an open machine-readable chain matters in an AI-native research environment.",
+      "url": "https://ticks.iamkesava.com/why.md",
+      "encodingFormat": "text/markdown",
+      "author": { "@id": "https://iamkesava.com/#kesava" },
+      "license": "https://opensource.org/licenses/MIT",
+      "isPartOf": { "@id": "https://ticks.iamkesava.com/#website" }
     }
   ]
 }

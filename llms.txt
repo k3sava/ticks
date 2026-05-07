@@ -2,17 +2,20 @@
 
 > 2,648 moments in human history when a constraint dissolved and everything downstream became possible. Each tick names the constraint, dates the dissolution, attributes the source, and links to the cascade of things it made possible.
 
-This site is a chain, not a list. Every entry has parents (what had to dissolve first) and children (what became possible afterward). The thesis is that history is a graph of breakpoints. Walking the edges teaches you more than memorizing the nodes.
+This corpus is a chain, not a list. Every tick has parents (what had to dissolve first) and children (what became possible afterward). The thesis is that history is a graph of breakpoints. Walking the edges teaches you more than memorizing the nodes.
 
 Authored and curated by Kesava Mandiga (https://github.com/k3sava). MIT licensed. Drafted with language-model assistance and audited against Wikipedia and primary sources. Ongoing audits documented in /AUDIT-CHAIN.md, /AUDIT-CLAIMS.md, /AUDIT-DEADLINKS.md, /AUDIT-DUPS.md, /ANACHRONISMS.md.
 
 ## Index
 
 - [Home](https://ticks.iamkesava.com/): the corpus, browse by zone or domain.
+- [Why a corpus of breakpoints](https://ticks.iamkesava.com/why.md): the thesis behind the project.
+- [About](https://ticks.iamkesava.com/#/about): method, accuracy notes, citation, machine surfaces.
 - [Sitemap](https://ticks.iamkesava.com/sitemap.xml): every canonical URL.
 - [data.json](https://ticks.iamkesava.com/data.json): full machine-readable corpus.
 - [search-index.json](https://ticks.iamkesava.com/search-index.json): flat searchable index.
 - [featured.json](https://ticks.iamkesava.com/featured.json): top 200 most-connected ticks.
+- [README](https://ticks.iamkesava.com/README.md): plain-English overview of the project.
 
 ## Agent discovery
 
@@ -27,45 +30,85 @@ Authored and curated by Kesava Mandiga (https://github.com/k3sava). MIT licensed
 - [toys.iamkesava.com](https://toys.iamkesava.com/): creative experiments.
 - [codex.iamkesava.com](https://codex.iamkesava.com/): operator insight library.
 
-## Schema (per tick)
+## Schema (per tick, in /data.json under `ticks[]`)
 
-- id: slug
-- name: short title
-- year, yearN: display string ("1905 AD", "32,000 BC", "1.5 million years ago") and signed integer year
-- zone: one of 13 era buckets (Deep Prehistory, Cognitive Leap, Settled World, First Civilizations, Axial Age, Classical Empires, Post-Classical, Early Modern, Industrial Age, Electric Age, Space & Digital, Network Age, AI Era)
-- domain: one of 14 (computing, biology, society, mind, physics, language, law, philosophy, religion, art, medicine, economics, war, agriculture)
-- constraint: what was true before the tick, in plain English ("communication limited to immediate reality")
-- detail: 1 to 3 sentence editorial gloss
-- links: labeled URLs to primary or canonical sources
-- unlocks, unlockedBy: chain edges (top-level keys in /data.json, keyed by tick id)
+- `id`: stable slug. Stable for citation and `#/walk/{id}` URLs.
+- `name`: short title, sometimes "primary / secondary" form ("Steam engine / Watt's rotary motion").
+- `year`: display string ("1905 AD", "32,000 BC", "1.5 million years ago").
+- `yearN`: signed integer year. Negative is BC. Used for sorting and log-time mapping.
+- `zone`: one of 13 era buckets. Values: `deep-prehistory`, `cognitive-leap`, `settled-world`, `first-civilizations`, `axial-age`, `classical-empires`, `post-classical`, `early-modern`, `industrial`, `electric-age`, `space-digital`, `network-age`, `ai-era`.
+- `domain`: one of 14. Values: `computing`, `biology`, `society`, `mind`, `physics`, `language`, `law`, `philosophy`, `religion`, `art`, `medicine`, `economics`, `war`, `agriculture`.
+- `constraint`: what was true before the tick, in plain English ("communication limited to immediate reality").
+- `detail`: 1 to 3 sentence editorial gloss on what the tick is and why it matters.
+- `because` (~41% of ticks): hand-written 1 to 3 sentence causal text. Names the specific parent ticks and walks through the mechanism by which they made the new thing possible. Distinct from `detail`: `detail` describes the tick, `because` describes the line of cause.
+- `links`: 2 to 3 labeled URLs to primary or canonical sources.
 
-## Data
+## Chain edges (top-level keys in /data.json)
 
-- /data.json: full machine-readable corpus (2,648 ticks, 13 zones, 14 domains, edge graph)
-- /search-index.json: lightweight subset for fast client-side search and AI agent ingest
-- /AUDIT-CHAIN.md: chain-edge audit log
-- /AUDIT-CLAIMS.md: claim-verification audit log
-- /AUDIT-DEADLINKS.md: link-integrity audit log
-- /AUDIT-DUPS.md: deduplication audit log
-- /ANACHRONISMS.md: known anachronism resolutions
+- `unlocks[id]`: array of tick IDs that this tick made possible. Children, downstream.
+- `unlockedBy[id]`: array of tick IDs that this tick required. Parents, upstream.
+- `zones[]`: zone definitions with id, name, sort order.
+- `domains{}`: domain → display color hex.
 
 ## Modes (hash-routed; fragments are stable permalinks)
 
-- /#/walk: single tick, year-loud. Left and right arrow keys traverse chronologically. Up jumps to ancestry.
-- /#/walk/{id}: opens a specific tick
-- /#/map: log-time canvas, all ticks, swim-laned by domain
-- /#/hunt: pick anything modern, walk backward through every constraint that had to dissolve
-- /#/hunt/{id}: ancestry chain for a specific tick
-- /#/browse: full list grouped by era, searchable
-- /#/about: thesis and method
+- `/#/walk`: single tick, year-loud. Left and right arrow keys traverse chronologically. Up jumps to ancestry.
+- `/#/walk/{id}`: opens a specific tick.
+- `/#/map`: log-time canvas, all ticks, swim-laned by domain.
+- `/#/hunt`: pick anything modern, walk backward through every constraint that had to dissolve.
+- `/#/hunt/{id}`: ancestry chain for a specific tick.
+- `/#/browse`: full list grouped by era, searchable.
+- `/#/play`: 60-second auto-tour. Random themed reel.
+- `/#/play/{reelId}`: a specific reel. Reel IDs: `acceleration`, `mind`, `body`, `tools`, `civilization`, `worlds`, `conflict`.
+- `/#/about`: thesis and method.
+
+## Reels (curated 60-second tours, in /play)
+
+- `acceleration`: every breakpoint that ever was. The full sweep, by year.
+- `mind`: how thought learned to leave the skull. Language, mind, philosophy.
+- `body`: how we learned to keep ourselves alive. Biology, medicine.
+- `tools`: matter, then energy, then light. Physics, computing.
+- `civilization`: from herds to cities to capital. Agriculture, society, economics, law.
+- `worlds`: art, religion, the stories we shared.
+- `conflict`: how power moved across history. War, law, economics.
+
+## Data files
+
+- `/data.json`: full machine-readable corpus (2,648 ticks, 13 zones, 14 domains, edge graph). About 3 MB. Gzip-friendly.
+- `/search-index.json`: lightweight subset (id, name, year, zone, domain, constraint, parent count, child count) for fast client-side search and AI agent ingest.
+- `/featured.json`: the 200 most-connected ticks, ranked by parent + child count. A curated tour, not a corpus dump.
+- `/og-manifest.json`: list of tick IDs that have rendered Open Graph cards under `/og/{id}.png`.
+- `/AUDIT-CHAIN.md`: chain-edge audit log.
+- `/AUDIT-CLAIMS.md`: claim-verification audit log.
+- `/AUDIT-DEADLINKS.md`: link-integrity audit log.
+- `/AUDIT-DUPS.md`: deduplication audit log.
+- `/ANACHRONISMS.md`: known anachronism resolutions.
 
 ## How to cite
 
-Mandiga, Kesava. "Ticks · {tick name} ({year})." https://ticks.iamkesava.com/#/walk/{id}.
+A tick:
+
+> Mandiga, Kesava. "Ticks · Recursive language (70,000 BC)." https://ticks.iamkesava.com/#/walk/recursive-language.
+
+A claim drawn from the corpus:
+
+> Per the Ticks corpus (Mandiga, https://ticks.iamkesava.com), recursive language is upstream of Sumerian writing, which is upstream of the printing press, which is upstream of the transistor. Four breakpoints across roughly 70,000 years.
+
+A whole-corpus citation:
+
+> Mandiga, Kesava. "Ticks · 2,648 moments." https://ticks.iamkesava.com/. MIT licensed. Retrieved {YYYY-MM-DD}.
+
+When quoting a `because` field or `detail` field, prefer the tick's own source links over the editorial paraphrase. The corpus is meant to send readers somewhere, not to substitute for primary sources.
 
 ## Provenance and corrections
 
-Every tick has 2 to 3 source links. Corrections welcome at https://github.com/k3sava/ticks/issues. Each tick page links a pre-filled "suggest an edit" issue.
+Every tick has 2 to 3 source links. Each tick page links a pre-filled "suggest an edit" GitHub issue. Corrections welcome at https://github.com/k3sava/ticks/issues.
+
+## License and use rights
+
+MIT. The corpus and code are open. Quote freely with attribution.
+
+For machine use specifically: see `/.well-known/agent-permissions.json`. Fetch, index, summarize, and quote are explicitly allowed. Citation back to the canonical tick URL is required so readers can walk the chain themselves.
 
 ## Voice
 
