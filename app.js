@@ -234,15 +234,9 @@ function pickHero(){
 // Picked deterministically by date so the homepage feels alive but a
 // shared link on the same day shows the same opener.
 const HERO_OPENINGS = [
-  { h: "The right breakpoint, and <em>everything flows</em>.",
-    sub: "A tick is the moment a constraint dissolved.",
-    sub2: "Before it, we couldn't. After it, things kinda blew up." },
-  { h: "History, but <em>only the moments that mattered</em>.",
+  { h: "History, <em>in ticks</em>.",
     sub: "A tick is the moment a constraint dissolved.",
     sub2: "Walk forward, or backward from a thing you already know." },
-  { h: "Each one made the <em>next one</em> possible.",
-    sub: "A tick is the moment a constraint dissolved.",
-    sub2: "The chain teaches you more than the list ever could." },
 ];
 function pickOpening(){
   // Stable per-day so a shared morning link matches the noon link.
