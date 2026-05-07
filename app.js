@@ -49,7 +49,7 @@ async function loadData(){
   DOMAINS = DATA.domains;
   TICK_BY_ID = Object.fromEntries(TICKS.map(t => [t.id, t]));
   TICKS_SORTED = [...TICKS].sort((a,b) => (a.yearN||0)-(b.yearN||0));
-  document.getElementById('ftrCount').textContent = `${TICKS.length.toLocaleString()} moments`;
+  document.getElementById('ftrCount').textContent = `${TICKS.length.toLocaleString()} moments in history`;
 }
 
 /* ========== router ========== */
