@@ -539,6 +539,66 @@ const EDITORIAL_NOTES = {
     "we stopped just looking at the universe. we started listening to it.",
   'quantum-mechanics-heisenberg-schr-dinger':
     "matter at the smallest scale stopped behaving like matter. all of modern technology runs on the math of this strangeness.",
+  'difference-engine-babbage-concept':
+    "the computer existed in someone's head a hundred years before it was buildable.",
+  'turings-universal-machine':
+    "before transistors existed, someone proved what they would eventually do.",
+  'descartes-method-of-doubt':
+    "the moment philosophy stopped being a contest of authorities and became a single person asking what they could be sure of.",
+  'spontaneous-generation-disproven-redi':
+    "the first time anyone bothered to put a screen over the meat. life turned out to need parents.",
+  'unicode-standard-universal-character-encoding':
+    "every script humans ever used, in one table. the first time computers could read everyone's writing.",
+  'roman-citizenship-universal-civic-identity':
+    "the idea that you could belong to a state because the state declared you do, not because you were born to it.",
+  'petition-of-right-habeas-corpus-strengthened':
+    "kings could no longer disappear people. produce the body, the law said.",
+  'king-james-bible-english-language-theology':
+    "shakespeare and the King James Bible were drafted in the same decade. modern English begins here.",
+  'blitzkrieg-doctrine-poland-france':
+    "the doctrine that took France in six weeks and lost the soviet union in three years. speed has limits.",
+  'ico-boom-cryptocurrency-fundraising':
+    "thirty billion dollars raised by white papers. mostly nothing came back.",
+  'ptolemys-coordinate-system':
+    "the world became locatable. every map for the next 1,800 years uses his grid.",
+  'recombinant-dna-enables-genetically-modified-crops':
+    "biology became a programming language. badly documented, occasionally lethal, but real.",
+  'saussures-course-in-general-linguistics':
+    "the founder of structural linguistics never wrote a book. his students assembled one from his lectures.",
+  'alphafold-2-protein-structure-prediction':
+    "fifty years of structural biology, mostly done in a weekend.",
+  'vertical-farming-led-lit-indoor-agriculture':
+    "lettuce growing in a warehouse under the lights of a star nursery.",
+  'market-for-lemons-information-asymmetry-akerlof':
+    "the paper that proved why used-car salesmen ruin everything, and won a Nobel.",
+  'hollerith-tabulating-machine-us-census':
+    "the 1890 US census processed in two years instead of ten. the company that made it became IBM.",
+  'frederick-the-greats-oblique-order-tactical-geometry':
+    "the geometry of war: hit one flank harder than your enemy can pivot.",
+  'leakeys-olduvai-gorge-discoveries-human-origins-in-africa':
+    "what a marriage's worth of patient digging found out — we were all African.",
+  'musical-staff-notation-guido-darezzo':
+    "a melody became something you could send by mail.",
+  'gpt-3-175b-parameters':
+    "the moment language models stopped being a toy. the bill arrived.",
+  'mutation-via-x-rays-muller':
+    "evolution turned out to be a thing you could speed up with a tube of fluorescent gas and a bad idea.",
+  'peace-of-westphalia-sovereign-state-system':
+    "the moment 'who decides who decides' got an answer that lasted three centuries.",
+  'luthers-95-theses-reformation':
+    "a list of complaints became a continent of wars and a different way of being christian.",
+  'justinians-corpus-juris-civilis-roman-law-codified':
+    "every western legal code is downstream of the books a Byzantine emperor commissioned to clean up Rome.",
+  'oxford-english-dictionary-completed':
+    "seventy years to write a dictionary. the longest book project still inside one publisher.",
+  'rh-factor-discovery-landsteiner-wiener':
+    "the discovery that explained why some healthy babies died and others didn't, half a century late.",
+  'dot-com-bubble-and-crash-irrational-exuberance':
+    "everything that mattered about the internet survived the crash. eyeballs as a metric did not.",
+  'plessy-v-ferguson-separate-but-equal':
+    "the supreme court spent 58 years explaining why segregation was lawful before quietly admitting it wasn't.",
+  'wwi-chemical-weapons-chlorine-mustard-gas':
+    "the moment human cleverness met the wind. neither side won an inch with it.",
 };
 
 // One sentence per era: what was true before it began. Curated, not
