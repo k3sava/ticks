@@ -580,6 +580,81 @@ const BECAUSE_BATCH = {
 
   'a-m-records-v-napster':
     "Sony Corp. v. Universal Studios (1984, the Betamax case) had immunized technology vendors from secondary liability for substantial non-infringing uses. Napster (1999) tested whether peer-to-peer file-sharing fit the Betamax umbrella. The Ninth Circuit (2001) said no: Napster's central index gave it knowledge of and control over infringing transfers, making it contributorily and vicariously liable. Napster shut down. Decentralized successors (Kazaa, BitTorrent) routed around the holding by removing the central index — the legal arms race that defined a decade of file-sharing.",
+
+  'partnership-on-ai-founding':
+    "AI safety as a research field (FHI, MIRI from the early 2000s) had been small and academic. By 2016, frontier AI was being built inside a handful of companies whose competitive incentives were unaligned with measured deployment. The Partnership on AI (September 2016) — Amazon, DeepMind, Facebook, Google, IBM, and Microsoft as founding members — created a multi-company forum for shared best practices. Limited in teeth but the first signal that companies were taking responsibility seriously enough to organize.",
+
+  'right-to-explanation-gdpr':
+    "Algorithmic decision-making (credit scoring, hiring, risk assessment) had become consequential without recourse. GDPR Article 22 (effective May 2018) gave EU residents a right not to be subject to solely automated decisions with significant effects, and Recital 71 added a right to 'meaningful information about the logic involved' in such decisions. The first enforceable explainability requirement at scale. The interpretability research field has been racing to deliver explanations that satisfy the regulator ever since.",
+
+  'imhoteps-surgical-texts':
+    "Pre-Imhotep Egyptian medicine had been magical — invocation, amulet, charm. Imhotep (c. 2600 BC), Djoser's vizier and architect of the Step Pyramid, is traditionally credited with the empirical surgical tradition that the Edwin Smith Papyrus (c. 1600 BC, but copied from a much older source) records. The papyrus describes 48 cases — head wounds, fractures, dislocations — diagnosed and treated by observation and manipulation, not magic. The first medical text we have anywhere.",
+
+  'sushruta-samhita':
+    "Pre-Sushruta Indian medicine had focused on internal disease. The Sushruta Samhita (compiled in its surviving form by 300-400 AD, drawing on much older oral tradition) is a 184-chapter surgical treatise. Topics: cataract surgery, cesarean section, amputation, plastic reconstruction (especially the Indian rhinoplasty technique that European surgeons would later borrow). The first systematic surgical canon — and the source of techniques that survived in unchanged form into the colonial period.",
+
+  'first-successful-surgical-treatment-of-appendicitis-fitz':
+    "Appendicitis had been called 'perityphlitis' and treated with rest and prayer. Reginald Fitz, Harvard pathologist (1886), demonstrated that the appendix itself was the inflamed organ and that early surgical removal saved lives. The first appendectomies followed within months. Mortality from appendicitis dropped from over 50% to under 5%. The first procedure to make the operating room a routine destination for ordinary citizens.",
+
+  'da-vinci-surgical-system':
+    "Laparoscopic surgery (1980s onward) had reduced incision size but constrained the surgeon's range of motion through small ports. Intuitive Surgical's da Vinci system (FDA cleared 2000) put a robotic surgical platform between surgeon and patient: 3D camera, wristed instruments with seven degrees of freedom, tremor filtering. Over 13 million procedures performed by 2024. The first widely-deployed surgical robot — and the template for every subsequent platform.",
+
+  'invention-of-counting-tokens':
+    "Pre-tally counting had relied on memory and spoken numbers — capped at the small numbers human working memory can hold. The Lebombo bone (~43,000 BC, southern Africa) and the Ishango bone (~20,000 BC, Congo) carry sets of notches that almost certainly represent counted objects or lunar cycles. The first external numerical notation. Quantities became transmittable across people and across time without a witness.",
+
+  'ohalo-ii-intentional-plant-storage':
+    "Pre-agriculture food storage had been opportunistic — caches in caves, smoking, drying. Ohalo II (~23,000 BC, on the Sea of Galilee) preserved grain seeds, grinding stones, and brushwood huts in waterlogged sediment. Some seeds show signs of small-scale cultivation. Eleven thousand years before the Neolithic. The first archaeological evidence of intentional plant storage — and the first hint that 'agriculture' was a slow accumulation of practices rather than a single revolution.",
+
+  'boyles-corpuscularianism-explains-sensation':
+    "Aristotelian natural philosophy had explained sensation through 'qualities' — color, warmth, sweetness — that flowed from objects to perceiver. Boyle's corpuscularianism (1660s, in The Sceptical Chymist and The Origin of Forms and Qualities) replaced qualities with mechanical interactions: tiny corpuscles of varying shapes moving and colliding. Color, warmth, and sweetness were our perception of corpuscle motion patterns. The first sustained mechanistic theory of sensation. Locke's primary/secondary quality distinction is downstream.",
+
+  'pavlovs-classical-conditioning-experiments':
+    "Wundt's introspective psychology (1879) had assumed only conscious processes could be studied. Pavlov's dogs, in his St. Petersburg lab from 1897, salivated to the sound of a metronome paired with food — a measurable, reproducible learning effect with no introspection involved. The conditioned reflex was experimental psychology's first paradigm. Behaviorism (Watson, 1913) generalized it to all learning.",
+
+  'sherringtons-synapse-concept':
+    "Cajal's neuron doctrine (1888) had argued nerve cells were discrete units, not a continuous reticulum. Sherrington's coining of 'synapse' (1897, in his contribution to Foster's Textbook of Physiology) named the gap between them and turned it into a biological structure to be studied. Synapse research dominated 20th-century neuroscience: chemical transmission (Loewi, 1921), excitatory and inhibitory neurotransmitters, plasticity (Hebb, 1949), receptor pharmacology. The unit of nervous-system function.",
+
+  'attention-is-all-you-need':
+    "Recurrent neural networks (LSTM, GRU) had dominated sequence modeling since 1997. Their fundamental serial nature limited training parallelism. Vaswani et al.'s 'Attention Is All You Need' (June 2017) replaced recurrence with self-attention: every position attends to every other in parallel. Training scaled with hardware in a way RNNs never had. BERT (2018), GPT (2018), and every frontier language model since are Transformers.",
+
+  'ohalo-ii':
+    "Upper Palaeolithic groups had built temporary shelters and camped seasonally. Ohalo II (~23,000 BC, on the Sea of Galilee) preserved permanent-construction features: brushwood huts, stone-paved hearths, fish-and-grain food storage, and grinding stones. Eleven thousand years before agriculture. The first archaeological site that looks like a year-round village built by hunter-gatherers. The line between 'mobile' and 'settled' was always fuzzier than the textbook story implied.",
+
+  'egyptian-mummification-practices':
+    "Predynastic Egyptian burials had relied on the natural desiccation of bodies in dry sand. The Old Kingdom (c. 2600 BC) systematized artificial mummification: organ removal, natron drying, resin treatment, linen wrapping. The procedure took seventy days. By the Middle Kingdom it had spread beyond royalty. The Egyptian commitment to body preservation drove anatomical knowledge — autopsy, surgical procedures, knowledge of internal organ placement — that surfaced in the Edwin Smith Papyrus and the Greek medical tradition that copied it.",
+
+  'nyaya-sutras-systematized-logic':
+    "Vedic and Upanishadic argument had run on aphorism and authority. Akṣapāda Gautama's Nyāya Sūtras (c. 200 BC) systematized inference: the five-membered syllogism, the categories of valid means of knowledge (perception, inference, comparison, testimony), formal rules for debate. The first sustained Indian logic. Nyāya remained a living school of philosophy for two millennia and shaped Buddhist Madhyamaka, Jain epistemology, and the medieval Hindu philosophical synthesis.",
+
+  'linnaeus-systema-naturae-10th-edition':
+    "Pre-Linnaean naturalists had labeled species with multi-word descriptive Latin phrases that varied by author. Linnaeus's 1735 Systema Naturae had introduced binomial nomenclature for plants. The 10th edition (1758) extended the consistent two-name system (Genus species) to animals. The taxonomic Big Bang: every species, living or fossil, since carries a Linnaean binomial. The 1758 publication date is the official starting point for zoological nomenclature.",
+
+  'rawls-original-position':
+    "Utilitarian moral philosophy (since Bentham) had measured outcomes; deontological ethics (since Kant) had measured intent. Rawls's A Theory of Justice (1971) introduced a procedural device: imagine choosing the principles of justice from behind a 'veil of ignorance' that hides your race, class, gender, and natural talents. What rules would rational self-interested agents pick? Rawls argued: equal liberties + the difference principle. The most influential work of Anglophone political philosophy of the twentieth century.",
+
+  'wikipedia-launched':
+    "Encyclopedias had been authored by paid experts under editorial control. Nupedia (2000) tried that model online and stalled. Wikipedia (January 2001), built on Cunningham's wiki software, opened editing to anyone. Within a decade it had become the largest reference work ever assembled in any language and the default starting point for almost any factual question. The first sustained-scale demonstration that voluntary cooperation could produce reference-grade content — without ads, without paywalls, without a publisher.",
+
+  'heros-wind-powered-organ':
+    "Wind power had been used at sea (sails) and for water raising (waterwheels in Egypt and the Levant). Hero of Alexandria's Pneumatica (c. 62 AD) describes a windwheel powering an air-pump organ — the earliest documented mechanical use of wind on land. The device was a curiosity, not industrial; nine centuries later, the windmill (Persian, c. 9th century AD) made the principle commercially serious. Hero's wheel is the documentary first.",
+
+  'heros-method-for-measuring-focal-length':
+    "Lenses had been made and used (burning glasses, magnifying glasses) since at least the Greek period. Their optical properties were qualitative. Hero of Alexandria (c. 62 AD) described a method for measuring focal length using a dioptra and a lunar eclipse observation. The first quantitative lens characterization. Practical adoption was minimal until the Arab and Renaissance optical traditions revived the geometry.",
+
+  'pliny-the-elders-naturalis-historia-on-magnetism':
+    "Greek and Roman natural-history texts had described magnetism (Thales, c. 600 BC) as folklore — the lodestone attracts iron. Pliny's Naturalis Historia (77 AD), Book 36, compiled the surviving knowledge: types of magnetic stone, their geographical sources (especially Magnesia in Lydia), and stories of their behavior. The first textual aggregation. Medieval European compilers and Arab scholars (al-Biruni's compass observations, 1000 AD) drew on Pliny's catalogue.",
+
+  'shen-kuos-relief-map':
+    "Cartography by 1000 AD had been two-dimensional everywhere. Shen Kuo's Dream Pool Essays (1088) describes a relief map made from sawdust and beeswax — three-dimensional terrain at miniature scale. Used for military planning. The first known relief map. The technique was rediscovered in Europe in the 18th century. Modern topographic mapping and 3D terrain rendering are direct descendants.",
+
+  'fresnel-lens':
+    "Lighthouse lamps had been weak — most of the light radiated in directions that didn't hit the horizon. Augustin-Jean Fresnel's 1822 lens used a series of concentric annular prisms to capture and redirect the lamp's light into a horizontal beam. The Fresnel lighthouse lens turned a few candles into a beam visible 20+ miles offshore. Maritime safety leaped. Fresnel's design was later miniaturized for theatrical and automotive use.",
+
+  'wohler-synthesis-of-urea':
+    "Vitalist chemistry had held that 'organic' compounds (made by living things) and 'inorganic' compounds were fundamentally different — life was a chemical sui generis. Wöhler's 1828 synthesis of urea from ammonium cyanate — both inorganic — produced an unambiguously organic compound. The vital force as a chemical category dissolved. Organic chemistry as a synthetic discipline begins here, and so does the long retreat of vitalism from biology.",
+
+  'hall-heroult-aluminum-process':
+    "Aluminum had been more expensive than gold in the 1850s — Napoleon III used aluminum cutlery to honor his most distinguished guests. Charles Martin Hall (Ohio, US) and Paul Héroult (France) independently invented electrolytic smelting of alumina dissolved in molten cryolite in 1886. Aluminum prices dropped 99% within a decade. Aircraft, electrical conductors, beverage cans, and cookware became thinkable. The first metal mass-produced by electrochemistry.",
 };
 
 async function main(){
