@@ -21,7 +21,9 @@ jobs:
       - name: Stage site
         run: |
           set -eu
-          mkdir -p _site _site/.well-known
+          mkdir -p _site _site/.well-known _site/.well-known/agent-skills
+          # Disable Jekyll so dotfile dirs (.well-known) actually serve.
+          touch _site/.nojekyll
           # Required: site cannot deploy without these.
           cp index.html app.js style.css data.json _site/
           # Custom domain for GitHub Pages — CNAME bound to ticks.iamkesava.com.
@@ -37,8 +39,15 @@ jobs:
           if [ -d og ] && [ -n "$(ls -A og 2>/dev/null)" ]; then
             cp -R og _site/og
           fi
+          # Agent-readiness endpoints under /.well-known/.
           if [ -f .well-known/agent-permissions.json ]; then
             cp .well-known/agent-permissions.json _site/.well-known/
+          fi
+          if [ -f .well-known/api-catalog ]; then
+            cp .well-known/api-catalog _site/.well-known/
+          fi
+          if [ -f .well-known/agent-skills/index.json ]; then
+            cp .well-known/agent-skills/index.json _site/.well-known/agent-skills/
           fi
           # Legacy SPA, kept reachable at /legacy.html for old shares.
           if [ -f ticks.html ]; then cp ticks.html _site/legacy.html; fi
