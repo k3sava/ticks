@@ -1107,7 +1107,8 @@
           "label": "World History Encyclopedia: Edict of Milan",
           "url": "https://www.worldhistory.org/Edict_of_Milan/"
         }
-      ]
+      ],
+      "because": "Diocletian's Great Persecution (303-311) had been the empire's last attempt to crush Christianity. By 312 there were too many Christians in the legions and the bureaucracy to sustain. Constantine and Licinius's Edict of Milan (313) made religious toleration imperial policy and returned confiscated church property. Christianity became legal — not yet privileged, but no longer prosecutable. Within a generation it was the favoured religion; by 380 it was the state religion."
     },
     {
       "id": "muhammad-prophetic-call",
@@ -2134,7 +2135,8 @@
           "url": "http://sourcebooks.fordham.edu/halsall/mod/montesquieu-spirit.asp"
         }
       ],
-      "_origZone": "enlightenment"
+      "_origZone": "enlightenment",
+      "because": "Locke's Two Treatises (1689) had argued government rests on consent. The English Bill of Rights (1689) split sovereignty between Crown and Parliament in practice. Montesquieu's Spirit of the Laws (1748) made the principle theoretical: legislative, executive, and judicial functions must be exercised by separate institutions, each checking the others. The US Constitution and every liberal democracy's structure is an implementation of this idea."
     },
     {
       "id": "l-p-es-school-french-sign-language",
@@ -6370,7 +6372,8 @@
           "label": "Wikipedia: OpenAI o1",
           "url": "https://en.wikipedia.org/wiki/OpenAI_o1"
         }
-      ]
+      ],
+      "because": "GPT-3 (2020) and the Transformer (2017) had shown that scale produced capability. Chain-of-thought prompting (2022) showed that asking the model to think step-by-step improved hard-task performance. OpenAI's o1 (2024) and o3 (2024) made step-by-step reasoning a built-in inference mode: the model spends additional compute reasoning before answering. The model was solving, not just recalling. The frontier moved from training to test-time compute."
     },
     {
       "id": "organized-warfare-first-armies",
@@ -7958,7 +7961,8 @@
           "url": "https://en.wikisource.org/wiki/The_Principles_of_Psychology_(James)"
         }
       ],
-      "_origZone": "victorian-era"
+      "_origZone": "victorian-era",
+      "because": "Wundt's experimental psychology (1879) had assumed consciousness was a collection of distinct mental atoms that introspection could enumerate. James's Principles of Psychology (1890) proposed consciousness was a continuous flowing stream — felt, never separable into pieces. The phrase 'stream of consciousness' became the title of a literary movement (Joyce, Woolf) and the working assumption of every modernist novel. Phenomenology and modern attention research both descend from James."
     },
     {
       "id": "freud-unconscious-as-causally-active",
@@ -8005,7 +8009,8 @@
           "url": "https://www.yorku.ca/pclassic/Binet/intro.htm"
         }
       ],
-      "_origZone": "turn-of-century"
+      "_origZone": "turn-of-century",
+      "because": "Galton's anthropometric measurements (1880s) had tried to measure intelligence by reaction time. Binet and Simon's 1905 test instead measured age-graded ability — a 7-year-old of 'mental age 9' could do what a typical 9-year-old could. The first standardized intelligence test, designed to identify Paris schoolchildren needing extra help. Stern (1912) divided mental age by chronological age and got the IQ. A century of psychometrics, educational testing, and eugenics followed."
     },
     {
       "id": "rorschach-inkblot-test",
@@ -8026,7 +8031,8 @@
           "url": "https://www.cambridge.org/core/journals/journal-of-mental-science/article/abs/1-psychodiagnosis-psychodiagnostik-arb-zur-angewand-psychiat-band-ii-ernst-bircher-verlag-in-bern-und-leipzig-1921-pp-174-rorschach-hermann/6929C8879176A81CF4828BA90EB13A77"
         }
       ],
-      "_origZone": "wwi-interwar"
+      "_origZone": "wwi-interwar",
+      "because": "Freud's interpretation of dreams (1900) had treated unconscious symbols as a code. Watson's behaviorism (1913) had said the unconscious wasn't measurable. Rorschach's projective test (1921) split the difference: how a subject interprets ambiguous images reveals patterns not accessible to introspection. Validity remained contested for a century. The principle survived: responses to ambiguous stimuli reveal something about the responder."
     },
     {
       "id": "piaget-cognitive-development-stages",
@@ -8099,7 +8105,8 @@
           "url": "https://openlibrary.org/works/OL1725489W/The_behavior_of_organisms_an_experimental_analysis"
         }
       ],
-      "_origZone": "wwi-interwar"
+      "_origZone": "wwi-interwar",
+      "because": "Pavlov's classical conditioning (1903) had paired stimuli to elicit reflexes. Skinner's operant conditioning chamber (1938) showed that behavior is shaped by its consequences — reinforcement increases frequency, punishment decreases it — without the organism needing to understand why. Behavior modification, token economies, video-game design, social-media like buttons, and slot machines all use Skinner's findings."
     },
     {
       "id": "mcculloch-pitts-first-mathematical-neuron",
@@ -8167,7 +8174,8 @@
           "url": "https://philpapers.org/rec/TURCMA"
         }
       ],
-      "_origZone": "post-wwii"
+      "_origZone": "post-wwii",
+      "because": "Turing's universal machine (1936) had defined what computation was. By 1950, the first stored-program computers existed. Turing's paper 'Computing Machinery and Intelligence' proposed an operational test: if a machine can converse indistinguishably from a human, it should be considered intelligent. The paper launched AI as a field, sparked seventy years of philosophical argument, and framed every subsequent benchmark — from ELIZA to GPT — as a Turing-test variant."
     },
     {
       "id": "george-miller-working-memory-limits-7-2",
@@ -8385,7 +8393,8 @@
           "url": "https://ruccs.rutgers.edu/images/personal-zenon-pylyshyn/class-info/Consciousness_2014/Emotions/10-Damasio-OCR.pdf"
         }
       ],
-      "_origZone": "information-age"
+      "_origZone": "information-age",
+      "because": "Cognitive science had treated emotion as noise interfering with rational decision-making. Damasio's patients with ventromedial prefrontal damage had intact logic but disastrous real-world decisions — they couldn't feel the emotional weight of options. His somatic marker hypothesis: emotion is not opposed to reason; it is a necessary input to it. Behavioral economics and modern decision theory both build on this finding."
     },
     {
       "id": "nudge-theory-libertarian-paternalism-thaler-sunstein",
@@ -8810,7 +8819,8 @@
           "url": "https://resolve.cambridge.org/core/services/aop-cambridge-core/content/view/07148A69FF4253CC37ACBC7C044CDC93/S0020860400087878a.pdf/the-first-geneva-convention-of-1864-a-historic-document.pdf"
         }
       ],
-      "_origZone": "victorian-era"
+      "_origZone": "victorian-era",
+      "because": "Solferino (1859) had killed 40,000 in a single day with no medical infrastructure for either side. Henri Dunant, who happened to be in town, organized civilian aid for the wounded regardless of uniform. His pamphlet led to the founding of the International Committee of the Red Cross (1863) and the first Geneva Convention (1864) — neutrality of medical personnel, protection for the wounded, the red cross emblem. Humanitarian law as a category begins here."
     },
     {
       "id": "berlin-conference-formalization-of-colonialism",
@@ -9026,7 +9036,8 @@
           "url": "https://www.britannica.com/topic/social-science"
         }
       ],
-      "_origZone": "information-age"
+      "_origZone": "information-age",
+      "because": "Television had been broadcast nationally since the 1940s. Communications satellites (Telstar, 1962) made transcontinental live transmission possible. Apollo 11's moonwalk (July 20, 1969) was watched live by 600 million people — about 1 in 5 humans alive. The first truly global simultaneous shared experience. The capacity for shared global media moments — for better and worse — had been demonstrated."
     },
     {
       "id": "rwandan-genocide-failure-of-international-response",
@@ -9373,7 +9384,8 @@
           "url": "https://library.ethz.ch/en/collections-and-archives/platforms/virtual-exhibitions/galileo-galilei/the-trial.html"
         }
       ],
-      "_origZone": "scientific-revolution"
+      "_origZone": "scientific-revolution",
+      "because": "Copernicus's heliocentric model (1543) had been published as 'mathematical hypothesis.' Galileo's telescopic observations of Jupiter's moons (1610) and the phases of Venus made heliocentrism observational. The Counter-Reformation Church, defending its authority over natural philosophy, forced Galileo to recant in 1633. The trial defined the conflict between empirical inquiry and institutional religion that would shape European intellectual history. The Enlightenment used Galileo as exhibit A."
     },
     {
       "id": "hobbes-leviathan-secular-political-theory",
@@ -9419,7 +9431,8 @@
           "url": "https://en.wikipedia.org/wiki/Theologico-Political_Treatise"
         }
       ],
-      "_origZone": "scientific-revolution"
+      "_origZone": "scientific-revolution",
+      "because": "Hobbes's Leviathan (1651) had argued for a secular political theory. Spinoza's Tractatus Theologico-Politicus (1670) extended the move to scripture itself: the Bible was a human document, written by humans in particular historical contexts, and should be interpreted historically and critically. Higher biblical criticism begins here. Every liberal theology and every secular biblical scholarship since is downstream."
     },
     {
       "id": "newtons-natural-theology-god-as-first-cause",
@@ -9920,7 +9933,8 @@
           "url": "https://www.gutenberg.org/files/66061/66061-h/66061-h.htm"
         }
       ],
-      "_origZone": "turn-of-century"
+      "_origZone": "turn-of-century",
+      "because": "Pasteur's germ theory (1864) had identified microbes as the cause of disease. Refrigeration (1870s) had made milk transportable. Pasteur's heating method, applied to milk in the 1880s and mandated in New York City in 1908, eliminated milk-borne tuberculosis, typhoid, and scarlet fever. Infant mortality dropped sharply. Pasteurization probably saved more lives than any other public-health intervention. It also enabled commercial dairy at scale."
     },
     {
       "id": "dna-structure-enables-crop-genetic-improvement",
@@ -9945,7 +9959,8 @@
           "url": "https://www.genome.gov/sites/default/files/media/files/2022-08/nature_article_molecular_structure_of_nucleic_acids_1953.pdf"
         }
       ],
-      "_origZone": "post-wwii"
+      "_origZone": "post-wwii",
+      "because": "Mendel's pea-plant inheritance (1866) had been rediscovered around 1900. Avery's transforming principle (1944) showed DNA was the genetic material. Watson and Crick's 1953 paper, built on Rosalind Franklin's X-ray crystallography (Photo 51) and Maurice Wilkins's data, gave DNA its double-helix structure. The model immediately revealed how genetic information is stored, copied, and varied. Recombinant DNA (1973) and CRISPR (2012) follow."
     },
     {
       "id": "recombinant-dna-enables-genetically-modified-crops",
@@ -10036,7 +10051,8 @@
           "url": "http://www.scientificamerican.com/article.cfm?id=test-tube-burger-lab-culture"
         }
       ],
-      "_origZone": "ai-era"
+      "_origZone": "ai-era",
+      "because": "Tissue engineering had been used in medical research since the 1990s. Mark Post's team at Maastricht grew the first cultured beef burger from bovine stem cells in 2013. It cost $300,000. By 2023, cultured chicken was approved for sale in Singapore and the US. If costs fall further, cultured meat could remove the need for industrial livestock farming — currently responsible for roughly 15% of global greenhouse emissions and most of the world's antibiotic use."
     },
     {
       "id": "ai-optimized-precision-agriculture",
@@ -11633,7 +11649,8 @@
           "url": "https://www.britannica.com/event/Bill-of-Rights-British-history"
         }
       ],
-      "_origZone": "enlightenment"
+      "_origZone": "enlightenment",
+      "because": "The Petition of Right (1628) and the Habeas Corpus Act (1679) had constrained the English monarchy in pieces. The Glorious Revolution (1688) put William and Mary on the throne by parliamentary invitation. The Bill of Rights (1689) formalized the settlement: parliamentary supremacy, free elections, free speech in Parliament, no excessive bail, no standing army in peacetime without Parliament's consent. England became a constitutional monarchy. The American Bill of Rights is modeled directly on it."
     },
     {
       "id": "us-bill-of-rights-individual-rights-against-state",
@@ -14279,7 +14296,8 @@
           "url": "https://www.britannica.com/biography/John-Rawls"
         }
       ],
-      "_origZone": "information-age"
+      "_origZone": "information-age",
+      "because": "Rawls's Theory of Justice (1971) had relied on a thick conception of fairness derived behind the veil of ignorance. By the 1990s, communitarian critiques (Sandel, MacIntyre) had pressed: how could one liberal moral theory justify a society of moral disagreement? Political Liberalism (1993) answered: in pluralist societies, political justification must appeal to 'public reason' — reasons all citizens can in principle accept — not to any particular comprehensive moral or religious doctrine. Constitutional law in pluralist democracies took this turn."
     },
     {
       "id": "hebrew-prophetic-tradition-social-justice-theology",
@@ -16689,7 +16707,8 @@
           "url": "https://www.archives.gov/milestone-documents/social-security-act"
         }
       ],
-      "_origZone": "wwi-interwar"
+      "_origZone": "wwi-interwar",
+      "because": "The Great Depression (1929-1939) had broken the American assumption that old-age poverty was a private problem. Bismarck's Germany had pioneered social insurance in 1889. FDR's Social Security Act (1935) brought the model to the US: federal old-age insurance, unemployment insurance, aid to families with children. Medicare (1965) extended it to health. The principle that retirement security and basic income support are public obligations is American since 1935."
     },
     {
       "id": "state-of-israel-established-jewish-homeland",
@@ -17578,7 +17597,8 @@
           "url": "https://us.sagepub.com/sites/default/files/upm-binaries/21200_Chapter_3.pdf"
         }
       ],
-      "_origZone": "information-age"
+      "_origZone": "information-age",
+      "because": "Behaviorists had treated all behavior as situationally controlled. Personality theorists treated it as dispositional. Heider (1958) and Kelley (1967) noticed that PEOPLE'S explanations of behavior systematically split: we attribute others' behavior to internal disposition ('they're that kind of person') and our own to situation ('circumstances made me'). The fundamental attribution error has been replicated thousands of times. Social psychology had its first genuinely surprising lawful regularity."
     },
     {
       "id": "k-bler-ross-stages-of-grief",
@@ -17791,7 +17811,8 @@
           "url": "https://en.wikipedia.org/wiki/History_of_the_Republic_of_Venice"
         }
       ],
-      "_origZone": "medieval"
+      "_origZone": "medieval",
+      "because": "Italian commune politics (1100s) had given commercial cities partial self-government. Venice's 1297 Serrata locked the Great Council to a fixed list of patrician families — formalizing merchant aristocracy as the ruling class. The first polity where commercial wealth and political power were explicitly fused. The Doge was elected, the Senate was elected, and the families were merchants. The Italian city-state model that the Hanseatic League and the Dutch Republic later emulated."
     },
     {
       "id": "hundred-years-war-national-identity-forged",
@@ -18009,7 +18030,8 @@
           "url": "https://www.britannica.com/topic/partition-of-India"
         }
       ],
-      "_origZone": "post-wwii"
+      "_origZone": "post-wwii",
+      "because": "Independence (August 15, 1947) made India the world's largest democracy in a society with no European-style electoral tradition, massive poverty, and extraordinary religious and linguistic diversity. Modernization theory had predicted that democracy required a particular cultural inheritance. India's endurance — imperfect but genuine — refuted the claim. Constitutional democracy could be built where it had no precedent, including in the Global South."
     },
     {
       "id": "year-of-africa-decolonization-wave",
@@ -18840,7 +18862,8 @@
           "url": "https://www.britannica.com/event/Miranda-v-Arizona"
         }
       ],
-      "_origZone": "post-wwii"
+      "_origZone": "post-wwii",
+      "because": "The Civil Rights Act (1964) had outlawed discrimination in public accommodations. Gideon v. Wainwright (1963) gave defendants the right to counsel. Miranda v. Arizona (1966) closed the interrogation gap: police must inform suspects of their right to remain silent and their right to an attorney before questioning. Statements obtained without warnings are inadmissible. Criminal procedure in every US jurisdiction (and in Canada and the UK) was rewritten."
     },
     {
       "id": "roe-v-wade-abortion-rights",
@@ -19948,7 +19971,8 @@
           "url": "https://www.hcfi.org/library/automobiles/ford/7498-1921-ford-the-model-t-ford-car-including-fordson-farm-tractor-453pgs"
         }
       ],
-      "_origZone": "wwi-interwar"
+      "_origZone": "wwi-interwar",
+      "because": "Internal combustion (1885) had powered cars from 1900. Tractor adoption was slow until Ford's Fordson (1917) brought it under $400. By 1921, US tractor sales were a mass market. In 1920, one in four US farm acres fed horses and mules; by 1960 the number was approximately zero. One farmer with a tractor could work ten times the acreage. Between 1920 and 1960, US agricultural labor fell from 30% of the workforce to 10% while output doubled."
     },
     {
       "id": "green-revolution-begins-borlaug-wheat",
@@ -20595,7 +20619,8 @@
           "url": "https://psycnet.apa.org/record/1926-03227-001"
         }
       ],
-      "_origZone": "turn-of-century"
+      "_origZone": "turn-of-century",
+      "because": "Wundt's experimental psychology (1879) had treated introspection as the method. Freud's unconscious (1900) was claimed to drive everything. Watson's 1913 manifesto rejected both: psychology should study only observable behavior — stimulus and response — and abandon all reference to consciousness. Behaviorism dominated US academic psychology for forty years. Skinner's operant conditioning, behavior therapy, and the entire stimulus-response training of pets and children all descend from this manifesto."
     },
     {
       "id": "craik-computational-theory-of-mind",
