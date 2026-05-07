@@ -430,6 +430,81 @@ const BECAUSE_BATCH = {
 
   'corn-sheller':
     "Removing kernels from corn cobs had been entirely manual since maize's domestication — slow, hard on the hands, the bottleneck after harvest. Lester Denison's hand-cranked corn sheller (patented 1839) pulled cobs through metal-toothed cylinders that stripped the kernels in seconds. By 1860, factory-made shellers in farms from Iowa to Argentina; by 1900, steam-powered versions threshed entire wagonloads. The bottleneck moved from harvest-and-shelling to logistics.",
+
+  'steam-plow-john-fowler':
+    "Horse-drawn plowing limited what one farmer could turn over in a day; deep clay soils were nearly impossible. The Bessemer process (1856) had made structural steel cheap. John Fowler's cable-drag steam plow (1858) put two stationary traction engines at opposite ends of a field with a plow on a winch between them — drawing it back and forth, no horses needed. The first time mechanization broke the team-of-horses bottleneck on tillage. Combine harvesters and tractor plows were the obvious next step.",
+
+  'soybean-processing-for-oil-and-meal':
+    "Soybeans had been a staple in East Asian cooking for millennia, processed locally into tofu, soy sauce, and miso. Hexane solvent extraction (commercialized in the US in the 1930s-40s) separated the oil from the meal at industrial scale: oil for margarine and frying, meal for animal feed. Soybean acreage in the US tripled between 1940 and 1960. Industrial livestock — pork, chicken — runs on soy meal. Half of all global feed protein is now soybean.",
+
+  'theatre-of-pompey':
+    "Roman law had banned permanent stone theatres on moral grounds — they encouraged the leisure and theatricality of the Greeks. Pompey the Great (55 BC) built one anyway, on the Field of Mars, and dedicated the structure as a temple of Venus Victrix with stadium seating that 'happened to' face a stage. The legal pretext stuck. Every subsequent Roman theatre and the Colosseum follow the design. Public spectacle as a permanent civic institution was now lawful.",
+
+  'vitruvius-writes-de-architectura':
+    "Greek architecture had developed proportional canons (Vitruvius cites Pytheos, Hermogenes) without a written treatise. Vitruvius's De architectura (c. 25 BC), dedicated to Augustus, was the first systematic written architectural theory: ten books on materials, proportions, water supply, machines, and the design philosophy of firmitas, utilitas, venustas. The only such treatise to survive antiquity. Rediscovered in 1414, it shaped Renaissance architecture, Palladio, and every architectural school curriculum since.",
+
+  'codex-adoption-in-rome':
+    "The codex (bound, paginated, foldable book) had originated as wax-tablet notebooks. Christians adopted it early — random access mattered for liturgical readings — and used it for gospels by the second century. Roman secular literature held to the scroll for another century. Martial's epigrams (~85 AD) advertised codex versions of his works as more portable. The codex won decisively by 400 AD; the format then dominated for fifteen hundred years.",
+
+  'invention-of-the-atlatl':
+    "Hand-thrown spears had limited range and force. The atlatl (spear-thrower) — a hooked stick that effectively extends the throwing arm — uses leverage to roughly double the velocity and triple the energy of a thrown dart. Appearing in Eurasia and the Americas by ~20,000 BC. The first projectile-amplification technology. Hunting at distance became safer; large-game collapse in the Late Pleistocene tracks the spread of atlatls. Bows replaced atlatls in most regions but the device persisted in Mesoamerica and Inuit Arctic hunting.",
+
+  'first-known-use-of-yeast-for-bread-and-beer':
+    "Wild yeasts had fermented sugars opportunistically wherever fruit went bad. Pre-pottery Neolithic peoples noticed that grain mash, given time, produced both bread and beer. By 3500 BC at Godin Tepe (modern Iran), pottery jars carry chemical residues confirming intentional barley-beer fermentation. Bread and beer share the same biology — yeast on starch — and emerged together. The first deliberate microbial process.",
+
+  'theophrastus-characters-ecological-types':
+    "Aristotle had classified animals; plants were the gap. Theophrastus, his student and successor at the Lyceum, wrote Historia Plantarum and De Causis Plantarum (~300 BC) — the first systematic botany: morphology, propagation, ecological type, geographical distribution. About 480 species described. The work survived through Arabic and Latin translation; Linnaeus (1753) used Theophrastus's terms as the bedrock layer of his nomenclature.",
+
+  'pliny-the-elder-on-bee-behavior-and-honey':
+    "Pre-Pliny natural history had been folkloric. Pliny's Naturalis Historia (77 AD), thirty-seven books drawing on 2,000 sources, was the first encyclopedic compilation of ancient natural knowledge. Book 11 on bees described colony social structure, swarming, drone-vs-worker roles, and honey production with detail not surpassed for fifteen centuries. The work was the standard European reference until Buffon (1749).",
+
+  'kitab-al-hayawan':
+    "Aristotelian zoology had been preserved in Greek manuscripts in Byzantine and Syriac libraries. The Abbasid translation movement (8th-10th centuries) rendered them into Arabic. Al-Jahiz's Kitāb al-Hayawān (c. 850) — seven volumes drawing on Aristotle, Quranic references, Bedouin folklore, and direct observation — is the first major Arabic zoology. Includes early observations of food chains, environmental determinism, and behavioral adaptation.",
+
+  'al-idrisis-tabula-rogeriana':
+    "Ptolemy's Geography (150 AD) had been the standard cartographic reference for a millennium. Roger II of Sicily (a Norman king with Arab and Greek scholars at court) commissioned Al-Idrisi to compile a fact-checked atlas. The Tabula Rogeriana (1154) used 70 sectional maps based on traveler interviews and surveyor reports, oriented south-up by Arabic convention. The most accurate world map for nearly four centuries — until Mercator (1569).",
+
+  'eustachis-anatomical-plates':
+    "Vesalius's De humani corporis fabrica (1543) had remade external and skeletal anatomy. Internal organs — especially teeth, kidneys, and the inner ear — remained schematic. Bartolomeo Eustachi's anatomical plates (1564, but printed only in 1714 from rediscovered originals) showed the Eustachian tube, the kidney's tubular structure, and tooth dentition with precision unmatched until the 18th century. When the plates resurfaced, anatomy textbooks were rewritten around them.",
+
+  'photography-daguerreotype':
+    "Camera obscura (Arab and European, from the 11th century) had been used to project images for tracing. Niépce's heliograph (1826) had captured the first photograph after eight hours of exposure. Daguerre's daguerreotype (1839) used silver-iodide-coated copper plates and mercury vapor development to capture sharp images in twenty minutes — and made the process commercially accessible. Within a decade, portrait studios in every major city. Hand-drawing as the only way to record an image was over.",
+
+  'synthetic-biology-circuit-design-automation':
+    "Recombinant DNA (Cohen-Boyer, 1973) had shown that DNA fragments could be cut, ligated, and expressed in bacteria. The first plasmid cloning experiment that same year confirmed it. Synthetic biology's later promise — genetic circuits assembled from standardized parts — rests on this foundation. The BioBrick standard (2003), iGEM, and modern strain engineering all assume DNA can be designed in software, ordered from a vendor, and inserted into a chassis organism. Cohen and Boyer made that path real.",
+
+  'microbiome-wide-association-studies':
+    "Genome-wide association studies (GWAS, from 2005) had linked SNPs to disease phenotypes at population scale. Cheap shotgun sequencing made the equivalent practical for the gut microbiome by ~2012. Microbiome-wide association studies (MWAS) examined which microbial taxa correlate with obesity, IBD, depression, autoimmune disease. The findings are noisy and the causal direction is contested. The methodology — population-scale microbial profiling — has been the new tool ever since.",
+
+  'lunar-calendar':
+    "Day and night had been the only structured timekeeping. Lunar phases — visible to anyone, repeating every ~29.5 days — gave a longer cycle. Notched bones from Upper Palaeolithic Europe (Lebombo bone, ~43,000 BC; Ishango bone, ~20,000 BC) appear to track lunar cycles. The first calendrical structure. Seasonal hunting, festival timing, and gestation-period awareness all become trackable. The lunar month survives in nearly every later calendar.",
+
+  'bronze-alloying':
+    "Pure copper had been worked since 9000 BC but was too soft for cutting tools. Tin alloying (about 10% by weight) produced bronze — three to four times harder than copper, castable, edge-holding. Discovered independently around 3500 BC in the Near East and East Asia. The Bronze Age states (Mesopotamia, Egypt, Indus Valley, Shang) are downstream — better tools meant better agriculture, better weapons, and the first centralized bureaucracies that managed the tin trade.",
+
+  'first-use-of-bronze':
+    "Stone, bone, and pure copper had each been worked. Tin alloying (~10% by weight) with copper produced bronze — three to four times harder, castable into complex shapes, edge-holding. Independent invention in the Near East and East Asia around 3500 BC. The Bronze Age followed: stronger plows, sharper sickles, harder weapons, and the centralized states required to manage long-distance tin sourcing.",
+
+  'al-khwarizmis-algebra-treatise':
+    "Greek mathematics had geometry and a primitive number theory; equations were solved geometrically by analogy. Al-Khwarizmi's Al-Kitāb al-Mukhtaṣar fī Ḥisāb al-Jabr wal-Muqābala (Baghdad, c. 820) introduced systematic procedures for solving linear and quadratic equations — al-jabr (restoration) and al-muqabala (balancing) as distinct operations. The first book-length work treating algebra as its own discipline. Al-Khwarizmi's name became 'algorithm'; al-jabr became 'algebra.'",
+
+  'al-jawhari-commentary-on-euclid':
+    "Euclid's Elements had been preserved in Greek and translated into Arabic in the 9th century House of Wisdom. The transmission left gaps: corrupted passages, contested proofs, especially around the parallel postulate. Al-Abbas ibn Said al-Jawhari (c. 860) wrote commentary that fixed corrupted passages and attempted a proof of the parallel postulate from the others — a research direction that wouldn't be resolved until Lobachevsky's non-Euclidean geometry a thousand years later.",
+
+  'xerox-alto':
+    "Engelbart's mother-of-all-demos (1968) had previewed the mouse, hypertext, and collaborative editing on a mainframe. The Xerox Alto (1973) at PARC put the demo in a personal-computer cabinet: bitmap display, mouse, Ethernet networking, the desktop metaphor. Xerox never sold it. Steve Jobs's 1979 visit to PARC moved the design into the Lisa (1983) and the Macintosh (1984). Every personal computer interface since is a refinement of the Alto.",
+
+  'code-of-ur-nammu-price-controls':
+    "Sumerian commercial life had run on customary law. Ur-Nammu, founder of the Third Dynasty of Ur (~2100 BC), promulgated a written law code — fifty-seven articles surviving — covering theft, assault, marital law, slavery, and crop-and-grain prices. The first written law code in history (predating Hammurabi by three centuries). Fixed silver-equivalent prices for grain and wages stabilized commerce in a polity that depended on long-distance trade.",
+
+  'scythian-gold-trade-with-greeks':
+    "Black Sea Greek colonies (Olbia, Panticapaeum, from 600 BC) had connected the Greek world to the Pontic steppe. Scythian elites traded grain, slaves, and gold for Greek wine, olive oil, and luxury metalwork. The exchange produced the famous Scythian gold — Hellenized scenes on Scythian objects, made in workshops at Panticapaeum. The first sustained economic integration of steppe nomads into the Mediterranean economy. The pattern repeated through the Silk Road era.",
+
+  'roman-census-under-augustus':
+    "Roman tax collection in the Republic had relied on tax-farming contractors who bid for the right to extract a region's revenue. Augustus's empire-wide census (28 BC, then every five years) replaced the auction with direct accounting: heads counted, property assessed, taxes set. Bureaucratic central administration over a polity of 50 million. The Census of Quirinius in Judaea (Luke 2) is one snapshot of the system; the Domesday Book (1086) is its medieval revival.",
+
+  'mauryan-state-monopoly-on-mining':
+    "Mauryan state-building (~320 BC) under Chandragupta and Kautilya had organized fiscal extraction more thoroughly than any previous Indian polity. The Arthashastra codified the doctrine: mining of gold, silver, iron, gems, and salt was a royal monopoly. Private investment in extraction was forbidden. The Mauryas could fund standing armies and the largest infrastructure programs of their era — but also blocked the kind of private capital accumulation that would later drive industrial economies.",
 };
 
 async function main(){
