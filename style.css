@@ -428,16 +428,18 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 }
 
 /* ========== WALK ========== */
-/* Layout discipline: sections occupy fixed reserved space so navigating tick
-   to tick swaps content WITHOUT shifting the surrounding chrome. Year + name
-   pin to the top of the stage area, detail flows below in a min-sized region,
-   the downstream-flow grid keeps its slot even when a tick has no children.
-   The reader's eye stays put; the content moves through. */
+/* Layout discipline: the year + name anchor on the left, the prose stack
+   on the right. The flow strip is the only horizontal scroller — sideways
+   navigation by design. Page scrolls vertically if content is long; two
+   columns cut height roughly in half so most ticks fit one screen on
+   desktop. Mobile collapses to a single readable column. */
 .walk{
-  min-height:calc(100vh - var(--hdr-h) - 80px);
-  display:grid;grid-template-rows:auto auto 1fr auto auto;
-  padding:24px var(--gut);
+  display:flex;flex-direction:column;
+  gap:12px;
+  padding:14px var(--gut) 24px;
   position:relative;
+  min-height:calc(100vh - var(--hdr-h) - 200px);
+  min-height:calc(100dvh - var(--hdr-h) - 200px);
   animation:walk-in .55s var(--ease-stage);
 }
 @keyframes walk-in{
@@ -450,28 +452,37 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 .walk-meta{
   display:flex;align-items:center;justify-content:space-between;gap:16px;
   font-family:var(--mono);font-size:.7rem;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;
-  position:relative;padding-bottom:10px;
+  position:relative;padding-bottom:8px;
 }
 
-/* Walk ancestry trail: three quietest of the chain that produced this tick.
-   Reads top-to-bottom, oldest first. Tap to walk to that ancestor.
-   Always reserves the same vertical slot (~200px) so navigating between a
-   tick with ancestors and one without doesn't shift the year + name below. */
-.walk-trail-area{min-height:200px;display:flex;align-items:flex-end;justify-content:center}
-.walk-trail{
-  display:flex;flex-direction:column;align-items:center;gap:6px;
-  max-width:1100px;margin:14px auto 0;width:100%;
-  font-family:var(--mono);
+/* Walk ancestry trail: a single horizontal strip of parent capsules with
+   thin connector traces. Compact (~52px) so the year stays above the fold.
+   Always renders, even when there are no ancestors (an empty placeholder
+   keeps the row height stable so navigating between ticks doesn't bounce
+   the year around). */
+.walk-trail-area{
+  min-height:48px;display:flex;align-items:center;justify-content:flex-start;
+  max-width:1280px;margin:0 auto;width:100%;
 }
+.walk-trail{
+  display:flex;flex-direction:row;align-items:center;gap:8px;
+  width:100%;font-family:var(--mono);
+  overflow-x:auto;overflow-y:hidden;
+  -webkit-overflow-scrolling:touch;
+  scroll-snap-type:x proximity;
+  scrollbar-width:none;
+  padding:4px 2px;
+}
+.walk-trail::-webkit-scrollbar{display:none}
 /* Trail steps are tiny glass capsules. Each one tints with its own domain
    color (the domStyle() rule injects --dc on the <a> element). The link
-   character between them is a thin vertical light trace, deliberately faint
+   character between them is a thin horizontal light trace, deliberately faint
    on idle and brighter on hover (the chain "lights up"). */
 .walk-trail-step{
   position:relative;
-  display:flex;flex-direction:column;align-items:center;gap:1px;
+  display:inline-flex;flex-direction:row;align-items:baseline;gap:8px;
   text-decoration:none;color:var(--ink-2);
-  padding:7px 14px;border-radius:14px;
+  padding:6px 12px;border-radius:999px;
   background:var(--glass-thin-bg);
   -webkit-backdrop-filter:var(--glass-thin-blur);
           backdrop-filter:var(--glass-thin-blur);
@@ -479,11 +490,17 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
     inset 0 1px 0 0 var(--glass-edge),
     inset 0 0 0 1px color-mix(in oklab, var(--dc, var(--accent)) 18%, var(--line));
   transition:color .25s, transform .25s var(--ease-stage), box-shadow .25s, background .25s;
-  opacity:.78;
-  max-width:min(560px,92vw);
+  opacity:.85;
+  flex:none;max-width:42ch;
+  scroll-snap-align:start;
 }
-.walk-trail-step .yr{font-size:.62rem;letter-spacing:.06em;color:var(--muted);font-variant-numeric:tabular-nums}
-.walk-trail-step .nm{font-family:var(--serif);font-style:italic;font-size:.95rem;color:var(--ink);text-align:center;line-height:1.25;letter-spacing:0}
+.walk-trail-step .yr{font-size:.62rem;letter-spacing:.06em;color:var(--muted);font-variant-numeric:tabular-nums;flex:none}
+.walk-trail-step .nm{
+  font-family:var(--serif);font-style:italic;font-size:.85rem;color:var(--ink);
+  line-height:1.2;letter-spacing:0;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  max-width:32ch;
+}
 .walk-trail-step:hover{
   opacity:1;transform:translateY(-1px);
   background:color-mix(in oklab, var(--dc, var(--accent)) 12%, var(--glass-thin-bg));
@@ -493,11 +510,10 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
     0 8px 24px -10px color-mix(in oklab, var(--dc, var(--accent)) 50%, transparent);
 }
 .walk-trail-step:hover .nm{color:color-mix(in oklab, var(--dc, var(--accent)) 70%, var(--ink))}
-/* Light trace between steps — replaces the plain ↓ arrow with a luminous
-   thread. Two-tone gradient mimics a fiber-optic strand. */
+/* Light trace between steps — a thin horizontal arrow trace. */
 .walk-trail-link{
-  display:block;width:1px;height:18px;
-  background:linear-gradient(180deg,
+  display:inline-block;flex:none;width:18px;height:1px;
+  background:linear-gradient(90deg,
     transparent 0%,
     color-mix(in oklab, var(--dc, var(--accent)) 60%, transparent) 50%,
     transparent 100%);
@@ -505,13 +521,19 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
   box-shadow:0 0 8px 1px color-mix(in oklab, var(--dc, var(--accent)) 30%, transparent);
 }
 .walk-trail-here{
-  width:5px;height:5px;border-radius:50%;
+  width:5px;height:5px;border-radius:50%;flex:none;
   background:var(--accent);
   box-shadow:0 0 12px 2px color-mix(in oklab, var(--accent) 60%, transparent);
+  align-self:center;
+}
+.walk-trail-empty{
+  font-family:var(--mono);font-size:.68rem;letter-spacing:.06em;
+  color:var(--faint);text-transform:uppercase;
+  padding:6px 2px;
 }
 
-@media (max-width:560px){
-  .walk-trail-step .nm{font-size:.86rem}
+@media (max-width:760px){
+  .walk-trail-step .nm{font-size:.82rem;max-width:24ch}
 }
 .walk-meta .zone-name{color:var(--ink-2)}
 .walk-meta .pos{font-variant-numeric:tabular-nums}
@@ -528,17 +550,22 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
   box-shadow:0 0 8px 1px color-mix(in oklab, var(--dc, var(--accent)) 50%, transparent);
   transition:width .6s var(--ease-stage);
 }
-/* The stage is now a glass slab — content floats inside it, the slab floats
-   over the ambient field. Padding is generous on desktop so the year glyph
-   has room to breathe without the panel feeling cramped, and tightens on
-   smaller viewports so the panel itself does not overflow the screen. */
+/* The stage is a two-column glass slab on desktop — the year + name + chip
+   anchor the LEFT hero column (lit from behind), the prose stack (before /
+   because / detail / actions / links) flows in the RIGHT body column. Both
+   columns share the same glass surface so the slab reads as one panel; a
+   hairline divider between them traces the seam. On narrow viewports the
+   columns collapse to a single stack and the page reverts to vertical
+   scroll for readability. */
 .walk-stage{
   position:relative;
-  display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;
-  max-width:1100px;margin:0 auto;width:100%;
-  padding:clamp(20px, 4vw, 40px) clamp(20px, 4vw, 44px);
+  /* Default (narrow): flex column. Hero and body stack vertically.
+     Promoted to grid in the min-width:920px media query below. */
+  display:flex;flex-direction:column;align-items:stretch;
   gap:clamp(16px, 2.4vw, 24px);
-  min-height:60vh;
+  max-width:1280px;margin:0 auto;width:100%;
+  padding:clamp(20px, 4vw, 32px) clamp(20px, 4vw, 36px);
+  min-height:0;
   border-radius:var(--radius-lg);
   background:var(--glass-bg);
   -webkit-backdrop-filter:var(--glass-blur);
@@ -549,6 +576,50 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
     var(--glass-shadow);
   isolation:isolate;
   overflow:hidden;
+}
+@media (min-width:920px){
+  .walk-stage{
+    display:grid;
+    grid-template-columns:minmax(320px, 1.05fr) minmax(0, 1.3fr);
+    grid-template-areas:"hero body";
+    align-items:start;
+    gap:0 40px;
+    padding:28px 40px 26px;
+  }
+}
+.walk-hero{
+  display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;
+  gap:14px;
+  position:relative;
+  min-width:0;
+}
+@media (min-width:920px){
+  .walk-hero{grid-area:hero}
+  .walk-hero::after{
+    content:"";position:absolute;
+    right:-22px;top:6%;bottom:6%;width:1px;
+    background:linear-gradient(180deg,
+      transparent 0%,
+      color-mix(in oklab, var(--dc, var(--accent)) 28%, var(--line-2)) 18%,
+      color-mix(in oklab, var(--dc, var(--accent)) 28%, var(--line-2)) 82%,
+      transparent 100%);
+    pointer-events:none;
+  }
+}
+.walk-body{
+  display:flex;flex-direction:column;align-items:flex-start;
+  gap:12px;
+  min-width:0;
+}
+/* Keep body children at their natural height — without flex-shrink:0 the
+   flex container squeezes long text out of view rather than letting the
+   body column scroll. */
+.walk-body > *{flex-shrink:0}
+@media (min-width:920px){
+  .walk-body{
+    grid-area:body;
+    min-height:0;
+  }
 }
 /* Backlit bloom — the domain color glows from the top of the slab, so the
    year reads as if a light source is behind it. Strongest near the year. */
@@ -576,7 +647,7 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 :root[data-theme="light"] .walk-stage::after,
 :root:not([data-theme="dark"]) .walk-stage::after{mix-blend-mode:overlay;opacity:.7}
 
-.walk-detail{min-height:5.5em}
+.walk-detail{min-height:0}
 
 /* The year is now a luminous object — an inner-glow gradient stroke + a soft
    text-shadow halo + a slow breathing scale (≤1.5%). Italic Newsreader is
@@ -584,7 +655,7 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 .walk-year{
   position:relative;
   font-family:var(--serif);font-style:italic;font-weight:500;
-  font-size:clamp(3rem,11vw,8rem);line-height:1.05;letter-spacing:-.045em;
+  font-size:clamp(2.4rem,7.5vw,6rem);line-height:1.02;letter-spacing:-.045em;
   color:var(--ink);
   font-feature-settings:'lnum','tnum';
   padding:.06em .16em .04em 0;
@@ -615,13 +686,16 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 }
 .walk-name{
   font-family:var(--serif);font-weight:500;
-  font-size:clamp(1.5rem,3.4vw,2.6rem);line-height:1.1;letter-spacing:-.02em;
-  color:var(--ink);max-width:22ch;
+  font-size:clamp(1.35rem,2.6vw,2.1rem);line-height:1.12;letter-spacing:-.02em;
+  color:var(--ink);max-width:24ch;
   text-wrap:balance;
 }
 .walk-before{
-  font-family:var(--serif);font-style:italic;font-size:clamp(1.05rem,1.6vw,1.3rem);
-  color:var(--ink-2);max-width:46ch;line-height:1.4;
+  font-family:var(--serif);font-style:italic;font-size:clamp(1rem,1.4vw,1.2rem);
+  color:var(--ink-2);line-height:1.4;
+  /* The right column inherently constrains width on desktop. On mobile we
+     keep a friendlier reading line for prose. */
+  max-width:64ch;
 }
 .walk-before .label{font-style:normal;font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);display:block;margin-bottom:6px}
 /* The "this came from" block: explicit chain reasoning. Sits between the
@@ -634,9 +708,10 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
    reader is currently inspecting in the precrime sense. */
 .walk-because{
   position:relative;
-  font-family:var(--serif);font-size:clamp(1rem,1.4vw,1.15rem);
-  color:var(--ink);max-width:62ch;line-height:1.6;text-wrap:pretty;
-  padding:18px 22px 18px 26px;
+  font-family:var(--serif);font-size:clamp(.98rem,1.25vw,1.1rem);
+  color:var(--ink);line-height:1.55;text-wrap:pretty;
+  width:100%;max-width:none;
+  padding:14px 18px 14px 22px;
   border-radius:14px;
   background:var(--glass-thin-bg);
   -webkit-backdrop-filter:var(--glass-thin-blur);
@@ -645,6 +720,9 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
     inset 0 1px 0 0 var(--glass-edge),
     inset 0 0 0 1px var(--line);
   overflow:hidden;
+}
+@media (max-width:919px){
+  .walk-because{max-width:64ch}
 }
 .walk-because::before{
   content:"";position:absolute;left:0;top:14px;bottom:14px;width:2px;
@@ -661,7 +739,10 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
   display:block;margin-bottom:8px;
   text-shadow:0 0 10px color-mix(in oklab, var(--dc, var(--accent)) 30%, transparent);
 }
-.walk-detail{font-family:var(--serif);font-size:1.05rem;color:var(--ink-2);max-width:62ch;line-height:1.55;text-wrap:pretty;hyphens:auto}
+.walk-detail{font-family:var(--serif);font-size:1rem;color:var(--ink-2);width:100%;max-width:none;line-height:1.55;text-wrap:pretty;hyphens:auto}
+@media (max-width:919px){
+  .walk-detail{max-width:64ch}
+}
 /* Editorial seasoning: appears only on a hand-picked subset of foundational
    ticks. One italic sentence saying what the tick feels like in retrospect. */
 .walk-note{
@@ -674,23 +755,55 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 }
 .walk-domain{align-self:flex-start}
 
+/* Downstream flow is a horizontal scroll strip — the only sideways motion
+   on the walk page. The strip itself has a fixed height that doesn't push
+   anything below the fold; cards spill RIGHT on overflow, never DOWN. The
+   header label sits above the strip, the strip snaps to card boundaries on
+   trackpad / wheel. Keyboard users can tab through cards normally. */
 .walk-flow{
-  border-top:1px solid var(--line);padding-top:20px;margin-top:24px;
-  display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px;
-  max-width:1100px;margin-left:auto;margin-right:auto;width:100%;
-  /* Reserved vertical slot keeps layout stable when the next tick has fewer
-     downstream cards (or none) than the current one. */
-  min-height:220px;
+  position:relative;
+  display:flex;flex-direction:column;gap:6px;
+  max-width:1280px;margin:0 auto;width:100%;
+  min-height:0;
 }
 .walk-flow-head{
-  grid-column:1/-1;font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:4px;
+  font-family:var(--mono);font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);
 }
+.walk-flow-strip{
+  display:flex;flex-direction:row;align-items:stretch;gap:10px;
+  overflow-x:auto;overflow-y:hidden;
+  padding:6px 4px 8px;
+  scroll-snap-type:x proximity;
+  scrollbar-width:thin;
+  scrollbar-color:color-mix(in oklab, var(--dc, var(--accent)) 30%, var(--line-2)) transparent;
+  /* Soft fade at right edge signals there's more sideways. Mask switches off
+     when the strip isn't actually overflowing (browsers are pragmatic about
+     this; we accept that the mask shows even when content fits). */
+  -webkit-mask-image:linear-gradient(90deg,
+    black 0, black calc(100% - 24px), transparent 100%);
+          mask-image:linear-gradient(90deg,
+    black 0, black calc(100% - 24px), transparent 100%);
+  /* Touch + trackpad sideways scroll. */
+  -webkit-overflow-scrolling:touch;
+}
+.walk-flow-strip::-webkit-scrollbar{height:6px}
+.walk-flow-strip::-webkit-scrollbar-thumb{
+  background:color-mix(in oklab, var(--dc, var(--accent)) 30%, var(--line-2));
+  border-radius:999px;
+}
+.walk-flow-strip::-webkit-scrollbar-track{background:transparent}
 /* Flow cards — glass tiles, lit from the bottom by the child's domain color.
+   Fixed-width snap targets in the horizontal strip; the card body stays a
+   tight 220px so 4-5 fit in a 1024-wide stage and the rest spill sideways
+   for the user to pan through.
    Hovering pulls the card up + intensifies the bloom + traces the connection
    thread (the ::after gradient line that anchors back to the year). */
 .walk-flow-card{
   position:relative;
-  display:flex;flex-direction:column;gap:8px;padding:14px 16px;
+  flex:none;
+  width:220px;
+  scroll-snap-align:start;
+  display:flex;flex-direction:column;gap:8px;padding:12px 14px;
   border-radius:14px;
   background:var(--glass-thin-bg);
   -webkit-backdrop-filter:var(--glass-thin-blur);
@@ -738,23 +851,29 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 .walk-flow-card .yr{font-family:var(--mono);font-size:.7rem;color:var(--muted);font-variant-numeric:tabular-nums;letter-spacing:.04em}
 .walk-flow-card .nm{font-family:var(--serif);font-weight:500;font-size:1rem;line-height:1.3;color:var(--ink)}
 .walk-flow-empty{
-  grid-column:1/-1;font-family:var(--serif);font-style:italic;color:var(--muted);
-  padding:8px 0;line-height:1.5;
-}
-
-.walk-controls{
-  display:flex;align-items:center;justify-content:space-between;gap:16px;
-  max-width:1100px;margin:18px auto 0;width:100%;padding:16px 22px;
+  font-family:var(--serif);font-style:italic;color:var(--muted);
+  padding:14px 14px;line-height:1.5;
   border-radius:14px;
   background:var(--glass-thin-bg);
   -webkit-backdrop-filter:var(--glass-thin-blur);
           backdrop-filter:var(--glass-thin-blur);
   box-shadow:inset 0 1px 0 0 var(--glass-edge), inset 0 0 0 1px var(--line);
-  font-family:var(--mono);font-size:.78rem;color:var(--muted);
+  align-self:flex-start;
+}
+
+.walk-controls{
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+  max-width:1280px;margin:0 auto;width:100%;padding:10px 20px;
+  border-radius:14px;
+  background:var(--glass-thin-bg);
+  -webkit-backdrop-filter:var(--glass-thin-blur);
+          backdrop-filter:var(--glass-thin-blur);
+  box-shadow:inset 0 1px 0 0 var(--glass-edge), inset 0 0 0 1px var(--line);
+  font-family:var(--mono);font-size:.76rem;color:var(--muted);
 }
 .walk-controls button{
-  padding:9px 16px;border-radius:999px;
-  font-family:var(--mono);font-size:.78rem;color:var(--ink);
+  padding:7px 14px;border-radius:999px;
+  font-family:var(--mono);font-size:.76rem;color:var(--ink);
   background:var(--glass-thin-bg);
   -webkit-backdrop-filter:var(--glass-thin-blur);
           backdrop-filter:var(--glass-thin-blur);
@@ -1849,10 +1968,12 @@ main:focus,main:focus-visible{outline:none}
   .walk-keys{display:none}
 }
 
-/* Mobile-stack walk-flow at narrow */
+/* Mobile: keep horizontal scroll strip but cards a bit larger for touch.
+   Below 1024px the .walk grid releases its viewport-height clamp (handled
+   below) so the page can vertical-scroll like before — the walk-flow strip
+   itself stays horizontal because that's the JTBD that survived. */
 @media (max-width:520px){
-  .walk-flow{grid-template-columns:1fr}
-  .walk-flow-card{min-height:64px;padding:14px 16px}
+  .walk-flow-card{min-height:64px;padding:14px 16px;width:200px}
 }
 
 /* Suggest-an-edit link: bigger touch target */

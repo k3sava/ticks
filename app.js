@@ -651,44 +651,49 @@ function renderWalk(){
             <span class='yr'>${escapeHtml(a.year)}</span>
             <span class='nm'>${escapeHtml(a.name)}</span>
           </a>`).join('<span class="walk-trail-link" aria-hidden="true"></span>')}
-        <span class='walk-trail-link walk-trail-here' aria-hidden="true"></span>
-      </nav>` : ''}</div>
+        <span class='walk-trail-link' aria-hidden="true"></span>
+        <span class='walk-trail-here' aria-hidden="true"></span>
+      </nav>` : `<span class='walk-trail-empty'>a starting tick · nothing recorded before</span>`}</div>
       <div class='walk-stage'>
-        <div class='dom walk-domain' style='${domStyle(t.domain)}'>${obTetraHtml()}${t.domain}</div>
-        <div class='walk-year-host'>
-          ${obRingsHtml({size: 80, spin: 'cw'})}
-          <div class='walk-year'>${escapeHtml(t.year)}</div>
+        <div class='walk-hero'>
+          <div class='dom walk-domain' style='${domStyle(t.domain)}'>${obTetraHtml()}${t.domain}</div>
+          <div class='walk-year-host'>
+            ${obRingsHtml({size: 80, spin: 'cw'})}
+            <div class='walk-year'>${escapeHtml(t.year)}</div>
+          </div>
+          <div class='walk-name'>${escapeHtml(t.name)}</div>
         </div>
-        <div class='walk-name'>${escapeHtml(t.name)}</div>
-        <div class='walk-before'>
-          <span class='label'>before this</span>
-          ${escapeHtml(cleanConstraint(t.constraint).toLowerCase())}.
-        </div>
-        ${t.because ? `<div class='walk-because' aria-label='What this came from'><span class='label'>this came from</span>${escapeHtml(t.because)}</div>` : ''}
-        ${EDITORIAL_NOTES[t.id] ? `<aside class='walk-note' aria-label='Editorial note'>${escapeHtml(EDITORIAL_NOTES[t.id])}</aside>` : ''}
-        ${t.detail ? `<div class='walk-detail'>${escapeHtml(t.detail)}</div>` : ''}
-        ${t.links?.length ? `<div class='walk-links'>${t.links.map(l => `<a href='${escapeHtml(l.url)}' target='_blank' rel='noopener'>→ ${escapeHtml(l.label)}</a>`).join('')}</div>` : ''}
-        <div class='walk-actions'>
-          <button class='walk-action' data-act='share' aria-label='Share this tick'>
-            <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M11 5.5a2 2 0 1 0-2-2 2 2 0 0 0 2 2Zm-6 5a2 2 0 1 0-2-2 2 2 0 0 0 2 2Zm6 4a2 2 0 1 0-2-2 2 2 0 0 0 2 2Zm-1.5-9-3 2.4M9.5 13l-3-2.4"/></svg>
-            share
-          </button>
-          <a class='walk-action' href='#/play/${reelForDomain(t.domain)}' aria-label='Play a 60-second reel of this thread'>
-            <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 2.5v11l10-5.5z" stroke-linejoin="round"/></svg>
-            play this thread (60s)
-          </a>
-          <a class='walk-action' href='https://github.com/k3sava/ticks/issues/new?title=${encodeURIComponent('Edit: ' + t.name)}&body=${encodeURIComponent('Tick: ' + t.id + '\\n\\nWhat needs fixing:\\n\\nSource:')}' target='_blank' rel='noopener'>↗ suggest an edit</a>
+        <div class='walk-body'>
+          <div class='walk-before'>
+            <span class='label'>before this</span>
+            ${escapeHtml(cleanConstraint(t.constraint).toLowerCase())}.
+          </div>
+          ${t.because ? `<div class='walk-because' aria-label='What this came from'><span class='label'>this came from</span>${escapeHtml(t.because)}</div>` : ''}
+          ${EDITORIAL_NOTES[t.id] ? `<aside class='walk-note' aria-label='Editorial note'>${escapeHtml(EDITORIAL_NOTES[t.id])}</aside>` : ''}
+          ${t.detail ? `<div class='walk-detail'>${escapeHtml(t.detail)}</div>` : ''}
+          ${t.links?.length ? `<div class='walk-links'>${t.links.map(l => `<a href='${escapeHtml(l.url)}' target='_blank' rel='noopener'>→ ${escapeHtml(l.label)}</a>`).join('')}</div>` : ''}
+          <div class='walk-actions'>
+            <button class='walk-action' data-act='share' aria-label='Share this tick'>
+              <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M11 5.5a2 2 0 1 0-2-2 2 2 0 0 0 2 2Zm-6 5a2 2 0 1 0-2-2 2 2 0 0 0 2 2Zm6 4a2 2 0 1 0-2-2 2 2 0 0 0 2 2Zm-1.5-9-3 2.4M9.5 13l-3-2.4"/></svg>
+              share
+            </button>
+            <a class='walk-action' href='#/play/${reelForDomain(t.domain)}' aria-label='Play a 60-second reel of this thread'>
+              <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 2.5v11l10-5.5z" stroke-linejoin="round"/></svg>
+              play this thread (60s)
+            </a>
+            <a class='walk-action' href='https://github.com/k3sava/ticks/issues/new?title=${encodeURIComponent('Edit: ' + t.name)}&body=${encodeURIComponent('Tick: ' + t.id + '\\n\\nWhat needs fixing:\\n\\nSource:')}' target='_blank' rel='noopener'>↗ suggest an edit</a>
+          </div>
         </div>
       </div>
 
       <div class='walk-flow'>
         <div class='walk-flow-head'>${flow.length ? `everything that flowed from this (${flow.length}${flowDepth2 ? `, ${flowDepth2.toLocaleString()} more two steps out` : ''})` : 'no recorded downstream. a quiet tick.'}</div>
-        ${flow.length ? flow.map(f => `
-          <a class='walk-flow-card' href='#/walk/${f.id}' style='${domStyle(f.domain)}' data-hover-pulse data-track-focus>
+        ${flow.length ? `<div class='walk-flow-strip' role='list'>${flow.map(f => `
+          <a class='walk-flow-card' role='listitem' href='#/walk/${f.id}' style='${domStyle(f.domain)}' data-hover-pulse data-track-focus>
             ${obBracketsHtml()}
             <span class='yr'>${escapeHtml(f.year)}</span>
             <span class='nm'>${escapeHtml(f.name)}</span>
-          </a>`).join('') : '<div class="walk-flow-empty">A frontier tick. What flows from this hasn\'t been written yet. Press → to keep walking.</div>'}
+          </a>`).join('')}</div>` : '<div class="walk-flow-empty">A frontier tick. What flows from this hasn\'t been written yet. Press → to keep walking.</div>'}
       </div>
 
       <div class='walk-controls'>
@@ -707,17 +712,23 @@ function renderWalk(){
   // Share button: opens the share menu anchored under the trigger.
   const shareBtn = app.querySelector('[data-act="share"]');
   if (shareBtn) shareBtn.onclick = (e) => { e.stopPropagation(); shareTick(t, shareBtn); };
-  // Touch swipe (left/right) on the walk stage
+  // Touch swipe (left/right) on the walk stage. Skips when the swipe begins
+  // inside a horizontally-scrollable strip (the trail or the flow carousel)
+  // so dragging cards sideways doesn't accidentally navigate to a sibling
+  // tick.
   const stage = document.querySelector('.walk');
   if (stage){
-    let sx = 0, sy = 0, swiping = false;
+    let sx = 0, sy = 0, swiping = false, intercept = false;
     stage.addEventListener('touchstart', (e) => {
       if (e.touches.length !== 1) return;
       sx = e.touches[0].clientX; sy = e.touches[0].clientY; swiping = true;
+      // Don't navigate if the user grabbed an inner horizontal scroller.
+      intercept = !!e.target.closest('.walk-flow-strip,.walk-trail');
     }, { passive: true });
     stage.addEventListener('touchend', (e) => {
       if (!swiping) return;
       swiping = false;
+      if (intercept) { intercept = false; return; }
       const t = e.changedTouches[0];
       const dx = t.clientX - sx, dy = t.clientY - sy;
       // Horizontal swipe > 60px and clearly horizontal (not a scroll)
@@ -726,6 +737,36 @@ function renderWalk(){
         else        walkStep(-1);
       }
     }, { passive: true });
+  }
+  // Wheel converter on the flow strip: turn vertical mouse-wheel into
+  // horizontal scroll so a non-trackpad user can pan through cards
+  // without grabbing the scrollbar. Trackpad horizontal gestures already
+  // work natively.
+  const strip = document.querySelector('.walk-flow-strip');
+  if (strip){
+    strip.addEventListener('wheel', (e) => {
+      if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) return;
+      e.preventDefault();
+      strip.scrollLeft += e.deltaY;
+    }, { passive: false });
+  }
+  // Toggle body overflow mask only when the column actually scrolls (cleaner
+  // visuals on short-content ticks — no phantom fade at the bottom).
+  const body = document.querySelector('.walk-body');
+  if (body){
+    const updateOverflow = () => {
+      const overflowing = body.scrollHeight - body.clientHeight > 4;
+      body.classList.toggle('is-overflowing', overflowing);
+    };
+    updateOverflow();
+    requestAnimationFrame(updateOverflow);
+    if (!window._walkBodyResize){
+      window._walkBodyResize = true;
+      window.addEventListener('resize', () => {
+        const b = document.querySelector('.walk-body');
+        if (b) b.classList.toggle('is-overflowing', b.scrollHeight - b.clientHeight > 4);
+      });
+    }
   }
 
   // Tick-to-tick slide animation.
