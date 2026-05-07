@@ -355,6 +355,81 @@ const BECAUSE_BATCH = {
 
   'james-lange-theory-of-emotion':
     "Common sense had treated emotion as a mental state that caused bodily reactions — we shake because we're afraid. James (1884) and Carl Lange (1885) independently inverted the order: emotion is the perception of bodily change. We're afraid because we shake. The peripheral theory dominated emotion research for forty years before Cannon-Bard challenged it. Modern affective neuroscience treats both as partial — body and brain feed back on each other in a continuous loop.",
+
+  'k-bler-ross-stages-of-grief':
+    "Modern medicine had been treating dying patients as cases to be hidden from. Kübler-Ross's On Death and Dying (1969) interviewed terminally ill patients and proposed five stages: denial, anger, bargaining, depression, acceptance. Clinically the model is too neat — grief is rarely linear, the stages overlap, some never reach acceptance. Culturally it gave patients and families a vocabulary they hadn't had. Hospice care and bereavement counseling both took the framework as starting point.",
+
+  'positive-psychology-wellbeing-as-science':
+    "Psychology since Freud had focused on pathology — anxiety, depression, dysfunction. Seligman's APA presidential address (1998) argued the field had ignored what makes life worth living: strengths, virtues, flow, meaning. Positive psychology grew from a niche into a movement with empirical methods. The PERMA model (Positive emotion, Engagement, Relationships, Meaning, Accomplishment) and well-being measurement entered psychology, education, and workplace research. Critics call it underspecified; the move from pathology-only is permanent.",
+
+  'american-revolution-republican-government-at-scale':
+    "Montesquieu (1748) had argued that republican government required civic virtue and could only sustain in small city-states; large polities needed monarchy. The American Revolution and the 1787 Constitution tested the reverse: representation, federalism, and a written constitution could scale republican government across a continent. Madison's Federalist No. 10 reframed the bug as a feature — large republics dilute factional concentration. The model was exported, modified, and naturalized worldwide.",
+
+  'declaration-of-the-rights-of-man':
+    "The American Declaration of Independence (1776) had asserted natural rights as a colonial protest. The French National Assembly's Declaration of the Rights of Man (August 26, 1789) made it a constitutional principle without a war: liberty, property, security, resistance to oppression, freedoms of speech and religion, equality before the law. Rights derived from natural law, not from the king's grant. Every subsequent rights catalogue in liberal-democratic constitutions echoes this text.",
+
+  'the-revolutions-of-1848-nationalism-and-liberalism':
+    "The Congress of Vienna (1815) had restored European monarchies after Napoleon. Industrialization, the Hungry Forties' famines, and rapid urban growth had built pressure for thirty-three years. Simultaneous risings across France, the German states, the Austrian Empire, and Italy in 1848 demonstrated that nationalist and liberal demands had become mass forces. Most failed within a year. But the issues — universal manhood suffrage, national unification, constitutional rule — remained on the agenda, and most were granted by 1871.",
+
+  'nuremberg-charter-crimes-against-humanity':
+    "International law had treated war crimes as offenses against the laws and customs of war between states. The Holocaust required a category that didn't yet exist: crimes against humanity, atrocities so severe they were criminal regardless of whether domestic law permitted them. The Nuremberg Charter (August 1945) defined the category, established individual criminal responsibility, and rejected 'following orders' as a defense. The legal substrate for every war-crimes prosecution since.",
+
+  '19th-amendment-womens-suffrage-us':
+    "The Seneca Falls Convention (1848) had launched organized US suffrage advocacy. Seventy-two years of lobbying, marches, hunger strikes, and a state-by-state campaign produced the 19th Amendment (ratified August 18, 1920). Combined with similar movements in the UK (1918, 1928) and across Europe, women's suffrage doubled the voting population of democracies. The political demand cycle and the legislative agenda rebalanced — child welfare, education, public health became campaign issues.",
+
+  'prague-spring-limits-of-soviet-reform':
+    "Khrushchev's de-Stalinization (1956) and Kádár's Hungarian compromise had suggested communism could liberalize within the Bloc. Dubček's Action Programme (April 1968) — 'socialism with a human face' — pushed press freedom, parliamentary democracy, market reforms, and federalization within Czechoslovakia. Soviet tanks rolled in on August 21, 1968. The Brezhnev Doctrine declared the USSR would intervene against any reform threatening communist rule. Reform from within the Bloc was now closed.",
+
+  'tiananmen-square-limits-of-chinese-liberalization':
+    "Deng Xiaoping's economic reforms (1978 onward) had grown the Chinese economy at 10% a year. Western and Chinese intellectuals assumed political liberalization would follow. The student protests in Tiananmen Square (April-June 1989) tested the assumption. The People's Liberation Army's June 4 crackdown ended it. The 'China model' — authoritarian capitalism with Leninist political control — became the durable alternative to liberal democracy. Three decades of GDP growth without political opening followed.",
+
+  'opec-founded-resource-nationalism':
+    "The 'Seven Sisters' international oil companies had set crude prices unilaterally for fifty years. Venezuela, Iran, Iraq, Kuwait, and Saudi Arabia founded OPEC in Baghdad (September 1960) to coordinate pricing and protect national revenues. The 1973 Yom Kippur embargo — quadrupled oil prices, gas-station lines in Western cities — demonstrated the cartel's power and the developed world's dependency. Energy security became a permanent foreign-policy category.",
+
+  'pfizer-biontech-mrna-vaccine-programmable-immunization':
+    "mRNA vaccine research had been refining lipid-nanoparticle delivery and codon optimization since the 2000s. The COVID-19 outbreak in early 2020 collapsed the development timeline: BioNTech designed the BNT162b2 candidate from the published viral sequence within days; trials enrolled at unprecedented scale; emergency use authorization came eleven months later. The platform is programmable — change the mRNA sequence, change the vaccine. Flu, RSV, and cancer vaccines now have mRNA pipelines.",
+
+  'claude-3-opus-sonnet-frontier-intelligence-accessible-via-api':
+    "GPT-4 (March 2023) had set the ceiling for frontier capability at API-tier pricing accessible only via OpenAI. Anthropic's Claude 3 family (March 2024) — Opus, Sonnet, and Haiku — matched or exceeded GPT-4 on most benchmarks while opening pricing tiers an order of magnitude lower for the smaller models. Multiple frontier labs at simultaneous parity made AI capability a genuinely competitive market for the first time.",
+
+  'llama-3-1-405b-open-source-matches-closed-frontier':
+    "Llama 2 (July 2023) had been credibly competitive with GPT-3.5 but a generation behind GPT-4. Llama 3.1 405B (July 2024) closed the gap: open weights, runnable on a workstation cluster, competitive with GPT-4 and Claude 3 Opus on standard benchmarks. The first open-weight model at the frontier, not behind it. Mistral, Falcon, and Qwen followed. The closed-vs-open axis became the durable AI policy debate.",
+
+  'gps-foc-1995':
+    "Marine chronometers (1761) had solved longitude on water. Aviation navigation by radio beacons (1930s onward) had accumulated workarounds for low precision. The 24-satellite GPS constellation reached Full Operational Capability on April 27, 1995, providing meter-level civilian positioning worldwide. Selective Availability degradation was turned off in May 2000. Precision agriculture, smartphone navigation, ride-sharing, and autonomous vehicles all assume GPS as a free utility.",
+
+  'ebbinghaus-forgetting-curve':
+    "Helmholtz had measured nerve-conduction speed (1850) and reaction time (1860). Higher mental processes — memory, learning — had been treated as inaccessible to experiment. Ebbinghaus learned and re-learned lists of nonsense syllables on himself (1879-1885) and produced quantitative laws: the forgetting curve, spaced repetition's superiority, the savings method. The first quantitative laws of memory. Anki, Quizlet, and every modern study tool descend from his nonsense syllables.",
+
+  'pavlov-classical-conditioning':
+    "Late nineteenth-century psychology had been introspective. Pavlov, studying dog digestion, noticed that the dogs salivated before the food arrived — at the sound of the bell, the lab assistant's footsteps. He pivoted: a measurable physiological learning process, paired stimuli producing conditioned reflexes. His 1903 Madrid Congress address founded behaviorism's experimental program. Watson and Skinner ran with the framework for fifty years.",
+
+  'bartlett-schema-reconstructive-memory':
+    "Ebbinghaus's nonsense syllables had stripped memory of meaning. Bartlett's Remembering (1932) put it back: he asked English subjects to read a Native American folk tale ('The War of the Ghosts') and retell it days, weeks, months later. The retellings progressively schematized the story toward English narrative conventions. Memory wasn't replay; it was reconstruction shaped by cultural schemas. Cognitive psychology's constructive view of memory took thirty years to catch up to Bartlett.",
+
+  'hm-hippocampus-memory-case':
+    "Lashley's mass-action experiments (1929) had argued that memory wasn't localized in the brain. Patient H.M. (Henry Molaison) had bilateral medial temporal lobectomy in 1953 to control epilepsy. The surgery removed his hippocampi. He could no longer form new episodic memories — but he could learn motor skills. Brenda Milner's documentation (from 1957) demonstrated that distinct memory systems map to distinct brain structures. The hippocampus's role in episodic memory was now experimentally fixed.",
+
+  'sperling-iconic-memory':
+    "Working memory had been measured at 7±2 items (Miller, 1956). Whether a larger sensory buffer preceded it was an open question. Sperling's 1960 partial-report procedure flashed a 12-letter array for 50 milliseconds, then cued the subject to report only one row. Subjects could report any cued row almost completely — but only if cued within ~250 ms. A high-capacity, fast-decaying visual store existed. Iconic memory entered the textbook before it had a name.",
+
+  'carnot-heat-engine-cycle':
+    "Watt's steam engine (1769) had been improved empirically for fifty years without theoretical understanding of efficiency limits. Carnot's Reflexions sur la puissance motrice du feu (1824) defined the ideal reversible heat-engine cycle and proved that engine efficiency depends only on the temperatures of the hot and cold reservoirs — not the working fluid, not the engineering. The first foundation of thermodynamics. The Second Law was now an engineering constraint.",
+
+  'zoroastrianism-achaemenid-state-religion':
+    "Zoroaster's teaching had spread regionally in eastern Iran for centuries before any state adopted it. Cyrus the Great's founding of the Achaemenid Empire (550 BC) gave Zoroastrianism the institutional infrastructure of the largest empire the ancient world had yet seen — Persian satraps, royal patronage, fire temples from Anatolia to the Indus. The first ethical-monotheism state religion at imperial scale. Judaism (post-Babylonian-exile), Christianity, and Islam all show Zoroastrian fingerprints.",
+
+  'fire-stick-farming-2':
+    "Australian Aboriginal peoples by ~50,000 BC were systematically using fire to manage landscape — burning to open dense brush, regenerate fresh grass, drive game, and reduce fuel loads. The first recorded large-scale ecological engineering by humans, predating agriculture by 40,000 years. The continent's grassland-and-eucalypt vegetation pattern was partly a product of this management. Bill Gammage's The Biggest Estate on Earth (2011) reframed Australian colonial history around it.",
+
+  'grinding-slab':
+    "Wild grains existed across the savanna and steppe but were too hard to eat whole. Grinding slabs (mortars and quern-stones) appeared by ~23,000 BC in the Levant and Australia — coarse stone surfaces against which seeds could be crushed for human and weaning-infant food. Pre-agricultural processing technology. Without it, the broad-spectrum revolution and the eventual transition to grain agriculture would have been chemically impossible.",
+
+  'roman-grain-drying-ovens':
+    "Mediterranean grain harvest assumed sun. Northern provinces — Britain, Gaul — had wetter climates that rotted standing or stored crops. Roman provincial farms (1st-3rd century AD) developed kiln-style ovens with raised drying floors above flue heat to artificially dry grain after harvest. Storage extended through wet seasons; provincial agriculture became viable at scale. Britain in particular shifted from food-import to grain-export under the model.",
+
+  'corn-sheller':
+    "Removing kernels from corn cobs had been entirely manual since maize's domestication — slow, hard on the hands, the bottleneck after harvest. Lester Denison's hand-cranked corn sheller (patented 1839) pulled cobs through metal-toothed cylinders that stripped the kernels in seconds. By 1860, factory-made shellers in farms from Iowa to Argentina; by 1900, steam-powered versions threshed entire wagonloads. The bottleneck moved from harvest-and-shelling to logistics.",
 };
 
 async function main(){
