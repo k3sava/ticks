@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemap.org/schemas/0.9/siteindex.xsd">
-  <url><loc>https://k3sava.github.io/ticks/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://k3sava.github.io/ticks/#/walk</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://k3sava.github.io/ticks/#/map</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://k3sava.github.io/ticks/#/hunt</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://k3sava.github.io/ticks/#/browse</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://k3sava.github.io/ticks/#/about</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://ticks.iamkesava.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://ticks.iamkesava.com/#/walk</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://ticks.iamkesava.com/#/map</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://ticks.iamkesava.com/#/hunt</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://ticks.iamkesava.com/#/browse</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://ticks.iamkesava.com/#/about</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
 </urlset>

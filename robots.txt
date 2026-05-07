@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://k3sava.github.io/ticks/sitemap.xml
+Sitemap: https://ticks.iamkesava.com/sitemap.xml

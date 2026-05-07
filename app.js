@@ -203,8 +203,8 @@ function home(){
         <div class='home-cta-buttons'>
           <a href='#/walk'>start walking →</a>
           <a class='secondary' href='#/map'>see all ${TICKS.length.toLocaleString()}</a>
-          <a class='secondary' href='#/hunt'>walk backward from a thing you know</a>
-          <a class='secondary' href='#/play'>play the chain (60s)</a>
+          <a class='secondary' href='#/hunt'>walk backward</a>
+          <a class='secondary' href='#/play'>play (60s)</a>
         </div>
         <div class='home-counter'>
           <span><strong>${ancientSpan.toLocaleString()}</strong> years for the first 10</span>
@@ -1100,7 +1100,7 @@ function about(){
       <p>A full audit pass, verifying each tick against primary sources and tightening the chain, is the next project. In the meantime, <a href='https://github.com/k3sava/ticks/issues/new' target='_blank' rel='noopener' style='color:var(--accent);border-bottom:1px solid var(--accent)'>open an issue</a> to flag corrections, or send a PR. Every tick has 2–3 source links you can verify.</p>
       <h2>How to cite</h2>
       <p>If you write about a tick, please link to it. The corpus is open and the chain is the value; a citation that points back lets someone walk it themselves.</p>
-      <pre class='cite'><code id='citeText'>Mandiga, Kesava. "Ticks · ${escapeHtml(TICKS.length.toLocaleString())} moments." https://k3sava.github.io/ticks/.</code></pre>
+      <pre class='cite'><code id='citeText'>Mandiga, Kesava. "Ticks · ${escapeHtml(TICKS.length.toLocaleString())} moments." https://ticks.iamkesava.com/.</code></pre>
       <button class='cite-copy' id='citeCopy' type='button'>copy citation</button>
       <h2>For machines</h2>
       <p>Three machine-readable surfaces, in increasing density:</p>
@@ -1233,7 +1233,7 @@ function injectArticleSchema(base, arg){
     'url': url,
     'mainEntityOfPage': url,
     'inLanguage': 'en',
-    'isPartOf': { '@id': 'https://k3sava.github.io/ticks/#dataset' },
+    'isPartOf': { '@id': 'https://ticks.iamkesava.com/#dataset' },
     'author': { '@type': 'Person', 'name': 'Kesava Mandiga', 'url': 'https://github.com/k3sava' },
     'publisher': { '@type': 'Person', 'name': 'Kesava Mandiga' },
     'license': 'https://opensource.org/licenses/MIT',

@@ -40,7 +40,7 @@ Authored and curated by Kesava Mandiga (https://github.com/k3sava). MIT licensed
 
 ## How to cite
 
-Mandiga, Kesava. "Ticks · {tick name} ({year})." https://k3sava.github.io/ticks/#/walk/{id}.
+Mandiga, Kesava. "Ticks · {tick name} ({year})." https://ticks.iamkesava.com/#/walk/{id}.
 
 ## Provenance and corrections
 

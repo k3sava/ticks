@@ -1,7 +1,7 @@
 {
   "name": "Ticks · featured 200",
   "description": "The 200 most-connected moments. Each one stitches together more of the chain than any single thread suggests.",
-  "homepage": "https://k3sava.github.io/ticks/",
+  "homepage": "https://ticks.iamkesava.com/",
   "license": "https://opensource.org/licenses/MIT",
   "ranking": "parents + children desc, then children desc, then yearN asc",
   "count": 200,
@@ -17,7 +17,7 @@
       "parents": 24,
       "children": 5,
       "connectedness": 34,
-      "url": "https://k3sava.github.io/ticks/#/walk/difference-engine-babbage-concept"
+      "url": "https://ticks.iamkesava.com/#/walk/difference-engine-babbage-concept"
     },
     {
       "id": "unicode-standard-universal-character-encoding",
@@ -30,7 +30,7 @@
       "parents": 18,
       "children": 7,
       "connectedness": 32,
-      "url": "https://k3sava.github.io/ticks/#/walk/unicode-standard-universal-character-encoding"
+      "url": "https://ticks.iamkesava.com/#/walk/unicode-standard-universal-character-encoding"
     },
     {
       "id": "spontaneous-generation-disproven-redi",
@@ -43,7 +43,7 @@
       "parents": 20,
       "children": 6,
       "connectedness": 32,
-      "url": "https://k3sava.github.io/ticks/#/walk/spontaneous-generation-disproven-redi"
+      "url": "https://ticks.iamkesava.com/#/walk/spontaneous-generation-disproven-redi"
     },
     {
       "id": "descartes-method-of-doubt",
@@ -56,7 +56,7 @@
       "parents": 24,
       "children": 4,
       "connectedness": 32,
-      "url": "https://k3sava.github.io/ticks/#/walk/descartes-method-of-doubt"
+      "url": "https://ticks.iamkesava.com/#/walk/descartes-method-of-doubt"
     },
     {
       "id": "turings-universal-machine",
@@ -69,7 +69,7 @@
       "parents": 27,
       "children": 1,
       "connectedness": 29,
-      "url": "https://k3sava.github.io/ticks/#/walk/turings-universal-machine"
+      "url": "https://ticks.iamkesava.com/#/walk/turings-universal-machine"
     },
     {
       "id": "roman-citizenship-universal-civic-identity",
@@ -82,7 +82,7 @@
       "parents": 16,
       "children": 6,
       "connectedness": 28,
-      "url": "https://k3sava.github.io/ticks/#/walk/roman-citizenship-universal-civic-identity"
+      "url": "https://ticks.iamkesava.com/#/walk/roman-citizenship-universal-civic-identity"
     },
     {
       "id": "king-james-bible-english-language-theology",
@@ -95,7 +95,7 @@
       "parents": 16,
       "children": 6,
       "connectedness": 28,
-      "url": "https://k3sava.github.io/ticks/#/walk/king-james-bible-english-language-theology"
+      "url": "https://ticks.iamkesava.com/#/walk/king-james-bible-english-language-theology"
     },
     {
       "id": "petition-of-right-habeas-corpus-strengthened",
@@ -108,7 +108,7 @@
       "parents": 18,
       "children": 4,
       "connectedness": 26,
-      "url": "https://k3sava.github.io/ticks/#/walk/petition-of-right-habeas-corpus-strengthened"
+      "url": "https://ticks.iamkesava.com/#/walk/petition-of-right-habeas-corpus-strengthened"
     },
     {
       "id": "leakeys-olduvai-gorge-discoveries-human-origins-in-africa",
@@ -121,7 +121,7 @@
       "parents": 9,
       "children": 8,
       "connectedness": 25,
-      "url": "https://k3sava.github.io/ticks/#/walk/leakeys-olduvai-gorge-discoveries-human-origins-in-africa"
+      "url": "https://ticks.iamkesava.com/#/walk/leakeys-olduvai-gorge-discoveries-human-origins-in-africa"
     },
     {
       "id": "emancipation-proclamation",
@@ -134,7 +134,7 @@
       "parents": 11,
       "children": 7,
       "connectedness": 25,
-      "url": "https://k3sava.github.io/ticks/#/walk/emancipation-proclamation"
+      "url": "https://ticks.iamkesava.com/#/walk/emancipation-proclamation"
     },
     {
       "id": "twitter-microblogging-and-public-real-time-discourse",
@@ -147,7 +147,7 @@
       "parents": 10,
       "children": 7,
       "connectedness": 24,
-      "url": "https://k3sava.github.io/ticks/#/walk/twitter-microblogging-and-public-real-time-discourse"
+      "url": "https://ticks.iamkesava.com/#/walk/twitter-microblogging-and-public-real-time-discourse"
     },
     {
       "id": "luthers-95-theses-reformation",
@@ -160,7 +160,7 @@
       "parents": 12,
       "children": 6,
       "connectedness": 24,
-      "url": "https://k3sava.github.io/ticks/#/walk/luthers-95-theses-reformation"
+      "url": "https://ticks.iamkesava.com/#/walk/luthers-95-theses-reformation"
     },
     {
       "id": "blitzkrieg-doctrine-poland-france",
@@ -173,7 +173,7 @@
       "parents": 16,
       "children": 4,
       "connectedness": 24,
-      "url": "https://k3sava.github.io/ticks/#/walk/blitzkrieg-doctrine-poland-france"
+      "url": "https://ticks.iamkesava.com/#/walk/blitzkrieg-doctrine-poland-france"
     },
     {
       "id": "alphafold-2-protein-structure-prediction",
@@ -186,7 +186,7 @@
       "parents": 11,
       "children": 6,
       "connectedness": 23,
-      "url": "https://k3sava.github.io/ticks/#/walk/alphafold-2-protein-structure-prediction"
+      "url": "https://ticks.iamkesava.com/#/walk/alphafold-2-protein-structure-prediction"
     },
     {
       "id": "ico-boom-cryptocurrency-fundraising",
@@ -199,7 +199,7 @@
       "parents": 15,
       "children": 4,
       "connectedness": 23,
-      "url": "https://k3sava.github.io/ticks/#/walk/ico-boom-cryptocurrency-fundraising"
+      "url": "https://ticks.iamkesava.com/#/walk/ico-boom-cryptocurrency-fundraising"
     },
     {
       "id": "champollion-deciphers-hieroglyphics-rosetta-stone",
@@ -212,7 +212,7 @@
       "parents": 4,
       "children": 9,
       "connectedness": 22,
-      "url": "https://k3sava.github.io/ticks/#/walk/champollion-deciphers-hieroglyphics-rosetta-stone"
+      "url": "https://ticks.iamkesava.com/#/walk/champollion-deciphers-hieroglyphics-rosetta-stone"
     },
     {
       "id": "kidney-dialysis-machine-kolff-artificial-organ",
@@ -225,7 +225,7 @@
       "parents": 8,
       "children": 7,
       "connectedness": 22,
-      "url": "https://k3sava.github.io/ticks/#/walk/kidney-dialysis-machine-kolff-artificial-organ"
+      "url": "https://ticks.iamkesava.com/#/walk/kidney-dialysis-machine-kolff-artificial-organ"
     },
     {
       "id": "drone-warfare-remotely-piloted-combat",
@@ -238,7 +238,7 @@
       "parents": 10,
       "children": 6,
       "connectedness": 22,
-      "url": "https://k3sava.github.io/ticks/#/walk/drone-warfare-remotely-piloted-combat"
+      "url": "https://ticks.iamkesava.com/#/walk/drone-warfare-remotely-piloted-combat"
     },
     {
       "id": "recombinant-dna-enables-genetically-modified-crops",
@@ -251,7 +251,7 @@
       "parents": 14,
       "children": 4,
       "connectedness": 22,
-      "url": "https://k3sava.github.io/ticks/#/walk/recombinant-dna-enables-genetically-modified-crops"
+      "url": "https://ticks.iamkesava.com/#/walk/recombinant-dna-enables-genetically-modified-crops"
     },
     {
       "id": "epic-of-gilgamesh-first-narrative-literature",
@@ -264,7 +264,7 @@
       "parents": 7,
       "children": 7,
       "connectedness": 21,
-      "url": "https://k3sava.github.io/ticks/#/walk/epic-of-gilgamesh-first-narrative-literature"
+      "url": "https://ticks.iamkesava.com/#/walk/epic-of-gilgamesh-first-narrative-literature"
     },
     {
       "id": "chromosomes-as-carriers-of-genes-morgan",
@@ -277,7 +277,7 @@
       "parents": 7,
       "children": 7,
       "connectedness": 21,
-      "url": "https://k3sava.github.io/ticks/#/walk/chromosomes-as-carriers-of-genes-morgan"
+      "url": "https://ticks.iamkesava.com/#/walk/chromosomes-as-carriers-of-genes-morgan"
     },
     {
       "id": "youtube-video-democratized",
@@ -290,7 +290,7 @@
       "parents": 7,
       "children": 7,
       "connectedness": 21,
-      "url": "https://k3sava.github.io/ticks/#/walk/youtube-video-democratized"
+      "url": "https://ticks.iamkesava.com/#/walk/youtube-video-democratized"
     },
     {
       "id": "mutation-via-x-rays-muller",
@@ -303,7 +303,7 @@
       "parents": 9,
       "children": 6,
       "connectedness": 21,
-      "url": "https://k3sava.github.io/ticks/#/walk/mutation-via-x-rays-muller"
+      "url": "https://ticks.iamkesava.com/#/walk/mutation-via-x-rays-muller"
     },
     {
       "id": "dot-com-bubble-and-crash-irrational-exuberance",
@@ -316,7 +316,7 @@
       "parents": 9,
       "children": 6,
       "connectedness": 21,
-      "url": "https://k3sava.github.io/ticks/#/walk/dot-com-bubble-and-crash-irrational-exuberance"
+      "url": "https://ticks.iamkesava.com/#/walk/dot-com-bubble-and-crash-irrational-exuberance"
     },
     {
       "id": "gpt-3-175b-parameters",
@@ -329,7 +329,7 @@
       "parents": 9,
       "children": 6,
       "connectedness": 21,
-      "url": "https://k3sava.github.io/ticks/#/walk/gpt-3-175b-parameters"
+      "url": "https://ticks.iamkesava.com/#/walk/gpt-3-175b-parameters"
     },
     {
       "id": "frederick-the-greats-oblique-order-tactical-geometry",
@@ -342,7 +342,7 @@
       "parents": 11,
       "children": 5,
       "connectedness": 21,
-      "url": "https://k3sava.github.io/ticks/#/walk/frederick-the-greats-oblique-order-tactical-geometry"
+      "url": "https://ticks.iamkesava.com/#/walk/frederick-the-greats-oblique-order-tactical-geometry"
     },
     {
       "id": "hollerith-tabulating-machine-us-census",
@@ -355,7 +355,7 @@
       "parents": 11,
       "children": 5,
       "connectedness": 21,
-      "url": "https://k3sava.github.io/ticks/#/walk/hollerith-tabulating-machine-us-census"
+      "url": "https://ticks.iamkesava.com/#/walk/hollerith-tabulating-machine-us-census"
     },
     {
       "id": "market-for-lemons-information-asymmetry-akerlof",
@@ -368,7 +368,7 @@
       "parents": 13,
       "children": 4,
       "connectedness": 21,
-      "url": "https://k3sava.github.io/ticks/#/walk/market-for-lemons-information-asymmetry-akerlof"
+      "url": "https://ticks.iamkesava.com/#/walk/market-for-lemons-information-asymmetry-akerlof"
     },
     {
       "id": "ptolemys-coordinate-system",
@@ -381,7 +381,7 @@
       "parents": 15,
       "children": 3,
       "connectedness": 21,
-      "url": "https://k3sava.github.io/ticks/#/walk/ptolemys-coordinate-system"
+      "url": "https://ticks.iamkesava.com/#/walk/ptolemys-coordinate-system"
     },
     {
       "id": "diamond-sutra-first-dated-printed-book",
@@ -394,7 +394,7 @@
       "parents": 4,
       "children": 8,
       "connectedness": 20,
-      "url": "https://k3sava.github.io/ticks/#/walk/diamond-sutra-first-dated-printed-book"
+      "url": "https://ticks.iamkesava.com/#/walk/diamond-sutra-first-dated-printed-book"
     },
     {
       "id": "musical-staff-notation-guido-darezzo",
@@ -407,7 +407,7 @@
       "parents": 10,
       "children": 5,
       "connectedness": 20,
-      "url": "https://k3sava.github.io/ticks/#/walk/musical-staff-notation-guido-darezzo"
+      "url": "https://ticks.iamkesava.com/#/walk/musical-staff-notation-guido-darezzo"
     },
     {
       "id": "oxford-english-dictionary-completed",
@@ -420,7 +420,7 @@
       "parents": 10,
       "children": 5,
       "connectedness": 20,
-      "url": "https://k3sava.github.io/ticks/#/walk/oxford-english-dictionary-completed"
+      "url": "https://ticks.iamkesava.com/#/walk/oxford-english-dictionary-completed"
     },
     {
       "id": "rh-factor-discovery-landsteiner-wiener",
@@ -433,7 +433,7 @@
       "parents": 10,
       "children": 5,
       "connectedness": 20,
-      "url": "https://k3sava.github.io/ticks/#/walk/rh-factor-discovery-landsteiner-wiener"
+      "url": "https://ticks.iamkesava.com/#/walk/rh-factor-discovery-landsteiner-wiener"
     },
     {
       "id": "justinians-corpus-juris-civilis-roman-law-codified",
@@ -446,7 +446,7 @@
       "parents": 12,
       "children": 4,
       "connectedness": 20,
-      "url": "https://k3sava.github.io/ticks/#/walk/justinians-corpus-juris-civilis-roman-law-codified"
+      "url": "https://ticks.iamkesava.com/#/walk/justinians-corpus-juris-civilis-roman-law-codified"
     },
     {
       "id": "saussures-course-in-general-linguistics",
@@ -459,7 +459,7 @@
       "parents": 12,
       "children": 4,
       "connectedness": 20,
-      "url": "https://k3sava.github.io/ticks/#/walk/saussures-course-in-general-linguistics"
+      "url": "https://ticks.iamkesava.com/#/walk/saussures-course-in-general-linguistics"
     },
     {
       "id": "vertical-farming-led-lit-indoor-agriculture",
@@ -472,7 +472,7 @@
       "parents": 12,
       "children": 4,
       "connectedness": 20,
-      "url": "https://k3sava.github.io/ticks/#/walk/vertical-farming-led-lit-indoor-agriculture"
+      "url": "https://ticks.iamkesava.com/#/walk/vertical-farming-led-lit-indoor-agriculture"
     },
     {
       "id": "arrow-debreu-model-general-equilibrium",
@@ -485,7 +485,7 @@
       "parents": 5,
       "children": 7,
       "connectedness": 19,
-      "url": "https://k3sava.github.io/ticks/#/walk/arrow-debreu-model-general-equilibrium"
+      "url": "https://ticks.iamkesava.com/#/walk/arrow-debreu-model-general-equilibrium"
     },
     {
       "id": "arpa-first-email-tomlinson-and-symbol",
@@ -498,7 +498,7 @@
       "parents": 5,
       "children": 7,
       "connectedness": 19,
-      "url": "https://k3sava.github.io/ticks/#/walk/arpa-first-email-tomlinson-and-symbol"
+      "url": "https://ticks.iamkesava.com/#/walk/arpa-first-email-tomlinson-and-symbol"
     },
     {
       "id": "gutenbergs-printing-press",
@@ -511,7 +511,7 @@
       "parents": 7,
       "children": 6,
       "connectedness": 19,
-      "url": "https://k3sava.github.io/ticks/#/walk/gutenbergs-printing-press"
+      "url": "https://ticks.iamkesava.com/#/walk/gutenbergs-printing-press"
     },
     {
       "id": "lockes-two-treatises-natural-rights",
@@ -524,7 +524,7 @@
       "parents": 7,
       "children": 6,
       "connectedness": 19,
-      "url": "https://k3sava.github.io/ticks/#/walk/lockes-two-treatises-natural-rights"
+      "url": "https://ticks.iamkesava.com/#/walk/lockes-two-treatises-natural-rights"
     },
     {
       "id": "peace-of-westphalia-sovereign-state-system",
@@ -537,7 +537,7 @@
       "parents": 11,
       "children": 4,
       "connectedness": 19,
-      "url": "https://k3sava.github.io/ticks/#/walk/peace-of-westphalia-sovereign-state-system"
+      "url": "https://ticks.iamkesava.com/#/walk/peace-of-westphalia-sovereign-state-system"
     },
     {
       "id": "schleiden-schwann-cell-theory",
@@ -550,7 +550,7 @@
       "parents": 11,
       "children": 4,
       "connectedness": 19,
-      "url": "https://k3sava.github.io/ticks/#/walk/schleiden-schwann-cell-theory"
+      "url": "https://ticks.iamkesava.com/#/walk/schleiden-schwann-cell-theory"
     },
     {
       "id": "braille-system-standardized",
@@ -563,7 +563,7 @@
       "parents": 2,
       "children": 8,
       "connectedness": 18,
-      "url": "https://k3sava.github.io/ticks/#/walk/braille-system-standardized"
+      "url": "https://ticks.iamkesava.com/#/walk/braille-system-standardized"
     },
     {
       "id": "c-programming-language-ritchie",
@@ -576,7 +576,7 @@
       "parents": 2,
       "children": 8,
       "connectedness": 18,
-      "url": "https://k3sava.github.io/ticks/#/walk/c-programming-language-ritchie"
+      "url": "https://ticks.iamkesava.com/#/walk/c-programming-language-ritchie"
     },
     {
       "id": "trepanation-skull-drilling",
@@ -589,7 +589,7 @@
       "parents": 4,
       "children": 7,
       "connectedness": 18,
-      "url": "https://k3sava.github.io/ticks/#/walk/trepanation-skull-drilling"
+      "url": "https://ticks.iamkesava.com/#/walk/trepanation-skull-drilling"
     },
     {
       "id": "mesopotamian-clay-tablet-record-keeping",
@@ -602,7 +602,7 @@
       "parents": 4,
       "children": 7,
       "connectedness": 18,
-      "url": "https://k3sava.github.io/ticks/#/walk/mesopotamian-clay-tablet-record-keeping"
+      "url": "https://ticks.iamkesava.com/#/walk/mesopotamian-clay-tablet-record-keeping"
     },
     {
       "id": "alphago-zero-self-taught-superhuman-play",
@@ -615,7 +615,7 @@
       "parents": 4,
       "children": 7,
       "connectedness": 18,
-      "url": "https://k3sava.github.io/ticks/#/walk/alphago-zero-self-taught-superhuman-play"
+      "url": "https://ticks.iamkesava.com/#/walk/alphago-zero-self-taught-superhuman-play"
     },
     {
       "id": "galvani-bioelectricity",
@@ -628,7 +628,7 @@
       "parents": 6,
       "children": 6,
       "connectedness": 18,
-      "url": "https://k3sava.github.io/ticks/#/walk/galvani-bioelectricity"
+      "url": "https://ticks.iamkesava.com/#/walk/galvani-bioelectricity"
     },
     {
       "id": "first-telephone-call-voice-transmission",
@@ -641,7 +641,7 @@
       "parents": 6,
       "children": 6,
       "connectedness": 18,
-      "url": "https://k3sava.github.io/ticks/#/walk/first-telephone-call-voice-transmission"
+      "url": "https://ticks.iamkesava.com/#/walk/first-telephone-call-voice-transmission"
     },
     {
       "id": "genetic-code-fully-cracked",
@@ -654,7 +654,7 @@
       "parents": 6,
       "children": 6,
       "connectedness": 18,
-      "url": "https://k3sava.github.io/ticks/#/walk/genetic-code-fully-cracked"
+      "url": "https://ticks.iamkesava.com/#/walk/genetic-code-fully-cracked"
     },
     {
       "id": "reverse-transcriptase-temin-baltimore",
@@ -667,7 +667,7 @@
       "parents": 6,
       "children": 6,
       "connectedness": 18,
-      "url": "https://k3sava.github.io/ticks/#/walk/reverse-transcriptase-temin-baltimore"
+      "url": "https://ticks.iamkesava.com/#/walk/reverse-transcriptase-temin-baltimore"
     },
     {
       "id": "first-illustrated-book-printed-woodcuts",
@@ -680,7 +680,7 @@
       "parents": 8,
       "children": 5,
       "connectedness": 18,
-      "url": "https://k3sava.github.io/ticks/#/walk/first-illustrated-book-printed-woodcuts"
+      "url": "https://ticks.iamkesava.com/#/walk/first-illustrated-book-printed-woodcuts"
     },
     {
       "id": "pcr-polymerase-chain-reaction",
@@ -693,7 +693,7 @@
       "parents": 8,
       "children": 5,
       "connectedness": 18,
-      "url": "https://k3sava.github.io/ticks/#/walk/pcr-polymerase-chain-reaction"
+      "url": "https://ticks.iamkesava.com/#/walk/pcr-polymerase-chain-reaction"
     },
     {
       "id": "hume-bundle-theory-of-the-self",
@@ -706,7 +706,7 @@
       "parents": 10,
       "children": 4,
       "connectedness": 18,
-      "url": "https://k3sava.github.io/ticks/#/walk/hume-bundle-theory-of-the-self"
+      "url": "https://ticks.iamkesava.com/#/walk/hume-bundle-theory-of-the-self"
     },
     {
       "id": "plessy-v-ferguson-separate-but-equal",
@@ -719,7 +719,7 @@
       "parents": 12,
       "children": 3,
       "connectedness": 18,
-      "url": "https://k3sava.github.io/ticks/#/walk/plessy-v-ferguson-separate-but-equal"
+      "url": "https://ticks.iamkesava.com/#/walk/plessy-v-ferguson-separate-but-equal"
     },
     {
       "id": "collective-fiction",
@@ -732,7 +732,7 @@
       "parents": 1,
       "children": 8,
       "connectedness": 17,
-      "url": "https://k3sava.github.io/ticks/#/walk/collective-fiction"
+      "url": "https://ticks.iamkesava.com/#/walk/collective-fiction"
     },
     {
       "id": "venus-figurines-portable-art-tradition",
@@ -745,7 +745,7 @@
       "parents": 3,
       "children": 7,
       "connectedness": 17,
-      "url": "https://k3sava.github.io/ticks/#/walk/venus-figurines-portable-art-tradition"
+      "url": "https://ticks.iamkesava.com/#/walk/venus-figurines-portable-art-tradition"
     },
     {
       "id": "papyrus-scrolls-lightweight-portable-writing-surface",
@@ -758,7 +758,7 @@
       "parents": 3,
       "children": 7,
       "connectedness": 17,
-      "url": "https://k3sava.github.io/ticks/#/walk/papyrus-scrolls-lightweight-portable-writing-surface"
+      "url": "https://ticks.iamkesava.com/#/walk/papyrus-scrolls-lightweight-portable-writing-surface"
     },
     {
       "id": "akkadian-as-first-lingua-franca",
@@ -771,7 +771,7 @@
       "parents": 3,
       "children": 7,
       "connectedness": 17,
-      "url": "https://k3sava.github.io/ticks/#/walk/akkadian-as-first-lingua-franca"
+      "url": "https://ticks.iamkesava.com/#/walk/akkadian-as-first-lingua-franca"
     },
     {
       "id": "babylonian-quadratic-equations",
@@ -784,7 +784,7 @@
       "parents": 3,
       "children": 7,
       "connectedness": 17,
-      "url": "https://k3sava.github.io/ticks/#/walk/babylonian-quadratic-equations"
+      "url": "https://ticks.iamkesava.com/#/walk/babylonian-quadratic-equations"
     },
     {
       "id": "greek-alphabet-with-vowels",
@@ -797,7 +797,7 @@
       "parents": 3,
       "children": 7,
       "connectedness": 17,
-      "url": "https://k3sava.github.io/ticks/#/walk/greek-alphabet-with-vowels"
+      "url": "https://ticks.iamkesava.com/#/walk/greek-alphabet-with-vowels"
     },
     {
       "id": "p-inis-sanskrit-grammar",
@@ -810,7 +810,7 @@
       "parents": 3,
       "children": 7,
       "connectedness": 17,
-      "url": "https://k3sava.github.io/ticks/#/walk/p-inis-sanskrit-grammar"
+      "url": "https://ticks.iamkesava.com/#/walk/p-inis-sanskrit-grammar"
     },
     {
       "id": "eratosthenes-earths-circumference-calculated",
@@ -823,7 +823,7 @@
       "parents": 3,
       "children": 7,
       "connectedness": 17,
-      "url": "https://k3sava.github.io/ticks/#/walk/eratosthenes-earths-circumference-calculated"
+      "url": "https://ticks.iamkesava.com/#/walk/eratosthenes-earths-circumference-calculated"
     },
     {
       "id": "arabic-as-global-language-of-science",
@@ -836,7 +836,7 @@
       "parents": 3,
       "children": 7,
       "connectedness": 17,
-      "url": "https://k3sava.github.io/ticks/#/walk/arabic-as-global-language-of-science"
+      "url": "https://ticks.iamkesava.com/#/walk/arabic-as-global-language-of-science"
     },
     {
       "id": "dartmouth-workshop-ai-as-a-field",
@@ -849,7 +849,7 @@
       "parents": 3,
       "children": 7,
       "connectedness": 17,
-      "url": "https://k3sava.github.io/ticks/#/walk/dartmouth-workshop-ai-as-a-field"
+      "url": "https://ticks.iamkesava.com/#/walk/dartmouth-workshop-ai-as-a-field"
     },
     {
       "id": "xerox-parc-modern-computing-interface",
@@ -862,7 +862,7 @@
       "parents": 3,
       "children": 7,
       "connectedness": 17,
-      "url": "https://k3sava.github.io/ticks/#/walk/xerox-parc-modern-computing-interface"
+      "url": "https://ticks.iamkesava.com/#/walk/xerox-parc-modern-computing-interface"
     },
     {
       "id": "world-wide-web-digital-art-and-net-art",
@@ -875,7 +875,7 @@
       "parents": 3,
       "children": 7,
       "connectedness": 17,
-      "url": "https://k3sava.github.io/ticks/#/walk/world-wide-web-digital-art-and-net-art"
+      "url": "https://ticks.iamkesava.com/#/walk/world-wide-web-digital-art-and-net-art"
     },
     {
       "id": "crispr-cas9-as-genome-editing-tool-doudna-charpentier",
@@ -888,7 +888,7 @@
       "parents": 3,
       "children": 7,
       "connectedness": 17,
-      "url": "https://k3sava.github.io/ticks/#/walk/crispr-cas9-as-genome-editing-tool-doudna-charpentier"
+      "url": "https://ticks.iamkesava.com/#/walk/crispr-cas9-as-genome-editing-tool-doudna-charpentier"
     },
     {
       "id": "cuneiform-writing",
@@ -901,7 +901,7 @@
       "parents": 5,
       "children": 6,
       "connectedness": 17,
-      "url": "https://k3sava.github.io/ticks/#/walk/cuneiform-writing"
+      "url": "https://ticks.iamkesava.com/#/walk/cuneiform-writing"
     },
     {
       "id": "alphabetic-writing-phoenician",
@@ -914,7 +914,7 @@
       "parents": 5,
       "children": 6,
       "connectedness": 17,
-      "url": "https://k3sava.github.io/ticks/#/walk/alphabetic-writing-phoenician"
+      "url": "https://ticks.iamkesava.com/#/walk/alphabetic-writing-phoenician"
     },
     {
       "id": "linnaeus-binomial-nomenclature",
@@ -927,7 +927,7 @@
       "parents": 5,
       "children": 6,
       "connectedness": 17,
-      "url": "https://k3sava.github.io/ticks/#/walk/linnaeus-binomial-nomenclature"
+      "url": "https://ticks.iamkesava.com/#/walk/linnaeus-binomial-nomenclature"
     },
     {
       "id": "thalidomide-disaster-drug-safety-regulation",
@@ -940,7 +940,7 @@
       "parents": 5,
       "children": 6,
       "connectedness": 17,
-      "url": "https://k3sava.github.io/ticks/#/walk/thalidomide-disaster-drug-safety-regulation"
+      "url": "https://ticks.iamkesava.com/#/walk/thalidomide-disaster-drug-safety-regulation"
     },
     {
       "id": "the-feminine-mystique-betty-friedan",
@@ -953,7 +953,7 @@
       "parents": 5,
       "children": 6,
       "connectedness": 17,
-      "url": "https://k3sava.github.io/ticks/#/walk/the-feminine-mystique-betty-friedan"
+      "url": "https://ticks.iamkesava.com/#/walk/the-feminine-mystique-betty-friedan"
     },
     {
       "id": "dna-sequencing-sanger-method",
@@ -966,7 +966,7 @@
       "parents": 5,
       "children": 6,
       "connectedness": 17,
-      "url": "https://k3sava.github.io/ticks/#/walk/dna-sequencing-sanger-method"
+      "url": "https://ticks.iamkesava.com/#/walk/dna-sequencing-sanger-method"
     },
     {
       "id": "monoclonal-antibodies-targeted-therapy",
@@ -979,7 +979,7 @@
       "parents": 5,
       "children": 6,
       "connectedness": 17,
-      "url": "https://k3sava.github.io/ticks/#/walk/monoclonal-antibodies-targeted-therapy"
+      "url": "https://ticks.iamkesava.com/#/walk/monoclonal-antibodies-targeted-therapy"
     },
     {
       "id": "falklands-war-precision-strike-lessons",
@@ -992,7 +992,7 @@
       "parents": 7,
       "children": 5,
       "connectedness": 17,
-      "url": "https://k3sava.github.io/ticks/#/walk/falklands-war-precision-strike-lessons"
+      "url": "https://ticks.iamkesava.com/#/walk/falklands-war-precision-strike-lessons"
     },
     {
       "id": "fall-of-the-berlin-wall",
@@ -1005,7 +1005,7 @@
       "parents": 7,
       "children": 5,
       "connectedness": 17,
-      "url": "https://k3sava.github.io/ticks/#/walk/fall-of-the-berlin-wall"
+      "url": "https://ticks.iamkesava.com/#/walk/fall-of-the-berlin-wall"
     },
     {
       "id": "deep-brain-stimulation-fda-approved",
@@ -1018,7 +1018,7 @@
       "parents": 7,
       "children": 5,
       "connectedness": 17,
-      "url": "https://k3sava.github.io/ticks/#/walk/deep-brain-stimulation-fda-approved"
+      "url": "https://ticks.iamkesava.com/#/walk/deep-brain-stimulation-fda-approved"
     },
     {
       "id": "mendels-inheritance-rules",
@@ -1031,7 +1031,7 @@
       "parents": 9,
       "children": 4,
       "connectedness": 17,
-      "url": "https://k3sava.github.io/ticks/#/walk/mendels-inheritance-rules"
+      "url": "https://ticks.iamkesava.com/#/walk/mendels-inheritance-rules"
     },
     {
       "id": "refrigeration-cold-chain",
@@ -1044,7 +1044,7 @@
       "parents": 9,
       "children": 4,
       "connectedness": 17,
-      "url": "https://k3sava.github.io/ticks/#/walk/refrigeration-cold-chain"
+      "url": "https://ticks.iamkesava.com/#/walk/refrigeration-cold-chain"
     },
     {
       "id": "rediscovery-of-mendel-birth-of-genetics",
@@ -1057,7 +1057,7 @@
       "parents": 9,
       "children": 4,
       "connectedness": 17,
-      "url": "https://k3sava.github.io/ticks/#/walk/rediscovery-of-mendel-birth-of-genetics"
+      "url": "https://ticks.iamkesava.com/#/walk/rediscovery-of-mendel-birth-of-genetics"
     },
     {
       "id": "gutenbergs-bible-mass-text-production",
@@ -1070,7 +1070,7 @@
       "parents": 2,
       "children": 7,
       "connectedness": 16,
-      "url": "https://k3sava.github.io/ticks/#/walk/gutenbergs-bible-mass-text-production"
+      "url": "https://ticks.iamkesava.com/#/walk/gutenbergs-bible-mass-text-production"
     },
     {
       "id": "holography-gabor",
@@ -1083,7 +1083,7 @@
       "parents": 2,
       "children": 7,
       "connectedness": 16,
-      "url": "https://k3sava.github.io/ticks/#/walk/holography-gabor"
+      "url": "https://ticks.iamkesava.com/#/walk/holography-gabor"
     },
     {
       "id": "rawls-theory-of-justice",
@@ -1096,7 +1096,7 @@
       "parents": 2,
       "children": 7,
       "connectedness": 16,
-      "url": "https://k3sava.github.io/ticks/#/walk/rawls-theory-of-justice"
+      "url": "https://ticks.iamkesava.com/#/walk/rawls-theory-of-justice"
     },
     {
       "id": "loom-weaving",
@@ -1109,7 +1109,7 @@
       "parents": 4,
       "children": 6,
       "connectedness": 16,
-      "url": "https://k3sava.github.io/ticks/#/walk/loom-weaving"
+      "url": "https://ticks.iamkesava.com/#/walk/loom-weaving"
     },
     {
       "id": "composite-bow",
@@ -1122,7 +1122,7 @@
       "parents": 4,
       "children": 6,
       "connectedness": 16,
-      "url": "https://k3sava.github.io/ticks/#/walk/composite-bow"
+      "url": "https://ticks.iamkesava.com/#/walk/composite-bow"
     },
     {
       "id": "galens-medical-synthesis",
@@ -1135,7 +1135,7 @@
       "parents": 4,
       "children": 6,
       "connectedness": 16,
-      "url": "https://k3sava.github.io/ticks/#/walk/galens-medical-synthesis"
+      "url": "https://ticks.iamkesava.com/#/walk/galens-medical-synthesis"
     },
     {
       "id": "symbolic-algebra-notation-diophantus",
@@ -1148,7 +1148,7 @@
       "parents": 4,
       "children": 6,
       "connectedness": 16,
-      "url": "https://k3sava.github.io/ticks/#/walk/symbolic-algebra-notation-diophantus"
+      "url": "https://ticks.iamkesava.com/#/walk/symbolic-algebra-notation-diophantus"
     },
     {
       "id": "algebra-al-khwarizmi",
@@ -1161,7 +1161,7 @@
       "parents": 4,
       "children": 6,
       "connectedness": 16,
-      "url": "https://k3sava.github.io/ticks/#/walk/algebra-al-khwarizmi"
+      "url": "https://ticks.iamkesava.com/#/walk/algebra-al-khwarizmi"
     },
     {
       "id": "cell-theory-hooke-leeuwenhoek",
@@ -1174,7 +1174,7 @@
       "parents": 4,
       "children": 6,
       "connectedness": 16,
-      "url": "https://k3sava.github.io/ticks/#/walk/cell-theory-hooke-leeuwenhoek"
+      "url": "https://ticks.iamkesava.com/#/walk/cell-theory-hooke-leeuwenhoek"
     },
     {
       "id": "price-mechanism-cantillons-essay",
@@ -1187,7 +1187,7 @@
       "parents": 4,
       "children": 6,
       "connectedness": 16,
-      "url": "https://k3sava.github.io/ticks/#/walk/price-mechanism-cantillons-essay"
+      "url": "https://ticks.iamkesava.com/#/walk/price-mechanism-cantillons-essay"
     },
     {
       "id": "daltons-atomic-theory-atoms-as-real",
@@ -1200,7 +1200,7 @@
       "parents": 4,
       "children": 6,
       "connectedness": 16,
-      "url": "https://k3sava.github.io/ticks/#/walk/daltons-atomic-theory-atoms-as-real"
+      "url": "https://ticks.iamkesava.com/#/walk/daltons-atomic-theory-atoms-as-real"
     },
     {
       "id": "kelvin-absolute-temperature-thermodynamics",
@@ -1213,7 +1213,7 @@
       "parents": 4,
       "children": 6,
       "connectedness": 16,
-      "url": "https://k3sava.github.io/ticks/#/walk/kelvin-absolute-temperature-thermodynamics"
+      "url": "https://ticks.iamkesava.com/#/walk/kelvin-absolute-temperature-thermodynamics"
     },
     {
       "id": "nietzsche-death-of-god",
@@ -1226,7 +1226,7 @@
       "parents": 4,
       "children": 6,
       "connectedness": 16,
-      "url": "https://k3sava.github.io/ticks/#/walk/nietzsche-death-of-god"
+      "url": "https://ticks.iamkesava.com/#/walk/nietzsche-death-of-god"
     },
     {
       "id": "nuremberg-trials-simultaneous-interpretation",
@@ -1239,7 +1239,7 @@
       "parents": 4,
       "children": 6,
       "connectedness": 16,
-      "url": "https://k3sava.github.io/ticks/#/walk/nuremberg-trials-simultaneous-interpretation"
+      "url": "https://ticks.iamkesava.com/#/walk/nuremberg-trials-simultaneous-interpretation"
     },
     {
       "id": "machine-translation-first-attempts-weaver-memo",
@@ -1252,7 +1252,7 @@
       "parents": 4,
       "children": 6,
       "connectedness": 16,
-      "url": "https://k3sava.github.io/ticks/#/walk/machine-translation-first-attempts-weaver-memo"
+      "url": "https://ticks.iamkesava.com/#/walk/machine-translation-first-attempts-weaver-memo"
     },
     {
       "id": "bert-transfer-learning-for-nlp",
@@ -1265,7 +1265,7 @@
       "parents": 4,
       "children": 6,
       "connectedness": 16,
-      "url": "https://k3sava.github.io/ticks/#/walk/bert-transfer-learning-for-nlp"
+      "url": "https://ticks.iamkesava.com/#/walk/bert-transfer-learning-for-nlp"
     },
     {
       "id": "city-state-governance",
@@ -1278,7 +1278,7 @@
       "parents": 6,
       "children": 5,
       "connectedness": 16,
-      "url": "https://k3sava.github.io/ticks/#/walk/city-state-governance"
+      "url": "https://ticks.iamkesava.com/#/walk/city-state-governance"
     },
     {
       "id": "ugaritic-alphabet-simplified-writing",
@@ -1291,7 +1291,7 @@
       "parents": 6,
       "children": 5,
       "connectedness": 16,
-      "url": "https://k3sava.github.io/ticks/#/walk/ugaritic-alphabet-simplified-writing"
+      "url": "https://ticks.iamkesava.com/#/walk/ugaritic-alphabet-simplified-writing"
     },
     {
       "id": "wycliffe-bible-vernacular-scripture",
@@ -1304,7 +1304,7 @@
       "parents": 6,
       "children": 5,
       "connectedness": 16,
-      "url": "https://k3sava.github.io/ticks/#/walk/wycliffe-bible-vernacular-scripture"
+      "url": "https://ticks.iamkesava.com/#/walk/wycliffe-bible-vernacular-scripture"
     },
     {
       "id": "metropolitan-police-professional-police-force",
@@ -1317,7 +1317,7 @@
       "parents": 6,
       "children": 5,
       "connectedness": 16,
-      "url": "https://k3sava.github.io/ticks/#/walk/metropolitan-police-professional-police-force"
+      "url": "https://ticks.iamkesava.com/#/walk/metropolitan-police-professional-police-force"
     },
     {
       "id": "colt-revolver-repeating-firearms",
@@ -1330,7 +1330,7 @@
       "parents": 6,
       "children": 5,
       "connectedness": 16,
-      "url": "https://k3sava.github.io/ticks/#/walk/colt-revolver-repeating-firearms"
+      "url": "https://ticks.iamkesava.com/#/walk/colt-revolver-repeating-firearms"
     },
     {
       "id": "kierkegaard-existential-anxiety-and-choice",
@@ -1343,7 +1343,7 @@
       "parents": 6,
       "children": 5,
       "connectedness": 16,
-      "url": "https://k3sava.github.io/ticks/#/walk/kierkegaard-existential-anxiety-and-choice"
+      "url": "https://ticks.iamkesava.com/#/walk/kierkegaard-existential-anxiety-and-choice"
     },
     {
       "id": "rogets-thesaurus-organized-vocabulary",
@@ -1356,7 +1356,7 @@
       "parents": 6,
       "children": 5,
       "connectedness": 16,
-      "url": "https://k3sava.github.io/ticks/#/walk/rogets-thesaurus-organized-vocabulary"
+      "url": "https://ticks.iamkesava.com/#/walk/rogets-thesaurus-organized-vocabulary"
     },
     {
       "id": "rabies-vaccine-pasteur-first-viral-vaccine",
@@ -1369,7 +1369,7 @@
       "parents": 6,
       "children": 5,
       "connectedness": 16,
-      "url": "https://k3sava.github.io/ticks/#/walk/rabies-vaccine-pasteur-first-viral-vaccine"
+      "url": "https://ticks.iamkesava.com/#/walk/rabies-vaccine-pasteur-first-viral-vaccine"
     },
     {
       "id": "antibiotic-resistance-first-observed-penicillin",
@@ -1382,7 +1382,7 @@
       "parents": 6,
       "children": 5,
       "connectedness": 16,
-      "url": "https://k3sava.github.io/ticks/#/walk/antibiotic-resistance-first-observed-penicillin"
+      "url": "https://ticks.iamkesava.com/#/walk/antibiotic-resistance-first-observed-penicillin"
     },
     {
       "id": "dartmouth-conference-ai-named-and-founded",
@@ -1395,7 +1395,7 @@
       "parents": 6,
       "children": 5,
       "connectedness": 16,
-      "url": "https://k3sava.github.io/ticks/#/walk/dartmouth-conference-ai-named-and-founded"
+      "url": "https://ticks.iamkesava.com/#/walk/dartmouth-conference-ai-named-and-founded"
     },
     {
       "id": "roe-v-wade-abortion-rights",
@@ -1408,7 +1408,7 @@
       "parents": 6,
       "children": 5,
       "connectedness": 16,
-      "url": "https://k3sava.github.io/ticks/#/walk/roe-v-wade-abortion-rights"
+      "url": "https://ticks.iamkesava.com/#/walk/roe-v-wade-abortion-rights"
     },
     {
       "id": "endorphins-endogenous-opioids-discovered",
@@ -1421,7 +1421,7 @@
       "parents": 6,
       "children": 5,
       "connectedness": 16,
-      "url": "https://k3sava.github.io/ticks/#/walk/endorphins-endogenous-opioids-discovered"
+      "url": "https://ticks.iamkesava.com/#/walk/endorphins-endogenous-opioids-discovered"
     },
     {
       "id": "pyramid-construction",
@@ -1434,7 +1434,7 @@
       "parents": 8,
       "children": 4,
       "connectedness": 16,
-      "url": "https://k3sava.github.io/ticks/#/walk/pyramid-construction"
+      "url": "https://ticks.iamkesava.com/#/walk/pyramid-construction"
     },
     {
       "id": "mendels-laws-of-heredity",
@@ -1447,7 +1447,7 @@
       "parents": 8,
       "children": 4,
       "connectedness": 16,
-      "url": "https://k3sava.github.io/ticks/#/walk/mendels-laws-of-heredity"
+      "url": "https://ticks.iamkesava.com/#/walk/mendels-laws-of-heredity"
     },
     {
       "id": "wundts-experimental-psychology-laboratory",
@@ -1460,7 +1460,7 @@
       "parents": 8,
       "children": 4,
       "connectedness": 16,
-      "url": "https://k3sava.github.io/ticks/#/walk/wundts-experimental-psychology-laboratory"
+      "url": "https://ticks.iamkesava.com/#/walk/wundts-experimental-psychology-laboratory"
     },
     {
       "id": "first-nuclear-electricity-generation",
@@ -1473,7 +1473,7 @@
       "parents": 8,
       "children": 4,
       "connectedness": 16,
-      "url": "https://k3sava.github.io/ticks/#/walk/first-nuclear-electricity-generation"
+      "url": "https://ticks.iamkesava.com/#/walk/first-nuclear-electricity-generation"
     },
     {
       "id": "amazon-com-e-commerce-and-platform-economics",
@@ -1486,7 +1486,7 @@
       "parents": 8,
       "children": 4,
       "connectedness": 16,
-      "url": "https://k3sava.github.io/ticks/#/walk/amazon-com-e-commerce-and-platform-economics"
+      "url": "https://ticks.iamkesava.com/#/walk/amazon-com-e-commerce-and-platform-economics"
     },
     {
       "id": "microfinance-grameen-bank-model-global-spread",
@@ -1499,7 +1499,7 @@
       "parents": 8,
       "children": 4,
       "connectedness": 16,
-      "url": "https://k3sava.github.io/ticks/#/walk/microfinance-grameen-bank-model-global-spread"
+      "url": "https://ticks.iamkesava.com/#/walk/microfinance-grameen-bank-model-global-spread"
     },
     {
       "id": "vatican-ii-catholic-churchs-modernization",
@@ -1512,7 +1512,7 @@
       "parents": 10,
       "children": 3,
       "connectedness": 16,
-      "url": "https://k3sava.github.io/ticks/#/walk/vatican-ii-catholic-churchs-modernization"
+      "url": "https://ticks.iamkesava.com/#/walk/vatican-ii-catholic-churchs-modernization"
     },
     {
       "id": "aids-crisis-death-activism-and-drug-approval-reform",
@@ -1525,7 +1525,7 @@
       "parents": 10,
       "children": 3,
       "connectedness": 16,
-      "url": "https://k3sava.github.io/ticks/#/walk/aids-crisis-death-activism-and-drug-approval-reform"
+      "url": "https://ticks.iamkesava.com/#/walk/aids-crisis-death-activism-and-drug-approval-reform"
     },
     {
       "id": "big-bang-financial-deregulation-london",
@@ -1538,7 +1538,7 @@
       "parents": 10,
       "children": 3,
       "connectedness": 16,
-      "url": "https://k3sava.github.io/ticks/#/walk/big-bang-financial-deregulation-london"
+      "url": "https://ticks.iamkesava.com/#/walk/big-bang-financial-deregulation-london"
     },
     {
       "id": "wwi-chemical-weapons-chlorine-mustard-gas",
@@ -1551,7 +1551,7 @@
       "parents": 12,
       "children": 2,
       "connectedness": 16,
-      "url": "https://k3sava.github.io/ticks/#/walk/wwi-chemical-weapons-chlorine-mustard-gas"
+      "url": "https://ticks.iamkesava.com/#/walk/wwi-chemical-weapons-chlorine-mustard-gas"
     },
     {
       "id": "recursive-language",
@@ -1564,7 +1564,7 @@
       "parents": 1,
       "children": 7,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/recursive-language"
+      "url": "https://ticks.iamkesava.com/#/walk/recursive-language"
     },
     {
       "id": "sumerian-writing-first-literature",
@@ -1577,7 +1577,7 @@
       "parents": 1,
       "children": 7,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/sumerian-writing-first-literature"
+      "url": "https://ticks.iamkesava.com/#/walk/sumerian-writing-first-literature"
     },
     {
       "id": "sumerian-number-system-sexagesimal",
@@ -1590,7 +1590,7 @@
       "parents": 1,
       "children": 7,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/sumerian-number-system-sexagesimal"
+      "url": "https://ticks.iamkesava.com/#/walk/sumerian-number-system-sexagesimal"
     },
     {
       "id": "cave-painting-symbolic-art",
@@ -1603,7 +1603,7 @@
       "parents": 3,
       "children": 6,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/cave-painting-symbolic-art"
+      "url": "https://ticks.iamkesava.com/#/walk/cave-painting-symbolic-art"
     },
     {
       "id": "shamanism-first-religious-specialists",
@@ -1616,7 +1616,7 @@
       "parents": 3,
       "children": 6,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/shamanism-first-religious-specialists"
+      "url": "https://ticks.iamkesava.com/#/walk/shamanism-first-religious-specialists"
     },
     {
       "id": "the-wheel",
@@ -1629,7 +1629,7 @@
       "parents": 3,
       "children": 6,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/the-wheel"
+      "url": "https://ticks.iamkesava.com/#/walk/the-wheel"
     },
     {
       "id": "siege-warfare-formalized-assyrian",
@@ -1642,7 +1642,7 @@
       "parents": 3,
       "children": 6,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/siege-warfare-formalized-assyrian"
+      "url": "https://ticks.iamkesava.com/#/walk/siege-warfare-formalized-assyrian"
     },
     {
       "id": "archimedes-statics-and-buoyancy",
@@ -1655,7 +1655,7 @@
       "parents": 3,
       "children": 6,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/archimedes-statics-and-buoyancy"
+      "url": "https://ticks.iamkesava.com/#/walk/archimedes-statics-and-buoyancy"
     },
     {
       "id": "paper-cai-lun-han-dynasty",
@@ -1668,7 +1668,7 @@
       "parents": 3,
       "children": 6,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/paper-cai-lun-han-dynasty"
+      "url": "https://ticks.iamkesava.com/#/walk/paper-cai-lun-han-dynasty"
     },
     {
       "id": "avicennas-floating-man-pure-self-awareness",
@@ -1681,7 +1681,7 @@
       "parents": 3,
       "children": 6,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/avicennas-floating-man-pure-self-awareness"
+      "url": "https://ticks.iamkesava.com/#/walk/avicennas-floating-man-pure-self-awareness"
     },
     {
       "id": "aquinas-synthesis-faith-and-reason",
@@ -1694,7 +1694,7 @@
       "parents": 3,
       "children": 6,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/aquinas-synthesis-faith-and-reason"
+      "url": "https://ticks.iamkesava.com/#/walk/aquinas-synthesis-faith-and-reason"
     },
     {
       "id": "diplomatic-correspondence-in-italian-lingua-franca",
@@ -1707,7 +1707,7 @@
       "parents": 3,
       "children": 6,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/diplomatic-correspondence-in-italian-lingua-franca"
+      "url": "https://ticks.iamkesava.com/#/walk/diplomatic-correspondence-in-italian-lingua-franca"
     },
     {
       "id": "newtons-calculus-mathematics-of-change",
@@ -1720,7 +1720,7 @@
       "parents": 3,
       "children": 6,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/newtons-calculus-mathematics-of-change"
+      "url": "https://ticks.iamkesava.com/#/walk/newtons-calculus-mathematics-of-change"
     },
     {
       "id": "graph-theory-euler-k-nigsberg-bridges",
@@ -1733,7 +1733,7 @@
       "parents": 3,
       "children": 6,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/graph-theory-euler-k-nigsberg-bridges"
+      "url": "https://ticks.iamkesava.com/#/walk/graph-theory-euler-k-nigsberg-bridges"
     },
     {
       "id": "braille-system-invented",
@@ -1746,7 +1746,7 @@
       "parents": 3,
       "children": 6,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/braille-system-invented"
+      "url": "https://ticks.iamkesava.com/#/walk/braille-system-invented"
     },
     {
       "id": "penny-press-mass-market-newspaper",
@@ -1759,7 +1759,7 @@
       "parents": 3,
       "children": 6,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/penny-press-mass-market-newspaper"
+      "url": "https://ticks.iamkesava.com/#/walk/penny-press-mass-market-newspaper"
     },
     {
       "id": "babbages-analytical-engine-first-computer-design",
@@ -1772,7 +1772,7 @@
       "parents": 3,
       "children": 6,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/babbages-analytical-engine-first-computer-design"
+      "url": "https://ticks.iamkesava.com/#/walk/babbages-analytical-engine-first-computer-design"
     },
     {
       "id": "maxwells-equations-unified-electromagnetism",
@@ -1785,7 +1785,7 @@
       "parents": 3,
       "children": 6,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/maxwells-equations-unified-electromagnetism"
+      "url": "https://ticks.iamkesava.com/#/walk/maxwells-equations-unified-electromagnetism"
     },
     {
       "id": "maxwells-demon-information-and-thermodynamics",
@@ -1798,7 +1798,7 @@
       "parents": 3,
       "children": 6,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/maxwells-demon-information-and-thermodynamics"
+      "url": "https://ticks.iamkesava.com/#/walk/maxwells-demon-information-and-thermodynamics"
     },
     {
       "id": "abo-blood-typing-transfusion-medicine",
@@ -1811,7 +1811,7 @@
       "parents": 3,
       "children": 6,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/abo-blood-typing-transfusion-medicine"
+      "url": "https://ticks.iamkesava.com/#/walk/abo-blood-typing-transfusion-medicine"
     },
     {
       "id": "korean-war-limited-war-doctrine",
@@ -1824,7 +1824,7 @@
       "parents": 3,
       "children": 6,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/korean-war-limited-war-doctrine"
+      "url": "https://ticks.iamkesava.com/#/walk/korean-war-limited-war-doctrine"
     },
     {
       "id": "synthetic-organic-chemistry-total-synthesis",
@@ -1837,7 +1837,7 @@
       "parents": 3,
       "children": 6,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/synthetic-organic-chemistry-total-synthesis"
+      "url": "https://ticks.iamkesava.com/#/walk/synthetic-organic-chemistry-total-synthesis"
     },
     {
       "id": "punctuated-equilibrium-gould-eldredge",
@@ -1850,7 +1850,7 @@
       "parents": 3,
       "children": 6,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/punctuated-equilibrium-gould-eldredge"
+      "url": "https://ticks.iamkesava.com/#/walk/punctuated-equilibrium-gould-eldredge"
     },
     {
       "id": "foucaults-discipline-and-punish-power-knowledge",
@@ -1863,7 +1863,7 @@
       "parents": 3,
       "children": 6,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/foucaults-discipline-and-punish-power-knowledge"
+      "url": "https://ticks.iamkesava.com/#/walk/foucaults-discipline-and-punish-power-knowledge"
     },
     {
       "id": "temple-as-economic-institution-mesopotamia",
@@ -1876,7 +1876,7 @@
       "parents": 5,
       "children": 5,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/temple-as-economic-institution-mesopotamia"
+      "url": "https://ticks.iamkesava.com/#/walk/temple-as-economic-institution-mesopotamia"
     },
     {
       "id": "afterlife-theology-egyptian-book-of-the-dead-precursor",
@@ -1889,7 +1889,7 @@
       "parents": 5,
       "children": 5,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/afterlife-theology-egyptian-book-of-the-dead-precursor"
+      "url": "https://ticks.iamkesava.com/#/walk/afterlife-theology-egyptian-book-of-the-dead-precursor"
     },
     {
       "id": "code-of-hammurabi",
@@ -1902,7 +1902,7 @@
       "parents": 5,
       "children": 5,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/code-of-hammurabi"
+      "url": "https://ticks.iamkesava.com/#/walk/code-of-hammurabi"
     },
     {
       "id": "twelve-tables-romes-first-written-law",
@@ -1915,7 +1915,7 @@
       "parents": 5,
       "children": 5,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/twelve-tables-romes-first-written-law"
+      "url": "https://ticks.iamkesava.com/#/walk/twelve-tables-romes-first-written-law"
     },
     {
       "id": "aquinas-five-ways-proving-gods-existence",
@@ -1928,7 +1928,7 @@
       "parents": 5,
       "children": 5,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/aquinas-five-ways-proving-gods-existence"
+      "url": "https://ticks.iamkesava.com/#/walk/aquinas-five-ways-proving-gods-existence"
     },
     {
       "id": "newtons-principia-universal-gravitation",
@@ -1941,7 +1941,7 @@
       "parents": 5,
       "children": 5,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/newtons-principia-universal-gravitation"
+      "url": "https://ticks.iamkesava.com/#/walk/newtons-principia-universal-gravitation"
     },
     {
       "id": "celsius-temperature-scale",
@@ -1954,7 +1954,7 @@
       "parents": 5,
       "children": 5,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/celsius-temperature-scale"
+      "url": "https://ticks.iamkesava.com/#/walk/celsius-temperature-scale"
     },
     {
       "id": "abolition-of-the-slave-trade-britain",
@@ -1967,7 +1967,7 @@
       "parents": 5,
       "children": 5,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/abolition-of-the-slave-trade-britain"
+      "url": "https://ticks.iamkesava.com/#/walk/abolition-of-the-slave-trade-britain"
     },
     {
       "id": "ada-lovelace-first-algorithm",
@@ -1980,7 +1980,7 @@
       "parents": 5,
       "children": 5,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/ada-lovelace-first-algorithm"
+      "url": "https://ticks.iamkesava.com/#/walk/ada-lovelace-first-algorithm"
     },
     {
       "id": "sulfonamides-first-synthetic-antibiotics",
@@ -1993,7 +1993,7 @@
       "parents": 5,
       "children": 5,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/sulfonamides-first-synthetic-antibiotics"
+      "url": "https://ticks.iamkesava.com/#/walk/sulfonamides-first-synthetic-antibiotics"
     },
     {
       "id": "d-day-amphibious-doctrine",
@@ -2006,7 +2006,7 @@
       "parents": 5,
       "children": 5,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/d-day-amphibious-doctrine"
+      "url": "https://ticks.iamkesava.com/#/walk/d-day-amphibious-doctrine"
     },
     {
       "id": "dna-as-the-genetic-material-avery-et-al",
@@ -2019,7 +2019,7 @@
       "parents": 5,
       "children": 5,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/dna-as-the-genetic-material-avery-et-al"
+      "url": "https://ticks.iamkesava.com/#/walk/dna-as-the-genetic-material-avery-et-al"
     },
     {
       "id": "black-scholes-financial-derivatives-explosion",
@@ -2032,7 +2032,7 @@
       "parents": 5,
       "children": 5,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/black-scholes-financial-derivatives-explosion"
+      "url": "https://ticks.iamkesava.com/#/walk/black-scholes-financial-derivatives-explosion"
     },
     {
       "id": "mosaic-browser",
@@ -2045,7 +2045,7 @@
       "parents": 5,
       "children": 5,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/mosaic-browser"
+      "url": "https://ticks.iamkesava.com/#/walk/mosaic-browser"
     },
     {
       "id": "napster-peer-to-peer-file-sharing",
@@ -2058,7 +2058,7 @@
       "parents": 5,
       "children": 5,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/napster-peer-to-peer-file-sharing"
+      "url": "https://ticks.iamkesava.com/#/walk/napster-peer-to-peer-file-sharing"
     },
     {
       "id": "pfizer-moderna-mrna-vaccines-covid-19",
@@ -2071,7 +2071,7 @@
       "parents": 5,
       "children": 5,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/pfizer-moderna-mrna-vaccines-covid-19"
+      "url": "https://ticks.iamkesava.com/#/walk/pfizer-moderna-mrna-vaccines-covid-19"
     },
     {
       "id": "olympic-games-pan-hellenic-identity",
@@ -2084,7 +2084,7 @@
       "parents": 7,
       "children": 4,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/olympic-games-pan-hellenic-identity"
+      "url": "https://ticks.iamkesava.com/#/walk/olympic-games-pan-hellenic-identity"
     },
     {
       "id": "resurrection-theology-christianity",
@@ -2097,7 +2097,7 @@
       "parents": 7,
       "children": 4,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/resurrection-theology-christianity"
+      "url": "https://ticks.iamkesava.com/#/walk/resurrection-theology-christianity"
     },
     {
       "id": "french-revolution-dechristianization",
@@ -2110,7 +2110,7 @@
       "parents": 7,
       "children": 4,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/french-revolution-dechristianization"
+      "url": "https://ticks.iamkesava.com/#/walk/french-revolution-dechristianization"
     },
     {
       "id": "maxim-gun-machine-gun",
@@ -2123,7 +2123,7 @@
       "parents": 7,
       "children": 4,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/maxim-gun-machine-gun"
+      "url": "https://ticks.iamkesava.com/#/walk/maxim-gun-machine-gun"
     },
     {
       "id": "modigliani-miller-theorem-capital-structure-irrelevance",
@@ -2136,7 +2136,7 @@
       "parents": 7,
       "children": 4,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/modigliani-miller-theorem-capital-structure-irrelevance"
+      "url": "https://ticks.iamkesava.com/#/walk/modigliani-miller-theorem-capital-structure-irrelevance"
     },
     {
       "id": "polymerase-chain-reaction-pcr-widespread-use",
@@ -2149,7 +2149,7 @@
       "parents": 7,
       "children": 4,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/polymerase-chain-reaction-pcr-widespread-use"
+      "url": "https://ticks.iamkesava.com/#/walk/polymerase-chain-reaction-pcr-widespread-use"
     },
     {
       "id": "brca1-2-genes-identified-breast-cancer-genetics",
@@ -2162,7 +2162,7 @@
       "parents": 7,
       "children": 4,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/brca1-2-genes-identified-breast-cancer-genetics"
+      "url": "https://ticks.iamkesava.com/#/walk/brca1-2-genes-identified-breast-cancer-genetics"
     },
     {
       "id": "greek-tragedy-public-emotional-catharsis",
@@ -2175,7 +2175,7 @@
       "parents": 9,
       "children": 3,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/greek-tragedy-public-emotional-catharsis"
+      "url": "https://ticks.iamkesava.com/#/walk/greek-tragedy-public-emotional-catharsis"
     },
     {
       "id": "phineas-gage-first-personality-neuroscience",
@@ -2188,7 +2188,7 @@
       "parents": 9,
       "children": 3,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/phineas-gage-first-personality-neuroscience"
+      "url": "https://ticks.iamkesava.com/#/walk/phineas-gage-first-personality-neuroscience"
     },
     {
       "id": "international-humanitarian-law-lieber-code",
@@ -2201,7 +2201,7 @@
       "parents": 9,
       "children": 3,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/international-humanitarian-law-lieber-code"
+      "url": "https://ticks.iamkesava.com/#/walk/international-humanitarian-law-lieber-code"
     },
     {
       "id": "cuban-missile-crisis-nuclear-diplomacy",
@@ -2214,7 +2214,7 @@
       "parents": 9,
       "children": 3,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/cuban-missile-crisis-nuclear-diplomacy"
+      "url": "https://ticks.iamkesava.com/#/walk/cuban-missile-crisis-nuclear-diplomacy"
     },
     {
       "id": "flavr-savr-tomato-first-gm-food-approved",
@@ -2227,7 +2227,7 @@
       "parents": 9,
       "children": 3,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/flavr-savr-tomato-first-gm-food-approved"
+      "url": "https://ticks.iamkesava.com/#/walk/flavr-savr-tomato-first-gm-food-approved"
     },
     {
       "id": "united-nations-international-law",
@@ -2240,7 +2240,7 @@
       "parents": 11,
       "children": 2,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/united-nations-international-law"
+      "url": "https://ticks.iamkesava.com/#/walk/united-nations-international-law"
     },
     {
       "id": "nuremberg-trials-individual-responsibility-in-international-law",
@@ -2253,7 +2253,7 @@
       "parents": 13,
       "children": 1,
       "connectedness": 15,
-      "url": "https://k3sava.github.io/ticks/#/walk/nuremberg-trials-individual-responsibility-in-international-law"
+      "url": "https://ticks.iamkesava.com/#/walk/nuremberg-trials-individual-responsibility-in-international-law"
     },
     {
       "id": "confucianism",
@@ -2266,7 +2266,7 @@
       "parents": 2,
       "children": 6,
       "connectedness": 14,
-      "url": "https://k3sava.github.io/ticks/#/walk/confucianism"
+      "url": "https://ticks.iamkesava.com/#/walk/confucianism"
     },
     {
       "id": "cogito-ergo-sum-descartes",
@@ -2279,7 +2279,7 @@
       "parents": 2,
       "children": 6,
       "connectedness": 14,
-      "url": "https://k3sava.github.io/ticks/#/walk/cogito-ergo-sum-descartes"
+      "url": "https://ticks.iamkesava.com/#/walk/cogito-ergo-sum-descartes"
     },
     {
       "id": "r-mer-measures-speed-of-light",
@@ -2292,7 +2292,7 @@
       "parents": 2,
       "children": 6,
       "connectedness": 14,
-      "url": "https://k3sava.github.io/ticks/#/walk/r-mer-measures-speed-of-light"
+      "url": "https://ticks.iamkesava.com/#/walk/r-mer-measures-speed-of-light"
     },
     {
       "id": "johnsons-dictionary-lexicography-standardized",
@@ -2305,7 +2305,7 @@
       "parents": 2,
       "children": 6,
       "connectedness": 14,
-      "url": "https://k3sava.github.io/ticks/#/walk/johnsons-dictionary-lexicography-standardized"
+      "url": "https://ticks.iamkesava.com/#/walk/johnsons-dictionary-lexicography-standardized"
     },
     {
       "id": "kants-groundwork-categorical-imperative",
@@ -2318,7 +2318,7 @@
       "parents": 2,
       "children": 6,
       "connectedness": 14,
-      "url": "https://k3sava.github.io/ticks/#/walk/kants-groundwork-categorical-imperative"
+      "url": "https://ticks.iamkesava.com/#/walk/kants-groundwork-categorical-imperative"
     },
     {
       "id": "electromagnetism-unified-faraday-oersted",
@@ -2331,7 +2331,7 @@
       "parents": 2,
       "children": 6,
       "connectedness": 14,
-      "url": "https://k3sava.github.io/ticks/#/walk/electromagnetism-unified-faraday-oersted"
+      "url": "https://ticks.iamkesava.com/#/walk/electromagnetism-unified-faraday-oersted"
     },
     {
       "id": "set-theory-cantor",
@@ -2344,7 +2344,7 @@
       "parents": 2,
       "children": 6,
       "connectedness": 14,
-      "url": "https://k3sava.github.io/ticks/#/walk/set-theory-cantor"
+      "url": "https://ticks.iamkesava.com/#/walk/set-theory-cantor"
     },
     {
       "id": "germ-theory-extended-to-immune-response-metchnikoff",
@@ -2357,7 +2357,7 @@
       "parents": 2,
       "children": 6,
       "connectedness": 14,
-      "url": "https://k3sava.github.io/ticks/#/walk/germ-theory-extended-to-immune-response-metchnikoff"
+      "url": "https://ticks.iamkesava.com/#/walk/germ-theory-extended-to-immune-response-metchnikoff"
     },
     {
       "id": "penicillin-fleming",
@@ -2370,7 +2370,7 @@
       "parents": 3,
       "children": 5,
       "connectedness": 13,
-      "url": "https://k3sava.github.io/ticks/#/walk/penicillin-fleming"
+      "url": "https://ticks.iamkesava.com/#/walk/penicillin-fleming"
     },
     {
       "id": "mosaic-browser-internet-as-publishing-medium",
@@ -2383,7 +2383,7 @@
       "parents": 3,
       "children": 5,
       "connectedness": 13,
-      "url": "https://k3sava.github.io/ticks/#/walk/mosaic-browser-internet-as-publishing-medium"
+      "url": "https://ticks.iamkesava.com/#/walk/mosaic-browser-internet-as-publishing-medium"
     },
     {
       "id": "haber-bosch-nitrogen-fixation",
@@ -2396,7 +2396,7 @@
       "parents": 5,
       "children": 4,
       "connectedness": 13,
-      "url": "https://k3sava.github.io/ticks/#/walk/haber-bosch-nitrogen-fixation"
+      "url": "https://ticks.iamkesava.com/#/walk/haber-bosch-nitrogen-fixation"
     },
     {
       "id": "the-pill-oral-contraceptive",
@@ -2409,7 +2409,7 @@
       "parents": 4,
       "children": 4,
       "connectedness": 12,
-      "url": "https://k3sava.github.io/ticks/#/walk/the-pill-oral-contraceptive"
+      "url": "https://ticks.iamkesava.com/#/walk/the-pill-oral-contraceptive"
     },
     {
       "id": "athenian-democracy",
@@ -2422,7 +2422,7 @@
       "parents": 6,
       "children": 3,
       "connectedness": 12,
-      "url": "https://k3sava.github.io/ticks/#/walk/athenian-democracy"
+      "url": "https://ticks.iamkesava.com/#/walk/athenian-democracy"
     },
     {
       "id": "vaccination-jenner",
@@ -2435,7 +2435,7 @@
       "parents": 3,
       "children": 4,
       "connectedness": 11,
-      "url": "https://k3sava.github.io/ticks/#/walk/vaccination-jenner"
+      "url": "https://ticks.iamkesava.com/#/walk/vaccination-jenner"
     },
     {
       "id": "general-relativity-einstein",
@@ -2448,7 +2448,7 @@
       "parents": 3,
       "children": 4,
       "connectedness": 11,
-      "url": "https://k3sava.github.io/ticks/#/walk/general-relativity-einstein"
+      "url": "https://ticks.iamkesava.com/#/walk/general-relativity-einstein"
     },
     {
       "id": "transistor-bell-labs-shockley-bardeen-brattain",
@@ -2461,7 +2461,7 @@
       "parents": 3,
       "children": 4,
       "connectedness": 11,
-      "url": "https://k3sava.github.io/ticks/#/walk/transistor-bell-labs-shockley-bardeen-brattain"
+      "url": "https://ticks.iamkesava.com/#/walk/transistor-bell-labs-shockley-bardeen-brattain"
     },
     {
       "id": "dna-double-helix-watson-crick-franklin",
@@ -2474,7 +2474,7 @@
       "parents": 3,
       "children": 4,
       "connectedness": 11,
-      "url": "https://k3sava.github.io/ticks/#/walk/dna-double-helix-watson-crick-franklin"
+      "url": "https://ticks.iamkesava.com/#/walk/dna-double-helix-watson-crick-franklin"
     },
     {
       "id": "pacioli-double-entry-bookkeeping",
@@ -2487,7 +2487,7 @@
       "parents": 2,
       "children": 4,
       "connectedness": 10,
-      "url": "https://k3sava.github.io/ticks/#/walk/pacioli-double-entry-bookkeeping"
+      "url": "https://ticks.iamkesava.com/#/walk/pacioli-double-entry-bookkeeping"
     },
     {
       "id": "steam-engine-watts-rotary-motion",
@@ -2500,7 +2500,7 @@
       "parents": 2,
       "children": 4,
       "connectedness": 10,
-      "url": "https://k3sava.github.io/ticks/#/walk/steam-engine-watts-rotary-motion"
+      "url": "https://ticks.iamkesava.com/#/walk/steam-engine-watts-rotary-motion"
     },
     {
       "id": "wheat-domestication",
@@ -2513,7 +2513,7 @@
       "parents": 4,
       "children": 3,
       "connectedness": 10,
-      "url": "https://k3sava.github.io/ticks/#/walk/wheat-domestication"
+      "url": "https://ticks.iamkesava.com/#/walk/wheat-domestication"
     },
     {
       "id": "chatgpt-rlhf-alignment",
@@ -2526,7 +2526,7 @@
       "parents": 4,
       "children": 3,
       "connectedness": 10,
-      "url": "https://k3sava.github.io/ticks/#/walk/chatgpt-rlhf-alignment"
+      "url": "https://ticks.iamkesava.com/#/walk/chatgpt-rlhf-alignment"
     },
     {
       "id": "crispr-discovery-doudna-charpentier",
@@ -2539,7 +2539,7 @@
       "parents": 3,
       "children": 3,
       "connectedness": 9,
-      "url": "https://k3sava.github.io/ticks/#/walk/crispr-discovery-doudna-charpentier"
+      "url": "https://ticks.iamkesava.com/#/walk/crispr-discovery-doudna-charpentier"
     },
     {
       "id": "magna-carta-rule-of-law-over-divine-right",
@@ -2552,7 +2552,7 @@
       "parents": 2,
       "children": 3,
       "connectedness": 8,
-      "url": "https://k3sava.github.io/ticks/#/walk/magna-carta-rule-of-law-over-divine-right"
+      "url": "https://ticks.iamkesava.com/#/walk/magna-carta-rule-of-law-over-divine-right"
     },
     {
       "id": "public-key-cryptography-diffie-hellman",
@@ -2565,7 +2565,7 @@
       "parents": 2,
       "children": 3,
       "connectedness": 8,
-      "url": "https://k3sava.github.io/ticks/#/walk/public-key-cryptography-diffie-hellman"
+      "url": "https://ticks.iamkesava.com/#/walk/public-key-cryptography-diffie-hellman"
     },
     {
       "id": "iphone-touchscreen-computing",
@@ -2578,7 +2578,7 @@
       "parents": 2,
       "children": 3,
       "connectedness": 8,
-      "url": "https://k3sava.github.io/ticks/#/walk/iphone-touchscreen-computing"
+      "url": "https://ticks.iamkesava.com/#/walk/iphone-touchscreen-computing"
     },
     {
       "id": "printing-press",
@@ -2591,7 +2591,7 @@
       "parents": 2,
       "children": 2,
       "connectedness": 6,
-      "url": "https://k3sava.github.io/ticks/#/walk/printing-press"
+      "url": "https://ticks.iamkesava.com/#/walk/printing-press"
     },
     {
       "id": "transistor-invention",
@@ -2604,7 +2604,7 @@
       "parents": 2,
       "children": 2,
       "connectedness": 6,
-      "url": "https://k3sava.github.io/ticks/#/walk/transistor-invention"
+      "url": "https://ticks.iamkesava.com/#/walk/transistor-invention"
     }
   ]
 }

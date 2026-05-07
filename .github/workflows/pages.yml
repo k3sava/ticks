@@ -24,6 +24,8 @@ jobs:
           mkdir -p _site _site/.well-known
           # Required: site cannot deploy without these.
           cp index.html app.js style.css data.json _site/
+          # Custom domain for GitHub Pages — CNAME bound to ticks.iamkesava.com.
+          if [ -f CNAME ]; then cp CNAME _site/; fi
           # Optional: copy each only if present so a partial repo (e.g. before
           # the SEO/AEO pass lands) still deploys cleanly.
           for f in llms.txt robots.txt sitemap.xml rss.xml \
