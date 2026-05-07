@@ -2892,3 +2892,38 @@ a[href*="issues/new"]{
    for first paint, but drop it for the inner-stage swap so we don't get
    double-fades. */
 .walk[data-no-anim] {animation:none}
+
+/* ============================================================
+   PERFORMANCE FALLBACKS
+   - backdrop-filter is GPU-expensive; older or low-end devices skip it.
+   - prefers-reduced-data drops the slow ambient drift on metered cells.
+   ============================================================ */
+@supports not ((backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px))){
+  /* No blur available — collapse glass to solid backgrounds with same
+     edge highlights so the surfaces still feel like distinct cards. */
+  .glass,.glass-thin,.glass-thick{
+    background:var(--paper-2);
+  }
+  :root[data-theme="dark"] .glass,
+  :root[data-theme="dark"] .glass-thin,
+  :root[data-theme="dark"] .glass-thick,
+  :root:not([data-theme]) .glass,
+  :root:not([data-theme]) .glass-thin,
+  :root:not([data-theme]) .glass-thick{
+    background:#15151E;
+  }
+  :root[data-theme="matrix"] .glass,
+  :root[data-theme="matrix"] .glass-thin,
+  :root[data-theme="matrix"] .glass-thick{
+    background:#0A1814;
+  }
+}
+
+@media (prefers-reduced-data:reduce){
+  /* Drop the slow drift animation; let the radial gradients sit still. */
+  body::before{animation:none}
+  /* Drop the year breathing. */
+  .walk-year{animation:none}
+  /* Drop the route scan + ring pulse + bracket flash. */
+  #routeScan,#ringOverlay,.play-stage-scan{display:none}
+}
