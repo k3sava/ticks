@@ -856,7 +856,7 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
   box-shadow:0 0 6px 1px color-mix(in oklab, var(--accent) 30%, transparent);
   display:inline-block;
 }
-.hunt-arrow-rule{max-width:46ch;color:var(--ink-2)}
+.hunt-arrow-rule{color:var(--ink-2);text-wrap:pretty}
 .hunt-arrow-rule em{color:var(--accent);font-style:italic}
 .hunt-empty{font-family:var(--serif);font-style:italic;color:var(--muted);padding:32px 0}
 
