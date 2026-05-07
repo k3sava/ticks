@@ -1929,12 +1929,15 @@ function closeMobileMenu(){
 }
 
 /* ========== theme ==========
-   Three-theme cycle: light → dark → drone → light. Drone is the
-   Oblivion register: cool sky-cloud near-white, hairline geometry
-   leads, warm bloom recedes. The user's system preference wins on
-   first paint; once they cycle, we persist. */
-const THEMES = ['light', 'dark', 'drone'];
-const THEME_BG = { light: '#EEF1F6', dark: '#0A0A0F', drone: '#E8EFF3' };
+   Four-theme cycle: light → dark → matrix → drone → light.
+   - light: warm paper, sienna accent, pebbled grain on glass
+   - dark: graphite + warm bloom, the photon-glass baseline
+   - matrix: phosphor green on near-black, scanline texture
+   - drone: cool blueprint, hairline grid texture, cyan accent
+   The user's system preference wins on first paint; once they
+   cycle, we persist. */
+const THEMES = ['light', 'dark', 'matrix', 'drone'];
+const THEME_BG = { light: '#F4EFE6', dark: '#0A0A0F', matrix: '#040806', drone: '#D5E0E8' };
 function bindTheme(){
   const btn = document.getElementById('themeBtn');
   const apply = (t) => {

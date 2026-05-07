@@ -55,55 +55,68 @@
    prefers-color-scheme:light without override. Apple's iOS 26 lock-screen
    approach: same glass language, brighter content beneath, cooler shadows. */
 :root[data-theme="light"]{
-  --bg:#EEF1F6;
-  --bg-2:#F7F8FB;
-  --paper:rgba(255,255,255,.55);
-  --paper-2:rgba(255,255,255,.7);
-  --line:rgba(15,18,32,.08);
-  --line-2:rgba(15,18,32,.14);
-  --ink:#0E1120;
-  --ink-2:rgba(14,17,32,.74);
-  --muted:rgba(14,17,32,.52);
-  --faint:rgba(14,17,32,.32);
-  --accent:#C2410C;
-  --accent-2:#9A3412;
-  --glass-thin-bg:rgba(255,255,255,.55);
+  --bg:#F4EFE6;
+  --bg-2:#FAF6EE;
+  --paper:rgba(255,253,247,.6);
+  --paper-2:rgba(255,253,247,.78);
+  --line:rgba(60,40,20,.10);
+  --line-2:rgba(60,40,20,.18);
+  --ink:#1F1610;
+  --ink-2:rgba(31,22,16,.78);
+  --muted:rgba(31,22,16,.55);
+  --faint:rgba(31,22,16,.34);
+  --accent:#B8410C;
+  --accent-2:#7A2B0A;
+  --glass-thin-bg:rgba(255,251,242,.55);
   --glass-thin-blur:saturate(180%) blur(20px);
-  --glass-bg:rgba(255,255,255,.62);
+  --glass-bg:rgba(255,251,242,.66);
   --glass-blur:saturate(200%) blur(30px);
-  --glass-thick-bg:rgba(255,255,255,.78);
+  --glass-thick-bg:rgba(255,251,242,.82);
   --glass-thick-blur:saturate(220%) blur(40px);
-  --glass-edge:rgba(255,255,255,.85);
-  --glass-edge-strong:rgba(255,255,255,1);
-  --glass-shadow:0 30px 60px -30px rgba(20,24,40,.22), 0 8px 24px -12px rgba(20,24,40,.16);
-  --glass-shadow-hi:0 40px 80px -28px rgba(20,24,40,.3), 0 14px 32px -14px rgba(20,24,40,.22);
-  --halo:rgba(194,65,12,.22);
+  --glass-edge:rgba(255,247,236,.9);
+  --glass-edge-strong:rgba(255,247,236,1);
+  --glass-shadow:0 30px 60px -30px rgba(60,38,22,.22), 0 8px 24px -12px rgba(60,38,22,.16);
+  --glass-shadow-hi:0 40px 80px -28px rgba(60,38,22,.3), 0 14px 32px -14px rgba(60,38,22,.22);
+  --halo:rgba(184,65,12,.22);
+  /* Paper grain — pebbled noise on glass surfaces */
+  --glass-texture:
+    radial-gradient(circle at 30% 30%, rgba(80,55,30,.05) 0, transparent 1.4px),
+    radial-gradient(circle at 70% 70%, rgba(80,55,30,.04) 0, transparent 1.6px),
+    radial-gradient(circle at 50% 50%, rgba(80,55,30,.025) 0, transparent 1.2px);
+  --glass-texture-size:9px 9px, 13px 13px, 17px 17px;
+  --glass-texture-repeat:repeat, repeat, repeat;
 }
 @media (prefers-color-scheme:light){
-  :root:not([data-theme="dark"]){
-    --bg:#EEF1F6;
-    --bg-2:#F7F8FB;
-    --paper:rgba(255,255,255,.55);
-    --paper-2:rgba(255,255,255,.7);
-    --line:rgba(15,18,32,.08);
-    --line-2:rgba(15,18,32,.14);
-    --ink:#0E1120;
-    --ink-2:rgba(14,17,32,.74);
-    --muted:rgba(14,17,32,.52);
-    --faint:rgba(14,17,32,.32);
-    --accent:#C2410C;
-    --accent-2:#9A3412;
-    --glass-thin-bg:rgba(255,255,255,.55);
+  :root:not([data-theme="dark"]):not([data-theme="drone"]):not([data-theme="matrix"]){
+    --bg:#F4EFE6;
+    --bg-2:#FAF6EE;
+    --paper:rgba(255,253,247,.6);
+    --paper-2:rgba(255,253,247,.78);
+    --line:rgba(60,40,20,.10);
+    --line-2:rgba(60,40,20,.18);
+    --ink:#1F1610;
+    --ink-2:rgba(31,22,16,.78);
+    --muted:rgba(31,22,16,.55);
+    --faint:rgba(31,22,16,.34);
+    --accent:#B8410C;
+    --accent-2:#7A2B0A;
+    --glass-thin-bg:rgba(255,251,242,.55);
     --glass-thin-blur:saturate(180%) blur(20px);
-    --glass-bg:rgba(255,255,255,.62);
+    --glass-bg:rgba(255,251,242,.66);
     --glass-blur:saturate(200%) blur(30px);
-    --glass-thick-bg:rgba(255,255,255,.78);
+    --glass-thick-bg:rgba(255,251,242,.82);
     --glass-thick-blur:saturate(220%) blur(40px);
-    --glass-edge:rgba(255,255,255,.85);
-    --glass-edge-strong:rgba(255,255,255,1);
-    --glass-shadow:0 30px 60px -30px rgba(20,24,40,.22), 0 8px 24px -12px rgba(20,24,40,.16);
-    --glass-shadow-hi:0 40px 80px -28px rgba(20,24,40,.3), 0 14px 32px -14px rgba(20,24,40,.22);
-    --halo:rgba(194,65,12,.22);
+    --glass-edge:rgba(255,247,236,.9);
+    --glass-edge-strong:rgba(255,247,236,1);
+    --glass-shadow:0 30px 60px -30px rgba(60,38,22,.22), 0 8px 24px -12px rgba(60,38,22,.16);
+    --glass-shadow-hi:0 40px 80px -28px rgba(60,38,22,.3), 0 14px 32px -14px rgba(60,38,22,.22);
+    --halo:rgba(184,65,12,.22);
+    --glass-texture:
+      radial-gradient(circle at 30% 30%, rgba(80,55,30,.05) 0, transparent 1.4px),
+      radial-gradient(circle at 70% 70%, rgba(80,55,30,.04) 0, transparent 1.6px),
+      radial-gradient(circle at 50% 50%, rgba(80,55,30,.025) 0, transparent 1.2px);
+    --glass-texture-size:9px 9px, 13px 13px, 17px 17px;
+    --glass-texture-repeat:repeat, repeat, repeat;
   }
 }
 
@@ -173,7 +186,9 @@ body::after{
 .glass,.glass-thin,.glass-thick{
   position:relative;
   border-radius:var(--radius);
-  background:var(--glass-bg);
+  background:var(--glass-texture, none), var(--glass-bg);
+  background-size:var(--glass-texture-size, auto), auto;
+  background-repeat:var(--glass-texture-repeat, repeat), no-repeat;
   -webkit-backdrop-filter:var(--glass-blur);
           backdrop-filter:var(--glass-blur);
   box-shadow:
@@ -184,12 +199,16 @@ body::after{
   transition:background .35s var(--ease-quick), box-shadow .35s var(--ease-quick), transform .35s var(--ease-stage);
 }
 .glass-thin{
-  background:var(--glass-thin-bg);
+  background:var(--glass-texture, none), var(--glass-thin-bg);
+  background-size:var(--glass-texture-size, auto), auto;
+  background-repeat:var(--glass-texture-repeat, repeat), no-repeat;
   -webkit-backdrop-filter:var(--glass-thin-blur);
           backdrop-filter:var(--glass-thin-blur);
 }
 .glass-thick{
-  background:var(--glass-thick-bg);
+  background:var(--glass-texture, none), var(--glass-thick-bg);
+  background-size:var(--glass-texture-size, auto), auto;
+  background-repeat:var(--glass-texture-repeat, repeat), no-repeat;
   -webkit-backdrop-filter:var(--glass-thick-blur);
           backdrop-filter:var(--glass-thick-blur);
   border-radius:var(--radius-lg);
@@ -2047,62 +2066,201 @@ a[href*="issues/new"]{
    amp the hairline geometry. Cyan halo replaces warm halo.
    ============================================================ */
 :root[data-theme="drone"]{
-  --bg:#E8EFF3;
-  --bg-2:#F2F6F9;
-  --paper:rgba(255,255,255,.34);
-  --paper-2:rgba(255,255,255,.5);
-  --line:rgba(15,35,48,.10);
-  --line-2:rgba(15,35,48,.18);
-  --ink:#0F2330;
-  --ink-2:rgba(15,35,48,.78);
-  --muted:rgba(15,35,48,.55);
-  --faint:rgba(15,35,48,.34);
-  --accent:#5FA5BC;
-  --accent-2:#B8D8E2;
+  --bg:#D5E0E8;
+  --bg-2:#E2EBF1;
+  --paper:rgba(245,250,253,.4);
+  --paper-2:rgba(245,250,253,.55);
+  --line:rgba(20,45,62,.14);
+  --line-2:rgba(20,45,62,.24);
+  --ink:#0B1E2C;
+  --ink-2:rgba(11,30,44,.82);
+  --muted:rgba(11,30,44,.58);
+  --faint:rgba(11,30,44,.36);
+  --accent:#256B86;
+  --accent-2:#3F8DA9;
 
-  --glass-thin-bg:rgba(255,255,255,.28);
-  --glass-thin-blur:saturate(140%) blur(18px);
-  --glass-bg:rgba(255,255,255,.34);
-  --glass-blur:saturate(140%) blur(22px);
-  --glass-thick-bg:rgba(255,255,255,.5);
-  --glass-thick-blur:saturate(150%) blur(30px);
-  --glass-edge:rgba(255,255,255,.7);
-  --glass-edge-strong:rgba(255,255,255,.92);
-  --glass-shadow:0 22px 50px -28px rgba(15,35,48,.16), 0 6px 18px -10px rgba(15,35,48,.10);
-  --glass-shadow-hi:0 30px 70px -28px rgba(15,35,48,.22), 0 10px 24px -10px rgba(15,35,48,.14);
-  --halo:rgba(95,165,188,.18);
+  --glass-thin-bg:rgba(225,238,246,.34);
+  --glass-thin-blur:saturate(115%) blur(14px);
+  --glass-bg:rgba(225,238,246,.42);
+  --glass-blur:saturate(120%) blur(18px);
+  --glass-thick-bg:rgba(225,238,246,.58);
+  --glass-thick-blur:saturate(130%) blur(24px);
+  --glass-edge:rgba(255,255,255,.6);
+  --glass-edge-strong:rgba(255,255,255,.85);
+  --glass-shadow:0 18px 40px -28px rgba(15,35,48,.20), 0 4px 14px -10px rgba(15,35,48,.12);
+  --glass-shadow-hi:0 26px 60px -28px rgba(15,35,48,.28), 0 8px 20px -10px rgba(15,35,48,.18);
+  --halo:rgba(37,107,134,.10);
+
+  /* Hairline blueprint grid — drone register's signature texture.
+     Cross-stripes at 24px with a finer 6px sub-grid for the technical feel. */
+  --glass-texture:
+    linear-gradient(0deg, rgba(20,45,62,.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(20,45,62,.07) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(20,45,62,.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(20,45,62,.035) 1px, transparent 1px);
+  --glass-texture-size:24px 24px, 24px 24px, 6px 6px, 6px 6px;
+  --glass-texture-repeat:repeat, repeat, repeat, repeat;
 
   /* Drone register: hairline geometry takes the lead */
-  --ob-line:rgba(15,35,48,.55);
-  --ob-line-dim:rgba(15,35,48,.32);
-  --ob-line-soft:rgba(15,35,48,.16);
-  --ob-glow:0 0 4px rgba(95,165,188,.30);
+  --ob-line:rgba(11,30,44,.60);
+  --ob-line-dim:rgba(11,30,44,.36);
+  --ob-line-soft:rgba(11,30,44,.18);
+  --ob-glow:0 0 4px rgba(37,107,134,.34);
 }
-/* Drone: domain blooms at ~25% intensity (recede the warmth) */
+/* Drone: domain blooms recede further (10%) so the cool palette holds.
+   Specular highlight nearly off — let the grid texture be the hero. */
 :root[data-theme="drone"] .glass::before,
 :root[data-theme="drone"] .glass-thin::before,
 :root[data-theme="drone"] .glass-thick::before,
 :root[data-theme="drone"] .walk-stage::before,
 :root[data-theme="drone"] .home-show::before,
 :root[data-theme="drone"] .walk-flow-card::before,
-:root[data-theme="drone"] .hunt-suggest-grid button::before{opacity:.25}
+:root[data-theme="drone"] .hunt-suggest-grid button::before{opacity:.10}
 :root[data-theme="drone"] .glass::after,
 :root[data-theme="drone"] .glass-thin::after,
 :root[data-theme="drone"] .glass-thick::after,
 :root[data-theme="drone"] .walk-stage::after,
-:root[data-theme="drone"] .home-show::after{mix-blend-mode:overlay;opacity:.5}
+:root[data-theme="drone"] .home-show::after{mix-blend-mode:overlay;opacity:.18}
 :root[data-theme="drone"] body::before{
-  /* Cooler/softer drop-shadow & cyan halo prominence */
+  /* Cyan halo, warm tones suppressed almost entirely */
+  background:
+    radial-gradient(60vmax 60vmax at calc(var(--cx)*100%) calc(var(--cy)*100%),
+      var(--halo) 0%, transparent 45%),
+    radial-gradient(50vmax 60vmax at 18% 12%,
+      color-mix(in oklab, var(--dc, var(--accent)) 4%, transparent) 0%,
+      transparent 60%),
+    radial-gradient(60vmax 60vmax at 82% 88%,
+      color-mix(in oklab, var(--accent-2) 4%, transparent) 0%,
+      transparent 60%),
+    linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+}
+/* Drone body grid — full-page cross-hatch under the glass.
+   Replaces the warm dot grid with a cooler instrument-panel feel. */
+:root[data-theme="drone"] body::after{
+  background-image:
+    linear-gradient(0deg, rgba(20,45,62,.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(20,45,62,.08) 1px, transparent 1px);
+  background-size:64px 64px, 64px 64px;
+  opacity:.45;
+}
+
+/* ============================================================
+   MATRIX THEME — phosphor-green dark
+   Near-black ground with a green tint, phosphor accent, scanline
+   texture on glass. Body keeps the dot grid but recolors it green
+   and adds horizontal scanlines so the whole field feels CRT.
+   ============================================================ */
+:root[data-theme="matrix"]{
+  --bg:#040806;
+  --bg-2:#081410;
+  --paper:rgba(0,255,140,.04);
+  --paper-2:rgba(0,255,140,.07);
+  --line:rgba(0,255,140,.10);
+  --line-2:rgba(0,255,140,.18);
+  --ink:#D7F8E0;
+  --ink-2:rgba(215,248,224,.80);
+  --muted:rgba(215,248,224,.55);
+  --faint:rgba(215,248,224,.30);
+  --accent:#28E07A;
+  --accent-2:#6BFFA5;
+
+  --glass-thin-bg:rgba(8,28,18,.42);
+  --glass-thin-blur:saturate(140%) blur(14px);
+  --glass-bg:rgba(8,28,18,.52);
+  --glass-blur:saturate(160%) blur(20px);
+  --glass-thick-bg:rgba(8,28,18,.68);
+  --glass-thick-blur:saturate(180%) blur(28px);
+  --glass-edge:rgba(40,224,122,.22);
+  --glass-edge-strong:rgba(40,224,122,.40);
+  --glass-shadow:0 22px 50px -28px rgba(0,40,20,.7), 0 6px 18px -10px rgba(0,40,20,.6);
+  --glass-shadow-hi:0 30px 70px -28px rgba(0,80,40,.85), 0 10px 24px -10px rgba(0,80,40,.7);
+  --halo:rgba(40,224,122,.18);
+
+  /* Scanlines — 1px every 3px. Plus a finer 2px stripe for that
+     interlace feel. The horizontal cadence is what reads as CRT. */
+  --glass-texture:
+    repeating-linear-gradient(180deg,
+      rgba(0,255,140,.06) 0,
+      rgba(0,255,140,.06) 1px,
+      transparent 1px,
+      transparent 3px),
+    repeating-linear-gradient(180deg,
+      rgba(0,0,0,.18) 0,
+      rgba(0,0,0,.18) 1px,
+      transparent 1px,
+      transparent 2px);
+  --glass-texture-size:auto, auto;
+  --glass-texture-repeat:repeat, repeat;
+
+  --ob-line:rgba(40,224,122,.55);
+  --ob-line-dim:rgba(40,224,122,.32);
+  --ob-line-soft:rgba(40,224,122,.16);
+  --ob-glow:0 0 6px rgba(40,224,122,.45);
+}
+/* Matrix: dark blooms on glass — let the green tint dominate, not warm */
+:root[data-theme="matrix"] .glass::before,
+:root[data-theme="matrix"] .glass-thin::before,
+:root[data-theme="matrix"] .glass-thick::before,
+:root[data-theme="matrix"] .walk-stage::before,
+:root[data-theme="matrix"] .home-show::before,
+:root[data-theme="matrix"] .walk-flow-card::before,
+:root[data-theme="matrix"] .hunt-suggest-grid button::before{opacity:.45}
+:root[data-theme="matrix"] .glass::after,
+:root[data-theme="matrix"] .glass-thin::after,
+:root[data-theme="matrix"] .glass-thick::after{
+  background:linear-gradient(135deg,
+    rgba(40,224,122,.22) 0%, transparent 18%,
+    transparent 82%, color-mix(in oklab, var(--dc, var(--accent)) 35%, transparent) 100%);
+  opacity:.5;mix-blend-mode:screen;
+}
+:root[data-theme="matrix"] body::before{
+  /* Phosphor halo + green field. Dim background gradients so the green
+     accent + scanlines do the work. */
   background:
     radial-gradient(60vmax 60vmax at calc(var(--cx)*100%) calc(var(--cy)*100%),
       var(--halo) 0%, transparent 50%),
     radial-gradient(50vmax 60vmax at 18% 12%,
-      color-mix(in oklab, var(--dc, var(--accent)) 8%, transparent) 0%,
+      color-mix(in oklab, var(--dc, var(--accent)) 14%, transparent) 0%,
       transparent 60%),
     radial-gradient(60vmax 60vmax at 82% 88%,
-      color-mix(in oklab, var(--accent-2) 10%, transparent) 0%,
+      color-mix(in oklab, var(--accent-2) 12%, transparent) 0%,
       transparent 60%),
     linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+}
+/* Matrix body texture — full-page scanlines + faint phosphor dot grid */
+:root[data-theme="matrix"] body::after{
+  background-image:
+    repeating-linear-gradient(180deg,
+      rgba(0,255,140,.04) 0,
+      rgba(0,255,140,.04) 1px,
+      transparent 1px,
+      transparent 3px),
+    radial-gradient(circle at center,
+      rgba(40,224,122,.18) 1px, transparent 1.4px);
+  background-size:auto, 32px 32px;
+  -webkit-mask-image:radial-gradient(70vmax 70vmax at 50% 50%, black 0%, transparent 80%);
+          mask-image:radial-gradient(70vmax 70vmax at 50% 50%, black 0%, transparent 80%);
+  opacity:.5;
+}
+/* Matrix: rings glow phosphor-green */
+:root[data-theme="matrix"] .ob-rings{opacity:.85;color:color-mix(in oklab, var(--dc, var(--accent)) 70%, var(--accent))}
+/* Matrix: nudge body toward mono in technical surfaces */
+:root[data-theme="matrix"] .nav a,
+:root[data-theme="matrix"] .nav button,
+:root[data-theme="matrix"] .footer-meta,
+:root[data-theme="matrix"] .browse-meta{
+  font-family:var(--mono);
+  letter-spacing:.04em;
+}
+/* Matrix: subtle phosphor glow on the year glyph and accent type */
+:root[data-theme="matrix"] .walk-year,
+:root[data-theme="matrix"] .play-year,
+:root[data-theme="matrix"] .home-year{
+  text-shadow:0 0 14px rgba(40,224,122,.30), 0 0 36px rgba(40,224,122,.18);
+}
+/* Matrix: brand mark glows */
+:root[data-theme="matrix"] .brand-mark{
+  text-shadow:0 0 8px rgba(40,224,122,.35);
 }
 
 /* ============================================================
