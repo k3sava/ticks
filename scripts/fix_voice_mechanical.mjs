@@ -27,8 +27,33 @@ const RULES = [
                         invented: "invented", unlocked: "unlocked", discovered: "discovered" };
       return verbMap[verb] + " " + (that || "");
     } },
+  // "had each demonstrated/shown/established" → simple past, drop "each"
+  { from: /\bhad each (demonstrated|shown|established|proved|proven|published) (that )?\b/g,
+    to: (m, verb, that) => {
+      const verbMap = { demonstrated: "demonstrated", shown: "showed", established: "established",
+                        proved: "proved", proven: "proved", published: "published" };
+      return verbMap[verb] + " " + (that || "");
+    } },
+  // "had together demonstrated/shown" → "together demonstrated/showed"
+  { from: /\bhad together (demonstrated|shown|established) (that )?\b/g,
+    to: (m, verb, that) => {
+      const verbMap = { demonstrated: "together demonstrated", shown: "together showed", established: "together established" };
+      return verbMap[verb] + " " + (that || "");
+    } },
+  // "had also demonstrated" → "also demonstrated"
+  { from: /\bhad also (demonstrated|shown|established) (that )?\b/g,
+    to: (m, verb, that) => {
+      const verbMap = { demonstrated: "also demonstrated", shown: "also showed", established: "also established" };
+      return verbMap[verb] + " " + (that || "");
+    } },
   // "had given X a Y framework" → "gave X a Y framework"
   { from: /\bhad given\b/g, to: "gave" },
+  // "had recently demonstrated/shown" → simple past, drop "recently"
+  { from: /\bhad recently (demonstrated|shown|established) (that )?\b/g,
+    to: (m, verb, that) => {
+      const verbMap = { demonstrated: "had demonstrated", shown: "had shown", established: "had established" };
+      return verbMap[verb] + " " + (that || "");
+    } },
 
   // "X and Y bracket the moment when" → "Together, X and Y mark when"
   { from: /\bbracket the moment when\b/g, to: "mark when" },
