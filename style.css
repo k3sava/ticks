@@ -259,12 +259,17 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 }
 .walk-year{
   font-family:var(--serif);font-style:italic;font-weight:500;
-  font-size:clamp(3rem,12vw,9rem);line-height:1.05;letter-spacing:-.045em;color:var(--ink);
+  font-size:clamp(3rem,11vw,8rem);line-height:1.05;letter-spacing:-.045em;color:var(--ink);
   font-feature-settings:'lnum','tnum';
-  /* Italic Newsreader has tall ascenders; padding + line-height ≥ 1 prevents the
-     gradient mask from clipping the top of glyphs at large sizes. */
-  padding:.06em 0 .04em;
+  /* Italic Newsreader has tall ascenders + a long right-side bearing on D/A.
+     Padding (top/bottom) + line-height ≥ 1 prevents the gradient mask from
+     clipping the top of glyphs. Right padding (.16em) gives the italic slant
+     of "D" room so the trailing letter doesn't get visually clipped at large
+     sizes / on narrow viewports. */
+  padding:.06em .16em .04em 0;
   overflow:visible;
+  width:fit-content;
+  max-width:100%;
   background:linear-gradient(180deg, var(--ink) 0%, color-mix(in oklab,var(--ink) 70%,var(--bg)) 100%);
   -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
 }
