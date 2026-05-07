@@ -20,14 +20,26 @@ jobs:
       - uses: actions/checkout@v4
       - name: Stage site
         run: |
-          mkdir -p _site
+          set -eu
+          mkdir -p _site _site/.well-known
+          # Required: site cannot deploy without these.
           cp index.html app.js style.css data.json _site/
-          cp llms.txt robots.txt sitemap.xml _site/
-          [ -f rss.xml ] && cp rss.xml _site/ || true
-          [ -f search-index.json ] && cp search-index.json _site/ || true
-          mkdir -p _site/.well-known
-          [ -f .well-known/agent-permissions.json ] && cp .well-known/agent-permissions.json _site/.well-known/ || true
-          cp ticks.html _site/legacy.html
+          # Optional: copy each only if present so a partial repo (e.g. before
+          # the SEO/AEO pass lands) still deploys cleanly.
+          for f in llms.txt robots.txt sitemap.xml rss.xml \
+                   featured.json search-index.json \
+                   og.png og-manifest.json; do
+            if [ -f "$f" ]; then cp "$f" _site/; fi
+          done
+          # Per-tick OG images (~200 PNGs). Only copy the directory if it has files.
+          if [ -d og ] && [ -n "$(ls -A og 2>/dev/null)" ]; then
+            cp -R og _site/og
+          fi
+          if [ -f .well-known/agent-permissions.json ]; then
+            cp .well-known/agent-permissions.json _site/.well-known/
+          fi
+          # Legacy SPA, kept reachable at /legacy.html for old shares.
+          if [ -f ticks.html ]; then cp ticks.html _site/legacy.html; fi
       - uses: actions/configure-pages@v5
         with:
           enablement: true

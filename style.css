@@ -21,9 +21,6 @@
   --ease-quick:cubic-bezier(.2,.7,.3,1);
   --ease-stage:cubic-bezier(.16,1,.3,1);
 }
-:root[data-theme="dark"], :root:not([data-theme="light"]){
-  /* dark applies via media below unless data-theme=light forces it */
-}
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
     --bg:#0C0A09;
@@ -65,6 +62,11 @@ body{
   text-rendering:optimizeLegibility;
   min-height:100vh;
   position:relative;
+  /* Newsreader is variable on the optical-size (opsz) axis. Tell the browser
+     to switch the optical size automatically so the year reads like display
+     type at 9rem and like body type at 17px. */
+  font-optical-sizing:auto;
+  font-variant-numeric:lining-nums proportional-nums;
 }
 /* paper grain — gives the page tactility without dominating */
 body::before{
@@ -206,6 +208,38 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
   font-family:var(--mono);font-size:.7rem;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;
   position:relative;padding-bottom:10px;
 }
+
+/* Walk ancestry trail: three quietest of the chain that produced this tick.
+   Reads top-to-bottom, oldest first. Tap to walk to that ancestor. */
+.walk-trail{
+  display:flex;flex-direction:column;align-items:center;gap:6px;
+  max-width:1100px;margin:14px auto 0;width:100%;
+  font-family:var(--mono);
+}
+.walk-trail-step{
+  display:flex;flex-direction:column;align-items:center;gap:1px;
+  text-decoration:none;color:var(--muted);
+  padding:4px 10px;border-radius:8px;
+  transition:color .18s,background .18s,opacity .18s;
+  opacity:.62;
+  max-width:min(560px,92vw);
+}
+.walk-trail-step .yr{font-size:.62rem;letter-spacing:.06em;color:var(--faint);font-variant-numeric:tabular-nums}
+.walk-trail-step .nm{font-family:var(--serif);font-style:italic;font-size:.92rem;color:var(--ink-2);text-align:center;line-height:1.25;letter-spacing:0}
+.walk-trail-step:hover{
+  opacity:1;color:var(--accent);
+  background:color-mix(in oklab,var(--dc,var(--accent)) 6%,transparent);
+}
+.walk-trail-step:hover .nm{color:var(--accent)}
+.walk-trail-link{
+  color:var(--faint);font-size:.7rem;line-height:1;
+  opacity:.55;
+}
+.walk-trail-here{color:var(--ink-2);opacity:.85}
+
+@media (max-width:560px){
+  .walk-trail-step .nm{font-size:.86rem}
+}
 .walk-meta .zone-name{color:var(--ink-2)}
 .walk-meta .pos{font-variant-numeric:tabular-nums}
 /* hairline progress bar across the walk position */
@@ -224,8 +258,12 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 }
 .walk-year{
   font-family:var(--serif);font-style:italic;font-weight:500;
-  font-size:clamp(3rem,12vw,10rem);line-height:.92;letter-spacing:-.045em;color:var(--ink);
+  font-size:clamp(3rem,12vw,9rem);line-height:1.05;letter-spacing:-.045em;color:var(--ink);
   font-feature-settings:'lnum','tnum';
+  /* Italic Newsreader has tall ascenders; padding + line-height ≥ 1 prevents the
+     gradient mask from clipping the top of glyphs at large sizes. */
+  padding:.06em 0 .04em;
+  overflow:visible;
   background:linear-gradient(180deg, var(--ink) 0%, color-mix(in oklab,var(--ink) 70%,var(--bg)) 100%);
   -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
 }
@@ -236,13 +274,24 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
   font-family:var(--serif);font-weight:500;
   font-size:clamp(1.5rem,3.4vw,2.6rem);line-height:1.1;letter-spacing:-.02em;
   color:var(--ink);max-width:22ch;
+  text-wrap:balance;
 }
 .walk-before{
   font-family:var(--serif);font-style:italic;font-size:clamp(1.05rem,1.6vw,1.3rem);
   color:var(--ink-2);max-width:46ch;line-height:1.4;
 }
 .walk-before .label{font-style:normal;font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);display:block;margin-bottom:6px}
-.walk-detail{font-family:var(--serif);font-size:1.05rem;color:var(--ink-2);max-width:62ch;line-height:1.55}
+.walk-detail{font-family:var(--serif);font-size:1.05rem;color:var(--ink-2);max-width:62ch;line-height:1.55;text-wrap:pretty;hyphens:auto}
+/* Editorial seasoning: appears only on a hand-picked subset of foundational
+   ticks. One italic sentence saying what the tick feels like in retrospect. */
+.walk-note{
+  font-family:var(--serif);font-style:italic;font-weight:500;
+  font-size:clamp(1.05rem,1.7vw,1.25rem);line-height:1.45;
+  color:var(--ink);max-width:50ch;
+  padding:8px 0 8px 18px;
+  border-left:2px solid var(--accent);
+  margin-top:6px;
+}
 .walk-domain{align-self:flex-start}
 
 .walk-flow{
@@ -290,7 +339,7 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 /* ========== HUNT (backward chain) ========== */
 .hunt{padding-top:8px}
 .hunt-head{margin-bottom:32px}
-.hunt-head h1{font-family:var(--serif);font-weight:500;font-size:clamp(1.8rem,4.5vw,3.2rem);line-height:1;letter-spacing:-.02em;margin-bottom:12px}
+.hunt-head h1{font-family:var(--serif);font-weight:500;font-size:clamp(1.8rem,4.5vw,3.2rem);line-height:1.08;letter-spacing:-.02em;margin-bottom:12px;padding-top:.04em}
 .hunt-head p{font-family:var(--serif);font-style:italic;color:var(--ink-2);font-size:1.1rem;max-width:none}
 
 .hunt-search{display:flex;align-items:center;gap:10px;border:1px solid var(--line-2);border-radius:14px;background:var(--paper);padding:14px 18px;margin-bottom:32px;max-width:640px}
@@ -320,21 +369,31 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 .hunt-step-name:hover{color:var(--accent)}
 .hunt-step-before{font-family:var(--serif);font-style:italic;color:var(--ink-2);font-size:.95rem}
 .hunt-step-meta{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+/* Hunt step bridge: instead of an empty "required ↓" arrow, name the
+   constraint that the next step dissolves. The chain teaches itself. */
 .hunt-arrow{
-  color:var(--faint);font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;
-  display:flex;align-items:center;gap:10px;padding-left:138px;margin:-4px 0 -4px 0;
+  display:flex;align-items:flex-start;gap:14px;
+  padding-left:138px;margin:-2px 0 -2px;
+  font-family:var(--serif);font-style:italic;color:var(--ink-2);
+  font-size:.92rem;line-height:1.4;
 }
 .hunt-arrow::before{
-  content:"";width:1px;height:24px;
-  background:linear-gradient(180deg,transparent,var(--line-2) 30%,var(--line-2) 70%,transparent);
+  content:"";flex:none;width:1px;height:36px;margin-top:4px;
+  background:linear-gradient(180deg,transparent,var(--line-2) 22%,var(--line-2) 78%,transparent);
   display:inline-block;
 }
+.hunt-arrow-rule{max-width:46ch;color:var(--ink-2)}
+.hunt-arrow-rule em{color:var(--accent);font-style:italic}
 .hunt-empty{font-family:var(--serif);font-style:italic;color:var(--muted);padding:32px 0}
 
+@media (max-width:720px){
+  .hunt-arrow{padding-left:0}
+  .hunt-arrow::before{height:24px}
+  .hunt-arrow-rule{font-size:.92rem}
+}
 @media (max-width:560px){
   .hunt-step{grid-template-columns:1fr;gap:4px}
   .hunt-step-yr{text-align:left}
-  .hunt-arrow{padding-left:0}
 }
 
 /* ========== MAP ========== */
@@ -402,10 +461,30 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 }
 .map-y-label:last-child{border-bottom:none}
 
+/* Marginalia ribbon below the canvas. Names what was true before the
+   currently-hovered era began. Editorial, not a tooltip. */
+.map-marginalia{
+  margin:14px 0 6px;padding:10px 14px;
+  border-left:2px solid var(--accent);
+  background:color-mix(in oklab,var(--accent) 5%,transparent);
+  font-family:var(--serif);font-size:1rem;color:var(--ink-2);
+  display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;
+  min-height:42px;
+  transition:background .2s var(--ease-quick);
+}
+.map-marginalia-hint{font-style:italic;color:var(--muted);font-size:.92rem}
+.map-marginalia-era{
+  font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;
+  color:var(--ink-2);
+}
+.map-marginalia-rng{font-family:var(--mono);font-size:.68rem;color:var(--faint);font-variant-numeric:tabular-nums}
+.map-marginalia-rule{font-style:italic;color:var(--ink-2);font-size:1rem;line-height:1.4;flex:1 1 320px;min-width:0}
+.map-help{font-family:var(--mono);font-size:.7rem;color:var(--muted);margin-top:8px}
+
 /* ========== BROWSE ========== */
 .browse-page{padding-top:8px}
 .browse-head{margin-bottom:24px}
-.browse-head h1{font-family:var(--serif);font-weight:500;font-size:clamp(1.8rem,4.5vw,3.2rem);line-height:1;letter-spacing:-.02em;margin-bottom:12px}
+.browse-head h1{font-family:var(--serif);font-weight:500;font-size:clamp(1.8rem,4.5vw,3.2rem);line-height:1.08;letter-spacing:-.02em;margin-bottom:12px;padding-top:.04em}
 .browse-head p{font-family:var(--serif);font-style:italic;color:var(--ink-2);max-width:none}
 
 .browse-toolbar{
@@ -421,12 +500,41 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 
 .browse-zone{margin-bottom:48px}
 .browse-zone-head{
-  display:flex;align-items:baseline;gap:14px;margin-bottom:16px;padding-bottom:10px;
+  display:grid;grid-template-columns:auto auto auto 1fr auto;
+  align-items:baseline;gap:14px;margin-bottom:16px;padding:14px 0;
   border-bottom:1px solid var(--line);
+  cursor:pointer;border-radius:6px;
+  min-height:48px;
 }
+.browse-zone-head:hover{background:color-mix(in oklab,var(--accent) 4%,transparent)}
+.browse-zone-head:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.browse-zone-head .browse-chev{
+  font-family:var(--mono);font-size:.8rem;color:var(--muted);width:14px;display:inline-block;text-align:center;
+  transition:color .15s;
+}
+.browse-zone-head:hover .browse-chev{color:var(--accent)}
 .browse-zone-head h2{font-family:var(--serif);font-weight:500;font-size:1.6rem;letter-spacing:-.01em}
 .browse-zone-head .range{font-family:var(--mono);font-size:.72rem;color:var(--muted)}
-.browse-zone-head .ct{font-family:var(--mono);font-size:.72rem;color:var(--muted);margin-left:auto}
+.browse-zone-head .rule{
+  font-family:var(--serif);font-style:italic;color:var(--ink-2);
+  font-size:.96rem;line-height:1.35;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0;
+}
+.browse-zone-head .ct{font-family:var(--mono);font-size:.72rem;color:var(--muted)}
+.browse-zone.is-collapsed .browse-zone-body{display:none}
+
+.browse-toolbar .browse-meta{display:flex;align-items:center;gap:14px}
+.browse-toggle{
+  font-family:var(--mono);font-size:.7rem;color:var(--ink-2);
+  padding:6px 12px;border:1px solid var(--line-2);border-radius:999px;
+  cursor:pointer;background:transparent;transition:border-color .15s,color .15s;
+}
+.browse-toggle:hover{border-color:var(--accent);color:var(--accent)}
+
+@media (max-width:760px){
+  .browse-zone-head{grid-template-columns:auto auto 1fr auto;gap:10px}
+  .browse-zone-head .rule{display:none}
+}
 
 .browse-row{
   display:grid;grid-template-columns:90px 1fr auto;gap:18px;
@@ -458,7 +566,7 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 .tick-dlg-close{padding:6px 10px;border-radius:8px;color:var(--muted)}
 .tick-dlg-close:hover{background:var(--paper-2);color:var(--ink)}
 .tick-dlg-body{padding:24px 28px 28px;overflow-y:auto}
-.tick-dlg-yr{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(2rem,5vw,3.4rem);line-height:.95;color:var(--ink);margin-bottom:6px}
+.tick-dlg-yr{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(2rem,5vw,3.4rem);line-height:1.05;color:var(--ink);margin-bottom:6px;padding-top:.04em}
 .tick-dlg-name{font-family:var(--serif);font-weight:500;font-size:clamp(1.3rem,2.6vw,1.9rem);line-height:1.15;color:var(--ink);margin-bottom:14px;letter-spacing:-.01em}
 .tick-dlg-before{font-family:var(--serif);font-style:italic;color:var(--ink-2);font-size:1.05rem;margin-bottom:12px}
 .tick-dlg-detail{font-family:var(--serif);color:var(--ink-2);font-size:1rem;line-height:1.55;margin-bottom:18px}
@@ -475,18 +583,131 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 .tick-dlg-flow-row .yr{font-family:var(--mono);font-size:.7rem;color:var(--muted);text-align:right}
 .tick-dlg-flow-row .nm{font-size:.96rem;line-height:1.3}
 
+/* ========== PLAY (acceleration finale) ========== */
+.play{
+  min-height:calc(100vh - var(--hdr-h) - 80px);
+  display:grid;grid-template-rows:auto 1fr auto auto;gap:0;
+  padding:24px var(--gut);
+}
+.play-meta{
+  display:flex;justify-content:space-between;align-items:baseline;gap:14px;
+  font-family:var(--mono);font-size:.7rem;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;
+  padding-bottom:10px;border-bottom:1px solid var(--line);
+}
+.play-counter{font-variant-numeric:tabular-nums;color:var(--ink-2)}
+.play-help{opacity:.78}
+@media (max-width:560px){.play-help{display:none}}
+.play-stage{
+  display:flex;align-items:center;justify-content:center;
+  padding:32px 0;
+}
+.play-frame{
+  display:flex;flex-direction:column;align-items:center;gap:14px;
+  text-align:center;max-width:min(900px,92vw);
+  animation:play-in .35s var(--ease-stage);
+}
+@keyframes play-in{
+  from{opacity:0;transform:translateY(8px)}
+  to{opacity:1;transform:none}
+}
+@media (prefers-reduced-motion:reduce){.play-frame{animation:none}}
+.play-dom{align-self:center}
+.play-year{
+  font-family:var(--serif);font-style:italic;font-weight:500;
+  font-size:clamp(3rem,11vw,8rem);line-height:1.04;letter-spacing:-.045em;color:var(--ink);
+  font-feature-settings:'lnum','tnum';
+  padding:.04em 0;
+}
+.play-name{
+  font-family:var(--serif);font-weight:500;
+  font-size:clamp(1.5rem,3.4vw,2.6rem);line-height:1.12;letter-spacing:-.02em;
+  color:var(--ink);max-width:22ch;text-wrap:balance;
+}
+.play-constraint{
+  font-family:var(--serif);font-style:italic;
+  font-size:clamp(1.05rem,1.8vw,1.35rem);
+  color:var(--ink-2);max-width:46ch;line-height:1.4;
+}
+.play-frame{position:relative}
+.play-frame.is-beat .play-year{color:var(--accent)}
+.play-frame.is-beat::before{
+  content:"";position:absolute;left:50%;top:-22px;
+  width:48px;height:1px;transform:translateX(-50%);
+  background:linear-gradient(90deg,transparent,var(--accent),transparent);
+  opacity:.7;
+}
+.play-beat-mark{
+  font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--accent);margin-top:6px;
+  padding:6px 14px;border:1px solid var(--accent);border-radius:999px;
+  background:color-mix(in oklab,var(--accent) 6%,transparent);
+}
+.play-progress{height:1px;background:var(--line);position:relative;margin:14px 0 0}
+.play-progress-fill{position:absolute;left:0;top:0;height:1px;background:var(--accent);transition:width .25s var(--ease-stage)}
+.play-controls{
+  display:flex;justify-content:space-between;align-items:center;
+  padding-top:14px;border-top:1px solid var(--line);margin-top:10px;
+  font-family:var(--mono);font-size:.78rem;color:var(--muted);
+}
+.play-controls #playToggle{
+  padding:8px 18px;border:1px solid var(--line-2);border-radius:999px;
+  font-family:var(--mono);font-size:.78rem;color:var(--ink-2);min-height:44px;min-width:88px;
+  cursor:pointer;background:transparent;
+  transition:border-color .15s,color .15s;
+}
+.play-controls #playToggle:hover{border-color:var(--accent);color:var(--accent)}
+.play-exit{
+  font-family:var(--mono);font-size:.78rem;color:var(--muted);
+  padding:10px 14px;min-height:44px;border-radius:999px;
+}
+.play-exit:hover{color:var(--accent);background:color-mix(in oklab,var(--accent) 6%,transparent)}
+
 /* ========== ABOUT ========== */
-.about{max-width:760px;margin:0 auto;padding:48px var(--gut) 80px}
-.about h1{font-family:var(--serif);font-weight:500;font-size:clamp(2rem,5vw,3.4rem);letter-spacing:-.02em;line-height:1;margin-bottom:24px}
+.about{max-width:min(720px,92vw);margin:0 auto;padding:48px var(--gut) 80px}
+.about h1{font-family:var(--serif);font-weight:500;font-size:clamp(2rem,5vw,3.4rem);letter-spacing:-.02em;line-height:1.08;margin-bottom:24px;padding-top:.04em}
 .about .lede{font-family:var(--serif);font-style:italic;font-size:1.3rem;color:var(--ink-2);line-height:1.45;margin-bottom:36px;max-width:48ch}
-.about p{font-family:var(--serif);font-size:1.08rem;color:var(--ink-2);line-height:1.65;margin-bottom:18px}
-.about h2{font-family:var(--serif);font-weight:500;font-size:1.4rem;letter-spacing:-.01em;margin:36px 0 12px;color:var(--ink)}
+/* Drop cap on the lede's first letter. Italic Newsreader leans naturally
+   into the line of body text. Hairline on the right hand-tunes the reveal. */
+.about .lede::first-letter{
+  font-family:var(--serif);font-style:italic;font-weight:600;
+  font-size:3.6em;line-height:.86;
+  float:left;margin:.04em .12em -.06em 0;
+  color:var(--ink);
+  letter-spacing:-.04em;
+}
+.about p{font-family:var(--serif);font-size:1.08rem;color:var(--ink-2);line-height:1.65;margin-bottom:18px;max-width:65ch}
+.about h2{
+  font-family:var(--serif);font-weight:500;font-size:1.4rem;letter-spacing:.02em;
+  margin:36px 0 12px;color:var(--ink);
+  font-variant-caps:all-small-caps;
+}
 .about .modes{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;margin:18px 0}
 .about .mode-tile{padding:14px 16px;border:1px solid var(--line);border-radius:10px;background:var(--paper);text-decoration:none;color:inherit}
 .about .mode-tile:hover{border-color:var(--accent)}
 .about .mode-tile h3{font-family:var(--serif);font-weight:500;font-size:1.1rem;margin-bottom:4px;color:var(--ink)}
 .about .mode-tile p{font-family:var(--serif);font-style:italic;font-size:.92rem;color:var(--ink-2);margin:0}
 .about .credit{font-family:var(--mono);font-size:.78rem;color:var(--muted);margin-top:48px;padding-top:18px;border-top:1px solid var(--line)}
+.about .cite{
+  font-family:var(--mono);font-size:.82rem;
+  background:var(--paper-2);border:1px solid var(--line);border-radius:8px;
+  padding:14px 16px;margin:6px 0 10px;overflow-x:auto;
+  color:var(--ink-2);
+}
+.about .cite code{font-family:inherit;background:transparent;padding:0;color:inherit;white-space:pre-wrap;word-break:break-word}
+.cite-copy{
+  font-family:var(--mono);font-size:.74rem;color:var(--ink-2);
+  padding:7px 14px;border:1px solid var(--line-2);border-radius:999px;
+  background:transparent;cursor:pointer;
+  transition:border-color .15s,color .15s,background .15s;
+}
+.cite-copy:hover{border-color:var(--accent);color:var(--accent);background:color-mix(in oklab,var(--accent) 4%,transparent)}
+.about-list{list-style:none;padding:0;margin:8px 0 18px;display:flex;flex-direction:column;gap:8px}
+.about-list li{
+  font-family:var(--serif);font-size:1rem;color:var(--ink-2);line-height:1.5;
+  padding-left:14px;border-left:1px dashed var(--line-2);
+}
+.about-list a{color:var(--ink);border-bottom:1px solid var(--line-2);padding-bottom:1px}
+.about-list a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 
 /* ========== HOME (intro page) ========== */
 .home{padding:0}
@@ -499,8 +720,10 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 .home-thesis .eyebrow{font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-bottom:18px}
 .home-thesis h1{
   font-family:var(--serif);font-weight:500;
-  font-size:clamp(2rem,6.5vw,5rem);line-height:1.02;letter-spacing:-.025em;
+  font-size:clamp(2rem,6.5vw,5rem);line-height:1.06;letter-spacing:-.025em;
   color:var(--ink);max-width:18ch;
+  padding-top:.04em;
+  text-wrap:balance;
 }
 .home-thesis h1 em{
   font-style:italic;color:var(--accent);font-weight:500;
@@ -518,7 +741,7 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
   padding:24px 0;
 }
 .home-show-tick{display:flex;flex-direction:column;gap:14px}
-.home-show-tick .yr{font-family:var(--serif);font-style:italic;font-size:clamp(2.4rem,6vw,4.5rem);line-height:.95;color:var(--ink);font-weight:500;font-feature-settings:'lnum'}
+.home-show-tick .yr{font-family:var(--serif);font-style:italic;font-size:clamp(2.4rem,6vw,4.5rem);line-height:1.05;color:var(--ink);font-weight:500;font-feature-settings:'lnum';padding:.04em 0;overflow:visible}
 .home-show-tick .nm{font-family:var(--serif);font-weight:500;font-size:clamp(1.3rem,2.4vw,1.9rem);line-height:1.15;color:var(--ink);max-width:24ch}
 .home-show-tick .be{font-family:var(--serif);font-style:italic;color:var(--ink-2);font-size:1.05rem;max-width:42ch}
 .home-show-flow{display:flex;flex-direction:column;gap:10px;border-left:2px solid var(--line);padding-left:24px}
@@ -562,17 +785,135 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 
 /* ========== ACCESSIBILITY POLISH (kbd / mouse / touch parity) ========== */
 
-/* Strong focus ring on every interactive element */
-:focus-visible{
+/* Strong focus ring on interactive elements only. Skipping <main>: it gets
+   programmatic focus on every route change to anchor screen readers, and the
+   user has no expectation of a ring around the entire content column. */
+button:focus-visible,
+a:focus-visible,
+[role="button"]:focus-visible,
+[role="menuitem"]:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+canvas:focus-visible,
+[tabindex="0"]:focus-visible,
+summary:focus-visible{
   outline:2px solid var(--accent);
-  outline-offset:2px;
+  outline-offset:3px;
   border-radius:4px;
 }
-button:focus-visible,a:focus-visible{outline-offset:3px}
+input:focus-visible,textarea:focus-visible,select:focus-visible{outline-offset:2px}
+main:focus,main:focus-visible{outline:none}
 
 /* Walk source links wrap on narrow viewports */
 .walk-links{display:flex;flex-wrap:wrap;gap:14px;row-gap:8px;margin-top:8px}
-.walk-stage > a[href*="github.com"]{display:inline-block;padding:8px 4px;min-height:44px;line-height:1.5}
+.walk-links a{
+  font-family:var(--mono);font-size:.78rem;color:var(--muted);
+  border-bottom:1px solid var(--line);padding:4px 0;
+  transition:color .15s,border-color .15s;
+}
+.walk-links a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+
+/* Walk actions (share + suggest edit) */
+.walk-actions{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-top:8px}
+.walk-action{
+  display:inline-flex;align-items:center;gap:6px;
+  font-family:var(--mono);font-size:.76rem;color:var(--faint);
+  padding:10px 4px;min-height:44px;min-width:44px;
+  background:transparent;border:0;cursor:pointer;text-decoration:none;
+  border-radius:6px;
+  transition:color .15s,background .15s;
+}
+.walk-action:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.walk-action:hover{background:color-mix(in oklab,var(--accent) 4%,transparent)}
+.walk-action:hover{color:var(--accent)}
+.walk-action svg{opacity:.8}
+
+/* Toast — copies the ab-codex idiom: bottom-center, monospace, brief, accessible */
+#toast{
+  position:fixed;left:50%;bottom:28px;transform:translate(-50%,12px);
+  background:var(--ink);color:var(--bg);
+  padding:10px 16px;border-radius:8px;
+  font-family:var(--mono);font-size:.74rem;letter-spacing:.04em;
+  box-shadow:0 12px 32px -10px color-mix(in oklab,var(--ink) 60%,transparent);
+  opacity:0;pointer-events:none;z-index:200;
+  transition:opacity .18s var(--ease-quick),transform .22s var(--ease-stage);
+}
+#toast[data-show="true"]{opacity:1;transform:translate(-50%,0)}
+#toast[data-error="true"]{background:#9A2226;color:#fff}
+
+/* Skip link — first focusable element, visible only when focused */
+.skip-link{
+  position:fixed;left:8px;top:-40px;z-index:300;
+  background:var(--ink);color:var(--bg);
+  padding:8px 14px;border-radius:8px;
+  font-family:var(--mono);font-size:.78rem;letter-spacing:.04em;
+  transition:top .15s var(--ease-quick);
+}
+.skip-link:focus-visible{top:8px;outline:2px solid var(--accent);outline-offset:2px}
+
+/* Share menu — anchored to the share button on walk view */
+#shareMenu{
+  position:absolute;z-index:120;min-width:200px;
+  display:flex;flex-direction:column;gap:2px;
+  padding:6px;background:var(--paper);border:1px solid var(--line);
+  border-radius:10px;
+  box-shadow:0 16px 40px -12px color-mix(in oklab,var(--ink) 28%,transparent);
+}
+#shareMenu[hidden]{display:none}
+.share-opt{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:10px 12px;min-height:40px;border-radius:6px;
+  font-family:var(--mono);font-size:.76rem;color:var(--ink-2);
+  background:transparent;border:0;cursor:pointer;text-align:left;
+  transition:background .12s,color .12s;
+}
+.share-opt:hover,.share-opt:focus-visible{
+  background:color-mix(in oklab,var(--accent) 8%,var(--paper-2));
+  color:var(--accent-2,var(--accent));
+  outline:none;
+}
+.share-opt[hidden]{display:none}
+
+/* Keyboard help dialog */
+#kbdHelp{
+  position:fixed;inset:0;z-index:130;
+  display:flex;align-items:center;justify-content:center;
+  background:color-mix(in oklab,var(--ink) 32%,transparent);
+  backdrop-filter:blur(4px);
+  padding:24px;
+}
+#kbdHelp[hidden]{display:none}
+.kbd-card{
+  background:var(--paper);border:1px solid var(--line);
+  border-radius:14px;padding:22px 24px;max-width:440px;width:100%;
+  box-shadow:0 24px 64px -20px color-mix(in oklab,var(--ink) 40%,transparent);
+}
+.kbd-head{
+  display:flex;align-items:center;justify-content:space-between;
+  font-family:var(--mono);font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;
+  color:var(--muted);margin-bottom:14px;
+}
+.kbd-close{
+  font-family:var(--mono);font-size:.7rem;color:var(--muted);
+  padding:4px 8px;border:1px solid var(--line);border-radius:6px;
+  cursor:pointer;background:transparent;
+}
+.kbd-close:hover{color:var(--ink);border-color:var(--line-2)}
+.kbd-list{display:grid;grid-template-columns:auto 1fr;gap:8px 18px;font-family:var(--serif);font-size:.95rem;color:var(--ink-2)}
+.kbd-list dt{display:flex;gap:4px;align-items:center}
+.kbd-list dd{margin:0;padding-top:1px}
+.kbd-list kbd{
+  font-family:var(--mono);font-size:.7rem;
+  padding:2px 7px;background:var(--paper-2);
+  border:1px solid var(--line);border-radius:4px;color:var(--muted);
+}
+.kbd-foot{
+  margin-top:14px;padding-top:14px;border-top:1px solid var(--line);
+  font-family:var(--serif);font-size:.88rem;color:var(--muted);
+}
+.kbd-foot kbd{font-family:var(--mono);font-size:.7rem;padding:1px 5px;background:var(--paper-2);border:1px solid var(--line);border-radius:3px;margin:0 1px}
+.kbd-foot code{font-family:var(--mono);font-size:.78rem;background:var(--paper-2);padding:1px 5px;border-radius:3px}
 
 /* Walk-controls — stack on narrow, hide kbd hints on coarse pointers */
 @media (max-width:720px){
@@ -615,21 +956,127 @@ a[href*="issues/new"]{
 }
 .mm-close:hover,.mm-theme:hover{background:var(--paper-2);color:var(--ink)}
 
-/* Map mobile — taller era labels with rotated text */
+/* Map mobile — 13 eras × 14 domains in a 375-wide viewport collapses into a
+   thin column of clustered dots. Pin domain labels on the left and let the
+   canvas + era ribbon scroll horizontally so density still reads. */
 @media (max-width:720px){
-  .map-canvas-wrap{}
+  .map-canvas-wrap{display:flex;align-items:stretch;overflow:hidden;border-radius:14px;background:var(--paper)}
+  .map-y-labels{
+    position:sticky;left:0;top:0;
+    width:96px;flex:none;height:480px;
+    background:var(--paper);
+    z-index:2;border-right:1px solid var(--line);
+  }
+  .map-y-label{padding-left:12px;font-size:.66rem}
+  .map-mobile-scroller{
+    flex:1;overflow-x:auto;overflow-y:hidden;position:relative;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:thin;scrollbar-color:var(--line-2) transparent;
+  }
+  .map-mobile-scroller::-webkit-scrollbar{height:6px}
+  .map-mobile-scroller::-webkit-scrollbar-thumb{background:var(--line-2);border-radius:999px}
+  .map-canvas{height:480px;display:block}
+  .map-mobile-scroller .map-eras{position:absolute;left:0;right:0;top:0;height:60px;pointer-events:none}
+  .map-mobile-scroller .map-tooltip{position:absolute}
   .map-eras .map-era-label{
     writing-mode:vertical-rl;
     transform:rotate(180deg);
-    height:auto !important;
-    top:8px !important;
-    bottom:auto;
+    height:60px !important;
+    top:0 !important;
+    background:linear-gradient(180deg,var(--paper) 80%,transparent);
+    padding-bottom:6px;
   }
-  .map-eras .map-era-label .nm{font-size:.6rem}
+  .map-eras .map-era-label .nm{font-size:.58rem;letter-spacing:.04em;color:var(--muted)}
   .map-eras .map-era-label .rng{display:none}
-  .map-canvas{height:480px}
-  .map-y-labels{width:90px}
-  .map-y-label{padding-left:10px;font-size:.64rem}
+  .map-help::before{content:"swipe the timeline → "}
+}
+
+/* Map: dim domain filter pills clearly so the active state pops */
+.map-domains button{transition:all .18s var(--ease-quick)}
+
+/* Browse: empty search state */
+.browse-empty{
+  font-family:var(--serif);font-style:italic;color:var(--muted);
+  padding:32px 0;line-height:1.5;text-align:center;
+  border-top:1px dashed var(--line);
+}
+.browse-empty strong{color:var(--ink-2);font-style:normal}
+
+/* Loading state — a quiet skeleton while data.json (~3MB) streams in. The
+   text is intentionally apologetic and brief; nothing renders behind it. */
+.boot-load{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  min-height:60vh;padding:48px var(--gut);gap:14px;
+  font-family:var(--serif);color:var(--muted);
+  animation:boot-fade .25s var(--ease-quick) .35s both;
+}
+@keyframes boot-fade{from{opacity:0}to{opacity:1}}
+.boot-load .boot-mark{
+  width:24px;height:24px;border-radius:50%;
+  background:radial-gradient(circle at 35% 35%, var(--accent) 0%, var(--accent-2) 60%, transparent 75%);
+  animation:boot-pulse 1.6s ease-in-out infinite;
+}
+@keyframes boot-pulse{0%,100%{transform:scale(.85);opacity:.7}50%{transform:scale(1.1);opacity:1}}
+.boot-load .boot-text{font-style:italic;font-size:1rem;color:var(--ink-2)}
+.boot-load .boot-hint{font-family:var(--mono);font-size:.7rem;letter-spacing:.06em;color:var(--faint);text-transform:uppercase}
+@media (prefers-reduced-motion:reduce){
+  .boot-load,.boot-load .boot-mark{animation:none}
+}
+
+/* Print: hide chrome, keep content readable on paper. Nobody'll print 2,648
+   ticks but a single walk page should print sane. */
+@media print{
+  *,*::before,*::after{
+    background:#fff !important;color:#000 !important;
+    box-shadow:none !important;
+    text-shadow:none !important;
+    -webkit-text-fill-color:initial !important;
+  }
+  body::before{display:none}
+  #hdr,footer,.walk-controls,.walk-actions,.walk-trail,.map-page,.browse-toolbar,
+  #shareMenu,#kbdHelp,#mobileMenu,#mobileBackdrop,#toast,.skip-link,.home-cta-buttons{
+    display:none !important;
+  }
+  main{max-width:none;padding:0}
+  .walk-year,.walk-name{break-inside:avoid}
+  .walk-flow{break-before:auto}
+  a[href^="http"]::after{content:" (" attr(href) ")";font-family:monospace;font-size:.7em;color:#555}
+  a[href^="#"]::after{content:""}
+}
+
+/* Footer separators wrap gracefully on narrow */
+@media (max-width:520px){
+  footer{gap:6px;font-size:.66rem}
+  .ftr-sep{display:none}
+}
+
+/* Hairline for keyboard help dialog */
+#kbdHelp{outline:none}
+#kbdHelp .kbd-card{outline:1px solid var(--line);outline-offset:0}
+
+/* Better contrast on the brand-mark in dark mode */
+:root[data-theme="dark"] .brand-mark{
+  box-shadow:0 0 0 3px color-mix(in oklab,var(--accent) 22%,transparent);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]) .brand-mark{
+    box-shadow:0 0 0 3px color-mix(in oklab,var(--accent) 22%,transparent);
+  }
+}
+
+/* The walk year and home year shouldn't break across "1928" / "AD" */
+.walk-year,.play-year,.home-show-tick .yr,.tick-dlg-yr,
+.home-show-flow .row .y,.walk-trail-step .yr,
+.browse-row .yr,.hunt-step-yr,.walk-flow-card .yr{
+  white-space:nowrap;
+}
+
+/* Walk-flow card: clearer active state on mobile (no hover) */
+@media (hover:none){
+  .walk-flow-card:active,.hunt-suggest-grid button:active{
+    transform:scale(.98);
+    background:color-mix(in oklab,var(--dc,var(--accent)) 8%,var(--paper));
+  }
 }
 
 /* Map canvas keyboard focus ring */
