@@ -13,13 +13,34 @@ let TICKS_SORTED = []; // by yearN asc
 const fmtYear = (s) => String(s); // already formatted in source
 const escapeHtml = (s) => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
+// 163 of 2,648 constraints start with "Before, …" or similar — when we prefix
+// "before this, " in the renderer we'd produce "before this, before, …".
+// Strip the redundant lead so the page never reads doubled.
+const REDUNDANT_LEAD = /^\s*(before(\s+this)?[,:]?\s+|prior(\s+to(\s+this)?)?[,:]?\s+|previously[,:]?\s+|until(\s+this)?[,:]?\s+|earlier[,:]?\s+)/i;
+function cleanConstraint(s){
+  return String(s ?? '').replace(REDUNDANT_LEAD, '').replace(/\.$/, '').trim();
+}
+
 function domStyle(domain){
   return `--dc:${DOMAINS[domain] || '#888'}`;
 }
 
 /* ========== loading ========== */
+function showBoot(){
+  // Skeleton placeholder rendered while data.json (~3MB) streams in. Delayed
+  // visually by 350ms via CSS so a fast load never flashes the loader.
+  app.innerHTML = `
+    <div class='boot-load' aria-busy='true' aria-live='polite'>
+      <div class='boot-mark' aria-hidden='true'></div>
+      <div class='boot-text'>2,648 moments are loading…</div>
+      <div class='boot-hint'>about 3 MB · once</div>
+    </div>
+  `;
+}
 async function loadData(){
+  showBoot();
   const r = await fetch('data.json');
+  if (!r.ok) throw new Error(`data.json: ${r.status} ${r.statusText}`);
   DATA = await r.json();
   TICKS = DATA.ticks;
   UNLOCKS = DATA.unlocks;
@@ -116,7 +137,7 @@ function updateMeta(base, arg){
     const img = OG_AVAILABLE.has(t.id) ? `og/${t.id}.png` : null;
     setMeta(
       `${t.name} (${t.year}) · ${SITE_TITLE}`,
-      `${t.year}. ${t.name}. Before this, ${t.constraint.toLowerCase().replace(/\.$/, '')}. ${verb} from ${SITE_TITLE}, ${SITE_TAGLINE}.`,
+      `${t.year}. ${t.name}. Before this, ${cleanConstraint(t.constraint).toLowerCase()}. ${verb} from ${SITE_TITLE}, ${SITE_TAGLINE}.`,
       img
     );
     return;
@@ -166,7 +187,7 @@ function home(){
           <div class='dom' style='${domStyle(hero.domain)}'>${hero.domain}</div>
           <div class='yr'>${escapeHtml(hero.year)}</div>
           <div class='nm'>${escapeHtml(hero.name)}</div>
-          <div class='be'>before this, ${escapeHtml(hero.constraint.toLowerCase())}.</div>
+          <div class='be'>before this, ${escapeHtml(cleanConstraint(hero.constraint).toLowerCase())}.</div>
         </div>
         <div class='home-show-flow'>
           <div class='label'>everything that flowed →</div>
@@ -195,9 +216,10 @@ function home(){
 }
 
 function pickHero(){
-  // Prefer a foundational tick with rich downstream
-  const candidates = ['recursive-language','collective-fiction','wheat-domestication','sumerian-writing-first-literature','printing-press-gutenberg','transistor','the-internet-tcp-ip'];
-  for (const id of candidates){ if (TICK_BY_ID[id]) return TICK_BY_ID[id]; }
+  // Prefer a foundational tick with rich downstream. Try canonical slugs first,
+  // fall back to fuzzy match for slug drift.
+  const candidates = ['recursive-language','collective-fiction','wheat-domestication','sumerian-writing-first-literature','gutenbergs-printing-press','transistor-bell-labs-shockley-bardeen-brattain','the-internet-tcp-ip'];
+  for (const id of candidates){ const t = resolveId(id); if (t) return t; }
   // Fall back: tick with most unlocks
   let best = TICKS[0], bestN = 0;
   for (const t of TICKS){
@@ -292,6 +314,20 @@ const ERA_RULES = {
 };
 
 /* ========== chain helpers ========== */
+// Resolve a tick by id, falling back to a fuzzy slug match. Some editorial
+// constants (hero candidates, editorial notes, hunt picks) were written before
+// canonical slugs settled. This keeps the page from breaking when a slug drifts.
+function resolveId(id){
+  if (!id) return null;
+  if (TICK_BY_ID[id]) return TICK_BY_ID[id];
+  const stem = id.replace(/-+/g, '-');
+  for (const t of TICKS){
+    if (t.id === stem) return t;
+    if (t.id.startsWith(stem + '-') || t.id.endsWith('-' + stem) || t.id.includes('-' + stem + '-')) return t;
+  }
+  return null;
+}
+
 // Pick up to N ancestors using the same scoring as hunt: foundational
 // (high downstream count), illuminating (different domain), with a
 // reasonable temporal gap (favor decades over millennia).
@@ -374,7 +410,7 @@ function renderWalk(){
         <div class='walk-name'>${escapeHtml(t.name)}</div>
         <div class='walk-before'>
           <span class='label'>before this</span>
-          ${escapeHtml(t.constraint.toLowerCase())}.
+          ${escapeHtml(cleanConstraint(t.constraint).toLowerCase())}.
         </div>
         ${EDITORIAL_NOTES[t.id] ? `<aside class='walk-note' aria-label='Editorial note'>${escapeHtml(EDITORIAL_NOTES[t.id])}</aside>` : ''}
         ${t.detail ? `<div class='walk-detail'>${escapeHtml(t.detail)}</div>` : ''}
@@ -453,13 +489,13 @@ function hunt(id){
       <div class='hunt-chain'>
         ${chain.length === 0 ? '<div class="hunt-empty">No recorded ancestors. Pick another below.</div>' : chain.map((t, i) => {
           const next = chain[i+1];
-          const bridge = next ? `before <em>${escapeHtml(next.name.toLowerCase())}</em>, ${escapeHtml(next.constraint.toLowerCase())}.` : '';
+          const bridge = next ? `before <em>${escapeHtml(next.name.toLowerCase())}</em>, ${escapeHtml(cleanConstraint(next.constraint).toLowerCase())}.` : '';
           return `
           <div class='hunt-step' style='${domStyle(t.domain)}'>
             <div class='hunt-step-yr'>${escapeHtml(t.year)}</div>
             <div class='hunt-step-body'>
               <div class='hunt-step-name' onclick='location.hash="#/walk/${t.id}"'>${escapeHtml(t.name)}</div>
-              <div class='hunt-step-before'>before this, ${escapeHtml(t.constraint.toLowerCase())}.</div>
+              <div class='hunt-step-before'>before this, ${escapeHtml(cleanConstraint(t.constraint).toLowerCase())}.</div>
               <div class='hunt-step-meta'><span class='dom' style='${domStyle(t.domain)}'>${t.domain}</span></div>
             </div>
           </div>
@@ -620,9 +656,11 @@ function map(){
         <div class='map-y-labels'>
           ${domains.map(d => `<div class='map-y-label' style='${domStyle(d)};color:var(--dc)'>${d}</div>`).join('')}
         </div>
-        <canvas class='map-canvas' id='mapCanvas'></canvas>
-        <div class='map-eras' id='mapEras'></div>
-        <div class='map-tooltip' id='mapTip'></div>
+        <div class='map-mobile-scroller' id='mapScroller'>
+          <canvas class='map-canvas' id='mapCanvas'></canvas>
+          <div class='map-eras' id='mapEras'></div>
+          <div class='map-tooltip' id='mapTip'></div>
+        </div>
       </div>
       <p class='map-marginalia' id='mapMarginalia' role='status' aria-live='polite'>
         <span class='map-marginalia-hint'>Hover a column. Each era named what was true before it began.</span>
@@ -644,15 +682,20 @@ function drawMap(){
   if (!canvas) return;
   const wrap = canvas.parentElement;
   const dpr = window.devicePixelRatio || 1;
-  const W = wrap.clientWidth;
-  const H = 520;
+  const isNarrow = window.innerWidth < 720;
+  // On mobile, force a usable canvas width so era columns stay readable; the
+  // wrapping scroller handles overflow. Desktop fills the parent.
+  const W = isNarrow ? Math.max(wrap.clientWidth, 880) : wrap.clientWidth;
+  const H = isNarrow ? 480 : 520;
   canvas.width = W * dpr; canvas.height = H * dpr;
   canvas.style.width = W + 'px'; canvas.style.height = H + 'px';
   const ctx = canvas.getContext('2d');
   ctx.scale(dpr, dpr);
   ctx.clearRect(0,0,W,H);
 
-  const padL = 130, padR = 24, padT = 32, padB = 28;
+  // padL: room for y-labels (desktop) or 0 (mobile, labels are sticky outside)
+  const padL = isNarrow ? 18 : 130;
+  const padR = 24, padT = 32, padB = 28;
   const innerW = W - padL - padR, innerH = H - padT - padB;
   const domains = Object.keys(DOMAINS);
   const rowH = innerH / domains.length;
@@ -713,8 +756,10 @@ function drawMap(){
     ctx.moveTo(padL, y); ctx.lineTo(W-padR, y); ctx.stroke();
   });
 
-  // Plot dots — jitter slightly within row so density reads
-  const filtered = MAP_STATE.domain === 'all' ? TICKS : TICKS;
+  // Plot dots — jitter slightly within row so density reads. When a domain is
+  // selected, we still render the full set but dim non-matches so the silhouette
+  // of the corpus stays visible — the alpha branch below handles the dimming.
+  const filtered = TICKS;
   const dots = [];
   filtered.forEach(t => {
     if (t.yearN == null) return;
@@ -867,6 +912,11 @@ function browse(){
           <button class='browse-toggle' id='brToggle' type='button'>${allCollapsed ? 'expand all' : 'collapse all'}</button>
         </div>
       </div>
+      ${filtered.length === 0 ? `
+        <div class='browse-empty'>
+          Nothing matches <strong>${escapeHtml(BROWSE_STATE.q)}</strong>.<br/>
+          Try a fragment ("steam" instead of "steam engine"), a domain ("biology"), or hop over to <a href='#/hunt' style='color:var(--accent);border-bottom:1px solid var(--accent)'>hunt</a>.
+        </div>` : ''}
       ${ZONES.map(z => {
         const items = byZone[z.id];
         if (!items?.length) return '';
@@ -889,7 +939,7 @@ function browse(){
                   <span class='yr'>${escapeHtml(t.year)}</span>
                   <div class='body'>
                     <span class='nm'>${escapeHtml(t.name)}</span>
-                    <span class='be'>before this, ${escapeHtml(t.constraint.toLowerCase())}.</span>
+                    <span class='be'>before this, ${escapeHtml(cleanConstraint(t.constraint).toLowerCase())}.</span>
                   </div>
                   <span class='dom' style='${domStyle(t.domain)}'>${t.domain}</span>
                 </a>`).join('')}
@@ -984,7 +1034,7 @@ function renderPlayFrame(){
       <div class='play-dom dom' style='${domStyle(t.domain)}'>${t.domain}</div>
       <div class='play-year'>${escapeHtml(t.year)}</div>
       <div class='play-name'>${escapeHtml(t.name)}</div>
-      <div class='play-constraint'>before this, ${escapeHtml(t.constraint.toLowerCase().replace(/\.$/, ''))}.</div>
+      <div class='play-constraint'>before this, ${escapeHtml(cleanConstraint(t.constraint).toLowerCase())}.</div>
       ${isBeat ? '<div class="play-beat-mark">the world inverted here</div>' : ''}
     </div>
   `;
@@ -1120,9 +1170,11 @@ window.addEventListener('keydown', (e) => {
 });
 
 /* ========== keyboard help dialog ========== */
+let _kbdHelpOpener = null;
 function openKbdHelp(){
   const d = document.getElementById('kbdHelp');
   if (!d) return;
+  _kbdHelpOpener = document.activeElement;
   d.hidden = false;
   d.querySelector('.kbd-close')?.focus();
 }
@@ -1130,6 +1182,11 @@ function closeKbdHelp(){
   const d = document.getElementById('kbdHelp');
   if (!d || d.hidden) return false;
   d.hidden = true;
+  // Return focus to whatever opened the dialog so keyboard users don't get lost.
+  if (_kbdHelpOpener && document.contains(_kbdHelpOpener)){
+    _kbdHelpOpener.focus({preventScroll:true});
+  }
+  _kbdHelpOpener = null;
   return true;
 }
 function bindKbdHelp(){
@@ -1137,6 +1194,16 @@ function bindKbdHelp(){
   if (!d) return;
   d.querySelector('.kbd-close')?.addEventListener('click', closeKbdHelp);
   d.addEventListener('click', (e) => { if (e.target === d) closeKbdHelp(); });
+  // Trap focus inside the dialog while it's open
+  d.addEventListener('keydown', (e) => {
+    if (d.hidden) return;
+    if (e.key !== 'Tab') return;
+    const focusable = d.querySelectorAll('button, [href], input, [tabindex]:not([tabindex="-1"])');
+    if (!focusable.length) return;
+    const first = focusable[0], last = focusable[focusable.length - 1];
+    if (e.shiftKey && document.activeElement === first){ e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last){ e.preventDefault(); first.focus(); }
+  });
 }
 
 /* ========== close share menu on outside click ========== */
@@ -1162,7 +1229,7 @@ function injectArticleSchema(base, arg){
     '@type': 'Article',
     'headline': `${t.name} (${t.year})`,
     'name': t.name,
-    'about': `${t.year}. ${t.name}. The moment ${t.constraint.toLowerCase().replace(/\.$/, '')} stopped being a constraint.`,
+    'about': `${t.year}. ${t.name}. The moment ${cleanConstraint(t.constraint).toLowerCase()} stopped being a constraint.`,
     'url': url,
     'mainEntityOfPage': url,
     'inLanguage': 'en',
@@ -1172,7 +1239,7 @@ function injectArticleSchema(base, arg){
     'license': 'https://opensource.org/licenses/MIT',
     'keywords': [t.domain, 'history', 'breakthrough', 'constraint dissolved'],
     'articleSection': t.domain,
-    'description': `${t.year}. ${t.name}. Before this, ${t.constraint.toLowerCase().replace(/\.$/, '')}.`,
+    'description': `${t.year}. ${t.name}. Before this, ${cleanConstraint(t.constraint).toLowerCase()}.`,
   };
   if (t.detail) data.articleBody = t.detail;
   if (t.links?.length) data.citation = t.links.map(l => ({ '@type': 'CreativeWork', 'name': l.label, 'url': l.url }));
@@ -1196,7 +1263,7 @@ function bindRandom(){
 function payloadFor(t){
   const url = `${location.origin}${location.pathname}#/walk/${t.id}`;
   const title = `${t.name} (${t.year}) · Ticks`;
-  const text = `${t.year}. ${t.name}. Before this, ${t.constraint.toLowerCase().replace(/\.$/, '')}.`;
+  const text = `${t.year}. ${t.name}. Before this, ${cleanConstraint(t.constraint).toLowerCase()}.`;
   return { url, title, text };
 }
 function openShareMenu(triggerEl, t){

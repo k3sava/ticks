@@ -21,9 +21,6 @@
   --ease-quick:cubic-bezier(.2,.7,.3,1);
   --ease-stage:cubic-bezier(.16,1,.3,1);
 }
-:root[data-theme="dark"], :root:not([data-theme="light"]){
-  /* dark applies via media below unless data-theme=light forces it */
-}
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
     --bg:#0C0A09;
@@ -631,9 +628,13 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
   font-size:clamp(1.05rem,1.8vw,1.35rem);
   color:var(--ink-2);max-width:46ch;line-height:1.4;
 }
+.play-frame{position:relative}
 .play-frame.is-beat .play-year{color:var(--accent)}
 .play-frame.is-beat::before{
-  content:"";position:absolute;inset:auto;width:120%;height:6px;
+  content:"";position:absolute;left:50%;top:-22px;
+  width:48px;height:1px;transform:translateX(-50%);
+  background:linear-gradient(90deg,transparent,var(--accent),transparent);
+  opacity:.7;
 }
 .play-beat-mark{
   font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;
@@ -784,13 +785,25 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 
 /* ========== ACCESSIBILITY POLISH (kbd / mouse / touch parity) ========== */
 
-/* Strong focus ring on every interactive element */
-:focus-visible{
+/* Strong focus ring on interactive elements only. Skipping <main>: it gets
+   programmatic focus on every route change to anchor screen readers, and the
+   user has no expectation of a ring around the entire content column. */
+button:focus-visible,
+a:focus-visible,
+[role="button"]:focus-visible,
+[role="menuitem"]:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+canvas:focus-visible,
+[tabindex="0"]:focus-visible,
+summary:focus-visible{
   outline:2px solid var(--accent);
-  outline-offset:2px;
+  outline-offset:3px;
   border-radius:4px;
 }
-button:focus-visible,a:focus-visible{outline-offset:3px}
+input:focus-visible,textarea:focus-visible,select:focus-visible{outline-offset:2px}
+main:focus,main:focus-visible{outline:none}
 
 /* Walk source links wrap on narrow viewports */
 .walk-links{display:flex;flex-wrap:wrap;gap:14px;row-gap:8px;margin-top:8px}
@@ -943,21 +956,127 @@ a[href*="issues/new"]{
 }
 .mm-close:hover,.mm-theme:hover{background:var(--paper-2);color:var(--ink)}
 
-/* Map mobile — taller era labels with rotated text */
+/* Map mobile — 13 eras × 14 domains in a 375-wide viewport collapses into a
+   thin column of clustered dots. Pin domain labels on the left and let the
+   canvas + era ribbon scroll horizontally so density still reads. */
 @media (max-width:720px){
-  .map-canvas-wrap{}
+  .map-canvas-wrap{display:flex;align-items:stretch;overflow:hidden;border-radius:14px;background:var(--paper)}
+  .map-y-labels{
+    position:sticky;left:0;top:0;
+    width:96px;flex:none;height:480px;
+    background:var(--paper);
+    z-index:2;border-right:1px solid var(--line);
+  }
+  .map-y-label{padding-left:12px;font-size:.66rem}
+  .map-mobile-scroller{
+    flex:1;overflow-x:auto;overflow-y:hidden;position:relative;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:thin;scrollbar-color:var(--line-2) transparent;
+  }
+  .map-mobile-scroller::-webkit-scrollbar{height:6px}
+  .map-mobile-scroller::-webkit-scrollbar-thumb{background:var(--line-2);border-radius:999px}
+  .map-canvas{height:480px;display:block}
+  .map-mobile-scroller .map-eras{position:absolute;left:0;right:0;top:0;height:60px;pointer-events:none}
+  .map-mobile-scroller .map-tooltip{position:absolute}
   .map-eras .map-era-label{
     writing-mode:vertical-rl;
     transform:rotate(180deg);
-    height:auto !important;
-    top:8px !important;
-    bottom:auto;
+    height:60px !important;
+    top:0 !important;
+    background:linear-gradient(180deg,var(--paper) 80%,transparent);
+    padding-bottom:6px;
   }
-  .map-eras .map-era-label .nm{font-size:.6rem}
+  .map-eras .map-era-label .nm{font-size:.58rem;letter-spacing:.04em;color:var(--muted)}
   .map-eras .map-era-label .rng{display:none}
-  .map-canvas{height:480px}
-  .map-y-labels{width:90px}
-  .map-y-label{padding-left:10px;font-size:.64rem}
+  .map-help::before{content:"swipe the timeline → "}
+}
+
+/* Map: dim domain filter pills clearly so the active state pops */
+.map-domains button{transition:all .18s var(--ease-quick)}
+
+/* Browse: empty search state */
+.browse-empty{
+  font-family:var(--serif);font-style:italic;color:var(--muted);
+  padding:32px 0;line-height:1.5;text-align:center;
+  border-top:1px dashed var(--line);
+}
+.browse-empty strong{color:var(--ink-2);font-style:normal}
+
+/* Loading state — a quiet skeleton while data.json (~3MB) streams in. The
+   text is intentionally apologetic and brief; nothing renders behind it. */
+.boot-load{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  min-height:60vh;padding:48px var(--gut);gap:14px;
+  font-family:var(--serif);color:var(--muted);
+  animation:boot-fade .25s var(--ease-quick) .35s both;
+}
+@keyframes boot-fade{from{opacity:0}to{opacity:1}}
+.boot-load .boot-mark{
+  width:24px;height:24px;border-radius:50%;
+  background:radial-gradient(circle at 35% 35%, var(--accent) 0%, var(--accent-2) 60%, transparent 75%);
+  animation:boot-pulse 1.6s ease-in-out infinite;
+}
+@keyframes boot-pulse{0%,100%{transform:scale(.85);opacity:.7}50%{transform:scale(1.1);opacity:1}}
+.boot-load .boot-text{font-style:italic;font-size:1rem;color:var(--ink-2)}
+.boot-load .boot-hint{font-family:var(--mono);font-size:.7rem;letter-spacing:.06em;color:var(--faint);text-transform:uppercase}
+@media (prefers-reduced-motion:reduce){
+  .boot-load,.boot-load .boot-mark{animation:none}
+}
+
+/* Print: hide chrome, keep content readable on paper. Nobody'll print 2,648
+   ticks but a single walk page should print sane. */
+@media print{
+  *,*::before,*::after{
+    background:#fff !important;color:#000 !important;
+    box-shadow:none !important;
+    text-shadow:none !important;
+    -webkit-text-fill-color:initial !important;
+  }
+  body::before{display:none}
+  #hdr,footer,.walk-controls,.walk-actions,.walk-trail,.map-page,.browse-toolbar,
+  #shareMenu,#kbdHelp,#mobileMenu,#mobileBackdrop,#toast,.skip-link,.home-cta-buttons{
+    display:none !important;
+  }
+  main{max-width:none;padding:0}
+  .walk-year,.walk-name{break-inside:avoid}
+  .walk-flow{break-before:auto}
+  a[href^="http"]::after{content:" (" attr(href) ")";font-family:monospace;font-size:.7em;color:#555}
+  a[href^="#"]::after{content:""}
+}
+
+/* Footer separators wrap gracefully on narrow */
+@media (max-width:520px){
+  footer{gap:6px;font-size:.66rem}
+  .ftr-sep{display:none}
+}
+
+/* Hairline for keyboard help dialog */
+#kbdHelp{outline:none}
+#kbdHelp .kbd-card{outline:1px solid var(--line);outline-offset:0}
+
+/* Better contrast on the brand-mark in dark mode */
+:root[data-theme="dark"] .brand-mark{
+  box-shadow:0 0 0 3px color-mix(in oklab,var(--accent) 22%,transparent);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]) .brand-mark{
+    box-shadow:0 0 0 3px color-mix(in oklab,var(--accent) 22%,transparent);
+  }
+}
+
+/* The walk year and home year shouldn't break across "1928" / "AD" */
+.walk-year,.play-year,.home-show-tick .yr,.tick-dlg-yr,
+.home-show-flow .row .y,.walk-trail-step .yr,
+.browse-row .yr,.hunt-step-yr,.walk-flow-card .yr{
+  white-space:nowrap;
+}
+
+/* Walk-flow card: clearer active state on mobile (no hover) */
+@media (hover:none){
+  .walk-flow-card:active,.hunt-suggest-grid button:active{
+    transform:scale(.98);
+    background:color-mix(in oklab,var(--dc,var(--accent)) 8%,var(--paper));
+  }
 }
 
 /* Map canvas keyboard focus ring */
