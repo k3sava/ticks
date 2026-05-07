@@ -280,6 +280,81 @@ const BECAUSE_BATCH = {
 
   'chomsky-syntactic-structures-universal-grammar':
     "Skinner's behaviorist account of language (1957) had treated grammar as habit-formation. Chomsky's Syntactic Structures (1957) showed it couldn't work: speakers produce and understand sentences they have never heard, an infinite generative capacity that no stimulus-response history could explain. The mind has innate combinatorial machinery. Cognitive science took the bait — language, then perception, then memory — and the cognitive revolution displaced behaviorism in less than a decade.",
+
+  'hubel-wiesel-visual-cortex-receptive-fields':
+    "Lashley's mass-action experiments (1929) had argued that brain function was not localized. Microelectrode recording (mid-1950s) made single-cell studies possible. Hubel and Wiesel's 1959 recordings from cat visual cortex showed neurons selective for oriented edges in specific retinal positions — and a hierarchy of cells responding to progressively more complex features. The architecture template for both modern neuroscience and convolutional neural networks. Nobel 1981.",
+
+  'hertz-detects-radio-waves':
+    "Maxwell's equations (1865) had predicted electromagnetic waves traveling at the speed of light. The prediction sat unverified for two decades because no one knew how to generate or detect them in the lab. Hertz's spark-gap oscillator and resonant loop (1887) produced and detected free electromagnetic waves at known wavelengths. The waves reflected, refracted, and traveled at light speed — confirming Maxwell's theory. Marconi's wireless telegraphy (1895) was Hertz's experiment turned product.",
+
+  'quarantine-in-venice':
+    "The Black Death (1347-51) had killed roughly a third of Europe with no medical defense. Trade ports knew the disease arrived on ships but had no doctrine for what to do. Ragusa (modern Dubrovnik) imposed a thirty-day isolation period (trentino) on incoming ships in 1377; Venice extended it to forty days (quarantino) and gave us the word. The first formal infection-control institution. Border health policy worldwide is downstream.",
+
+  'chomskys-universal-grammar':
+    "Skinner's behaviorism had modeled language acquisition as conditioning. Chomsky's universal grammar hypothesis (1957) proposed instead that the human language capacity rests on innate biological constraints — children acquire syntax from impoverished input because they bring something to it. The poverty-of-stimulus argument launched generative linguistics, the modular mind, and the cognitive revolution. Whether universal grammar is biologically real remains contested; that the mind isn't a blank slate isn't.",
+
+  'chomskys-syntactic-structures':
+    "Pre-Chomsky linguistics (Bloomfield, Harris) had treated syntax as descriptive cataloguing of attested utterances. Chomsky's Syntactic Structures (1957) introduced transformational generative grammar — syntax as a finite system of rules that can produce infinitely many sentences, syntax as autonomous from meaning ('colorless green ideas sleep furiously' is grammatical and meaningless). The book that turned linguistics into a generative science. Cognitive science recruits its method.",
+
+  'lithium-ion-battery-commercialized':
+    "Whittingham's TiS2 cell (1976) and Goodenough's LiCoO2 cathode (1980) had established the chemistry. Akira Yoshino's carbon anode (1985) made it safe. Sony commercialized the first modern lithium-ion battery in 1991. Energy density tripled in twenty years. The smartphone, electric car, and grid-storage industries all assume lithium-ion as a substrate. Goodenough, Whittingham, and Yoshino shared the 2019 Nobel.",
+
+  'christian-science-decline':
+    "Christian Science had grown from Mary Baker Eddy's 1875 founding to roughly 270,000 US members by 1936 — the country's fastest-growing religion at the peak. Three decades of decline followed: by 1990, 100,000 members; by 2010, under 50,000. The trajectory previewed late-twentieth-century mainline Protestant decline broadly. Religious institutions are not just born and consolidated — they also peak and shrink, and the demographic curves are now legible.",
+
+  'construction-of-the-great-pyramid-of-giza':
+    "Old Kingdom Egypt's centralized state (after Narmer, ~3150 BC), copper tools, mathematical surveying, and Nile-fed agriculture created the conditions. Khufu's pyramid (~2600 BC) put 2.3 million stone blocks averaging 2.5 tons each into a precisely-aligned 147-meter structure over about 26 years. The first project at this scale ever attempted. State capacity to coordinate tens of thousands of workers across decades was now demonstrated.",
+
+  'wi-fi-802-11b-standard':
+    "Hertz's radio-wave detection (1887) and decades of spectrum allocation had made wireless data possible. The 802.11 standard (1997) was slow (2 Mbit/s) and expensive. The 802.11b amendment (1999) brought 11 Mbit/s on the unlicensed 2.4 GHz band at consumer prices. The Apple iBook (July 1999) shipped with a built-in card. Wi-Fi turned every laptop into a wireless terminal. The mobile internet's first scaffold.",
+
+  'jstars-enters-service':
+    "AWACS (1977) had given the US Air Force airborne early warning over its own territory. JSTARS (E-8C, entered service 1991, just in time for Desert Storm) extended the model to ground surveillance: airborne radar tracked moving vehicles across hundreds of kilometers and relayed coordinates to attack aircraft and artillery. The Iraqi armored columns at Khafji were the first targets. Battlefield awareness as an integrated multi-platform service.",
+
+  'buddhism-four-noble-truths':
+    "The Vedic religious system (1500 BC onward) had treated suffering as the work of gods or fate. Siddhartha Gautama's enlightenment (~528 BC) reframed it as a problem with a diagnosis (suffering exists, has a cause, has an end, has a path). The Four Noble Truths and Eightfold Path made suffering tractable through practice rather than ritual. The most rigorous pre-modern framework for what would later be called mind science.",
+
+  'codex-format-bound-pages':
+    "Scrolls had been the universal text format for two millennia. Random access required unrolling. Christianity's textual practice (gospel readings during liturgy) needed faster lookup; the codex — bound, paginated, foldable — gave it. Adopted by Christian communities by the 2nd century, then standard for legal and reference texts by the 4th. The book as a random-access medium. The format dominated for fifteen hundred years until the screen.",
+
+  'muhammad-prophetic-call':
+    "The Arabian peninsula in 570 was a tribal merchant world without a unifying scripture or state. Christianity (split East-West) and Judaism (Babylonian Talmud just being compiled) had textual canons; Arab religion was oral and local. Muhammad's birth (~570) and his recitation (610) gave Arabia a recited scripture, a community (umma), and within a century the foundations of an empire from Spain to the Indus. The biographical anchor for one-fifth of humanity.",
+
+  'bitcoin-blockchain':
+    "The 2008 financial crisis was a fresh case study in counterparty trust failure. Public-key cryptography (1976) and Merkle trees (1979) had given the primitives. Satoshi Nakamoto's October 2008 paper combined them into a working trustless ledger: a chain of blocks, each cryptographically linked, each block confirmed by costly proof-of-work. The first system that replaced institutional trust with computation. Whatever Bitcoin becomes, the design is now infrastructure.",
+
+  'brain-computer-interface-neuralink-braingate':
+    "BrainGate (early 2000s) had shown that paralyzed patients could control a cursor using motor-cortex implants. Neuralink (founded 2016) made the surgical procedure semi-automated and increased channel density. By 2023, paralyzed patients could control computers directly with neural signals — typing, emailing, browsing. The communication channel between brain and world reopened for people who had lost it. The medical-device frontier with the deepest implications for what counts as a person.",
+
+  'mcculloch-pitts-first-mathematical-neuron':
+    "Pitts had been a runaway teenager studying logic; McCulloch was a neurophysiologist. Their 1943 paper modeled a neuron as a binary threshold device — fires if weighted inputs exceed a threshold, else silent — and proved that networks of such units could compute any logical function. The first formal description of neural computation. Every artificial neural network and most theoretical neuroscience descends from this paper, written before any computer existed in working form.",
+
+  'george-miller-working-memory-limits-7-2':
+    "James (1890) had described working memory loosely as the 'specious present.' By 1956, the experimental evidence had converged: memory span for digits, letters, and words clustered around seven items. Miller's 'Magical Number Seven, Plus or Minus Two' synthesized the finding and introduced the chunk — the unit of working memory is not the item but the meaningfully grouped item. UI design, instructional design, and cognitive-load theory all rest on Miller's bound.",
+
+  'split-brain-research-two-hemispheres-sperry':
+    "Severe epilepsy in the 1960s was treated by cutting the corpus callosum. Sperry's lab studied the resulting patients with each eye showing different stimuli. The two hemispheres operated independently — the left could speak about what the right hand drew but not what the left hand drew. Hemispheric specialization (language left, spatial right) became experimentally tractable. 'The brain' was no longer a single agent. Sperry's Nobel: 1981.",
+
+  'implicit-association-test-iat':
+    "Cognitive psychology had measured prejudice with self-report questionnaires that respondents could (and did) game. Greenwald, McGhee, and Schwartz's 1998 IAT measured reaction-time differences for category-attribute pairings (e.g., flowers-good vs flowers-bad). Implicit biases that people don't consciously hold — and don't endorse — appeared in millions of test-takers. The validity of the IAT as a predictor of behavior is debated. The basic finding — attitudes operate at multiple levels — is not.",
+
+  'french-revolution-popular-sovereignty':
+    "American independence (1776) had shown that a colonial population could declare itself a nation. Smith's Wealth of Nations (1776) had given commerce its theory. The French Revolution (1789) put the political claim in the European center: the Declaration of the Rights of Man asserted sovereignty in the nation, not the monarch. The guillotine removed Louis XVI; the Declaration removed the principle. Nationalism, popular sovereignty, and modern democracy take their template from this rupture.",
+
+  '2008-financial-crisis-too-big-to-fail':
+    "Glass-Steagall's 1999 repeal had let commercial banks combine with investment banks. Securitization had moved mortgage risk off balance sheets, then back on. Lehman's collapse (September 2008) revealed counterparty interconnection: any major bank's failure could pull down the system. Bailouts kept the financial system intact and exposed its political economy: the largest firms were too big to fail, and that knowledge made future risk-taking cheaper for them. The Dodd-Frank Act (2010) and global Basel III rules followed.",
+
+  'genocide-convention-defining-a-new-crime':
+    "Mass killings of national, ethnic, racial, and religious groups had been recurrent in human history without a name in international law. Lemkin's 1944 coinage 'genocide' (Greek genos + Latin -cide) gave it one. The 1948 Convention defined the crime, criminalized intent (acts committed with intent to destroy a group, in whole or in part), and committed signatories to prevent and punish it. The legal basis for every subsequent prosecution from the ICTY to the ICC.",
+
+  'v-2-rocket-ballistic-missile-warfare':
+    "Goddard's liquid-fuel rocket (1926) and the German Army's funding of Peenemünde (1932) produced the first ballistic missile. The V-2 (1944) flew to the edge of space and fell unpredictably on London from 300 miles away — defenseless. Wernher von Braun's team was captured by the Americans and became the foundation of NASA. The Soviet program, the ICBM, the moon program, and the modern space industry are all von Braun's V-2 with successively cleaner provenance.",
+
+  'nostra-aetate-catholic-jewish-reconciliation':
+    "Catholic teaching had carried 'deicide' — Jewish collective guilt for the Crucifixion — for nineteen centuries. The Holocaust forced a reckoning. Vatican II's Nostra Aetate declaration (1965) explicitly repudiated the charge, condemned antisemitism, and acknowledged spiritual truth in non-Christian religions. Centuries of Catholic-Jewish relations turned in five paragraphs. Subsequent papal apologies and the Catholic-Jewish theological dialogue all build on this declaration.",
+
+  'james-lange-theory-of-emotion':
+    "Common sense had treated emotion as a mental state that caused bodily reactions — we shake because we're afraid. James (1884) and Carl Lange (1885) independently inverted the order: emotion is the perception of bodily change. We're afraid because we shake. The peripheral theory dominated emotion research for forty years before Cannon-Bard challenged it. Modern affective neuroscience treats both as partial — body and brain feed back on each other in a continuous loop.",
 };
 
 async function main(){
