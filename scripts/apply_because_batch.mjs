@@ -205,6 +205,81 @@ const BECAUSE_BATCH = {
 
   'tractor-displaces-draft-animals-mass-adoption':
     "Internal combustion (1885) had powered cars from 1900. Tractor adoption was slow until Ford's Fordson (1917) brought it under $400. By 1921, US tractor sales were a mass market. In 1920, one in four US farm acres fed horses and mules; by 1960 the number was approximately zero. One farmer with a tractor could work ten times the acreage. Between 1920 and 1960, US agricultural labor fell from 30% of the workforce to 10% while output doubled.",
+
+  'green-revolution-begins-borlaug-wheat':
+    "Haber-Bosch (1909) had made nitrogen fertilizer essentially limitless. Mendel's rediscovered genetics gave breeders a method. Borlaug's semi-dwarf wheat varieties at CIMMYT (1944 onward) could carry heavy grain heads on short stems without lodging. Combined with fertilizer and irrigation, yields tripled in a decade. The famines predicted for 1960s Asia did not arrive. Borlaug's Nobel Peace Prize citation credits him with saving a billion lives.",
+
+  'nuremberg-principles-individual-criminal-responsibility':
+    "Nuremberg (1945-46) had tried specific defendants. The principles' codification by the UN International Law Commission (1950) made the legal theory portable — heads of state and military commanders could be held criminally responsible for war crimes, crimes against humanity, and crimes against peace. Following orders was not a defense. Every subsequent war-crimes tribunal and the Rome Statute of the International Criminal Court (1998) builds on this codification.",
+
+  'polyphonic-music-notre-dame-school':
+    "Western music since antiquity had been monophonic — a single melodic line, with parallel doubling at most. Léonin and Pérotin at Notre Dame (1170-1200) developed sustained two-, three-, and four-voice polyphony with measurable rhythm. Multiple independent melodic lines required written scores; improvisation couldn't coordinate the complexity. Western music's distinctive history — counterpoint, harmony, sonata form — descends from Notre Dame's choir lofts.",
+
+  'instructgpt-rlhf-makes-ai-followable':
+    "GPT-3 (2020) was capable but unaligned — it would produce plausible-sounding falsehoods, refuse questions arbitrarily, and complete prompts in unhelpful directions. Reinforcement Learning from Human Feedback (RLHF), formalized in 2017 and applied to language models in InstructGPT (January 2022), trained models on human preferences. A 1.3B parameter InstructGPT outperformed the 175B GPT-3 on human preference ratings. ChatGPT (November 2022) made it product-ready.",
+
+  'tolman-cognitive-maps':
+    "Watsonian behaviorism had modeled rats as stimulus-response chains with no internal state. Tolman's 1948 'Cognitive Maps in Rats and Men' showed rats build internal spatial representations of mazes — they take shortcuts when offered, and they can navigate without practiced motor sequences. The first published evidence of mental representation in animals. Cognitive psychology's working assumption begins here. Place-cell neuroscience (O'Keefe, Nobel 2014) is downstream.",
+
+  'principles-of-psychology-william-james':
+    "Wundt's Leipzig laboratory (1879) had treated psychology as a measurable science of conscious elements. James's 1890 Principles of Psychology took the field in the opposite direction — treating consciousness as a continuous flowing stream, not a sum of atoms, and treating habit, emotion, and self as central. Psychology split definitively from philosophy. Pragmatism, functionalism, and most twentieth-century cognitive psychology trace back to this two-volume textbook.",
+
+  'interpretation-of-dreams-freud':
+    "Charcot's hypnosis demonstrations (1880s) had shown that the conscious mind doesn't have full access to its own causes. Freud's Interpretation of Dreams (1899) argued the unconscious was causally active in waking life as well — desires, fears, memories shaping action without the actor's awareness. Psychoanalysis as therapy followed. The subsequent century of personality psychology, psychotherapy, and pop self-help — 'processing' emotions, 'working through' issues — all assume Freud's unconscious is real.",
+
+  'universal-declaration-of-human-rights':
+    "Nuremberg (1945-46) had judged crimes against humanity but not stated the rights they had violated. Eleanor Roosevelt's UN drafting committee (1947-48), drawing on the French Declaration (1789), the US Bill of Rights, and Latin American constitutional traditions, produced the Universal Declaration of Human Rights (1948). Thirty articles. Not a treaty, but a statement. Every subsequent human-rights convention — civil and political, economic and social, against torture, against discrimination — grew out of these thirty articles.",
+
+  'nuclear-deterrence-theory-mad':
+    "Hiroshima and Nagasaki (1945) had shown what nuclear weapons could do. The Soviet test (1949) ended the US monopoly. The H-bomb (1952) made warheads city-killers. Mutually Assured Destruction emerged not as policy but as the only logical equilibrium: a first strike could not prevent retaliation, so neither side could rationally start. Cuba (1962) tested it. The Cold War's failure to escalate is MAD's main piece of evidence.",
+
+  'ukraine-war-commercial-drones-and-osint':
+    "DJI's consumer quadcopter (2013) had put aerial filming in everyone's hands. Twitter (2006) and Telegram (2013) made user-generated coverage continuous. The Russia-Ukraine war (2022) was the first major conflict in which a $500 commercial drone could destroy a multi-million-dollar tank, in which OSINT volunteers tracked army movements from public satellite imagery, and in which front-line video reached the world without state media. The information environment of war was permanently flattened.",
+
+  'money-as-abstract-exchange-medium':
+    "Mesopotamia had used silver shekels by weight for millennia, but each transaction required weighing. Lydia (~600 BC) introduced standardized minted coinage — fixed weight, state-stamped, locally accepted. The first coinage solved the double-coincidence-of-wants problem with portable, divisible, durable units. Specialization, markets, and long-distance trade scaled rapidly. Greek and Roman economies, then the rest of Eurasia, ran on the Lydian invention.",
+
+  'hobbes-leviathan-secular-political-theory':
+    "European political philosophy since Augustine had grounded political authority in divine appointment. The Wars of Religion (1517-1648) had discredited that grounding by killing a third of central Europe over which version of Christianity was authoritative. Hobbes's Leviathan (1651) derived political authority from a secular contract: people exit the state of nature (war of all against all) by agreeing to a sovereign whose legitimacy is its capacity to provide security. The first sustained secular political theory.",
+
+  'stable-diffusion-open-sourced-generative-ai-democratized':
+    "DALL-E 1 (2021) was API-locked. Midjourney was a Discord bot. Stability AI's release of Stable Diffusion's weights and code (August 2022) put a state-of-the-art image generation model in the hands of anyone with a 6GB GPU. Within weeks, thousands of fine-tuned variants existed — anime, photorealism, architecture, custom brands. The open-source ecosystem around image generation, then video and audio, exploded. Closed-vs-open became the durable axis of AI debate.",
+
+  'rosa-parks-montgomery-bus-boycott':
+    "Brown v. Board (1954) had outlawed school segregation in principle. Implementation was slow and bitter. Rosa Parks's December 1, 1955 refusal to give up her seat — coordinated with the local NAACP, planned for legal-test-case viability — launched the 381-day Montgomery Bus Boycott. The boycott broke the bus company's finances, broke the segregation ordinance in court, and made Martin Luther King Jr. a national figure. The Civil Rights Movement's modern phase begins here.",
+
+  'terror-management-theory-mortality-salience':
+    "Becker's Denial of Death (1973) had argued that human culture is fundamentally a defense against mortality. Greenberg, Solomon, and Pyszczynski (from 1986) operationalized the claim experimentally: subjects reminded of their mortality (mortality-salience manipulation) defend their cultural worldview more strongly, sometimes against the people the worldview targets. The most replicated finding in social psychology that mainstream cognitive theory still struggles to integrate.",
+
+  'soviet-union-dissolution-end-of-communism':
+    "Gorbachev's perestroika (1985) had tried to reform the Soviet system from within. Glasnost (1986) loosened information control. By 1989 the Eastern Bloc was independent; by August 1991 a coup against Gorbachev had failed; by December 25, 1991 the USSR ceased to exist. Fifteen sovereign states emerged. Russia inherited the nuclear arsenal, the UN Security Council seat, and the foreign debt. The 'end of history' was momentarily plausible. The post-Cold War order has been revising the answer ever since.",
+
+  'justinian-code-roman-law-systematized':
+    "Roman law by 500 AD was a sprawl of imperial edicts, juristic writings, and senatorial decrees accumulated over a millennium. Justinian's Corpus Juris Civilis (529-534) compiled them into a coherent system: the Digest (most-authoritative juristic opinions), the Code (imperial legislation), the Institutes (teaching text), the Novels (Justinian's own laws). Lost in the West for five hundred years. Rediscovered at Bologna in the eleventh century, it became the foundation of every civil-law legal system.",
+
+  'craik-computational-theory-of-mind':
+    "Behaviorism (1913) had said the mind shouldn't be modeled at all. Craik's The Nature of Explanation (1943) proposed the opposite: the mind works by constructing internal models of external reality — symbolic representations that can be manipulated to predict outcomes before acting. The first computational theory of mind, proposed before computers existed in working form. Cognitive science, AI, and information-processing models of cognition all start here.",
+
+  'red-cross-founded-dunants-solferino':
+    "Solferino (1859) had killed 40,000 in a single day with no medical infrastructure for either side. Dunant, in town by chance, organized civilian aid for the wounded regardless of uniform. His pamphlet A Memory of Solferino (1862) led to the International Committee of the Red Cross (1863), the first Geneva Convention (1864), and the principle that medical personnel and the wounded are protected in war. Humanitarian organizations as a category begin here.",
+
+  'treaty-of-rome-european-integration':
+    "WWII had wrecked Europe twice in thirty years. The European Coal and Steel Community (1951) had pooled the war-making resources of France and Germany. The Treaty of Rome (1957) created the European Economic Community: customs union, common market, eventual political integration. The logic was Schuman's: integrate economies so deeply that war between members becomes economically unthinkable. The EU is the largest sustained experiment in supranational governance.",
+
+  'paris-agreement-global-climate-coordination':
+    "The Kyoto Protocol (1997) had imposed top-down emission targets only on developed economies and excluded the US. By 2015 the largest emitters were also the largest holdouts. The Paris Agreement (December 2015) replaced top-down mandates with a bottom-up pledge-and-review system: every country submits a Nationally Determined Contribution and updates it every five years. Imperfect and probably insufficient, the first universal legally-binding climate framework all major emitters joined.",
+
+  'llama-open-source-frontier-models':
+    "GPT-4 (March 2023) was API-locked and expensive. Meta's LLaMA (February 2023) leaked online almost immediately and became unofficially open. LLaMA 2 (July 2023) was released openly under a quasi-permissive license. Mistral, Falcon, and Qwen followed. By late 2024 the gap between closed-frontier and open-frontier models was less than one generation. Frontier capability ran on consumer hardware. The closed-vs-open debate became the durable axis of AI policy.",
+
+  'ai-regulation-begins-eu-ai-act-eo-14110':
+    "GDPR (2018) had established that the EU could regulate algorithmic systems extraterritorially. The 2022-2023 wave of generative AI made the policy gap urgent. The EU AI Act (political agreement December 2023) classified AI systems by risk and required transparency, oversight, and red-team testing for high-risk uses. The US Executive Order 14110 (October 2023) imposed reporting requirements on frontier-model developers. The first year AI governance became enforceable law in major jurisdictions.",
+
+  'wertheimer-phi-phenomenon-gestalt':
+    "Wundt's structuralism (1879) had treated perception as a sum of sensory atoms — color, brightness, position. Wertheimer's 1912 phi-phenomenon experiments showed apparent motion couldn't be reduced to a sequence of static impressions: two flashing lights at the right interval are perceived as a single moving light. Perception is structurally holistic. Gestalt psychology — figure-ground, closure, common fate — and most twentieth-century perception research builds on this finding.",
+
+  'chomsky-syntactic-structures-universal-grammar':
+    "Skinner's behaviorist account of language (1957) had treated grammar as habit-formation. Chomsky's Syntactic Structures (1957) showed it couldn't work: speakers produce and understand sentences they have never heard, an infinite generative capacity that no stimulus-response history could explain. The mind has innate combinatorial machinery. Cognitive science took the bait — language, then perception, then memory — and the cognitive revolution displaced behaviorism in less than a decade.",
 };
 
 async function main(){
