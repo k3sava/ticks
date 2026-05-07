@@ -412,6 +412,7 @@ function renderWalk(){
           <span class='label'>before this</span>
           ${escapeHtml(cleanConstraint(t.constraint).toLowerCase())}.
         </div>
+        ${t.because ? `<div class='walk-because' aria-label='What this came from'><span class='label'>this came from</span>${escapeHtml(t.because)}</div>` : ''}
         ${EDITORIAL_NOTES[t.id] ? `<aside class='walk-note' aria-label='Editorial note'>${escapeHtml(EDITORIAL_NOTES[t.id])}</aside>` : ''}
         ${t.detail ? `<div class='walk-detail'>${escapeHtml(t.detail)}</div>` : ''}
         ${t.links?.length ? `<div class='walk-links'>${t.links.map(l => `<a href='${escapeHtml(l.url)}' target='_blank' rel='noopener'>→ ${escapeHtml(l.label)}</a>`).join('')}</div>` : ''}

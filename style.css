@@ -302,6 +302,23 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
   color:var(--ink-2);max-width:46ch;line-height:1.4;
 }
 .walk-before .label{font-style:normal;font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);display:block;margin-bottom:6px}
+/* The "this came from" block: explicit chain reasoning. Sits between the
+   constraint (what was true before) and the detail (what the tick was). It's
+   the bridge — naming the parents and explaining how each one made this
+   particular dissolution possible. Visually emphasized over the rest of the
+   stage so a reader walking the chain sees the causal seam first. */
+.walk-because{
+  font-family:var(--serif);font-size:clamp(1rem,1.4vw,1.15rem);
+  color:var(--ink-2);max-width:62ch;line-height:1.55;text-wrap:pretty;
+  border-left:2px solid color-mix(in oklab,var(--accent) 50%,var(--line));
+  padding:6px 0 6px 18px;
+  background:linear-gradient(90deg, color-mix(in oklab,var(--accent) 4%,transparent) 0%, transparent 70%);
+}
+.walk-because .label{
+  font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;
+  color:color-mix(in oklab,var(--accent) 70%,var(--muted));
+  display:block;margin-bottom:6px;
+}
 .walk-detail{font-family:var(--serif);font-size:1.05rem;color:var(--ink-2);max-width:62ch;line-height:1.55;text-wrap:pretty;hyphens:auto}
 /* Editorial seasoning: appears only on a hand-picked subset of foundational
    ticks. One italic sentence saying what the tick feels like in retrospect. */
