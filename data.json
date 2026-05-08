@@ -29605,7 +29605,7 @@
           "url": "https://en.wikipedia.org/wiki/Whisper_%28speech_recognition_system%29"
         }
       ],
-      "because": "GPT-2's release (2019) and GPT-3 (2020) mark when transformer-based language models were demonstrating cross-task transfer at scale. OpenAI's Whisper — trained on 680,000 hours of multilingual web audio with weakly-supervised text — gave the open-source community a robust speech-to-text model with near-human accuracy across 99 languages, and democratized voice transcription as a commodity capability."
+      "because": "GPT-2's release (2019) and GPT-3 (2020) mark when transformer-based language models were demonstrating cross-task transfer at scale. OpenAI's Whisper — trained on 680,000 hours of multilingual web audio with weakly-supervised text — gave the open-source community a robust speech-to-text model that handles English plus 96 other languages, and democratized voice transcription as a commodity capability."
     },
     {
       "id": "runway-gen-2-video-generation",
@@ -31645,7 +31645,7 @@
           "url": "https://en.wikipedia.org/wiki/Lunar_calendar"
         }
       ],
-      "because": "Day and night had been the only structured timekeeping. Lunar phases — visible to anyone, repeating every ~29.5 days — gave a longer cycle. Notched bones from Upper Palaeolithic Europe (Lebombo bone, ~43,000 BC; Ishango bone, ~20,000 BC) appear to track lunar cycles. The first calendrical structure. Seasonal hunting, festival timing, and gestation-period awareness all become trackable. The lunar month survives in nearly every later calendar."
+      "because": "Day and night had been the only structured timekeeping. Lunar phases — visible to anyone, repeating every ~29.5 days — gave a longer cycle. Notched bones from Upper Palaeolithic Africa (Lebombo bone, ~43,000 BC, southern Africa; Ishango bone, ~20,000 BC, Congo) appear to track lunar cycles. The first calendrical structure. Seasonal hunting, festival timing, and gestation-period awareness all become trackable. The lunar month survives in nearly every later calendar."
     },
     {
       "id": "city-planning-catalhoyuk",
@@ -39601,7 +39601,7 @@
           "url": "https://en.wikipedia.org/wiki/Venus_figurine"
         }
       ],
-      "because": "Pre-ceramic figurines had been carved from bone, ivory, or stone — material-bound by what the carver could shape. Fired-clay figurines (~35,000 BC, Hohle Fels) used a moldable medium that could be shaped while wet, then fired hard. The first sustained ceramic art. The same firing technology was eventually applied to functional pottery (~18,000 BC in East Asia, ~9000 BC in the Levant). Figurines preceded pottery as ceramic application."
+      "because": "Pre-ceramic figurines had been carved from bone, ivory, or stone — material-bound by what the carver could shape. Earliest fired-clay figurines (Venus of Dolní Věstonice and related Gravettian sites, ~29,000 BC) used a moldable medium that could be shaped while wet, then fired hard. The first sustained ceramic art. The same firing technology was eventually applied to functional pottery (~18,000 BC in East Asia, ~9000 BC in the Levant). Figurines preceded pottery as ceramic application."
     },
     {
       "id": "first-known-use-of-antler-picks-for-mining",
@@ -41488,7 +41488,7 @@
           "url": "https://en.wikipedia.org/wiki/Islet_cell_transplantation"
         }
       ],
-      "because": "Pre-Edmonton islet-cell transplants for type 1 diabetes had failed almost universally — recipients still needed insulin within months. The Edmonton protocol (James Shapiro, University of Alberta, 2000) replaced steroid-based immunosuppression with a combination including sirolimus and tacrolimus, and used multiple donor pancreata to provide enough islet mass. 80% of recipients achieved insulin independence at one year. The first sustained-scale successful islet-cell transplantation. Limited by donor pancreas availability; stem-cell-derived islet therapy is the next-generation extension."
+      "because": "Pre-Edmonton islet-cell transplants for type 1 diabetes had failed almost universally — recipients still needed insulin within months. The Edmonton protocol (James Shapiro, University of Alberta, 2000) replaced steroid-based immunosuppression with a combination including sirolimus and tacrolimus, and used multiple donor pancreata to provide enough islet mass. The first seven patients all achieved insulin independence at one year; later multi-center trials saw roughly 60% reach the same milestone. The first sustained-scale successful islet-cell transplantation. Limited by donor pancreas availability; stem-cell-derived islet therapy is the next-generation extension."
     },
     {
       "id": "who-framework-convention-on-tobacco-control",
@@ -49172,7 +49172,7 @@
           "url": "https://en.wikipedia.org/wiki/Venus_figurine"
         }
       ],
-      "because": "Two-dimensional cave art (Chauvet, ~32,000 BC) and personal ornament (perforated shells, ~75,000 BC) had been the earliest representational practices. The Venus of Hohle Fels — a 6-cm fired-clay figurine of an exaggerated female form, ~35,000 BC — is the earliest known three-dimensional human depiction in fired clay. Venus figurines from this and the next twenty millennia show consistent stylistic conventions across Europe. The first portable, durable, anthropomorphic art form."
+      "because": "Two-dimensional cave art (Chauvet, ~32,000 BC) and personal ornament (perforated shells, ~75,000 BC) had been the earliest representational practices. The Venus of Hohle Fels — a 6-cm mammoth-ivory figurine of an exaggerated female form, ~35,000 BC — is among the earliest known three-dimensional human depictions. Venus figurines from this and the next twenty millennia show consistent stylistic conventions across Europe. The first portable, durable, anthropomorphic art form."
     },
     {
       "id": "invention-of-pottery",
@@ -51688,7 +51688,7 @@
           "url": "https://en.wikipedia.org/wiki/Watt_steam_engine"
         }
       ],
-      "because": "Newcomen's atmospheric engine (1712) had been wasteful — most heat went into reheating the cylinder. James Watt's separate condenser (patented 1769) cut fuel consumption by 75%. Watt's subsequent additions — sun-and-planet gear (1781), double-acting engine (1782), governor (1788) — produced reliable rotary power. The first sustained-scale practical industrial power source. Powered factories, mines, ships, and railways — the engine of the Industrial Revolution. Modern thermodynamics' name comes from steam-engine analysis."
+      "because": "Newcomen's atmospheric engine (1712) had been wasteful — most heat went into reheating the cylinder. James Watt's separate condenser (patented 1769) roughly halved coal consumption for the same power. Watt's subsequent additions — sun-and-planet gear (1781), double-acting engine (1782), governor (1788) — produced reliable rotary power. The first sustained-scale practical industrial power source. Powered factories, mines, ships, and railways — the engine of the Industrial Revolution. Modern thermodynamics' name comes from steam-engine analysis."
     },
     {
       "id": "turtle-submarine-attack",
