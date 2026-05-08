@@ -1780,6 +1780,81 @@ const BECAUSE_BATCH = {
 
   'tether-stablecoin-dominance':
     "Cryptocurrency markets pre-2014 had been largely BTC and ETH — volatile against the dollar, useless as a settlement medium. Tether (launched October 2014, originally Realcoin) issued USDT tokens claimed to be 1:1 backed by US dollar reserves. Crypto exchanges adopted USDT as the default trading pair against other cryptocurrencies. The first sustained-scale dollar-pegged stablecoin. Despite repeated reserve-backing controversies, USDT became the dominant settlement medium across the crypto economy — a $100B+ shadow dollar.",
+
+  'nft-boom-cryptopunks':
+    "Pre-CryptoPunks digital art could be infinitely copied — provenance and ownership were tied to physical artifacts only. Larva Labs's CryptoPunks (June 2017, 10,000 algorithmically generated 24x24-pixel character images on Ethereum) demonstrated that on-chain non-fungible tokens could be provably unique and tradable. The first sustained-scale NFT collection. Beeple's $69M sale (March 2021), Bored Ape Yacht Club, and the entire 2021-22 NFT boom built on the CryptoPunks precedent. The market crashed; the technical primitive remains.",
+
+  'gdpr-implementation':
+    "By 2018, EU residents had been profiled, tracked, and monetized by tech firms with effectively no legal recourse. The 1995 Data Protection Directive had been unenforceable at internet scale. GDPR took effect May 25, 2018, giving EU residents enforceable rights — access, deletion, portability, the right not to be subject to automated profiling — and giving regulators teeth (4% of global revenue penalties). The first sustained data-privacy regime that companies in California, Tokyo, and Bangalore actually engineered for. CCPA, LGPD, and the rest are GDPR copies.",
+
+  'diem-digital-currency-announcement':
+    "Pre-Diem corporate-issued global currency had been blocked by central banks and regulators. Facebook's June 2019 Libra (later Diem) announcement proposed a permissioned-blockchain stablecoin backed by a basket of currencies — and would have given Facebook payment rails to its 2.5 billion users. Central banks responded immediately. Within two years, the project was scuttled (sold to Silvergate, January 2022). The first major demonstration that big tech couldn't unilaterally roll out a global currency, and a major spur to central bank digital currency (CBDC) work.",
+
+  'microlith-technology':
+    "Pre-microlith stone tools had been large hand-axes — single-use, hard to repair, hard to carry many of. Microliths (small standardized blades, ~40,000 BC across Africa and Eurasia) were hafted as composite tools — multiple blades set in resin or pitch into a wooden or bone handle. Replace one blade, the tool keeps working. The first sustained modular toolmaking. Allowed specialized cutting, scraping, projecting points. Pre-Neolithic toolkits across Eurasia all shifted to microlithic technology.",
+
+  'gobekli-tepe-megalithic-enclosures':
+    "Conventional archaeology had assumed monumental architecture required settled agriculture — no farms, no cities, no monuments. Göbekli Tepe (built ~9500 BC, in southeastern Turkey) was a massive megalithic enclosure complex — multi-ton T-shaped pillars carved with animals and abstract symbols — built by hunter-gatherers. The first sustained-scale ritual architecture, predating agriculture by 2,000 years. The discovery (excavations from 1995, popularized by Klaus Schmidt) inverted the standard 'agriculture causes civilization' narrative.",
+
+  'tower-of-jericho':
+    "Pre-Jericho settlements had been small clusters of round houses with no defensive architecture. The Tower of Jericho (~8000 BC, in the Pre-Pottery Neolithic A) was an 8.5-meter stone tower with an internal staircase, set inside a stone wall. Built by a community of perhaps 2,000 people with only stone tools. The first sustained-scale defensive architecture. Whether the tower was for defense, flood control, or ritual is debated, but the labor mobilization required is itself the tick — coordinated construction at a scale not previously seen.",
+
+  'chapar-khaneh':
+    "Pre-Achaemenid imperial communication had been ad hoc — messengers traveled at their own pace. Cyrus the Great and Darius the Great's Chapar Khaneh (postal system, established ~500 BC) used relay stations along the 2,500-kilometer Royal Road from Susa to Sardis. Fresh horses and riders at each station; royal dispatches reached Susa from Sardis in nine days. Herodotus's 'neither snow, nor rain, nor heat, nor gloom of night' commemorative is from this Persian system. The first sustained-scale imperial postal infrastructure.",
+
+  'socratic-method-2':
+    "Pre-Socratic philosophy had been declarative — sages stating cosmological theses. Socrates (~400 BC, in the Athenian agora) practiced elenchus — relentless questioning that exposed contradictions in his interlocutors' opinions. The Socratic method made philosophy a dialogical, critical practice rather than a static doctrine. Plato's dialogues preserved and stylized the method. Modern legal cross-examination, scientific peer review, and undergraduate seminars all draw on the Socratic question-answer-question pattern.",
+
+  'paninis-ashtadhyayi-codified-sanskrit-grammar':
+    "Pre-Pāṇini classical languages had no formal generative grammars. Pāṇini's Aṣṭādhyāyī (~400 BC, eight chapters totaling 3,959 sutras) gave Classical Sanskrit a complete generative grammar — phonology, morphology, syntax — with rules organized as ordered transformations on abstract roots. The first generative grammar of any language. Foundational for Sanskrit scholarship for 2,500 years and a major influence on 20th-century linguistics: Bloomfield, Chomsky, and modern computational linguistics all cite Pāṇini.",
+
+  'aristotles-categories-and-on-interpretation':
+    "Pre-Aristotelian philosophy had used 'being' loosely. Aristotle's Categories and On Interpretation (~350 BC) systematized the ten categories — substance, quantity, quality, relation, place, time, position, condition, action, passion — that any subject could fall under. The first systematic ontological vocabulary in the Western tradition. Medieval Scholastic philosophy, Kant's table of categories, and modern analytic philosophy of language all build on Aristotelian categorial frameworks.",
+
+  'paninis-phonology-shiva-sutras':
+    "Pre-Pāṇini phonological description had been list-based. The Shiva Sutras (~350 BC, fourteen aphorisms attributed to Pāṇini) arranged Sanskrit phonemes into groups marked by silent ANUBANDHA letters — allowing compact reference to phonological natural classes via a single syllable. The first sustained formal phonological notation. Modern phonological feature theory and the entire generative-phonology framework draw on the same compositional approach Pāṇini pioneered.",
+
+  'panini':
+    "Same Pāṇini, alternative ID. The Aṣṭādhyāyī (~350 BC) is a complete generative grammar of Classical Sanskrit — 3,959 sutras organized as ordered transformations on abstract roots, written in a technical metalanguage with explicit context-sensitive rules. The first generative grammar of any language anywhere. 2,500-year-old computational linguistics whose formal apparatus modern theorists still use.",
+
+  'erya':
+    "Classical Chinese language had been used in scholarly and administrative writing without a centralized lexicon. The Erya (~300 BC, traditionally attributed to disciples of Confucius) compiled glosses on classical texts — synonyms, antiquated terms, names of plants and animals organized by topic. The earliest surviving Chinese dictionary. Stayed in use as a reference work through every subsequent Chinese dynasty. Lexicography in Chinese tradition begins here.",
+
+  'sanskrit-inscriptions-in-brahmi-ashoka':
+    "Pre-Ashokan Indian writing had been used for administrative records but not for public state communication. Ashoka (~268 BC, after the Kalinga War) inscribed 33 royal edicts on rock faces, pillars, and cave walls across the Mauryan Empire — in Brahmi script for Prakrit, Kharoshthi for the northwest, Greek and Aramaic for frontier provinces. The first sustained public state-policy communication in South Asia. Buddhist ethics, religious tolerance, and animal welfare all proclaimed by the same emperor on stone.",
+
+  'brahmi-script-development':
+    "Pre-Brahmi South Asian writing had been Kharosthi (in the northwest), Indus script (undeciphered, in the bronze age), or absent. Brahmi appears fully formed in Ashoka's edicts (~250 BC) — abugida script with consonant-vowel ligatures. Origin debated (West Asian, Indus, indigenous?). Ancestor of nearly every Indian, Tibetan, and Southeast Asian script — Devanagari, Tamil, Sinhalese, Khmer, Thai, Burmese, Tibetan all descend from Brahmi.",
+
+  'brahmi-script-fully-developed':
+    "Same Brahmi, alternate ID. By 250 BC the script appears in Ashoka's rock and pillar edicts as a complete, mature system. Whether it had developed gradually over preceding centuries (now likely) or was invented essentially de novo for the Ashokan project (older view) is debated. Either way, the inscriptions are the script's first sustained public use, and every later Indian writing system descends from Brahmi.",
+
+  'decree-of-canopus':
+    "Pre-Canopus Egyptian inscriptions had been monolingual hieroglyphic. The Decree of Canopus (~238 BC, by Ptolemy III) was inscribed trilingually — hieroglyphic, demotic, and koine Greek — on multiple stelae across Egypt. The first sustained trilingual official inscription. Less famous than the Rosetta Stone (the 196 BC Decree of Memphis, also trilingual) but technically prior. The trilingual format — Greek alongside Egyptian script — was what eventually made hieroglyphic decipherment possible (Champollion, 1822).",
+
+  'varros-de-lingua-latina':
+    "Latin had been used for centuries without formal grammatical analysis. Varro's De Lingua Latina (43 BC, originally 25 books, only 6 surviving) was the first systematic Latin etymology and grammar — analyses of word formation, declension, and dialectal variation. Roman grammatical theory begins with Varro. Quintilian, Donatus, and Priscian (the major medieval Latin grammar source) all build on Varro's foundation.",
+
+  'remmius-palaemon-latin-grammar':
+    "Varro's De Lingua Latina (43 BC) had been etymological and historical. Remmius Palaemon's Ars (early 1st century AD, lost but reconstructed from later citations) was the first systematic Latin pedagogical grammar — declensions, conjugations, syntax — designed for teaching the language to non-native speakers. The grammatical tradition Donatus (4th century) and Priscian (6th century) inherited and that medieval European education used for a thousand years descends from Palaemon.",
+
+  'greek-uncial-script':
+    "Earlier Greek script had been ALL CAPS in cramped angular forms — adequate for stone inscriptions, hard to read in long texts. Greek uncial script (~300 AD, on parchment codices for early Christian texts) used broad rounded single-stroke letters — fast to write, easy to read at long-text scale. The first sustained book-hand for the Greek tradition. Byzantine minuscule (9th century onward) descends from uncial, and the modern Greek alphabet preserves uncial-derived shapes.",
+
+  'boethius-latin-translation-of-aristotle':
+    "Western Roman Empire had collapsed (476 AD); Greek philosophy was now inaccessible to most Latin readers. Boethius (~510 AD, working as Roman senator and Ostrogothic court official) began translating Aristotle into Latin — finished the logical works (the 'Old Logic') before his execution. The only Aristotle the Latin West had for the next 700 years. Early medieval European philosophy and theology (Anselm, Abelard) ran on Boethian Aristotle until 12th-century retranslations brought back the Aristotelian corpus from Arabic and Greek originals.",
+
+  'block-printing-in-china':
+    "Manuscript copying had taken individual scribes weeks per book. Tang Chinese woodblock printing (in use by ~700 AD, with the Diamond Sutra of 868 AD as the earliest dated printed book) carved each page as a single carved wooden block, then printed multiple copies. Adopted by Buddhist monasteries for sutra distribution. The first sustained mass-production text technology. Print penetration in Chinese society reached scales Europe wouldn't see until centuries after Gutenberg. Movable type (Bi Sheng, 1040 AD) was added but never displaced block printing in Chinese practice.",
+
+  'old-english-vernacular-writing-beowulf':
+    "Pre-Beowulf Anglo-Saxon literary culture had been oral. The Beowulf manuscript (Cotton Vitellius A.XV, copied ~1000 AD from older sources) is the only surviving Old English epic poem — 3,182 alliterative lines about a Geatish hero fighting monsters. The first sustained vernacular epic in any Germanic language. Survived a fire in 1731 and a thousand years of neglect. Tolkien's 1936 lecture 'The Monsters and the Critics' rehabilitated it as literature.",
+
+  'jiaozi-currency':
+    "Song China's commerce had outgrown its bronze coinage — large transactions required wagonloads of cash. Sichuan merchants had issued IOUs as paper substitutes (~970 AD); the Song state nationalized the practice in 1024 with state-issued Jiaozi notes. The first sustained government-issued paper money. Inflation came when issuance outpaced backing. Marco Polo's reports (1290s) of paper money astonished Europeans, who wouldn't have it for another four centuries.",
+
+  'magna-carta-sealing':
+    "Pre-Magna-Carta English kings had ruled by divine right with no formal constraint. Rebellious barons forced King John to seal Magna Carta on June 15, 1215 at Runnymede — sixty-three clauses limiting royal power, codifying baronial rights, and (in clause 39) requiring lawful judgment before any free man could be imprisoned. The first sustained English written constitution. Reissued, ignored, and reissued through the 13th century. Habeas corpus, due process, and the entire common-law constitutional tradition descend from Magna Carta.",
 };
 
 async function main(){
