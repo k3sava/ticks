@@ -29762,20 +29762,20 @@
     },
     {
       "id": "invention-of-the-bow-and-arrow",
-      "year": "20,000 BC",
-      "yearN": -20000,
+      "year": "60,000 BC",
+      "yearN": -60000,
       "zone": "cognitive-leap",
       "name": "Bow and arrow",
       "domain": "computing",
       "constraint": "hunting required close-range contact with prey",
-      "detail": "The bow and arrow was developed as a ranged weapon system using an elastic bow and shafted arrows. It dissolved the constraint of needing to approach prey at close range for hunting, enabling silent, distant kills. This increased hunting success and safety, and later became a key weapon of war until firearms emerged.",
+      "detail": "The earliest probable arrowheads come from Sibudu Cave in South Africa, dated 60,000-72,000 years ago. The bow and arrow used elastic energy stored in a bent stave to launch fletched arrows accurately to 100m, dissolving the constraint that hunting required close-range contact with prey. Silent distant kills became possible, and the technology stayed dominant as a missile weapon until firearms displaced it 60,000+ years later.",
       "links": [
         {
           "label": "Wikipedia: Bow and arrow",
           "url": "https://en.wikipedia.org/wiki/Bow_and_arrow"
         }
       ],
-      "because": "Earlier ranged weapons had been thrown spears (limited range), atlatl-launched darts (~20-50m), and slings (high skill requirement). The bow and arrow (~20,000 BC, archaeological evidence from Sibudu Cave South Africa pushes earlier) used elastic energy stored in the bow stave to launch a fletched arrow with high accuracy out to 100m. The longest-running missile weapon technology — the dominant projectile weapon for nearly 22,000 years until firearms displaced it."
+      "because": "Earlier ranged weapons had been thrown spears (limited range) and stone-tipped projectiles. Sibudu Cave in South Africa preserves the earliest probable arrowheads at 60,000-72,000 years ago — bone points with stress patterns characteristic of high-velocity impact. The first elastic-energy storage weapon. Definitive European bow remains follow much later (13,500-18,000 years ago in German and Swiss sites). Hunting at distance became safer; the bow eventually replaced the atlatl across most regions, and remained the dominant missile weapon for over 60,000 years."
     },
     {
       "id": "domestication-of-the-dog",
@@ -30072,16 +30072,16 @@
       "yearN": -530,
       "zone": "axial-age",
       "name": "Pythagorean community hierarchy",
-      "domain": "biology",
-      "constraint": "no formal hierarchy of organisms",
-      "detail": "Pythagoras established the first Pythagorean community in Croton circa 530 BC, distinguishing between akousmatikoi and mathematikoi. This created a formal hierarchy that later enabled taxonomic ordering of living things. The Cynics later disregarded this hierarchy, showing its influence on subsequent philosophical traditions.",
+      "domain": "philosophy",
+      "constraint": "no formal hierarchy for esoteric teaching",
+      "detail": "Pythagoras founded his community at Croton (c.530 BC), splitting members into akousmatikoi (listeners taught by aphorism) and mathematikoi (learners taught by demonstration). The split governed how teaching transmitted through the community, not biological classification. Aristotle's later Scala Naturae (c.350 BC) is the actual root of Greek taxonomic ranking; the Pythagorean community contributed the schema of nested ranks of knowledge that influenced philosophical organisation.",
       "links": [
         {
           "label": "Wikipedia: Pythagorean community hierarchy",
           "url": "https://en.wikipedia.org/wiki/Pythagoreanism"
         }
       ],
-      "because": "Pre-Pythagorean Greek thought had treated living beings without formal hierarchy. The Pythagorean community at Croton (~530 BC) classified its members into akousmatikoi (listeners — outer circle, taught by aphorism) and mathematikoi (learners — inner circle, taught by demonstration). The category-and-rank schema was applied to nature broadly: living vs. non-living, plant vs. animal, mortal vs. immortal. The earliest known systematic ranking of living things in the Greek tradition. Aristotle's later Scala Naturae built on this footing."
+      "because": "Pre-Pythagorean Greek thought lacked institutional hierarchies for transmitting esoteric teaching. The Pythagorean community at Croton (c.530 BC) divided members into akousmatikoi (outer circle, taught by aphorism) and mathematikoi (inner circle, taught by demonstration). The split governed teaching transmission, not biology — but the schema of nested ranks of knowledge anticipated later philosophical orderings. Aristotle's Scala Naturae (c.350 BC) is the proper origin of Greek taxonomic ranking of living things."
     },
     {
       "id": "pythagorean-interval",
@@ -50967,14 +50967,14 @@
       "name": "Hyksos introduce horse and chariot to Egypt",
       "domain": "war",
       "constraint": "Egypt lacked horse-drawn chariot technology for warfare",
-      "detail": "The Hyksos, rulers of the Fifteenth Dynasty of Egypt (fl. c. 1650–1550 BC), introduced the horse and chariot to Egypt. This dissolved the previous limitation of slow infantry-based warfare, enabling rapid mobile shock tactics. The innovation later influenced Egyptian military dominance in the New Kingdom.",
+      "detail": "The Hyksos ruled the Fifteenth Dynasty of Egypt (c. 1650–1550 BC) and have traditionally been credited with introducing the horse and chariot. Wikipedia notes the attribution is disputed — Hyksos burials include horses, but no archaeological or textual evidence places chariots in their hands; Egyptian texts first describe chariots as Egyptian technology used against the Hyksos late in the period. Whether the Hyksos brought the technology or it arrived alongside their rule, horse-drawn chariots become Egyptian standard equipment from this era forward.",
       "links": [
         {
           "label": "Wikipedia: Hyksos introduce horse and chariot to Egypt",
           "url": "https://en.wikipedia.org/wiki/Hyksos"
         }
       ],
-      "because": "Akkadian siege towers (2000 BC) and the chariot with spoked wheel (1950 BC) bracket the Bronze Age moment when Eurasian warfare was being industrialized. The Hyksos — Asiatic invaders of Lower Egypt around 1650 BC — brought the horse-drawn chariot into Egypt for the first time, gave the Egyptian military its first true mobile striking force, and forced the New Kingdom revolution that produced Thutmose III's empire."
+      "because": "Akkadian siege towers (2000 BC) and the spoked-wheel chariot of the Sintashta steppe (1950 BC) had built the technical substrate for mobile shock warfare. The Hyksos period in Lower Egypt (c.1650–1550 BC) marks when horse-drawn chariots arrive as Egyptian standard military equipment, even if the Hyksos themselves are no longer credited as the introducers. The New Kingdom that follows — Thutmose III's empire — runs on this chariot doctrine."
     },
     {
       "id": "thutmose-iii-campaigns",
