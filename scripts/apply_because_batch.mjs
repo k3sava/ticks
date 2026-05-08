@@ -2305,6 +2305,96 @@ const BECAUSE_BATCH = {
 
   'discovery-of-oxygen-priestley':
     "Pre-Priestley combustion theory had attributed both burning and breathing to release of phlogiston — a hypothetical fire-substance. Joseph Priestley (1774) heated mercuric oxide and collected the gas it released — pure oxygen. Demonstrated that the gas supported combustion (a candle burned brighter) and respiration (mice survived longer). The first sustained-scale isolation of a chemically distinct atmospheric gas. Lavoisier's quantitative analysis (1778) overthrew phlogiston theory. Modern chemistry's foundational discovery.",
+
+  'morphine-isolated-serturner':
+    "Pre-morphine pain relief had used crude opium — variable potency, unpredictable effects. Friedrich Sertürner (1804, 21-year-old German pharmacist) isolated morphine as the active analgesic compound from opium. Pure, dose-able, predictable. The first sustained isolation of an active alkaloid from a medicinal plant. Modern pharmacology's foundational technique. Quinine (1820), caffeine (1820), nicotine (1828), and the entire alkaloid pharmacopoeia followed.",
+
+  'stethoscope-invented-laennec':
+    "Pre-stethoscope physicians had pressed an ear directly against the patient's chest — awkward, unreliable, immodest with female patients. René Laennec (Paris, 1816) rolled a paper tube into a cylinder and listened through it — sounds were clearer than direct contact. Iterated to a wooden monaural cylinder. The first sustained instrumented auscultation. Modern stethoscope (binaural, 1850s) refined the design. Cardiology and pulmonology as diagnostic specialties run on the stethoscope.",
+
+  'first-successful-human-blood-transfusion':
+    "Pre-Blundell blood transfusions had been animal-to-human attempts (Lower 1665, Denis 1667) — almost universally fatal. James Blundell (London, 1818) performed the first sustained-scale human-to-human transfusion using a syringe-and-tube apparatus on postpartum hemorrhage cases. Some patients survived. Karl Landsteiner's blood typing (1901) eventually made transfusions consistently safe. Modern transfusion medicine traces its institutional ancestry through Blundell.",
+
+  'leg-amputation-under-anesthesia':
+    "Pre-anesthesia surgery had been a contest of speed — Robert Liston could amputate a leg in 30 seconds. Patient screams were standard. October 16, 1846 (the 'Ether Day' demonstration at Mass General) and the European spread that followed brought painless amputation in months. Robert Liston himself performed an amputation under ether on December 21, 1846 — and announced 'this Yankee dodge beats mesmerism hollow.' The first sustained-scale painless major surgery. Modern surgery's professional foundations rest on the abolition of operative pain.",
+
+  'tuberculosis-sanatorium-movement':
+    "Pre-sanatorium TB patients had received variable home or workhouse care — most died. Edward Trudeau's Adirondack Cottage Sanitarium (Saranac Lake, 1885) and the European model that preceded it (Brehmer in Silesia, 1859) provided rest, fresh air, sunlight, and graduated activity. Some patients recovered. The first sustained-scale dedicated TB-care institution. Sanatoria spread across the developed world. Streptomycin (1944) and modern multi-drug therapy displaced the sanatorium model — but the dedicated-disease-institution concept persists.",
+
+  'diphtheria-antitoxin':
+    "Pre-antitoxin diphtheria had been a leading childhood killer — choking children to death from airway obstruction. Emil von Behring's diphtheria antitoxin (developed 1890, commercialized through the 1890s) used antibodies from immunized horses to treat infected children. Mortality dropped from 50% to under 10%. The first sustained-scale serotherapy. von Behring received the first Nobel Prize in Physiology or Medicine in 1901. Modern immune-globulin therapy descends from this work.",
+
+  'sphygmomanometer':
+    "Pre-sphygmomanometer arterial blood pressure had been measured invasively or estimated by pulse palpation — neither precise nor practical for routine clinical use. Scipione Riva-Rocci's sphygmomanometer (1896) used an inflatable cuff with a mercury manometer to measure systolic pressure non-invasively. Korotkoff's auscultatory technique (1905) added diastolic. The first sustained-scale routine blood-pressure measurement. Modern hypertension management — affecting hundreds of millions of patients globally — runs on Riva-Rocci's invention.",
+
+  'blood-transfusion-direct':
+    "Pre-direct transfusion blood was drawn into a container, then re-infused — air exposure caused clotting. Direct transfusion (1908, by George Crile) used apparatus connecting donor artery to recipient vein directly — no air, no clotting. The first sustained-scale technically reliable blood transfusion. Combined with Landsteiner's blood typing (1901), produced the modern transfusion era. Surgical and emergency medicine became survivable for blood-loss conditions that had previously been uniformly fatal.",
+
+  'intraocular-lens-implant':
+    "Pre-IOL cataract surgery removed the lens but left the patient functionally blind without thick aphakic glasses — heavy, distorted, peripheral-vision-limiting. Harold Ridley's intraocular lens implant (London, 1949) replaced the removed natural lens with a polymethyl methacrylate (PMMA) artificial lens. Initially rejected by the medical establishment; eventually adopted from the 1980s. Modern phacoemulsification cataract surgery with foldable IOLs — the most-performed surgical procedure in the world — descends directly from Ridley's procedure.",
+
+  'cardiopulmonary-resuscitation-cpr-developed':
+    "Pre-CPR sudden cardiac arrest outside hospital had been universally fatal. Peter Safar and James Elam's CPR technique (developed 1956-60, formalized at Johns Hopkins) combined chest compressions (Kouwenhoven, 1960) with mouth-to-mouth ventilation (Safar, 1958). Survival rates from witnessed cardiac arrest jumped from 0% to ~10%. The first sustained-scale resuscitation technique trainable to laypersons. Modern emergency medicine, AED deployment, and bystander CPR programs all rest on Safar's work.",
+
+  'cochlear-implant':
+    "Pre-cochlear-implant profound deafness had been irreversible. The first single-channel cochlear implant (William House, Los Angeles, 1972) bypassed damaged hair cells by directly stimulating the auditory nerve with electrical signals from an externally worn microphone-and-processor. Multi-channel implants (Graeme Clark's 1978 device) gave better speech perception. The first sustained-scale neural prosthesis. Approximately 700,000 people worldwide had received cochlear implants by 2020. Demonstrated that direct neural stimulation could partially restore lost sensory function.",
+
+  'positron-emission-tomography':
+    "Pre-PET brain function had been inferred from anatomy (autopsy), behavior (lesion studies), or indirect measures (EEG). PET scanning (Phelps and Hoffman at Washington University, 1974, using positron-emitting radiotracers) imaged metabolic activity in vivo — glucose uptake highlighted active brain regions. The first sustained-scale functional imaging of living human tissue. Combined with the later fMRI (1990s), produced cognitive neuroscience as a routine experimental discipline. Modern oncology PET (FDG uptake) is the same technology applied to tumor metabolism.",
+
+  'balloon-angioplasty-first-human':
+    "Pre-angioplasty blocked coronary arteries had required open-heart bypass surgery — major operation, weeks of recovery. Andreas Grüntzig's first human balloon angioplasty (Zurich, September 16, 1977) threaded a deflated balloon catheter into the coronary blockage and inflated it to open the vessel — outpatient procedure, hours not weeks. The first sustained-scale interventional cardiology procedure. Modern stenting (1986+) builds on the same catheter-based approach. Coronary heart disease — the leading cause of death — became routinely treatable without open-chest surgery.",
+
+  'discovery-of-helicobacter-pylori':
+    "Pre-Marshall and Warren peptic ulcers had been blamed on stress and diet — treated with antacids and lifestyle changes, often unsuccessfully. Barry Marshall and Robin Warren (Perth, 1983) identified Helicobacter pylori as the bacterial cause of most peptic ulcers and gastric cancers. Marshall famously self-experimented (drank a culture of H. pylori, developed gastritis, treated himself with antibiotics). The first sustained recognition that an infectious agent caused a disease previously attributed to lifestyle. 2005 Nobel.",
+
+  'discovery-of-rna-interference-mechanism':
+    "Pre-RNAi sequence-specific gene silencing had been impossible — only crude RNA antisense techniques existed. Andrew Fire and Craig Mello's 1998 paper on RNA interference in C. elegans showed that double-stranded RNA could silence genes with the same sequence — a natural cellular defense mechanism that researchers could now deploy as a precision tool. The first sustained-scale specific gene-silencing technique. Within years, RNAi was being used across biology. Foundational technique for the genomics era. 2006 Nobel.",
+
+  'first-successful-islet-cell-transplantation-edmonton-protocol':
+    "Pre-Edmonton islet-cell transplants for type 1 diabetes had failed almost universally — recipients still needed insulin within months. The Edmonton protocol (James Shapiro, University of Alberta, 2000) replaced steroid-based immunosuppression with a combination including sirolimus and tacrolimus, and used multiple donor pancreata to provide enough islet mass. 80% of recipients achieved insulin independence at one year. The first sustained-scale successful islet-cell transplantation. Limited by donor pancreas availability; stem-cell-derived islet therapy is the next-generation extension.",
+
+  'who-framework-convention-on-tobacco-control':
+    "Pre-FCTC tobacco control had been national policy at most. The WHO Framework Convention on Tobacco Control (adopted May 21, 2003, in force February 27, 2005) bound 182 ratifying states to evidence-based tobacco-control measures — taxation, advertising restrictions, smoke-free public places, large warning labels, illicit-trade controls. The first sustained-scale international public-health treaty. Smoking rates have declined globally, with the FCTC framework playing a coordination role.",
+
+  'emergence-of-language':
+    "Pre-language hominin communication had been gestural and call-based — limited to topics in the immediate environment. Symbolic recursive language (~50,000-100,000 BC, contested dating, evidenced by behavioral-modernity markers like cave art, complex tool kits, and burial practices) gave humans the ability to talk about the past, the future, the absent, the imagined. The deepest cognitive transition in human prehistory. Every subsequent human cognitive achievement — writing, mathematics, science, fiction — is downstream of recursive language.",
+
+  'earliest-known-fishing-technology':
+    "Pre-fishing-technology marine and freshwater protein had been opportunistic — what could be caught by hand or with simple weirs. Upper Paleolithic fishing technology (~40,000 BC) included shell fishhooks (Sakitari Cave, Okinawa, 23,000 BC), bone harpoons (Katanda site, DRC, 90,000 BC for harpoons, fishing-deep), and woven nets (inferred from imprints). The first sustained-scale dedicated marine resource extraction. Coastal-population expansion and the early-modern-human migrations along Pleistocene coastlines depended on these technologies.",
+
+  'venus-figurine-2':
+    "Same Hohle Fels Venus, alternate ID. Carved from mammoth ivory ~35,000 BC, the figurine — exaggerated breasts, vulva, abdomen, no head — is among the earliest known representational art. Suggested as fertility symbol, ritual object, female-power token. The first sustained-scale tradition of Venus figurines (multiple examples across Aurignacian and Gravettian Eurasia) demonstrates that Upper Paleolithic populations shared a common iconographic vocabulary across thousands of miles.",
+
+  'establishment-of-jericho':
+    "Hunter-gatherer settlements had been small temporary camps. Jericho (~9000 BC, Pre-Pottery Neolithic A) was the first sustained-scale permanent settlement — 2,000+ people in stone-and-mudbrick houses with walls, watchtower, organized burials. The first known proto-city. Subsequent Neolithic Levantine sites (Ain Ghazal, Çatalhöyük) extended the model. Permanent settlement created the conditions for subsequent agricultural intensification, social hierarchy, and eventually the world's first cities.",
+
+  'fermented-beverages-jiahu':
+    "Pre-fermented-beverage psychoactive consumption had been mostly opportunistic — accidental fermentation of fruit. Jiahu Neolithic site (China, ~7000 BC) preserved chemical residue of intentionally fermented rice-honey-fruit beverage in pottery. The first sustained-scale evidence of deliberate fermentation. Combined with archaeological evidence from other Neolithic sites worldwide, suggests intentional alcohol production may predate agriculture in some regions. Cultural ritual, social bonding, and the eventual centrality of beer and wine to human civilizations all trace back to this Neolithic fermentation tradition.",
+
+  'trepanning-for-mental-illness':
+    "Pre-trepanning behavioral and neurological disorders had been untreatable folk-medical conditions. Neolithic trepanning (~7000 BC) involved drilling or scraping holes in the skulls of patients suffering from epilepsy, severe headaches, or behavioral abnormalities — a procedure many patients survived (evidenced by bone regrowth around the holes). The first sustained surgical-medical intervention for behavioral and neurological symptoms. Modern psychosurgery (lobotomy, deep brain stimulation) descends from this very long tradition.",
+
+  'goseck-circle':
+    "Pre-Goseck timekeeping had been lunar (notched bones, ~28,000 BC). The Goseck Circle (Saxony-Anhalt, ~4900 BC) — a circular earthwork enclosure with palisade gates aligned to summer and winter solstice sunrises and sunsets — is one of the earliest known solar-aligned megalithic monuments. The first sustained-scale solar-calendar architecture. Predates Stonehenge (~3100 BC) by nearly two millennia. Demonstrates that Neolithic European populations had developed astronomical observation sophisticated enough to organize ritual landscapes around solar events.",
+
+  'mesopotamian-divination':
+    "Pre-divination decision-making under uncertainty had been by individual judgment or elder consensus. Mesopotamian divination (~4000 BC, with elaborated forms by 2000 BC — extispicy reading sheep livers, hepatoscopy, astrology, oneiromancy) systematically generated outputs from inputs (random or naturally varying signs) to guide decisions. The first sustained-scale formal decision-support system. Whatever modern science thinks about its accuracy, divination was a real institutional practice that organized political, military, and personal decisions for millennia. The institutional ancestor of decision theory.",
+
+  'cylinder-seal':
+    "Pre-cylinder-seal Mesopotamian record-keeping had been by stamp seals (~6000 BC) or hand-marks. The cylinder seal (~3500 BC, in Uruk) was a small carved stone cylinder that could be rolled across wet clay to leave a continuous repeating impression. The first sustained-scale rolling-impression mark. Used to seal containers, mark ownership of goods, and authenticate documents. Technical foundation of the Mesopotamian commercial-and-administrative system. The roll-across-wet-clay principle eventually gave us roller printing and offset lithography, four millennia later.",
+
+  'development-of-egyptian-hieroglyphic-script':
+    "Pre-hieroglyphic Egyptian record-keeping had been pictographic — adequate for accounting but useless for narrative or abstract concepts. Mature hieroglyphic script (~3300 BC, in Predynastic Egypt) added phonetic complements, determinatives, and grammatical markers — capable of recording the full range of human ideas. The first sustained-scale Egyptian writing system. Cuneiform's Mesopotamian counterpart developed in parallel (~3200 BC). Egyptian state administration, religious texts, and the Pyramid Texts all run on hieroglyphic writing.",
+
+  'construction-of-stonehenge-phase-i':
+    "Pre-Stonehenge Neolithic British monumental architecture had been earthwork-only — long barrows, causewayed enclosures. Stonehenge Phase I (~3100 BC, the original circular ditch and bank) is the earliest stage of what eventually became the iconic stone circle. Phase II added the bluestone circle (~2500 BC); Phase III added the sarsen trilithons (~2300 BC). The first sustained-scale British astronomical-megalithic monument. Continuous construction and modification across 1,500 years; ritual use across nearly 4,000.",
+
+  'papyrus-first-use-for-writing':
+    "Pre-papyrus Egyptian writing had been on stone, clay, or wooden tablets — heavy, immovable, expensive. Papyrus (~2560 BC, made from the Cyperus papyrus reed pressed into sheets) was light, portable, durable enough for centuries of storage in dry conditions. The first sustained-scale portable writing medium. Egyptian, Greek, Roman, and early Byzantine literature all recorded on papyrus rolls. The codex (bound parchment pages) eventually displaced papyrus from the 4th century AD. The word 'paper' descends from 'papyrus.'",
+
+  'eduba-scribal-school':
+    "Pre-eduba scribal training had been informal master-apprentice. The Mesopotamian eduba (Sumerian for 'tablet house', established ~2000 BC) was a dedicated scribal school — students copied stock texts, learned cuneiform writing, mathematics, and basic literature. The first sustained-scale formal educational institution. Egyptian temple schools, Greek paideia, Roman ludi, medieval cathedral schools, and modern universities all trace conceptual ancestry to the eduba — places dedicated specifically to the systematic transmission of literate skills.",
 };
 
 async function main(){
