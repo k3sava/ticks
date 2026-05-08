@@ -39393,7 +39393,8 @@
           "label": "Wikipedia: Treaty of Lisbon",
           "url": "https://en.wikipedia.org/wiki/Treaty_of_Lisbon"
         }
-      ]
+      ],
+      "because": "Pre-Lisbon EU decision-making had required unanimity in many policy areas — any single member could veto. The Treaty of Lisbon (signed December 13, 2007, in force December 1, 2009) introduced qualified majority voting in 50+ policy areas, gave the European Parliament co-decision power, and merged the EU's three pillars into a single legal entity. The first sustained constitutional reform of EU institutional architecture since Maastricht (1993). The current EU's institutional structure is essentially Lisbon's."
     },
     {
       "id": "iphone-1st-generation",
@@ -39409,7 +39410,8 @@
           "label": "Wikipedia: iPhone (1st generation) released",
           "url": "https://en.wikipedia.org/wiki/IPhone_%281st_generation%29"
         }
-      ]
+      ],
+      "because": "Pre-iPhone smartphones had been QWERTY-keyboard devices (BlackBerry, Treo) running carrier-controlled software. The original iPhone (announced January 9, 2007, released June 29) had a multi-touch capacitive screen, a real web browser (Safari), and an iPod app — and was deliberately kept off the carrier's deck-of-apps. The App Store followed in 2008. The first sustained-scale post-feature-phone smartphone. Within a decade, smartphones replaced PCs as the primary computing device for billions. Modern mobile culture, the gig economy, and social media's ubiquity all run on iPhone-class devices."
     },
     {
       "id": "partnership-on-ai-founding",
@@ -39459,7 +39461,8 @@
           "label": "Wikipedia: EU proposes Artificial Intelligence Act",
           "url": "https://en.wikipedia.org/wiki/Artificial_Intelligence_Act"
         }
-      ]
+      ],
+      "because": "Pre-2021 AI regulation had been sectoral (medical-device approval for AI diagnostics, financial supervision for credit scoring) — no horizontal framework. The European Commission's AI Act proposal (April 21, 2021) classified AI systems by risk: prohibited (mass biometric surveillance), high-risk (employment decisions, critical infrastructure), limited-risk (chatbots), minimal-risk (everything else). The first sustained-scale comprehensive AI regulatory framework. Final political agreement December 2023; in force August 2024. Brussels effect: companies globally engineering AI products to AI Act standards."
     },
     {
       "id": "executive-order-14110",
@@ -39491,7 +39494,8 @@
           "label": "Wikipedia: Neanderthal medicinal plant use",
           "url": "https://en.wikipedia.org/wiki/History_of_herbalism"
         }
-      ]
+      ],
+      "because": "Pre-medicinal-plant practice had been opportunistic — try the plant if it tasted right, hope for the best. Neanderthal dental calculus from El Sidrón Cave (~50,000-60,000 BC) preserved evidence of yarrow and chamomile — bitter plants with no nutritional value but real anti-inflammatory and antiseptic effects. The first sustained evidence of deliberate medicinal plant use, predating modern humans. The Sumerian medical texts (~2200 BC) and Dioscorides (60 AD) build on a 60,000-year empirical pharmacological tradition."
     },
     {
       "id": "sewing-needle",
@@ -39523,7 +39527,8 @@
           "label": "Wikipedia: Clay used for Venus figurines",
           "url": "https://en.wikipedia.org/wiki/Venus_figurine"
         }
-      ]
+      ],
+      "because": "Pre-ceramic figurines had been carved from bone, ivory, or stone — material-bound by what the carver could shape. Fired-clay figurines (~35,000 BC, Hohle Fels) used a moldable medium that could be shaped while wet, then fired hard. The first sustained ceramic art. The same firing technology was eventually applied to functional pottery (~18,000 BC in East Asia, ~9000 BC in the Levant). Figurines preceded pottery as ceramic application."
     },
     {
       "id": "first-known-use-of-antler-picks-for-mining",
@@ -39571,7 +39576,8 @@
           "label": "Wikipedia: First known dental drilling",
           "url": "https://en.wikipedia.org/wiki/Dental_drill"
         }
-      ]
+      ],
+      "because": "Pre-dental-drilling tooth decay had been managed by extraction or hope. Mehrgarh skeletons (~7000 BC, in modern Pakistan) show evidence of dental drilling — neat conical holes in molars, drilled with bow-string-driven flint or quartz tips. The first sustained dental-treatment technology. Whether the procedure was for caries treatment, ritual, or both is debated. Modern dental drills work on the same principle the Mehrgarh dentists pioneered."
     },
     {
       "id": "use-of-honey-as-wound-dressing",
@@ -39587,7 +39593,8 @@
           "label": "Wikipedia: Honey used as wound dressing",
           "url": "https://en.wikipedia.org/wiki/Honey"
         }
-      ]
+      ],
+      "because": "Pre-honey wound care had been minimal — clean water if available, herbs if found, infection if not. Honey's high osmotic pressure dehydrates bacteria; its hydrogen peroxide release is mildly antiseptic; its low pH kills many pathogens. Egyptian, Mesopotamian, and Indus Valley medical texts all describe honey wound dressing (~7000 BC archaeological earliest evidence in the Mediterranean). The first sustained antimicrobial topical agent. Modern medical-grade honey is FDA-approved for chronic wound treatment — closing a 9,000-year empirical loop."
     },
     {
       "id": "neolithic-trepanation-for-epilepsy",
@@ -39603,7 +39610,8 @@
           "label": "Wikipedia: Neolithic trepanation for epilepsy",
           "url": "https://en.wikipedia.org/wiki/Trepanning"
         }
-      ]
+      ],
+      "because": "Pre-trepanation seizures and chronic head injuries had been untreatable — patients suffered or died. Neolithic trepanation (skull-drilling, ~6500 BC) involved scraping or drilling a hole in the skull while the patient was alive — perhaps to relieve pressure from head trauma, perhaps to release perceived evil spirits causing seizures. Survival evidence (regrowth around the hole) is common, suggesting the procedure was often non-fatal. The first sustained surgical neurological intervention. Modern craniotomy uses the same fundamental approach."
     },
     {
       "id": "first-recorded-trepanation",
@@ -39619,7 +39627,8 @@
           "label": "Wikipedia: Trepanation",
           "url": "https://en.wikipedia.org/wiki/Trepanning"
         }
-      ]
+      ],
+      "because": "Same trepanation event, alternate ID. The earliest skulls with trepanation holes (Neolithic, ~6500 BC) come from sites across Eurasia and the Americas — independently invented multiple times. Survival rate was surprisingly high (perhaps 50%+ based on evidence of healing around the hole). The earliest deliberate surgical procedure for which we have physical evidence."
     },
     {
       "id": "first-known-circumcision",
@@ -39686,7 +39695,8 @@
           "label": "Wikipedia: Cataract surgery",
           "url": "https://en.wikipedia.org/wiki/Cataract_surgery"
         }
-      ]
+      ],
+      "because": "Cataracts had been a leading cause of preventable blindness for as long as humans have lived long enough to develop them. Mesopotamian and Egyptian (~3000 BC) practitioners performed couching — a needle pushed through the cornea displaced the cloudy lens into the vitreous body, restoring some vision. Crude, dangerous, but sometimes successful. The first sustained intentional surgical intervention to restore sight. Sushruta's Indian rhinoplasty-style cataract techniques (~600 BC) refined the procedure. Modern phacoemulsification cataract surgery is the very-distant descendant."
     },
     {
       "id": "first-known-sutures",
@@ -39702,7 +39712,8 @@
           "label": "Wikipedia: Surgical suture",
           "url": "https://en.wikipedia.org/wiki/Surgical_suture"
         }
-      ]
+      ],
+      "because": "Pre-suture wound closure had been hope and bandages. Egyptian and Mesopotamian medical texts (~3000 BC) describe surgical sutures — closing wounds with linen thread, silk, or animal sinew. The Edwin Smith Papyrus illustrates suture technique. The first sustained sutured-wound closure technique. Reduces blood loss, reduces infection, reduces scarring. Modern surgery, from the simplest skin closure to complex organ reconnection, runs on suture techniques refined from the Egyptian and Indian medical traditions."
     },
     {
       "id": "first-known-caesarean-section",
@@ -39718,7 +39729,8 @@
           "label": "Wikipedia: First known caesarean section",
           "url": "https://en.wikipedia.org/wiki/Caesarean_section"
         }
-      ]
+      ],
+      "because": "Pre-caesarean obstructed labor had been almost universally fatal — both mother and infant died. Earliest evidence of intentional caesarean surgery (~3000 BC, in some Egyptian and Mesopotamian texts; Roman lex regia required postmortem caesarean) was performed on already-deceased mothers to save the baby. The first sustained surgical alternative to natural birth. Living-mother caesareans became survivable only with antiseptics (Lister 1865), anesthesia (1846), and modern obstetric technique. Modern C-section (now ~30% of US births) is the eventual successor."
     },
     {
       "id": "imhoteps-surgical-texts",
@@ -39751,7 +39763,8 @@
           "label": "Wikipedia: Indus Valley covered brick drainage system",
           "url": "https://en.wikipedia.org/wiki/Indus_Valley_Civilisation"
         }
-      ]
+      ],
+      "because": "Pre-Indus-Valley urban sanitation had been negligible — waste accumulated in streets, in cesspits, in rivers. The Indus Valley civilization (~2600-1900 BC, especially at Mohenjo-daro and Harappa) built covered brick drainage systems that carried wastewater out of houses, through streets, to outside-city drainage. Standardized brick sizes; sustained civic maintenance. The first sustained-scale urban sanitation infrastructure. Roman aqueducts and the eventual 19th-century European sewer revolution all build on the principle the Indus Valley demonstrated forty centuries earlier."
     },
     {
       "id": "use-of-clay-for-poultices",
@@ -39767,7 +39780,8 @@
           "label": "Wikipedia: Clay poultices in Mesopotamia",
           "url": "https://en.wikipedia.org/wiki/Poultice"
         }
-      ]
+      ],
+      "because": "Pre-poultice topical wound treatment had been honey, herbs, or nothing. Sumerian medical texts (~2200 BC) describe clay-based poultices using milk, beer, herbs, and animal fat as binders. Clay's mineral content and absorbent properties drew exudate from wounds; mild antibacterial effects came from copper compounds in some clays. The first sustained mineral-based topical medical preparation. Modern medical clay applications (kaolin in trauma dressings, bentonite in detoxification) follow the same principle."
     },
     {
       "id": "first-recorded-birth-control-egyptian",
@@ -39783,7 +39797,8 @@
           "label": "Wikipedia: Kahun Gynecological Papyrus describes contraceptive pessaries",
           "url": "https://en.wikipedia.org/wiki/History_of_birth_control"
         }
-      ]
+      ],
+      "because": "Pre-recorded contraception had been folk practice — recipes passed orally, effectiveness uncertain. The Kahun Gynecological Papyrus (~1850 BC, Egypt) describes contraceptive pessaries using crocodile dung, acacia gum (which fermented to produce mild lactic acid), and honey. The first sustained written contraceptive recipes. Some methods (acacia-gum lactic-acid spermicides) had real, if imperfect, effects. Modern hormonal contraception (1960) is the eventual revolution that displaced this 4,000-year tradition of variable-effectiveness physical contraceptives."
     },
     {
       "id": "first-recorded-cataract-couching",
@@ -39799,7 +39814,8 @@
           "label": "Wikipedia: First recorded cataract couching",
           "url": "https://en.wikipedia.org/wiki/Cataract_surgery"
         }
-      ]
+      ],
+      "because": "Pre-recorded cataract treatment had been folk practice without documentation. Babylonian medical texts (~1700 BC, in clay tablet form) describe cataract couching technique — needle insertion through the cornea to displace the cloudy lens. The first sustained-scale documented surgical cataract treatment. Spread across Eurasian medical traditions; described in detail by Sushruta in India (~600 BC) and Galen in Rome. Modern intraocular lens replacement is the long-distant successor."
     },
     {
       "id": "use-of-clay-tablets-for-medical-records",
@@ -39815,7 +39831,8 @@
           "label": "Wikipedia: Mesopotamian clay tablet medical records",
           "url": "https://en.wikipedia.org/wiki/Medical_literature"
         }
-      ]
+      ],
+      "because": "Pre-Mesopotamian medical knowledge had been transmitted orally, lost across generations. Mesopotamian medical clay tablets (~1600 BC, especially the Diagnostic Handbook of Esagil-kin-apli) preserved diagnostic categories, prognosis, and treatment regimens in cuneiform writing. The first sustained-scale medical record system. Knowledge that had been the property of individual practitioners became transmissible across generations. Greek, Indian, and Chinese medical traditions all develop similar text-based knowledge transmission, but Mesopotamia's is documented earliest."
     },
     {
       "id": "ebers-papyrus",
@@ -39831,7 +39848,8 @@
           "label": "Wikipedia: Ebers Papyrus codifies ancient Egyptian medicine",
           "url": "https://en.wikipedia.org/wiki/Ebers_Papyrus"
         }
-      ]
+      ],
+      "because": "Pre-Ebers Egyptian medical practice had been transmitted by master-apprentice oral teaching. The Ebers Papyrus (~1550 BC) is a 110-page scroll containing 842 prescriptions and remedies for diseases ranging from skin disorders to depression. The first sustained-scale comprehensive medical pharmacopoeia. Greek, Roman, and Islamic medical traditions inherited and built on Egyptian written medical knowledge. Modern Egyptology preserves Ebers as one of the deepest archaeological windows into the practice of ancient medicine."
     },
     {
       "id": "ebers-papyrus-moldy-bread-wounds",
@@ -39847,7 +39865,8 @@
           "label": "Wikipedia: Ebers Papyrus: moldy bread for wounds",
           "url": "https://en.wikipedia.org/wiki/Ebers_Papyrus"
         }
-      ]
+      ],
+      "because": "Pre-antibiotic wound infection had been the leading cause of post-injury death. The Ebers Papyrus (~1550 BC) records the use of moldy bread applied topically to wounds — likely an empirical use of penicillin-producing molds (Penicillium). The first sustained empirical antibiotic application. Egyptian, Greek, Chinese, and other medical traditions all preserved variants of this folk practice. Fleming's 1928 isolation of penicillin from Penicillium mold scientifically confirmed what the Egyptian healers had observed three thousand years earlier."
     },
     {
       "id": "first-known-splint-for-fractures",
@@ -39863,7 +39882,8 @@
           "label": "Wikipedia: Splint for fractures",
           "url": "https://en.wikipedia.org/wiki/Splint_%28medicine%29"
         }
-      ]
+      ],
+      "because": "Pre-splint broken bones had healed crooked or didn't heal. The Edwin Smith Papyrus and Egyptian mummies (~1500 BC) preserve evidence of splints made from bark, linen, plaster, leather, and even copper. The first sustained orthopedic-medical practice. Hippocratic and Sushrutan medicine elaborated. Modern fracture management — plaster casts (introduced 1851 by Mathijsen), fiberglass casts, internal fixation — all build on the basic principle the Egyptian splinters demonstrated."
     },
     {
       "id": "splint-medicine",
@@ -39879,7 +39899,8 @@
           "label": "Wikipedia: Splints used for fractures and burns",
           "url": "https://en.wikipedia.org/wiki/Splint_%28medicine%29"
         }
-      ]
+      ],
+      "because": "Same splinting tradition, alternate ID. Egyptian medical practice (~1500 BC, as recorded in the Edwin Smith Papyrus) used splints made from bark, linen, plaster, leather, and copper for limb fractures and burns. The first sustained orthopedic-medical practice in the historical record. The principle — immobilize the injury for proper healing — is the durable insight modern fracture management still uses."
     },
     {
       "id": "chinese-acupuncture-earliest-evidence",
@@ -39895,7 +39916,8 @@
           "label": "Wikipedia: Chinese acupuncture (earliest evidence)",
           "url": "https://en.wikipedia.org/wiki/Acupuncture"
         }
-      ]
+      ],
+      "because": "Pre-acupuncture Chinese medicine had used herbal medicine, moxibustion, and massage. The earliest archaeological evidence for acupuncture (~1000 BC, with explicit textual descriptions in the Huangdi Neijing ~200 BC) used fine needles inserted at specific points to influence qi flow through meridians. The first sustained non-pharmacological pain-management technique. Modern Western medical acceptance has been gradual; clinical evidence supports use for several pain conditions, less for others. The tradition's depth and persistence make it a major branch of world medicine regardless of biomedical-validation status."
     },
     {
       "id": "first-recorded-cataract-surgery-india",
@@ -39911,7 +39933,8 @@
           "label": "Wikipedia: First recorded cataract surgery (India)",
           "url": "https://en.wikipedia.org/wiki/Cataract_surgery"
         }
-      ]
+      ],
+      "because": "Babylonian cataract couching (~1700 BC) had been described briefly. Indian medical texts attributed to Sushruta (~600 BC, Sushruta Samhita) elaborated the technique — fine needle, sterile preparation, post-operative care. The first sustained-scale medical-textbook description of cataract surgery. Spread west via the Hellenistic and Islamic medical traditions. Modern cataract surgery is essentially the same fundamental procedure (lens extraction) in a much more refined form."
     },
     {
       "id": "sushrutas-rhinoplasty-technique",
@@ -39927,7 +39950,8 @@
           "label": "Wikipedia: Sushruta's cheek-flap rhinoplasty",
           "url": "https://en.wikipedia.org/wiki/Rhinoplasty"
         }
-      ]
+      ],
+      "because": "Pre-Sushruta amputated, mutilated, or congenitally absent noses had been disfiguring and untreatable. Sushruta's rhinoplasty technique (~600 BC, Sushruta Samhita) used a flap of skin from the patient's own forehead or cheek to reconstruct the nose. The first sustained-scale plastic-reconstructive surgery. Preserved through Indian medical practice across millennia. British surgeons in the 18th century learned the technique from Indian practitioners and brought it back to Europe. Modern reconstructive surgery's deep history runs through Sushruta."
     },
     {
       "id": "first-recorded-lithotomy",
@@ -39943,7 +39967,8 @@
           "label": "Wikipedia: Sushruta describes lithotomy",
           "url": "https://en.wikipedia.org/wiki/Lithotomy"
         }
-      ]
+      ],
+      "because": "Pre-lithotomy bladder stones had been agonizing and slowly fatal. Sushruta's lithotomy (~600 BC, in the Sushruta Samhita) extracted bladder stones via perineal incision — high-mortality but better than no treatment. The first sustained-scale surgical procedure for bladder stones. Greek, Roman, Arabic, and European medieval medicine all preserved variants of the procedure. The 'cutting for the stone' that European travelers and medical students wrote about for two millennia is essentially Sushruta's technique."
     },
     {
       "id": "pythagorean-theory-of-health-as-harmony",

@@ -2155,6 +2155,81 @@ const BECAUSE_BATCH = {
 
   'un-convention-on-the-rights-of-persons-with-disabilities':
     "Pre-2006 international human rights treaties had not specifically addressed disability — disabled persons were covered by general non-discrimination provisions only. The UN Convention on the Rights of Persons with Disabilities (adopted December 13, 2006, in force May 3, 2008) shifted the framework from medical treatment to human rights, with explicit obligations on accessibility, autonomy, and full participation. The first sustained international human-rights treaty specifically for disabled persons. Now ratified by 180+ states; the first treaty in which the EU acceded as a party in its own right.",
+
+  'treaty-of-lisbon':
+    "Pre-Lisbon EU decision-making had required unanimity in many policy areas — any single member could veto. The Treaty of Lisbon (signed December 13, 2007, in force December 1, 2009) introduced qualified majority voting in 50+ policy areas, gave the European Parliament co-decision power, and merged the EU's three pillars into a single legal entity. The first sustained constitutional reform of EU institutional architecture since Maastricht (1993). The current EU's institutional structure is essentially Lisbon's.",
+
+  'iphone-1st-generation':
+    "Pre-iPhone smartphones had been QWERTY-keyboard devices (BlackBerry, Treo) running carrier-controlled software. The original iPhone (announced January 9, 2007, released June 29) had a multi-touch capacitive screen, a real web browser (Safari), and an iPod app — and was deliberately kept off the carrier's deck-of-apps. The App Store followed in 2008. The first sustained-scale post-feature-phone smartphone. Within a decade, smartphones replaced PCs as the primary computing device for billions. Modern mobile culture, the gig economy, and social media's ubiquity all run on iPhone-class devices.",
+
+  'eu-ai-act-proposal':
+    "Pre-2021 AI regulation had been sectoral (medical-device approval for AI diagnostics, financial supervision for credit scoring) — no horizontal framework. The European Commission's AI Act proposal (April 21, 2021) classified AI systems by risk: prohibited (mass biometric surveillance), high-risk (employment decisions, critical infrastructure), limited-risk (chatbots), minimal-risk (everything else). The first sustained-scale comprehensive AI regulatory framework. Final political agreement December 2023; in force August 2024. Brussels effect: companies globally engineering AI products to AI Act standards.",
+
+  'domestication-of-medicinal-plants':
+    "Pre-medicinal-plant practice had been opportunistic — try the plant if it tasted right, hope for the best. Neanderthal dental calculus from El Sidrón Cave (~50,000-60,000 BC) preserved evidence of yarrow and chamomile — bitter plants with no nutritional value but real anti-inflammatory and antiseptic effects. The first sustained evidence of deliberate medicinal plant use, predating modern humans. The Sumerian medical texts (~2200 BC) and Dioscorides (60 AD) build on a 60,000-year empirical pharmacological tradition.",
+
+  'first-known-use-of-clay-for-figurines':
+    "Pre-ceramic figurines had been carved from bone, ivory, or stone — material-bound by what the carver could shape. Fired-clay figurines (~35,000 BC, Hohle Fels) used a moldable medium that could be shaped while wet, then fired hard. The first sustained ceramic art. The same firing technology was eventually applied to functional pottery (~18,000 BC in East Asia, ~9000 BC in the Levant). Figurines preceded pottery as ceramic application.",
+
+  'first-known-dental-drilling':
+    "Pre-dental-drilling tooth decay had been managed by extraction or hope. Mehrgarh skeletons (~7000 BC, in modern Pakistan) show evidence of dental drilling — neat conical holes in molars, drilled with bow-string-driven flint or quartz tips. The first sustained dental-treatment technology. Whether the procedure was for caries treatment, ritual, or both is debated. Modern dental drills work on the same principle the Mehrgarh dentists pioneered.",
+
+  'use-of-honey-as-wound-dressing':
+    "Pre-honey wound care had been minimal — clean water if available, herbs if found, infection if not. Honey's high osmotic pressure dehydrates bacteria; its hydrogen peroxide release is mildly antiseptic; its low pH kills many pathogens. Egyptian, Mesopotamian, and Indus Valley medical texts all describe honey wound dressing (~7000 BC archaeological earliest evidence in the Mediterranean). The first sustained antimicrobial topical agent. Modern medical-grade honey is FDA-approved for chronic wound treatment — closing a 9,000-year empirical loop.",
+
+  'neolithic-trepanation-for-epilepsy':
+    "Pre-trepanation seizures and chronic head injuries had been untreatable — patients suffered or died. Neolithic trepanation (skull-drilling, ~6500 BC) involved scraping or drilling a hole in the skull while the patient was alive — perhaps to relieve pressure from head trauma, perhaps to release perceived evil spirits causing seizures. Survival evidence (regrowth around the hole) is common, suggesting the procedure was often non-fatal. The first sustained surgical neurological intervention. Modern craniotomy uses the same fundamental approach.",
+
+  'first-recorded-trepanation':
+    "Same trepanation event, alternate ID. The earliest skulls with trepanation holes (Neolithic, ~6500 BC) come from sites across Eurasia and the Americas — independently invented multiple times. Survival rate was surprisingly high (perhaps 50%+ based on evidence of healing around the hole). The earliest deliberate surgical procedure for which we have physical evidence.",
+
+  'first-known-cataract-surgery':
+    "Cataracts had been a leading cause of preventable blindness for as long as humans have lived long enough to develop them. Mesopotamian and Egyptian (~3000 BC) practitioners performed couching — a needle pushed through the cornea displaced the cloudy lens into the vitreous body, restoring some vision. Crude, dangerous, but sometimes successful. The first sustained intentional surgical intervention to restore sight. Sushruta's Indian rhinoplasty-style cataract techniques (~600 BC) refined the procedure. Modern phacoemulsification cataract surgery is the very-distant descendant.",
+
+  'first-known-sutures':
+    "Pre-suture wound closure had been hope and bandages. Egyptian and Mesopotamian medical texts (~3000 BC) describe surgical sutures — closing wounds with linen thread, silk, or animal sinew. The Edwin Smith Papyrus illustrates suture technique. The first sustained sutured-wound closure technique. Reduces blood loss, reduces infection, reduces scarring. Modern surgery, from the simplest skin closure to complex organ reconnection, runs on suture techniques refined from the Egyptian and Indian medical traditions.",
+
+  'first-known-caesarean-section':
+    "Pre-caesarean obstructed labor had been almost universally fatal — both mother and infant died. Earliest evidence of intentional caesarean surgery (~3000 BC, in some Egyptian and Mesopotamian texts; Roman lex regia required postmortem caesarean) was performed on already-deceased mothers to save the baby. The first sustained surgical alternative to natural birth. Living-mother caesareans became survivable only with antiseptics (Lister 1865), anesthesia (1846), and modern obstetric technique. Modern C-section (now ~30% of US births) is the eventual successor.",
+
+  'indus-valley-public-health-drainage':
+    "Pre-Indus-Valley urban sanitation had been negligible — waste accumulated in streets, in cesspits, in rivers. The Indus Valley civilization (~2600-1900 BC, especially at Mohenjo-daro and Harappa) built covered brick drainage systems that carried wastewater out of houses, through streets, to outside-city drainage. Standardized brick sizes; sustained civic maintenance. The first sustained-scale urban sanitation infrastructure. Roman aqueducts and the eventual 19th-century European sewer revolution all build on the principle the Indus Valley demonstrated forty centuries earlier.",
+
+  'use-of-clay-for-poultices':
+    "Pre-poultice topical wound treatment had been honey, herbs, or nothing. Sumerian medical texts (~2200 BC) describe clay-based poultices using milk, beer, herbs, and animal fat as binders. Clay's mineral content and absorbent properties drew exudate from wounds; mild antibacterial effects came from copper compounds in some clays. The first sustained mineral-based topical medical preparation. Modern medical clay applications (kaolin in trauma dressings, bentonite in detoxification) follow the same principle.",
+
+  'first-recorded-birth-control-egyptian':
+    "Pre-recorded contraception had been folk practice — recipes passed orally, effectiveness uncertain. The Kahun Gynecological Papyrus (~1850 BC, Egypt) describes contraceptive pessaries using crocodile dung, acacia gum (which fermented to produce mild lactic acid), and honey. The first sustained written contraceptive recipes. Some methods (acacia-gum lactic-acid spermicides) had real, if imperfect, effects. Modern hormonal contraception (1960) is the eventual revolution that displaced this 4,000-year tradition of variable-effectiveness physical contraceptives.",
+
+  'first-recorded-cataract-couching':
+    "Pre-recorded cataract treatment had been folk practice without documentation. Babylonian medical texts (~1700 BC, in clay tablet form) describe cataract couching technique — needle insertion through the cornea to displace the cloudy lens. The first sustained-scale documented surgical cataract treatment. Spread across Eurasian medical traditions; described in detail by Sushruta in India (~600 BC) and Galen in Rome. Modern intraocular lens replacement is the long-distant successor.",
+
+  'use-of-clay-tablets-for-medical-records':
+    "Pre-Mesopotamian medical knowledge had been transmitted orally, lost across generations. Mesopotamian medical clay tablets (~1600 BC, especially the Diagnostic Handbook of Esagil-kin-apli) preserved diagnostic categories, prognosis, and treatment regimens in cuneiform writing. The first sustained-scale medical record system. Knowledge that had been the property of individual practitioners became transmissible across generations. Greek, Indian, and Chinese medical traditions all develop similar text-based knowledge transmission, but Mesopotamia's is documented earliest.",
+
+  'ebers-papyrus':
+    "Pre-Ebers Egyptian medical practice had been transmitted by master-apprentice oral teaching. The Ebers Papyrus (~1550 BC) is a 110-page scroll containing 842 prescriptions and remedies for diseases ranging from skin disorders to depression. The first sustained-scale comprehensive medical pharmacopoeia. Greek, Roman, and Islamic medical traditions inherited and built on Egyptian written medical knowledge. Modern Egyptology preserves Ebers as one of the deepest archaeological windows into the practice of ancient medicine.",
+
+  'ebers-papyrus-moldy-bread-wounds':
+    "Pre-antibiotic wound infection had been the leading cause of post-injury death. The Ebers Papyrus (~1550 BC) records the use of moldy bread applied topically to wounds — likely an empirical use of penicillin-producing molds (Penicillium). The first sustained empirical antibiotic application. Egyptian, Greek, Chinese, and other medical traditions all preserved variants of this folk practice. Fleming's 1928 isolation of penicillin from Penicillium mold scientifically confirmed what the Egyptian healers had observed three thousand years earlier.",
+
+  'first-known-splint-for-fractures':
+    "Pre-splint broken bones had healed crooked or didn't heal. The Edwin Smith Papyrus and Egyptian mummies (~1500 BC) preserve evidence of splints made from bark, linen, plaster, leather, and even copper. The first sustained orthopedic-medical practice. Hippocratic and Sushrutan medicine elaborated. Modern fracture management — plaster casts (introduced 1851 by Mathijsen), fiberglass casts, internal fixation — all build on the basic principle the Egyptian splinters demonstrated.",
+
+  'splint-medicine':
+    "Same splinting tradition, alternate ID. Egyptian medical practice (~1500 BC, as recorded in the Edwin Smith Papyrus) used splints made from bark, linen, plaster, leather, and copper for limb fractures and burns. The first sustained orthopedic-medical practice in the historical record. The principle — immobilize the injury for proper healing — is the durable insight modern fracture management still uses.",
+
+  'chinese-acupuncture-earliest-evidence':
+    "Pre-acupuncture Chinese medicine had used herbal medicine, moxibustion, and massage. The earliest archaeological evidence for acupuncture (~1000 BC, with explicit textual descriptions in the Huangdi Neijing ~200 BC) used fine needles inserted at specific points to influence qi flow through meridians. The first sustained non-pharmacological pain-management technique. Modern Western medical acceptance has been gradual; clinical evidence supports use for several pain conditions, less for others. The tradition's depth and persistence make it a major branch of world medicine regardless of biomedical-validation status.",
+
+  'first-recorded-cataract-surgery-india':
+    "Babylonian cataract couching (~1700 BC) had been described briefly. Indian medical texts attributed to Sushruta (~600 BC, Sushruta Samhita) elaborated the technique — fine needle, sterile preparation, post-operative care. The first sustained-scale medical-textbook description of cataract surgery. Spread west via the Hellenistic and Islamic medical traditions. Modern cataract surgery is essentially the same fundamental procedure (lens extraction) in a much more refined form.",
+
+  'sushrutas-rhinoplasty-technique':
+    "Pre-Sushruta amputated, mutilated, or congenitally absent noses had been disfiguring and untreatable. Sushruta's rhinoplasty technique (~600 BC, Sushruta Samhita) used a flap of skin from the patient's own forehead or cheek to reconstruct the nose. The first sustained-scale plastic-reconstructive surgery. Preserved through Indian medical practice across millennia. British surgeons in the 18th century learned the technique from Indian practitioners and brought it back to Europe. Modern reconstructive surgery's deep history runs through Sushruta.",
+
+  'first-recorded-lithotomy':
+    "Pre-lithotomy bladder stones had been agonizing and slowly fatal. Sushruta's lithotomy (~600 BC, in the Sushruta Samhita) extracted bladder stones via perineal incision — high-mortality but better than no treatment. The first sustained-scale surgical procedure for bladder stones. Greek, Roman, Arabic, and European medieval medicine all preserved variants of the procedure. The 'cutting for the stone' that European travelers and medical students wrote about for two millennia is essentially Sushruta's technique.",
 };
 
 async function main(){
