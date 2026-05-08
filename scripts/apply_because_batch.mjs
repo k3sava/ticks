@@ -1255,6 +1255,81 @@ const BECAUSE_BATCH = {
 
   'bbc-television-regular-broadcasts':
     "Earlier television experiments (Baird's mechanical-disc system, RCA's electronic system) had been demonstrations or limited test broadcasts. The BBC's regular service (November 2, 1936, Alexandra Palace, alternating Baird and Marconi-EMI systems for the first three months) was the first sustained television broadcast service. The Marconi-EMI 405-line all-electronic system won the format war by 1937. Suspended for WWII, resumed 1946. The first sustained mass-market television.",
+
+  'snow-white-and-the-seven-dwarfs':
+    "Disney's earlier animation (Mickey Mouse shorts, the Silly Symphonies) had been short-form. Industry conventional wisdom held that audiences couldn't sustain attention to animated narrative beyond seven minutes. Snow White and the Seven Dwarfs (1937) — three years in production, $1.5M budget — was a 83-minute animated feature with full character development, multi-plane camera depth, and synchronized songs. Highest-grossing film of 1938. The format Disney spent the next 80 years refining.",
+
+  'tape-music-musique-concrete':
+    "Composition before 1948 had used notated instruments and voices — sound was specified abstractly, realized in performance. Pierre Schaeffer's Cinq études de bruits (Paris, 1948) used disc and tape recordings of train whistles, scraped strings, and other concrete sounds — manipulated by speed change, splicing, looping, reverse — as the actual compositional material. The first sustained electroacoustic composition. Karlheinz Stockhausen, Edgard Varèse, and the Cologne studio extended the practice into electronic music proper.",
+
+  'stockhausens-electronic-music':
+    "Schaeffer's musique concrète (1948) had used recorded real-world sounds. Stockhausen's Studie I (1953, Cologne WDR Studio) was the first major composition built entirely from electronically synthesized sine tones — sound generated from scratch rather than captured. The first sustained synthetic-sound composition. Computer music (Max Mathews, MUSIC I, 1957), synthesizer music (Subotnick, 1967), and the entire electronic music tradition trace back to the WDR Studio.",
+
+  'happening-performance-art':
+    "Painting and sculpture had been static, finite, ownable objects. Allan Kaprow's 18 Happenings in 6 Parts (Reuben Gallery, October 1959) was the first 'happening' — a structured but ephemeral performance involving painted plastic walls, scripted actions, audience movement. Art as event rather than artifact. Fluxus (1961), performance art (Acconci, Abramović), and modern installation art all build on Kaprow's expansion of what art could be.",
+
+  'twyla-tharps-crossover-ballet':
+    "Ballet and modern dance had been separate worlds with different vocabularies, audiences, and music. Twyla Tharp's Deuce Coupe (1973, choreographed for the Joffrey Ballet to Beach Boys songs) deliberately crossed both axes — classical ballet vocabulary and modern release technique, set to popular music rather than classical scores. The first sustained 'crossover ballet.' Influenced subsequent choreographers (Mark Morris, Lar Lubovitch) and the broader expansion of dance idiom in the late 20th century.",
+
+  'star-wars-1977':
+    "Earlier Hollywood blockbusters had been single films with limited tie-in merchandise. Star Wars (May 25, 1977) shipped with prearranged toy, novelization, and apparel licensing — and a sequel-ready ending. Lucas had retained merchandising rights from Fox in lieu of a higher director's fee, on the assumption (correct) that toys would outearn the box office for a decade. The first Hollywood franchise model: continuing universe, integrated merchandising, calculated sequel pipeline. Marvel and Disney refined the playbook into the modern franchise economy.",
+
+  'cd-rom':
+    "Pre-CD-ROM mass storage on personal computers had been floppy disks (1.4 MB) — too small for any rich-media content. The CD-ROM (introduced at COMDEX 1985, Sony and Denon) held 650 MB on a 12 cm optical disc. Software distribution shifted from stacks of floppies to single discs. Encyclopedias (Encarta, 1993), games (Myst, 1993), and PC operating systems (Windows 95) all shipped on CD-ROM. The first storage medium that made software 'multimedia' a real category.",
+
+  'ncsa-mosaic':
+    "Earlier web browsers (Berners-Lee's WorldWideWeb, ViolaWWW, Erwise) had been text-only with separate image windows — and required Unix workstation expertise. Marc Andreessen and Eric Bina's NCSA Mosaic (January 1993) put images inline with text and ran on Mac, Windows, and Unix. The web finally looked like a magazine page. Mosaic's user count grew 10x in six months. Andreessen's commercial follow-up, Netscape Navigator (1994), became the dominant browser of the early web.",
+
+  'dvd-format-launched':
+    "VHS tape (the dominant home video format since 1976) had been bulky, low-resolution, prone to wear, and unsearchable. DVD (Digital Versatile Disc, launched in Japan November 1996, US March 1997) used the CD's optical-disc form factor with MPEG-2 video compression — 4.7 GB capacity, 480p resolution, chapter menus, multiple audio tracks. By 2003 DVD outsold VHS. The first home video format with random access, menu navigation, and bonus content.",
+
+  'the-sims-released':
+    "Pre-Sims simulation games (SimCity, Civilization) had been about goal achievement at large scales. Will Wright's The Sims (Maxis, February 2000) was a household-scale life simulator with no defined victory condition — players directed digital people through everyday domestic life. Best-selling PC game of 2000-2002. Demonstrated that open-ended sandboxes could be commercially viable. Minecraft, Animal Crossing, and the entire 'cozy game' category trace back to The Sims's no-objective design.",
+
+  'lord-of-the-rings-cgi':
+    "Computer-generated character work pre-LOTR had been mostly creatures and crowds, not principal-cast performance. Peter Jackson's Lord of the Rings trilogy (2001-2003) used motion-capture: Andy Serkis acted Gollum's role on set, the performance translated to a fully digital character that interacted with live actors. The first sustained CG main character carrying emotional and narrative weight. Avatar (2009), King Kong (2005), and Caesar in Planet of the Apes (2011) all extend the technique.",
+
+  'gmail-launched':
+    "Free webmail in 2003 had been Yahoo (4 MB) and Hotmail (2 MB) — barely enough for a year of casual mail. Gmail (April 1, 2004, initially announced on April Fools' so people thought it was a joke) launched with 1 GB of storage, search-driven message retrieval (no folders required), and a clean ad-supported business model. The mailbox stopped being a scarcity and became an archive. Yahoo and Hotmail scrambled to match capacity within months. The first webmail that didn't require regular cleanup.",
+
+  'blu-ray-vs-hd-dvd':
+    "DVD video had topped out at 480p — clearly inadequate for HDTV. Two competing high-definition optical formats emerged: Sony's Blu-ray (released June 2006) and Toshiba's HD DVD (released March 2006). The format war ran for two years; Warner Bros's January 2008 announcement of exclusive Blu-ray support broke HD DVD's back. Blu-ray held the high-definition optical-disc market for a decade before streaming displaced physical media entirely. The last great consumer-format war.",
+
+  'amazon-kindle':
+    "Earlier e-readers (Sony's various models, the Rocket eBook) had used backlit LCD screens — eye-straining for long reading. The Amazon Kindle (November 2007) used E Ink — reflective electronic paper that looked like printed page in any lighting. Combined with cellular delivery (Whispernet) and integrated bookstore, the Kindle made e-book reading practically equivalent to print. Within five years e-books were 25% of US book sales. The first e-reader to achieve mass adoption.",
+
+  'neural-style-transfer-introduced':
+    "Image editing had separated content (the depicted scene) from style (the visual rendering) only manually. Gatys, Ecker, and Bethge's 2015 paper 'A Neural Algorithm of Artistic Style' showed that a pretrained convolutional network (VGG-19) could separate the two computationally — match the content of one image to the style of another. The first deep-learning image-generation result that produced visually striking outputs. Prisma app (2016), DeepArt, and the entire generative-AI image domain trace back to this paper.",
+
+  'beyonce-lemonade':
+    "Earlier visual albums (Pink Floyd's The Wall, Frank Ocean's Endless) had treated the visual as accompaniment to the audio. Beyoncé's Lemonade (April 23, 2016, surprise-released on Tidal then HBO) treated film and album as a single integrated work — 12 tracks woven into a 65-minute film with literary readings, archival footage, and a sustained narrative of marital betrayal and Black-American womanhood. The first visual album to be received as both a major film work and a major musical work simultaneously.",
+
+  'dreambooth-personalization':
+    "Stable Diffusion (August 2022) had let anyone generate images from text prompts — but couldn't depict specific people or objects without fine-tuning. Google's DreamBooth (August 2022) demonstrated that a base diffusion model could be fine-tuned on as few as 3-5 images of a subject, producing a personalized model that could generate that subject in new contexts. The first practical text-to-image personalization. LoRAs, Textual Inversion, and the entire personalization ecosystem build on the technique.",
+
+  'invention-of-the-raft':
+    "Earlier human movement had been by foot. Some Pleistocene populations crossed water gaps (Australia by 50,000 BC required ocean crossings of 50+ km even at low sea level), implying watercraft. Rafts — the simplest floating platform, usually bound logs or reed bundles — were the most likely first vehicle. The first technology that opened water bodies as paths rather than barriers. Boats with hulls (canoes, rafts with sails) follow.",
+
+  'invention-of-the-bow-and-arrow':
+    "Earlier ranged weapons had been thrown spears (limited range), atlatl-launched darts (~20-50m), and slings (high skill requirement). The bow and arrow (~20,000 BC, archaeological evidence from Sibudu Cave South Africa pushes earlier) used elastic energy stored in the bow stave to launch a fletched arrow with high accuracy out to 100m. The longest-running missile weapon technology — the dominant projectile weapon for nearly 22,000 years until firearms displaced it.",
+
+  'domestication-of-the-dog':
+    "Wolves and humans had been competing predators in Pleistocene Eurasia. Early dog domestication (~17,500 BC, by genetic evidence from ancient DNA; some archaeological dates push earlier) selected wolves for human-tolerant temperament — likely starting with scavenger wolves attaching to human camps. The first domesticated species, predating the agricultural revolution by ~7,000 years. Dogs gave hunters a tracking and pack-hunting partner. Eventually: every modern dog breed.",
+
+  'natufian-bread-making':
+    "Wild grain had been gathered, parched, and ground but rarely cooked into a recognizable food before pottery. Charred crumbs from Shubayqa 1 (Jordan, ~14,600 BC) — analyzed in 2018 — show Natufian hunter-gatherers were making unleavened flatbread from wild wheat, wild barley, and ground tubers. The first archaeological evidence of bread-making, predating agriculture by 4,000 years. Bread came before farming, not after.",
+
+  'domestication-of-wheat':
+    "Wild einkorn wheat (Triticum monococcum) had been gathered for millennia in the Fertile Crescent. Selection at Çayönü and Cafer Höyük in southeastern Turkey (~8800 BC) produced einkorn with non-shattering spikelets — the first domesticated cereal. Reproductively dependent on humans for seed dispersal. The first crop. Emmer (1000 years later) and bread wheat (4000 years later) followed. The Fertile Crescent agricultural revolution begins with this single grass.",
+
+  'domestication-of-flax':
+    "Wild flax had been gathered for its oily seeds. Domestication of Linum usitatissimum (~8000 BC, Levant and Iran) selected for taller, less-branching plants with longer fiber-producing stems. The first plant domesticated specifically for fiber. Linen production, sail-cloth, mummy wrappings, and the entire ancient Mediterranean textile economy run on it. Linseed oil (cold-pressed flax oil) is the same plant's secondary product.",
+
+  'first-known-use-of-honey-as-medicine':
+    "Pre-medical honey use had been food only. The Cuevas de la Araña rock paintings (Bicorp, Valencia, ~8000 BC) document organized honey foraging — and the same Mesolithic and Neolithic peoples used honey topically on wounds. Honey's antibacterial properties (osmotic dehydration, hydrogen-peroxide release, low pH) make it an effective wound dressing. The first plant-derived antibiotic in human use. Modern medical-grade honey is FDA-approved for chronic wound treatment.",
+
+  'domestication-of-rice':
+    "Wild rice had been gathered along the Yangtze. Domestication (~7000 BC, in the middle and lower Yangtze basin) selected for non-shattering panicles and synchronous ripening. Rice paddies — flooded fields that suppress weeds and enable transplanted seedlings — could support population densities far higher than any dry-land cereal. Chinese, Korean, and eventually Southeast Asian civilizations all built around rice. Half the world today eats rice as a staple.",
 };
 
 async function main(){
