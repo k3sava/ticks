@@ -3220,6 +3220,126 @@ const BECAUSE_BATCH = {
 
   'fabriano-paper-mill':
     "Paper-making had reached Europe via the Islamic world (papermaking in Spain ~1100 AD). Fabriano (Italy, ~1276 AD onward) industrialized European paper production with water-powered hammer mills, watermarks for trademarking, and pulp-preparation techniques that produced paper rivaling the best Asian and Islamic production. The first sustained-scale European paper-manufacturing center. Produced for centuries the highest-quality paper in Europe; Fabriano paper is still made today. The European-paper supply that made Gutenberg's printing revolution possible came from Italian paper mills.",
+
+  'black-death-arrives-in-europe':
+    "Pre-1347 Europe had population pressure on land — labor was abundant, serfs cheap. The Black Death (1347-1352, plague carried from the Eurasian steppe via Genoese trade networks) killed roughly a third of Europe's population. Labor scarcity inverted feudal economics — peasants could demand wages, serfdom weakened. The first sustained-scale demographic catastrophe in recorded European history. The post-plague Europe that emerged was structurally different: higher wages, more urban migration, weakened church authority. The path toward the Renaissance and modern Europe runs partly through this catastrophe.",
+
+  'copernicus-de-revolutionibus':
+    "Pre-Copernicus Western cosmology had been Ptolemaic — Earth at center, planets on epicycles. Nicolaus Copernicus's De Revolutionibus Orbium Coelestium (published 1543, on his deathbed) put the Sun at the center, with Earth as one of six planets orbiting it. The first sustained-scale published heliocentric model in modern Europe. Initial reception muted. Galileo's observations (1610) and Kepler's laws (1609-1619) made heliocentrism observationally compelling. The Scientific Revolution and modern physics' worldview begin here.",
+
+  'thirty-years-war-begins':
+    "Pre-1618 European political-religious settlement (Augsburg 1555) had given princes choice between Catholic and Lutheran. The Defenestration of Prague (May 1618) sparked a continental war that engulfed Germany, France, Spain, Sweden, and the Netherlands. The first sustained-scale early-modern European war drawing in nearly all major powers. Killed perhaps a third of central Europe. The Peace of Westphalia (1648) settled it on principles of sovereign equality and religious tolerance — modern international law's founding moment.",
+
+  'descartes-discourse-on-the-method':
+    "Pre-Cartesian European philosophy had relied on scholastic authority. Descartes's Discourse on the Method (1637, in vernacular French rather than Latin) advocated systematic doubt, mathematical rigor, and clear and distinct ideas as foundation for knowledge. The first sustained-scale modern philosophical method published in vernacular for general educated audience. Influenced subsequent rationalists (Spinoza, Leibniz) and Cartesian science. Modern philosophy as a personal first-person inquiry runs in Cartesian channels.",
+
+  'bank-of-england-founded':
+    "Pre-1694 English public finance had been ad hoc. The Bank of England (founded 1694, originally as a private joint-stock company chartered to lend to the Crown) gave England a permanent institutional banker for national debt — issuing banknotes, managing currency, financing wars. The first sustained-scale modern central bank. Provided the financial infrastructure that funded British naval supremacy (18th century) and the Industrial Revolution (19th century). The Federal Reserve, ECB, and other modern central banks all descend institutionally from the Bank of England.",
+
+  'vivaldis-four-seasons-published':
+    "Pre-Vivaldi concertos had been abstract. Antonio Vivaldi's Four Seasons (composed ~1720, published 1725 with sonnet texts in the score) was the first sustained-scale programmatic concerto cycle — each concerto depicting a season's specific scenes (storms, hunts, drunken peasants), with sonnets explaining the imagery. The first sustained-scale narrative concerto music. Influenced subsequent program music (Berlioz, Liszt, Strauss) and remains the most-performed Baroque work. The principle that instrumental music can carry specific narrative content was made commercially viable here.",
+
+  'witchcraft-act-1735':
+    "Pre-1735 English witchcraft law had treated witches as real magical practitioners deserving capital punishment. The Witchcraft Act 1735 reframed witchcraft accusations as fraud — pretending to magical powers in order to deceive. The first sustained-scale legal recognition that the witch-hunting tradition had been mistaken. Most witchcraft trials shifted to fraud cases. England's last execution for witchcraft had been ~1684; the new law formalized the de facto end of capital prosecution for witchcraft. Modern legal-rationalist treatment of supernatural claims traces back here.",
+
+  'spinning-jenny':
+    "Pre-Hargreaves spinning had been one-thread-at-a-time on individual spinning wheels. James Hargreaves's spinning jenny (~1764, in Lancashire) let a single operator spin multiple threads simultaneously — original eight spindles, eventually 80+. The first sustained-scale multi-thread spinning device. Combined with Arkwright's water frame (1769) and Crompton's spinning mule (1779), it produced the textile-industry mechanization that launched the British Industrial Revolution. Modern textile manufacturing runs on multi-spindle machines descended from the spinning jenny.",
+
+  'humboldt-university-of-berlin':
+    "Pre-Humboldt European universities had focused on rote learning and elite training. Wilhelm von Humboldt's Berlin University (founded 1810, with research-and-teaching unity as foundational principle) integrated original research into the university's mission. The first sustained-scale modern research university. Influenced subsequent German university expansion, the American research-university model (Johns Hopkins 1876, Stanford 1891), and the modern global research-university tradition. PhD as research apprenticeship; faculty-research expectations all date from Humboldt.",
+
+  'steel-plow-deere':
+    "Pre-Deere cast-iron plows had clogged in the heavy soils of the Midwestern prairie — sticky black soil clung to the plow blade. John Deere's polished-steel plow (1837, in Illinois) used a self-scouring steel blade that shed soil cleanly. The first sustained-scale prairie-suitable plow. Allowed mass European-American settlement of the Midwest grasslands. Combined with the McCormick reaper (1834) and the seed drill, produced the bonanza-grain-farming agriculture that fed the urbanizing 19th-century US.",
+
+  'penny-black':
+    "Pre-Penny-Black mail in Britain had been complex and expensive — paid by the recipient on delivery, with rates based on distance and number of pages. Rowland Hill's Penny Black (May 1, 1840, the world's first adhesive postage stamp) flat-rated mail at one penny anywhere in Britain, prepaid by the sender. The first sustained-scale uniform-rate prepaid mail system. Mail volume increased roughly fivefold within a decade. Modern postal systems worldwide all descend from Hill's reform.",
+
+  'stock-ticker-edison':
+    "Edison's universal stock ticker (1869, an early commercial success of his career) printed continuous stock prices on paper tape using telegraph technology. The first sustained-scale continuous real-time financial-data feed for brokerages. Within a decade, every major US brokerage had a ticker. Modern market-data feeds, the Bloomberg Terminal, and high-frequency trading all descend from Edison's ticker.",
+
+  'winchester-repeating-rifle':
+    "Pre-1873 firearms had required reloading after each shot — capped rate of fire. The Winchester Model 1873 lever-action rifle held 15 rounds in a tubular magazine and could fire all 15 in under 30 seconds. The first sustained-scale practical lever-action repeating rifle. 'The gun that won the West' — used by both settlers and Native Americans in the late 19th century. Modern semi-automatic rifle design's most direct ancestor in terms of magazine-fed continuous fire.",
+
+  'otto-engine':
+    "Pre-Otto internal-combustion engines had been impractical — Lenoir's gas engine (1860) had thermal efficiency under 4%. Nikolaus Otto's four-stroke engine (1876, by Deutz AG) — intake, compression, combustion, exhaust — achieved 14% efficiency. The first sustained-scale practical internal-combustion engine. Combined with Daimler-Maybach's gasoline-fuel adaptation (1885) and Benz's automobile (1886), produced the modern automotive engine. Aircraft engines, motorcycle engines, and most modern vehicles run on Otto-cycle variants.",
+
+  'first-modern-census-us':
+    "Pre-1890 US census had been tabulated by hand — the 1880 count took 7 years to compile. Herman Hollerith's electromechanical punch-card system (1890 census) tabulated results in 2 years. The first sustained-scale electromechanical data processing. Hollerith's company eventually became IBM. Modern data-processing infrastructure, from punch cards through magnetic tape to relational databases, traces conceptual ancestry through the 1890 census.",
+
+  'transatlantic-flight-of-alcock-and-brown':
+    "Pre-1919 transatlantic crossing had been by ship — six days minimum. John Alcock and Arthur Brown's modified Vickers Vimy flew Newfoundland to Ireland nonstop (June 14-15, 1919, 16 hours). The first sustained-scale nonstop transatlantic flight. Aviation went from theatrical demonstration to potentially practical transport medium. Lindbergh's solo flight (1927) made the route iconic; commercial transatlantic aviation (Pan Am 1939, BOAC 1946) followed. Modern global aviation runs on the route Alcock and Brown opened.",
+
+  'national-defense-education-act':
+    "Pre-Sputnik US science education had been underfunded and inadequately structured. The National Defense Education Act (signed September 2, 1958, in response to Sputnik fears) provided federal funding for STEM education at all levels — graduate fellowships, university research grants, K-12 curriculum development. The first sustained-scale federal investment in US science education. Foundation of subsequent American technological dominance through the 1960s-70s. NASA's Apollo program success and Silicon Valley's emergence both build partly on NDEA-funded human capital.",
+
+  'birth-control-pill-approved-by-fda':
+    "Pre-Pill contraception had been condoms, diaphragms, rhythm — imperfect, woman-controlled only at the moment of intercourse. FDA approval of Enovid (June 23, 1960, after research funded by Margaret Sanger and Katharine McCormick) made daily oral hormonal contraception widely available. The first sustained-scale near-100%-effective woman-controlled contraception. Foundation of subsequent women's-rights movements, female workforce participation, and the cultural shifts of the 1960s-70s. Modern reproductive medicine rests on Pill-derived hormonal therapeutics.",
+
+  'roe-v-wade-2':
+    "Same Roe v. Wade, alternate ID. Roe v. Wade (January 22, 1973) struck down most US state restrictions on abortion. Foundation of US reproductive-rights jurisprudence for 49 years until Dobbs v. Jackson Women's Health Organization (2022) overturned it. Modern American political-religious-legal debate over abortion rights runs primarily on Roe-Dobbs terrain.",
+
+  'chernobyl-disaster':
+    "Pre-Chernobyl nuclear power had been popularly associated with safety. The Chernobyl reactor explosion (April 26, 1986, in Soviet Ukraine) released massive quantities of radioactive material across Europe. The first sustained-scale catastrophic civilian-nuclear-power accident with international consequences. Triggered global nuclear-energy retreat — Germany's Energiewende, Italian referendum, etc. Combined with Three Mile Island (1979) and Fukushima (2011), produced the modern nuclear-power skepticism that shaped energy-policy debate for decades.",
+
+  'world-wide-web-2':
+    "Same WWW invention, alternate ID. Tim Berners-Lee at CERN (March 1989 proposal, 1990 prototype on a NeXT machine) combined HTTP, HTML, and URL into a unified global hypertext system. CERN released it to the public domain (1993). The first sustained-scale universal hypertext protocol. Within five years the web had displaced proprietary online services as the dominant consumer internet experience.",
+
+  'rio-pmp300':
+    "Pre-Rio portable digital music had required laptops or specialized devices. The Rio PMP300 (released October 1998 by Diamond Multimedia) was the first widely-marketed portable MP3 player — 32MB of storage, ~30 minutes of music. The first sustained-scale consumer portable digital music device. Sparked the RIAA lawsuit attempting to ban it (RIAA v. Diamond, 1999). The iPod (October 2001) eventually dominated the category, but the Rio PMP300 demonstrated that portable digital music was viable.",
+
+  'google-ads':
+    "Pre-Google-Ads online advertising had been banner-ad-based — fixed CPM pricing, weak performance metrics. Google AdWords (launched October 2000, originally CPM-based, switched to cost-per-click in 2002) auctioned ad placement on search results, charging only when users clicked. The first sustained-scale performance-based search advertising at scale. Within a decade Google's advertising business had become the largest in history. Modern digital-advertising infrastructure (Facebook ads, programmatic advertising, retargeting) all descend conceptually from AdWords.",
+
+  'skype-voip':
+    "Pre-Skype international phone calls had been expensive — typically $1+/minute for transoceanic calls. Skype (launched August 2003 by Niklas Zennström and Janus Friis, leveraging peer-to-peer technology from Kazaa) provided free Skype-to-Skype voice calls, plus low-cost SkypeOut to phones. The first sustained-scale free VoIP service. By 2009 Skype handled 8% of all international phone minutes. Modern WebRTC, Zoom, FaceTime, and the entire VoIP-displaces-traditional-telephony shift trace conceptual ancestry to Skype.",
+
+  'amazon-web-services-aws':
+    "Pre-AWS computing infrastructure had been owned-and-operated. Amazon Web Services launched S3 storage (March 2006) and EC2 compute (August 2006) as pay-as-you-go cloud services. The first sustained-scale public cloud infrastructure platform. Within a decade, much of the modern internet ran on AWS or its competitors (Azure, GCP). Modern startup economics, AI training runs, and the gig economy all assume cloud-as-substrate that AWS pioneered.",
+
+  'iphone-launch':
+    "Pre-iPhone smartphones had been QWERTY-keyboard devices (BlackBerry, Treo) running carrier-controlled software. The original iPhone (announced January 9, 2007 by Steve Jobs, released June 29) had a multi-touch capacitive screen, real web browser (Safari), and integrated app — and was deliberately kept off carrier-controlled software decks. The App Store followed in 2008. The first sustained-scale post-feature-phone smartphone. Within a decade, smartphones replaced PCs as primary computing device for billions.",
+
+  'imagenet-dataset-created':
+    "Pre-ImageNet computer-vision research had used small datasets (a few hundred labeled images per category). Fei-Fei Li's ImageNet (presented at CVPR 2009) was a hierarchically organized dataset of 14 million labeled images across 22,000 categories. The first sustained-scale large-labeled-image dataset. The annual ImageNet Challenge (2010-2017) drove progress in computer vision; AlexNet's 2012 dominant win launched the deep-learning revolution. Modern computer vision and many AI breakthroughs trace ancestry to the ImageNet dataset.",
+
+  'word2vec-published':
+    "Same word2vec, alternate ID. Mikolov et al.'s 2013 paper (at Google) introduced two efficient architectures (CBOW and Skip-gram) for learning dense word representations. Semantic relations appeared as vector arithmetic. The first sustained-scale dense-vector word representation. Foundational for the entire embedding-then-attention pipeline of modern NLP. Modern language models (BERT, GPT, Llama) all rely on dense embeddings descended from word2vec.",
+
+  'tensorflow-open-sourced':
+    "Pre-TensorFlow deep-learning frameworks had been research-prototype-quality (Theano, Caffe). Google's TensorFlow (open-sourced November 9, 2015) provided production-grade deep-learning infrastructure with strong GPU support, distributed training, and broad hardware support. The first sustained-scale industrial-quality open-source deep-learning framework. Within years TensorFlow had become the dominant deep-learning framework. PyTorch (released 2016 by Facebook AI) eventually displaced TensorFlow in research, but TensorFlow remained dominant in production for years. Modern AI infrastructure traces ancestry through the TensorFlow open-sourcing.",
+
+  'openai-founded':
+    "Pre-OpenAI AI research had been mostly siloed in corporate labs (Google, Microsoft) or universities. OpenAI (founded December 2015 by Sam Altman, Elon Musk, Ilya Sutskever and others, with $1B initial funding pledge) was the first major AI lab explicitly focused on AGI safety with a nonprofit research mission. The first sustained-scale AI-safety-focused AI lab. Subsequent transition to capped-profit (2019) and the GPT/ChatGPT/etc. product lineage made OpenAI the most prominent AI lab globally. Modern AI safety research and the AGI-development conversation both run partly through OpenAI's framing.",
+
+  'microlith-technology-composite-tools':
+    "Same microlith tradition, alternate ID. Microliths (~35,000-40,000 BC, in African and Eurasian Upper Paleolithic) were small standardized stone blades hafted into composite tools — multiple blades per tool, each replaceable. The first sustained-scale modular toolmaking. Allowed specialized cutting, scraping, projecting points. Pre-Neolithic toolkits across Eurasia all shifted to microlithic technology.",
+
+  'fishing-net-and-hook-technology':
+    "Pre-net fishing had been one-fish-at-a-time. Net sinkers from Korea (~27,000 BC) suggest fishing nets in use by the Upper Paleolithic. The first sustained-scale mass-harvesting aquatic technology. Combined with later fishhooks (Sakitari, ~22,380 BC) and harpoons, produced the marine-resource extraction technology that enabled coastal-population growth. Modern industrial fishing runs on essentially the same net-and-hook principles.",
+
+  'sling-weapon-development':
+    "Pre-sling handheld projectile weapons had been thrown stones — limited range. The sling (~6000 BC, attested archaeologically in the Levant and ethnographically across Eurasia and the Americas) used a leather pouch and two cords to fling stones at high velocity over long distances. The first sustained-scale long-range handheld projectile weapon. Used in warfare for millennia (David's defeat of Goliath; Roman slingers as auxiliary troops; Andean warfare). Modern sling-derived weapons (slings of all kinds) preserve the technology.",
+
+  'development-of-copper-smelting':
+    "Pre-smelting metal-tool use had been with hammered native copper. Smelting (~5000-4500 BC, with possibly earlier evidence at Plocnik in modern Serbia) extracted copper from oxide and carbonate ores by heating with charcoal. The first sustained-scale metallurgical extraction process. Tin alloying (~3500 BC) and iron working (~1200 BC) inherited the smelting technology. Bronze and Iron Ages descend from this hearth.",
+
+  'akkadian-professional-army':
+    "Pre-Akkadian Mesopotamian warfare had been city-state militias. Sargon of Akkad (~2334 BC) created a standing professional army — supplied centrally, paid in rations, deployed for years-long campaigns far from home. The first sustained-scale standing professional military. Akkadian Empire conquered Sumer and extended from the Persian Gulf to the Mediterranean. Subsequent Mesopotamian, Persian, Roman, Han Chinese, and modern professional armies all draw conceptually on the Akkadian precedent.",
+
+  'invention-of-the-battering-ram':
+    "Pre-battering-ram fortified gates had been impregnable except by siege starvation. The battering ram (~2000 BC, Bronze Age Mesopotamia) — a heavy beam suspended in a wheeled wooden framework, swung against gates — broke fortified entrances. The first sustained-scale active-siege weapon. Combined with siege towers, mining operations, and trebuchets, produced the besieging-force technology that defined ancient and medieval warfare. Modern military breaching tactics (explosives, demolition charges) descend conceptually from the battering ram.",
+
+  'akkadian-siege-towers':
+    "Pre-siege-tower assault on fortified walls had required scaling ladders or mining — slow, vulnerable. Akkadian-era siege towers (~2000 BC) — wheeled wooden structures higher than the defenders' walls, carrying troops up and over — gave attackers temporary parity with wall-defenders. The first sustained-scale mobile siege architecture. Roman, medieval European, and even early-modern siege warfare all used variants. The tower's role as siege weapon ended only with the rise of effective gunpowder artillery (~15th century).",
+
+  'invention-of-the-chariot':
+    "Pre-chariot battlefield mobility had been on foot. Spoked-wheel chariots (~1950 BC, Sintashta culture in modern Russia) gave warriors a fast mobile platform for archery, javelin-throwing, and command coordination. The first sustained-scale fast-shock-and-mobility battlefield platform. Spread across Eurasia in the second millennium BC; Hittite, Egyptian, Mycenaean Greek, Indo-Aryan, and Shang Chinese armies all built around chariots. Iron-Age cavalry (~700 BC onward) eventually displaced chariots, but the principle of fast battlefield mobility persists.",
+
+  'sea-peoples-invasions':
+    "Pre-Sea-Peoples Late Bronze Age (~1700-1200 BC) had been a stable system of palace economies — Mycenaean Greece, Hittite Empire, New Kingdom Egypt, Babylonia all interconnected by trade. The Sea Peoples invasions (~1200 BC, raiders or migrants from various Mediterranean origins) destroyed nearly every Bronze Age palace economy except Egypt's. The first sustained-scale civilizational collapse in recorded history. Out of the Bronze Age Collapse emerged the Iron Age — smaller polities, alphabetic writing, new cultures (Israelite, Phoenician, early Greek city-states).",
+
+  'greek-trireme':
+    "Same trireme, alternate ID. Greek triremes (~700 BC widespread, Athenian innovation 480 BC) — three rows of oars, 170 rowers, bronze ram for ship-destruction — were the first sustained-scale fast-strike Mediterranean warship. Athenian victories at Salamis (480 BC) and the entire Athenian thalassocracy ran on triremes. Mediterranean naval power for 700 years was trireme-and-derivative power.",
 };
 
 async function main(){
