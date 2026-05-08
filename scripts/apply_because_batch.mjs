@@ -2575,6 +2575,96 @@ const BECAUSE_BATCH = {
 
   'neural-correlates-of-consciousness':
     "Pre-NCC consciousness had been considered a philosophical or even unscientific question. Francis Crick and Christof Koch's NCC framework (1990 paper, expanded in subsequent decades) proposed that the neural correlates of conscious experience could be identified empirically — what brain activity is necessary and sufficient for any specific conscious state. The first sustained-scale empirical research program for consciousness. Foundational for modern consciousness science (IIT, Global Workspace Theory). Whether the 'hard problem' (why physical processes give rise to subjective experience at all) is solvable remains open.",
+
+  'dsm-iv-published':
+    "Pre-DSM-IV psychiatric diagnosis had been ambiguously criterion-based. The DSM-IV (1994, after extensive field trials) provided explicit, operational diagnostic criteria for each disorder — number of symptoms, duration thresholds, exclusion conditions. Diagnostic agreement between clinicians improved substantially. The first sustained-scale research-grade psychiatric nosology. Modern psychiatry, mental-health epidemiology, and pharmaceutical clinical-trial regulation all run on DSM-style operational criteria.",
+
+  'emotional-intelligence-formalized':
+    "Pre-Goleman intelligence research had focused on cognitive abilities — IQ as the central construct. Daniel Goleman's Emotional Intelligence (1995) popularized Salovey and Mayer's earlier academic concept (1990): EI as a measurable cluster of skills in self-awareness, self-regulation, motivation, empathy, and social skill. The first sustained-scale popular EI framework. Influenced workplace training, leadership development, and educational SEL programs. Empirical EI research continues; the construct's validity is debated but its institutional impact is settled.",
+
+  'placebo-effect-mechanisms-clarified':
+    "Pre-1997 placebo effects had been treated as nuisance variables in clinical trials — controlled for, not studied. Tor Wager and others (1997 onward) used neuroimaging to identify the brain mechanisms of placebo response — endogenous opioid release, prefrontal-cortex top-down modulation, reward-circuit activation. The first sustained-scale neuroimaging-grounded placebo neuroscience. The placebo effect went from epistemological problem to legitimate research target. Modern open-label-placebo studies (Kaptchuk) and placebo-by-design therapeutics build on this work.",
+
+  'neuroeconomics-emerges':
+    "Pre-neuroeconomics economics had assumed rational decision-makers; psychology had measured behavioral deviations. Neuroeconomics (formalized ~2002, integrating Glimcher's primate-decision research, Camerer's experimental economics, Rangel's neuroimaging) used fMRI to identify neural substrates of valuation, reward, and intertemporal choice. The first sustained-scale neural-grounded economic theory. Foundational for behavioral economics' biological extension. Modern policy applications (Thaler's nudge units) draw on the neural-substrate insights.",
+
+  'word2vec-embeddings-published':
+    "Pre-word2vec NLP had used sparse one-hot vectors — every word an orthogonal dimension, no semantic structure. Mikolov et al.'s word2vec (Google, 2013) trained a shallow neural network to predict context words and produced dense low-dimensional vectors where semantic relations appeared as vector arithmetic — 'king' minus 'man' plus 'woman' approximated 'queen'. The first sustained-scale distributional semantic representation in dense vector form. GloVe (2014), BERT embeddings (2018), and the entire LLM era all build on word2vec's basic insight.",
+
+  'lion-man-figurine-2':
+    "Same Lion-man, alternate ID. The Löwenmensch (Hohlenstein-Stadel, ~40,000 BC) is the oldest confirmed three-dimensional anthropozoomorphic sculpture — a human body with a lion's head, carved from mammoth ivory. The first depicted being that does not exist in nature. Cognitive scientists read it as evidence of fully modern symbolic and counterfactual thinking — the ability to imagine and represent something that has never been observed.",
+
+  'emergence-of-cave-painting-chauvet':
+    "Pre-Chauvet representational art had been small portable objects (Hohle Fels Venus, Lion-man). Chauvet Cave (southern France, painted ~37,000-32,000 BC, discovered 1994) preserves hundreds of large-scale paintings of Pleistocene fauna — lions, mammoths, horses, rhinos — with sophisticated perspective and movement. The earliest known sustained large-scale figurative art. Demonstrates that symbolic thinking and visual narrative were fully developed in Aurignacian Europe — and that Pleistocene Europeans were observing and depicting their world with remarkable fidelity.",
+
+  'first-use-of-copper-for-tools':
+    "Stone tools had served humans for two million years but had limits — brittle, hard to repair, single-use. Cold-working of native copper (~6500 BC, in the Near East and the Balkans) used naturally occurring metallic copper that could be hammered into shape. The first sustained-scale metal-tool tradition. Predated smelting (which extracted copper from oxide ores) by 1,000+ years. The Chalcolithic period and the eventual Bronze Age both descend from this copper-working beginning.",
+
+  'invention-of-the-plow-3':
+    "Same plow tradition, alternate ID. The ox-drawn ard (~4000 BC, in Mesopotamia and Egypt) cut a shallow furrow ten times faster than a human with a hoe — opening surplus-grain agriculture as a viable system. By 3000 BC plows were being used across the Near East, the Indus Valley, and northern Europe. Heavy mouldboard plows (~600 AD in Northern Europe) eventually opened the heavy clay soils. Modern industrial agriculture's deep-tillage tradition runs through all these stages.",
+
+  'first-use-of-iron-meteoric':
+    "Pre-iron metallurgy had been limited to copper and bronze. Meteoric iron (used as far back as ~3200 BC, in Predynastic Egyptian beads) was the only natural source of metallic iron — extracted from iron-nickel meteorites. Smelted iron (~1200 BC, Hittite empire) eventually displaced meteoric iron but the meteoric tradition demonstrated that iron could be worked. The Tutankhamun dagger (~1325 BC) is meteoric iron — a high-status object made from a 'sky stone.'",
+
+  'invention-of-the-calendar-lunar':
+    "Pre-calendar timekeeping had been by individual observation — each community tracking its own cycles. Bronze Age recorded calendars (~3000 BC, on Egyptian and Mesopotamian inscriptions) systematized lunar months and solar years into officially-sanctioned schedules — for agricultural festivals, religious observances, and administrative dating. The first sustained-scale state-coordinated calendar systems. Foundation for all subsequent timekeeping — the Roman calendar, Julian, Gregorian, and Chinese imperial calendars all descend from this Bronze Age tradition.",
+
+  'venus-tablet-of-ammisaduqa':
+    "Babylonian astronomy before ~1700 BC had been observational without sustained record-keeping. The Venus Tablet of Ammisaduqa (~1646 BC, in the reign of King Ammisaduqa) preserved 21 years of Venus observations — risings, settings, periods. The first sustained-scale recorded planetary observations. Eventually used by Babylonian astronomers to predict planetary positions; the Saros eclipse cycle and other long-period predictions all build on this empirical tradition. Modern astronomy treats the Venus Tablet as a benchmark for early-Bronze-Age observation accuracy.",
+
+  'invention-of-the-water-clock':
+    "Pre-water-clock daytime timekeeping had been by sundial — useless at night, unreliable in cloudy weather. Egyptian and Babylonian water clocks (~1500 BC) measured time by the steady drip of water from one container to another — markings on the receiving vessel showed elapsed time. The first sustained-scale time-measuring device independent of solar position. Greek and Roman water clocks (clepsydras) ran public assemblies and law courts; Han Chinese water clocks coordinated bureaucratic schedules. Mechanical clocks (~13th century) eventually displaced them.",
+
+  'zoroastrian-dualism-emerges':
+    "Pre-Zoroastrian religious systems had been polytheistic with no systematic ethical dualism. Zoroaster (preaching sometime ~1500-500 BC; the canonical date for emergence is ~500 BC) taught a cosmic ethical struggle between Ahura Mazda (truth, asha) and Angra Mainyu (the lie, druj), with humans choosing sides through their actions. The first sustained-scale ethical-cosmic dualism. Influenced post-exile Judaism, Christianity, Islam, and Manichaeism; modern Western moral imagination still operates in territory Zoroaster opened.",
+
+  'confucius-analects':
+    "Pre-Analects Chinese ethics had been transmitted as oral tradition. The Analects (Lunyu, compiled by Confucius's disciples ~479-300 BC) preserved Confucius's sayings — short anecdotes and aphorisms covering ethics, governance, and personal cultivation. The first sustained-scale humanistic ethical-political text in Chinese tradition. Standard examination text in Chinese imperial bureaucracy from Han through Qing. Modern East Asian ethical thought still uses Analects vocabulary directly (junzi, ren, li, xiao).",
+
+  'mozi-universal-love-consequentialism':
+    "Confucian ethics had been family-centered — graduated affection scaling from parents outward. Mozi (~470-391 BC, in the Mozi text) advocated jian'ai — impartial care for all — and judged actions by their consequences for collective welfare. The first sustained-scale Chinese consequentialist-universalist ethics. Mohism flourished briefly, then declined under Han imperial Confucianism. Western utilitarianism (Bentham, 1789) developed parallel ideas without Mohist influence; modern consequentialist ethics treats Mozi as an ancient precursor.",
+
+  'aristotles-politics':
+    "Pre-Aristotelian political philosophy (Plato) had been normative — what an ideal state should be. Aristotle's Politics (~340 BC) was empirical — collected the constitutions of 158 Greek city-states and classified them by who ruled (one, few, many) and for whose benefit (rulers' or common). The first sustained-scale empirical political-comparative-science. Modern comparative-government scholarship treats Aristotle as the institutional ancestor.",
+
+  'aristotles-nicomachean-ethics':
+    "Pre-Aristotelian Greek ethics (Plato) had been theoretical — the Form of the Good. Aristotle's Nicomachean Ethics (~340 BC) was practical — eudaimonia (flourishing) achieved through habituation in virtuous action. The first sustained-scale practical-ethics framework in the Western tradition. Influenced Aquinas, the medieval virtue tradition, and modern virtue ethics (MacIntyre, Foot). Modern positive psychology's focus on flourishing also descends conceptually from Aristotelian eudaimonia.",
+
+  'epicurus-atomistic-hedonism':
+    "Pre-Epicurean Greek thought had treated fear of gods and death as inescapable conditions of human life. Epicurus (founded his Garden in Athens, 307 BC) combined Democritean atomism (no soul beyond atoms; death is dispersal) with hedonist ethics (pleasure as the rational pursuit, defined as absence of pain and disturbance). The first sustained-scale comprehensive philosophy of secular happiness. Influenced Lucretius, then through Lucretius's rediscovery (1417) the early-modern materialist revival. Modern secular hedonism still uses Epicurean vocabulary.",
+
+  'zeno-of-citiums-stoicism':
+    "Pre-Stoic Greek thought had treated emotions as natural forces beyond rational control. Zeno of Citium founded Stoicism in Athens (~300 BC, lecturing in the Stoa Poikile or 'painted porch'). Stoic ethics: virtue is the only good, emotions are confused judgments, the wise person can rationally moderate them. The first sustained-scale comprehensive emotional-self-regulation philosophy. Influenced Cicero and Roman Stoicism (Seneca, Epictetus, Marcus Aurelius). Modern cognitive-behavioral therapy explicitly cites Stoic origins.",
+
+  'euclids-elements-compiled':
+    "Pre-Euclidean Greek mathematics had been a collection of theorems without systematic organization. Euclid's Elements (~300 BC, thirteen books) organized geometric knowledge axiomatically — five postulates, five common notions, then 465 propositions deduced from these foundations. The first sustained-scale axiomatic-deductive mathematical exposition. Used as a primary mathematics textbook in Western education for over 2,000 years. Modern logical foundations of mathematics (Hilbert, Bourbaki) and even legal reasoning treat Euclid as the institutional ancestor.",
+
+  'mencius-ethical-theory-compiled':
+    "Confucius's Analects had been aphoristic. Mencius's text (compiled by his disciples ~300 BC, after his death ~289 BC) systematized Confucian ethics around the doctrine of innate human goodness — the four sprouts (compassion, shame, deference, judgment) that develop with proper cultivation. The first sustained-scale Confucian ethical-philosophical synthesis. Standard Confucian curriculum text alongside the Analects. Modern Chinese ethical thought still works in vocabulary Mencius established.",
+
+  'cynic-philosophy-of-diogenes-popularized':
+    "Pre-Cynic Greek thought had assumed life within social conventions was the only viable form. Diogenes of Sinope (~404-323 BC) lived in a barrel in the Athenian agora, masturbated in public, and ridiculed the pretensions of Athenian elites — including Alexander the Great. The first sustained-scale Western counter-culture lifestyle philosophy. Cynicism influenced Stoicism (Zeno was a student of the Cynic Crates) and through Stoicism, Christian asceticism. Modern philosophical-counterculture traditions (Thoreau, the Beats, etc.) draw on Cynic precedents.",
+
+  'nagasenas-milinda-panha':
+    "Hellenistic Buddhist contact had been limited. The Milinda Panha (~100 BC, recording a dialogue between the Greco-Bactrian king Menander I and the Buddhist monk Nagasena) explained Buddhist concepts — non-self, dependent origination, karma — to a Hellenistic intellectual audience. The first sustained-scale Buddhist-Hellenistic philosophical exchange. The chariot-analogy argument for non-self (a chariot is the parts arranged in relation, no separate chariot-essence) is its most-cited contribution. Greek Buddhism (Greco-Buddhist art, especially Gandhara) developed in the same intellectual environment.",
+
+  'ciceros-de-officiis-published':
+    "Pre-Cicero Roman political ethics had been mostly traditional Roman values (mos maiorum) without systematic philosophical articulation. Cicero's De Officiis (44 BC, written in his last year) applied Stoic ethics to Roman political duty — the four cardinal virtues, the ethics of public life, the conflict between honesty and expediency. The first sustained-scale Latin ethical-political treatise for the educated upper class. Standard reading in medieval European education for over a millennium. The modern liberal-arts ethics tradition treats De Officiis as an institutional ancestor.",
+
+  'isidore-of-seville-etymologiae':
+    "Western Roman Empire had collapsed (476 AD); classical knowledge was scattered across libraries that monks were preserving haphazardly. Isidore of Seville's Etymologiae (~636 AD, twenty books) compiled an encyclopedic summary of late-antique knowledge — grammar, rhetoric, mathematics, medicine, law, theology. The first sustained-scale Latin Christian encyclopedia. Most-copied work in medieval European scriptoria after the Bible. Standard reference work for several centuries before more specialized scholarship displaced it.",
+
+  'al-ghazalis-incoherence-of-the-philosophers':
+    "Islamic philosophy (al-Farabi, Avicenna) had treated Greek philosophical metaphysics as compatible with Islamic theology. Al-Ghazali's Incoherence of the Philosophers (1095) systematically attacked the Aristotelian-Avicennian philosophical tradition on twenty key claims — including the eternity of the world, divine knowledge of particulars, and bodily resurrection. The first sustained-scale theological critique of Islamic philosophical rationalism. Mainstream Islamic theology shifted away from Aristotelianism after Al-Ghazali. Averroes's Incoherence of the Incoherence (1180) was the philosophical reply.",
+
+  'hildegard-of-bingens-scivias':
+    "Pre-Hildegard female visionary theology had been peripheral to mainstream Catholic intellectual life. Hildegard of Bingen's Scivias ('Know the Ways,' 1141-1151) recorded 26 theological visions on cosmology, salvation history, and the relation of body and soul. With explicit papal approval (Eugene III, 1148). The first sustained-scale female-authored theological text with mainstream institutional sanction. Influenced subsequent visionary theology (Catherine of Siena, Julian of Norwich) and modern feminist theology.",
+
+  'duns-scotus-univocity-of-being':
+    "Aquinas (1265-74) had argued for analogical predication — 'being' applied to God and creatures only by analogy, not in the same sense. Duns Scotus's univocity thesis (~1300, in Ordinatio) argued that 'being' applies univocally — in the same sense — to God and creatures, while differing in mode. The first sustained-scale Western argument for univocal predication of being. Influenced Ockham, the late-medieval voluntarist tradition, and through complex paths the modern philosophical-theological mainstream. Heidegger's later critique of metaphysics targets the Scotist univocity tradition specifically.",
+
+  'printing-press':
+    "Pre-Gutenberg books had been hand-copied — a single Bible took a scribe a year. Manuscript copying was bottlenecked by literate-scribe availability. Johannes Gutenberg's printing press (~1440-1455, in Mainz) used cast metal type, oil-based ink, and a wooden screw press adapted from wine production. The first sustained-scale European movable-type printing. Within fifty years European cities had presses producing books at industrial pace. The Reformation, the scientific revolution, the Enlightenment, and modern mass literacy all run on Gutenberg's invention.",
 };
 
 async function main(){
