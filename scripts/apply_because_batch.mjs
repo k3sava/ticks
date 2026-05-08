@@ -1330,6 +1330,81 @@ const BECAUSE_BATCH = {
 
   'domestication-of-rice':
     "Wild rice had been gathered along the Yangtze. Domestication (~7000 BC, in the middle and lower Yangtze basin) selected for non-shattering panicles and synchronous ripening. Rice paddies — flooded fields that suppress weeds and enable transplanted seedlings — could support population densities far higher than any dry-land cereal. Chinese, Korean, and eventually Southeast Asian civilizations all built around rice. Half the world today eats rice as a staple.",
+
+  'crop-rotation-two-field-system':
+    "Continuous cropping had exhausted Near Eastern soils within a few seasons — yields collapsed, fields had to lie fallow for years. Neolithic farmers (~6000 BC) noticed that planting legumes (peas, lentils) in alternation with cereals kept fields productive. We know now: legumes host nitrogen-fixing rhizobia. The practice predated the scientific understanding by 7,000 years. The first sustainable agricultural rotation. Variations spread across the Eurasian agricultural belt and remained the default until synthetic fertilizer.",
+
+  'domestication-of-the-water-buffalo':
+    "South and Southeast Asian rice paddies were too wet for cattle and too heavy for human labor alone. The water buffalo (Bubalus bubalis), domesticated independently in western India (~4300 BC) and mainland Southeast Asia, gave wetland farmers a draft animal that thrived in flooded fields. Pulling power for paddy preparation, milk for the family, meat eventually. Asian rice agriculture as it persisted for the next six thousand years runs on the water buffalo.",
+
+  'invention-of-the-plow-2':
+    "The corpus has multiple plow-invention entries reflecting independent regional emergence. The 4000 BC entry refers to widespread Eurasian adoption of the simple ox-drawn ard — Mesopotamia, Egypt, the Indus Valley, parts of China. By this date plowing had become the default soil-preparation method for surplus-grain agriculture. The earlier hoe-and-spade method was relegated to garden plots. The mechanical replacement of human muscle by ox muscle in food production.",
+
+  'systematic-use-of-plant-storage-pits':
+    "Hunter-gatherers had cached small surplus opportunistically. Late Mesolithic and Early Neolithic sites (~3900 BC, especially Sannai-Maruyama in Japan) built dedicated underground storage pits — lined, sealed, sometimes ventilated — that protected seeds, nuts, and roots from rodents and rot. The first sustained surplus-storage architecture. Made permanent settlement viable for groups whose food supply was seasonally concentrated. The technological half-step between mobile and fully sedentary life.",
+
+  'development-of-the-egyptian-solar-calendar':
+    "Lunar calendars (which had been used since ~28,000 BC) drift relative to the seasons by 11 days a year — useless for predicting Nile flood. Egyptian astronomers (~3000 BC) tracked the heliacal rising of Sirius (Sothis) and built a 365-day solar civil calendar — twelve months of thirty days plus five epagomenal days. The first solar calendar. Drifted slightly each century but stayed close enough for agricultural planning. The Julian calendar (46 BC) descends from it.",
+
+  'invention-of-the-sailboat':
+    "Pre-sail watercraft had been propelled by paddles, oars, or river current — bounded by human muscle and water flow. Sailing rafts and small boats appeared on the Nile and the Persian Gulf around 3000 BC. A sail captured wind energy that no muscle could match — and worked while the crew rested. Long-distance maritime trade (Indus-Mesopotamia, Cyprus-Egypt) became economically practical. The first technology to harness an environmental energy flow for human transport.",
+
+  'domestication-of-the-horse':
+    "Wild horse populations had been hunted across the Eurasian steppe for millennia. Botai-culture sites (modern Kazakhstan, ~3500 BC) show bit-wear on horse teeth and corral structures — earliest domestication evidence. Genetic data points to the Volga-Don region around 2200 BC for the lineage that became the modern horse. Indo-European migrations, chariot warfare, and steppe-nomad dominance of Eurasian history all run on this single species.",
+
+  'minoan-aqueducts':
+    "Bronze Age water supply had been wells and cisterns within each settlement. Minoan Crete (~2000 BC, especially at Knossos and Phaistos) built terra-cotta-pipe gravity-fed aqueducts that carried spring water several kilometers into urban centers. Drainage systems removed wastewater. The first sustained urban water infrastructure in the Bronze Age Mediterranean. Roman aqueducts (from ~300 BC) were the larger and more famous descendants of the Minoan precedent.",
+
+  'edwin-smith-papyrus':
+    "Egyptian medicine had mixed magic and practice for centuries. The Edwin Smith Papyrus (~1600 BC, copied from a much older source attributed to Imhotep ~2600 BC) is a 4.7-meter scroll with 48 surgical case studies — head, spine, thorax — each describing the trauma, the examination, the diagnosis, the treatment, and the prognosis. No magic, no incantation. The first known empirical medical text. Hippocratic medicine more than a thousand years later builds on the same case-study format.",
+
+  'pythagorean-classification-of-living-things':
+    "Pre-Pythagorean Greek thought had treated living beings without formal hierarchy. The Pythagorean community at Croton (~530 BC) classified its members into akousmatikoi (listeners — outer circle, taught by aphorism) and mathematikoi (learners — inner circle, taught by demonstration). The category-and-rank schema was applied to nature broadly: living vs. non-living, plant vs. animal, mortal vs. immortal. The earliest known systematic ranking of living things in the Greek tradition. Aristotle's later Scala Naturae built on this footing.",
+
+  'pythagorean-interval':
+    "Greek music before Pythagoras had used intervals derived from instrument practice. Pythagoras (or his school, ~500 BC) showed that consonant intervals correspond to small-integer string-length ratios: 2:1 (octave), 3:2 (fifth), 4:3 (fourth). The first quantitative theory of music. Pythagorean tuning, derived by stacking pure fifths, dominated Western music for two millennia. Music joined arithmetic, geometry, and astronomy as one of the four mathematical arts (the medieval quadrivium).",
+
+  'diogenes-of-apollonia-air-as-life-principle':
+    "Pre-Socratic philosophy had explored water (Thales), the boundless (Anaximander), fire (Heraclitus) as primal substance. Diogenes of Apollonia (~450 BC) proposed air — a single material that respiration shared with weather, that thought required, that connected sensation. The first attempt to unify the bodily, mental, and cosmic registers under a single material principle. Anticipated Stoic pneuma and the medical theory of breath/spirit that ran through European medicine to the Renaissance.",
+
+  'democritus-atomistic-theory-of-life':
+    "Pre-Socratic naturalism had treated life as an animating principle (psyche, breath). Democritus and Leucippus (~400 BC) extended atomism to biology: living things are also atoms in motion, just configured differently from non-living. The first reductive materialist theory of life. Marginal in Greek philosophy (Plato and Aristotle's vitalism dominated). Recovered through Epicurus and Lucretius, then through 17th-century mechanical philosophy, and finally vindicated by molecular biology in the 20th.",
+
+  'hippocratic-on-the-sacred-disease-epilepsy-naturalized':
+    "Epilepsy had been called 'the sacred disease' — divine seizure, demonic possession, divine punishment. The Hippocratic treatise On the Sacred Disease (~400 BC) argued that epilepsy was a natural disorder caused by phlegm flowing from the brain, treatable by diet and lifestyle. The first sustained naturalistic explanation of a culturally-supernatural medical condition. Established the principle that all diseases — however mysterious — have natural causes and natural treatments. Western medicine's foundational commitment.",
+
+  'aristotles-scala-naturae-great-chain-of-being':
+    "Pre-Aristotelian biology had been observational without systematic ranking. Aristotle's Historia Animalium (~350 BC) and De Generatione Animalium proposed a graded scale of living beings — minerals at the bottom, then plants, simple animals, blooded animals, humans at the top — distinguished by faculties (nourishment, sensation, locomotion, thought). The Scala Naturae or Great Chain of Being. Ruled European biology until Linnaeus, ruled European theology and political philosophy until Enlightenment, and lent its vocabulary even to Darwin.",
+
+  'aristotles-parts-of-animals-comparative-anatomy':
+    "Aristotle's Historia Animalium had described animals descriptively. Parts of Animals (~350 BC) compared structures across species — why some animals have horns and others don't, why fish have gills and lungs are mammalian. The first systematic comparative anatomy. Galen's medical anatomy (~150 AD) and Vesalius's De humani corporis fabrica (1543) both work in the comparative-anatomical tradition Aristotle began. The principle that organisms can be understood by comparing their parts is now the foundation of biology.",
+
+  'aristotles-on-the-soul':
+    "Pre-Aristotelian discussions of soul had been mythic (Homer) or metaphysical (Plato's tripartite immortal psyche). Aristotle's De Anima (~350 BC) treated soul as the form-organizing principle of a living body — not a separable substance, but the way a body lives. He distinguished nutritive soul (plants), sensitive soul (animals), rational soul (humans). The first naturalistic philosophy of mind. Medieval scholasticism (Aquinas) integrated De Anima into Christian theology; modern philosophy of mind still uses Aristotelian distinctions.",
+
+  'herophilus-identifies-nerves-and-brain-ventricles':
+    "Pre-Hellenistic medicine had attributed sensation and thought variously to the heart, the diaphragm, or the lungs. Herophilus of Chalcedon (~300 BC, working at the Alexandrian Mouseion under royal license to dissect human cadavers) distinguished nerves from tendons, mapped sensory and motor nerves separately, identified the brain ventricles, and located cognition in the brain. The first sustained human neuroanatomy. Lost to Western medicine for sixteen centuries; rediscovered through Galen and finally restated by Vesalius (1543).",
+
+  'erasistratus-circulatory-system':
+    "Greek medicine had treated arteries as carriers of pneuma (vital air) and veins as carriers of blood — separate systems. Erasistratus of Ceos (~250 BC, also at the Alexandrian Mouseion) demonstrated that arteries and veins were both blood-bearing, distinguished arteries from nerves, identified the heart's valves, and concluded the heart functioned as a pump. The closest pre-Harvey approach to circulatory understanding. Lost; the proper circulation theory waited for William Harvey (1628).",
+
+  'lucretius-de-rerum-natura-on-atomist-biology':
+    "Epicurean atomism had circulated in Greek philosophical schools for two centuries. Lucretius's De Rerum Natura (~50 BC) — six books of Latin hexameter verse — gave Epicurean materialism its sustained literary articulation. Living things, mind, soul, perception all made of atoms in motion. No supernatural principles needed. The work survived Christian disinterest in a single 9th-century manuscript and was rediscovered in 1417 — directly seeding the early-modern revival of atomism (Gassendi, Boyle, Newton).",
+
+  'varros-theory-of-invisible-disease-agents':
+    "Roman medicine attributed disease to miasma (bad air), divine punishment, or imbalance of humors. Varro's De Re Rustica (37 BC, in a passage on swamp-side farm placement) warned that 'minute creatures invisible to the eye' breed in marshy areas, enter the body through nose and mouth, and cause disease. The earliest known formulation of a germ theory of disease — by 1900 years. Ignored by Roman medicine. Recovered after Pasteur and Koch.",
+
+  'dioscorides-writes-de-materia-medica':
+    "Pre-Dioscoridian pharmacology had been local and oral — different physicians knew different plants. Pedanius Dioscorides (~50-70 AD), a Greek military physician serving Rome, traveled the empire collecting medicinal plant knowledge. De Materia Medica described 600 plants and 1,000 medicines with sources, preparation, dosage, and effects. The first systematic Mediterranean pharmacopoeia. Standard reference text in Greek, then Arabic, then Latin Europe for sixteen centuries — only displaced by Linnaeus and the modern pharmacopoeias.",
+
+  'pliny-the-elder-compiles-naturalis-historia':
+    "Pre-Pliny natural-history compilation had been piecemeal — separate works on animals, plants, minerals, geography. Pliny the Elder's Naturalis Historia (77 AD) — 37 books drawing on roughly 2,000 sources — covered cosmology, anthropology, zoology, botany, mineralogy, agriculture, and medicine in one encyclopedic structure. The most comprehensive ancient summary of Greco-Roman knowledge. The standard reference work in Latin Europe until the late 18th century. Even when individual claims were superseded, the encyclopedic aspiration persisted.",
+
+  'al-dinawaris-book-of-plants':
+    "Greek and Latin botanical literature (Theophrastus, Pliny, Dioscorides) had circulated in the Islamic world via Abbasid translations. Abu Hanifa al-Dinawari's Kitāb al-Nabāt (Book of Plants, ~895 AD) extended the inheritance with 1,000+ plant entries from Arab oral tradition, agricultural practice, and personal observation. The first comprehensive Arabic botanical encyclopedia. Foundation of Islamic-medieval pharmacology and a major source for later European herbals.",
+
+  'al-masudis-meadows-of-gold':
+    "Pre-Mas'udi geography had been administrative or itinerary-based. Al-Mas'udi's Murūj al-Dhahab (Meadows of Gold, 947 AD) — comparative history and geography from prehistoric Arabia to his own day — included detailed comparative biology: how species varied across climate zones, why African elephants differ from Indian. The first Islamic comparative zoogeography. Arab geographers (al-Idrisi, Ibn Battuta) and later European scholars (Humboldt's biogeography) build on the comparative-by-region approach Mas'udi pioneered.",
 };
 
 async function main(){
