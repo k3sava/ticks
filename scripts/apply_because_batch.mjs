@@ -1180,6 +1180,81 @@ const BECAUSE_BATCH = {
 
   'islamic-muqarnas-vaulting-alhambra':
     "Earlier Islamic architecture had used standard domes, barrel vaults, and squinches at corners. The muqarnas — three-dimensional cellular ornament resembling honeycomb or stalactites — emerged in 11th-century Iraq and Iran as a way to make the corner-transition between square and dome look intentional rather than awkward. Spread across Islamic architecture: the Alhambra (Granada), the mosques of Isfahan, Mughal mausolea. The most distinctively Islamic architectural ornament; no Western equivalent.",
+
+  'bayeux-tapestry':
+    "Earlier narrative textile had been small-scale — wall hangings, garment borders. The Bayeux Tapestry (commissioned in the 1070s by Bishop Odo of Bayeux, William the Conqueror's half-brother) is a 70-meter embroidered chronicle of the Norman conquest of England — 58 scenes, Latin captions, 626 figures. Not technically a tapestry (it's embroidery on linen) but the first sustained narrative textile at monumental scale. The earliest substantial visual record of a specific historical campaign.",
+
+  'chinese-celadon-pottery-song-dynasty':
+    "Pre-Song Chinese ceramics had been earthenware and rough stoneware. Song dynasty (960-1279) celadon — especially from the Longquan kilns — achieved a jade-like green glaze through precise iron-oxide reduction firing. The first ceramic tradition to deliberately imitate the visual character of jade, China's most prestigious material. Celadon became China's pre-eminent export ware, traded across the Indian Ocean and the Silk Road. The Song aesthetic of restrained refinement remained the East Asian ceramic ideal for centuries.",
+
+  'romanesque-sculpture-moissac-tympanum':
+    "Early medieval European sculpture had been mostly small ivory carvings and limited architectural ornament. The Moissac Abbey tympanum (~1130 AD, southwestern France) carved the apocalyptic Christ in Majesty surrounded by the four evangelists and twenty-four elders into a single architectural relief. The first monumental Romanesque sculpture program at the entrance to a major church. The model for portal sculpture across Europe through the 12th century before Gothic verticality remade the genre.",
+
+  'hildegard-of-bingens-liturgical-music':
+    "Medieval European music had been near-anonymous Gregorian chant. Hildegard of Bingen, abbess of the Rupertsberg monastery (1098-1179), composed 77 surviving liturgical pieces — antiphons, responsories, sequences, hymns — with sweeping melodic ranges and her own visionary Latin texts. The first Western composer of either sex to leave a substantial named body of music. Her Ordo Virtutum (~1151) is the earliest surviving morality play with music. Recovered into modern performance only in the 1980s.",
+
+  'guillaume-de-machaut':
+    "Mass settings before the 14th century had been compiled from independent chant settings by multiple composers across centuries. Guillaume de Machaut's Messe de Nostre Dame (~1364) is the first complete polyphonic Ordinary of the Mass attributable to a single composer — five movements (Kyrie, Gloria, Credo, Sanctus, Agnus Dei) plus Ite, missa est, in unified four-voice texture. The first work treating the Mass as a composer's artistic project rather than a liturgical assembly. Every later mass setting (Palestrina, Bach, Mozart) inherits the model.",
+
+  'gutenberg-bible-printed':
+    "Pre-Gutenberg books had been hand-copied — a single Bible took a scribe a year. Gutenberg's printing press (operational ~1450) and his metal-type-set Bible (180 copies, 1455) demonstrated mass book production. A copy of the Gutenberg Bible cost roughly the same as a manuscript — but with 180 copies in the press's run, not one. The economics of textual reproduction inverted: copies became cheap, originals remained precious. Within fifty years European cities had presses producing books at industrial pace.",
+
+  'first-printed-book-on-fortification':
+    "Late-medieval military architecture had been guild knowledge — passed apprentice-to-master in the workshop. Albrecht Dürer's Etliche underricht zu befestigung der Stett, Schloss, und flecken (Some Instruction on the Fortification of Cities, Castles, and Towns, 1527 — printed 1529) was the first printed manual on military architecture. Made fortification design a transmissible engineering discipline rather than a craft secret. Italian and French treatises followed; Vauban's 17th-century systematic fortification builds on this lineage.",
+
+  'pianoforte-broadwood-grand-piano':
+    "Harpsichords and clavichords (the keyboards of the 17th and early 18th centuries) had been either loud-but-undynamic or quiet-and-expressive. Cristofori's pianoforte (~1700, Florence) introduced a hammer mechanism allowing real dynamic variation. The Broadwood firm (London, from 1771) built grand pianos with iron bracing, longer strings, and pedals — the design that became the modern grand piano. Beethoven's late piano music, Liszt's virtuoso style, and the entire 19th-century concert tradition rest on this instrument.",
+
+  'panorama-painting-robert-barker':
+    "Earlier painting had assumed a single fixed viewpoint. Robert Barker's panorama patent (1787) covered a 360-degree painted view installed in a purpose-built rotunda — viewers stood in the center, surrounded by a single continuous painting calibrated for the eye. The first immersive visual entertainment medium. Panorama buildings spread across European capitals; modern IMAX cinemas, planetariums, and VR headsets all descend conceptually from Barker's rotunda.",
+
+  'steel-engraving-thomas-bewick':
+    "Copper engraving plates had worn out after a few thousand impressions — limiting the print run of any detailed illustration. Jacob Perkins's steel engraving process (Boston, 1792, refined for British banknotes after 1819) replaced copper with hardened steel — same fineness of line, but plates good for hundreds of thousands of impressions. The first technology for mass-producing detailed images. Banknotes, illustrated newspapers (the Illustrated London News, 1842), and printed book illustration all run on steel plates for the next century.",
+
+  'ballet-en-pointe-fanny-elssler':
+    "Earlier ballet had been performed flat-footed in soft slippers. Charles Didelot's 1796 'flying machine' — a wire-and-pulley rig that lifted dancers — demonstrated how the toe-pointed silhouette looked when freed from gravity. Marie Taglioni (1830s) and Fanny Elssler (1840s) developed pointe technique without mechanical assistance, on stiffened slippers that became the modern pointe shoe. Romantic ballet's signature aesthetic — the ethereal weightless ballerina — depends on this technique.",
+
+  'electroplating-brugnatelli':
+    "Pre-electroplating gilding had been done by mercury amalgamation — toxic, expensive, dangerous to the worker. Brugnatelli's electroplating (1805, in Pavia, using Volta's pile to deposit gold from solution) made plating a clean industrial process. Birmingham silversmiths (Elkington brothers, 1840s patent) commercialized the technique. Cheap silver-plated tableware, gold-plated jewelry, and modern industrial coatings (chromium, nickel) all run on the same electrochemistry.",
+
+  'gas-lighting-in-theaters-lyceum-theatre-london':
+    "Earlier stage lighting had been candles and oil lamps — dim, smoky, fire hazards. The Lyceum Theatre (London, 1817) installed gas lighting, with control valves at the prompt corner allowing dimming during scenes. Stage spectacle suddenly had a new visual register: dimming, fade-ups, focused beams. Henry Irving's 1880s Lyceum productions used gas lighting at full sophistication. Limelight (1820s) and the carbon arc (1879) extended the toolkit; electric lighting (1881) eventually replaced gas. Modern theatre's lighting design begins here.",
+
+  'stephensons-rocket':
+    "Pre-Rocket steam locomotives had been heavy, slow, and used in mining only. George and Robert Stephenson's Rocket (1829) won the Rainhill Trials at 30 mph hauling a payload. Combined improvements: multi-tube boiler (more heat-transfer area), blast pipe (forced draft for the firebox), pistons mounted at angle to the wheels (better mechanical advantage). The design template for every later steam locomotive. The Liverpool and Manchester Railway opened in 1830; within twenty years, Britain had a national rail network.",
+
+  'saxophone-invented-by-adolphe-sax':
+    "Pre-saxophone wind sections had been built around the same Baroque-era instrument families — flutes, oboes, clarinets, bassoons, brass. Adolphe Sax's saxophone (patented 1846, Paris) bridged woodwind and brass: single-reed mouthpiece (clarinet family), conical brass body (bugle family), keys for chromatic facility. Adopted slowly into orchestral music, fast into military bands, definitively into jazz from the 1920s onward. Coltrane, Parker, and the entire jazz vocabulary depend on Sax's hybrid instrument.",
+
+  'eadweard-muybridge-horse-in-motion':
+    "The naked-eye question of whether a galloping horse ever has all four hooves off the ground had been debated for centuries. Eadweard Muybridge, hired by Leland Stanford to settle a bet, set up 12 cameras with trip-wires across a Palo Alto track in 1878. The series of photographs proved the airborne phase — and accidentally invented motion-image analysis. The same apparatus became the zoopraxiscope (1879) for projecting the images sequentially. Cinema's prehistory begins here.",
+
+  'incandescent-light-bulb':
+    "Arc lamps (1840s) had given electric lighting strong but harsh, hard-to-control illumination. Joseph Swan (UK, 1878) and Thomas Edison (US, 1879) independently produced practical incandescent bulbs — carbon filament in evacuated glass, 100+ hours operation. Swan's 1881 installation at the Savoy Theatre and Edison's 1882 Pearl Street Station made the bulb a real domestic technology. Within a generation, electric light was standard in homes, factories, and city streets. The longest-running electrical product in human use.",
+
+  'phonograph-cylinder-for-music':
+    "Edison's phonograph (1877) had been demonstrated as a curiosity recording dictation. Pre-recorded musical wax cylinders, marketed by Edison and Columbia from 1889, made commercial recorded music a real product. Within a decade, cylinder catalogs offered hundreds of titles in opera, popular song, and humor. The disc record (Berliner, 1888) eventually displaced cylinders, but the music industry as a recorded-content business began with the cylinder.",
+
+  'piano-roll-for-player-piano':
+    "Pre-recording, hearing professional-quality music required a live pianist. Edwin Votey's Pianola (1896) used pneumatic mechanics to read perforated paper rolls and play a regular piano automatically. Recorded performances by named pianists (Paderewski, Rachmaninov) became home-playable. Before phonograph fidelity could capture piano well, the player piano was the primary medium for piano music in the home. Reproducing pianos (Welte-Mignon, Duo-Art) in the 1900s-20s captured nuances of touch and pedaling that disc recording wouldn't match for decades.",
+
+  'synthetic-cubism-collage-picassos-still-life-with-chair-caning':
+    "Earlier modernist painting had abstracted but stayed in paint. Picasso's Still Life with Chair Caning (May 1912, Paris) glued a piece of oilcloth printed with a chair-caning pattern onto the canvas, surrounded by painted forms. The first modern collage. Real-world materials could now enter the picture frame. Synthetic Cubism (1912-1914), Dada (1916 onward), and every later mixed-media practice all begin with this single oval canvas.",
+
+  'bauhaus-founding':
+    "Pre-Bauhaus art education had separated fine arts (painting, sculpture, in academies) from crafts (woodworking, weaving, in trade schools). Walter Gropius's Bauhaus (founded 1919 in Weimar) merged the two — every student took the same foundation course before specializing in workshops led by both an artist and a craftsman. Modernist design — geometric, functional, machine-oriented — emerged from the integration. The school closed under Nazi pressure in 1933; faculty dispersed to the US and Israel, where they shaped the IIT, MIT, and Black Mountain College curricula.",
+
+  'the-power-of-love':
+    "Pre-1922 cinema had been monocular — a single camera lens, a flat projected image. The Power of Love (premiered Los Angeles, September 1922) used dual-projector anaglyphic 3D — viewers wore red-and-green glasses, two slightly offset images combined to give depth perception. The first stereoscopic feature film. Commercial flop; 3D cinema would have several more revival waves (1950s, 2000s) without ever becoming dominant. The first proof-of-concept that motion pictures could carry the third dimension.",
+
+  'lights-of-new-york-1928-film':
+    "The Jazz Singer (1927) had been the first feature with synchronized speech — but only in a few sequences; most was still silent with intertitles. Lights of New York (1928) was the first feature in which all dialogue was synchronized — no silent stretches, no intertitles. The model for sound film as a continuous medium. Within two years, 75% of US theaters had been converted for sound. The silent era ended.",
+
+  'technicolor-three-strip-process':
+    "Earlier color film processes had used additive two-color systems with limited fidelity. Technicolor's three-strip process (commercial release 1932 with Disney's Flowers and Trees; first feature The Cat and the Fiddle, 1934) used a beam-splitting prism in a custom camera that recorded red, green, and blue records simultaneously on three black-and-white films. The first cinematographically credible color. Gone with the Wind (1939) and The Wizard of Oz (1939) made it standard for prestige features. Eastman Color (1950) eventually displaced it on cheaper logistics, but Technicolor's color science set the visual reference.",
+
+  'bbc-television-regular-broadcasts':
+    "Earlier television experiments (Baird's mechanical-disc system, RCA's electronic system) had been demonstrations or limited test broadcasts. The BBC's regular service (November 2, 1936, Alexandra Palace, alternating Baird and Marconi-EMI systems for the first three months) was the first sustained television broadcast service. The Marconi-EMI 405-line all-electronic system won the format war by 1937. Suspended for WWII, resumed 1946. The first sustained mass-market television.",
 };
 
 async function main(){
