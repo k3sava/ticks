@@ -47278,14 +47278,14 @@
       "name": "Priestly class at Temple of Eridu",
       "domain": "religion",
       "constraint": "no specialized religious professionals separate from the general community",
-      "detail": "The Temple of Eridu, dedicated to Enki, became the center of a Sumerian city with a dedicated priesthood. This dissolved the constraint that religious roles were undifferentiated from everyday community life. The temple's construction with gold and lapis lazuli and its foundation on the apsu (nether-sea) reflected a new institutionalized religious authority.",
+      "detail": "Eridu was founded as a virgin-site Ubaid settlement around 5400 BC, with the earliest cella (temple chamber) at Level XVII dated 5300-5000 BC and the first formal temple platform at Level XI dated 4500-4000 BC. Successive temple layers dedicated to Enki accumulated material wealth and a settled clergy, dissolving the constraint that religious roles overlapped with everyday community life. The Eridu temple sequence became the template for the priesthood-and-temple model of later Mesopotamian city-states.",
       "links": [
         {
-          "label": "Wikipedia: Priestly class at Temple of Eridu",
+          "label": "Wikipedia: Eridu",
           "url": "https://en.wikipedia.org/wiki/Eridu"
         }
       ],
-      "because": "Pre-Eridu sacred specialists had been part-time, non-hierarchical. The Temple of Eridu (~5400 BC, in southern Sumer, the world's oldest known continuously occupied city) had a dedicated priesthood — full-time religious specialists separate from agricultural production. The first sustained-scale priestly class in the historical record. Eridu's priesthood-and-temple model became the template for later Mesopotamian city-states; the institutional structure of all subsequent Eurasian temple-religious traditions traces back here."
+      "because": "Pre-Eridu sacred specialists had been part-time, non-hierarchical. The Temple of Eridu sequence (founded c.5400 BC, with the earliest cella at 5300-5000 BC and the first formal temple platform at 4500-4000 BC, in southern Sumer, the world's oldest known continuously occupied city) supported a full-time clergy separate from agricultural production. The first sustained priestly class in the historical record. Eridu's priesthood-and-temple model became the template for later Mesopotamian city-states; the institutional structure of subsequent temple-religious traditions traces back here."
     },
     {
       "id": "first-known-writing-of-religious-texts-uruk-iv",
