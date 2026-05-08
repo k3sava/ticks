@@ -2005,6 +2005,81 @@ const BECAUSE_BATCH = {
 
   'asokas-edicts':
     "Pre-Ashokan Indian governance had been administrative, with little explicit moral or religious content. Ashoka (after the Kalinga War, ~268-232 BC) inscribed dharma — moral and religious teaching — on rock and pillar edicts across his empire. Buddhist non-violence, religious tolerance, animal welfare, the duty of rulers to their subjects. The first sustained moral-policy proclamation by a state at imperial scale. Buddhist missions to Sri Lanka and the Hellenistic world (sent by Ashoka) carried the dharma further.",
+
+  'pataliputra-assembly-buddhist-canon':
+    "Pre-Pataliputra Buddhist monastic discipline had been transmitted orally with regional variation. The Pataliputra council (~250 BC, sponsored by Ashoka) gathered monks across Mauryan India to standardize the Vinaya (monastic code) and the Sutta canon. The first sustained-scale Buddhist textual standardization. Sent missions to Sri Lanka (Mahinda) and the Hellenistic world. Theravada Buddhism's Pali Canon, codified at the Fourth Council in Sri Lanka (~29 BC), traces back to the Pataliputra textual programme.",
+
+  'lex-fufia-caninia':
+    "Roman testators had been freeing dozens of slaves at death — gestures of generosity but a steady drain on family estates. The lex Fufia Caninia (2 BC, under Augustus) capped testamentary manumission at proportions of the estate (e.g., a testator with 10 slaves could free at most half). The first sustained legal cap on individual testamentary freedom. Augustus's broader social legislation (lex Iulia on adultery, lex Papia Poppaea on marriage) addressed similar concerns about elite household composition.",
+
+  'lex-papia-poppaea':
+    "Roman elite had been declining demographically — late marriage, low fertility, high celibacy. Augustus's lex Papia Poppaea (9 AD, named for that year's consuls) created legal incentives to marry and have children: tax preferences for parents, restrictions on inheritance for the unmarried and childless, accelerated political careers for parents. The first sustained legal pronatalist policy. Christian-era moral writers preserved the legislation as antecedent to medieval European pronatal law.",
+
+  'kautilyas-arthashastra':
+    "Pre-Arthashastra Indian statecraft had been transmitted as oral tradition or scattered religious-legal texts. The Arthashastra (compiled into surviving form by ~300 AD, drawing on much older Mauryan-era material attributed to Kautilya, ~300 BC) is a 6,000-verse manual of statecraft, economics, military strategy, and law — closer in scope to Machiavelli plus Adam Smith plus Sun Tzu. The first sustained South Asian treatise on the art of governance. Rediscovered in 1905 manuscripts; modern scholarship treats it as the most comprehensive single source on Mauryan administration.",
+
+  'constitutio-antoniniana-grants-citizenship':
+    "Pre-Caracalla Roman citizenship had been a privileged legal status extended gradually for two centuries. Caracalla's Constitutio Antoniniana (212 AD) granted Roman citizenship to nearly all free inhabitants of the empire — perhaps 30 million people overnight. Imperial subjecthood and citizenship merged. Tax revenue jumped. The legal distinction that had organized Roman society dissolved into a uniform imperial subject — an inflection point on the road to the late-Empire bureaucratic state.",
+
+  'theodosian-code-promulgated':
+    "Pre-Theodosian Roman imperial constitutions had accumulated as a sprawl of edicts, rescripts, and senatusconsulta over four centuries. The Theodosian Code (438 AD, compiled under Theodosius II) collected the imperial constitutions from Constantine onward into 16 books organized by subject. The first sustained-scale Roman legal codification. Survived the Western Empire's collapse; influenced the Visigothic Code (Lex Romana Visigothorum, 506 AD) and later Justinian's Corpus Juris Civilis (529-534 AD).",
+
+  'corpus-juris-civilis-published':
+    "Theodosian (438) had codified imperial constitutions but left juristic writing scattered. Justinian's Corpus Juris Civilis (529-534, compiled by Tribonian's commission) integrated the lot — Code (imperial enactments), Digest (juristic opinions), Institutes (teaching text), Novels (Justinian's own laws). The most comprehensive Roman legal codification ever produced. Lost to the West for 500 years; rediscovered at Bologna in the 11th century. Foundation of every civil-law legal system from medieval Europe to modern Continental codes.",
+
+  'magna-carta-signed':
+    "Same Magna Carta event, alternate ID. King John, facing baronial revolt and the loss of Normandy, sealed Magna Carta on June 15, 1215 at Runnymede. Sixty-three clauses limiting royal power. The first sustained English written constitution. Reissued 1216, 1217, 1225, then enrolled on the statute roll in 1297. Habeas corpus, due process, and the entire common-law constitutional tradition descend from Magna Carta.",
+
+  'magna-carta-clause-40':
+    "Magna Carta's most enduringly cited clause: 'To no one will we sell, to no one will we deny or delay right or justice.' Clause 40 (1215) is the textual root of the right to a fair and timely trial. The first sustained explicit promise of impartial justice in any Western legal document. Cited in subsequent English statutes for centuries. The US Sixth Amendment's right to a 'speedy and public trial' is Clause 40's direct descendant.",
+
+  'magna-carta-1215-clause-61':
+    "Magna Carta would have been worthless without enforcement. Clause 61 (1215) created a council of 25 barons empowered to constrain the king if he violated the charter — including by force. The first sustained legal mechanism for popular enforcement against a sovereign. King John repudiated Clause 61 within months and the council fell into abeyance, but the principle survived. Modern parliamentary government and constitutional review descend from this medieval enforcement provision.",
+
+  'magna-carta-1215-clause-22':
+    "Pre-Magna-Carta the English crown had seized church property and clerical revenues at will — leading to recurring conflicts (Becket, the Investiture Controversy). Clause 22 (1215) and the related ecclesiastical clauses promised church autonomy and freedom from royal interference. The first sustained legal guarantee of church-state separation in English law. Influenced subsequent English ecclesiastical law and the broader Western development of legally separated jurisdictions.",
+
+  'sachsenspiegel-compiled':
+    "German customary law had been transmitted orally and only in Latin scholastic glosses. Eike of Repgow's Sachsenspiegel (1220-1235) compiled Saxon customary law in Middle Low German — the language ordinary people spoke, with prose and verse parallel sections. The first sustained vernacular law book in Germany. Used as reference law in eastern German lands until the 1900 BGB code. Influenced subsequent vernacular law codifications (the Schwabenspiegel for southern Germany, the Sachsenspiegel-derived codes in Eastern Europe).",
+
+  'statute-of-westminster-1275':
+    "Pre-1275 English statute law had been a sprawl of medieval royal decrees and customary practice. The Statute of Westminster I (1275, under Edward I) consolidated 51 chapters of legal reform — protections for serfs against extralegal exactions, regulation of weights and measures, limits on royal officials. The first sustained English statutory codification. Subsequent statutes of Westminster II (1285) and III (1290) extended the project. Modern English statute law's continuous chain begins here.",
+
+  'treaty-of-tordesillas':
+    "Christopher Columbus's 1492 voyage had reopened the question of who owned newly discovered lands. The Treaty of Tordesillas (June 7, 1494, mediated by Pope Alexander VI) divided the world outside Europe between Portugal and Spain along a meridian 370 leagues west of the Cape Verde islands. The first sustained large-scale treaty allocating sovereignty over lands neither party had visited. Set the colonial map of South America, gave Brazil to Portugal, and influenced subsequent European colonial-claim diplomacy for two centuries.",
+
+  'ordinance-of-villers-cotterets':
+    "Pre-Villers-Cotterêts French legal documents had been in Latin — inaccessible to most subjects. The Ordinance of Villers-Cotterêts (August 10, 1539, signed by Francis I) mandated French in all legal proceedings and notarized documents. The first sustained European royal language policy. Made French the legal-administrative language of France; suppressed regional languages (Occitan, Breton). Modern French linguistic dominance and the centralized French state structure both descend from this 1539 ordinance.",
+
+  'peace-of-augsburg':
+    "The Reformation (1517 onward) had split the Holy Roman Empire between Catholic and Lutheran territories. Charles V's Schmalkaldic War (1546-47) had failed to reunify by force. The Peace of Augsburg (September 25, 1555) established cuius regio, eius religio — each German prince could choose Catholicism or Lutheranism for their territory, subjects had to follow or emigrate. The first sustained legal recognition of religious pluralism in early-modern Europe. Imperfect (excluded Calvinism, fell apart in the Thirty Years' War) but a watershed.",
+
+  'edict-of-nantes':
+    "France had spent forty years in religious civil war between Catholics and Huguenots (Protestants) — the St. Bartholomew's Day Massacre (1572) was the bloodiest single event. Henry IV's Edict of Nantes (April 1598, after his own conversion to Catholicism) granted Huguenots civil rights, religious toleration, and certain fortified towns. The first sustained-scale Catholic-monarch-legalized Protestant practice in Europe. Revoked in 1685 by Louis XIV (Edict of Fontainebleau), causing massive Huguenot emigration that benefited Prussia, the Netherlands, and the British colonies.",
+
+  'dutch-east-india-company-charter':
+    "Pre-VOC overseas trade had been single-voyage partnerships — capital pooled for one ship's voyage, dissolved on return. The Dutch East India Company charter (March 20, 1602) created a permanent joint-stock company with transferable shares, limited liability, and a 21-year monopoly on Asian trade. The first sustained-scale modern corporation. Funded armies, established colonies, paid dividends for two centuries. The Amsterdam Stock Exchange (1611) was created to trade VOC shares. Modern corporate law and capital markets descend from the VOC charter.",
+
+  'petition-of-right':
+    "Charles I had been imprisoning subjects without stated cause and levying taxes without parliamentary consent — direct violation of medieval English constitutional tradition. The Petition of Right (June 7, 1628, after Coke's leadership in Parliament) prohibited imprisonment without cause shown, forced loans, billeting of soldiers in private homes, and martial law in peacetime. Charles assented under fiscal pressure he couldn't escape. The first sustained legislative reassertion of medieval constitutional limits in early-modern England. Habeas corpus moved from custom to enforceable law.",
+
+  'peace-of-westphalia':
+    "The Thirty Years' War (1618-1648) had killed roughly a third of central Europe over which version of Christianity was authoritative. The Peace of Westphalia (October 1648, two simultaneous treaties at Münster and Osnabrück) recognized 300+ European polities as sovereign states — equal in international law, free from external interference in internal matters, religious settlements final. The first sustained articulation of the modern sovereign state system. Modern international law treats Westphalia as the founding moment of the state-as-actor framework.",
+
+  'navigation-acts':
+    "English colonial trade in the early 17th century had been carried mostly by Dutch ships. The Navigation Acts (1651, then expanded 1660 onward) required English colonial trade to use English-flagged vessels with English crews — and certain enumerated commodities (sugar, tobacco) to ship only to England. The first sustained mercantilist trade law. Fueled three Anglo-Dutch wars and helped grow the English merchant marine into a dominant force. Eventually became a flashpoint of American grievance leading to the Revolution.",
+
+  'english-bill-of-rights-1689':
+    "The Glorious Revolution (1688) had replaced James II with William and Mary by parliamentary invitation. The Bill of Rights (December 1689) formalized the settlement: parliamentary supremacy, free elections, free speech in Parliament, no excessive bail, no standing army in peacetime without Parliamentary consent. The first sustained constitutional document of modern England. The American Bill of Rights (1791) is modeled directly on it — 'cruel and unusual punishment,' the right to bear arms, free speech provisions all trace back here.",
+
+  'peace-of-utrecht':
+    "The War of the Spanish Succession (1701-1714) had nearly handed France a continental hegemony through Bourbon control of both Spain and France. The Peace of Utrecht (April 1713, multiple treaties) split the Spanish inheritance: Philip V kept Spain and the colonies but forfeited any French succession claim; Britain took Gibraltar, Minorca, Hudson Bay, and Newfoundland. The first sustained articulation of the European balance-of-power principle as explicit treaty doctrine. The 18th-century European state system ran on Utrecht-style coalition politics.",
+
+  'french-revolutionary-land-reform':
+    "Pre-1789 France had been organized around feudal land tenure — seigneurial dues, hunting rights, banalités on mills and ovens. The night of August 4, 1789 (in the National Constituent Assembly) abolished the feudal system entirely. Land became fully alienable; peasants gained legal ownership of plots they had worked. The first sustained-scale legal abolition of feudalism in continental Europe. Napoleon's Civil Code (1804) institutionalized the new property regime. Modern continental property law dates from this single midnight session.",
+
+  'judiciary-act-of-1789':
+    "The US Constitution (1787) had created a Supreme Court and authorized Congress to establish lower federal courts but hadn't done so. The Judiciary Act of 1789 (signed September 24, 1789) created district courts, circuit courts, and the office of Attorney General. Federal law enforcement against state interpositions became practical. Marbury v. Madison (1803) — the foundational case of judicial review — turned on Section 13 of the Judiciary Act. Modern US federal courts trace their entire institutional structure to the 1789 Act.",
 };
 
 async function main(){
