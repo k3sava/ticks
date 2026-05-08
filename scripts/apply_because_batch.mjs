@@ -730,6 +730,81 @@ const BECAUSE_BATCH = {
 
   'roman-limitanei-and-comitatenses-system':
     "Earlier Roman military doctrine (Augustus through Severus) had stationed legions at the frontier, expecting them to defend in place. Diocletian's reforms (~290 AD), expanded under Constantine, split the army into limitanei (frontier garrisons) and comitatenses (mobile field armies that could redeploy to threats from the interior). The first defense-in-depth strategy at empire scale. Byzantine military doctrine, Carolingian house troops, and many subsequent regimes echoed the structure.",
+
+  'mongol-horse-archer-tactics':
+    "Steppe peoples had used mounted archery for centuries — Scythians, Parthians, Huns. Genghis Khan's Mongol army (1206 onward) industrialized the model: every warrior with three or four horses, sustained 100-mile-per-day movement, integrated yam relay communications, feigned retreats that pulled disciplined infantry out of formation. The first standing army where mobility and ranged fire were the doctrine, not exceptions. The Mongols conquered the largest contiguous land empire in history within Genghis's lifetime.",
+
+  'soviet-t-64-tank':
+    "Cold War tanks (M60, T-55) had bolted thicker steel onto the same basic 1940s chassis. The Soviet T-64 (entered service 1963) combined three innovations in one platform: composite armor (steel-glass-steel sandwich), an autoloader replacing the human loader (cutting crew from four to three), and a 125mm smoothbore gun firing APFSDS rounds. The first true main battle tank to achieve all three. Western tank designers spent the 1970s catching up — the M1 Abrams (1980) is the Western answer to the T-64.",
+
+  'us-federal-reserve-established':
+    "US banking panics in the late nineteenth century (1873, 1893, 1907) had each required private rescue (J.P. Morgan personally backstopped 1907). The Aldrich-Vreeland Act (1908) was a stopgap; the Federal Reserve Act (December 1913) created an actual central bank: twelve regional reserve banks coordinated by a Washington board, lender of last resort to commercial banks, currency-issuing authority. The Great Depression (1929-39) tested the design and found it inadequate; the modern Fed evolved through the 1930s reforms. The institutional substrate of US monetary policy is now Fed-shaped.",
+
+  'nylon-dupont':
+    "Pre-1935 strong fibers had been biological — silk, cotton, wool, linen — with the supply constraints of agriculture. Wallace Carothers's DuPont team (1935) synthesized polyamide-6,6 by polycondensation of hexamethylenediamine and adipic acid. Nylon stockings (1939) were the consumer launch; military parachutes and ropes were the wartime use. The first fully-synthetic high-strength fiber. Polyester, polyethylene, polypropylene, Kevlar all follow the same template — engineered polymers with engineered properties.",
+
+  'maslows-hierarchy-of-needs':
+    "Behaviorism (1913) had treated human motivation as response to drives — hunger, thirst, pain, pleasure. Maslow's 1943 paper 'A Theory of Human Motivation' proposed a hierarchy: physiological needs at the base, then safety, belonging, esteem, and self-actualization at the apex. Higher needs only emerge once lower ones are met. The pyramid is a postwar pop-culture infographic that Maslow himself never drew. Restructured product design, HR practice, and management theory around hierarchical motivation.",
+
+  'visicalc-spreadsheet':
+    "Pre-VisiCalc spreadsheets had been paper grids that took hours to recalculate when an input changed. Dan Bricklin and Bob Frankston's VisiCalc (1979, on the Apple II) recalculated automatically — change one cell, the whole sheet updated. Apple II sales doubled. The first 'killer app' that made personal computing economically rational for businesses. Lotus 1-2-3 (IBM PC, 1983) and Excel (Mac, 1985) inherited the model; spreadsheets remain the most-used computing application after web browsing.",
+
+  'system-1-system-2-kahneman-formalized':
+    "Dual-process theories had circulated in cognitive psychology since the 1970s — Wason and Evans, Stanovich and West. Kahneman's Thinking, Fast and Slow (2011) packaged the research for the public: System 1 is fast, intuitive, pattern-based, effortless; System 2 is slow, deliberative, effortful, capacity-limited. The framework's empirical specifics are debated. Its conceptual frame entered behavioral economics, public policy, design, and the way ordinary people talk about their own thinking.",
+
+  'gpt-4-multimodality-frontier-model-capabilities':
+    "GPT-3 (2020) had been text-only. GPT-4 (March 2023) accepted images as input — interpreting graphs, screenshots, math problems, and physical scenes. Capability across professional benchmarks crossed graduate-student level in many domains. The conversation in industry shifted from 'can AI do this?' to 'how do we integrate AI that already can?' API access at consumer prices made the question practical. The frontier model became infrastructure within months.",
+
+  'facebooks-news-feed-algorithmic-social-curation':
+    "MySpace (2003) and early Facebook had presented friends' updates chronologically. Facebook's News Feed (September 2006) replaced the chronology with an algorithm predicting per-user engagement. Outcry was loud, opt-out demand strong, but the engagement metrics jumped and the feature stayed. Twitter (2016), Instagram (2016), and TikTok (2018) all moved to algorithmic feeds. The default information environment for billions of people became predictively curated rather than user-controlled.",
+
+  'global-financial-crisis-shadow-banking-collapse':
+    "Securitization (since the 1980s) had let mortgage originators pass loan risk to the broader market. Mortgage-backed securities, CDOs, and CDO-squareds (2002-2007) layered the risk into instruments rated AAA by the same agencies the issuers paid. The collapse of Lehman Brothers (September 2008) revealed the connections: the shadow banking system — money-market funds, repo, hedge-fund leverage — held more risk than the regulated system. The Treasury and Fed extended unlimited liquidity. The financial regulatory system that emerged (Dodd-Frank 2010, Basel III 2010-13) is the answer to that revealed connection map.",
+
+  'international-red-cross-transnational-humanitarianism':
+    "Humanitarian aid pre-1863 had been bounded by nationality or religious affiliation — Christian nations cared for Christian wounded, Ottomans for Ottomans. Henri Dunant's witness at Solferino (1859) and his organization of Red Cross national societies (1863) established a different principle: humanitarian assistance as transnational, neutral, providing aid to wounded combatants regardless of which side they fought on. The first sustained transnational humanitarian organization. Médecins Sans Frontières (1971) and the modern NGO architecture inherit the structure.",
+
+  'prohibition-moral-legislation-and-unintended-consequences':
+    "The temperance movement (Anti-Saloon League, founded 1893) had organized Protestant Americans against alcohol for decades. The 18th Amendment (ratified January 1919) and the Volstead Act (October 1919) banned the manufacture and sale of alcohol in the US. Bootlegging, organized crime (Al Capone in Chicago, the Genovese family in New York), corruption of police and courts, and rising public contempt for federal law followed. The 21st Amendment (December 1933) repealed Prohibition. The first major demonstration that a modern democratic state cannot regulate widespread cultural practice through legislation alone.",
+
+  'state-of-israel-established-jewish-homeland':
+    "Theodor Herzl's Der Judenstaat (1896) and the First Zionist Congress (1897) had organized political Zionism. The Balfour Declaration (1917), British Mandate (1922-48), and the Holocaust (1941-45) made the project urgent and the case unanswerable. UN Resolution 181 (November 1947) partitioned the British Mandate into Jewish and Arab states. Israel declared independence on May 14, 1948. The first Jewish state in two thousand years. The simultaneous Palestinian dispossession (the Nakba) and the wars that followed are the unresolved counterpart of the founding.",
+
+  'stonewall-inn-riots-gay-liberation':
+    "Pre-Stonewall gay activism (the Mattachine Society, 1950; Daughters of Bilitis, 1955) had argued for tolerance from the closet. Routine police raids on gay bars in New York were standard. The Stonewall Inn raid (June 28, 1969) met sustained resistance — patrons and crowd fought back over six nights. The first Gay Pride march followed in 1970. The closet ceased to be the default mode. Modern gay-rights advocacy and the eventual march to Obergefell v. Hodges (2015) trace their organizational origin to Stonewall.",
+
+  'maslows-hierarchy-motivation-theory':
+    "Behaviorism had reduced human motivation to drives and reinforcement schedules. Freud had emphasized libido and aggression. Maslow's 1943 'A Theory of Human Motivation' (in Psychological Review) proposed something more ordered: physiological needs at the base, then safety, belonging, esteem, and self-actualization at the apex. Higher needs only emerge when lower ones are met. The 'hierarchy of needs' frame became HR-and-management common sense. Empirically: better as a heuristic than a strict layering.",
+
+  'bolshevik-revolution-soviet-state':
+    "WWI (1914-17) had broken the Tsarist economy and the army's discipline. The February Revolution (March 1917) replaced the Tsar with a Provisional Government that kept Russia in the war. Lenin returned from Swiss exile (April 1917, via German train) and moved the Bolsheviks toward armed insurrection. October 25, 1917 (Old Style): the Winter Palace seized, Lenin's government installed. The world's first self-described communist state. Whatever the trajectory of the next 74 years, October 1917 set the political agenda of the twentieth century.",
+
+  'montgomery-bus-boycott-civil-rights-movement':
+    "Brown v. Board (May 1954) had made segregated education unconstitutional in principle. Implementation was slow. Rosa Parks's arrest on December 1, 1955 (coordinated with the local NAACP) launched a 381-day boycott of Montgomery's bus system. Black ridership was 75% of the customer base; the bus company nearly went bankrupt. Browder v. Gayle (December 1956) ended bus segregation in Montgomery. Martin Luther King Jr. became a national figure. The Civil Rights Movement's modern phase begins here.",
+
+  'woodstock-counterculture-as-mainstream':
+    "Mid-1960s youth culture — civil rights, anti-war, free love, psychedelics — had been a contested subset of American identity. Woodstock (August 15-18, 1969, Bethel NY) drew 400,000 attendees to a dairy farm for three days of music, peaceful coexistence, and almost no police presence. The Newsweek and Life cover stories crystallized a generational identity. The counterculture became mainstream culture — at least as a marketing target. The Altamont Free Concert (December 1969) and the violence at the Hells Angels-managed security suggested the limits of the model.",
+
+  'terror-management-theory-becker-greenberg':
+    "Cultural anthropology had treated culture as adaptive or aesthetic. Ernest Becker's Pulitzer-winning Denial of Death (1973) argued that culture is fundamentally a response to mortality awareness — we build symbolic immortality projects to deny our biological end. Greenberg, Pyszczynski, and Solomon (from 1986) operationalized the claim experimentally: subjects reminded of their mortality (mortality-salience manipulation) defend their cultural worldview more strongly. One of the most replicated paradigms in social psychology.",
+
+  'alphafold-3-all-biomolecule-structure-prediction':
+    "AlphaFold 2 (2021) had solved protein structure prediction at near-experimental accuracy. AlphaFold 3 (May 2024, Google DeepMind) extended the same diffusion-based approach to all biological molecules — DNA, RNA, small-molecule ligands, post-translational modifications, and their interactions with proteins. Drug discovery's structural-biology bottleneck — predicting how a drug binds its target — moved from experimental to computational. The 2024 Nobel in Chemistry (jointly to Hassabis, Jumper, and David Baker) tracked the field's recognition.",
+
+  'gemini-1-5-1m-token-context-window':
+    "GPT-4 (March 2023) had topped out at 128,000 tokens. Anthropic's Claude 2 raised it to 100K, then 200K. Google's Gemini 1.5 Pro (February 2024) jumped to 1,000,000 tokens — about 750,000 words, or ten average novels. The first model that could ingest an entire codebase, a feature-length film transcript, or a year of corporate communications in one prompt. Long-context retrieval (RAG) workflows lost some of their necessity; the question of when to use long context vs. retrieval is now an architectural design choice.",
+
+  'ai-agents-autonomous-task-completion':
+    "ChatGPT (2022) and Claude 2 (2023) had been reactive — answer when asked, then wait. 2024 saw production-grade autonomous agents: Devin (March), AutoGPT-class loops, browser-use frameworks, the Anthropic Computer Use API (October), OpenAI's Operator (January 2025). Models could now browse the web, write and execute code, fill forms, and complete multi-step tasks without constant supervision. The agentic question — when can a model be trusted to act, not just answer? — became the practical AI deployment question of 2024-25.",
+
+  'claude-3-7-sonnet-hybrid-reasoning-models':
+    "OpenAI's o1 (September 2024) had introduced extended thinking as a separate model variant — one model for fast responses, another for deliberate reasoning. Anthropic's Claude 3.7 Sonnet (February 2025) integrated both modes into a single model with a user-controllable extended-thinking parameter. The fast/slow tradeoff that had been an architectural constraint became a runtime decision. The hybrid reasoning model is now the standard frontier-model shape — DeepSeek R1, Gemini 2.5, Claude 4 all follow the pattern.",
+
+  'zuse-z3':
+    "Babbage's Difference Engine (1822) and Analytical Engine (1837) had been mechanical and never completed at full scale. Howard Aiken's Mark I (1944) was electromechanical and required Harvard's resources. Konrad Zuse, working alone in his parents' Berlin apartment, completed the Z3 on May 12, 1941: 2,600 relays, 22-bit floating-point arithmetic, programs stored on punched film. The world's first working programmable digital computer. Destroyed in an Allied bombing raid in 1943; rediscovered after the war as having predated ENIAC and the Mark I.",
+
+  'bandura-bobo-doll-social-learning':
+    "Skinnerian behaviorism had explained learning through direct reinforcement — a behavior repeats because it was rewarded. Albert Bandura's Bobo doll experiments (1961-1963 at Stanford) showed children acquired novel aggressive behaviors by mere observation of adult models — no reinforcement involved, sometimes no opportunity to imitate until much later. The first hard evidence for social learning. Bandura's social cognitive theory and the concept of modeling are downstream — and so is much of educational and developmental psychology since.",
 };
 
 async function main(){
