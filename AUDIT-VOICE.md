@@ -1,17 +1,18 @@
 # Voice audit · because-text
 
-Generated 2026-05-07 from `data.json`. Flags entries containing recognizable AI-tic templates. Sorted by hit count desc, then by tick weight desc (highest-load-bearing first).
+Generated 2026-05-08 from `data.json`. Flags entries containing recognizable AI-tic templates. Sorted by hit count desc, then by tick weight desc (highest-load-bearing first).
 
 ## Summary
 
 - 2,648 ticks total
-- 1,400 carry a `because`
-- 11 flagged by at least one tic (0.8% of because-carriers)
+- 2,648 carry a `because`
+- 12 flagged by at least one tic (0.5% of because-carriers)
 
 ## Tic frequency
 
 - `for-next-n-years` (6): for the next N years
 - `list-of-three-clause` (5): three-clause sentence ending and X.
+- `transform` (1): transform
 
 ## Top 200 flagged entries (by hits desc, weight desc)
 
@@ -37,3 +38,5 @@ Generated 2026-05-07 from `data.json`. Flags entries containing recognizable AI-
   > Roget's Thesaurus (1852), the Baha'i faith (1844), Millerite apocalyptic disappointment (1844), and Mormon migration (1846) bracket a mid-19th-century moment of religious diversification and reorganization. Darwin's Origin of Species — publ…
 - `pottery-fired-clay` · **9,000 BC** · Pottery / fired clay _(weight 13, 1 tic: list-of-three-clause)_
   > Wheat domestication (10,000 BC), animal domestication (10,000 BC), Pre-Pottery Neolithic A granaries (9500 BC), and the Neolithic founder crop package (9500 BC) mark when agriculture was committing humans to settled life with year-round foo…
+- `dna-structure-enables-crop-genetic-improvement` · **1953 AD** · DNA double helix (Watson, Crick, Franklin) _(weight 11, 1 tic: transform)_
+  > Mendel's pea-plant inheritance (1866) had been rediscovered around 1900. Avery's transforming principle (1944) showed DNA was the genetic material. Watson and Crick's 1953 paper, built on Rosalind Franklin's X-ray crystallography (Photo 51)…
