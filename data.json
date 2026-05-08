@@ -1162,7 +1162,7 @@
         }
       ],
       "_origZone": "medieval",
-      "because": "The Silk Road's opening by Zhang Qian (138 BC) had begun trans-Eurasian exchange of goods and ideas. The Phoenician maritime trade network (1000 BC) demonstrated long-distance Mediterranean commerce. Tax farming in Islamic caliphates (700 AD) demanded sophisticated accounting. Arabic numerals — adapted from Brahmi via India — and the place-value zero are the cognitive prosthetic that makes Islamic accounting and astronomy possible. Europe adopts them via Fibonacci four centuries later."
+      "because": "The Silk Road's opening by Zhang Qian (138 BC) had begun trans-Eurasian exchange of goods and ideas. The Phoenician maritime trade network (1000 BC) demonstrated long-distance Mediterranean commerce. Tax farming in Islamic caliphates (700 AD) demanded sophisticated accounting. The Indian decimal numeral set, with the place-value zero formalized by Brahmagupta (628), reaches the Arabic-speaking world through the House of Wisdom translation movement and gives Islamic accounting and astronomy their cognitive prosthetic. Europe adopts the same numerals via Fibonacci four centuries later."
     },
     {
       "id": "algebra-al-khwarizmi",
@@ -12268,7 +12268,7 @@
         }
       ],
       "_origZone": "medieval-crisis",
-      "because": "Eyeglasses (1286) and the first recorded autopsy (1286) demonstrated that medical practice was institutionalizing in late-medieval Italy. The Black Death's arrival forces the operational answer — Ragusa and Venice impose forty-day isolation periods on arriving ships in 1377. The institutional concept of quarantine, durable enough that we still use it word for word."
+      "because": "Eyeglasses (1286) and the first recorded autopsy (1286) demonstrated that medical practice was institutionalizing in late-medieval Italy. The Black Death's arrival forces the operational answer — Ragusa imposes a thirty-day trentino on arriving ships in 1377; Venice extends it to a forty-day quarantino in the following decades. The Italian word stuck and the institutional concept of quarantine carried into modern public-health practice."
     },
     {
       "id": "crawford-long-first-use-of-ether-in-surgery",
@@ -16971,13 +16971,13 @@
     },
     {
       "id": "genghis-khans-yam-military-communications",
-      "year": "1200 AD",
-      "yearN": 1200,
+      "year": "1229 AD",
+      "yearN": 1229,
       "zone": "post-classical",
       "name": "Genghis Khan's Yam / military communications",
       "domain": "war",
       "constraint": "army command requiring the general's physical proximity",
-      "detail": "The Mongol Yam relay station system — fresh horses every 25 miles — enabled messages to travel 200 miles per day across the empire. Genghis Khan could command forces thousands of miles away with near-real-time coordination. The Yam was the world's first military telecommunications network. Every subsequent army's signal corps is a descendant.",
+      "detail": "The Mongol Yam relay station system — fresh horses every 25 miles — enabled messages to travel 200 miles per day across the empire. Started under Genghis Khan during his reign (1206-1227) and systematized by Ögedei after 1229. The Yam was the medieval world's most extensive military communications network. Every subsequent army's signal corps draws on the relay-station model.",
       "links": [
         {
           "label": "Silverstein — The Mongol Yām and its legacy (Cambridge)",
@@ -16993,7 +16993,7 @@
         }
       ],
       "_origZone": "medieval",
-      "because": "Gunpowder weaponized (1000), the Crusades' military religious orders (1095), and crossbow proliferation in Europe (1000) demonstrated that medieval-era military innovation was systematizing. The Mongol Yam relay system — fresh horses every twenty-five miles, messengers covering hundreds of miles per day — gives Genghis Khan unprecedented battlefield intelligence and command coordination. The Mongol conquests' speed depends on this communications infrastructure."
+      "because": "Mongol horse-archer tactics (1206) and crossbow proliferation in Europe (1000) had demonstrated that medieval military range was outpacing command range. Genghis Khan organized the Yam during his reign (1206-1227) and Ögedei systematized it after 1229 — fresh horses every twenty-five miles, messengers covering hundreds of miles per day. Battlefield intelligence and command coordination across continents, the speed on which Mongol expansion depended."
     },
     {
       "id": "musket-warfare-drill-and-volley-fire",
@@ -19381,7 +19381,7 @@
         }
       ],
       "_origZone": "medieval-crisis",
-      "because": "Gutenberg's printing press (1440) was the mechanical breakthrough; movable type (1440) was the typographic one. The Bible was the proof — produced in fifty copies in the time monks would have copied one, identical to the page. By 1500 fifteen million books were in circulation across Europe. Reformation, scientific revolution, and mass literacy follow because text reproduction stops being the bottleneck."
+      "because": "Gutenberg's printing press (1440) was the mechanical breakthrough; movable type (1440) was the typographic one. The Bible was the proof — about 180 copies produced in the time monks would have copied one, identical to the page. By 1500 European presses had produced an estimated fifteen to twenty million printed books. Reformation, scientific revolution, and mass literacy follow because text reproduction stops being the bottleneck."
     },
     {
       "id": "johnsons-dictionary-lexicographic-authority",
@@ -28432,7 +28432,7 @@
           "url": "https://en.wikipedia.org/wiki/Kufic"
         }
       ],
-      "because": "Ptolemy's Optics (150 AD) and the Kama Sutra's compilation (200 AD) bracket the late classical world's interest in formalizing perception and ritual. Kufic script — angular, geometric, monumental — gave the early Arab world a calligraphic register suited to Quranic inscription, and turned the Quran's transcription into a sacred art form that calligraphers refined for the next thousand years."
+      "because": "Muhammad's Hijra (622) and the Uthmanic codex (~644-650) had given the early Islamic community a fixed consonantal text demanding worthy transcription. Kufic — angular, geometric, monumental — gave the early Arab world its first prestige calligraphic register, with letterforms designed for Quranic inscription on parchment and stone. Calligraphers refined the script for the next thousand years; Kufic's architectural use shaped Islamic ornament from Cordoba to Samarkand."
     },
     {
       "id": "umayyad-great-mosque-of-damascus",
@@ -28466,7 +28466,7 @@
           "url": "https://en.wikipedia.org/wiki/Book_of_Kells"
         }
       ],
-      "because": "The Kama Sutra (200 AD) and Kufic script (700 AD) bracket the late-antique-and-early-medieval period when scriptures and texts across Eurasia were being elevated through calligraphy and illumination. The Book of Kells — produced around 800 in an Irish monastic scriptorium — extended the same elevation to the Latin Gospels, with intricate Insular knotwork, zoomorphic letterforms, and whole-page miniatures, the masterpiece of Insular illumination."
+      "because": "The Lindisfarne Gospels (~715) and Kufic script in Qurans (~700) had shown that monastic and Quranic scriptoria could elevate sacred text into visual art. The Book of Kells — produced around 800 in a Columban scriptorium tied to Iona and Kells — extended that elevation to the Latin Gospels, with intricate Insular knotwork, zoomorphic letterforms, and whole-page miniatures. The masterpiece of Insular illumination."
     },
     {
       "id": "islamic-muqarnas-vaulting-alhambra",
@@ -38469,17 +38469,17 @@
       "year": "1215 AD",
       "yearN": 1215,
       "zone": "post-classical",
-      "name": "Magna Carta clause 22 protects church rights",
+      "name": "Magna Carta clause 22 limits amercement of clergy",
       "domain": "law",
-      "constraint": "before, church property and rights could be seized by the crown without legal protection",
-      "detail": "Magna Carta was sealed by King John on 15 June 1215, promising protection of church rights. This dissolved the constraint of unchecked royal seizure of ecclesiastical assets, ensuring the church's legal autonomy. The charter also limited feudal payments and illegal imprisonment, though it was soon annulled by the Pope.",
+      "constraint": "royal courts amercing clergy on the basis of their ecclesiastical benefices rather than lay holdings",
+      "detail": "Magna Carta clause 22 (1215) provided that no clergyman should be amerced for his lay tenement except in proportion to the size of his lay holding, not according to his ecclesiastical benefice. A narrow fiscal protection that kept royal fines out of church revenues. Clause 1 of the same charter carried the broader 'Anglicana ecclesia libera sit' guarantee.",
       "links": [
         {
-          "label": "Wikipedia: Magna Carta clause 22 protects church rights",
+          "label": "Wikipedia: Magna Carta",
           "url": "https://en.wikipedia.org/wiki/Magna_Carta"
         }
       ],
-      "because": "Pre-Magna-Carta the English crown had seized church property and clerical revenues at will — leading to recurring conflicts (Becket, the Investiture Controversy). Clause 22 (1215) and the related ecclesiastical clauses promised church autonomy and freedom from royal interference. The first sustained legal guarantee of church-state separation in English law. Influenced subsequent English ecclesiastical law and the broader Western development of legally separated jurisdictions."
+      "because": "English royal courts had been amercing clergy on the basis of their ecclesiastical benefices, treating church revenues as taxable like lay property. Clause 22 of Magna Carta (1215) capped clerical amercement at the value of the cleric's lay holdings only. A narrow fiscal carve-out that kept the crown's reach out of church revenue. The broader church-freedom guarantee sits in clause 1 of the same charter."
     },
     {
       "id": "sachsenspiegel-compiled",

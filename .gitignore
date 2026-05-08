@@ -2,5 +2,6 @@
 .preview/
 .local/
 .claude/
+.tmp-scan/
 data.json.bak
 data.json.pre-voice-fix.bak
