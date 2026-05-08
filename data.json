@@ -31705,7 +31705,8 @@
           "label": "Wikipedia: Potter's wheel (tournette)",
           "url": "https://en.wikipedia.org/wiki/Potter%27s_wheel"
         }
-      ]
+      ],
+      "because": "Pre-wheel pottery had been hand-built — slow, asymmetric, low-throughput. The slow tournette (~3500 BC, in Mesopotamia and the Indus) and later the kinetic potter's wheel let a potter throw symmetric vessels in minutes. Pottery output per craftsman jumped tenfold or more. Standard vessel volumes became measurable units of trade (the Sumerian sila ≈ 1L). Mass-produced fired pottery as a commodity begins here."
     },
     {
       "id": "invention-of-the-wheel",
@@ -31721,7 +31722,8 @@
           "label": "Wikipedia: Wheel",
           "url": "https://en.wikipedia.org/wiki/Wheel"
         }
-      ]
+      ],
+      "because": "Pre-wheel land transport had been muscle-powered: humans carrying, oxen dragging sleds, river barges where rivers existed. The solid wooden disk wheel (~3500 BC, Bronocice culture in Poland and the Sumerian wheeled chariots) reduced friction by an order of magnitude. Carts and wagons carrying multi-ton loads became practical with one or two oxen. Bronze Age trade routes, military logistics, and urban supply chains all depend on the wheel."
     },
     {
       "id": "first-use-of-bronze",
@@ -31754,7 +31756,8 @@
           "label": "Wikipedia: Sumerian writing system",
           "url": "https://en.wikipedia.org/wiki/Sumerian_language"
         }
-      ]
+      ],
+      "because": "Pre-Sumerian Mesopotamian record-keeping had been clay tokens enclosed in bullae. Sumerian writing (~3100 BC, evolving from proto-cuneiform) extended the system into a full syntactic language — not just nouns and numbers but verbs, modifiers, grammatical markers. The first writing system that could record the same range of ideas as speech. Akkadian, then later Mesopotamian dialects, all used the same cuneiform infrastructure. Lasted as a working script for 3,000 years before alphabetic systems displaced it."
     },
     {
       "id": "egyptian-hieroglyphic-numeral-system",
@@ -31770,7 +31773,8 @@
           "label": "Wikipedia: Egyptian hieroglyphic numeral system",
           "url": "https://en.wikipedia.org/wiki/Egyptian_numerals"
         }
-      ]
+      ],
+      "because": "Pre-Egyptian numeration had been tally marks on bone (Lebombo, Ishango). Egyptian hieroglyphic numerals (~3000 BC) used distinct signs for 1, 10, 100, 1,000, 10,000, 100,000, and 1,000,000 — a base-10 additive system that could represent arbitrarily large numbers. The first systematic numeration with explicit place values. Egyptian state record-keeping (taxation, granary inventories, pharaonic monumental construction) all depended on the new numeric infrastructure."
     },
     {
       "id": "abacus",
@@ -31852,7 +31856,8 @@
           "label": "Wikipedia: Egyptian non-standard hieroglyphs as cipher",
           "url": "https://en.wikipedia.org/wiki/Cipher"
         }
-      ]
+      ],
+      "because": "Hieroglyphic writing had been public and uniform. Some Old Kingdom and Middle Kingdom Egyptian inscriptions (~1900 BC, especially in tomb texts) used unusual hieroglyph variants and replaced common signs with rare ones — a simple cipher to obscure ritual or secret content. The first known use of cryptographic substitution. Caesar's cipher (1st century BC) and the entire history of pre-modern cryptography descend conceptually from these Egyptian non-standard substitutions."
     },
     {
       "id": "babylonian-world-map",
@@ -31884,7 +31889,8 @@
           "label": "Wikipedia: Thales predicts solar eclipse",
           "url": "https://en.wikipedia.org/wiki/Thales_of_Miletus"
         }
-      ]
+      ],
+      "because": "Eclipses had been omens — divine messages requiring interpretation. Babylonian astronomers had recorded eclipse cycles for centuries, and the Saros cycle (~18-year period) gave coarse predictability. Thales of Miletus's prediction of the May 28, 585 BC eclipse, which interrupted the Battle of Halys between the Lydians and the Medes, demonstrated naturalistic prediction in public. The first major celestial event predicted in the Greek tradition. Greek natural philosophy as an empirical project takes Thales as its starting point."
     },
     {
       "id": "heraclitus-flux-doctrine",
@@ -31900,7 +31906,8 @@
           "label": "Wikipedia: Heraclitus' flux doctrine",
           "url": "https://en.wikipedia.org/wiki/Heraclitus"
         }
-      ]
+      ],
+      "because": "Pre-Heraclitean Greek philosophy had assumed underlying being beneath surface change. Heraclitus of Ephesus (~500 BC, in the lost work On Nature) reversed it: 'all things flow,' 'no man steps in the same river twice,' the cosmos is fire constantly transforming. Change is fundamental, stability illusory. The first metaphysical position to make becoming primary. Hegel and the dialectical tradition, process philosophy (Whitehead), and modern complexity theory all draw on this Heraclitean root."
     },
     {
       "id": "parmenides-monism",
@@ -31916,7 +31923,8 @@
           "label": "Wikipedia: Parmenides' monism",
           "url": "https://en.wikipedia.org/wiki/Parmenides"
         }
-      ]
+      ],
+      "because": "Heraclitean flux had made change primary. Parmenides of Elea (~475 BC, in his philosophical poem On Nature) argued the opposite: change is logically impossible, what is must always have been, the cosmos is one timeless undivided being. The most extreme rationalist position in pre-Socratic thought. Plato's eternal forms and Aristotle's prime mover both grew out of Parmenidean monism. The Heraclitus-Parmenides axis frames Greek metaphysics for the next millennium."
     },
     {
       "id": "zenos-paradoxes",
@@ -31966,7 +31974,8 @@
           "label": "Wikipedia: Aristotle's systematic study of logic",
           "url": "https://en.wikipedia.org/wiki/Aristotle"
         }
-      ]
+      ],
+      "because": "Pre-Aristotelian reasoning had been valid case by case, but with no general theory. Aristotle's Prior Analytics (~350 BC) systematized formal deduction: the syllogism, the four figures, the modal logic, the rules of valid inference. The first formal logical system. Stayed essentially the canonical logic until Frege and Russell rebuilt the foundations in the late 19th century. Medieval scholastic theology, classical legal reasoning, and the early-modern scientific method all run on Aristotelian syllogistic."
     },
     {
       "id": "euclids-elements-axiomatic-geometry",
@@ -31999,7 +32008,8 @@
           "label": "Wikipedia: Roman road network",
           "url": "https://en.wikipedia.org/wiki/Roman_roads"
         }
-      ]
+      ],
+      "because": "Pre-Roman roads had been local trails — adequate for foot traffic, useless for army logistics or imperial communication. Rome's paved military roads (Via Appia from 312 BC, Via Aurelia from ~241 BC, eventually 400,000+ km of road across the empire) were cambered for drainage, paved with cut stone, and surveyed in straight lines. Marching armies covered 20+ miles a day; imperial mail (the cursus publicus) reached the frontier in days. The first sustained-scale long-distance transport infrastructure."
     },
     {
       "id": "ctesibius-water-clock",
@@ -32081,7 +32091,8 @@
           "label": "Wikipedia: Chinese crossbow trigger",
           "url": "https://en.wikipedia.org/wiki/Crossbow"
         }
-      ]
+      ],
+      "because": "Earlier ranged weapons (bow, atlatl) required the archer to hold tension and release in a single motion — physically demanding and limited in accuracy. The Chinese bronze crossbow trigger (~500-200 BC, mass-deployed by the Qin and Han) used a sear mechanism that held a drawn bowstring at full tension until released. A peasant conscript could use one effectively after weeks of training, vs. years for a longbow archer. The Han army's mass-deployed crossbows were a key factor in the unification of China and in the empire's frontier defense."
     },
     {
       "id": "roman-concrete",
@@ -32114,7 +32125,8 @@
           "label": "Wikipedia: Roman hand abacus",
           "url": "https://en.wikipedia.org/wiki/Roman_abacus"
         }
-      ]
+      ],
+      "because": "Pre-abacus Roman arithmetic on the cumbersome Roman numerals had been near-impossible without aids. The Roman hand abacus — a small bronze plate with grooves and beads, popular from the late Republic — let merchants, tax collectors, and engineers do quick base-10 calculations including fractions. Portable, fast, accurate. The first widely-used personal calculation device. Enabled commerce and bureaucracy at the scale Rome required. The Chinese suanpan and the Russian schoty are independent or descendant forms."
     },
     {
       "id": "ciceros-de-inventione",
@@ -32130,7 +32142,8 @@
           "label": "Wikipedia: Cicero's De Inventione",
           "url": "https://en.wikipedia.org/wiki/De_Inventione"
         }
-      ]
+      ],
+      "because": "Greek rhetoric had been an oral tradition with scattered training texts. Cicero's De Inventione (~80 BC), written in his teens, codified the five canons of rhetoric (invention, arrangement, style, memory, delivery) and the framework of issues, evidence, and argument that organized public speaking. The first comprehensive Latin rhetorical handbook. Standard textbook for medieval European education for fifteen centuries. The structure of every later persuasion-and-argument curriculum draws on Cicero's framework."
     },
     {
       "id": "roman-postal-system-cursus-publicus",
@@ -32162,7 +32175,8 @@
           "label": "Wikipedia: Heron's programmable puppet theater",
           "url": "https://en.wikipedia.org/wiki/Hero_of_Alexandria"
         }
-      ]
+      ],
+      "because": "Pre-Heron automata had been single-purpose: a moving statue, a self-pouring vessel. Hero of Alexandria's puppet theater (~62 AD, described in his Automatopoietica) used a rotating cylinder with pegs and weights to drive sequenced motion through multiple scenes — an entire short play performed mechanically. The first known programmable automaton. Music boxes, player pianos, and modern programmable mechanical devices descend conceptually from Hero's theater."
     },
     {
       "id": "herons-dioptra",
@@ -32178,7 +32192,8 @@
           "label": "Wikipedia: Heron's Dioptra",
           "url": "https://en.wikipedia.org/wiki/Dioptra"
         }
-      ]
+      ],
+      "because": "Surveying before Hero had been done with sighting rods and rope measurements — adequate for short distances, error-prone over long ones. Hero of Alexandria's Dioptra (~100 AD, in a treatise of the same name) was a precision sighting and measuring instrument: a horizontal disk with a sighting tube on a rotatable arm, calibrated for angle measurement. The first sustained-scale surveying instrument. Roman provincial surveying, later Islamic mapmaking, and Renaissance geometric surveying all used variants."
     },
     {
       "id": "ptolemys-geography",
@@ -32210,7 +32225,8 @@
           "label": "Wikipedia: Chinese abacus (suanpan) documented",
           "url": "https://en.wikipedia.org/wiki/Suanpan"
         }
-      ]
+      ],
+      "because": "Pre-suanpan Chinese arithmetic had used counting rods (suan zi) — accurate but slow. The Chinese suanpan (documented in Xu Yue's 190 AD work, with origins probably 2-3 centuries earlier) used a wooden frame with parallel rods of beads — two beads above the central beam, five below — for fast base-10 calculation. A trained operator was faster than a desk calculator until the 1950s. Standard Chinese-tradition computing device for two millennia. Still used in Japanese (soroban) and Korean training."
     },
     {
       "id": "indian-zero-as-placeholder",
@@ -32357,7 +32373,8 @@
           "label": "Wikipedia: Al-Khazini's Comprehensive Balance",
           "url": "https://en.wikipedia.org/wiki/Al-Khazini"
         }
-      ]
+      ],
+      "because": "Pre-Khazini balances had compared masses but couldn't measure densities precisely. Al-Khazini's Comprehensive Balance (1121 AD, described in his Book of the Balance of Wisdom) used five pans at calibrated lever points to measure the specific gravity of liquids, alloys, and precious metals to four decimal places. The most precise measurement instrument of the medieval Islamic world. Influenced later European scientific instruments through Latin and Hebrew translations of Islamic Arabic technical texts."
     },
     {
       "id": "al-jazari-reciprocating-pump",
@@ -32389,7 +32406,8 @@
           "label": "Wikipedia: Ibn al-Shatir's refined lunar model",
           "url": "https://en.wikipedia.org/wiki/Ibn_al-Shatir"
         }
-      ]
+      ],
+      "because": "Ptolemy's Almagest (150 AD) had used the equant — a mathematical construct that violated the principle of uniform circular motion — to fit lunar observations. Ibn al-Shatir of Damascus (~1350 AD) constructed a planetary model that eliminated the equant and used only uniformly-rotating circles, with better accuracy than Ptolemy. Mathematically equivalent in important respects to the model Copernicus would publish two centuries later. Whether Copernicus had access to Ibn al-Shatir's work is debated; the geometric overlap is substantial."
     },
     {
       "id": "al-qalasadi-algebraic-notation",
@@ -32405,7 +32423,8 @@
           "label": "Wikipedia: Al-Qalasadi's algebraic notation",
           "url": "https://en.wikipedia.org/wiki/Abu%27l-Hasan_ibn_Ali_al-Qalasadi"
         }
-      ]
+      ],
+      "because": "Al-Khwarizmi's algebra (820 AD) had been written entirely in prose — equations described in words. Al-Qalasadi (Andalusia, late 15th century, in al-Tabsira fi 'ilm al-hisab) used Arabic-letter abbreviations as algebraic symbols — wa for addition, illa for subtraction, ma'ad for equals. The first sustained symbolic algebra. European algebraic notation (Viète, Descartes) used the same conceptual move with different glyphs. Symbolic algebra dramatically reduced the cognitive overhead of working through equations."
     },
     {
       "id": "copernicus-heliocentric-model",
@@ -32438,7 +32457,8 @@
           "label": "Wikipedia: Napier publishes logarithm tables",
           "url": "https://en.wikipedia.org/wiki/Napierian_logarithm"
         }
-      ]
+      ],
+      "because": "Pre-logarithm multiplication of large numbers had required pen-and-paper algorithms taking minutes per problem. John Napier's Mirifici Logarithmorum Canonis Descriptio (1614) gave tables that converted multiplication into addition — look up two numbers' logarithms, add them, look up the antilog. Henry Briggs's base-10 logarithms (1617) made the system practical. The first computational accelerator before mechanical calculators. Astronomy, navigation, and engineering all sped up dramatically. Slide rules — analog log devices — remained standard engineering tools until pocket calculators (1972)."
     },
     {
       "id": "decimal-arithmetic-machine",
@@ -32454,7 +32474,8 @@
           "label": "Wikipedia: Schickard's calculating clock",
           "url": "https://en.wikipedia.org/wiki/Wilhelm_Schickard"
         }
-      ]
+      ],
+      "because": "Pre-Schickard mechanical calculation had been one operation at a time on simple devices (the abacus). Wilhelm Schickard's calculating clock (1623, designed for Kepler) integrated Napier's bones (rotating cylinders for multiplication) with a six-digit gear-driven adder. The first machine combining all four arithmetic operations mechanically. Lost to obscurity (Schickard's prototype burned in 1624 and the design was forgotten). Pascal (1642) and Leibniz (1673) built independently. Modern mechanical-calculator history backdates to Schickard."
     },
     {
       "id": "descartes-coordinate-geometry",
@@ -32470,7 +32491,8 @@
           "label": "Wikipedia: Descartes' coordinate geometry",
           "url": "https://en.wikipedia.org/wiki/Analytic_geometry"
         }
-      ]
+      ],
+      "because": "Greek geometry had treated curves visually; algebra had treated equations symbolically. The two were separate disciplines. Descartes's La Géométrie (1637, an appendix to his Discourse on Method) introduced the Cartesian coordinate system: every point in the plane gets a pair of numbers (x, y), every algebraic equation gets a corresponding curve. The first systematic translation between geometry and algebra. Newton's calculus, modern function theory, and every subsequent mathematical-physical model run on Cartesian coordinates."
     },
     {
       "id": "pascaline",
@@ -32486,7 +32508,8 @@
           "label": "Wikipedia: Pascaline",
           "url": "https://en.wikipedia.org/wiki/Pascaline"
         }
-      ]
+      ],
+      "because": "Pre-Pascaline arithmetic had required either pen-and-paper algorithms or training on the abacus. Blaise Pascal's Pascaline (1642, designed to help his tax-collector father) was a portable mechanical calculator with eight-digit input — addition direct, subtraction by complement, multiplication by repeated addition. About 20 surviving examples; Pascal sold around 50. The first commercially-marketed calculating machine. Pascal stopped production after a decade because of repair costs, but the architecture (chained gear-wheels with carry mechanism) ran in calculators until the electronic 1960s."
     },
     {
       "id": "pascals-probability-theory",
@@ -32553,7 +32576,8 @@
           "label": "Wikipedia: Newton's Principia Mathematica",
           "url": "https://en.wikipedia.org/wiki/Philosophi%C3%A6_Naturalis_Principia_Mathematica"
         }
-      ]
+      ],
+      "because": "Pre-Newtonian physics had explained terrestrial motion (Galileo) and celestial motion (Kepler) with separate principles. Newton's Philosophiæ Naturalis Principia Mathematica (1687, three books published over four years) proved that the same three laws of motion and the same inverse-square gravity governed both — the moon falling toward Earth follows the same equation as an apple falling from a tree. The first unified mathematical theory of physics. Held as the foundational physics until Einstein's general relativity (1915), and still adequate for almost every engineering problem."
     },
     {
       "id": "mechanical-multiplication-machine",
@@ -32569,7 +32593,8 @@
           "label": "Wikipedia: Leibniz's stepped reckoner",
           "url": "https://en.wikipedia.org/wiki/Stepped_reckoner"
         }
-      ]
+      ],
+      "because": "Pascal's Pascaline (1642) had handled addition and subtraction. Multiplication had been by repeated addition — slow. Leibniz's stepped reckoner (1673, refined to working form 1694) used his eponymous Leibniz wheel — a stepped cylinder with variable-length cogs — to mechanize multiplication directly. The first calculator that could perform all four basic arithmetic operations in one machine. The Leibniz wheel remained the standard mechanical multiplier for two centuries; appeared in Curta, Friden, and similar 20th-century mechanical calculators."
     },
     {
       "id": "halleys-comet-prediction",
