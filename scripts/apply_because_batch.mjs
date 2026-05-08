@@ -3490,6 +3490,270 @@ const BECAUSE_BATCH = {
 
   'deepseek-r1-china-reaches-frontier-ai':
     "Pre-DeepSeek frontier AI had been an exclusively US-company achievement. DeepSeek R1 (announced January 2025, by a Chinese hedge-fund-backed lab) achieved reasoning performance competitive with OpenAI's o1 — at training costs reportedly under $6M. The first sustained-scale Chinese-frontier-AI achievement. Triggered substantial market and policy response in the US. Demonstrated that the Sino-American AI competition was real and that export controls on advanced GPUs had not prevented Chinese frontier capability. Modern AI geopolitics took a new shape in early 2025.",
+
+  'keplers-third-law-harmonice-mundi':
+    "Kepler's first two laws (1609) had described individual planet motions. The third law (Harmonice Mundi, 1619) related orbital periods to orbital sizes — T² ∝ a³. The first sustained-scale connection between distant planets through a single mathematical law. Newton's gravitational theory (1687) eventually derived all three Keplerian laws from inverse-square gravity. Modern celestial mechanics still uses Kepler's third law for everything from satellite orbit calculations to exoplanet detection.",
+
+  'snells-law-of-refraction':
+    "Pre-Snell light refraction had been qualitative. Willebrord Snell's law (1621, with Ibn Sahl's prior work in 984 AD) gave a quantitative relation: sin(θ₁)/sin(θ₂) = n₂/n₁ for light passing between media. The first sustained-scale quantitative refraction law. Foundation of geometric optics. Lens design, telescopes, microscopes, eyeglasses, fiber optics — all Snell's-law engineering applications.",
+
+  'canning-invented-by-nicolas-appert':
+    "Pre-canning food preservation had been salt-cured, dried, smoked, or pickled — limited shelf life and texture. Napoleon's prize for a military food-preservation method drew Nicolas Appert (1809, with sealed glass jars heated in boiling water). The first sustained-scale heat-sterilization food preservation. Within a year, Peter Durand patented the tin can (1810). Modern canning industry, military rations, and emergency food storage all descend from Appert's discovery.",
+
+  'tin-can-peter-durand':
+    "Pre-tin-can sealed food preservation had used fragile glass containers. Peter Durand's 1810 tin can patent replaced glass with sealed tin-plated iron — durable, lighter, didn't shatter. The first sustained-scale metal-canned food preservation. Industrial canning factories scaled by 1820s. Bryan Donkin's iron canning factory (1813) supplied the Royal Navy. Modern grocery-shelf canned goods all descend from Durand's patent.",
+
+  'haccp-mandated-for-seafood':
+    "Pre-HACCP food safety had relied on end-product testing — finding contamination after it happened. Hazard Analysis Critical Control Points (HACCP, originally developed by Pillsbury for NASA in 1960s; mandated for US seafood by FDA 1997, then for meat 1996, juice 2001) used preventive controls at each production step. The first sustained-scale preventive food-safety regulatory framework. Modern food-safety practice worldwide runs on HACCP.",
+
+  'ai-driven-livestock-monitoring-wearables':
+    "Pre-livestock-monitoring herd-disease detection had relied on visual observation. Sensor-based livestock monitoring (~2015-2017, with companies like Allflex, Cowlar, Connecterra) used wearable devices for cattle that tracked rumination, body temperature, activity. The first sustained-scale precision livestock farming. Detected diseases days before visible symptoms. Modern dairy and beef operations increasingly run on sensor-data-driven herd management.",
+
+  'ishango-bone':
+    "Pre-Ishango notation had been simple tally marks. The Ishango bone (~20,000 BC, Congo) preserves three columns of grouped tally marks — possibly a counting tool, lunar calendar, or evidence of arithmetic operations. The first sustained-scale structured numerical notation in the archaeological record. Pre-mathematics, but reveals that Upper Paleolithic peoples were thinking systematically about numbers and groups.",
+
+  'development-of-mudbrick-architecture':
+    "Same Jericho mudbrick, alternate ID. Mudbrick construction (~9000 BC, in PPNA Jericho) gave Neolithic builders durable, uniform, modular building units. The first sustained-scale standardized building material. Foundation of Egyptian, Mesopotamian, and Indus Valley civilizations. Modern adobe construction in arid regions (US Southwest, North Africa) preserves the technique.",
+
+  'invention-of-writing-cuneiform':
+    "Pre-cuneiform Mesopotamian record-keeping had been clay tokens. Cuneiform (~3200 BC, in Uruk) used wedge-shaped impressions on clay tablets to represent words and syllables. The first sustained-scale full writing system. Used in Mesopotamia for over 3,000 years before being replaced by alphabetic systems. Akkadian, Babylonian, and Hittite languages all written in cuneiform. Modern Assyriology preserves access to this 3,000-year textual record.",
+
+  'theatre-of-dionysus-built':
+    "Pre-permanent-theatre Greek drama had used temporary wooden structures. The Theatre of Dionysus (built ~530 BC at the foot of the Acropolis in Athens) was the first sustained-scale stone theatrical venue. Hosted the Dionysia festival where the great Greek tragedies were performed. Dionysus theater seating capacity ~17,000. Roman amphitheaters, Renaissance theaters, and modern theatrical architecture all descend from the Greek stone-theatre model.",
+
+  'umayyad-great-mosque-of-damascus':
+    "Pre-Umayyad-Mosque Islamic religious architecture had been ad hoc. The Umayyad Mosque of Damascus (built 715 AD, on the site of a Christian basilica which itself replaced a Roman temple of Jupiter) established the hypostyle plan as Islamic architectural template — central courtyard, prayer hall with multiple aisles supported by columns, mihrab indicating qibla. The first sustained-scale architectural template for the great mosque type. Most subsequent classical Islamic mosques — al-Aqsa, the Cordoba Mezquita, Cairo's al-Azhar — derive from the Umayyad model.",
+
+  'york-mystery-plays':
+    "Pre-mystery-play biblical drama had been confined to church liturgy. The York Mystery Plays (~1376 AD, performed annually at the Feast of Corpus Christi by York's craft guilds) staged 48 vignettes from Genesis through the Last Judgment in the city streets. The first sustained-scale civic-religious drama outside the church. Spread across England (Chester, Wakefield, N-Town); influenced subsequent religious drama and eventually secular Elizabethan theater (Marlowe and Shakespeare both inherit from this medieval-civic-drama tradition).",
+
+  'don-juan-1926-film':
+    "Pre-Don-Juan feature films had been silent or had only limited synchronized sound. Warner Bros's Don Juan (premiered August 1926) was the first feature-length film with a Vitaphone synchronized musical score and sound effects (no speaking dialogue yet). The first sustained-scale Hollywood synchronized-sound feature film. Vitaphone's success spurred the conversion to sound; The Jazz Singer (1927) added speaking dialogue; Lights of New York (1928) was the first all-talking feature.",
+
+  'sampling-in-hip-hop':
+    "Pre-sampling popular music had used direct performance or studio production from scratch. The Sugarhill Gang's Rapper's Delight (1979, sampling Chic's Good Times bassline) brought sampling into mainstream popular music. The first sustained-scale hip-hop record using sampling. Public Enemy, Beastie Boys, Dr. Dre and the entire hip-hop tradition built on sampling as foundational technique. Sampling reshaped popular music's relationship to its own history; modern remix culture and electronic-music sampling all descend from hip-hop.",
+
+  'pixars-toy-story':
+    "Pre-Pixar animated features had been hand-drawn cel animation. Pixar's Toy Story (released November 1995) was the first sustained-scale fully computer-animated feature film. $192M box office demonstrated the format's commercial viability. Pixar's subsequent feature pipeline (A Bug's Life, Toy Story 2, Monsters Inc., Finding Nemo, etc.) led the transition; Disney's traditional cel-animation studio essentially closed by mid-2000s. Modern animated features are predominantly CG.",
+
+  'stylegan-for-face-generation':
+    "Pre-StyleGAN GANs had produced limited-resolution images with mode collapse. NVIDIA's StyleGAN (December 2018) introduced an architecture with progressive growing and style-injection layers — produced 1024×1024 photorealistic synthetic faces from random noise. The first sustained-scale photorealistic synthetic face generation. Created immediate concerns about deepfake misuse. Subsequent StyleGAN2 (2019) and StyleGAN3 (2021) refined the architecture. The current generative-AI face-generation tradition descends from StyleGAN.",
+
+  'runway-gen-2-video-generation':
+    "Pre-Runway-Gen-2 text-to-video had been mostly low-quality and short. Runway ML's Gen-2 (announced March 2023, public access summer 2023) generated 4-second video clips from text or image prompts with reasonable temporal coherence. The first sustained-scale consumer-accessible text-to-video generation. Spurred competition (Pika Labs, Stable Video Diffusion, eventually Sora and Veo). Modern AI video-generation infrastructure all builds on the diffusion-then-temporal-conditioning approach Runway pioneered.",
+
+  'paleolithic-flute-2':
+    "Same Paleolithic flute, alternate ID. The Hohle Fels and Geißenklösterle flutes (~43,000 BC, in southwestern Germany) are the earliest unambiguous musical instruments — bird-bone flutes with finger holes capable of producing recognizable musical scales. The first sustained-scale evidence of prehistoric music. Indicates that music as cultural practice predates the European Upper Paleolithic, perhaps coinciding with the spread of modern humans into Europe.",
+
+  'abacus':
+    "Pre-abacus arithmetic on Sumerian numerals had been laborious. The Sumerian abacus (~2700 BC, possibly earlier — clay tablet evidence is ambiguous) was a counting board with grooves where pebbles or counters could be placed for tally and calculation. The first sustained-scale physical computing device. Subsequent Roman, Chinese, and Russian abacuses all descend from this Mesopotamian beginning. Continued in commercial use until electronic calculators (1960s-1970s).",
+
+  'copper-metallurgy-in-africa':
+    "Pre-Agadez African metallurgy had been speculation. Native copper working at Agadez (~2000 BC, in modern Niger) is the earliest sustained evidence of African metalworking. The first sustained-scale Sub-Saharan African metallurgy. Subsequent African metallurgical traditions — Bantu iron working (~1000 BC onward), Nubian and Aksumite metallurgy — built on regional traditions of which Agadez is the deepest known. Modern African archaeometallurgy traces some of its deepest roots to this site.",
+
+  'babylonian-world-map':
+    "Same Babylonian map, alternate ID. The Babylonian Map of the World (~700 BC, on a clay tablet now in the British Museum) is the first known schematic depiction of the entire then-known world — Babylon at center, the Euphrates running through, surrounding lands and an encircling 'bitter river' beyond. Not geographic in the modern sense but cosmological — the first attempt to put the world's structure on a single tablet.",
+
+  'ctesibius-water-clock':
+    "Pre-Ctesibius water clocks had been inaccurate due to varying flow rate as water level dropped. Ctesibius (~270 BC, in Alexandria) regulated water flow with a constant-head reservoir, producing the first sustained-scale precision water clock. Used for legal proceedings (timing speeches), astronomical observations, and civic time-marking. Greco-Roman engineers extended Ctesibius's design; the principle of regulated flow influenced subsequent precision-instrument design.",
+
+  'philo-of-byzantium-automaton':
+    "Same Philo of Byzantium, alternate ID. Philo's pneumatics treatise (~250 BC) described several rule-based mechanical automata — devices that responded to inputs with specific outputs. The first sustained-scale automaton-design literature. Hero of Alexandria (~62 AD) elaborated; Islamic engineers (Banu Musa, Al-Jazari) extended the tradition. Modern industrial automation and robotics descend conceptually from the Hellenistic-Islamic automaton tradition.",
+
+  'roman-postal-system-cursus-publicus':
+    "Pre-Augustan Roman state communication had relied on private messengers. Augustus's cursus publicus (institutionalized ~27 BC) was a state-run system of relay stations, fresh horses, and officially-issued passes that carried imperial dispatches across the empire at speeds of ~80 km/day. The first sustained-scale post-Persian imperial postal infrastructure. Maintained operation through the Byzantine period. Modern state-postal systems' architectural ancestor.",
+
+  'ptolemys-geography':
+    "Pre-Ptolemaic mapmaking had been narrative or itinerary-based. Ptolemy's Geography (~150 AD) introduced systematic latitude-longitude coordinates for 8,000+ named places. The first sustained-scale gridded global mapping system. Lost in original; preserved through Arabic translations. Recovered into Renaissance Europe (Florence, ~1400 AD); directly enabled the Age of Discovery's navigational mathematics. Modern GPS and digital mapping all use Ptolemy's coordinate-grid framework conceptually.",
+
+  'house-of-wisdom-translation-movement':
+    "Same House of Wisdom translation work, alternate ID. The systematic translation of Greek, Persian, Sanskrit, and Syriac philosophical-scientific works into Arabic (~830 AD onward, peaking under Al-Ma'mun) made world knowledge accessible to the Arabic-reading scholarly community. The first sustained-scale Islamic translation institute. Many ancient works survive only through this translation tradition. Modern Islamic and Western intellectual history both run partly through the Baghdad translation movement.",
+
+  'al-kindi-cryptanalysis-frequency-analysis':
+    "Pre-Al-Kindi substitution ciphers had been considered unbreakable. Al-Kindi's manuscript on cryptanalysis (~850 AD, in Baghdad's House of Wisdom) introduced frequency analysis — count letter frequencies in the ciphertext, match against frequency distributions in the language. The first sustained-scale systematic cryptanalysis technique. Made all simple substitution ciphers vulnerable. Modern cryptography's defense against frequency analysis (polyalphabetic ciphers, eventually digital encryption) descends from this 9th-century Arabic insight.",
+
+  'song-dynasty-magnetic-compass':
+    "Pre-Song-Dynasty navigation had relied on landmarks and stars. The Song Dynasty's adoption of the magnetic compass for navigation (~11th century AD, building on earlier Chinese knowledge of lodestones) gave sailors a reliable direction-finding instrument independent of weather. The first sustained-scale magnetic-navigation compass. Reached the Mediterranean ~1190 AD via Arab traders. Modern navigation, from aviation through missile guidance, descends from this Song-era innovation.",
+
+  'bi-sheng-movable-type-printing':
+    "Pre-Bi-Sheng Chinese printing had used carved woodblocks — one block per page. Bi Sheng's movable-type printing (~1041 AD, with ceramic type per character) allowed pages to be set from individual reusable type pieces. The first sustained-scale movable-type printing technology. Used in China but never displaced woodblock printing as the dominant Chinese printing method (Chinese-character fonts are too large for movable type to be efficient). Korean metal movable type (1234), and eventually Gutenberg (1450) all built on the same principle.",
+
+  'al-jazari-reciprocating-pump':
+    "Pre-Al-Jazari water-lifting had been simple scoops. Al-Jazari's reciprocating pump (1206 AD, in his Book of Knowledge of Ingenious Mechanical Devices) used a crank-and-connecting-rod mechanism to convert circular motion (from waterwheel) into reciprocating motion (driving twin pistons). The first sustained-scale crank-and-connecting-rod mechanism. Modern internal-combustion engines and steam engines all use this conversion principle. The European reception (post-1500) eventually produced the steam-engine-driven Industrial Revolution.",
+
+  'baudot-code':
+    "Morse code (1837) had used variable-length codes — efficient but hard to multiplex over telegraph lines. Émile Baudot's five-bit code (1876) gave each character a fixed-length five-bit pattern. The first sustained-scale fixed-length character encoding. Allowed time-division multiplexing of multiple telegraph signals. Foundation for ITA1, ITA2, ASCII (which is essentially seven-bit Baudot derivative), and modern Unicode. The 'baud' rate name honors Baudot.",
+
+  'ethernet-standard-dix':
+    "Same Ethernet, alternate ID. The Digital Equipment - Intel - Xerox (DIX) standard (1980) defined Ethernet as an open commercial standard. The IEEE 802.3 standard (1983) refined and extended it. The first sustained-scale open LAN standard. Modern Ethernet (Gigabit, 10G, 100G, 400G) all build on the original DIX-IEEE 802.3 architecture.",
+
+  'wi-fi-standard-802-11b-ratified':
+    "Same 802.11b ratification, alternate ID. Ratified 1999, the standard brought wireless LAN to 11 Mbit/s on the unlicensed 2.4 GHz band at consumer prices. Apple iBook (July 1999) shipped with built-in 802.11b. Within five years every laptop had Wi-Fi. The mobile internet's first scaffold and a textbook case of standardization opening a market.",
+
+  'adam-optimizer':
+    "Pre-Adam stochastic gradient descent had required manual learning-rate tuning. Kingma and Ba's Adam optimizer (2014) combined momentum and adaptive per-parameter learning rates with little manual tuning required. The first sustained-scale adaptive optimizer for deep networks. Modern deep learning's near-universal default optimizer; almost every neural network trained today uses Adam or one of its variants (AdamW, AdaFactor).",
+
+  'mortar-and-pestle':
+    "Pre-mortar grinding had been by hand on flat stones. The mortar and pestle (~23,000 BC, attested in Levantine and Australian sites) gave humans a deeper, more controlled grinding action — finer flour, faster processing, less effort. The first sustained-scale dedicated grinding tool. Used continuously since the Upper Paleolithic. Modern pharmacy laboratories and traditional kitchens worldwide still use mortar-and-pestle technology.",
+
+  'de-havilland-comet':
+    "Pre-Comet commercial aviation had used piston-engine aircraft — slow, low-altitude, unpressurized. The de Havilland Comet (entered service May 1952, first jet airliner) flew at 35,000 ft at 720 km/h — twice the speed of contemporary airliners. The first sustained-scale jet airliner service. Initial fatal crashes (1953-54) revealed metal fatigue at pressurization stress points; the Comet was redesigned. Modern jet aviation's safety analysis traces directly to lessons from the Comet failures. The Boeing 707 (1958) eventually dominated.",
+
+  'ishango-bone-2':
+    "Same Ishango bone, alternate ID. The Ishango bone (~20,000 BC, Congo) preserves grouped tally marks — possibly counting tool, lunar calendar, or evidence of arithmetic. The first sustained-scale structured numerical notation in the archaeological record. Pre-mathematics, but reveals systematic numerical thinking in Upper Paleolithic Africa.",
+
+  'invention-of-the-sundial':
+    "Pre-sundial daytime had been undivided. Egyptian and Babylonian sundials (~3500-1500 BC) divided daylight into hours by tracking the moving shadow of a vertical gnomon. The first sustained-scale daytime time-measuring device. Greek refinement (Anaximander ~550 BC) added hour-line accuracy. Roman urban sundials standardized civic time. Modern hour-divisions of the day descend conceptually from this Bronze Age innovation.",
+
+  'roman-cursive-script':
+    "Formal Roman square capitals had been slow to write. Roman cursive (~100 BC onward) used flowing, faster strokes for everyday business correspondence and graffiti. The first sustained-scale Roman fast-writing script. Influenced the development of medieval and Renaissance European cursive scripts; modern cursive handwriting traces its lineage through Carolingian minuscule (~800 AD), itself a descendant of Roman cursive.",
+
+  'waldseemuller-map':
+    "Pre-Waldseemüller European world maps had been Ptolemaic (no Americas, vague global geography). Martin Waldseemüller's 1507 map was the first to depict the New World as a separate landmass and to label it 'America' (after Amerigo Vespucci). Used a latitude-longitude grid for global coordinates. The first sustained-scale post-Columbian world map. Modern Western cartographic tradition's institutional ancestor; the Library of Congress holds the only surviving copy.",
+
+  'lithography-commercial-use':
+    "Pre-lithography image reproduction had required engraving or carving — expensive and limited resolution. Alois Senefelder's lithography (invented 1796, in Munich) used the chemical principle that grease and water repel each other — drew images in greasy crayon on flat limestone, then printed using inked rollers. The first sustained-scale planographic printing technology. Made image reproduction cheaper and higher-quality. Foundation for modern offset lithographic printing (the dominant commercial print technology of the 20th century).",
+
+  'morse-code-patented':
+    "Same Morse code, alternate ID. Samuel Morse and Alfred Vail's electromagnetic telegraph code (developed 1837, patent 1840) assigned dot-dash patterns to each letter, with shorter codes for common letters. Morse code became the standard for telegraphic communication for over a century. International Morse Code is still recognized today. Modern digital encoding's deepest historical root.",
+
+  'wireless-telegraphy-radio':
+    "Hertz had detected radio waves (1887). Marconi's wireless telegraphy (developed from 1894-95, with first transatlantic transmission 1901) commercialized radio for long-distance communication. The first sustained-scale practical wireless communication system. Within decades, ships, military, and civilian users were communicating without wires. Modern broadcast radio, cellular networks, GPS, and Wi-Fi all descend from Marconi's work.",
+
+  'transformer-architecture-published':
+    "Pre-Transformer NLP models had used recurrent architectures (LSTM, GRU) — sequential, slow to train. Vaswani et al.'s 'Attention Is All You Need' (June 2017, at Google) replaced recurrence with self-attention — every position attends to every other in parallel. The first sustained-scale attention-only sequence-modeling architecture. BERT (2018), GPT-2 (2019), and every frontier language model since are Transformers. Foundation of the modern AI era.",
+
+  'bert-language-model':
+    "Pre-BERT NLP had used directional language models (left-to-right or right-to-left). Google's BERT (October 2018) introduced bidirectional masked-language-model pretraining — train on predicting masked tokens with both left and right context. The first sustained-scale bidirectional pretrained transformer model. Achieved state-of-the-art on 11 NLP benchmarks. Foundation for transfer learning in NLP; modern semantic search and most NLP production systems use BERT or its descendants (RoBERTa, DeBERTa, etc.).",
+
+  'establishment-of-the-edubba-scribal-school':
+    "Same eduba, alternate ID. The Mesopotamian eduba (~2000 BC) was the first sustained-scale formal educational institution — dedicated scribal schools where students copied texts and learned cuneiform writing, mathematics, and basic literature. Subsequent Egyptian temple schools, Greek paideia, Roman ludi, medieval cathedral schools, and modern universities all trace conceptual ancestry through the eduba.",
+
+  'executive-order-14110':
+    "Pre-EO-14110 US federal AI policy had been advisory. Biden's Executive Order 14110 (signed October 30, 2023) imposed concrete requirements: frontier AI developers must report safety test results to the government, NIST coordinates AI safety standards, federal agencies must use AI responsibly. The first sustained-scale US executive-branch AI regulation. Companion to the EU AI Act. Trump's January 2025 administration revoked EO 14110 — the regulatory landscape continues to evolve.",
+
+  'sewing-needle':
+    "Pre-needle clothing had been wrapped, tied, or pinned. Bone and antler sewing needles (~50,000 BC, in Eurasian Upper Paleolithic sites) gave humans the ability to sew tightly fitted, multi-layered clothing. The first sustained-scale precision-fastening tool. Tailored clothing made cold-climate habitation viable for modern humans expanding into Eurasia and the Americas. Modern sewing — from the simplest hand-sewing to industrial garment production — runs on the same fundamental needle-and-thread principle.",
+
+  'first-known-use-of-antler-picks-for-mining':
+    "Pre-antler-pick digging had been by hand. Antler picks (~30,000 BC, in European Upper Paleolithic flint-mining sites) gave miners hard, tough tools for extracting flint and chalk. The first sustained-scale dedicated mining tool. Used through the Bronze Age in northern European flint mines (Grimes Graves in Britain). Underground mining as an organized activity dates from this period.",
+
+  'use-of-copper-for-sterilization':
+    "Pre-copper-sterilization water purification had been minimal. Egyptian and Mesopotamian use of copper vessels for water storage (~8000-2000 BC, with documented medical use ~2400 BC) recognized empirically that copper kept water clean. The first sustained-scale antimicrobial-metal use. Greek and Roman medicine recommended copper sulfate solutions. Modern silver-and-copper antimicrobial-surface technology rediscovers this Bronze Age insight.",
+
+  'first-complete-human-chromosome-sequence-chromosome-22-2':
+    "Pre-1999 human chromosome sequencing had been partial. Chromosome 22 (the smallest human autosome at 51 Mbp) was the first fully sequenced human chromosome (December 1999, by an international consortium). The first sustained-scale complete human chromosome sequence. Demonstrated the Human Genome Project's feasibility. The full human genome was completed in draft (2001) and finished (2003); chromosome 22 was the prototype.",
+
+  'development-of-bronze-smelting':
+    "Pre-bronze metallurgy had used cold-worked native copper. Bronze smelting (~3500-3000 BC, with multiple regional emergence) combined copper smelting with tin alloying to produce a metal three to four times harder than copper. The first sustained-scale alloy metallurgy. Bronze Age states and the entire Eurasian metallurgical tradition descend from this innovation.",
+
+  'babylonian-astronomy':
+    "Pre-Babylonian astronomy had been Egyptian — calendar-focused. Babylonian astronomy (~700 BC onward, with sustained planetary observations) developed empirical models for predicting eclipses, planetary positions, and the Saros cycle. The first sustained-scale empirical predictive astronomy. Greek astronomy (Hipparchus, Ptolemy) borrowed extensively from Babylonian observations. Modern astronomy's empirical-prediction tradition begins here.",
+
+  'cursus-publicus':
+    "Same Roman cursus publicus, alternate ID. Augustus's institutionalization of the cursus publicus (~27 BC) provided imperial postal-and-courier services across the empire — relay stations, fresh horses, official passes. Modern state postal services trace conceptual ancestry to this Augustan institution.",
+
+  'keplers-laws-of-planetary-motion':
+    "Pre-Kepler planetary orbits had been assumed circular with epicycles. Johannes Kepler's three laws (published 1609 and 1619, derived from Tycho Brahe's data) showed orbits are elliptical (1st), planets sweep equal areas in equal times (2nd), and T²∝a³ (3rd). The first sustained-scale empirically-validated mathematical laws of planetary motion. Newton (1687) derived all three from inverse-square gravity. Modern celestial mechanics rests on Keplerian foundations.",
+
+  'russells-paradox':
+    "Pre-Russell naive set theory had assumed unrestricted comprehension — for any property, there exists a set of all things with that property. Bertrand Russell's 1901 paradox showed this leads to contradiction (the set of all sets that don't contain themselves either contains itself or doesn't, both leading to contradiction). The first sustained-scale logical foundation crisis in modern mathematics. Subsequent solutions (Russell-Whitehead's type theory, Zermelo-Fraenkel set theory, Quine's New Foundations) define modern mathematical logic.",
+
+  'macintyres-after-virtue':
+    "Pre-MacIntyre Anglophone moral philosophy had been deontological (Kantian) or consequentialist (utilitarian). Alasdair MacIntyre's After Virtue (1981) revived Aristotelian virtue ethics — moral life as cultivation of character within community traditions. The first sustained-scale modern virtue-ethics revival. Influenced subsequent virtue-ethics scholarship (Foot, Anscombe, Annas), modern positive psychology's character-strengths research, and conservative-political moral philosophy.",
+
+  'gnu-general-public-license-version-2':
+    "Pre-GPLv2 free software licensing had been ad hoc. The GNU General Public License version 2 (released June 1991 by Richard Stallman and the FSF) introduced strong copyleft — derived works must use the same license, ensuring software remains free. The first sustained-scale free-software copyleft license. Linux, GCC, Bash, and most major free software projects use GPLv2 or its successors. The free-software-vs-permissive-licensing axis (BSD, MIT, Apache vs. GPL) defines modern open-source licensing strategy.",
+
+  'resnet-introduces-skip-connections':
+    "Pre-ResNet very deep neural networks (>30 layers) had failed to train — deeper networks performed worse than shallower ones. He et al.'s ResNet (2015, ImageNet winner) introduced skip connections — a layer's output is added to its input, letting gradients flow directly. The first sustained-scale very-deep-network training breakthrough. Networks of 152+ layers became practical. Modern deep learning architectures (ResNet variants, Transformers' residual connections) all use the skip-connection principle.",
+
+  'wavenet-for-raw-audio-generation':
+    "Pre-WaveNet audio synthesis had used vocoder concatenation. DeepMind's WaveNet (2016) generated raw audio waveforms one sample at a time using dilated causal convolutions. The first sustained-scale neural raw-audio generation. Used for Google Assistant TTS (2017). Modern text-to-speech, music generation (Jukebox, Suno), and the entire neural-audio tradition descend from WaveNet's basic insight.",
+
+  'rlhf-formalized-for-language-models':
+    "Pre-RLHF aligning large language models with human preferences had been ad hoc. OpenAI's RLHF for language models (Christiano et al. 2017, applied to language at scale by Ziegler et al. 2019, and widely adopted from 2020 onward) formalized a three-step process: pretrain LM, collect human preference comparisons, train reward model, RL-fine-tune LM against reward model. The first sustained-scale alignment technique for large language models. ChatGPT (November 2022) brought RLHF to public attention. Modern LLM alignment runs primarily on RLHF and its variants (Constitutional AI, DPO).",
+
+  'first-known-flint-mining':
+    "Pre-flint-mining tool stone had been collected from surface outcrops. European Upper Paleolithic flint mines (~43,000 BC, especially Krzemionki Opatowskie in Poland) extended underground extraction with shafts and galleries. The first sustained-scale subsurface mining. Bronze Age and Iron Age mining traditions all descend from these Upper Paleolithic precedents. Modern industrial mining is the very-distant successor.",
+
+  'use-of-animal-sinew-as-cordage':
+    "Plant fiber cordage rotted quickly. Animal sinew (~40,000 BC, Upper Paleolithic) gave humans a tougher, more durable binding material. The first sustained-scale animal-sinew-based cordage. Used for bow strings, sewing, hafting tools — applications where plant fiber failed. Modern surgical sutures (catgut) preserve a related tradition.",
+
+  'invention-of-the-sail':
+    "Same sail invention, alternate ID. Sailing watercraft appeared in multiple regions by ~5000-4000 BC. Wind power supplemented or replaced muscle on water. Long-distance coastal trade (Mediterranean copper, Persian Gulf shells) became routine. The first sustained use of an environmental energy flow for human transport.",
+
+  'jabir-ibn-hayyan-distillation-apparatus':
+    "Same Jabirian distillation, alternate ID. The Jabirian corpus (~850 AD) systematized chemical distillation with alembic stills. The first sustained-scale systematic chemical distillation. Alcohol production, mineral acid manufacture, and modern chemical-engineering practice all descend from this Arabic alchemical tradition.",
+
+  'sputnik-1':
+    "Same Sputnik launch, alternate ID. The Soviet Union launched Sputnik 1 on October 4, 1957 — the first artificial satellite. Triggered the Space Race, NASA's founding (1958), DARPA's founding (1958), and the National Defense Education Act (1958). Modern space technology and its institutional foundations all descend from the Sputnik shock.",
+
+  'fullerenes-discovered':
+    "Pre-1985 only two allotropes of carbon (diamond, graphite) had been known. Kroto, Curl, and Smalley's discovery of buckminsterfullerene (C60, 1985, by laser ablation of graphite) revealed a third class — closed cage molecular structures. The first sustained-scale molecular-carbon-cage chemistry. Carbon nanotubes (Iijima 1991) and graphene (Geim and Novoselov 2004, Nobel 2010) followed. Modern nanotechnology's materials-science foundation includes the fullerene tradition.",
+
+  'murujuga-petroglyphs':
+    "Pre-Murujuga rock art had been mostly later or undated. The Murujuga (Burrup Peninsula, Western Australia) petroglyphs include some dated to ~50,000 BC — among the oldest rock art in the world. The first sustained-scale evidence of permanent rock-engraved imagery. Australian Aboriginal traditions associated with the petroglyphs continue to the present. Modern rock-art archaeology and indigenous-knowledge preservation both treat Murujuga as foundational.",
+
+  'creation-of-the-bahai-world-centre-website':
+    "Pre-Baháʼí-website centralized communication for a globally dispersed religion had been by mail. The Baháʼí World Centre website (launched 1996, on Mt Carmel in Haifa Israel) provided official Baháʼí texts, organizational announcements, and global-community coordination over the web. The first sustained-scale Baháʼí internet presence. Modern global-religion online infrastructure descends conceptually.",
+
+  'watt-steam-engine-patent':
+    "Newcomen's atmospheric engine (1712) had been wasteful — most heat went into reheating the cylinder. James Watt's separate condenser (patented 1769) cut fuel consumption by 75%. Watt's subsequent additions — sun-and-planet gear (1781), double-acting engine (1782), governor (1788) — produced reliable rotary power. The first sustained-scale practical industrial power source. Powered factories, mines, ships, and railways — the engine of the Industrial Revolution. Modern thermodynamics' name comes from steam-engine analysis.",
+
+  'semaphore-telegraph':
+    "Pre-Chappe long-distance messaging had been on horseback. Claude Chappe's semaphore telegraph (1792, deployed across France) used towers with mechanical arms visible from the next tower — message relay across hundreds of kilometers in minutes. The first sustained-scale mechanical fast-relay communication system. Used by the French government for 60+ years. Replaced by the electric telegraph (~1850s). Modern semaphore signaling preserves the tradition in maritime contexts.",
+
+  'keynesian-economics-after-the-crash':
+    "Pre-Keynes economics had assumed markets self-correct. The Great Depression (1929-1933) didn't self-correct. John Maynard Keynes's General Theory of Employment, Interest, and Money (1936) provided a theoretical framework for government intervention — fiscal policy, monetary policy, deficit spending during downturns. The first sustained-scale macroeconomic theory of state intervention. FDR's New Deal applied Keynesian principles before they were fully theorized. Modern macroeconomic management (post-2008 stimulus, COVID-era spending) all runs on Keynesian foundations.",
+
+  'shannons-information-theory':
+    "Pre-Shannon information had been informal and context-dependent. Claude Shannon's A Mathematical Theory of Communication (1948) defined information mathematically — as reduction of uncertainty, measured in bits. Channel capacity, error correction, source coding, all became precise quantitative concepts. The first sustained-scale mathematical theory of information. Foundation of all subsequent digital communication, data compression, and cryptography. Modern internet, mobile networks, and data storage all run on Shannon's framework.",
+
+  'gemini-2-0-flash-real-time-multimodal-ai':
+    "Pre-2024 multimodal AI had been slow and expensive. Google DeepMind's Gemini 2.0 Flash (December 2024, generally available 2025) provided real-time multimodal AI — accept text, audio, image, video inputs and stream outputs in low latency. The first sustained-scale real-time multimodal AI service. Foundation for AI assistants that can see what users see and respond conversationally. Modern AI assistant infrastructure follows the multimodal-real-time direction Gemini Flash pioneered.",
+
+  'claude-4-sustained-reasoning-and-multi-hour-tasks':
+    "Pre-Claude-4 AI capability had been bounded to single-session prompt-response interactions. Anthropic's Claude 4 (released 2025, with extended-thinking modes and sustained-task capabilities) demonstrated multi-hour task completion — research projects, software-engineering tasks, complex analytical work — within a single agentic session. The first sustained-scale frontier AI capable of multi-hour autonomous task completion. Foundation for modern agentic-AI applications. Modern AI deployment increasingly relies on extended-context, sustained-reasoning agentic systems.",
+
+  'quran-first-revelations':
+    "Pre-revelation Arabian religion had been polytheistic, with Christian and Jewish minorities. Muhammad's first Quranic revelations (610 AD, Mount Hira near Mecca, traditionally beginning with 'Iqra' — recite) launched what would become Islam. Revelations continued for ~22 years until Muhammad's death (632 AD). The first sustained-scale Arabic monotheistic scripture-revelation. Within a century, the Quran's revelations had spawned an empire from Spain to the Indus. Modern Islam's foundational text and the basis for ~1.8 billion adherents' religious life.",
+
+  'bessemer-process-for-steel':
+    "Pre-Bessemer steel production had been small-batch in crucibles — slow, expensive. Henry Bessemer's converter (1856) blew air through molten pig iron to oxidize carbon and impurities — produced steel in bulk in 20 minutes. The first sustained-scale industrial steel production. Steel prices dropped from £40/ton to £10/ton. Modern infrastructure (railways, skyscrapers, ships, automobiles) all built on cheap steel. The Industrial Revolution's second phase runs on the Bessemer process.",
+
+  'alexnet-wins-imagenet':
+    "Pre-AlexNet computer vision had used hand-engineered features (SIFT, HOG). Krizhevsky, Sutskever, and Hinton's AlexNet (won ImageNet 2012 with 15.3% top-5 error vs. 26% for runner-up) demonstrated that deep convolutional neural networks trained on GPUs could dominate image recognition. The first sustained-scale demonstration of deep-learning superiority over hand-engineered features. Triggered the modern AI boom — every AI lab pivoted to deep learning within months. Modern computer vision, AI infrastructure, and the entire LLM/multimodal era trace foundational moment to AlexNet.",
+
+  'first-known-use-of-leavened-bread':
+    "Pre-leavening bread had been flat and dense. Mesopotamian bakers (~6000 BC) discovered that letting wet dough sit allowed wild yeasts to ferment and produce CO2 — the dough rose, baked into lighter, more digestible bread. The first sustained-scale fermented bread. Egyptian bakers (~3000 BC) systematized the process. Modern bread-making — sourdough, commercial yeast, industrial baking — all descend from this Bronze Age innovation.",
+
+  'al-zarqalis-astrolabe':
+    "Pre-Al-Zarqali astrolabes had been calibrated for specific latitudes. Al-Zarqali's universal astrolabe (1029 AD, in Al-Andalus) worked at any latitude through additional engraved plates. The first sustained-scale universal astrolabe. Influenced subsequent Islamic and European astrolabe design. Modern astronomical instruments still use principles Al-Zarqali helped refine.",
+
+  'gamestop-short-squeeze':
+    "Pre-GameStop retail-investor coordination had been informal. The January 2021 GameStop short squeeze (driven by Reddit's r/wallstreetbets) coordinated retail investors to buy GME stock heavily, forcing institutional short-sellers to cover at massive losses (Melvin Capital lost billions). The first sustained-scale retail-investor coordinated short squeeze. Robinhood's controversial trading restrictions during the squeeze raised market-structure questions. Modern social-media-driven retail investing (meme stocks, options-driven trading) all post-dates this GameStop moment.",
+
+  'first-commercial-dna-microarray-affymetrix-genechip':
+    "Pre-microarray gene-expression measurement had been one or a few genes at a time. Affymetrix's GeneChip (commercialized 1996) measured tens of thousands of genes simultaneously on a single chip. The first sustained-scale parallel-gene-expression measurement. Foundation of the genomics era — could now profile entire transcriptomes. Modern RNA-seq displaced microarrays for many applications, but the parallel-measurement principle persists.",
+
+  'dall-e-generates-images-from-text':
+    "Pre-DALL-E text-to-image generation had been limited. OpenAI's DALL-E (January 2021, building on Transformer architecture and GPT-3) generated coherent novel images from text prompts. The first sustained-scale text-to-image generation by a Transformer model. DALL-E 2 (April 2022), Imagen, Stable Diffusion (August 2022), and Midjourney all extended the field. Modern AI-generated visual culture begins with DALL-E.",
+
+  'emergence-of-shamanistic-ritual':
+    "Same shamanism term, alternate ID. The English word 'shaman' (entered the language 1698, via German and Russian from Tungusic 'šamán') gave Westerners a label for Siberian and other Eurasian spirit-mediator religious practices. The first sustained-scale Western anthropological category for spirit-mediator-religion. Modern comparative religion's shamanism-as-category (Mircea Eliade's Shamanism: Archaic Techniques of Ecstasy 1951) descends from this 17th-century terminology.",
+
+  'room-temperature-superconductivity-claimed':
+    "Pre-2020 superconductivity had required cryogenic cooling. Ranga Dias's 2020 paper (later retracted in 2022 due to data integrity concerns) claimed room-temperature superconductivity in carbonaceous sulfur hydride at ~270K under high pressure. The first sustained-scale claim of room-temperature superconductivity. Subsequent retractions and replication failures have left the question unsettled. The pursuit of room-temperature superconductivity continues — eventual practical achievement would revolutionize electricity transmission, computing, and medical imaging.",
+
+  'germ-theory-of-disease-pasteur':
+    "Pre-Pasteur disease causes had been mysterious — miasma, humoral imbalance, divine punishment. Pasteur's germ theory (1850s-1860s, with experimental evidence from fermentation studies) showed that specific microorganisms cause specific diseases. The first sustained-scale germ-theory-of-disease framework. Combined with Koch's postulates (1880s) and Lister's antiseptic surgery (1865), produced the modern microbial-disease-control regime. Modern public health, vaccination, antibiotics, and sterile-technique surgery all run on germ theory.",
+
+  'waymo-self-driving-taxi-services-launch':
+    "Pre-Waymo autonomous vehicles had required safety drivers. Waymo's Phoenix-area launch (October 2020) of fully driverless taxi service — no safety driver — was the first sustained-scale commercial robotaxi service. Operational area gradually expanded to more cities (San Francisco 2023, Los Angeles 2024). Modern autonomous-vehicle deployment, the long-promised self-driving future, finally arrived in commercially-meaningful form here.",
+
+  'vision-transformer':
+    "Pre-ViT computer vision had been dominated by CNNs (since AlexNet 2012). Dosovitskiy et al.'s Vision Transformer (October 2020) split images into 16×16 patches and processed them as token sequences with the Transformer architecture — surpassed CNNs on ImageNet at scale. The first sustained-scale Transformer for computer vision. Foundation for modern multimodal models (CLIP, DALL-E, GPT-4V) and unified vision-language architectures. Modern computer vision is now Transformer-dominated.",
 };
 
 async function main(){
