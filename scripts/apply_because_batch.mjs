@@ -1030,6 +1030,81 @@ const BECAUSE_BATCH = {
 
   'haber-bosch-industrial-nitrogen-fixation':
     "Plants need fixed nitrogen, but atmospheric N₂ is the wrong form — life had relied on lightning and rhizobial bacteria for the fixation. Fritz Haber and Carl Bosch's industrial process (Haber's lab demonstration 1909, Bosch's BASF plant scaling 1913) combined N₂ and H₂ at 400°C and 200 atmospheres over an iron catalyst to produce ammonia. Synthetic fertilizer became cheap. Roughly half of the nitrogen atoms in human bodies today came through a Haber-Bosch reactor. The process also made WWI possible (German munitions ran on synthetic ammonia after the British naval blockade).",
+
+  'vitamin-fortification-of-foods':
+    "Pre-fortification micronutrient deficiencies — pellagra, beriberi, rickets, goiter — had been endemic conditions across the developed world. Vitamin chemistry (1910-1930) made the deficiencies tractable: identify the missing molecule, add it back to a staple food. Iodized salt (US, 1924), vitamin-D milk (1933), enriched flour (1941). Public-health benefit at near-zero marginal cost. The first sustained chemical intervention in mass nutrition. Modern fortification programs (folic acid, vitamin A) follow the same template.",
+
+  'electric-fencing-for-livestock':
+    "Wood and wire fences had required physical strength to restrain cattle — and constant maintenance. New Zealand farmer Bill Gallagher's electric fence (1937) used a low-amperage, high-voltage pulsed shock to deter livestock psychologically rather than physically. Fences could be light, cheap, and reconfigurable. Rotational grazing — moving cattle through small paddocks daily — became practical. Pasture productivity rose; modern intensive grazing systems all run on electric fencing.",
+
+  'integrated-pest-management':
+    "Calendar-based pesticide spraying after WWII had produced rapid pest resistance, ecological damage, and the Silent Spring crisis. UC Davis entomologists (1959) formalized integrated pest management (IPM): combine biological controls (predators, parasitoids), cultural practices (rotation, sanitation), monitoring, and pesticide use only as needed. The first sustained alternative to spray-everything-on-schedule. Modern organic agriculture and conventional best-practice both run on IPM principles.",
+
+  'green-revolution-high-yield-wheat':
+    "Borlaug's CIMMYT semi-dwarf wheat (from 1944) had proven the yield-tripling potential. Combined with synthetic fertilizer, irrigation, and the IR-8 rice strain (1966), the package spread to India, Pakistan, the Philippines, and Mexico from the late 1960s. USAID administrator William Gaud's 1968 'Green Revolution' speech named the program. The Asian famines that demographers had predicted for the 1970s did not occur. Grain self-sufficiency reached most of Asia by the 1980s.",
+
+  'community-supported-agriculture-formalized':
+    "Industrial agriculture had moved consumers far from producers — supermarket food carried no information about its origin. CSAs (formalized in the US Northeast in 1986, building on European models) restored direct consumer-farm relationships: subscribers pay before the season, receive weekly shares of harvest, share production risk. The first sustained-scale alternative-distribution model in modern Western agriculture. Modern food-box services and farmers'-market growth both build on CSA logic.",
+
+  'robotic-milking-systems-widespread':
+    "Mechanized milking (1890s) had cut labor by tenfold but still required human operators. Lely Industries (Netherlands, 1992) introduced commercial automatic milking systems: cows entered a robotic stall voluntarily, were identified by RFID, and milked by computer-vision-guided arms. Two milkings per day became three or four — cows chose when. Yield rose; labor dropped to near zero. The first sustained-scale autonomous animal husbandry technology.",
+
+  'flavr-savr':
+    "Calgene's Flavr Savr tomato (FDA approval May 1994) was the first commercially-sold genetically engineered whole food in the US — modified to suppress the polygalacturonase enzyme that softens ripe tomatoes. Commercial failure (the line was withdrawn in 1997 because it didn't ship well) but legal precedent: GM food was approvable. Roundup Ready soybeans (1996), Bt corn, and the entire downstream GM crop industry built on Flavr Savr's regulatory pathway.",
+
+  'bt-cotton-commercialized':
+    "Cotton farmers had relied on broad-spectrum chemical insecticides — expensive, ecologically damaging, ineffective against developing resistance. Monsanto's Bt cotton (commercialized 1996) inserted Bacillus thuringiensis genes into cotton plants — the plants produced their own insecticide effective only against lepidopteran larvae. Pesticide spraying dropped 60-80% in adopting regions. Indian and Chinese cotton farmers adopted rapidly; resistance pressure on Bt has now reduced effectiveness in some regions.",
+
+  'vertical-farming-with-led-lighting':
+    "Greenhouse production had been limited by sunlight at high latitudes and seasonal cycles. Dickson Despommier's 1999 Columbia course proposed skyscraper farms — stacked indoor growing platforms under tuned LED light. The concept was largely theoretical until LED costs fell enough (around 2010-2015) to make it economically viable. The first widespread productive vertical farms appeared in Newark, Tokyo, and Singapore from 2015 onward. Lettuce growing under purple LED has become the iconic image of the model.",
+
+  'farmers-market-revival':
+    "Mid-twentieth-century US food distribution had concentrated in supermarket chains; direct-from-farm sales had nearly disappeared. Consumer interest in fresh, local, and organic food (rising from the 1970s) hit a tipping point in the mid-2000s. USDA registered farmers' markets jumped from 1,755 in 1994 to 8,675 in 2014. The first sustained-scale recovery of direct producer-consumer food retail in the US. The trend supported small-farm economics and local-food activism.",
+
+  'soil-microbiome-sequencing-revolution':
+    "Soil ecology before sequencing had been blind — the vast majority of soil microorganisms can't be cultured in the lab. Cheap shotgun metagenomics (~2010) made the entire community readable. A 2011 study identified 33,000+ bacterial and archaeal species on a single sugar-beet plant's roots. Soil health, plant-microbe interactions, and the link between the human gut microbiome and dietary plants all became experimentally tractable. Agricultural science's most rapid expansion in fifty years.",
+
+  'crispr-gene-editing':
+    "Gene editing pre-CRISPR had relied on zinc-finger nucleases or TALENs — expensive, slow, organism-specific. Doudna and Charpentier's 2012 paper (Science, 'A Programmable Dual-RNA-Guided DNA Endonuclease') showed that the CRISPR-Cas9 bacterial immunity system could be repurposed as a programmable DNA-cutting tool — guide RNA targets the cut site, Cas9 makes the cut. Cheap, fast, organism-agnostic. Gene editing went from specialist technique to undergraduate-lab activity. Biology's most consequential tool of the decade.",
+
+  'cellular-agriculture-for-egg-whites':
+    "Industrial egg production had required factory farms with billions of laying hens — calorie-inefficient and animal-welfare-fraught. The EVERY Company (founded 2014, originally Clara Foods) used precision fermentation: yeast genetically modified to secrete ovalbumin and other egg-white proteins. The first commercial cellular-agriculture egg whites went on sale in 2022. Cell-free protein production for foods previously dependent on animals — without the animals.",
+
+  'drones-for-precision-crop-spraying':
+    "Aerial pesticide application had required manned aircraft — expensive, hazardous, geographically limited. Agricultural drones (commercialized from ~2015, especially DJI's Agras platform) carry liquid pesticide tanks and can spray fields with sub-meter precision based on AI plant identification. Rice paddies in Japan and Korea were the early adopters; cotton, corn, and orchard crops followed. Application volumes dropped 90% per acre, with no human exposure to spray drift.",
+
+  'farmbot':
+    "Precision agriculture had been a large-farm technology requiring expensive proprietary equipment. FarmBot's 2016 release of an open-source CNC farming robot (with publicly available hardware specs and software) put plant-level automation in the hands of backyard gardeners and small-farm operators. Genesis robots can plant, water, weed, and monitor at the individual-plant level over a typical 10×20 ft bed. The first open-source farming robot to reach commercial sales.",
+
+  'use-of-beeswax-as-adhesive-for-pigments':
+    "Pre-beeswax pigments had been applied as dry powders — easily smudged, washed away, or weathered. Upper Palaeolithic painters (~40,000 BC) discovered beeswax could bind ochres and other pigments to bone, antler, and stone surfaces — surviving for millennia under the right conditions. The first durable pigment binder. The technique extended into the Roman encaustic painting tradition (literally 'burnt in' — heated wax pigments). The Fayum mummy portraits (1st-3rd century AD) survive on the same chemistry.",
+
+  'lion-man-figurine':
+    "Two-dimensional cave art and personal ornaments (perforated shells) had been the earliest human representational practices. The Löwenmensch (Lion-man) figurine from Hohlenstein-Stadel cave (~40,000 BC, southern Germany) is the oldest confirmed three-dimensional anthropozoomorphic sculpture — a human body with a lion's head, carved from mammoth ivory. The first depicted being that doesn't exist in nature. Cognitive scientists read it as evidence of fully modern symbolic and counterfactual thinking.",
+
+  'use-of-natural-resin-for-figurine-construction':
+    "Pre-resin sculpture had been single-material — bone, ivory, stone. Upper Palaeolithic artisans (~40,000 BC) used pine and birch resin to bond materials — pigments to surfaces, multiple materials into composite figures. The earliest known evidence comes from sites with hafted tools showing resin-bonded composite assemblies. The first composite-material artistic technology. Modern wood glue and most natural-source adhesives still rest on the same plant-resin principle.",
+
+  'engraved-vulva-symbols':
+    "Earlier Upper Palaeolithic art had depicted animals, abstract patterns, and human-animal hybrids. Engraved vulva symbols on cave walls and portable objects (~35,000 BC, especially at Abri Castanet in southwestern France) are the first explicit fertility symbols in the archaeological record. Whether they represent female reproductive power, identity markers, or something else entirely is debated. Their consistent appearance across Eurasian Upper Palaeolithic art makes them the earliest persistent symbolic motif.",
+
+  'painted-pebbles-azilian-style':
+    "Magdalenian cave painting had peaked around 17,000 BC. As the Pleistocene ended, Mediterranean-fringe European cultures (the Azilian, ~10,000 BC) replaced large representational paintings with small, portable, abstract-decorated pebbles — dots, stripes, zigzags painted in ochre. The first sustained abstract artistic tradition. Whether they were tally records, ritual tokens, or something else remains debated. The transition from representational to abstract art is one of the prehistoric record's clearest stylistic shifts.",
+
+  'construction-of-catalhoyuk-shrines':
+    "Earlier Neolithic art had been dominated by portable objects — figurines, decorated pottery. Çatalhöyük (~7000 BC, central Anatolia) had elaborate wall paintings, plastered bull-skull installations, and reliefs on house walls — combining domestic and ritual space at a scale not previously seen. The first sustained-architecture artistic tradition. Most of the houses contained at least one painted wall. The site documents the transition from portable to monumental art.",
+
+  'invention-of-the-stamp-seal':
+    "Pre-stamp marking had been individual — each impression made by hand and varying. Stamp seals (~6000 BC, in northern Mesopotamia and Iran) were carved stone dies that could be repeatedly pressed into clay to produce identical impressions. The first reproducible identity-marker. Used to seal containers, mark ownership of goods, and authenticate documents. The technological ancestor of cylinder seals (Mesopotamia, 3500 BC), official stamps, and modern signatures.",
+
+  'first-known-use-of-copper-smelting':
+    "Native copper had been hammered into shape since ~9000 BC — but native deposits were small and rare. Smelting (~5000 BC at Belovode in Serbia and concurrent Iranian Plateau sites) extracted copper from oxide and carbonate ores by heating with charcoal. The first metallurgical extraction process — turning a chemical compound into pure metal. Tin alloying (bronze, ~3500 BC) and iron working (~1200 BC) inherited the smelting technology. The Bronze and Iron Ages descend from this hearth.",
+
+  'lost-wax-casting':
+    "Sheet-metal hammering had limited ancient bronze sculpture to flat or simple shapes. Lost-wax casting — sculpt the original in wax, encase it in clay, melt out the wax through a vent, pour molten metal into the cavity — produced complex hollow forms in a single pour. The earliest known lost-wax castings are gold artefacts from Bulgaria's Varna Necropolis (~4550 BC). Bronze Age and later Mediterranean sculptures, Indian Chola bronzes, and modern artistic and industrial casting all use the same five-thousand-year-old technique.",
+
+  'invention-of-the-potters-wheel':
+    "Pre-wheel pottery had been hand-built by coiling, pinching, and slab construction — slow and limited in symmetry. The slow tournette wheel (~3500 BC, in Mesopotamia) and the fully kinetic potter's wheel (~3000 BC) let a potter throw a symmetrical vessel in minutes. Pottery production scaled. Standardized vessel volumes (the Sumerian sila, ~1L) became measurable units of trade. The first labor-amplifying machine in human craft.",
 };
 
 async function main(){
