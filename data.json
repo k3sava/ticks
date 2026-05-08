@@ -37636,34 +37636,34 @@
       "year": "18,000 BC",
       "yearN": -18000,
       "zone": "cognitive-leap",
-      "name": "Fire",
+      "name": "High-temperature fire control for ceramic firing",
       "domain": "computing",
-      "constraint": "before, no visible boundary enforcement; after, controlled burns signaled group territory",
-      "detail": "The Wikipedia extract does not mention territorial marking or controlled burns for signaling group territory. It only lists general uses of fire such as signaling, agriculture, and clearing land. The extract is too thin to support the proposed constraint.",
+      "constraint": "before, fire used for warmth and cooking only; after, sustained high-temperature firing of clay",
+      "detail": "By 18,000 BC, humans at Xianrendong Cave in Jiangxi (China) were sustaining open-hearth fires hot enough to vitrify clay vessels. This dissolved the constraint that fire's only uses were warmth, cooking, and predator deterrence, opening the path to ceramic vessels that survived storage and transport. The same controlled-temperature technique later powered the kiln, smelting, and every subsequent pyrotechnology.",
       "links": [
         {
-          "label": "Wikipedia: Fire",
-          "url": "https://en.wikipedia.org/wiki/Fire"
+          "label": "Wikipedia: Control of fire by early humans",
+          "url": "https://en.wikipedia.org/wiki/Control_of_fire_by_early_humans"
         }
       ],
-      "because": "Fire control by humans is much older than 18,000 BC (Wonderwerk Cave evidence pushes back to 1 million years). The corpus's date here likely refers to a specific behavior — controlled landscape burning by Pleistocene Europeans for game management, or the systematic use of fire to mark territory. Either way, fire's transformative role in human evolution is settled — cooked food, predator deterrence, warmth, social-gathering focal points, eventually ceramic and metallurgical transformations. The single deepest technology."
+      "because": "Fire control by hominins traces to Wonderwerk Cave evidence at ~1 million years ago, with definitive fire-making by 400,000 BC. By 18,000 BC at Xianrendong Cave, humans were sustaining open-hearth fires hot enough to vitrify clay — turning fragile sun-dried vessels into hard waterproof ceramics. The first sustained high-temperature pyrotechnology. Pottery vessels could now store grain, transport oil, ferment beer. Bronze smelting (~3500 BC) and iron working (~1200 BC) inherited the same fire-control technique."
     },
     {
       "id": "first-evidence-of-long-distance-trade-in-shells-contractual-trust",
       "year": "10,000 BC",
       "yearN": -10000,
       "zone": "settled-world",
-      "name": "Shell beads used as ornamentation in California",
+      "name": "Shell beads as durable ornamentation in California",
       "domain": "economics",
-      "constraint": "before, no medium for deferred exchange; after, shell valuables enabled credit-based trade",
-      "detail": "The extract states that Olivella biplicata shell beads were used in central and southern California for at least 9,000 years, initially as ornamentation. It does not provide evidence of long-distance trade or credit-based exchange at that time. The extract is too thin to confirm the proposed constraint.",
+      "constraint": "before, no portable durable valuables; after, shell beads as transferable status objects",
+      "detail": "Olivella biplicata shell beads from the Pacific coast were used in central and southern California for at least 9,000 years, initially as ornamentation. Inland sites in the Great Basin preserve the same shells far from any saltwater source, hinting at down-the-line exchange between neighboring groups. Mass-produced standardized bead currency only emerged among the Chumash about 1,000 years ago, but the early ornamental use established shells as a class of durable transferable valuables.",
       "links": [
         {
-          "label": "Wikipedia: Shell beads used as ornamentation in California",
+          "label": "Wikipedia: Shell money",
           "url": "https://en.wikipedia.org/wiki/Shell_money"
         }
       ],
-      "because": "Pre-shell-bead trade had been gift exchange between adjacent groups. Olivella shell beads from the Pacific coast appear at inland sites in California and the Great Basin (~10,000 BC) hundreds of miles from any source. The first sustained-scale long-distance trade requiring trust networks across territorial boundaries. Shells, obsidian, and amber dominate the long-distance trade objects of the Pleistocene-Holocene boundary. Money's prehistory begins here — durable transferable valuables that could store and transmit value across distance and time."
+      "because": "Hunter-gatherer trade had been gift exchange between adjacent groups. Olivella shell beads from the Pacific coast (~10,000 BC) appear at inland sites in California and the Great Basin, well away from any saltwater source. The first sustained ornamental use of a single durable, transferable item across regions. Shells, obsidian, and amber dominate the long-distance exchange objects of the Pleistocene-Holocene boundary. The Chumash bead-money economy emerged only 1,000 years ago, but the durable-transferable-valuable category begins here."
     },
     {
       "id": "emergence-of-totemism-clan-legal-identity",
