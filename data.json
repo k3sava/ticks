@@ -10081,7 +10081,7 @@
         }
       ],
       "_origZone": "ai-era",
-      "because": "Tissue engineering had been used in medical research since the 1990s. Mark Post's team at Maastricht grew the first cultured beef burger from bovine stem cells in 2013. It cost $300,000. By 2023, cultured chicken was approved for sale in Singapore and the US. If costs fall further, cultured meat could remove the need for industrial livestock farming — currently responsible for roughly 15% of global greenhouse emissions and most of the world's antibiotic use."
+      "because": "Tissue engineering had been used in medical research since the 1990s. Mark Post's team at Maastricht grew the first cultured beef burger from bovine stem cells in 2013. It cost over $325,000. Cultured chicken was approved for sale in Singapore in late 2020 and in the US by mid-2023. If costs fall further, cultured meat could remove the need for industrial livestock farming — long pegged at roughly 14-15% of global greenhouse emissions, with the FAO's most recent reassessment closer to 12%, and a major share of global antibiotic use."
     },
     {
       "id": "ai-optimized-precision-agriculture",
@@ -22809,7 +22809,7 @@
           "url": "https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/"
         }
       ],
-      "because": "GPT-4 (March 2023) had topped out at 128,000 tokens. Anthropic's Claude 2 raised it to 100K, then 200K. Google's Gemini 1.5 Pro (February 2024) jumped to 1,000,000 tokens — about 750,000 words, or ten average novels. The first model that could ingest an entire codebase, a feature-length film transcript, or a year of corporate communications in one prompt. Long-context retrieval (RAG) workflows lost some of their necessity; the question of when to use long context vs. retrieval is now an architectural design choice."
+      "because": "GPT-4 (March 2023) had launched at 8K and 32K tokens; GPT-4 Turbo (November 2023) raised the ceiling to 128K. Anthropic's Claude 2 (July 2023) brought 100K, then Claude 2.1 doubled it to 200K. Google's Gemini 1.5 Pro (February 2024) jumped to 1,000,000 tokens — about 750,000 words, or ten average novels. The first model that could ingest an entire codebase, a feature-length film transcript, or a year of corporate communications in one prompt. Long-context retrieval (RAG) workflows lost some of their necessity; the question of when to use long context vs. retrieval is now an architectural design choice."
     },
     {
       "id": "ai-agents-autonomous-task-completion",
@@ -37595,7 +37595,7 @@
           "url": "https://en.wikipedia.org/wiki/Tally_stick"
         }
       ],
-      "because": "Pre-tally counting had been tied to spoken numbers — limited to what a single person could remember. The Lebombo bone (~44,000 BC, Southern Africa) carries 29 notches that almost certainly count something — possibly lunar cycles. The Ishango bone (~20,000 BC, Congo) has more elaborate notation. The first external durable quantitative records. Quantities became transmittable across people and time without continuous human chain. Numerical record-keeping as a category begins here."
+      "because": "Pre-tally counting had been tied to spoken numbers — limited to what a single person could remember. The Lebombo bone (~43,000 BC, southern Africa) carries 29 notches that almost certainly count something — possibly lunar cycles. The Ishango bone (~20,000 BC, Congo) has more elaborate notation. The first external durable quantitative records. Quantities became transmittable across people and time without continuous human chain. Numerical record-keeping as a category begins here."
     },
     {
       "id": "invention-of-the-spear-thrower",
@@ -38326,7 +38326,7 @@
           "url": "https://en.wikipedia.org/wiki/Arthashastra"
         }
       ],
-      "because": "Pre-Arthashastra Indian statecraft had been transmitted as oral tradition or scattered religious-legal texts. The Arthashastra (compiled into surviving form by ~300 AD, drawing on much older Mauryan-era material attributed to Kautilya, ~300 BC) is a 6,000-verse manual of statecraft, economics, military strategy, and law — closer in scope to Machiavelli plus Adam Smith plus Sun Tzu. The first sustained South Asian treatise on the art of governance. Rediscovered in 1905 manuscripts; modern scholarship treats it as the most comprehensive single source on Mauryan administration."
+      "because": "Pre-Arthashastra Indian statecraft had been transmitted as oral tradition or scattered religious-legal texts. The Arthashastra (compiled into surviving form by ~300 AD, drawing on much older Mauryan-era material attributed to Kautilya, ~300 BC) is a 15-book, 150-chapter manual of statecraft, economics, military strategy, and law — closer in scope to Machiavelli plus Adam Smith plus Sun Tzu. The first sustained South Asian treatise on the art of governance. Rediscovered in 1905 manuscripts; modern scholarship treats it as the most comprehensive single source on Mauryan administration."
     },
     {
       "id": "constitutio-antoniniana-grants-citizenship",
@@ -38632,7 +38632,7 @@
           "url": "https://en.wikipedia.org/wiki/Peace_of_Westphalia"
         }
       ],
-      "because": "The Thirty Years' War (1618-1648) had killed roughly a third of central Europe over which version of Christianity was authoritative. The Peace of Westphalia (October 1648, two simultaneous treaties at Münster and Osnabrück) recognized 300+ European polities as sovereign states — equal in international law, free from external interference in internal matters, religious settlements final. The first sustained articulation of the modern sovereign state system. Modern international law treats Westphalia as the founding moment of the state-as-actor framework."
+      "because": "The Thirty Years' War (1618-1648) had killed roughly a third of central Europe over which version of Christianity was authoritative. The Peace of Westphalia (October 24, 1648, two simultaneous treaties at Münster and Osnabrück) recognized hundreds of European polities — equal in international law, free from external interference in internal matters, religious settlements final. The first sustained articulation of the modern sovereign state system. Modern international law treats Westphalia as the founding moment of the state-as-actor framework."
     },
     {
       "id": "navigation-acts",
@@ -41879,7 +41879,7 @@
           "url": "https://en.wikipedia.org/wiki/Ebla_tablets"
         }
       ],
-      "because": "Stonehenge Phase I (3100 BC) and Egyptian papyrus (2560 BC) bracket the Bronze Age moment when monumental and textual record-keeping were both expanding. The Ebla tablets — about 17,000 cuneiform tablets recovered from the palace of Ebla in modern Syria — gave the third-millennium BC its largest preserved royal archive, with administrative, legal, and lexical texts that document Eblaite trade and language."
+      "because": "Stonehenge Phase I (3100 BC) and Egyptian papyrus (2560 BC) bracket the Bronze Age moment when monumental and textual record-keeping were both expanding. The Ebla tablets — roughly 1,800 complete cuneiform tablets and thousands more fragments recovered from the palace of Ebla in modern Syria — gave the third-millennium BC its largest preserved royal archive, with administrative, legal, and lexical texts that document Eblaite trade and language."
     },
     {
       "id": "eduba-scribal-school",
