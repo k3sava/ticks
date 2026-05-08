@@ -2665,6 +2665,96 @@ const BECAUSE_BATCH = {
 
   'printing-press':
     "Pre-Gutenberg books had been hand-copied — a single Bible took a scribe a year. Manuscript copying was bottlenecked by literate-scribe availability. Johannes Gutenberg's printing press (~1440-1455, in Mainz) used cast metal type, oil-based ink, and a wooden screw press adapted from wine production. The first sustained-scale European movable-type printing. Within fifty years European cities had presses producing books at industrial pace. The Reformation, the scientific revolution, the Enlightenment, and modern mass literacy all run on Gutenberg's invention.",
+
+  'descartes-meditations-on-first-philosophy':
+    "Pre-Descartes Western epistemology had grounded knowledge in scholastic authorities or sensory experience. Descartes's Meditations (1641, six meditations published in Latin) systematically doubted everything that could be doubted, finally arriving at the cogito ('I think, therefore I am') as undoubtable foundation. The first sustained-scale modern foundationalist epistemology. Influenced Spinoza, Leibniz, Kant, and the entire modern philosophical tradition. The mind-body problem, philosophical skepticism, and the idea of philosophy as a personal first-person investigation all run in Cartesian channels.",
+
+  'leibnizs-calculus':
+    "Newton (privately, 1666) and Leibniz (independently, by 1675) had each developed calculus. Leibniz's 1684 publication (Acta Eruditorum, 'A New Method for Maxima and Minima') was the first formal printed presentation. Leibniz's notation (dy/dx, integral sign) became standard because it was clearer than Newton's; the priority dispute consumed both men. The first sustained-scale published infinitesimal calculus. Modern physics, engineering, economics, and statistics all run on Leibnizian-Newtonian calculus.",
+
+  'benthams-panopticon-concept':
+    "Pre-Bentham institutional architecture had used walls and isolation as control mechanisms. Jeremy Bentham's Panopticon (1785-1791, designed but never built) proposed a circular prison architecture where a central watchtower could observe every cell, with one-way visibility — inmates couldn't tell when they were being watched. The first sustained-scale theory of architectural surveillance as social-control mechanism. Foucault's Discipline and Punish (1975) elevated the Panopticon to symbol of modern disciplinary power. Modern surveillance studies and panopticon-inspired architecture both descend from Bentham.",
+
+  'german-idealism-fichtes-wissenschaftslehre':
+    "Kant's transcendental idealism (1781) had left the noumenal 'thing-in-itself' as an unknown limit. Fichte's Wissenschaftslehre ('Science of Knowledge,' 1794) eliminated the noumenon entirely — all reality is grounded in the activity of the self (the 'I'). The first sustained-scale German idealist system after Kant. Influenced Schelling, Hegel, and the entire Romantic philosophical tradition. Modern continental philosophy still debates whether to take Fichte's bold subjective idealism seriously.",
+
+  'einsteins-special-relativity':
+    "Pre-Einstein physics had assumed absolute space and time — Newton's universal time flowed equally for all observers. Einstein's 1905 paper 'On the Electrodynamics of Moving Bodies' showed that observers in different inertial frames measure space and time differently — only the speed of light is invariant. The first sustained-scale relativistic physics. The famous E=mc² appeared in a follow-up paper the same year. General relativity (1915) extended the framework to gravity. Modern physics, GPS satellites, and atomic clocks all run on Einsteinian relativity.",
+
+  'bohrs-complementarity-principle':
+    "Quantum mechanics (Heisenberg 1925, Schrödinger 1926) had given matter wave-and-particle dual descriptions that seemed contradictory. Niels Bohr's complementarity principle (1927, in Copenhagen) argued that wave and particle pictures are mutually exclusive but both necessary — depending on the experimental setup, one or the other applies. The first sustained-scale interpretive framework for quantum mechanics. The Copenhagen interpretation remained the dominant interpretive stance through most of the 20th century. Many-worlds, pilot-wave, and other interpretations all argue against Bohr's framework.",
+
+  'development-of-the-concept-of-property-rights':
+    "Pre-1948 property rights had been national-law constructs without international protection. Article 17 of the Universal Declaration of Human Rights (1948) declared the right to own property and freedom from arbitrary deprivation. The first sustained-scale international affirmation of property as a human right. Subsequent regional human-rights instruments (European Convention's Protocol 1, 1952) added enforceable property protections. Modern international human-rights law treats property as core right, though its scope and limits remain contested.",
+
+  'rortys-philosophy-and-the-mirror-of-nature':
+    "Pre-Rorty Anglo-American philosophy had assumed philosophy's role was to find a 'mirror' that accurately represents reality. Richard Rorty's Philosophy and the Mirror of Nature (1979) attacked the entire representationalist tradition — from Descartes through analytic philosophy. Truth is not correspondence to reality; it's a property of sentences that work pragmatically. The first sustained-scale neo-pragmatist critique of analytic philosophy. Influenced subsequent post-analytic philosophy (Brandom, McDowell) and the cultural studies wave that crossed disciplinary boundaries from the 1980s.",
+
+  'arxiv-preprint-server-founded':
+    "Pre-arXiv physics preprints had circulated as photocopied manuscripts mailed between universities — slow, expensive, exclusive. Paul Ginsparg's arXiv preprint server (founded August 1991 at Los Alamos National Laboratory) hosted physics manuscripts on a publicly accessible web server before peer review. The first sustained-scale open preprint server in any discipline. Now hosts 2 million+ papers across physics, math, computer science, biology, economics. Foundational for modern open-science practice; bioRxiv, ChemRxiv, SSRN are all arXiv copies for other disciplines.",
+
+  'wiki-concept-created':
+    "Pre-wiki collaborative web-page editing had required separate version-control tools. Ward Cunningham's WikiWikiWeb (March 25, 1995, on c2.com) let any reader edit any page directly through the browser. Edits applied immediately; no admin approval. The first sustained-scale collaborative web-page-editing platform. Wikipedia (2001) was the largest application; thousands of subject-specific wikis, intranet documentation systems, and modern collaborative-knowledge tools all build on Cunningham's wiki concept.",
+
+  'google-search-algorithm-deployed':
+    "Pre-Google web search (AltaVista, Lycos, HotBot) had ranked results by keyword frequency on the page itself — easily gamed. Page and Brin's BackRub (Stanford, 1996) used link structure as a relevance signal — pages with many high-quality inbound links ranked higher. Renamed Google in 1997, public launch September 1998. The first sustained-scale link-structure-based search engine. Within five years Google had 80% of US web search market share. Modern web search and the entire digital advertising economy run on links-as-votes.",
+
+  'friendster-social-networking':
+    "Pre-Friendster online social networking had been niche (Six Degrees 1997, LiveJournal 1999) and hobbyist. Friendster (March 2002) was the first social-networking site to attract a mass audience — gaining 3 million users in its first year. Outscaled by infrastructure failures by 2004 and overtaken by MySpace and Facebook. The first sustained-scale social-networking platform. Social-graph mapping, friend-of-friend connections, and the modern social-media business model all begin in Friendster's brief moment.",
+
+  'web-2-0-concept-defined':
+    "Pre-Web-2.0 the internet had been mostly read-only static pages. Tim O'Reilly's Web 2.0 conference (October 2004) and his subsequent essay 'What Is Web 2.0' (September 2005) crystallized a shift: the web as platform, user-generated content, social participation, AJAX-driven interactivity. The first sustained-scale framing of the participatory web. Influenced subsequent product development across the industry; the term itself outlived its useful life but the underlying paradigm shift was real.",
+
+  'cloud-computing-concept-popularized':
+    "Pre-cloud computing applications had been deployed on owned-and-operated server hardware. AWS's S3 (March 2006) and EC2 (August 2006) were the first sustained-scale public utility-computing platforms — pay-as-you-go infrastructure on demand. The phrase 'cloud computing' came into wide use around the same time. The first sustained-scale public cloud infrastructure. Modern startup economics, the gig economy, and AI training runs all assume cloud as substrate. AWS, Azure, GCP, and the entire IaaS/PaaS market follow Bezos's bet.",
+
+  'android-operating-system-released':
+    "iPhone (2007) had launched as a closed Apple-only platform with no third-party app distribution initially. Google's Android (released open-source September 2008, on the HTC Dream/T-Mobile G1) gave handset manufacturers and carriers an open OS to build smartphones around. The first sustained-scale open-source mobile operating system. Within five years Android had 80%+ of global smartphone market share — the iPhone retained 10-20% (and most of the profits). Modern mobile computing ran on the Apple-Google duopoly that emerged in 2007-2008.",
+
+  'invention-of-the-composite-tool-hafted-axe':
+    "Pre-hafted-tool stone implements had been hand-held — limited leverage, single-use materials. Hafted axes and spears (~40,000 BC, in Eurasia and Australia) attached stone or bone heads to wooden handles using sinew, plant fiber, or pitch. The first sustained-scale composite tools. Allowed greater force application, ranged-projection (atlatl darts, arrows), and modular repair (replace just the head). The technological substrate of all subsequent stone-and-wood toolkits.",
+
+  'first-known-fishhook-shell':
+    "Pre-fishhook fishing had been by spears, nets, weirs, and gorges. Sakitari Cave (Okinawa, ~22,380 BC) preserved the oldest known fishhooks — carved from sea snail shells with sharpened points. The first sustained-scale dedicated fishing-hook technology. Allowed line-fishing in deep water and at night, dramatically expanding marine-protein sources. Coastal Pleistocene populations who developed deep-water fishing technology had nutritional and demographic advantages over inland populations.",
+
+  'discovery-of-fermentation':
+    "Pre-fermentation food spoilage had been near-total — fresh-only diets. Late-Pleistocene/early-Holocene human populations (~11,000 BC at Raqefet Cave in Israel, possibly earlier elsewhere) used fermentation deliberately for both food preservation (kimchi, sauerkraut, cheese, fermented fish) and beverage production (beer, wine, mead). The first sustained-scale microbial-food-processing technology. Calorie storage extended dramatically; alcohol was a calorie-dense psychoactive social bonding agent. Some scholars now argue beer, not bread, drove agricultural settlement.",
+
+  'domestication-of-wheat-2':
+    "Same Neolithic founder crops, alternate ID. The Levantine Neolithic founder crops (~9500 BC) — emmer wheat, einkorn wheat, barley, peas, lentils, chickpeas, bitter vetch, flax — were domesticated more or less simultaneously across the Fertile Crescent. The first sustained-scale crop assemblage that could support permanent settlement. Spread together across Eurasia; appearing in Europe, the Indus Valley, and East Asia within a few thousand years. The Neolithic Revolution's biological foundation.",
+
+  'invention-of-the-lock-and-key':
+    "Pre-lock guarding valuables had required physical presence — guards, household watchmen. Wooden pin-tumbler locks (~6000 BC at Khorsabad, in modern Iraq) used a wooden bolt held by movable pins that the right wooden key could displace. The first sustained-scale mechanical security technology. Ancient Egyptians refined the design; Roman locksmiths added metal components. Modern physical security — and the entire concept of secrets-secured-by-mechanism rather than by surveillance — descends from this Bronze Age innovation.",
+
+  'invention-of-the-lever':
+    "Pre-lever heavy lifting had been by direct muscle. Levers (~5000 BC, ubiquitous in early agricultural societies) gave humans mechanical advantage — moving weights vastly greater than human muscle could directly lift. The first sustained-scale mechanical-advantage tool. Crowbars, oars, balance scales, plough handles all use lever principles. Archimedes's later quantitative analysis (~250 BC) gave the lever its theoretical formalization, but the practical use predates by 4,500 years.",
+
+  'development-of-the-first-cities':
+    "Pre-urban Neolithic settlements had been villages with maybe a thousand inhabitants, all engaged in agriculture. The first cities (~3500 BC, in southern Mesopotamia — Uruk, Eridu, Ur) had populations of tens of thousands, with specialization: priests, scribes, merchants, artisans, soldiers, full-time political leaders. The first sustained-scale settlements with non-agricultural majorities. Required surplus food production, bureaucratic record-keeping, and centralized political authority — all of which emerged together.",
+
+  'bronze-alloying-2':
+    "Same bronze alloying, alternate ID. Tin alloying with copper (~10% by weight) produced bronze — three to four times harder than copper, castable, edge-holding. Independent invention in the Near East and East Asia around 3500 BC. Required long-distance trade in tin (rare in the Near East, requiring sourcing from as far as Cornwall and Afghanistan). The Bronze Age states that followed (Mesopotamian city-states, Egypt, Indus Valley, Shang) were partially defined by their access to bronze metallurgy and the tin trade routes that supplied it.",
+
+  'egyptian-calendar-solar':
+    "Same Egyptian solar calendar, alternate ID. Egyptian astronomers (~3000 BC) tracked the heliacal rising of Sirius and developed a 365-day civil calendar — twelve 30-day months plus five epagomenal days. The first sustained-scale solar calendar. Drifted slightly each century but stayed close enough for agricultural planning. The Julian calendar (46 BC) and the modern Gregorian calendar (1582) both descend from the Egyptian solar-365 model.",
+
+  'invention-of-the-bellows':
+    "Pre-bellows smelting had used natural draft — adequate for soft metals like copper but insufficient for high-melting-point metals. Bellows (~1500 BC, attested in Egyptian tomb paintings and Mesopotamian metallurgical sites) forced air into furnaces, raising temperatures enough for iron smelting (1538°C melting point). The first sustained-scale forced-draft furnace technology. Iron Age (~1200 BC) metallurgy depended on bellows. Modern blast furnaces are bellows scaled up by industrial-revolution thermodynamics.",
+
+  'anaximander-maps-the-known-world':
+    "Pre-Anaximander geography had been local — each community's mental map of its surroundings. Anaximander of Miletus (~546 BC) drew the first known map of the entire then-known world — Ionia at center, surrounded by inhabited continents and the encircling Ocean. The first sustained-scale Greek geographic synthesis. Lost; we know about it from later references. Influenced Hecataeus's improved map (~500 BC) and the Greek geographic tradition that culminated in Eratosthenes (~240 BC) and Ptolemy (~150 AD).",
+
+  'democritus-expands-atomism':
+    "Pre-Democritean Greek natural philosophy had explained matter through Aristotelian elemental qualities or divine purpose. Leucippus and Democritus (~460-370 BC, in the Atomist school) argued that all reality consists of indivisible atoms moving in void — no purpose, no design, just mechanism. The first sustained-scale Western mechanistic-materialist physics. Marginalized through antiquity (Plato and Aristotle's vitalism dominated). Recovered through Epicurus and Lucretius; revived in early-modern atomism (Gassendi, Newton); finally vindicated by 19th-century chemistry and 20th-century physics.",
+
+  'empedocles-identifies-four-elements':
+    "Pre-Empedoclean physics had used various single-substance theories (water, air, fire, the boundless). Empedocles (~450 BC, in his poem On Nature) proposed four elements — earth, water, air, fire — combined in different proportions to produce all observable matter, with attractive force (Love) and repulsive force (Strife) as drivers. The first sustained-scale Greek pluralist theory of matter. Plato and Aristotle adopted the four-elements framework; medieval Islamic and European physics ran on it. Modern chemistry's element-periodic-table inheritance traces conceptually to Empedocles.",
+
+  'theophrastus-founds-botany':
+    "Aristotle's biological writings had focused on animals. Theophrastus (~371 BC, his student and Lyceum successor) wrote Historia Plantarum and De Causis Plantarum — the first systematic botany. Described 480 species; classified by structure, habitat, and reproductive characteristics. The first sustained-scale Western botany. Survived through Arabic and Latin translation; Linnaeus (1735) used Theophrastus's terminology as the bedrock layer of his nomenclature.",
+
+  'plato-describes-the-five-platonic-solids':
+    "Pre-Platonic geometry had identified individual regular polyhedra without classification. Plato's Timaeus (~360 BC) described the five regular convex polyhedra — tetrahedron, cube, octahedron, dodecahedron, icosahedron — and assigned each to a classical element. The first sustained-scale Greek systematic enumeration of regular polyhedra. Euclid's Elements Book XIII (~300 BC) proved formally that there are exactly five. Modern crystallography, virology (icosahedral viruses), and architecture all use Platonic-solid geometry.",
 };
 
 async function main(){
