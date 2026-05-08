@@ -3115,6 +3115,111 @@ const BECAUSE_BATCH = {
 
   'batch-normalization-proposed':
     "Pre-batch-normalization training very deep neural networks had been unstable due to internal covariate shift — the changing distribution of activations between layers. Ioffe and Szegedy's batch normalization (2015) normalized layer activations to zero mean and unit variance during training. The first sustained-scale activation-normalization technique. Made training networks of 100+ layers practical. Almost every modern neural network uses batch norm or one of its variants (LayerNorm, GroupNorm). The post-2015 deep learning era runs on normalization tricks.",
+
+  'diffusion-models-for-image-generation':
+    "Pre-diffusion image generation had been GANs — adversarial training, mode-collapse-prone. Sohl-Dickstein et al.'s 2015 paper introduced diffusion models — slowly destroy data with noise, learn to reverse the process. Stable training, no mode collapse. Ho-Jain-Abbeel's DDPM (2020) made it practical. The first sustained-scale diffusion-based generative modeling. DALL-E 2, Stable Diffusion, Midjourney, Imagen all use diffusion. The technical heart of the 2022-onward generative-AI image revolution.",
+
+  'first-known-rope-and-cordage':
+    "Pre-rope binding had been by hand-twisting fibers. Lascaux Cave fragments and other Upper Paleolithic sites preserve evidence of cordage from twisted plant fibers (~40,000 BC, possibly earlier). Allowed binding of stone heads to wooden hafts, snares, fishing lines, sewing — a foundational manufacturing technology. The first sustained-scale flexible-binding material. Combined with hafted tools, sewing needles, and snares, cordage made all subsequent organic-and-stone manufacturing possible.",
+
+  'invention-of-pottery':
+    "Pre-pottery storage had been baskets, hide bags, stone vessels — leaky, perishable, or heavy. Earliest pottery emerges in East Asia (Xianrendong Cave, China, ~18,000 BC). Made by firing clay. Pottery vessels stored grains, liquids, and prepared foods reliably; allowed cooking by direct heat. The first sustained-scale durable storage container. Joined sewing needles and the lever as the deepest material-culture technologies of the Pleistocene-Holocene transition.",
+
+  'domestication-of-cattle':
+    "Wild aurochs (Bos primigenius) had been hunted across Eurasia. Domestication of aurochs (~10,500 BC, in Anatolia and the Indus Valley independently) gave humans a controllable source of meat, milk, leather, and traction power. The first sustained-scale large-herbivore domestication. Bronze Age plow agriculture, dairy economies, and the entire pastoral-nomadic tradition all run on cattle. Modern beef and dairy cattle descend from these Neolithic founder herds.",
+
+  'founding-of-jericho':
+    "Pre-Jericho settlements had been small open villages. Jericho (~9000 BC, Pre-Pottery Neolithic A) was the first sustained-scale fortified settlement — perhaps 2,000 people in stone-and-mudbrick houses surrounded by stone walls and a tower. The first sustained-scale fortified Neolithic site. The fortification's purpose (defense vs. flood control vs. ritual) is debated, but the labor mobilization required — perhaps 100 people for several months — is itself the tick. Coordinated construction at scales not previously seen.",
+
+  'invention-of-the-brick-mold':
+    "Pre-mudbrick walls had been wattle-and-daub or stacked irregular stones. Mudbrick at Jericho (~9000 BC) — clay molded into standardized rectangular shapes, dried in the sun — gave Neolithic builders durable, uniform building units. The first sustained-scale standardized building material. Allowed multi-story construction, repeatable architectural plans, scalable urban design. Egyptian, Mesopotamian, and Indus Valley civilizations all built primarily on mudbrick infrastructure.",
+
+  'founding-of-catalhoyuk':
+    "Pre-Çatalhöyük Neolithic settlements had been small villages. Çatalhöyük (~7500-5600 BC, central Anatolia) housed perhaps 8,000 people in a tightly packed agglomeration of mudbrick houses sharing walls — entered from the roof, not the street. The first sustained-scale Neolithic proto-city. Sustained for nearly two millennia. Suggests dense cooperative urban living was possible without formal hierarchy. Modern archaeological understanding of pre-state-level urbanism rests heavily on Çatalhöyük's evidence.",
+
+  'domestication-of-rice-2':
+    "Same rice domestication, alternate ID. Wild rice (Oryza rufipogon) had grown along the Yangtze. Domestication (~7000-6200 BC, Pengtoushan and Bashidang sites in central China) produced Oryza sativa — non-shattering, synchronously ripening. Rice paddies — flooded fields suppressing weeds — supported the densest pre-modern agricultural populations on Earth. Chinese, Korean, Japanese, and Southeast Asian civilizations all built around rice agriculture. Half the world today eats rice as primary staple.",
+
+  'invention-of-the-sailboat-2':
+    "Same sailboat invention, alternate ID. Sailing watercraft appeared independently in Island Southeast Asia and the Mediterranean (~5500-5000 BC, with Persian Gulf and Egyptian sites preserving the earliest archaeological evidence). Wind power supplemented or replaced muscle on water. Long-distance coastal trade became routine — Mediterranean copper, Persian Gulf shells, Indus Valley lapis. The first sustained use of an environmental energy flow for human transport.",
+
+  'invention-of-the-wheel-2':
+    "Same wheel invention, alternate ID. Wheels emerged from potter's wheels (~4500-3500 BC, in Bronocice culture Poland and Sumerian wheeled chariots). Solid wooden disk wheels reduced friction by an order of magnitude. Carts and wagons carrying multi-ton loads became practical with one or two oxen. Bronze Age trade routes, military logistics (chariot warfare), and urban supply chains all depend on the wheel.",
+
+  'construction-of-irrigation-canals-mesopotamia':
+    "Pre-irrigation Mesopotamian agriculture had been limited to floodplain margins. Surface canal irrigation (~3000 BC, in southern Mesopotamia, especially Sumerian city-states) carried Tigris-Euphrates water inland through gravity-fed channels. Cultivable area expanded ten-fold. The first sustained-scale arid-land irrigation infrastructure. Salt accumulation eventually degraded soil; canal maintenance required organized labor. The institutional substrate of the early Mesopotamian state.",
+
+  'first-known-use-of-glass':
+    "Pre-glass containers had been clay or stone — opaque. Earliest glass artifacts (~2000 BC, in Mesopotamia and Egypt) were small beads and decorative objects. Egyptian glass production (~1500 BC, Tell el-Amarna) industrialized small-scale glass production. The first sustained-scale glass manufacturing. Roman glass-blowing (~50 BC) made glass containers practical and abundant. Modern optical glass, fiber optics, and the entire glass-and-mirror tradition all descend from this Bronze Age beginning.",
+
+  'iron-smelting-in-bloomeries':
+    "Bronze had limited the Bronze Age (~3500-1200 BC) to societies with access to scarce tin. Iron smelting in bloomeries (~700 BC widespread, with earlier Hittite, Anatolian, and African evidence) used charcoal-fueled furnaces with bellows to reduce iron ore to wrought iron. Iron ore was abundant nearly everywhere; iron weapons and tools became cheap and ubiquitous. The first sustained-scale democratized metal-tool production. Iron Age states (Achaemenid Persia, Han China, Imperial Rome) all built on cheaply abundant iron.",
+
+  'greek-trireme-warship':
+    "Pre-trireme Mediterranean warships had been single-bank or two-bank galleys. The trireme (~700 BC, with Greek refinement through 480 BC) had three rows of oars on each side, 170 rowers, and a bronze ram for ship-destruction. The first sustained-scale fast-strike warship. Greek victories at Salamis (480 BC) and the entire Athenian thalassocracy ran on triremes. Mediterranean naval power for ~700 years was trireme-and-derivative power. Modern naval architecture's deepest historical roots run partly through Greek warship design.",
+
+  'solons-reforms-in-athens':
+    "Pre-Solon Athens had been controlled by a hereditary aristocracy. Solon's reforms (594 BC) cancelled debt-bondage, gave citizens different political rights based on wealth (the timocratic constitution), and established the right of any citizen to bring legal action. The first sustained-scale Athenian democratic-foundational reform. Cleisthenes's reforms (508 BC) and the eventual Periclean democracy (~450 BC) all built on Solon's foundation. Modern democratic theory treats Solon as institutional ancestor.",
+
+  'cleisthenes-democratic-reforms':
+    "Solon's reforms (594 BC) had constrained aristocratic power but left clan structures intact. Cleisthenes's reforms (508 BC) replaced the four traditional tribes with ten artificial demes-based tribes — citizens identified themselves by deme rather than clan. Clan-based political networks dissolved. The first sustained-scale Athenian democratic citizenship reform. The institutional foundation of Athenian democracy proper.",
+
+  'persian-royal-road':
+    "Pre-Royal-Road Persian imperial communication had been ad hoc. Cyrus and Darius's Royal Road (~500 BC) — 2,500 km from Susa to Sardis with relay stations every 25 km — carried royal dispatches in nine days where private travelers took ninety. The first sustained-scale imperial postal infrastructure. Herodotus's 'neither snow, nor rain, nor heat, nor gloom of night' inscription is from this Persian system. Roman cursus publicus, Mongol yam, and modern postal services all descend conceptually from the Royal Road.",
+
+  'battle-of-marathon':
+    "Pre-Marathon Persian expansion had seemed unstoppable. The Battle of Marathon (490 BC, Athenian and Plataean hoplites against Datis's larger Persian invasion force) ended in a decisive Greek victory through superior phalanx tactics. The first sustained-scale Greek demonstration that disciplined hoplite infantry could defeat Persian mass infantry. Athens's confidence in democracy, the Persian Wars trilogy (Marathon, Thermopylae, Salamis), and the eventual classical Greek civilization all build on this single victory.",
+
+  'roman-legal-code-twelve-tables':
+    "Same Twelve Tables, alternate ID. Roman law before 449 BC had been unwritten and known only to patrician priests. Plebeian agitation forced the appointment of a decemvirate to write the laws down. The Twelve Tables (449 BC, displayed in the Forum) made Roman law publicly accessible. The first sustained-scale Roman written legal code. Subsequent Roman jurisprudence and modern civil-law codifications all trace ancestry through the Twelve Tables.",
+
+  'laozi-and-dao-de-jing':
+    "Same Dao De Jing, alternate ID. Pre-Daoist Chinese spiritual practice had been Confucian ritualism. The Dao De Jing (~400 BC, traditionally attributed to Laozi but probably compiled from earlier oral tradition) provided the foundational Daoist text. The first sustained-scale Daoist philosophical canon. Modern Daoist religious practice and Western environmental ethics both draw on Dao De Jing's metaphysics of natural spontaneity.",
+
+  'plato-founds-the-academy':
+    "Pre-Plato Greek higher education had been informal — students gathered around individual teachers. Plato's Academy (founded 387 BC in Athens, in a sacred grove dedicated to Academus) was the first sustained-scale formal Western institution of higher learning — grounded curriculum (mathematics, dialectics), continuous succession of leaders (Plato → Speusippus → Xenocrates), permanent property. Operated for 916 years until Justinian closed it in 529 AD. Modern universities trace conceptual ancestry through this Platonic institutional model.",
+
+  'maurya-empire-unified-under-chandragupta':
+    "Pre-Mauryan Indian subcontinent had been fragmented into mahajanapadas (warring kingdoms). Chandragupta Maurya's empire (founded ~322 BC) unified most of the subcontinent under a single state — population 50+ million, capital at Pataliputra, sophisticated bureaucracy described in Kautilya's Arthashastra. The first sustained-scale Indian subcontinent unification. Subsequent Indian state-building traditions (Gupta Empire, Mughal Empire, British Raj, modern Republic of India) all reference the Mauryan precedent.",
+
+  'ashokas-edicts-on-dharma':
+    "Pre-Ashokan Indian governance had been administrative without explicit moral content. Ashoka's edicts (~268-232 BC, after the Kalinga War) inscribed dharma — moral and religious teaching — on rock and pillar across the Mauryan Empire. Buddhist non-violence, religious tolerance, animal welfare, the duty of rulers to subjects. The first sustained-scale moral-policy proclamation by a state at imperial scale. Buddhist missions to Sri Lanka and the Hellenistic world spread the dharma further.",
+
+  'han-iron-smelting-with-blast-furnace':
+    "Pre-Han Chinese iron smelting had used bloomeries — small batch furnaces. Han Chinese blast furnaces (~200 BC, at iron-monopoly facilities) produced cast iron in continuous operation. The first sustained-scale industrial iron production anywhere. Han iron output exceeded contemporary Roman output by an order of magnitude. Cast-iron tools, weapons, and farming equipment supported the largest pre-modern population concentration. European blast furnaces (~1300 AD) eventually emerged independently.",
+
+  'han-civil-service-exams-begin':
+    "Pre-Han Chinese government posts had been hereditary or assigned by family connection. Han Wudi's introduction of Confucian-curriculum examinations (~165 BC) tested candidates on classical texts for entry into bureaucratic posts. The first sustained-scale meritocratic civil-service entry exam. Tang and Song dynasties (~600-1300 AD) standardized the system; abolished only in 1905. Modern civil service exam systems (Chinese gaokao, Korean suneung, French concours) all descend from the Han precedent.",
+
+  'julian-calendar-reform':
+    "Pre-Julian Roman calendar had been a chaotic lunisolar mess — 355-day year with intercalary months added irregularly by the Pontifex Maximus, often for political reasons. Julius Caesar's calendar reform (effective January 1, 45 BC, advised by the astronomer Sosigenes) introduced a 365.25-day solar year with leap-year insertions every four years. The first sustained-scale rational solar calendar in the Roman world. Standard European calendar for over 1,600 years until Pope Gregory XIII's refinement (1582). Modern Gregorian calendar is essentially Julian with a tighter leap-year rule.",
+
+  'roman-firefighting-vigiles':
+    "Pre-Vigiles Rome had been frequently devastated by fires — entire neighborhoods burning unchecked. Augustus's Vigiles (instituted 6 AD) — 7,000 freedmen organized into seven cohorts each responsible for two of the city's 14 districts — patrolled at night with water buckets, blankets, and grappling hooks. The first sustained-scale municipal fire-and-police service. Lasted through the Empire's western collapse. Modern fire departments and city-level emergency services all descend conceptually from the Vigiles.",
+
+  'han-invention-of-the-wheelbarrow':
+    "Pre-wheelbarrow heavy-load transport had required two or more workers. The Chinese single-wheel wheelbarrow (~118 AD, depicted in Han tomb murals) enabled one person to move loads of 100-200 kg. The first sustained-scale single-person heavy-load transport device. Used in Chinese construction, agriculture, and military logistics for centuries before reaching Europe (~1100-1200 AD). Modern construction-site wheelbarrows are essentially the same device, with steel and rubber substituted for wood.",
+
+  'hierapolis-sawmill':
+    "Pre-Hierapolis sawing had been by hand or by manual frame saw. The Hierapolis sawmill (3rd century AD, in Roman Asia Minor) used a water-powered crank-and-connecting-rod mechanism to convert rotary water-wheel motion into reciprocating saw-blade motion. The first sustained-scale water-powered industrial sawmill. Anticipated medieval European sawmills (Villard de Honnecourt's 13th-century sketch) by a millennium. The crank-and-connecting-rod device is itself a fundamental engineering element, reused later in steam engines and internal-combustion engines.",
+
+  'house-of-wisdom-founded-in-baghdad':
+    "Pre-House-of-Wisdom Greek and Persian philosophical-scientific texts had been scattered and untranslated. The House of Wisdom (founded ~754 AD as the Abbasid royal library, expanded into a major translation institute under Al-Ma'mun ~830 AD) systematically translated Greek, Sanskrit, and Persian works into Arabic. The first sustained-scale Islamic Golden Age translation institute. Many Greek works survive only through this Arabic translation tradition. Foundation of medieval Islamic science, philosophy, mathematics; eventually re-translated into Latin in 12th-13th-century Europe.",
+
+  'astrolabe-refined-in-islamic-world':
+    "Pre-Islamic astrolabe technology had been Hellenistic — relatively crude. Islamic refinement of the astrolabe (~850 AD onward, with major contributions from Al-Battani, Al-Khwarizmi, and others at Baghdad observatories) produced precision instruments capable of multiple astronomical and time-keeping functions. The first sustained-scale precision portable astronomical instrument. Used for prayer-time determination, qibla finding, navigation, surveying, horoscope casting. Islamic astrolabes spread to medieval Europe; Chaucer wrote a treatise on the astrolabe (1391).",
+
+  'gunpowder-used-in-warfare-china-song-dynasty':
+    "Pre-gunpowder Chinese warfare had used melee weapons and siege engines. Song Dynasty gunpowder weapons (~1000 AD onward) — fire arrows, fire lances, bombs, and proto-cannons — moved gunpowder from chemical curiosity to battlefield weapon. The first sustained-scale military use of gunpowder. Mongol incorporation of Chinese gunpowder technology spread it westward; European use (~1300-1400) made firearms the dominant weapon system of late-medieval and early-modern warfare.",
+
+  'first-known-use-of-compass-for-navigation-china':
+    "Pre-compass navigation had relied on landmarks, stars, and dead reckoning — useless in cloudy weather or out of sight of land. The Song Dynasty's adaptation of the compass for navigation (~1040 AD, with the lodestone replaced by magnetized needles by ~1100) gave sailors a reliable direction-finding instrument independent of weather. The first sustained-scale magnetic-navigation compass. Reached the Mediterranean ~1190 AD via Arab traders. Modern navigation, including aviation and missile guidance, descends from this Song-era innovation.",
+
+  'cistercian-order-founded':
+    "Pre-Cistercian Benedictine monasticism had grown wealthy and lax. The Cistercian order (founded 1098 at Cîteaux by Robert of Molesme) reformed monastic life — strict observance of the Benedictine Rule, manual labor in the fields, austere architecture without ornament. The first sustained-scale European 12th-century monastic reform. Cistercian abbeys became major economic centers, especially for sheep-and-wool production. Bernard of Clairvaux (1090-1153) made Cistercian spirituality the dominant tradition of 12th-century Western Christianity.",
+
+  'fabriano-paper-mill':
+    "Paper-making had reached Europe via the Islamic world (papermaking in Spain ~1100 AD). Fabriano (Italy, ~1276 AD onward) industrialized European paper production with water-powered hammer mills, watermarks for trademarking, and pulp-preparation techniques that produced paper rivaling the best Asian and Islamic production. The first sustained-scale European paper-manufacturing center. Produced for centuries the highest-quality paper in Europe; Fabriano paper is still made today. The European-paper supply that made Gutenberg's printing revolution possible came from Italian paper mills.",
 };
 
 async function main(){
