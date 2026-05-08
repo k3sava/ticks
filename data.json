@@ -41835,7 +41835,8 @@
           "label": "Wikipedia: Writing used for medical diagnosis (Mesopotamia)",
           "url": "https://en.wikipedia.org/wiki/Babylonia"
         }
-      ]
+      ],
+      "because": "Pre-2000-BC medical knowledge had been transmitted orally — limited by individual memory, lost across generations. Mesopotamian medical texts (~2000 BC, especially the Diagnostic Handbook attributed to Esagil-kin-apli) preserved diagnostic categories, prognosis, and treatment regimens in cuneiform writing. The first sustained-scale written medical-diagnosis system. Greek, Indian, and Chinese medical traditions all developed parallel text-based knowledge transmission, but the Mesopotamian record is the earliest."
     },
     {
       "id": "development-of-linear-a",
@@ -41851,7 +41852,8 @@
           "label": "Wikipedia: Linear A script developed in Crete",
           "url": "https://en.wikipedia.org/wiki/Linear_A"
         }
-      ]
+      ],
+      "because": "Pre-Linear-A Bronze Age Crete had been pre-literate. The Minoan Linear A script (~1800 BC, used through ~1450 BC) was a syllabic writing system used for administrative and religious texts. The first sustained-scale Aegean writing system. Linear A remains undeciphered — the language it records is unknown. Linear B (~1450 BC, used by Mycenaean Greeks) was derived from Linear A and records an early form of Greek (deciphered by Ventris in 1952). Bronze Age Aegean civilization and its successors all run on writing traditions descending from Linear A."
     },
     {
       "id": "edwin-smith-papyrus-brain",
@@ -41867,7 +41869,8 @@
           "label": "Wikipedia: Edwin Smith Papyrus depicts human brain",
           "url": "https://en.wikipedia.org/wiki/Edwin_Smith_Papyrus"
         }
-      ]
+      ],
+      "because": "Pre-Edwin-Smith Egyptian medicine had treated the brain peripherally. The Edwin Smith Papyrus (~1600 BC, copied from a much older source) contains the earliest known written description of the brain — its surface anatomy, the meninges, and the consequences of brain injury. The first sustained-scale anatomical description of the brain in any human medical text. Linked specific brain injuries to specific functional deficits — the basis of clinical neurology, three thousand years before the term existed."
     },
     {
       "id": "confucius-concept-of-ren",
@@ -41883,7 +41886,8 @@
           "label": "Wikipedia: Confucius defines ren (benevolence)",
           "url": "https://en.wikipedia.org/wiki/Ren_%28philosophy%29"
         }
-      ]
+      ],
+      "because": "Pre-Confucian Chinese ethics had emphasized ritual propriety (li) without explicit inner-life development. Confucius's concept of ren (~500 BC, in the Analects) — humaneness, benevolence, the ability to extend genuine concern to others — gave Chinese ethics its central inner virtue. The first sustained-scale articulation of Chinese moral psychology. Mencius's later development (372-289 BC) systematized ren into a full theory of human nature. Modern Chinese ethical discourse still works in vocabulary Confucius established."
     },
     {
       "id": "alcmaeon-of-croton-brain-as-seat-of-mind",
@@ -41899,7 +41903,8 @@
           "label": "Wikipedia: Alcmaeon of Croton: brain as seat of mind",
           "url": "https://en.wikipedia.org/wiki/Alcmaeon_of_Croton"
         }
-      ]
+      ],
+      "because": "Pre-Alcmaeon Greek thought had located mind in the heart (Aristotle would later restate this). Alcmaeon of Croton (~500 BC, the same Pythagorean physician who pioneered animal dissection) located cognition in the brain — based on the observation that vision, hearing, and other sensations had nerves leading to the brain. The first sustained-scale explicit brain-as-mind localization. Influenced Hippocrates and the Alexandrian physicians (Herophilus, Erasistratus). Modern neuroscience's foundational claim was made first here."
     },
     {
       "id": "confucius-rectification-of-names",
@@ -41915,7 +41920,8 @@
           "label": "Wikipedia: Confucius rectifies names",
           "url": "https://en.wikipedia.org/wiki/Rectification_of_names"
         }
-      ]
+      ],
+      "because": "Pre-Confucian Chinese statecraft had treated language as social convention. Confucius's doctrine of zhengming, 'rectification of names' (~500 BC, in the Analects), argued that social disorder begins when names no longer match realities — when a ruler is called a ruler but doesn't act like one. The first sustained-scale linkage of language clarity to political order. Influenced Chinese political philosophy for two millennia. Modern political-language analysis (Orwell, framing theory) addresses concerns Confucius raised first."
     },
     {
       "id": "buddhas-mindfulness-of-breathing",
@@ -41931,7 +41937,8 @@
           "label": "Wikipedia: Buddha's mindfulness of breathing",
           "url": "https://en.wikipedia.org/wiki/Anapanasati"
         }
-      ]
+      ],
+      "because": "Pre-Buddhist meditation had been esoteric — yogic, brahmanical, often associated with extreme ascetic practice. The Buddha's anapanasati (mindfulness of breathing, ~500 BC) was a simple, accessible meditative technique — observe the breath, notice when the mind wanders, return attention. The first sustained-scale democratized meditation method. Theravada (Vipassana), Zen, Mahayana, and modern secular mindfulness (Kabat-Zinn's MBSR, 1979) all teach variants of anapanasati."
     },
     {
       "id": "protagoras-man-is-the-measure-of-all-things",
@@ -41964,7 +41971,8 @@
           "label": "Wikipedia: Democritus atomist theory of perception",
           "url": "https://en.wikipedia.org/wiki/Democritus"
         }
-      ]
+      ],
+      "because": "Pre-Democritean perception had been explained by sensory ray emission, divine animation, or pure mystery. Democritus (~400 BC) extended his atomism to perception: external objects shed atomic 'films' (eidola) that physically enter the sensory organs, producing perception. The first sustained-scale physical-mechanical theory of perception. Influenced Epicurean and Stoic theories; revived through Lucretius (50 BC) into early-modern philosophy. Modern visual neuroscience (light reaching retina, neural processing) is the eventual successor."
     },
     {
       "id": "hippocratic-corpus-epilepsy-natural",
@@ -41980,7 +41988,8 @@
           "label": "Wikipedia: Hippocratic Corpus declares epilepsy natural",
           "url": "https://en.wikipedia.org/wiki/On_the_Sacred_Disease"
         }
-      ]
+      ],
+      "because": "Epilepsy had been called 'the sacred disease' — divine seizure, demonic possession, divine punishment. The Hippocratic treatise On the Sacred Disease (~400 BC) argued that epilepsy was a natural disorder — phlegm flowing from the brain, treatable by diet and lifestyle. The first sustained-scale naturalistic explanation of a culturally-supernatural medical condition. Established the principle that all diseases — however mysterious — have natural causes and natural treatments. Western medicine's foundational commitment."
     },
     {
       "id": "socrates-daimonion-as-inner-moral-voice",
@@ -42047,7 +42056,8 @@
           "label": "Wikipedia: Aristotle's associationism in memory",
           "url": "https://en.wikipedia.org/wiki/Aristotle"
         }
-      ]
+      ],
+      "because": "Pre-Aristotelian memory had been treated as wax-tablet impression with no theory of recall. Aristotle's De Memoria et Reminiscentia (~350 BC) proposed that memories are recalled through associative chains — similarity, contiguity, contrast. The first sustained-scale theory of memory recall. Influenced medieval scholasticism, British empiricism (Hume, Hartley), and 19th-century psychology (Ebbinghaus, James). Modern semantic-network and connectionist memory models all build on Aristotelian associationism."
     },
     {
       "id": "zhuangzi-dream-argument-about-reality",
@@ -42063,7 +42073,8 @@
           "label": "Wikipedia: Zhuangzi dream argument about reality",
           "url": "https://en.wikipedia.org/wiki/Zhuangzi_%28book%29"
         }
-      ]
+      ],
+      "because": "Pre-Zhuangzi Chinese metaphysics had assumed reality was directly knowable. Zhuangzi's butterfly dream (~350 BC, in chapter 2 of the Zhuangzi) — 'I dreamed I was a butterfly; now I am Zhuangzi who dreamed of being a butterfly. But how do I know I am not a butterfly dreaming I am Zhuangzi?' — challenges the certainty of the waking-self assumption. The first sustained-scale Chinese skeptical thought-experiment. Influenced Buddhist Madhyamaka, Daoist mysticism, and modern philosophy of mind (the brain-in-a-vat thought experiment is essentially Zhuangzi's butterfly)."
     },
     {
       "id": "aristotles-nicomachean-ethics-virtue-as-habit",
@@ -42079,7 +42090,8 @@
           "label": "Wikipedia: Aristotle's Nicomachean Ethics: virtue as habit",
           "url": "https://en.wikipedia.org/wiki/Nicomachean_Ethics"
         }
-      ]
+      ],
+      "because": "Pre-Aristotelian Greek ethics (Plato, Pythagoras) had treated virtue as innate or divinely granted. Aristotle's Nicomachean Ethics (~340 BC) argued that virtue is acquired through practice — repeated right action becomes habitual character (hexis). The first sustained-scale habit-and-character ethical theory. Influenced Aquinas, the medieval virtue tradition, and modern virtue ethics (MacIntyre's After Virtue, 1981). Modern habit-formation psychology (Duhigg, Clear) is essentially Aristotelian."
     },
     {
       "id": "theophrastus-characters-personality-types",
@@ -42095,7 +42107,8 @@
           "label": "Wikipedia: Theophrastus' Characters / personality types",
           "url": "https://en.wikipedia.org/wiki/Theophrastus"
         }
-      ]
+      ],
+      "because": "Pre-Theophrastean personality study had been informal. Theophrastus's Characters (~319 BC, 30 character sketches) systematically described distinct personality types — the flatterer, the boor, the superstitious man, the niggard. The first sustained-scale typology of individual differences. Influenced La Bruyère's 17th-century French Characters, modern personality psychology (Allport, Cattell), and the Big Five trait dimensions. The institutional ancestor of every personality questionnaire."
     },
     {
       "id": "stoic-propositional-logic",
@@ -42145,7 +42158,8 @@
           "label": "Wikipedia: Lucretius' De Rerum Natura on atoms and mind",
           "url": "https://en.wikipedia.org/wiki/De_rerum_natura"
         }
-      ]
+      ],
+      "because": "Pre-Lucretian Latin philosophy had been mostly Stoic and Platonic. Lucretius's De Rerum Natura (~55 BC, six books of Epicurean natural philosophy in Latin verse) systematized the atomist account of mind: soul atoms produce thought, sensation, emotion; death is dispersal of those atoms; no afterlife to fear. The first sustained-scale Latin materialist philosophy of mind. Survived Christian disinterest in a single 9th-century manuscript; rediscovered 1417. Directly seeded the early-modern materialist revival (Gassendi, Hobbes, Spinoza)."
     },
     {
       "id": "ciceros-tusculan-disputations",
@@ -42161,7 +42175,8 @@
           "label": "Wikipedia: Cicero's Tusculan Disputations on emotions",
           "url": "https://en.wikipedia.org/wiki/Tusculanae_Disputationes"
         }
-      ]
+      ],
+      "because": "Pre-Cicero Roman philosophy had been mostly translated Greek. Cicero's Tusculan Disputations (~45 BC) systematized Stoic and Academic positions on emotions: passions are confused judgments, the wise person can rationally moderate them. The first sustained-scale Latin philosophical treatment of emotional regulation. Influenced Christian moral theology (Augustine), modern cognitive-behavioral therapy (CBT explicitly cites Stoic origins). Modern emotional-intelligence discourse runs on Ciceronian categories."
     },
     {
       "id": "quintilians-institutio-oratoria",
@@ -42177,7 +42192,8 @@
           "label": "Wikipedia: Quintilian's Institutio Oratoria",
           "url": "https://en.wikipedia.org/wiki/Institutio_Oratoria"
         }
-      ]
+      ],
+      "because": "Pre-Quintilian Roman education had been ad hoc, with no developmental sequence. Quintilian's Institutio Oratoria (~95 AD, twelve books on the education of an orator) proposed an age-graded curriculum: primary literacy 7-11, grammar 11-14, rhetoric 14+. The first sustained-scale developmental educational theory. Influenced medieval and Renaissance pedagogy, the modern Western liberal-arts curriculum. Comenius (1657) and modern stage-based educational psychology (Piaget) build on Quintilian's developmental staging."
     },
     {
       "id": "sextus-empiricus-skeptical-tropes",
@@ -42193,7 +42209,8 @@
           "label": "Wikipedia: Sextus Empiricus codifies Pyrrhonian skepticism",
           "url": "https://en.wikipedia.org/wiki/Sextus_Empiricus"
         }
-      ]
+      ],
+      "because": "Pre-Sextus skepticism had been a school argument — Pyrrho, Aenesidemus had argued for suspension of judgment in scattered fragments. Sextus Empiricus (~150 AD) compiled the Pyrrhonian skeptical tradition into Outlines of Pyrrhonism — the ten tropes of Aenesidemus, the five tropes of Agrippa, systematic arguments for epoche (suspension of judgment). The first sustained-scale skeptical philosophical handbook. Survived through Byzantine manuscript transmission; rediscovered in the 16th century. Directly seeded Montaigne, Descartes (against whom he wrote), Hume, and modern philosophy of skepticism."
     },
     {
       "id": "nagarjunas-emptiness-and-deconstruction-of-self",
@@ -42209,7 +42226,8 @@
           "label": "Wikipedia: Nagarjuna's emptiness dissolves permanent self",
           "url": "https://en.wikipedia.org/wiki/Nagarjuna"
         }
-      ]
+      ],
+      "because": "Pre-Madhyamaka Buddhist philosophy had taught anatman (no permanent self) but had not deconstructed all metaphysical categories systematically. Nagarjuna's Mūlamadhyamakakārikā (~150 AD, in 27 chapters) showed that any concept analyzed rigorously dissolves — including 'self,' 'cause,' 'time,' 'permanence.' Sunyata (emptiness) is the absence of inherent existence in any phenomenon. The first sustained-scale Madhyamaka philosophy. Foundational for Mahayana Buddhism (Tibetan, East Asian). Modern philosophical deconstruction (Derrida) reads almost as a Western parallel."
     },
     {
       "id": "galen-four-temperaments",
@@ -42242,7 +42260,8 @@
           "label": "Wikipedia: Plotinus' Enneads: inner self & contemplation",
           "url": "https://en.wikipedia.org/wiki/Enneads"
         }
-      ]
+      ],
+      "because": "Pre-Plotinus Hellenistic philosophy had focused mostly on outward ethical action. Plotinus's Enneads (270 AD, edited by Porphyry from Plotinus's notes) developed Neoplatonic mysticism — turn the gaze inward, ascend through stages of contemplation toward unity with the One. The first sustained-scale Western inward-contemplation philosophy. Influenced Augustine, Christian mysticism (Meister Eckhart), Renaissance Neoplatonism (Ficino), and modern phenomenology. The Western tradition's deep root for introspection."
     },
     {
       "id": "augustines-de-trinitate-memory-as-inner-self",
@@ -42258,7 +42277,8 @@
           "label": "Wikipedia: Augustine's De Trinitate on memory as inner self",
           "url": "https://en.wikipedia.org/wiki/On_the_Trinity"
         }
-      ]
+      ],
+      "because": "Pre-Augustinian memory had been treated as wax-tablet impression. Augustine's De Trinitate (~417 AD, especially Books 10-15) argued that memory is constitutive of self — the temporal-self that persists through time is held together by the memory that integrates past, present, anticipated future. The first sustained-scale theory of self as memory-constituted. Modern philosophy of personal identity (Locke, Parfit) and cognitive-psychology theories of autobiographical memory (Conway, Conway-Pleydell-Pearce) both build on Augustine's framework."
     },
     {
       "id": "al-kindi-treatise-on-sleep-and-dreams",
@@ -42274,7 +42294,8 @@
           "label": "Wikipedia: Al-Kindi's treatise on sleep and dreams",
           "url": "https://en.wikipedia.org/wiki/Al-Kindi"
         }
-      ]
+      ],
+      "because": "Pre-Al-Kindi Islamic dream theory had been mostly religious — dreams as messages from God or jinn. Al-Kindi's treatise (~850 AD, in Baghdad's House of Wisdom) developed a naturalistic theory of dreams: sensory impressions stored in faculties of common sense, imagination, and memory; dreams as imaginative reorganization during sleep. The first sustained-scale Arabic naturalistic dream theory. Translated into Latin; influenced medieval and Renaissance dream theories. Modern psychoanalytic and neuroscientific dream theories descend conceptually."
     },
     {
       "id": "rhazes-first-psychiatric-hospital-in-baghdad",
@@ -42324,7 +42345,8 @@
           "label": "Wikipedia: Alhazen's Book of Optics",
           "url": "https://en.wikipedia.org/wiki/Book_of_Optics"
         }
-      ]
+      ],
+      "because": "Greek optics (especially Euclid's Optics, ~300 BC) had taught the extramission theory — vision works through rays emitted from the eye. Alhazen's Kitab al-Manazir (Book of Optics, 1021 AD, in Cairo) demonstrated experimentally that vision works through intromission — light reflects from objects, enters the eye. The first sustained-scale experimental refutation of extramission and a foundational text of experimental science. Translated into Latin (1230s) as De Aspectibus, directly influenced Bacon, Witelo, Kepler, and the Renaissance optics revolution."
     },
     {
       "id": "avicenna-floating-man",
@@ -42340,7 +42362,8 @@
           "label": "Wikipedia: Avicenna's floating man thought experiment",
           "url": "https://en.wikipedia.org/wiki/Floating_man"
         }
-      ]
+      ],
+      "because": "Pre-Avicennian Islamic philosophy had not separated self-awareness from sensory input. Ibn Sina's floating-man thought experiment (1027, in The Healing) imagines a person created in mid-air, with no sensory input, and argues that such a person would still be aware of existing — therefore self-awareness is not derived from sensation but is intrinsic to the soul. The first sustained-scale Islamic philosophical isolation of pure self-awareness. Anticipates Descartes's cogito (1641) by six centuries — and Descartes likely knew the argument through scholastic transmission."
     },
     {
       "id": "al-ghazali-occasionalist-psychology",
@@ -42356,7 +42379,8 @@
           "label": "Wikipedia: Al-Ghazali's occasionalist critique of causal necessity",
           "url": "https://en.wikipedia.org/wiki/Al-Ghazali"
         }
-      ]
+      ],
+      "because": "Pre-Al-Ghazali Islamic philosophy had assumed natural causal relations — fire causes burning, etc. Al-Ghazali's occasionalist critique (1095, in The Incoherence of the Philosophers) argued that what appears to be causal necessity is in fact God's repeated creation in habitual sequence — fire doesn't cause burning, God creates the burning each time fire approaches cotton. The first sustained-scale Islamic occasionalist philosophy of causation. Influenced Hume's later critique of causation. Modern philosophy of mind's debate over mental causation works in vocabulary Al-Ghazali helped establish."
     },
     {
       "id": "hildegard-of-bingens-visionary-psychology",
@@ -42423,7 +42447,8 @@
           "label": "Wikipedia: Roger Bacon's Opus Majus on experimental science",
           "url": "https://en.wikipedia.org/wiki/Opus_Majus"
         }
-      ]
+      ],
+      "because": "Pre-Roger-Bacon European philosophy had been mostly speculative. Roger Bacon's Opus Majus (~1267, presented to Pope Clement IV) advocated systematic experiment as the path to knowledge — including in optics and what we would now call experimental psychology. The first sustained-scale European argument for experiment as a method. Influenced subsequent scholastic empiricism, the early-modern scientific revolution, and Francis Bacon's eventual articulation of the experimental method."
     },
     {
       "id": "occams-razor-applied-to-mental-entities",
@@ -42439,7 +42464,8 @@
           "label": "Wikipedia: William of Ockham's razor applied to mental entities",
           "url": "https://en.wikipedia.org/wiki/Occam%27s_razor"
         }
-      ]
+      ],
+      "because": "Medieval philosophy had multiplied mental entities — sensitive faculties, imaginative species, passive intellects, agent intellects. William of Ockham's principle of parsimony (~1340s, applied to mental philosophy) held that 'plurality should not be posited without necessity' — eliminate unneeded mental categories. The first sustained-scale ontological-economy principle. Influenced subsequent scholastic logic, early-modern philosophy, and modern psychology's debates about how many cognitive faculties or mental modules to posit."
     },
     {
       "id": "paracelsus-pioneers-chemical-psychiatry",
@@ -42472,7 +42498,8 @@
           "label": "Wikipedia: Huarte publishes Examen de ingenios",
           "url": "https://en.wikipedia.org/wiki/Juan_Huarte_de_San_Juan"
         }
-      ]
+      ],
+      "because": "Pre-Huarte intellectual ability had been treated as fixed gift. Juan Huarte's Examen de ingenios (1575, in Spanish) proposed that different individuals are suited to different occupations based on their constitutional temperament — and that society should match people to roles based on systematic assessment. The first sustained-scale European argument for vocational psychology. Influenced subsequent occupational guidance, modern aptitude testing, and personnel selection. The institutional ancestor of every job-fit assessment."
     },
     {
       "id": "francis-bacon-formalizes-empiricism",
@@ -42556,7 +42583,8 @@
           "label": "Wikipedia: Malebranche publishes occasionalism in Search After Truth",
           "url": "https://en.wikipedia.org/wiki/Nicolas_Malebranche"
         }
-      ]
+      ],
+      "because": "Cartesian dualism had left mind-body interaction unexplained — how does an immaterial mind move a material body? Nicolas Malebranche's De la recherche de la vérité (1674) revived occasionalism: mind and body don't actually interact; God coordinates the appearance of interaction. The first sustained-scale European occasionalist solution to the mind-body problem. Influenced Berkeley, Leibniz (whose pre-established harmony is occasionalism without divine intervention at each moment), and modern non-causal theories of mental representation."
     },
     {
       "id": "newtons-principia-mathematizes-force-and-motion",
@@ -42572,7 +42600,8 @@
           "label": "Wikipedia: Newton's Principia mathematizes force and motion",
           "url": "https://en.wikipedia.org/wiki/Philosophi%C3%A6_Naturalis_Principia_Mathematica"
         }
-      ]
+      ],
+      "because": "Pre-Newtonian physics had used qualitative force concepts. Newton's Principia (1687) gave force a mathematical definition (F = ma, by his second law) and showed that the same laws governed terrestrial and celestial motion. The first sustained-scale mathematization of physics. Beyond physics, Newton's success suggested mind itself might be mathematized — directly seeded 18th-century associationist psychology (Hartley) and 19th-century psychophysics (Fechner). Modern computational neuroscience treats Newton's mathematization as the precedent."
     },
     {
       "id": "leibnizs-monadology-and-unconscious-perceptions",
@@ -42588,7 +42617,8 @@
           "label": "Wikipedia: Leibniz's Monadology introduces unconscious perceptions",
           "url": "https://en.wikipedia.org/wiki/Monadology"
         }
-      ]
+      ],
+      "because": "Pre-Leibniz Western thought had treated mental states as either fully conscious or absent. Leibniz's Monadology (1714) proposed that mental life includes 'petites perceptions' — unconscious perceptions too small to enter awareness individually but contributing to the felt-quality of experience. The first sustained-scale Western theory of unconscious mental contents. Influenced Romantic-era German psychology, eventually Freud's unconscious. Modern cognitive psychology's distinctions between explicit and implicit processes work in territory Leibniz opened."
     },
     {
       "id": "linnaeus-classifies-homo-sapiens-in-systema-naturae",
