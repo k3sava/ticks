@@ -1705,6 +1705,81 @@ const BECAUSE_BATCH = {
 
   'typewriter':
     "Office work before 1874 had been entirely handwritten — slow, illegible across writers, and prone to forgery. Sholes-Glidden's commercial typewriter (Remington & Sons, 1874) produced uniform mechanical print at speeds far above handwriting. Office productivity jumped. The QWERTY layout, designed for early mechanical reasons that disappeared, persists today. The typewriter also rewrote office labor: typing schools opened, women entered clerical work in numbers, and the typist became one of the dominant professions of the early-20th-century office.",
+
+  'telephone-exchange':
+    "Pre-exchange telephones had been point-to-point — each subscriber needed a direct wire to every other. The first telephone exchange (Connecticut, 1878) used a switchboard and human operators to connect callers on demand. N subscribers needed only N wires to the central office, not N² between each other. The first sustained network with a central switching node. Telecommunications scaled. Modern internet routing and packet-switched networks all build on the central-switching idea.",
+
+  'compulsory-primary-education-laws':
+    "Pre-mass-education industrial labor had been illiterate or marginally literate — fine for unskilled factory work but inadequate for clerical, technical, and supervisory roles. European compulsory-schooling laws (Prussia from 1763, Britain's Education Act 1870, US state-by-state from 1852, mostly mandatory by 1880) required children to attend primary school. The first sustained-scale state intervention in childhood education. Created the literate workforce that modern industrial economies require — and the modern conception of childhood as a distinct life stage.",
+
+  'pearl-street-station':
+    "Pre-grid factories had been built next to water power or coal-fired steam engines — geography limited industrial siting. Edison's Pearl Street Station (Lower Manhattan, September 4, 1882) generated electricity at central scale and distributed it through underground DC mains to 82 customers using 400 lamps. The first commercial centralized electric utility. Westinghouse and Tesla's AC system (1888-91) eventually displaced DC for transmission, but the centralized-utility model — the grid — was Pearl Street's legacy.",
+
+  'pneumatic-tire-for-vehicles':
+    "Solid rubber and iron-shod wheels had made early bicycles and carts brutally uncomfortable. John Boyd Dunlop's pneumatic tire (patented 1888, originally for his son's bicycle) used compressed air inside a rubber casing — absorbing road shock. Cycling boomed. Within a generation, automobiles ran on pneumatic tires too — without which the early-20th-century motor age would have been impractical. The first mass-deployed shock-absorbing road interface.",
+
+  'mail-order-catalog-sears':
+    "Pre-Sears rural Americans had bought goods from small general stores at marked-up prices — limited selection, high cost. Richard Sears's mail-order watch business (1888) grew into the Sears, Roebuck & Co. catalog (1893, expanded 1894 to 322 pages with sewing machines, bicycles, and household goods). Rural consumers could buy at urban prices via the postal service. The first sustained-scale direct-to-consumer national distribution. Amazon, a century later, runs on the same logical model.",
+
+  'first-corporate-bond-rating-moodys':
+    "Pre-Moody's bond investing had relied on each investor's own analysis or rumor. John Moody's Manual of Industrial Statistics (1900) and his rated-bond report (1909) gave investors standardized risk-grade letters: Aaa, Aa, A, Baa, etc. The first sustained credit-rating service. Standard & Poor's (1916) and Fitch (1924) followed. Modern bond markets, regulatory capital frameworks, and the entire credit-risk-pricing apparatus all run on rating-agency grades.",
+
+  'first-electronic-funds-transfer-fedwire':
+    "Pre-1918 interbank settlement had required physical delivery of cash, gold, or paper checks — slow, vulnerable to theft, prone to errors. The Federal Reserve's Fedwire system (operational 1918) used a private telecommunications network to transfer funds between Reserve Banks electronically. The first sustained-scale electronic interbank settlement. Modern wholesale payment systems, SWIFT, real-time gross settlement networks all descend from Fedwire's 1918 architecture.",
+
+  'gatt-signed':
+    "Inter-war protectionism (Smoot-Hawley 1930, retaliatory European tariffs) had collapsed global trade and deepened the Great Depression. The General Agreement on Tariffs and Trade (signed October 30, 1947 by 23 nations in Geneva) bound members to most-favored-nation treatment and progressive tariff reduction. Eight subsequent rounds (Geneva, Annecy, Torquay, Geneva II, Dillon, Kennedy, Tokyo, Uruguay) cut average tariffs from 40% to 5%. The WTO (1995) replaced GATT. Post-WWII globalization runs on the GATT/WTO framework.",
+
+  'containerization':
+    "Pre-container break-bulk shipping had taken weeks to load a ship — dockworkers manually moving each box, barrel, and bag. Malcolm McLean's first container voyage (Ideal X, April 1956) used standardized 33-ft steel boxes that could be loaded by crane in hours and transferred between ships, trucks, and trains without unpacking. ISO standardized 20-ft and 40-ft containers (1960s). Shipping costs collapsed by 95%. The economic substrate of late-20th-century globalization. Levinson's 'The Box' is the standard history.",
+
+  'darpa-founded':
+    "Pre-DARPA US defense R&D had been done service-by-service (Army, Navy, Air Force) with little coordination. Sputnik 1's October 1957 launch revealed the Soviet lead in missile and space technology. DARPA (founded February 1958, originally ARPA) was an unrestricted-research agency reporting to the Secretary of Defense, free to fund anything plausibly useful. Funded ARPANET (the internet's ancestor), GPS, stealth, the M16, and dozens of other consequential programs. The model for state-funded long-shot research worldwide.",
+
+  'nixon-shock':
+    "Bretton Woods (1944) had pegged the dollar to gold at $35/oz and other currencies to the dollar. By 1971, US gold reserves were down to $10B against $36B in foreign-held dollars — convertibility was unsustainable. Nixon's August 15, 1971 announcement closed the gold window unilaterally. Currencies floated freely within months. The first sustained pure-fiat international monetary system. Modern macroeconomics — independent central banks, inflation targeting, large currency markets — all run in the post-Bretton-Woods regime Nixon's shock created.",
+
+  'chicago-board-options-exchange':
+    "Pre-1973 options trading had been over-the-counter — bilateral contracts with custom terms. The Chicago Board Options Exchange (opened April 26, 1973) listed standardized options on 16 stocks: fixed strike prices, fixed expiration dates, central clearing. Black-Scholes-Merton's option-pricing formula, published the same year, gave traders a fair-value benchmark. Options went from exotic instrument to mass financial product. Modern derivatives markets — over a quadrillion dollars of notional value — all build on the standardized-listed-option model.",
+
+  'chicago-board-options-exchange-opens':
+    "Same event as above, alternate ID. The Chicago Board Options Exchange opened on April 26, 1973 — the first central exchange for standardized stock options. Combined with the simultaneous publication of the Black-Scholes-Merton option-pricing formula, options went from exotic OTC instruments to mass-traded financial products with a tradable theoretical fair value. Derivatives markets at modern scale begin here.",
+
+  'first-barcode-scanned-retail-sale':
+    "Pre-barcode retail had relied on hand-keyed prices at the checkout — slow, error-prone, no inventory data. The first UPC barcode scan (Marsh Supermarket, Troy Ohio, June 26, 1974, on a 10-pack of Wrigley's Juicy Fruit) demonstrated automated checkout. Standardized product codes spread industry-wide over the next decade. Modern retail logistics, just-in-time inventory management, and Amazon's automated warehouses all run on standardized barcodes (and their successors, RFID and QR).",
+
+  'visicalc':
+    "Pre-VisiCalc business calculations on personal computers had been impossible — paper spreadsheets took hours to recalculate. Dan Bricklin and Bob Frankston's VisiCalc (Apple II, October 1979) recalculated automatically on every change. Apple II sales doubled within a year. The first 'killer app' that made personal computing economically rational for businesses. Lotus 1-2-3 (1983) and Excel (1985) inherited the model; spreadsheets are still after web browsing the most-used application category.",
+
+  'world-wide-web-becomes-public':
+    "Pre-1993 web access had required Unix-workstation expertise and command-line tools. CERN's April 30, 1993 release of the WWW software into the public domain (no patents, no royalties), combined with Mosaic's user-friendly graphical browser the same year, put the web in millions of hands within eighteen months. The first sustained-scale demonstration that an open standard with a usable client could route around proprietary online services (CompuServe, AOL, Prodigy).",
+
+  'netscape-ipo':
+    "Pre-1995 web companies had no clear path to public capital. Netscape's August 1995 IPO — Andreessen and Clark's company, founded 16 months earlier, with Netscape Navigator browser as primary product — priced at $28 and closed the first day at $58.25. The first internet-era IPO blockbuster. Demonstrated that consumer-internet companies could go public without conventional revenue or earnings. The dot-com bubble (1995-2000) ran on the precedent.",
+
+  'priceline-name-your-own-price':
+    "Pre-Priceline airline tickets and hotel rooms had been priced by the seller with limited customer pricing power. Priceline (founded by Jay Walker, 1997, IPO 1999) inverted the model — buyers named their price, sellers (anonymously) accepted or rejected. The first sustained reverse-auction marketplace at consumer scale. Limited success on flights but became a major hotel and rental-car distribution channel. Modern revenue-management systems, dynamic pricing, and second-price-auction logic all draw on Priceline's experiment.",
+
+  'euro-currency-launch':
+    "Pre-Euro European trade had cost European companies billions annually in currency conversion and hedging. The Euro launched as an accounting currency (January 1, 1999), with physical notes and coins introduced (January 1, 2002). 11 EU members (eventually 20) gave up monetary sovereignty in exchange for a shared currency. The largest sustained currency union in history. Sovereign debt crises (Greece, Italy, Spain) tested the architecture; the Euro survived. Modern macroeconomics' biggest live experiment.",
+
+  'ebay-acquisition-of-paypal':
+    "Pre-PayPal online payments had required mailed checks or money orders — slow, distrust-prone, painful for small transactions. PayPal (founded 1998) emerged as the de-facto eBay payment method. eBay's $1.5B acquisition of PayPal (October 2002) integrated payment infrastructure with the marketplace, eliminating friction in online transactions. PayPal eventually spun off (2015) and grew into the dominant online-payments alternative to credit-card networks. Modern fintech (Stripe, Square, Venmo) all build on the PayPal model.",
+
+  'm-pesa-mobile-money-launch':
+    "Sub-Saharan Africa's banking infrastructure had reached only ~10-20% of the population. The vast unbanked majority had no way to send money digitally. Vodafone and Safaricom's M-Pesa (Kenya, March 2007) used basic SMS messaging on feature phones to allow deposits, transfers, and withdrawals at a network of corner-store agents. Within five years, M-Pesa had 17 million users in Kenya alone. The first sustained-scale mobile money platform. The model spread across Africa, then to South Asia. Modern fintech inclusion architectures all study M-Pesa.",
+
+  'kickstarter-crowdfunding':
+    "Pre-Kickstarter creative-project funding had required traditional gatekeepers — record labels, publishers, film studios. Kickstarter (April 2009) let creators pitch projects to a public audience and accept pledged funding contingent on hitting a target. The first sustained-scale crowdfunding platform. Within a decade, Kickstarter had funded $5B+ across 200,000+ projects. Indiegogo, Patreon, and the entire creator-funding economy build on the Kickstarter precedent. The independent-publishing-and-production renaissance of the 2010s ran on it.",
+
+  'libor-scandal-settlement':
+    "Libor (London Interbank Offered Rate) had been the global benchmark for trillions of dollars of variable-rate loans, derivatives, and mortgages — set daily by self-reported submissions from major banks. Barclays's June 2012 criminal settlement (and subsequent 9-bank investigations) revealed years of submissions manipulation by traders coordinating to move the rate for their own positions. The first major scandal exposing systemic dishonesty in financial benchmarks. Libor was phased out (2021-2023) in favor of transaction-based rates (SOFR, SONIA).",
+
+  'flash-boys-and-hft-scrutiny':
+    "High-frequency trading (HFT) since the mid-2000s had been an arcane corner of finance. Michael Lewis's Flash Boys (March 2014, profiling Brad Katsuyama and IEX) made HFT's information-and-speed advantages legible to retail investors. The book argued (with debate) that HFT systematically front-ran investor orders. SEC enforcement and IEX's 2016 launch as an HFT-resistant exchange both followed. Public-policy attention to market microstructure begins here.",
+
+  'tether-stablecoin-dominance':
+    "Cryptocurrency markets pre-2014 had been largely BTC and ETH — volatile against the dollar, useless as a settlement medium. Tether (launched October 2014, originally Realcoin) issued USDT tokens claimed to be 1:1 backed by US dollar reserves. Crypto exchanges adopted USDT as the default trading pair against other cryptocurrencies. The first sustained-scale dollar-pegged stablecoin. Despite repeated reserve-backing controversies, USDT became the dominant settlement medium across the crypto economy — a $100B+ shadow dollar.",
 };
 
 async function main(){
