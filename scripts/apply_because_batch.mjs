@@ -1630,6 +1630,81 @@ const BECAUSE_BATCH = {
 
   'natufian-culture':
     "Pre-Natufian Levantine populations had been mobile hunter-gatherers, never staying in one place for more than a season. Natufian culture (13,000-9,500 BC) built sustained settlements at sites like Ain Mallaha and Wadi Hammeh — semi-subterranean stone houses, sustained burial grounds, intensive wild-grain harvesting using stone sickles. The first sustained sedentary or semi-sedentary lifestyle preceding agriculture by at least three thousand years. Sedentism preceded farming, not the other way around.",
+
+  'standardized-weights-balance-scale':
+    "Pre-balance trade had been by visual estimation or by counting fixed-size containers — open to dispute and fraud. Egyptian and Mesopotamian standardized weights (~2600 BC, the Egyptian deben and Mesopotamian shekel) on two-pan balance scales gave any merchant access to a verifiable mass measurement. The first sustained metrological infrastructure for commerce. Bulk-commodity trade in grain, copper, and silver could now be verified by independent buyer and seller. Mesopotamian commercial law was built on shekel weights.",
+
+  'indian-punch-marked-coins':
+    "Indian subcontinent trade had used silver and copper bars by weight, requiring weighing at every transaction. Punch-marked silver coins (Karshapanas, ~600 BC) issued by the Mahajanapadas of the Indo-Gangetic plain stamped each coin with state-issued symbols guaranteeing weight and purity. Among the earliest coinages anywhere — concurrent with Lydian electrum issues. Standardized money supply in northern India for several centuries before the Mauryan empire centralized minting.",
+
+  'solon-seisachtheia-debt-reform':
+    "Athenian agrarian society of the early 6th century BC had been failing — small farmers fell into debt to wealthier landlords and were enslaved when they couldn't pay. The pre-Solon order was sliding toward civil war. Solon's seisachtheia (594 BC, 'shaking off of burdens') canceled outstanding debts, freed Athenian debt slaves, and prohibited enslavement for debt going forward. The first major debt jubilee in classical history. Athens's subsequent democratic development became possible only because the agrarian crisis had been defused.",
+
+  'chinese-state-granary-system':
+    "Pre-granary Chinese agriculture had swung between famine and surplus. Han-era and earlier ever-normal granary policy (formalized by the Han, with origins in Warring States Qi practice ~500 BC) had the state buy grain at low prices in good years and sell at fixed prices in bad. The first systematic state-managed price stabilization. Famines reduced; market volatility dampened. The Chinese imperial state's commitment to grain-supply stability lasted for two millennia and is one of its distinguishing institutional features.",
+
+  'athenian-silver-mining-boom':
+    "Athens before 483 BC had been a regional Greek polis without imperial means. The Laurium silver strike (a major new vein discovered in 483 BC) gave Athens a windfall — Themistocles persuaded the assembly to fund 200 triremes rather than distribute the silver as a citizen dividend. Three years later those ships destroyed the Persian fleet at Salamis. Without the Laurium discovery, Greek victory in the second Persian invasion is unimaginable. The first major case of resource-funded military strategy in classical history.",
+
+  'greek-public-auction-of-tax-farming':
+    "Greek city-state tax collection had been a state function with chronic shortfalls. By the 4th century BC, several Greek polities (especially Athens after the late Peloponnesian War) auctioned the right to collect specific taxes to private bidders — the highest bidder paid a fixed sum to the treasury and kept whatever they collected. The first sustained tax-farming institution. Roman publicani and the medieval European tax-farming systems descend from the same model. Notoriously prone to abuse but reliably revenue-positive for the state.",
+
+  'mauryan-land-revenue-system':
+    "Pre-Mauryan Indian taxation had been irregular — chiefdoms collected what they could, when they could. Chandragupta Maurya and Kautilya's Arthashastra-codified system (~320 BC) imposed a standardized one-sixth produce tax on cultivators, with state surveyors measuring fields and harvests. The first systematic land-revenue assessment in South Asia. Mauryan state capacity at unprecedented scale was funded on this base. The British Raj's land-revenue system 2,000 years later operated on the same conceptual framework.",
+
+  'wu-zhu-coinage':
+    "Pre-Wu-Zhu Chinese coinage had been a mess — multiple debased issues, regional variants, no fixed weight standard. Han Wudi's Wu Zhu coin (introduced 118 BC) standardized at 5 zhu (about 4 grams) of bronze. Stable for the next 700 years across multiple dynasties. The first sustained pan-Chinese currency standard. Han economic integration, Silk Road trade with the West, and the imperial fiscal system all ran on Wu Zhu coins.",
+
+  'han-state-owned-workshops':
+    "Pre-Han Chinese salt and iron production had been private — small smelters and salt pans throughout the empire. Han Wudi's nationalization (117 BC, on the advice of Sang Hongyang) brought salt and iron under direct state monopoly: state-run mines, state-run workshops, state-distributed product. The first major state monopoly on essential commodities. Funded the Han military expansion against the Xiongnu. Salt monopoly persisted in Chinese government hands for two thousand years; iron eventually returned to private production.",
+
+  'roman-adoption-of-parchment-codex':
+    "Roman literature had circulated on papyrus scrolls. Parchment (treated animal skin) had been used for early Christian texts. The codex format (bound pages, both faces written, foldable) had been a Christian preference. By 100 AD parchment-codex books were entering Roman secular use — Martial advertised codex editions of his work. The codex won decisively by 400 AD. The first random-access information medium. Format dominated for fifteen centuries until the screen.",
+
+  'roman-tax-reform-under-diocletian':
+    "Late-3rd-century Roman tax collection had been chaotic — different rates per province, local exemptions, manipulation by provincial elites. Diocletian's reforms (~297 AD) reorganized the empire into 12 dioceses and 100 provinces with standardized tax rates assessed on iuga (units of land productivity) and capita (units of labor). The first sustained-scale empire-wide tax assessment. Stabilized late-imperial finances long enough to delay the Western Empire's collapse by another 180 years.",
+
+  'heavy-plough-in-northern-europe':
+    "Mediterranean ards had been useless on northern European clay soils — too light, no mouldboard. The carruca (heavy mouldboard plough, with iron coulter and share) reached Northern Europe via Slavic and Frankish farmers around 600 AD. With six to eight oxen, the carruca cut and turned the heavy wet clays. Cultivable area in Northern Europe expanded dramatically. The medieval European agricultural surplus — and the demographic and urban expansion that followed — depended on this plough.",
+
+  'cog-ship-design-in-baltic':
+    "Mediterranean galleys had been narrow and rower-powered — fast in calm seas, useless in Atlantic conditions. The cog (developed in Frisian and Hanseatic ports around 1000 AD) was a flat-bottomed single-masted square-sailed sailing ship — broad hold, high freeboard, navigable in shallow North Sea and Baltic harbors. The first dedicated cargo-sailing-ship of medieval northern Europe. The Hanseatic League's Baltic-North Sea trade ran on cog ships for three centuries before larger carracks displaced them.",
+
+  'bill-of-exchange-in-medieval-europe':
+    "Medieval cross-border trade had required physical coin or barter — both subject to robbery, both heavy. Italian merchant cities (Florence, Venice, Genoa, by ~1200 AD) developed the bill of exchange: a written instrument signed in one city promising payment in another, redeemable at a corresponding banker. The first negotiable financial instrument. Mediterranean and later Atlantic trade depended on bills of exchange; modern banking, letters of credit, and check-clearing all descend from this medieval Italian innovation.",
+
+  'florentine-catasto-tax':
+    "Pre-Catasto European taxation had been by hearth tax or estimated assessment — crude, unfair, easily evaded. Florence's 1427 Catasto required every household to declare property, business interests, and dependents — taxed on net wealth (assets minus debts) at progressive rates. The first systematic property census for progressive taxation. Generated remarkable demographic and economic data still used by historians (Herlihy and Klapisch-Zuber's 1985 study). The institutional ancestor of modern income and wealth tax assessment.",
+
+  'school-of-salamanca-just-price-theory':
+    "Medieval Catholic moral theology had condemned interest (usury) and treated 'just price' as fixed by cost-of-production. The School of Salamanca (Spanish theologians at the University of Salamanca, mid-1500s, especially Francisco de Vitoria, Domingo de Soto, and Martín de Azpilcueta) argued instead that prices reflect supply, demand, and risk — and that interest compensates for risk and time-value. The first systematic subjective theory of value. Predated Carl Menger's marginal-utility theory by 300+ years. Modern Austrian economics treats Salamanca as ancestral.",
+
+  'welser-family-bankruptcy':
+    "Pre-Welser sovereign lending had been ad hoc — lenders accepted royal IOUs and hoped. The Welser family of Augsburg, one of Europe's largest merchant-bankers, lent enormous sums to the Habsburgs and other European royals. When royal default came (the Spanish bankruptcy of 1607 and subsequent defaults), the Welsers collapsed in 1614. The first major demonstration that 16th-17th-century sovereign-debt systems were structurally fragile. Drove the development of joint-stock companies and limited-liability arrangements that diversified sovereign-lending risk.",
+
+  'samuel-slater-cotton-mill':
+    "British textile-manufacturing technology had been deliberately protected — emigration of skilled workers and export of machinery were illegal. Samuel Slater memorized the design of British water-powered cotton-spinning machinery, emigrated to Rhode Island in 1789, and built the first US textile mill in Pawtucket (1790). Industrial espionage. The American Industrial Revolution started here. Slater's mills employed hundreds of children at low wages; subsequent New England mill towns (Lowell, Lawrence) scaled the model into the American factory system.",
+
+  'north-river-steamboat':
+    "Mississippi-and-Hudson river transport had been one-way — float cargo downstream, then walk back, or pole upstream slowly. Robert Fulton's North River Steamboat (later renamed Clermont, August 1807, Hudson River) ran a regular New York-Albany service at 5 mph upstream. The first sustained commercial steam-powered river navigation. Within a generation, paddle steamers ran on the Mississippi, the Yangtze, the Volga. Inland trade and migration patterns rearranged around steam-river capability.",
+
+  'cumberland-road-national-road-completed':
+    "Pre-Cumberland federal roads had been local responsibility — wagon trails, often impassable in wet weather. The Cumberland Road (initial section completed 1818, eventually extending to Vandalia, Illinois) was the first federally-funded interstate road project: stone-surfaced, cambered, with bridges. Settlement of the Old Northwest (Ohio, Indiana, Illinois) accelerated. Federal government's role in interstate transportation infrastructure starts here; the railroad land grants and the modern interstate highway system are in the same constitutional family.",
+
+  'stockton-and-darlington-railway-opens':
+    "Pre-Stockton-and-Darlington railways had been short colliery lines hauling coal a few miles from pithead to canal. The S&D Railway (opened September 27, 1825) was the first public railway to use steam locomotives and accept passengers as well as freight, on a 26-mile line. Stephenson's Locomotion No. 1 hauled the inaugural train at 15 mph. The first sustained railway service. Within twenty years, Britain's national rail network was operational; within fifty, every industrial nation had one.",
+
+  'national-bank-act':
+    "Pre-1863 US banking had been a chaos of state-chartered banks issuing their own banknotes — discounted away from the issuing region, vulnerable to wildcat banking. The National Bank Act (1863, with 1864 revisions) created federally-chartered national banks with uniform banknote-issuance backed by US Treasury bonds. The first sustained national US currency system — replaced state banknotes within a decade. Funded the Union war effort. The Federal Reserve (1913) and modern US monetary policy build on this foundation.",
+
+  'first-stock-ticker-gold-and-stock-telegraph':
+    "Pre-ticker stock prices had been distributed by hand-delivered slips ('runners') — local information edge for whoever was nearest the exchange. Edward Calahan's stock ticker (November 1867, deployed by the Gold and Stock Telegraph Company) used Morse-code-derived telegraph technology to print continuous prices on paper tape. Within months, every Wall Street brokerage had one. The first sustained real-time financial-data feed. Modern market-data infrastructure, the Bloomberg Terminal, and high-frequency trading all descend from Calahan's ticker.",
+
+  'trade-union-act-1871':
+    "British trade unions before 1871 had been illegal under various combination acts and common-law restraint-of-trade doctrines — strikes were criminal conspiracy. Gladstone's Trade Union Act (1871) gave unions legal recognition and the right to strike. Three years later the Conspiracy and Protection of Property Act (1875) further restricted criminal prosecution of strike action. The first sustained legal recognition of organized labor in any major industrial economy. Modern labor law worldwide treats the 1871 Act as the foundational precedent.",
+
+  'typewriter':
+    "Office work before 1874 had been entirely handwritten — slow, illegible across writers, and prone to forgery. Sholes-Glidden's commercial typewriter (Remington & Sons, 1874) produced uniform mechanical print at speeds far above handwriting. Office productivity jumped. The QWERTY layout, designed for early mechanical reasons that disappeared, persists to today. The typewriter also reshaped office labor: typing schools opened, women entered clerical work in numbers, and the typist became one of the dominant professions of the early-20th-century office.",
 };
 
 async function main(){
