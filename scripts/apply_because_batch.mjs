@@ -880,6 +880,81 @@ const BECAUSE_BATCH = {
 
   'horse-domestication-in-eurasian-steppe':
     "The Pontic-Caspian steppe was rich in wild horse herds. Domestication evidence — bit-wear on horse teeth, settlement organization around horse corrals — appears at Botai-culture sites (modern Kazakhstan) by ~3500 BC. Genetic evidence for the modern domestic horse's ancestry points to the Volga-Don region around 2200 BC. Horses gave steppe peoples the speed and range that produced the Indo-European migrations, chariot warfare, the cavalry doctrines of Bronze and Iron Age empires, and the steppe-nomad dominance of Eurasia until firearms.",
+
+  'sumerian-salt-preservation-of-fish':
+    "Mesopotamian heat spoiled fresh fish within hours. Sumerian salt-curing (~2000 BC, attested in temple supply tablets from Lagash) used dry salt to draw water out of fish flesh, blocking bacterial growth. Salted fish kept months and traveled long distances. Tigris-Euphrates fishing villages started supplying inland temple cities. Salt-cured fish became a staple of every later Mediterranean economy — Phoenician, Greek, Roman.",
+
+  'sumerian-coriander-cultivation':
+    "Wild coriander grew across the eastern Mediterranean and Near East but only intermittently. Sumerian gardens (~2000 BC, attested in cuneiform garden inventories) included deliberate coriander cultivation. The first major garden herb domesticated for both flavor and seed preservation. Coriander spread via Phoenician trade networks across the Mediterranean and via the Silk Road into India and China.",
+
+  'sumerian-flax-cultivation-for-linen':
+    "Wool and goat-hair fabrics had been the standard. Sumerian flax cultivation (~2000 BC) and the retting-and-spinning that followed produced linen — finer, lighter, faster-drying than wool. Linen became the preferred Egyptian and Mediterranean clothing fiber. Egyptian sailcloth, ancient bedding, mummy wrappings, and the surplices of the medieval clergy all run on flax. Cotton eventually displaced linen in mass clothing — but linen remained for luxury textiles.",
+
+  'wine-fermentation-in-clay-jars-pithoi':
+    "Earlier wine had been stored in animal-skin bags or unsealed jars and oxidized within weeks. Bronze Age Mediterranean pithoi (~1500 BC, from Crete and Mycenae) were large ceramic jars with sealed lids — sometimes buried up to the neck for thermal mass. Wine inside aged controllably. Wine became a long-distance trade good. Cretan, Minoan, and Mycenaean wine economies — and the Phoenician and Greek trading networks that followed — all depended on the sealed jar.",
+
+  'cabbage-domestication-in-europe':
+    "Mediterranean and Near Eastern cuisine had been built on warm-climate vegetables. Northern European farmers (~1000 BC) selected wild Brassica oleracea for storable, vitamin-rich heads — domesticated cabbage. Survived through winter in root cellars. Provided ascorbic acid in seasons when fresh produce wasn't available. The brassica family later diverged into kale, broccoli, cauliflower, brussels sprouts, kohlrabi — all from the same domesticated stock.",
+
+  'sumerian-date-syrup':
+    "Sweeteners in the ancient Near East had been honey from wild bees and dried fruit. Date syrup — dates boiled down to thick concentrate — appears at Tell el-Dab'a and Jerusalem sites (the latter in an inscribed jar from a building destroyed in 586 BC). The first storable plant-based concentrated sweetener. Date palms thrived in irrigated Mesopotamian groves. Syrup, fermented date wine, and dried-date trade became staples of the Levantine and Egyptian diets.",
+
+  'grafting-fruit-trees-for-consistent-varieties':
+    "Fruit trees grown from seed produce genetically variable offspring — sweet apple seeds rarely grow into sweet apple trees. Grafting (~500 BC, described in Theophrastus and earlier in Chinese texts) joined a scion (the desired cultivar) to a rootstock, producing genetically identical clones at scale. The first horticultural cloning technology. Every modern apple, pear, cherry, citrus, and avocado orchard runs on grafted trees. The technique itself has not changed in two and a half millennia.",
+
+  'grain-storage-in-underground-silos':
+    "Mesopotamian grain had been stored above ground in mudbrick warehouses, where rodents and insects took a steady percentage. Sealed underground silos (~400 BC, attested across the Greek and Iberian worlds) used cool soil temperatures and oxygen depletion to extend grain storage to years. Carthage and the Roman provinces adopted them at scale. The first multi-year grain reserve technology. Famine years became survivable.",
+
+  'ox-drawn-rotary-mill-for-flour':
+    "Saddle querns had ground grain by back-and-forth motion of a small handheld stone — slow and exhausting. Rotary querns (~400 BC, in Warring States China and concurrent Mediterranean adoption) replaced reciprocating motion with continuous rotation, often powered by oxen or donkeys. Throughput multiplied by ten or more. The first non-human-powered grain milling. Roman provincial economies and Han Chinese rural life both ran on rotary mills.",
+
+  'fishpond-aquaculture-in-china':
+    "Wild river fishing had been the only Chinese protein source for many inland regions. Carp aquaculture in artificial ponds (~400 BC, treatised by Fan Li) gave Warring States peasants a controllable protein supply. Pond yields exceeded what river fishing could produce per labor-hour. Carp polyculture (multiple species at different water depths) increased yield further. Modern Chinese aquaculture — still the world's largest by tonnage — is a 2,400-year continuation of the technology.",
+
+  'vineyard-trellising-for-higher-yields':
+    "Wild and early domesticated grapes had sprawled along the ground — vulnerable to rot, low-yielding, hard to harvest. Greek and Etruscan trellising (~400 BC) supported vines on pergolas, stakes, or paired trees, raising the grapes off the ground. Air circulation reduced rot. Yields and grape quality jumped. Roman viticulture treatises (Cato, Columella) described elaborate trellising systems. Every commercial vineyard since uses some form of vine-supporting structure.",
+
+  'ox-drawn-rotary-mill-for-flour-2':
+    "The corpus contains a duplicate of the rotary quern entry. The contribution is the same: ~400 BC saw the replacement of reciprocating saddle querns with rotary querns turned by hand crank, ox, or donkey. Throughput jumped tenfold. Roman, Greek, and Han Chinese flour milling all ran on the rotary design until water and wind power partly replaced it.",
+
+  'fertilization-with-green-manure-legumes':
+    "Mediterranean and Near Eastern soils had been fertilized with manure or simply rested through fallow. Legume green manuring (~400 BC, in Greek and Roman agricultural treatises) deliberately planted clover, beans, or peas in fallow years and then plowed them under — Rhizobium bacteria in the legume roots fix atmospheric nitrogen. The first sustainable nitrogen-replenishment practice. Pre-industrial European crop rotation eventually formalized the model.",
+
+  'yakhchal-in-persia':
+    "Hot-climate food preservation pre-yakhchāl had been salt, sun-drying, and fermentation only. Persian yakhchāls (~400 BC) — beehive-domed structures with thick mudbrick walls and a basin below ground — kept ice through summer in the desert. Winter ice from nearby mountains was stored; evaporative cooling and the inverted dome's natural air circulation maintained sub-freezing internal temperatures. The first deliberate refrigeration architecture. The principle persists in modern passive cooling.",
+
+  'salt-curing-of-fish-for-preservation':
+    "Fresh fish spoiled within hours; smoked fish kept weeks; salt-cured fish kept months. Mediterranean salt-fishing operations (~350 BC, especially Phoenician sites at Cádiz) processed tuna and bonito at scale. Garum (fermented fish sauce, the Roman ketchup) was a downstream industry. Salt-cured fish became a major Mediterranean trade good and the protein backbone of Catholic Lent. Modern lutefisk, gravlax, and bacalao all descend from this Bronze-Iron Age preservation tradition.",
+
+  'watermill-and-tidal-mill-spread':
+    "Animal- and human-powered grain mills had been the norm. Hellenistic engineers — Philo of Byzantium and others (~280 BC) — described horizontal-wheel watermills using flowing water for continuous milling. The Roman Empire scaled the design (Barbegal, 100 AD), and tidal mills appeared on European coasts by the 7th century. Continuous mechanical power, replacing intermittent muscle, available wherever water flowed. The first sustained pre-industrial energy revolution.",
+
+  'horreum':
+    "Roman urban grain supply had been ad hoc — distributed warehouses, rooftop storage, periodic shortages. Gaius Gracchus's first public horreum (Rome, 123 BC) and the imperial network that grew from it (the Horrea Galbae warehoused grain for two centuries) institutionalized large-scale grain storage. Raised floors blocked rodents; ramps, wide doors, and underground vaults allowed cargo handling at scale. The first sustained urban food-security infrastructure. Mediterranean port cities for fifteen centuries followed the design.",
+
+  'han-dynasty-canal-irrigation':
+    "Han Chinese rice agriculture had been limited to the river valleys. Han state canal projects (~100 BC, on the Wei, Yellow, and Yangtze tributaries) carried water dozens of kilometers from rivers to dry highlands. Tens of thousands of corvée workers built them. Irrigated acreage expanded dramatically. State-managed water control — and the bureaucracy that enabled it — became a constant feature of Chinese statecraft for two millennia.",
+
+  'roman-screw-press-for-olives':
+    "Olive oil had been pressed by stone-weight or beam-and-lever methods — strong but inefficient. The Roman screw press (1st century AD, described by Pliny and Hero of Alexandria) used a threaded wooden screw to convert handle rotation into vertical force, applying continuous pressure to the olive paste. Yield per olive jumped. The same press design was applied to wine (and later, in modified form, to printing presses 1,400 years on). Mediterranean oil and wine economies became efficient enough to sustain export trade at scale.",
+
+  'roman-watermill-adoption':
+    "Hellenistic watermills had existed since 280 BC but spread slowly. By the 1st century AD, Roman engineering — Vitruvius, then provincial engineers — had standardized the overshot wheel and the gear-driven millstone. Provincial Roman watermill sites are documented from Britain to Algeria. Continuous mechanical power for grain milling became available wherever a stream existed. Slave-and-animal mills persisted in cities, but rural milling shifted decisively to water.",
+
+  'roman-cattle-breeding-for-traction':
+    "Pre-Roman Italian cattle had been bred for meat and milk. Roman provincial agriculture (1st-2nd century AD) selected for traction-strong oxen — broader chests, heavier bone, stronger neck musculature. Columella's De Re Rustica (60 AD) describes desired traits. Heavier oxen pulled heavier plows through heavier soils. The northern European agricultural expansion of the early medieval period (~600 AD onward) depended on draft cattle bred to specifications worked out under the Romans.",
+
+  'heavy-plow-introduction':
+    "Mediterranean ards had been light and required only one ox; they couldn't break the wet, heavy clay soils of northern Europe. The wheeled mouldboard plow (~300 AD, Slavic and Celtic adaptation, refined into the medieval carruca) used iron coulters and mouldboards to slice and turn heavy soils — pulled by 6-8 oxen. The first agricultural technology adapted specifically to the European north. The medieval European agricultural expansion past the Mediterranean fringe runs on this plow.",
+
+  'wheeled-plow-carruca':
+    "The simple ard had served Mediterranean fields for two millennia but couldn't crack northern European clay. The carruca (described in Slavic territory by ~568 AD, and spreading west via the Carolingians) added wheels, an iron coulter, an iron share, and a mouldboard that turned the cut soil over. With six to eight oxen pulling, the carruca opened heavy soils that had been forest or marsh. The early-medieval European demographic expansion runs directly on this plow.",
+
+  'mulberry-tree-cultivation-for-silkworms':
+    "Wild silk production had relied on whatever cocoons could be collected from native trees. Chinese sericulture had used managed mulberry orchards since ~2700 BC. The 6th-7th century AD spread of dedicated white-mulberry (Morus alba) plantations across the Byzantine east — and then into the Islamic Mediterranean — gave silkworms a controlled, abundant leaf diet. Silk production scaled. Byzantine silk weaving and the later Lyon and Italian silk industries all depended on the mulberry orchard model.",
+
+  'noria':
+    "Mediterranean and Persian irrigation had required animals or humans to lift water from rivers into aqueducts — a continuous labor cost. The noria (~800 AD, attested across the Islamic Mediterranean) was a current-driven scoop wheel: the river's own flow turned the wheel and lifted water dozens of feet without human power. The first sustained zero-labor water-lifting machine. Hama (Syria), Murcia (Spain), and many other Islamic-era irrigation systems still use working norias.",
 };
 
 async function main(){
