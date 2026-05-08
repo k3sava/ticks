@@ -50518,7 +50518,7 @@
           "url": "https://en.wikipedia.org/wiki/Skype"
         }
       ],
-      "because": "Pre-Skype international phone calls had been expensive — typically $1+/minute for transoceanic calls. Skype (launched August 2003 by Niklas Zennström and Janus Friis, leveraging peer-to-peer technology from Kazaa) provided free Skype-to-Skype voice calls, plus low-cost SkypeOut to phones. The first sustained-scale free VoIP service. By 2009 Skype handled 8% of all international phone minutes. Modern WebRTC, Zoom, FaceTime, and the entire VoIP-displaces-traditional-telephony shift trace conceptual ancestry to Skype."
+      "because": "Pre-Skype international phone calls had been expensive — typically $1+/minute for transoceanic calls. Skype (launched August 2003 by Niklas Zennström and Janus Friis, building on peer-to-peer technology from Kazaa) provided free Skype-to-Skype voice calls, plus low-cost SkypeOut to phones. The first sustained-scale free VoIP service. By 2009 Skype handled 8% of all international phone minutes. Modern WebRTC, Zoom, FaceTime, and the entire VoIP-displaces-traditional-telephony shift trace conceptual ancestry to Skype."
     },
     {
       "id": "amazon-web-services-aws",
