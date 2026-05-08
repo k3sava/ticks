@@ -3340,6 +3340,156 @@ const BECAUSE_BATCH = {
 
   'greek-trireme':
     "Same trireme, alternate ID. Greek triremes (~700 BC widespread, Athenian innovation 480 BC) — three rows of oars, 170 rowers, bronze ram for ship-destruction — were the first sustained-scale fast-strike Mediterranean warship. Athenian victories at Salamis (480 BC) and the entire Athenian thalassocracy ran on triremes. Mediterranean naval power for 700 years was trireme-and-derivative power.",
+
+  'greek-hoplon-shield-and-phalanx':
+    "Pre-hoplon Greek warfare had been heroic-individual combat. The hoplon (a heavy circular shield with bronze rim, ~700 BC) and the phalanx formation (massed citizens shoulder-to-shoulder, shields overlapping) gave Greek city-states an infantry tactic of unprecedented density. The first sustained-scale Greek phalanx warfare. Marathon (490 BC), Thermopylae (480 BC), and Plataea (479 BC) ran on phalanx tactics. Roman legion tactics eventually superseded the phalanx, but the model of disciplined heavy-infantry formation persisted as the basis of Western military doctrine for two millennia.",
+
+  'battle-of-zama':
+    "Pre-Zama war elephants had been terror weapons that infantry couldn't reliably counter. Scipio Africanus's tactics at Zama (October 19, 202 BC, ending the Second Punic War) used parallel lanes in his line — Hannibal's elephants charged through the gaps without breaking the Roman formation, then were attacked from both sides. The first sustained-scale demonstration of effective elephant-counter infantry tactics. Roman victory at Zama ended Carthaginian power and made Rome the dominant Mediterranean power for the next six centuries.",
+
+  'marian-reforms':
+    "Pre-Marian Rome had relied on property-owning citizen militia for army recruitment. Gaius Marius's reforms (107 BC) opened recruitment to landless citizens (the capite censi), introduced standardized equipment provided by the state, and made legions permanent rather than annually-raised. The first sustained-scale Roman professional standing army. Marian-era legionaries became loyal to commanders rather than the state — set conditions for the civil wars and the eventual transition from Republic to Empire.",
+
+  'heavy-cavalry-dominance-cataphract-revival':
+    "Pre-Carrhae Roman cavalry had been light skirmishers. The Battle of Carrhae (53 BC, Crassus's destruction by Parthian heavy cavalry) demonstrated that heavily-armored cataphracts (rider and horse both armored) could dominate Roman legions on open terrain. The first sustained-scale Roman encounter with effective heavy cavalry. Roman doctrine eventually integrated heavy cavalry; Byzantine kataphraktoi and medieval European knights all build on the cataphract precedent.",
+
+  'roman-military-diploma-system':
+    "Pre-Roman-diploma non-citizen auxiliary soldiers had no path to Roman citizenship. The military diploma system (formalized under Claudius, 52 AD) granted citizenship after 25 years of auxiliary service — recorded on bronze tablets. The first sustained-scale Roman military-citizenship pipeline. Augmented Roman manpower with non-Italian recruits across the empire. Modern military naturalization paths (US, Israel, France) trace conceptually to the Roman diploma model.",
+
+  'stirrup-introduction-to-europe':
+    "Pre-stirrup mounted combat had been unstable — riders couldn't strike without falling off. Stirrups, originating in Central Asia (~5th century AD, with Avar and Magyar diffusion), reached Europe by ~700 AD. Riders could now strike with full body weight without losing seat. The first sustained-scale European mounted-shock-combat capability. Frankish heavy cavalry, Carolingian military reforms, and eventually medieval European chivalry all build on stirrup-enabled mounted combat.",
+
+  'islamic-military-religious-orders':
+    "Pre-Furusiyya Islamic mounted warfare had been informally taught. Ibn Akhi Hizam's Furusiyya manual (~892 AD, in Abbasid Baghdad) systematized cavalry training, weapons handling, and chivalric ethics. The first sustained-scale Islamic chivalric-military code. Inspired Crusader-era European chivalric orders (Templars, Hospitallers) and influenced Western chivalric literature (Sufi-Islamic-romantic-knight tropes from Arabic via Spain into European troubadour tradition).",
+
+  'chinese-fire-lance':
+    "Pre-fire-lance gunpowder weapons had been static incendiaries. The Chinese fire lance (~950 AD) — a bamboo or metal tube packed with gunpowder, attached to a spear, used as a hand-held flamethrower — was the first portable infantry gunpowder weapon. The first sustained-scale handheld gunpowder weapon. Evolved into the proto-cannon and eventually into firearms. Modern handheld firearms descend conceptually from the fire lance.",
+
+  'counterweight-trebuchet':
+    "Pre-counterweight-trebuchet siege weapons had been torsion-powered (Roman) or traction-pulled (early medieval). Counterweight trebuchets (~1100-1200 AD, possibly Crusader-era European-Islamic transmission) used a heavy weight on the short arm to throw projectiles weighing hundreds of kilograms. The first sustained-scale counterweight-driven artillery. Demolished medieval city walls; rendered traditional defensive architecture obsolete. Eventually displaced by gunpowder cannon (~14th century).",
+
+  'mongol-invasion-of-rus-winter-warfare':
+    "Pre-Mongol European armies had avoided winter campaigning — too cold, supply lines unreliable, rivers frozen. Mongol winter invasion of Rus' (1237-1240, under Batu Khan) traveled across frozen rivers, used the snow for mobility, and destroyed dozens of Russian cities. The first sustained-scale European winter campaign. Foundational for subsequent winter warfare doctrine. Modern Russian military's tradition of winter campaigning (Napoleon 1812, Hitler 1941) treats the Mongol example as foundational.",
+
+  'mongol-siege-of-baghdad':
+    "Pre-1258 Baghdad had been the unconquered capital of the Abbasid Caliphate for 500 years. Hulagu Khan's Mongol siege (January-February 1258) used Chinese siege engineers and breached the walls in 13 days. The Mongol sack — perhaps 200,000-1,000,000 deaths, the destruction of the Grand Library, the murder of the last Abbasid Caliph — ended the Islamic Golden Age. The first sustained-scale destruction of a major Islamic capital. Modern Islamic political-religious memory still treats the 1258 sack as defining trauma.",
+
+  'mongol-conquest-of-the-song-dynasty':
+    "Pre-Mongol Song China's Yangtze defenses had stopped every northern invader. Mongol conquest of the Song (1279, after a 45-year campaign by Ögedei Khan, then Möngke, then Kublai Khan) — using Chinese engineers, siege equipment, and naval forces — finally subjugated all of China. The first sustained-scale steppe-nomad conquest of the entire Chinese state. Founded the Yuan Dynasty (1271-1368). Ming dynasty restoration (1368) created modern Chinese-Mongol relations as ongoing tension.",
+
+  'standing-army-in-france':
+    "Pre-1445 French armies had been ad hoc — feudal levy plus mercenary bands disbanded after each campaign. Charles VII's Compagnies d'Ordonnance (1445) created France's first sustained-scale standing professional army — 15 companies of 100 men-at-arms each, paid year-round, equipped to royal specifications. Foundation of the French royal army that would dominate European warfare through the 16th-17th centuries. Modern professional national armies all build on the post-1445 French model.",
+
+  'treaty-of-tordesillas-2':
+    "Same Tordesillas treaty, alternate ID. The Treaty of Tordesillas (June 7, 1494, mediated by Pope Alexander VI) divided non-European territory between Portugal and Spain along a meridian 370 leagues west of the Cape Verde islands. The first sustained-scale large-scale treaty allocating sovereignty over lands neither party had visited. Set the colonial map of South America; Brazil's Portuguese-speaking destiny is a direct consequence.",
+
+  'naval-line-of-battle-tactic':
+    "Pre-line-of-battle naval combat had been melee — ships swarming chaotically. Line of battle tactics (~1500-1650, with English Civil War period adoption) arranged warships in a line with all guns facing the enemy — broadsides could fire without hitting friendly ships. The first sustained-scale ordered naval-warfare tactic. British Royal Navy's dominance through the 18th-19th centuries built on line-of-battle discipline. The phrase 'ship of the line' and 'battleship' both derive from the tactic.",
+
+  'galleon-ship-design':
+    "Pre-galleon Atlantic crossings had used carracks — high-castled and unstable. Galleons (~1500-1530, Spanish and Portuguese refinement) had lower forecastle, longer hulls, and greater stability — could carry treasure or troops across the Atlantic and the Pacific. The first sustained-scale Atlantic-and-Pacific cargo-and-warship hybrid design. Spanish silver fleet from the Americas, Manila galleons trans-Pacific trade, and the entire 16th-17th-century Iberian colonial economy ran on galleons.",
+
+  'turtle-submarine-attack':
+    "Pre-Turtle naval warfare had been surface only. David Bushnell's Turtle (1776, in the American Revolutionary War) was the first sustained-scale combat submarine — hand-cranked propulsion, screw-driven attachment of explosive charges to enemy hulls. Sergeant Ezra Lee piloted it against HMS Eagle in New York Harbor (September 7, 1776). The attack failed but demonstrated the concept. Modern submarine warfare descends conceptually from this American Revolutionary innovation.",
+
+  'ss-savannah':
+    "Pre-Savannah transatlantic crossings had been pure-sail. The SS Savannah (May-June 1819, US-built, US-flagged) crossed Newfoundland to Liverpool with auxiliary steam power — though it ran on sail for most of the voyage. The first sustained-scale steam-aided transatlantic crossing. Established the principle that steam could supplement sail on ocean voyages. Pure-steam transatlantic crossings (Britannia, 1840) followed within two decades. Modern military transport's ocean-crossing speed all builds on the steam shift.",
+
+  'maxim-gun':
+    "Same Maxim gun, alternate ID. Hiram Maxim's recoil-operated machine gun (1884) achieved sustained automatic fire — 600 rounds per minute, one gunner replacing dozens of riflemen. Used by European colonial powers in 1880s-90s African campaigns. Vickers, MG 08, and Browning machine guns are all Maxim-tradition designs. Modern machine guns descend directly.",
+
+  'submarine-modern-diesel-electric':
+    "Pre-1914 submarines had used gasoline engines (dangerous fumes) or steam. Diesel-electric propulsion (1914 onward, especially German U-boat Type UB) — diesel for surface, electric for submerged — gave submarines extended underwater endurance. The first sustained-scale practical attack-submarine technology. WWI U-boat campaign demonstrated devastating effectiveness. Modern conventional submarines (excepting nuclear-powered) still use the diesel-electric architecture.",
+
+  'modern-flamethrower':
+    "Pre-flamethrower clearing entrenched positions had required grenades or close-quarters combat. The portable flamethrower (1915, German Flammenwerfer) projected burning fuel into trenches and bunkers. The first sustained-scale portable area-effect weapon. Used through both World Wars; eventually replaced by thermobaric weapons in modern military doctrine. The Geneva Protocol's eventual restrictions on incendiary weapons (1980) target flamethrower-tradition use.",
+
+  'sonar':
+    "Pre-sonar submarines had been nearly invisible underwater. Active sonar (ASDIC, deployed 1918 by the British) sent acoustic pulses underwater and listened for echoes from submarines. The first sustained-scale anti-submarine detection technology. Limited effectiveness in WWI; matured during WWII. Modern naval anti-submarine warfare and civilian fish-finding both run on sonar-tradition acoustic detection.",
+
+  'hms-hermes-first-purpose-built-aircraft-carrier':
+    "Pre-Hermes naval aviation had used converted ships. HMS Hermes (commissioned 1924) was the first sustained-scale ship designed from the keel up as an aircraft carrier — 700-foot flight deck, hangar deck, dedicated aircraft elevators. The first sustained-scale purpose-built carrier. Carrier warfare became decisive at Coral Sea and Midway (1942). Modern carrier-strike-group naval doctrine descends from the Hermes-and-successors design tradition.",
+
+  'norden-bombsight':
+    "Pre-Norden high-altitude bombing had been wildly inaccurate. The Norden bombsight (US, deployed 1941) used analog computers to calculate bomb-release timing based on altitude, ground speed, wind, and target offset. The first sustained-scale precision-bombing instrument. WWII strategic bombing (Berlin, Tokyo, Hiroshima, Nagasaki) ran on the Norden. Post-WWII era's precision-guided munitions eventually displaced the Norden tradition, but the principle of computational targeting persists.",
+
+  'soviet-spetsnaz-doctrine':
+    "Pre-Spetsnaz Soviet special operations had been ad hoc. Spetsnaz doctrine (formalized ~1950 by GRU, with origins in WWII partisan warfare) created dedicated special-purpose units — deep penetration reconnaissance, sabotage, assassination, partisan support. The first sustained-scale Soviet special-operations military doctrine. Influenced subsequent Soviet and Russian unconventional-warfare practice (Afghanistan 1979-89, Crimea 2014, Ukraine 2022). Modern Russian military hybrid-warfare and political-warfare practice all draw on Spetsnaz tradition.",
+
+  'suez-crisis':
+    "Pre-Suez Britain and France had been independent imperial powers acting unilaterally. The Suez Crisis (October-November 1956, Anglo-French-Israeli invasion of Egypt to retake the Suez Canal) ended in their humiliating withdrawal under US-Soviet pressure. The first sustained-scale demonstration that European colonial powers no longer acted as superpowers — could not act militarily without US consent. Subsequent decolonization accelerated. Modern post-imperial European foreign-policy posture dates from the Suez disaster.",
+
+  'cuban-missile-crisis':
+    "Same Cuban Missile Crisis, alternate ID. Thirteen days in October 1962 brought superpowers closer to nuclear war than at any other point in history. Kennedy and Khrushchev's back-channel diplomacy, the ExComm decision-making process, and the eventual quid-pro-quo (US removes missiles from Turkey secretly; Soviets remove missiles from Cuba) established the template for nuclear-crisis management. The Moscow-Washington hotline followed.",
+
+  'iran-iraq-war-chemical-weapons':
+    "Pre-Iran-Iraq-War chemical weapons taboo (since the 1925 Geneva Protocol) had largely held. Iraq's massive chemical-weapons use against Iranian forces (1983-1988, mustard gas, sarin, tabun on Iranian troops and Kurdish civilians) broke the taboo with international acquiescence. The first sustained-scale post-WWII state use of chemical weapons. Subsequent Syrian-civil-war chemical attacks (2013, 2017) and the ongoing weakness of chemical-weapons norms trace back partly to the Iran-Iraq War's normalizing effect.",
+
+  'us-army-airland-battle-doctrine':
+    "Pre-AirLand-Battle US Army doctrine had been linear and infantry-centered. AirLand Battle (formalized 1982, in FM 100-5 Operations) integrated deep strike (attack against enemy second-echelon forces by air) with close combat and rear-area operations. The first sustained-scale US Army post-Vietnam doctrinal synthesis. Tested successfully in the Gulf War (1991). Modern US Army Multi-Domain Operations doctrine (post-2018) builds on the AirLand Battle foundation.",
+
+  'us-army-adopts-m4-carbine':
+    "Pre-M4 US Army infantry rifles had been M16A2 (long-barrel, full-power 5.56). The M4 carbine (adopted as standard 1994, shorter barrel, retractable stock) gave troops a lighter weapon for vehicle-mounted operations and urban warfare. The first sustained-scale US Army carbine standardization since WWII-era M1 carbine. Operations in Afghanistan and Iraq ran on the M4. Modern US Army weapons (M4A1, eventually NGSW XM7) all descend conceptually.",
+
+  'bosnian-war-srebrenica-massacre-and-nato-intervention':
+    "Pre-Bosnia post-Cold-War peacekeeping had been non-interventionist. The Srebrenica massacre (July 1995, 8,000+ Bosnian Muslim men and boys killed by Bosnian Serb forces) and subsequent NATO Operation Deliberate Force air campaign (August 30 - September 20, 1995) demonstrated that international military force could be used for humanitarian intervention. The first sustained-scale post-Cold-War humanitarian military intervention. The Dayton Accords (December 1995) ended the war. Subsequent Kosovo (1999), Libya (2011) interventions extended the precedent.",
+
+  'improvised-explosive-devices-become-insurgent-weapon-of-choice':
+    "Pre-IEDs insurgent forces had relied on conventional weapons. The Iraqi insurgency (2003-2011) made IEDs — improvised devices using military explosives, artillery shells, propane tanks, etc. — the weapon of choice against US and coalition forces. Cheap, effective, hard to detect. The first sustained-scale modern IED-based insurgency. Drove development of MRAP vehicles, counter-IED technology, and the entire post-9/11 US military focus on asymmetric warfare. The IED-insurgency dynamic of Iraq and Afghanistan defined US military experience for two decades.",
+
+  'nvidia-cuda-enables-gpu-deep-learning':
+    "Pre-CUDA general-purpose GPU computing had required graphics-programming expertise. NVIDIA CUDA (released 2007) provided a C-based programming model for GPU parallel computation accessible to general programmers. The first sustained-scale general-purpose-GPU programming framework. Foundation of the deep-learning era — when AlexNet (2012) demonstrated that GPU-trained neural networks could dominate ImageNet, the entire AI research community shifted to GPU-based deep learning. Modern AI training infrastructure ($100B+ market) runs on CUDA.",
+
+  'stuxnet-discovery':
+    "Pre-Stuxnet cyberattacks had been digital — data theft, denial of service. Stuxnet (uncovered 2010, deployed 2009-2010 against Iranian nuclear centrifuges) was a worm that physically destroyed centrifuges by causing them to spin at destructive frequencies. The first sustained-scale cyberattack with physical infrastructure destruction. Believed to be a US-Israeli joint operation. Demonstrated that critical infrastructure could be attacked through cyberspace. Modern cyberwarfare-and-defense practice all references Stuxnet as foundational moment.",
+
+  'm27-infantry-automatic-rifle':
+    "Pre-M27 US Marine automatic riflemen had used M249 squad automatic weapons (heavy belt-fed). The M27 (USMC adoption 2010) replaced the M249 with a magazine-fed automatic rifle nearly identical to the M4 carbine. The first sustained-scale modern Marine SAW replacement. Reduced squad logistical complexity by standardizing on a single rifle platform. Influenced Army Next-Generation Squad Weapon (NGSW) development. Modern infantry small-unit doctrine partly runs on the M27 platform.",
+
+  'gans-invented-by-goodfellow':
+    "Same GAN, alternate ID. Ian Goodfellow's GANs (2014, NIPS paper) trained generator and discriminator networks against each other in a minimax game — generator producing fakes, discriminator distinguishing them from real. The first sustained-scale adversarial-training generative framework. StyleGAN (2018) and BigGAN (2018) produced photorealistic images. Diffusion models eventually displaced GANs for most image generation, but the adversarial-training principle persists.",
+
+  'equal-temperament-tuning':
+    "Pre-equal-temperament tuning had been Pythagorean (pure-fifth-based) or just intonation (pure-ratio-based) — instruments sounded perfect in some keys, awful in others. Bach's Well-Tempered Clavier (1722, exploring all 24 major and minor keys with equal-tempered tuning) demonstrated that twelve-tone equal temperament made every key playable on a single instrument. The first sustained-scale Western practical adoption of equal temperament. Modern Western music theory and instrument design (especially keyboards and fretted instruments) all run on equal temperament.",
+
+  'nudge-theory-libertarian-paternalism-thaler-sunstein':
+    "Pre-nudge behavior-change had used legislation, education, or financial incentives. Richard Thaler and Cass Sunstein's Nudge (2008, drawing on years of behavioral-economics research) advocated 'choice architecture' — designing decision contexts that gently steer people toward better outcomes without restricting choice. The first sustained-scale popularized behavioral-economics policy framework. Influenced government 'nudge units' (UK Behavioral Insights Team 2010, US OIRA, similar agencies in 50+ countries). Modern public-policy design works partly in nudge vocabulary.",
+
+  'israeli-state-partition-and-displacement':
+    "Same Israeli founding, alternate ID. UN Resolution 181 (November 1947) partitioned the British Mandate. Israel declared independence May 14, 1948. The 1948 Arab-Israeli war and the Nakba (Palestinian dispossession of ~700,000 refugees) created the modern Israeli-Palestinian conflict. The first sustained-scale Jewish state in two thousand years. The wars and unresolved Palestinian-displacement question that followed shape Middle Eastern politics to this day.",
+
+  'brexit-referendum-populist-disruption-of-expert-consensus':
+    "Pre-Brexit liberal technocratic consensus had been politically unchallengeable. The Brexit referendum (June 23, 2016, 52-48% in favor of leaving the EU, against the explicit advice of every major UK institution) demonstrated that populist electorates could reject technocratic consensus. The first sustained-scale modern Western populist defeat of expert-class policy preferences. Combined with Trump's election (November 2016), defined the populist-vs-technocratic political-cultural axis that has dominated Western democracies since.",
+
+  'george-floyd-murder-global-racial-justice-reckoning':
+    "Pre-Floyd police violence against Black Americans had been a primarily American concern. George Floyd's murder by Minneapolis police (May 25, 2020, captured on phone video) sparked massive global protests during the COVID pandemic — Black Lives Matter as global movement, racial-justice reckonings across institutions worldwide. The first sustained-scale global response to American police violence. Modern corporate DEI initiatives, criminal-justice reform debates, and the entire 2020s racial-political conversation traces partly to the response to Floyd's killing.",
+
+  'hadoop-big-data-processing':
+    "Pre-Hadoop large-scale data analysis had required proprietary supercomputers. Hadoop (open-sourced 2006 by Doug Cutting at Yahoo, based on Google's MapReduce paper 2004) provided a free framework for distributed processing of huge datasets across commodity hardware. The first sustained-scale open-source big-data infrastructure. Foundation of the 2010s 'big data' era — companies routinely processed terabytes of data on commodity clusters. Spark (2014) eventually displaced Hadoop for many workloads, but the distributed-computing-on-commodity-hardware model persists.",
+
+  'bretton-woods-institutions-global-economic-governance':
+    "Pre-Bretton-Woods international economic crises had no institutional response mechanism. The Bretton Woods conference (July 1944, in New Hampshire) established the IMF, the World Bank, and the gold-dollar exchange standard. The first sustained-scale global economic-governance institutions. Modern international finance — currency-stabilization loans, development financing, World Bank infrastructure projects — runs primarily on the Bretton Woods institutions, though the gold standard ended (Nixon shock 1971).",
+
+  'claude-constitutional-ai-alignment':
+    "Pre-Constitutional-AI alignment had used RLHF — Reinforcement Learning from Human Feedback, requiring extensive human labeling. Anthropic's Constitutional AI (2022, deployed in Claude from 2023) used a written constitution of principles and AI feedback to evaluate model outputs against the constitution — reducing human labeler workload significantly. The first sustained-scale alternative-to-RLHF alignment technique. Modern AI safety practice combines RLHF, Constitutional AI, and other techniques. Anthropic's Claude family products run on Constitutional AI.",
+
+  'sora-video-generation-at-world-model-fidelity':
+    "Pre-Sora video generation had been short, low-resolution, with poor temporal coherence. OpenAI's Sora (announced February 2024, public access 2024-2025) generated 60-second high-resolution videos from text prompts with substantial physical-world consistency. The first sustained-scale text-to-video at world-model fidelity. Generated immediate concern about deepfake misuse and Hollywood-job displacement. Modern video-generation infrastructure (Runway, Pika, Veo) all play in territory Sora helped open.",
+
+  'nobel-prizes-for-ai-hinton-and-jumper':
+    "Pre-2024 Nobel-prize tradition had treated AI/ML as an engineering discipline rather than fundamental science. The 2024 Nobel Prizes — Physics to Hopfield and Hinton for foundational neural-network work, Chemistry to Hassabis, Jumper, and Baker for AlphaFold — represented the first sustained-scale Nobel-committee recognition of AI as fundamental science. Marked AI's institutional arrival as a Nobel-class discipline. Modern AI research's relationship to the broader scientific establishment changed visibly in 2024.",
+
+  'alphaproof-ai-solves-imo-problems':
+    "Pre-AlphaProof formal mathematical proof had been considered beyond AI capability. Google DeepMind's AlphaProof (announced July 2024) achieved silver-medal performance on the 2024 International Mathematical Olympiad — solving 4 of 6 problems by formalizing in Lean and searching the proof tree with reinforcement learning. The first sustained-scale AI mathematical-proof system at human-competition level. Mathematical-proof automation, theorem proving, and formal verification all stand to be reshaped. Modern AI's capability frontier expanded into mathematical reasoning visibly here.",
+
+  'vibe-coding-natural-language-software-development':
+    "Pre-vibe-coding software development had required programming language fluency. By 2025 (the term coined by Andrej Karpathy in February 2025) sufficiently capable LLMs (Claude 3.5 Sonnet, o1, GPT-4 with tool use) made it possible to build working software entirely through natural-language prompting and AI execution — 'vibe coding.' The first sustained-scale natural-language software development. Lowered the barrier to writing software dramatically; raised the value of clear thinking about what to build. Modern software-development practice is rapidly recalibrating around AI-assisted (and AI-driven) coding.",
+
+  'ai-in-drug-discovery-first-ai-designed-drug-trials':
+    "Pre-2025 drug discovery had required years of wet-lab experimentation. The first AI-designed-drug clinical trials (~2025, with Insilico Medicine, Recursion, BenevolentAI) demonstrated that AI could identify drug candidates, predict their properties, and shepherd them into clinical trials in dramatically compressed timelines. The first sustained-scale AI-driven drug discovery pipeline. Combined with AlphaFold 3's protein-structure predictions, modern pharmacology is being reshaped. Whether AI-discovered drugs significantly improve clinical outcomes remains under evaluation.",
+
+  'deepseek-r1-china-reaches-frontier-ai':
+    "Pre-DeepSeek frontier AI had been an exclusively US-company achievement. DeepSeek R1 (announced January 2025, by a Chinese hedge-fund-backed lab) achieved reasoning performance competitive with OpenAI's o1 — at training costs reportedly under $6M. The first sustained-scale Chinese-frontier-AI achievement. Triggered substantial market and policy response in the US. Demonstrated that the Sino-American AI competition was real and that export controls on advanced GPUs had not prevented Chinese frontier capability. Modern AI geopolitics took a new shape in early 2025.",
 };
 
 async function main(){
