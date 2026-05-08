@@ -27589,17 +27589,17 @@
       "year": "40,000 BC",
       "yearN": -40000,
       "zone": "cognitive-leap",
-      "name": "Natural resin used for figurine construction",
+      "name": "Natural resin as composite-tool adhesive",
       "domain": "art",
-      "constraint": "no composite material art using resin to join parts or coat surfaces",
-      "detail": "The Wikipedia extract does not mention the use of natural resin for figurine construction or any composite material art. It states amber was appreciated since the Neolithic times and worked as a gemstone since classical antiquity, but provides no evidence of resin being used to join parts or coat figurines. The extract is too thin to support the proposed constraint.",
+      "constraint": "no plant-resin adhesive for hafting or pigment-binding",
+      "detail": "Upper Paleolithic artisans used plant resins — pine pitch, birch tar, and similar tree gums — to haft stone heads onto wooden shafts and bond pigments to surfaces. This dissolved the constraint that composite assemblies relied on simple cordage alone. Birch bark tar use traces back to Neanderthal sites at 200,000 BC, with wider Aurignacian application by 40,000 BC across Europe and Africa.",
       "links": [
         {
-          "label": "Wikipedia: Natural resin used for figurine construction",
-          "url": "https://en.wikipedia.org/wiki/Amber"
+          "label": "Wikipedia: Adhesive (history)",
+          "url": "https://en.wikipedia.org/wiki/Adhesive"
         }
       ],
-      "because": "Pre-resin sculpture had been single-material — bone, ivory, stone. Upper Palaeolithic artisans (~40,000 BC) used pine and birch resin to bond materials — pigments to surfaces, multiple materials into composite figures. The earliest known evidence comes from sites with hafted tools showing resin-bonded composite assemblies. The first composite-material artistic technology. Modern wood glue and most natural-source adhesives still rest on the same plant-resin principle."
+      "because": "Birch bark tar (200,000 BC) had given Neanderthals the first reliable adhesive. Aurignacian and later Upper Paleolithic artisans (~40,000 BC) extended plant-resin use across Europe and Africa — pine pitch, birch tar, and acacia gum bonded stone heads to wooden hafts and held pigments to bone, ivory, and stone surfaces. The first sustained plant-derived adhesive tradition in art and tool-making. Modern wood glue and natural-source adhesives still rest on the same plant-resin principle."
     },
     {
       "id": "engraved-vulva-symbols",
@@ -27762,10 +27762,10 @@
       "name": "Copper smelting",
       "domain": "physics",
       "constraint": "before, metalworking was limited to cold hammering; after, controlled heat extraction allowed casting and shaping tools",
-      "detail": "The extract does not specify a date or the first use of copper smelting. It describes the general process of smelting and its applications. Therefore, a confident tick cannot be written based solely on this extract.",
+      "detail": "Copper smelting at Belovode (Serbia) and concurrent Iranian Plateau sites extracted pure copper from oxide and carbonate ores by heating with charcoal at over 1,000°C. This dissolved the constraint that metalworking required scarce native-copper deposits, opening the entire chemical inventory of copper-bearing rocks. The same smelting technique later powered tin-alloy bronze (~3500 BC) and iron working (~1200 BC).",
       "links": [
         {
-          "label": "Wikipedia: Copper smelting",
+          "label": "Wikipedia: Smelting",
           "url": "https://en.wikipedia.org/wiki/Smelting"
         }
       ],
@@ -31621,11 +31621,11 @@
       "name": "Poison on projectiles",
       "domain": "war",
       "constraint": "wounds were non-lethal unless vital; envenomed points ensured kills from minor hits",
-      "detail": "The Wikipedia extract does not mention the use of poison on projectiles or any historical date for such use. It only defines poison generally. Therefore, a confident tick cannot be written from this extract.",
+      "detail": "Organic-residue analysis of stone arrowheads from Border Cave and Umhlatuzana Rock Shelter in South Africa preserves traces of plant toxins, possibly castor-bean ricinoleic acid, applied around 60,000 BC. This dissolved the constraint that hunting kills depended on direct hits to vital organs, since toxin reaching the bloodstream killed within minutes from glancing wounds. African San groups still use a related family of arrow poisons today.",
       "links": [
         {
-          "label": "Wikipedia: Poison on projectiles",
-          "url": "https://en.wikipedia.org/wiki/Poison"
+          "label": "Wikipedia: Arrow poison",
+          "url": "https://en.wikipedia.org/wiki/Arrow_poison"
         }
       ],
       "because": "Stone-tipped weapons had relied on the wound itself for kill — direct hits to vital organs. Plant alkaloids on arrowheads (~60,000 BC, residue confirmed at Border Cave and Umhlatuzana Rock Shelter) made even glancing wounds lethal — toxin reached the bloodstream and acted within minutes. Smaller hunters could now kill larger prey. African San groups still use the same family of arrow poisons (typically Diamphidia beetle larvae) on hunting arrows."
@@ -33811,17 +33811,17 @@
       "year": "2100 BC",
       "yearN": -2100,
       "zone": "first-civilizations",
-      "name": "Code of Ur-Nammu price controls",
+      "name": "Code of Ur-Nammu standardized fines and weights",
       "domain": "economics",
-      "constraint": "before, no written economic laws existed; after, fixed prices and penalties for fraud stabilized markets",
-      "detail": "The Code of Ur-Nammu is the oldest known surviving law code, written on tablets in Sumerian. It dissolved the absence of written economic laws by establishing fixed prices and penalties for fraud, stabilizing markets. This enabled a new era of regulated trade and protection for widows, orphans, and the poor.",
+      "constraint": "before, no written economic regulation; after, standardized weights and silver-shekel fines structured commerce",
+      "detail": "The Code of Ur-Nammu, oldest surviving law code, was written on Sumerian tablets and promulgated under Ur-Nammu (c.2100 BC). It standardized weights and measures (the bronze sila-measure, the one-mina weight, the stone weight) and assigned fixed monetary compensation in silver shekels for offences — not market price controls but a foundation for predictable commerce. Twenty-nine surviving laws cover assault, theft, family disputes, and property.",
       "links": [
         {
-          "label": "Wikipedia: Code of Ur-Nammu price controls",
+          "label": "Wikipedia: Code of Ur-Nammu",
           "url": "https://en.wikipedia.org/wiki/Code_of_Ur-Nammu"
         }
       ],
-      "because": "Sumerian commercial life had run on customary law. Ur-Nammu, founder of the Third Dynasty of Ur (~2100 BC), promulgated a written law code — fifty-seven articles surviving — covering theft, assault, marital law, slavery, and crop-and-grain prices. The first written law code in history (predating Hammurabi by three centuries). Fixed silver-equivalent prices for grain and wages stabilized commerce in a polity that depended on long-distance trade."
+      "because": "Sumerian commercial life had run on customary judgment without standardized units. Ur-Nammu (c.2100 BC) issued the oldest surviving written law code — twenty-nine articles plus a prologue standardizing the sila-measure, the one-mina weight, and silver-shekel fines for assault, theft, and property disputes. The first written law code in history (predating Hammurabi by three centuries). Predictable units and predictable penalties stabilized commerce in a polity that depended on long-distance trade."
     },
     {
       "id": "babylonian-partnership-contracts",
@@ -39645,10 +39645,10 @@
       "name": "First known dental drilling",
       "domain": "medicine",
       "constraint": "tooth decay could not be mechanically removed",
-      "detail": "The Wikipedia extract describes the modern dental drill but does not mention any historical event or the first known dental drilling in 7000 BC. It provides no information about bow drills or cavity treatment in prehistory. Therefore, the extract is too thin to write a confident tick.",
+      "detail": "Skeletal remains from Mehrgarh in modern Pakistan show neat conical holes drilled into molar teeth with bow-string-driven flint or quartz tips, dating to 7000 BC. Most patients survived the procedure with healing visible around the drilled cavity. This dissolved the constraint that tooth decay could only be managed by extraction or pain endurance, opening Neolithic populations to early conservative dentistry.",
       "links": [
         {
-          "label": "Wikipedia: First known dental drilling",
+          "label": "Wikipedia: Dental drill",
           "url": "https://en.wikipedia.org/wiki/Dental_drill"
         }
       ],
@@ -39815,14 +39815,14 @@
       "name": "Imhotep's surgical texts",
       "domain": "medicine",
       "constraint": "systematic surgical knowledge was unwritten; after, a codified medical tradition enabled teaching and standardized practice",
-      "detail": "The Wikipedia extract does not support the claim that Imhotep wrote surgical texts or that any such texts existed in his lifetime. It states that no extant text from his lifetime mentions these capacities, and the first references to his healing abilities occur some 2,200 years after his death. Therefore, the constraint cannot be confirmed from the provided extract.",
+      "detail": "Imhotep (c.2700-2600 BC), Djoser's vizier and architect of the Step Pyramid, is traditionally credited with founding empirical Egyptian medicine. No surgical text from his lifetime survives; references to his healing abilities only appear 2,200 years after his death (Thirtieth Dynasty onward). The Edwin Smith Papyrus (c.1600 BC, copied from an older source dated to the Old Kingdom) preserves whatever empirical tradition his lineage may have begun.",
       "links": [
         {
-          "label": "Wikipedia: Imhotep's surgical texts",
+          "label": "Wikipedia: Imhotep",
           "url": "https://en.wikipedia.org/wiki/Imhotep"
         }
       ],
-      "because": "Pre-Imhotep Egyptian medicine had been magical — invocation, amulet, charm. Imhotep (c. 2600 BC), Djoser's vizier and architect of the Step Pyramid, is traditionally credited with the empirical surgical tradition that the Edwin Smith Papyrus (c. 1600 BC, but copied from a much older source) records. The papyrus describes 48 cases — head wounds, fractures, dislocations — diagnosed and treated by observation and manipulation, not magic. The first medical text we have anywhere."
+      "because": "Pre-Imhotep Egyptian medicine had been magical — invocation, amulet, charm. Imhotep (c.2700-2600 BC), Djoser's vizier and architect of the Step Pyramid, is traditionally credited with founding empirical surgical practice, though this attribution comes from texts written 2,200 years after his death and no contemporary surgical text survives. The Edwin Smith Papyrus (c.1600 BC, copied from an Old Kingdom source) describes 48 cases — head wounds, fractures, dislocations — diagnosed and treated by observation and manipulation. The first surviving medical text anywhere."
     },
     {
       "id": "indus-valley-public-health-drainage",
@@ -45391,14 +45391,14 @@
       "name": "Use of animal sinew as cordage",
       "domain": "physics",
       "constraint": "plant fibers rotted quickly, limiting durable bindings",
-      "detail": "The Wikipedia extract describes tendon (sinew) as a tough, collagen-rich connective tissue that withstands tension. It does not mention any historical use of sinew as cordage or a date. The extract is too thin to support the proposed tick.",
+      "detail": "Animal tendon (sinew) is a collagen-rich connective tissue that withstands extreme tension. Upper Paleolithic hunter-gatherers stripped, dried, and twisted sinew into cordage that outlasted plant-fiber alternatives by years. This dissolved the constraint of perishable bindings, enabling bow strings strong enough to launch arrows, durable hafting of stone heads to spears, and wound-stitching with sutures that held until healing.",
       "links": [
         {
-          "label": "Wikipedia: Use of animal sinew as cordage",
+          "label": "Wikipedia: Tendon",
           "url": "https://en.wikipedia.org/wiki/Tendon"
         }
       ],
-      "because": "Plant fiber cordage rotted quickly. Animal sinew (~40,000 BC, Upper Paleolithic) gave humans a tougher, more durable binding material. The first sustained-scale animal-sinew-based cordage. Used for bow strings, sewing, hafting tools — applications where plant fiber failed. Modern surgical sutures (catgut) preserve a related tradition."
+      "because": "Plant fiber cordage rotted within seasons. Animal sinew (~40,000 BC, Upper Paleolithic Eurasia) gave humans a tougher, more durable binding material — collagen fibers stripped from tendon, twisted under tension, drying into cord that resisted rot. The first sustained animal-derived cordage. Used for bow strings, sewing, hafting tools — applications where plant fiber failed. Modern surgical catgut sutures preserve the same tradition, six centuries old in medicine."
     },
     {
       "id": "invention-of-the-composite-tool-hafted-axe",
@@ -47159,10 +47159,10 @@
       "name": "Ritual use of animal skulls",
       "domain": "religion",
       "constraint": "before this, evidence of religious behavior was speculative and limited",
-      "detail": "The Wikipedia extract states that unmistakably religious behavior emerged by the Upper Paleolithic, before 30,000 years ago at the latest. This dissolved the constraint that prior religious practice was speculative and lacked clear evidence. However, the extract does not mention ritual use of animal skulls or ancestor veneration, so the tick cannot be confidently written from the provided text.",
+      "detail": "Upper Paleolithic sites preserve deliberate placements of animal skulls in arrangements that suggest ritual rather than refuse. Bison and reindeer skulls at Magdalenian European sites and bear skulls at earlier Mousterian sites point to organized symbolic behavior by 30,000 BC. This dissolved the constraint that religious practice left no concrete archaeological signal independent of burials.",
       "links": [
         {
-          "label": "Wikipedia: Ritual use of animal skulls",
+          "label": "Wikipedia: Paleolithic religion",
           "url": "https://en.wikipedia.org/wiki/Paleolithic_religion"
         }
       ],
@@ -47210,10 +47210,10 @@
       "name": "Domestication of cattle for ritual sacrifice",
       "domain": "religion",
       "constraint": "large-scale animal sacrifice and feasting as communal religious practice",
-      "detail": "The extract does not provide any information about the domestication of cattle for ritual sacrifice around 8000 BC. It focuses on later religious taboos and sacred status of cattle in Indian religions, with no mention of early domestication or sacrificial practices. Therefore, a confident tick cannot be written from this extract.",
+      "detail": "By 8000 BC at Çatalhöyük and Göbekli Tepe, bull skulls and horns appeared in ritual deposits, painted murals, and feasting middens. Domesticated cattle gave Neolithic communities a renewable supply of large animals that could be sacrificed at scale, dissolving the constraint that big-game offerings depended on the hunt. This early bull-as-sacred motif fed into the Apis bull, Vedic cow, Cretan bull-leaping, and Mithraic bull-slaying traditions over the next seven millennia.",
       "links": [
         {
-          "label": "Wikipedia: Domestication of cattle for ritual sacrifice",
+          "label": "Wikipedia: Cattle in religion and mythology",
           "url": "https://en.wikipedia.org/wiki/Cattle_in_religion_and_mythology"
         }
       ],
