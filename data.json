@@ -2192,7 +2192,7 @@
         }
       ],
       "_origZone": "enlightenment",
-      "because": "Sailors knew latitude from the sun. Longitude required knowing the time at a reference meridian — and pendulum clocks failed at sea. The British Parliament's Longitude Prize (1714) offered £20,000 to whoever solved it. John Harrison's H4 chronometer (1761) kept time to within a few seconds across an Atlantic crossing. Captain Cook used H4 on his second voyage and never lost a ship to navigational error. Empire and trade became routinely possible."
+      "because": "Sailors knew latitude from the sun. Longitude required knowing the time at a reference meridian — and pendulum clocks failed at sea. The British Parliament's Longitude Act (1714) offered up to £20,000 to whoever solved it. John Harrison's H4 chronometer (sea-trialled 1761-62 to Jamaica) kept time to within a few seconds across an Atlantic crossing. Captain Cook used K1, Larcum Kendall's copy of H4, on his second voyage and praised its accuracy. Empire and trade became routinely possible."
     },
     {
       "id": "social-contract-theory-rousseau",
@@ -6022,7 +6022,7 @@
         }
       ],
       "_origZone": "ai-era",
-      "because": "The iPad (2010) and Watson's Jeopardy win (2011) mark when consumer computing and AI were both producing breakthrough demonstrations. AlexNet's 2012 ImageNet result — top-5 error of 15% versus the 26% best previous — used a deep convolutional network trained on GPUs and triggered the deep-learning revolution: every major AI lab pivoted to deep learning within 18 months."
+      "because": "The iPad (2010) and Watson's Jeopardy win (2011) mark when consumer computing and AI were both producing breakthrough demonstrations. AlexNet's 2012 ImageNet result — top-5 error of 15.3% versus 26.2% for the runner-up — used a deep convolutional network trained on GPUs and triggered the deep-learning revolution: within a few years every major AI lab pivoted to deep learning."
     },
     {
       "id": "higgs-boson-discovered-cern-lhc",
@@ -8680,7 +8680,7 @@
         }
       ],
       "_origZone": "age-of-exploration",
-      "because": "Columbus's first voyage (1492), the Spanish Inquisition's expulsion of Jews (1492), and the fall of Constantinople (1453) mark when European maritime expansion met the Atlantic. The Columbian Exchange brought smallpox, measles, and influenza to populations with no prior exposure — and within a century reduced indigenous populations by 80-90%, the largest demographic catastrophe in recorded history."
+      "because": "Columbus's first voyage (1492), the Spanish Inquisition's expulsion of Jews (1492), and the fall of Constantinople (1453) mark when European maritime expansion met the Atlantic. The Columbian Exchange brought smallpox, measles, and influenza to populations with no prior exposure — and over the next century and a half reduced indigenous populations across the Americas by an estimated 80-90% in the hardest-hit regions, the largest demographic catastrophe in recorded history."
     },
     {
       "id": "peace-of-westphalia-sovereign-state-system",
@@ -16606,7 +16606,7 @@
         }
       ],
       "_origZone": "victorian-era",
-      "because": "The Chicago Board of Trade (1848), the Revolutions of 1848, and the Seneca Falls Convention (1848) demonstrated that mid-century institutions were rapidly reorganizing economic and political life. The 1851 Great Exhibition in the Crystal Palace — six million visitors over five months, industrial products from twenty-five nations — establishes the world's-fair format. International commerce as public spectacle becomes a recurring institutional form."
+      "because": "The Chicago Board of Trade (1848), the Revolutions of 1848, and the Seneca Falls Convention (1848) demonstrated that mid-century institutions were rapidly reorganizing economic and political life. The 1851 Great Exhibition in the Crystal Palace — six million visitors over five and a half months, industrial products from Britain, its colonies, and 44 foreign states — establishes the world's-fair format. International commerce as public spectacle becomes a recurring institutional form."
     },
     {
       "id": "international-red-cross-transnational-humanitarianism",
@@ -20052,7 +20052,7 @@
         }
       ],
       "_origZone": "post-wwii",
-      "because": "Haber-Bosch (1909) had made nitrogen fertilizer essentially limitless. Mendel's rediscovered genetics gave breeders a method. Borlaug's semi-dwarf wheat varieties at CIMMYT (1944 onward) could carry heavy grain heads on short stems without lodging. Combined with fertilizer and irrigation, yields tripled in a decade. The famines predicted for 1960s Asia did not arrive. Borlaug's Nobel Peace Prize citation credits him with saving a billion lives."
+      "because": "Haber-Bosch (1909) had made nitrogen fertilizer essentially limitless. Mendel's rediscovered genetics gave breeders a method. Borlaug's semi-dwarf wheat work in Mexico (from 1944, in the Cooperative Wheat Research Program that became CIMMYT in 1966) bred plants that could carry heavy grain heads on short stems without lodging. Combined with fertilizer and irrigation, yields tripled in a decade. The famines predicted for 1960s Asia did not arrive. Borlaug, awarded the 1970 Nobel Peace Prize, is widely credited with saving over a billion lives — a figure popularized by Gregg Easterbrook and adopted in the 2006 US Congressional Gold Medal."
     },
     {
       "id": "first-commercial-pesticides-ddt-era-begins",
@@ -22437,7 +22437,7 @@
         }
       ],
       "_origZone": "wwi-interwar",
-      "because": "Cajal's neuron doctrine (1906), the Flexner Report (1910), and Morgan's chromosome work (1910) had each professionalized medicine and biology. The 1918 influenza pandemic — fifty to one hundred million dead in eighteen months — exposes the gap between professional medicine and public health response. The concept of pandemic preparedness as an institutional category begins here, though the actual implementation lags."
+      "because": "Cajal's neuron doctrine (1906), the Flexner Report (1910), and Morgan's chromosome work (1910) had each professionalized medicine and biology. The 1918 influenza pandemic — most estimates place the toll between 25 and 50 million dead, with some recent reassessments running higher, across roughly two years and four waves — exposes the gap between professional medicine and public health response. The concept of pandemic preparedness as an institutional category begins here, though the actual implementation lags."
     },
     {
       "id": "sulfonamides-first-synthetic-antibiotics",
@@ -22997,7 +22997,7 @@
           "url": "https://www.nature.com/articles/d41586-025-00229-6"
         }
       ],
-      "because": "Pre-DeepSeek frontier AI had been an exclusively US-company achievement. DeepSeek R1 (announced January 2025, by a Chinese hedge-fund-backed lab) achieved reasoning performance competitive with OpenAI's o1 — at training costs reportedly under $6M. The first sustained-scale Chinese-frontier-AI achievement. Triggered substantial market and policy response in the US. Demonstrated that the Sino-American AI competition was real and that export controls on advanced GPUs had not prevented Chinese frontier capability. Modern AI geopolitics took a new shape in early 2025."
+      "because": "Pre-DeepSeek frontier AI had been an exclusively US-company achievement. DeepSeek R1 (released January 20, 2025, by a Chinese lab funded by High-Flyer hedge fund) achieved reasoning performance competitive with OpenAI's o1 — built on the V3 base model whose final-training compute was reported at roughly $6M, a figure that covered only part of the true total cost. The first sustained-scale Chinese-frontier-AI achievement. Triggered substantial market and policy response in the US. Demonstrated that export controls on advanced GPUs had not prevented Chinese frontier capability. Modern AI geopolitics took a new shape in early 2025."
     },
     {
       "id": "claude-4-sustained-reasoning-and-multi-hour-tasks",
@@ -28891,7 +28891,7 @@
           "url": "https://en.wikipedia.org/wiki/Bessemer_process"
         }
       ],
-      "because": "Pre-Bessemer steel production had been small-batch in crucibles — slow, expensive. Henry Bessemer's converter (1856) blew air through molten pig iron to oxidize carbon and impurities — produced steel in bulk in 20 minutes. The first sustained-scale industrial steel production. Steel prices dropped from £40/ton to £10/ton. Modern infrastructure (railways, skyscrapers, ships, automobiles) all built on cheap steel. The Industrial Revolution's second phase runs on the Bessemer process."
+      "because": "Pre-Bessemer steel production had been small-batch in crucibles — slow, expensive. Henry Bessemer's converter (1856) blew air through molten pig iron to oxidize carbon and impurities — produced three to five tons of steel in 10-20 minutes versus a full day for the older method. The first sustained-scale industrial steel production. Steel prices dropped from about £40/ton to £6-7/ton. Modern infrastructure (railways, skyscrapers, ships, automobiles) all built on cheap steel. The Industrial Revolution's second phase runs on the Bessemer process."
     },
     {
       "id": "eadweard-muybridge-horse-in-motion",
@@ -29367,7 +29367,7 @@
           "url": "https://en.wikipedia.org/wiki/Toy_Story"
         }
       ],
-      "because": "Pre-Pixar animated features had been hand-drawn cel animation. Pixar's Toy Story (released November 1995) was the first sustained-scale fully computer-animated feature film. $192M box office demonstrated the format's commercial viability. Pixar's subsequent feature pipeline (A Bug's Life, Toy Story 2, Monsters Inc., Finding Nemo, etc.) led the transition; Disney's traditional cel-animation studio essentially closed by mid-2000s. Modern animated features are predominantly CG."
+      "because": "Pre-Pixar animated features had been hand-drawn cel animation. Pixar's Toy Story (premiered November 19, 1995) was the first entirely computer-animated feature film. Over $360M worldwide on first release demonstrated the format's commercial viability. Pixar's subsequent feature pipeline (A Bug's Life, Toy Story 2, Monsters Inc., Finding Nemo) led the transition; Disney's traditional cel-animation operations contracted sharply through the mid-2000s. Modern animated features are predominantly CG."
     },
     {
       "id": "dvd-format-launched",
@@ -30812,7 +30812,7 @@
           "url": "https://en.wikipedia.org/wiki/Edward_Jenner"
         }
       ],
-      "because": "Smallpox had killed 400,000 Europeans annually in the 18th century — roughly 10-20% of urban populations. Variolation (deliberate inoculation with smallpox material) had cut mortality but still killed 1-2% of recipients. Edward Jenner's 1796 cowpox-inoculation experiment on James Phipps and his 1798 publication showed that exposure to mild cowpox conferred smallpox immunity at near-zero risk. The first vaccine. Smallpox was eradicated worldwide in 1980 — the only disease ever to be wiped out by vaccination."
+      "because": "Smallpox killed an estimated 400,000 Europeans annually in the 18th century, with case-fatality of 20-30% among the infected. Variolation (deliberate inoculation with smallpox material) had cut mortality but still killed 0.5-2% of recipients. Edward Jenner's 1796 cowpox-inoculation experiment on James Phipps and his 1798 publication showed that exposure to mild cowpox conferred smallpox immunity at near-zero risk. The first vaccine. Smallpox was certified eradicated worldwide in 1980 — the only human disease ever to be wiped out."
     },
     {
       "id": "brownian-motion-observed-in-pollen",
@@ -31067,7 +31067,7 @@
           "url": "https://en.wikipedia.org/wiki/Penicillin"
         }
       ],
-      "because": "Bacterial infections had been the largest single cause of death — the most common cause of military and post-surgical mortality. Alexander Fleming's 1928 observation of a Penicillium notatum mold contaminating a Staphylococcus culture and clearing the bacteria around it identified the antibacterial compound. Florey, Chain, and Heatley's wartime mass production (1941-44) made penicillin a real drug. By 1945 it was treating Allied soldiers. The first antibiotic; saved an estimated 200 million lives."
+      "because": "Bacterial infections had been a leading cause of military and post-surgical mortality. Alexander Fleming's 1928 observation of a Penicillium notatum mold contaminating a Staphylococcus culture and clearing the bacteria around it identified the antibacterial compound. Florey, Chain, and Heatley's wartime work at Oxford (from 1940) produced concentrated penicillin; US mass production scaled through 1942-44, treating Allied soldiers by D-Day. The first antibiotic, and the foundation of the antimicrobial era."
     },
     {
       "id": "fishers-the-genetical-theory-of-natural-selection",
@@ -40638,7 +40638,7 @@
           "url": "https://en.wikipedia.org/wiki/Tracheotomy"
         }
       ],
-      "because": "Pre-tracheostomy airway obstruction had been universally fatal — no way to bypass blocked airway. Hieronymus Fabricius (Padua, ~1600 AD) described and successfully performed the first sustained-evidence tracheostomy — a surgical opening in the trachea below the obstruction. The first sustained-scale airway-rescue procedure. Modern emergency-medicine cricothyroidotomy and elective tracheostomy still use Fabricius's basic anatomical approach."
+      "because": "Pre-tracheostomy airway obstruction had been universally fatal — no way to bypass blocked airway. Antonio Brassavola's 1546 account described what is generally taken as the first recorded successful tracheostomy; Hieronymus Fabricius (Padua, late 16th century) refined the procedure with a vertical incision and was the first to describe a tracheostomy tube, though he never performed the operation himself. Modern emergency cricothyroidotomy and elective tracheostomy still use the basic anatomical approach laid out in this Renaissance literature."
     },
     {
       "id": "plague-doctor-costume",
@@ -50668,7 +50668,7 @@
           "url": "https://en.wikipedia.org/wiki/ImageNet"
         }
       ],
-      "because": "Pre-ImageNet computer-vision research had used small datasets (a few hundred labeled images per category). Fei-Fei Li's ImageNet (presented at CVPR 2009) was a hierarchically organized dataset of 14 million labeled images across 22,000 categories. The first sustained-scale large-labeled-image dataset. The annual ImageNet Challenge (2010-2017) drove progress in computer vision; AlexNet's 2012 dominant win launched the deep-learning revolution. Modern computer vision and many AI breakthroughs trace ancestry to the ImageNet dataset."
+      "because": "Pre-ImageNet computer-vision research had used small datasets (a few hundred labeled images per category). Fei-Fei Li's ImageNet (presented at CVPR 2009) was a hierarchically organized dataset of over 14 million labeled images across more than 20,000 categories. The first sustained-scale large-labeled-image dataset. The annual ImageNet Challenge (2010-2017) drove progress in computer vision; AlexNet's 2012 dominant win launched the deep-learning revolution. Modern computer vision and many AI breakthroughs trace ancestry to the ImageNet dataset."
     },
     {
       "id": "word2vec-published",
