@@ -27809,7 +27809,8 @@
           "label": "Wikipedia: Proto-cuneiform script emerges in Mesopotamia",
           "url": "https://en.wikipedia.org/wiki/Proto-cuneiform"
         }
-      ]
+      ],
+      "because": "Pre-cuneiform Mesopotamian record-keeping had used clay tokens enclosed in bullae, then impressed numerals on tablets — adequate for counting, useless for naming objects, people, or transactions. Proto-cuneiform (~3350 BC, in Uruk) extended the system with pictographs that named the goods being counted. The first script that could record both quantity AND identity. Cuneiform proper (the wedge-shaped form, by ~2900 BC) developed directly from this beginning."
     },
     {
       "id": "invention-of-writing-cuneiform",
@@ -27858,7 +27859,8 @@
           "label": "Wikipedia: Plow enables large-scale agriculture",
           "url": "https://en.wikipedia.org/wiki/Plough"
         }
-      ]
+      ],
+      "because": "Pre-plow tilling had been done with hoes — slow, shallow, suitable only for soft floodplain soils. The early ox-drawn ard (~3000 BC, in Mesopotamia and Egypt) cut a shallow furrow but covered ten times the daily acreage of hoe agriculture. Surplus grain became feasible. Mesopotamian cities, the Egyptian state, and every later agricultural civilization scaled on plowed fields. The technological hinge between subsistence horticulture and surplus-producing agriculture."
     },
     {
       "id": "development-of-the-arched-harp",
@@ -27874,7 +27876,8 @@
           "label": "Wikipedia: Arched harp emerges from musical bow",
           "url": "https://en.wikipedia.org/wiki/Arched_harp"
         }
-      ]
+      ],
+      "because": "The musical bow had been a single string attached to a flexed branch — short sustain, single pitch, no resonator. Sumerian and Egyptian arched harps (~3000 BC) added a sound box at the bottom of the strung neck and multiple strings tuned to different pitches. The first chordophone with a true resonator. Lyres, lutes, and every later stringed instrument — fiddle, guitar, piano — descend from the same body-plus-strings principle."
     },
     {
       "id": "great-sphinx-of-giza",
@@ -27907,7 +27910,8 @@
           "label": "Wikipedia: Egyptian art establishes idealized perspective",
           "url": "https://en.wikipedia.org/wiki/Art_of_ancient_Egypt"
         }
-      ]
+      ],
+      "because": "Pre-Egyptian art had stacked figures vertically without spatial logic. The Egyptian canon (codified ~2500 BC, in Old Kingdom royal tombs) established hierarchical perspective: more important figures larger and frontal, less important figures smaller and in profile, with backgrounds laid out in registers. Not perspective in the Renaissance sense — but the first systematized convention for representing spatial and social hierarchy in two dimensions. The standard for three thousand years of Egyptian visual art."
     },
     {
       "id": "epic-of-gilgamesh",
@@ -27923,7 +27927,8 @@
           "label": "Wikipedia: Epic of Gilgamesh",
           "url": "https://en.wikipedia.org/wiki/Epic_of_Gilgamesh"
         }
-      ]
+      ],
+      "because": "Earlier Sumerian poetry had been short ritual hymns, hero-praise poems, or mythic vignettes. The Epic of Gilgamesh (compiled into long form ~2100 BC, drawing on much older oral material; standardized in Akkadian ~1800 BC) is the first sustained narrative literature anywhere — twelve tablets, an arc from kingly hubris to mortal grief. The Flood story (Tablet XI) prefigures Genesis. The first work of literature that asks what it means to die."
     },
     {
       "id": "development-of-the-first-known-dance-notation-egyptian",
@@ -27990,7 +27995,8 @@
           "label": "Wikipedia: Hurrian songs: oldest notated music",
           "url": "https://en.wikipedia.org/wiki/Hurrian_songs"
         }
-      ]
+      ],
+      "because": "Pre-notational music had been transmitted by oral tradition only — every performance reconstructed by the performer. Hurrian cult songs from Ugarit (~1400 BC, on cuneiform tablets, especially Hymn 6 to Nikkal) used a notational system specifying intervals on a heptatonic scale. The earliest substantially complete written music. The notation is partly recoverable; modern reconstructions of Hymn to Nikkal exist. Music could now be transmitted across generations and distances without a continuous chain of performers."
     },
     {
       "id": "alphabet-adapted-for-greek",
@@ -28006,7 +28012,8 @@
           "label": "Wikipedia: Greek alphabet adds vowels to Phoenician script",
           "url": "https://en.wikipedia.org/wiki/Greek_alphabet"
         }
-      ]
+      ],
+      "because": "Phoenician script had been a consonantal abjad — vowels were inferred from context. Greek scribes (~800 BC) repurposed the Phoenician letters for Greek consonants and used the leftover Phoenician consonant signs (which Greek didn't need) for vowels: A (alpha), E (epsilon), I (iota), O (omicron), Y (upsilon). The first true alphabet — every speech sound representable. Literacy stopped requiring scribal training. Latin and every European descendant alphabet trace to this Greek innovation."
     },
     {
       "id": "babylonian-map-of-the-world",
@@ -28022,7 +28029,8 @@
           "label": "Wikipedia: Babylonian Map of the World",
           "url": "https://en.wikipedia.org/wiki/Babylonian_Map_of_the_World"
         }
-      ]
+      ],
+      "because": "Mesopotamian land surveys had recorded individual fields and waterways. The Babylonian Map of the World (~700 BC, a cuneiform tablet now in the British Museum) is the first known schematic depiction of the entire known world — Babylon at center, the Euphrates running through, surrounding lands and an encircling 'bitter river' beyond. Not geographic in the modern sense but cosmological: the first attempt to put the world's structure on a single tablet."
     },
     {
       "id": "black-figure-pottery-perfected",
@@ -28038,7 +28046,8 @@
           "label": "Wikipedia: Black-figure pottery perfected",
           "url": "https://en.wikipedia.org/wiki/Black-figure_pottery"
         }
-      ]
+      ],
+      "because": "Earlier Greek pottery had used silhouettes and simple decoration. Corinthian and Athenian black-figure technique (~700-550 BC, peaking at 600 BC) painted figures as black silhouettes against the orange clay background, with details incised through the slip with a sharp tool. Suddenly Greek pots could carry detailed narrative scenes — Heracles fighting hydra, Achilles killing Hector. Athens became the dominant ceramic exporter of the Mediterranean. The medium of choice for storytelling for almost two centuries before red-figure displaced it (~530 BC)."
     },
     {
       "id": "aulos-and-lyre-as-standard-instruments",
@@ -28054,7 +28063,8 @@
           "label": "Wikipedia: Aulos and lyre as standard instruments",
           "url": "https://en.wikipedia.org/wiki/Aulos"
         }
-      ]
+      ],
+      "because": "Greek music before the 7th century had been improvised and unspecialized. Archaic Greek poetic-musical practice (~600 BC) standardized two instruments to two genres: the lyre (plucked, soft, contemplative) accompanied lyric poetry and elegy; the aulos (double-reed, loud, penetrating) accompanied tragedy, athletic competition, and military marches. The first specialized instrumental traditions. Greek music theory (Pythagorean tuning, modal practice) developed around these instruments."
     },
     {
       "id": "fresco-painting-minoan-influence",
@@ -28070,7 +28080,8 @@
           "label": "Wikipedia: Fresco painting",
           "url": "https://en.wikipedia.org/wiki/Fresco"
         }
-      ]
+      ],
+      "because": "Mediterranean wall painting had been simple ochre on dry plaster — fading and flaking. Buon-fresco technique (Minoan Crete ~1600 BC, refined in Greek practice ~600 BC) painted on freshly laid wet lime plaster. As the plaster cured, calcium carbonate locked the pigment in chemically. Frescoes lasted millennia. Etruscan, Roman, and Italian Renaissance wall painting all ran on the same chemistry. The Sistine Chapel ceiling is the same technique scaled."
     },
     {
       "id": "ionic-order-emerges",
@@ -28086,7 +28097,8 @@
           "label": "Wikipedia: Ionic order emerges",
           "url": "https://en.wikipedia.org/wiki/Ionic_order"
         }
-      ]
+      ],
+      "because": "Doric temples (from ~700 BC) had been austere — plain shafts, simple capitals, severe proportions. The Ionic order (mid-6th century BC, on Greek-Asia-Minor temples) added scrolled volute capitals, slimmer column proportions, and continuous figured friezes. The Erechtheion on the Athenian Acropolis is the canonical example. The first Greek architectural order with explicit decorative-narrative capacity. Roman architecture inherited Ionic; the US Supreme Court building still uses it."
     },
     {
       "id": "theatre-of-dionysus-built",
@@ -28118,7 +28130,8 @@
           "label": "Wikipedia: Pythagorean tuning systematizes music theory",
           "url": "https://en.wikipedia.org/wiki/Pythagorean_tuning"
         }
-      ]
+      ],
+      "because": "Pre-Pythagorean Greek music had used intervals derived from instrument practice — what sounded right. Pythagoras (or his school, ~500 BC) discovered that musical intervals could be defined by simple integer ratios: octave (2:1), fifth (3:2), fourth (4:3). The first mathematical music theory. Pythagorean tuning dominated Western music for 2,000 years before equal temperament displaced it (gradually, 17th-19th centuries). Music became a quantitative discipline alongside the other Greek mathematical sciences."
     },
     {
       "id": "choral-lyric-pindar",
@@ -28151,7 +28164,8 @@
           "label": "Wikipedia: Parthenon built",
           "url": "https://en.wikipedia.org/wiki/Parthenon"
         }
-      ]
+      ],
+      "because": "Earlier Greek temples had been simple Doric structures — single-order, no curvature, plain pediments. Pericles's Parthenon (Athens, 447-432 BC, architects Ictinus and Callicrates, sculptor Phidias) combined Doric and Ionic orders, applied subtle optical refinements (entasis, stylobate curvature, column inclination) to correct visual distortion, and integrated a 12-meter ivory-and-gold Athena Parthenos statue. The first temple to treat architecture as an integrated artistic program. Western architectural training has been studying it for two and a half millennia."
     },
     {
       "id": "corinthian-order-invented",
@@ -28167,7 +28181,8 @@
           "label": "Wikipedia: Corinthian order invented",
           "url": "https://en.wikipedia.org/wiki/Corinthian_order"
         }
-      ]
+      ],
+      "because": "Doric and Ionic columns had topped with plain or scrolled capitals. The Corinthian order (~420 BC, traditionally credited to Callimachus seeing acanthus leaves growing around a basket) introduced a slim shaft topped by a bell of stylized acanthus leaves and small scrolls. The most ornate of the three classical Greek orders. Adopted enthusiastically by Romans (the Pantheon, the Maison Carrée). Modern bank buildings, courthouses, and capitols still use it."
     },
     {
       "id": "mausoleum-at-halicarnassus",
@@ -28183,7 +28198,8 @@
           "label": "Wikipedia: Mausoleum at Halicarnassus completed",
           "url": "https://en.wikipedia.org/wiki/Mausoleum_at_Halicarnassus"
         }
-      ]
+      ],
+      "because": "Pre-Mausoleum elite tombs had been either rock-cut chambers or simple barrows. Mausolus's tomb (Halicarnassus, completed 351 BC, designed by Pythius and others, sculpted by Scopas, Bryaxis, Timotheus, and Leochares) elevated a sculpted base on a stepped pyramid topped by a chariot — 45 meters tall, 400 sculptures. One of the original Seven Wonders. The first monumental above-ground tomb at this scale; gave us the word 'mausoleum.' Lincoln, Grant, and Lenin's tombs are direct descendants."
     },
     {
       "id": "hellenistic-theatrical-masks-menander",
@@ -28199,7 +28215,8 @@
           "label": "Wikipedia: Menander's New Comedy masks",
           "url": "https://en.wikipedia.org/wiki/Menander"
         }
-      ]
+      ],
+      "because": "Classical Greek theatrical masks had emphasized broad emotional categories — tragic terror, comic ridicule. Menander's New Comedy (Athens, ~315-290 BC) used a refined system of about 44 masks specific to character types — the bragging soldier, the cunning slave, the lovesick youth, the stern father, the courtesan. Each mask cued the audience to expected behavior. Roman comedy (Plautus, Terence) inherited the type system; the commedia dell'arte revived it; modern sitcoms still run on stock characters."
     },
     {
       "id": "ajanta-caves-rock-cut-architecture",
@@ -28215,7 +28232,8 @@
           "label": "Wikipedia: Indian rock-cut architecture at Ajanta Caves",
           "url": "https://en.wikipedia.org/wiki/Ajanta_Caves"
         }
-      ]
+      ],
+      "because": "Indian Buddhist communities had used natural caves for monastic retreat for centuries. The Ajanta Caves (cut into a basalt cliff in modern Maharashtra, beginning ~200 BC, expanded across 700+ years) excavated 30 monasteries and worship halls directly out of solid rock — pillared porticoes, vaulted hallways, painted murals. The first sustained sacred architecture carved from the bedrock at this scale. Ellora, Bhimbetka, and a thousand other Indian rock-cut sites followed. The technique reaches its peak at Borobudur and Angkor Wat much later."
     },
     {
       "id": "han-dynasty-silk-painting-mawangdui",
@@ -28231,7 +28249,8 @@
           "label": "Wikipedia: Mawangdui T-shaped silk painting",
           "url": "https://en.wikipedia.org/wiki/Mawangdui"
         }
-      ]
+      ],
+      "because": "Pre-Han Chinese painting had been on bamboo slips, lacquer, and bronze. The Mawangdui silk paintings (Lady Dai's tomb, sealed 168 BC, excavated 1972) — including a 2-meter T-shaped funeral banner — depict cosmology, biographical narrative, and astronomical detail in fine pigment on woven silk. The earliest substantially preserved Chinese silk painting. Demonstrates that Han literati had developed a sophisticated narrative-pictorial tradition independent of, and predating, anything surviving from western Eurasia."
     },
     {
       "id": "han-dynasty-poetry-yuefu",
@@ -28247,7 +28266,8 @@
           "label": "Wikipedia: Han dynasty Music Bureau collects yuefu",
           "url": "https://en.wikipedia.org/wiki/Yuefu"
         }
-      ]
+      ],
+      "because": "Earlier Chinese poetry (the Shijing, ~1000 BC) had been an aristocratic and ritual genre. Han Wudi's Music Bureau (yuefu, established 112 BC) systematically collected folk songs from across the empire — irregular meters, vernacular language, peasant subjects. The first sustained state-supported folk-literature program. Yuefu poems became a recognized genre that influenced Tang dynasty masters (Du Fu, Bai Juyi) seven hundred years later. The collection-and-canonization model recurs in every later Chinese imperial literary program."
     },
     {
       "id": "theatre-of-pompey",
@@ -28297,7 +28317,8 @@
           "label": "Wikipedia: Pompeii Fourth Style frescoes",
           "url": "https://en.wikipedia.org/wiki/Pompeian_Styles"
         }
-      ]
+      ],
+      "because": "Earlier Roman wall painting had used flat panels (First Style) or simple architectural illusions (Second and Third). The Fourth Style frescoes at Pompeii (~50-79 AD, preserved by the eruption of Vesuvius) combined illusionistic architectural vistas, mythological scenes, and ornamental fantasy panels in a single program. The most elaborate Roman wall-painting tradition before the medium nearly disappeared. Renaissance grottesche and 18th-century Neoclassical interiors both build on Fourth Style models when Pompeii was rediscovered."
     },
     {
       "id": "codex-adoption-in-rome",
@@ -28330,7 +28351,8 @@
           "label": "Wikipedia: Cai Lun improves papermaking with tree bark and hemp",
           "url": "https://en.wikipedia.org/wiki/Cai_Lun"
         }
-      ]
+      ],
+      "because": "Chinese writing had been on bamboo slips (heavy, bulky), silk (expensive), and rough early paper made from rags. Cai Lun's improvements (105 AD, refining tree bark, hemp, fishnets, and old rags into a smoother, cheaper paper) made paper a viable mass writing surface. The Han bureaucracy, then the rest of Chinese society, transitioned away from bamboo. Paper reached the Islamic world (~750 AD), Europe (~1100 AD), and finally enabled Gutenberg. Every printed book traces back to Cai Lun's recipe."
     },
     {
       "id": "ptolemys-optics-on-perspective",
@@ -28346,7 +28368,8 @@
           "label": "Wikipedia: Ptolemy's Optics on perspective",
           "url": "https://en.wikipedia.org/wiki/Ptolemy"
         }
-      ]
+      ],
+      "because": "Earlier Greek optics had explained vision through 'visual rays' emitted from the eye (Euclid's Optics) without quantitative grounding. Ptolemy's Optics (~150 AD, surviving in an Arabic-then-Latin translation) measured refraction angles for light passing between air, water, and glass; analyzed binocular vision and perceptual illusions; gave geometric rules for reflection. The first quantitative theory of vision. Lost to medieval Europe; recovered through Alhazen (~1021 AD) and Witelo, then directly fed Renaissance perspective theory."
     },
     {
       "id": "kama-sutra-composition",
@@ -28362,7 +28385,8 @@
           "label": "Wikipedia: Kama Sutra compiled into present form",
           "url": "https://en.wikipedia.org/wiki/Kama_Sutra"
         }
-      ]
+      ],
+      "because": "Pre-Kama Sutra Indian sexual and aesthetic literature had been embedded in the Dharmasutras and the epics. Vatsyayana's Kama Sutra (compiled into surviving form ~200 AD, Gupta-era India) is the first sustained treatise treating eroticism, courtship, household management, and the cultivation of pleasure as a unified art form (kama, one of the four traditional purusarthas). The first systematic civilizational handling of love and desire as worthy of philosophical treatment. Modern misreadings (treating it as a sex manual) miss the breadth."
     },
     {
       "id": "kufic-script-in-qurans",
@@ -28428,7 +28452,8 @@
           "label": "Wikipedia: Muqarnas vaulting",
           "url": "https://en.wikipedia.org/wiki/Muqarnas"
         }
-      ]
+      ],
+      "because": "Earlier Islamic architecture had used standard domes, barrel vaults, and squinches at corners. The muqarnas — three-dimensional cellular ornament resembling honeycomb or stalactites — emerged in 11th-century Iraq and Iran as a way to make the corner-transition between square and dome look intentional rather than awkward. Spread across Islamic architecture: the Alhambra (Granada), the mosques of Isfahan, Mughal mausolea. The most distinctively Islamic architectural ornament; no Western equivalent."
     },
     {
       "id": "bayeux-tapestry",
