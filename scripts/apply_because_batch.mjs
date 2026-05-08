@@ -955,6 +955,81 @@ const BECAUSE_BATCH = {
 
   'noria':
     "Mediterranean and Persian irrigation had required animals or humans to lift water from rivers into aqueducts — a continuous labor cost. The noria (~800 AD, attested across the Islamic Mediterranean) was a current-driven scoop wheel: the river's own flow turned the wheel and lifted water dozens of feet without human power. The first sustained zero-labor water-lifting machine. Hama (Syria), Murcia (Spain), and many other Islamic-era irrigation systems still use working norias.",
+
+  'open-field-system':
+    "Roman-era villa agriculture had been individually managed enclosed plots. Medieval European peasant agriculture (~800 AD onward) used the open-field system: village land divided into long unfenced strips, each peasant working strips scattered across the fields. Coordination on plowing, planting, and grazing required village-scale cooperation. The institutional substrate of medieval European village life. Persisted in some regions until the British enclosures of the 18th century.",
+
+  'three-field-crop-rotation-system':
+    "The two-field rotation (used since antiquity) had left half of arable land fallow each year. The three-field system (~9th century, in Carolingian Europe) split the cycle into winter grain, spring grain, and fallow — only one-third of land was idle. Total grain output rose by roughly a third on the same acreage. Combined with the heavy mouldboard plow and the horse collar, three-field rotation produced the medieval European agricultural surplus that fed the post-1000 AD demographic and urban expansion.",
+
+  'windmill-in-persia':
+    "Watermills required flowing water and were geographically limited. Sistanian engineers (~9th century AD) built panemone windmills — vertical-axis structures with sails that turned in any wind direction — to grind grain and pump water in arid regions of eastern Persia. The first practical wind-powered mechanical work. The horizontal-axis European windmill (~1180 AD) is a different design but the principle traveled west via Islamic Spain. Wind power as a substitute for water power was now feasible.",
+
+  'horse-collar':
+    "Throat-and-girth harnesses had pressed on the horse's windpipe under load — pulling power was capped at perhaps 500 lbs. The padded horse collar transferred load to the chest and shoulders. Han Chinese adoption around 100 AD; European widespread use by 1000. Pulling power roughly sextupled. Horses replaced oxen as the workhorse of medieval European farming. Heavy plows, larger wagons, faster transport, and the medieval agricultural surplus all depended on the collar.",
+
+  'rice-paddies-and-terracing-in-song-china':
+    "Pre-Song Chinese rice agriculture had been concentrated in the river valleys. Song Dynasty (960-1279) terraced paddies cut hillsides into stepped, water-retaining flat surfaces — opening dramatic new areas for irrigated rice. Combined with the Champa rice strain (early-ripening, drought-tolerant, allowed double-cropping), terraced agriculture supported a Song population that surpassed the Tang's by 50% — among the densest in the pre-modern world. The Chinese Hunan, Yunnan, and Guangxi terrace systems still in use today date from this period.",
+
+  'wine-press-improvements-in-medieval-europe':
+    "The Roman screw press had handled both wine and olive oil for a thousand years. Medieval European wine producers (12th century onward) refined the basket press: a fixed cylindrical basket of slatted wood with a screw-driven plate pressing grapes from above. Sequential pressings yielded grades of wine — first run for premium, later runs for table wine. The technology stayed essentially unchanged for nearly seven centuries until 19th-century industrial wine-making.",
+
+  'selective-breeding-of-merino-sheep-for-fine-wool':
+    "Medieval European wool had been coarse — adequate for everyday cloth but not for fine textile competition with imported silk. Spanish breeders in the 14th-15th centuries selectively bred Merino sheep for very fine wool — fiber diameters under 24 microns. The Mesta (Spanish wool guild) controlled Merino exports under royal monopoly until the 18th century. Once the breed escaped Spain, Australian and South African wool industries built fine-wool exports on Merino genetics.",
+
+  'norfolk-four-course-system':
+    "Three-field rotation had still required a fallow year. Norfolk-county farmers (16th-17th century) developed the four-course rotation: wheat, turnips, barley, clover. Turnips fed sheep through winter (fewer slaughters); clover fixed nitrogen and fed cattle. No fallow year required. Yields rose, livestock numbers grew, manure increased, fertility cycled. The British Agricultural Revolution's central technology and one of the foundations on which later urbanization stood.",
+
+  'introduction-of-tomato-to-europe':
+    "European cuisine before the Columbian exchange had no tomatoes — Solanum lycopersicum is a New World plant. Spanish and Italian gardens introduced it from Mexico in the 1520s; first European tomato recipe appears in a Naples cookbook in 1692. Initial European reception was suspicious (the plant is in the deadly-nightshade family). By the 18th century the tomato was central to southern European cooking. Italian cuisine as the world knows it is a post-Columbian construction.",
+
+  'introduction-of-the-potato-to-ireland':
+    "Pre-potato Irish staple food had been oats and dairy — adequate calories but laborious. Spanish ships introduced the South American potato (Solanum tuberosum) to Europe in the 1560s; it reached Ireland by the 1590s. Potatoes yielded three to four times more calories per acre than grain on the same poor soils, grew underground out of reach of marauding armies, and required only a spade for planting. Irish population grew from ~2M in 1700 to ~8M by 1840 on potato calories. The 1845-49 blight collapsed the strategy.",
+
+  'introduction-of-sweet-potato-to-china':
+    "Chinese famine vulnerability had been chronic — a single bad rice harvest meant millions of deaths. Spanish traders introduced the sweet potato (Ipomoea batatas) to Fujian via the Philippines around 1594. The sweet potato grew in poor, dry soils where rice couldn't, tolerated drought, and yielded reliably. Adopted across southern China within decades. Estimated to have raised China's population ceiling by tens of millions over the 17th-18th centuries. The Qing demographic expansion runs partly on this.",
+
+  'introduction-of-quinine-to-europe':
+    "European medicine had no effective antimalarial. Cinchona-tree bark, used by Andean Quechua peoples to treat fever, was brought to Europe by Spanish missionaries in the 1630s. By 1690 cinchona infusions ('Jesuit's bark') were standard treatment for malaria. The first Old World effective antimalarial. European colonial expansion into tropical Africa and South Asia became survivable for European troops; the modern pharmaceutical isolation of quinine (Pelletier and Caventou, 1820) extended the regimen.",
+
+  'seed-drill-jethro-tull':
+    "Pre-Tull seed planting had been broadcast by hand — uneven distribution, much waste, irregular germination. Jethro Tull's seed drill (1701) used a hopper, channels, and a soil-cutting coulter to plant seeds in evenly-spaced rows at controlled depth. Germination rates rose; weeds could be hoed between rows; yields per seed jumped. The mechanical sowing technology that the British Agricultural Revolution depended on. Modern precision-planters are direct descendants.",
+
+  'introduction-of-rubber-tree-to-europe':
+    "Pre-rubber waterproofing had been wax, oil-cloth, or treated leather. Charles Marie de la Condamine's 1736 expedition to the Amazon brought back samples of cured Hevea brasiliensis latex — natural rubber. Joseph Priestley named it 'rubber' for its ability to erase pencil marks (1770). Industrial uses had to wait for Goodyear's vulcanization (1839) — but the introduction of the species and the curing technique was the necessary first step. Pneumatic tires, electrical insulation, and modern industry all run on Hevea derivatives.",
+
+  'enclosure-movement':
+    "The open-field system had been the dominant English agricultural arrangement for nearly a millennium. Parliamentary Enclosure Acts (peaking 1750-1820) converted common and waste land — the medieval village's grazing and gleaning rights — into private fenced fields owned by the local gentry. Agricultural productivity rose; small tenant farmers were displaced. The displaced rural population fed the early Industrial Revolution's labor demand. The most consequential property-rights restructuring in English history.",
+
+  'artificial-insemination-in-cattle':
+    "Animal breeding had required physical mating — limiting the genetic spread of any single superior sire. John Hunter's 1790 demonstration of human artificial insemination (using a syringe) was a curiosity. The technique was applied to livestock by Russian veterinarians in 1899 and refined by Edward Cassou (1939). One champion dairy bull's semen could now sire thousands of calves a year. The genetic improvement rate of dairy and beef herds accelerated by an order of magnitude.",
+
+  'cotton-gin':
+    "Pre-gin short-staple cotton processing had taken a slave a full day to clean a single pound of cotton — too slow to be commercially viable. Eli Whitney's 1793 cotton gin used wire hooks and rotating brushes to separate the lint from the seeds at industrial speed — 50 lbs per slave per day. Short-staple upland cotton became economically viable across the American South. Cotton acreage exploded; slave populations grew; the antebellum southern plantation economy that drove the US Civil War rested directly on the gin's economics.",
+
+  'reaper-cyrus-mccormick':
+    "Pre-McCormick grain harvesting had been by hand with sickles and scythes — a labor bottleneck that capped farm size. McCormick's 1834 horse-drawn mechanical reaper cut grain at multiple times the rate of hand reaping. Combined with the seed drill (1701) and the steel plow (1837), it became the first integrated mechanized grain agriculture system. American Midwest grain farms expanded to scales unthinkable in Europe. The bonanza-farm era and the global wheat-export economy of the late 19th century followed.",
+
+  'agricultural-extension':
+    "Pre-extension agricultural innovation had spread by word of mouth among farmers — slow, regional, often pseudoscientific. Lord Clarendon's appointment of itinerant instructors during the Irish Great Famine (1847) was the first state program to bring scientific agricultural knowledge directly to farmers. The US Land-Grant Act (1862) and Hatch Act (1887) institutionalized the model. Modern agricultural extension services in every developed country trace back to Clarendon's response to the famine.",
+
+  'barbed-wire':
+    "Fencing the American West had required wood — scarce on the Plains. Smooth wire had been ineffective at restraining cattle. Joseph Glidden's barbed wire (patented 1874) used twisted strands with sharp barbs that cattle quickly learned to avoid. Cheap, durable, and effective. Within a decade, the open range that had defined the West was fenced. Cattle drives became unnecessary; intensive ranching displaced extensive. The Plains Indian wars of the 1880s-90s were partly fought over enclosures of land traditionally treated as commons.",
+
+  'milk-separator-gustaf-de-laval':
+    "Cream had been separated from milk by letting it sit for 12-36 hours and skimming the layer that rose to the top. Slow, dirty, vulnerable to spoilage. Gustaf de Laval's centrifugal separator (1878) spun raw milk fast enough that cream and skim milk separated in seconds. Dairy farms could process milk cleanly and quickly. Industrial-scale dairy processing — and the modern dairy economy — became feasible. Modern milk plants still use centrifugal separation, just at much higher throughput.",
+
+  'babcock-test-for-butterfat':
+    "Dairy farmer payments had been by milk volume — incentivizing watered-down milk and ignoring fat content (the most valuable component). Stephen Babcock's 1890 test (sulfuric acid digestion + centrifugation, 5 minutes) gave a rapid accurate measurement of butterfat percentage. Within a few years, milk pricing across the US shifted to fat-based payment. Milk quality rose; adulteration dropped; dairy genetics shifted toward higher-fat breeds (Jerseys, Guernseys). The first quality-payment system in commodity agriculture.",
+
+  'tractor-gasoline-powered':
+    "Steam tractors had existed since the 1850s but were enormous, heavy, and required water and a skilled boilerman. John Froelich's 1892 gasoline-powered tractor demonstrated that internal combustion could replace the boiler — smaller, lighter, easier to operate. Mass production waited for Henry Ford's Fordson (1917) under $400. The replacement of horses by tractors over the next four decades freed an enormous fraction of farmland from feeding draft animals — and freed millions of farm laborers for industrial work.",
+
+  'milking-machine-practical-adoption':
+    "Hand-milking had been the labor-limited bottleneck of dairy farming — typically 6-8 cows per milker per session, twice a day. Practical milking machines (1890s; widespread adoption from the 1920s) used pulsed vacuum to extract milk through teat cups. A single operator could milk 15-20 cows simultaneously. Dairy herd sizes grew; smaller dairies consolidated. The dairy industry's mid-twentieth-century scale-up — and its eventual concentration in fewer, larger operations — runs on the milking machine.",
+
+  'haber-bosch-industrial-nitrogen-fixation':
+    "Plants need fixed nitrogen, but atmospheric N₂ is the wrong form — life had relied on lightning and rhizobial bacteria for the fixation. Fritz Haber and Carl Bosch's industrial process (Haber's lab demonstration 1909, Bosch's BASF plant scaling 1913) combined N₂ and H₂ at 400°C and 200 atmospheres over an iron catalyst to produce ammonia. Synthetic fertilizer became cheap. Roughly half of the nitrogen atoms in human bodies today came through a Haber-Bosch reactor. The process also made WWI possible (German munitions ran on synthetic ammonia after the British naval blockade).",
 };
 
 async function main(){
