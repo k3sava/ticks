@@ -1405,6 +1405,81 @@ const BECAUSE_BATCH = {
 
   'al-masudis-meadows-of-gold':
     "Pre-Mas'udi geography had been administrative or itinerary-based. Al-Mas'udi's Murūj al-Dhahab (Meadows of Gold, 947 AD) — comparative history and geography from prehistoric Arabia to his own day — included detailed comparative biology: how species varied across climate zones, why African elephants differ from Indian. The first Islamic comparative zoogeography. Arab geographers (al-Idrisi, Ibn Battuta) and later European scholars (Humboldt's biogeography) build on the comparative-by-region approach Mas'udi pioneered.",
+
+  'shen-kuos-dream-pool-essays':
+    "Pre-Shen-Kuo Chinese natural philosophy had treated fossils as mineral curiosities — petrified remains of mythical creatures or arbitrary stone shapes. Shen Kuo's Dream Pool Essays (1088, in Bianjing) recognized fossilized bamboo found in arid regions as evidence the climate had been very different in the past. The first naturalistic theory of fossils as remains of past biota in past environments. Geomorphology and paleoclimatology in skeletal form. Independent of the European recognition (Steno, 1669) by six centuries.",
+
+  'belons-comparative-bird-anatomy':
+    "Pre-Belon comparative anatomy had been thin — Aristotle's Parts of Animals plus Galen on dissection. Pierre Belon's L'Histoire de la nature des oyseaux (1555) included a side-by-side illustration of the human skeleton and a bird skeleton, with bones labeled to highlight homologies. The first published recognition of structural homology across mammal and bird. The skeletal-comparison method Belon pioneered ran through Cuvier and Owen and underwrote evolutionary anatomy after Darwin.",
+
+  'cesalpino-plant-classification-by-fruit':
+    "Pre-Cesalpino plant classification had been alphabetical (medicinal herbals) or by use (pharmacopoeias). Andrea Cesalpino's De Plantis (1583) classified plants by reproductive structures — flowers, fruits, seeds — on the Aristotelian principle that essential characters are reproductive. The first systematic classification by morphological essentials rather than utility or alphabet. Linnaeus's Systema Naturae two centuries later runs on the same conceptual structure.",
+
+  'rays-methodus-plantarum-nova':
+    "Pre-Ray taxonomy had used dichotomous keys with arbitrary divisions. John Ray's Methodus Plantarum Nova (1682) defined a species as an interbreeding population producing fertile offspring of the same kind — the first biological species concept. Ray classified plants by overall similarity rather than single-character keys. The taxonomic groundwork on which Linnaeus built the binomial system in 1735.",
+
+  'grews-discovery-of-plant-sexuality':
+    "Pre-Grew plant biology had treated reproduction as mysterious — flowers were ornamental, seeds appeared somehow. Nehemiah Grew's The Anatomy of Plants (1682) hypothesized correctly that stamens are male organs that produce pollen, and that pollen fertilizes ovules. Plant sexuality was now a reproductive system analogous to animals'. Linnaeus's Systema Naturae (1735) used flower sexual characters as the primary classification axis.",
+
+  'needhams-spontaneous-generation-claims':
+    "Spontaneous generation — the idea that life emerges from non-living matter — had been Aristotelian orthodoxy for two millennia. John Needham's 1748 boiled-broth experiments seemed to confirm it: sealed flasks of boiled broth grew microbes. Needham's flawed protocol (incomplete sterilization) led him to claim experimental proof. Spallanzani (1768) refuted Needham with proper boiling and sealing. The eventual Pasteur-Tyndall demonstrations (1860s) closed the case. Needham's mistake helped frame the experiment that finally settled the question.",
+
+  'vaccination-smallpox':
+    "Smallpox had killed 400,000 Europeans annually in the 18th century — roughly 10-20% of urban populations. Variolation (deliberate inoculation with smallpox material) had cut mortality but still killed 1-2% of recipients. Edward Jenner's 1796 cowpox-inoculation experiment on James Phipps and his 1798 publication showed that exposure to mild cowpox conferred smallpox immunity at near-zero risk. The first vaccine. Smallpox was eradicated worldwide in 1980 — the only disease ever to be wiped out by vaccination.",
+
+  'chloroform-anesthesia-in-surgery':
+    "Pre-anesthesia surgery had been agonizing — the surgeon's reputation rested on speed (Robert Liston could amputate a leg in 30 seconds). Patients screamed; some died of shock. James Young Simpson's 1847 demonstration of chloroform inhalational anesthesia (after ether's 1846 introduction) made surgery painless. Operations could be longer and more complex. The first sustained pain-free surgical practice. Modern anesthesiology is the unbroken successor.",
+
+  'first-synthetic-dye-mauveine':
+    "Pre-mauveine dyes had all been natural — indigo, madder, cochineal, Tyrian purple. William Henry Perkin, an 18-year-old British chemistry student trying to synthesize quinine from coal-tar derivatives, accidentally produced a brilliant purple aniline-derived dye (1856). Perkin patented it as mauveine and started a company. The first synthetic organic dye. Within a decade the German synthetic-dye industry (BASF, Bayer, Hoechst) had displaced natural dyes globally. The synthetic-organic-chemistry industry that produced modern pharmaceuticals descends from Perkin's accident.",
+
+  'aniline-dyes-from-coal-tar':
+    "Coal tar had been a useless byproduct of coal-gas manufacturing. After Perkin's mauveine (1856), German chemists systematically explored coal-tar derivatives — aniline, benzene, naphthalene — as feedstock for synthetic dyes. Within a generation, the German chemical industry had a vast catalog of synthetic aniline dyes (alizarin, fuchsine, indigo). Cheap colorfast dyes for industrial textile printing. The first integrated industrial-chemistry sector. Modern petrochemicals, pharmaceuticals, and dyes all descend from coal-tar chemistry.",
+
+  'quantum-of-action-planck':
+    "Classical physics had assumed energy was continuously variable. The black-body radiation problem (the 'ultraviolet catastrophe') gave nonsensical infinities under classical theory. Max Planck's October 1900 paper postulated that radiation came in discrete energy packets E = hν, where h is a fundamental constant — Planck's constant. The first quantization in physics. Einstein extended quanta to light itself (1905); Bohr to atomic orbits (1913); Schrödinger and Heisenberg formalized quantum mechanics (1925-26). All of modern physics dates from Planck's reluctant 1900 hypothesis.",
+
+  'bacteriophage-discovered':
+    "Bacteria had been understood as single-celled organisms that could be killed by antiseptics. The discovery that viruses infected bacteria — bacteriophages, independently described by Frederick Twort (1915) and Félix d'Hérelle (1917) — opened a parallel world of host-parasite interaction at the microbial scale. Phages later became the workhorse of molecular biology (the Hershey-Chase experiment, 1952, used phages to prove DNA is the genetic material). Phage therapy (using phages as antibacterial agents) is reviving as antibiotic resistance grows.",
+
+  'discovery-of-penicillin':
+    "Bacterial infections had been the largest single cause of death — the most common cause of military and post-surgical mortality. Alexander Fleming's 1928 observation of a Penicillium notatum mold contaminating a Staphylococcus culture and clearing the bacteria around it identified the antibacterial compound. Florey, Chain, and Heatley's wartime mass production (1941-44) made penicillin a real drug. By 1945 it was treating Allied soldiers. The first antibiotic; saved an estimated 200 million lives.",
+
+  'fishers-the-genetical-theory-of-natural-selection':
+    "Mendelian genetics (rediscovered 1900) and Darwinian natural selection had seemed initially incompatible. Mendel implied discrete jumps; Darwin implied gradual change. Ronald Fisher's The Genetical Theory of Natural Selection (1930) showed mathematically how the two integrated: small selective pressures on many genes, each with small effect, produce gradual phenotypic change. The first synthesis of population genetics with evolution. Wright and Haldane completed the modern evolutionary synthesis through the 1930s-40s.",
+
+  'first-successful-kidney-transplant':
+    "Organ transplantation had been blocked by immune rejection — recipients' immune systems destroyed donor tissue within days. Joseph Murray's December 23, 1954 transplant of a kidney from Ronald Herrick to his identical twin Richard avoided rejection because the twins shared a genome. Richard lived eight years on the donated kidney. The first successful organ transplant. Immunosuppressive drugs (azathioprine, then cyclosporine, 1970s) eventually allowed non-twin transplants. Modern transplant medicine descends from this single 1954 procedure.",
+
+  'combined-oral-contraceptive-pill':
+    "Pre-Pill contraception had been condoms, diaphragms, and rhythm — all imperfect, all woman-controlled only at the moment of intercourse. Gregory Pincus's research at Worcester Foundation, funded by Margaret Sanger and Katherine McCormick, produced the combined oral contraceptive pill (Enovid, FDA-approved June 1960). The first hormonal contraceptive — daily, woman-controlled, near-100% effective when taken correctly. Family planning, women's labor force participation, and the social shifts of the 1960s-70s all built on the Pill.",
+
+  'first-complete-genome-sequenced-bacteriophage-phi-x-174':
+    "Pre-1977 sequencing had been laborious — at most a few hundred bases per project. Frederick Sanger's chain-termination method (also 1977) plus the small genome of bacteriophage φX174 (5,386 bases) made the first complete genome sequence achievable in a single lab. The proof of concept that any genome could be sequenced. Forty-six years later: a human genome sequenced in 24 hours for $200. Modern genomics begins with this 5kb viral chromosome.",
+
+  'evolutionary-rate-calibration-with-ancient-dna':
+    "Molecular-clock dating had calibrated mutation rates from contemporary species and inferred timing of past divergences. Ancient DNA sequencing (especially from Pleistocene horses, mammoths, and Neanderthals, ~2010 onward) let researchers measure mutation rates directly across thousands of years. Dates and rates that had been inferred could now be empirically tested. The molecular-clock framework was tightened; some divergence dates were significantly revised. Modern paleogenomics rests on the calibration this enabled.",
+
+  'microbiome-transfer-therapy-for-c-diff':
+    "Recurrent Clostridioides difficile infection had killed thousands of US hospital patients annually — antibiotics typically failed because the disrupted gut microbiome couldn't recover. Fecal microbiota transplantation (formalized in randomized trials, ~2013, after decades of compassionate-use cases) restores the donor's healthy microbial community to the patient's gut. Cure rates above 90%. The first sustained therapeutic use of the microbiome as medicine. Active research now extends FMT to inflammatory bowel disease, autism spectrum disorder, and depression.",
+
+  'gene-drive-in-mosquitoes':
+    "Mendelian inheritance had limited the spread of any introduced gene to ~50% of offspring per generation. CRISPR-based gene drives (~2015) bias inheritance toward 100% of offspring — by encoding the editing machinery alongside the modified gene, every offspring inherits and propagates the edit. Demonstrated in malaria-vector mosquitoes (Anopheles gambiae) by 2018. Could in principle drive a malaria-blocking gene through wild populations within years. The technology raises severe ecological-release questions; deployment is on hold pending governance.",
+
+  'directed-evolution-of-proteins-in-vitro':
+    "Engineered proteins had been built by rational design — figure out the structure-function relationship, then mutate by hand. Frances Arnold's directed evolution method (Caltech, 1990s, formalized 2018 Nobel) instead mimics natural selection: random mutation, fitness-based selection, iterate. The fastest path to novel enzyme function. Industrial enzymes for biofuels, detergents, pharmaceuticals all use directed-evolution-derived variants. Modern protein engineering and the AlphaFold-era predictive design both build on Arnold's approach.",
+
+  'first-use-of-poison-on-projectiles':
+    "Stone-tipped weapons had relied on the wound itself for kill — direct hits to vital organs. Plant alkaloids on arrowheads (~60,000 BC, residue confirmed at Border Cave and Umhlatuzana Rock Shelter) made even glancing wounds lethal — toxin reached the bloodstream and acted within minutes. Smaller hunters could now kill larger prey. African San groups still use the same family of arrow poisons (typically Diamphidia beetle larvae) on hunting arrows.",
+
+  'city-planning-catalhoyuk':
+    "Earlier Neolithic settlements had been small, scattered villages. Çatalhöyük (~7500-5600 BC, central Anatolia) housed perhaps 8,000 people in a tight cluster of mudbrick houses sharing walls — entered by ladders through the roof rather than streets. The earliest known proto-city: planned, dense, multi-thousand-population, sustained for two millennia. Tested whether dense cooperative living could work without formal hierarchy (it did, for a time). The transition from village to city as a settlement type begins here.",
+
+  'sailing-simple-sailboat':
+    "Pre-sail watercraft had been propelled by paddles, oars, or river current. Sail-equipped boats appeared independently in Island Southeast Asia and the Mediterranean (~5500 BC, with the earliest archaeological evidence from Persian Gulf and Egyptian sites). Wind power supplemented or replaced muscle on water. Long-distance coastal trade (Mediterranean copper, Persian Gulf shells) became routine. The first sustained use of an environmental energy flow for transport.",
+
+  'first-known-irrigation-systems-mesopotamia':
+    "Pre-irrigation Mesopotamian agriculture had been limited to flood-recession farming on the Tigris-Euphrates riverbanks. Surface canal irrigation (~4000 BC, in southern Mesopotamia) carried river water inland through gravity-fed channels and basins. Cultivable area increased 10x. Salt accumulation eventually degraded soil; canal maintenance required organized labor. The first sustained landscape engineering — and the bureaucratic substrate for the early Mesopotamian state.",
 };
 
 async function main(){
