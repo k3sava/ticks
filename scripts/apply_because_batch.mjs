@@ -1855,6 +1855,81 @@ const BECAUSE_BATCH = {
 
   'magna-carta-sealing':
     "Pre-Magna-Carta English kings had ruled by divine right with no formal constraint. Rebellious barons forced King John to seal Magna Carta on June 15, 1215 at Runnymede — sixty-three clauses limiting royal power, codifying baronial rights, and (in clause 39) requiring lawful judgment before any free man could be imprisoned. The first sustained English written constitution. Reissued, ignored, and reissued through the 13th century. Habeas corpus, due process, and the entire common-law constitutional tradition descend from Magna Carta.",
+
+  'antonio-de-nebrija':
+    "Spanish had been a vernacular language without an authoritative reference. Antonio de Nebrija's Diccionario latino-español (1492) and his Castilian grammar (Gramática castellana, the same year — the first grammar of a vernacular European language) gave Spanish standardized references. Famously presented to Queen Isabella with the words: 'language has always been the companion of empire.' Spanish colonial expansion in the Americas relied on the standardization Nebrija made possible.",
+
+  'first-printed-polyphonic-music':
+    "Pre-Petrucci polyphonic music had been hand-copied by specialist scribes — slow, expensive, error-prone. Ottaviano Petrucci's Harmonice Musices Odhecaton (Venice, 1501) used a triple-impression process to print polyphonic music with movable type. The first printed book of polyphonic music. Within a generation, music printing was a real European industry. Composers' reputations could now spread across the continent without manuscript copying. Modern Western music's geographical reach begins here.",
+
+  'erasmus-novum-instrumentum-omne':
+    "The Latin Vulgate (Jerome, ~400 AD) had been the standard Bible of Western Christianity for a thousand years. Erasmus's Novum Instrumentum omne (1516, with parallel Greek and Latin texts) was the first printed critical Greek New Testament. The textual base for Luther's German translation (1522) and the King James Bible (1611). Sola scriptura, the Reformation, and modern biblical scholarship all built on Erasmus's edition. The shape of European Christianity bent on this single book.",
+
+  'first-printed-book-in-romani-language':
+    "The Romani language had been spoken by an itinerant population for centuries with no written form. The first printed Romani text (1542, by Andrew Borde, in his Fyrst Boke of the Introduction of Knowledge) recorded thirteen Romani phrases with English translations. The first sustained written record of Romani. Subsequent linguistic study (especially by Heinrich Grellmann in the 1780s) used these and similar early records to identify Romani's Indic origin and trace the historical migration.",
+
+  'carbon-paper':
+    "Pre-carbon-paper duplicate copies had required rewriting each by hand. Ralph Wedgwood's 1806 patent for carbon paper (a sheet of paper coated with ink-and-wax mixture) let one stroke of the pen produce two identical copies. Office productivity jumped. The technology stayed in widespread use for 170 years until photocopiers and printers displaced it. The 'CC:' email convention is named for the carbon-copy practice.",
+
+  'facsimile-machine':
+    "Pre-fax document transmission had required physical mail or hand-copied telegrams. Alexander Bain's 1843 electric printing telegraph used a synchronized pendulum and a chemically-treated paper to scan and reproduce images electrically — the first patent on facsimile transmission. Commercial fax services emerged in the late 19th century (the French Pantelegraph, 1865) and stayed niche until office fax machines hit business adoption in the 1980s. Bain's 1843 patent foreshadowed the entire image-transmission lineage.",
+
+  'transatlantic-telegraph-cable':
+    "Pre-cable transatlantic communication had taken weeks by ship. The 1866 Anglo-American transatlantic telegraph cable (the third attempt, after failed 1858 and 1865 cables) provided real-time messaging between Europe and North America. Stock prices, diplomatic dispatches, and news reports moved in minutes rather than weeks. The first sustained-scale globalization-of-information event. Modern undersea cables (now mostly carrying internet traffic) descend from this Victorian engineering accomplishment.",
+
+  'qwerty-keyboard-layout':
+    "Pre-QWERTY typewriters had used alphabetical key arrangement — and frequently jammed when neighboring letters were struck in quick succession. Christopher Sholes's Remington engineers (1873) rearranged keys to separate frequently-paired letters across the typebar mechanism. Result: QWERTY. The mechanical reason for the layout disappeared with electric typewriters and computer keyboards — but QWERTY persists by training inertia. Standard reference for non-optimal lock-in technology.",
+
+  'sholes-and-glidden-typewriter':
+    "Office work before 1874 had been entirely handwritten. Christopher Sholes's commercial typewriter (Remington & Sons, July 1, 1874) used the QWERTY layout and produced uniform mechanical print at speeds far above handwriting. Mark Twain's Life on the Mississippi (1883) was the first typewritten book manuscript. Office productivity jumped; women entered clerical work in numbers. The first commercially successful machine for personal text production.",
+
+  'multigraph-duplicating-machine':
+    "Pre-multigraph small-run document reproduction had been hand-copying or expensive letterpress. The Multigraph (1876, refined in 1900s) used a stencil and inked drum to produce dozens to hundreds of copies of a typewritten document. The first sustained-scale office-run duplicating technology. Mimeographs, dittos (spirit duplicators), and eventually photocopiers displaced it through the 20th century. The pre-photocopier office was a multigraph office.",
+
+  'phonograph':
+    "Pre-phonograph sound had been ephemeral — gone the instant it was made. Edison's phonograph (1877, originally tinfoil cylinders) recorded sound mechanically: a diaphragm vibrated a stylus, the stylus cut grooves into a cylinder, the same stylus tracking the grooves reproduced the sound. The first sound-reproducing technology. Music, voice, and ambient sound could now outlive their making. The recorded music industry, oral-history archiving, and the entire 20th-century audio culture run on Edison's invention.",
+
+  'linotype-machine':
+    "Pre-Linotype hand-composition of newspaper type had limited daily editions to 8 pages — the labor of typesetting a single column took hours. Ottmar Mergenthaler's Linotype machine (commercially deployed at the New York Tribune, July 1886) cast entire lines of type from molten lead based on keystroke input. A single operator did the work of six hand-compositors. Daily newspapers expanded to 16, 32, and eventually 64 pages. The mass-newspaper era runs on the Linotype until offset printing displaced it in the 1970s.",
+
+  'first-ocr-system-jacobson':
+    "Pre-OCR printed text had to be re-typed manually for digitization or re-publication. Emanuel Goldberg's character-reading machine (1914, patented 1931 in the US) used photoelectric scanning to read characters from a printed page and output telegraph code — the first electromechanical OCR. Used initially for bank-check sorting. Modern OCR software, document digitization, and library scanning all build on Goldberg's principle.",
+
+  'television-electronic-scanning':
+    "Pre-electronic television had used Nipkow disc mechanical scanning — limited to about 30 lines of resolution. Philo Farnsworth's all-electronic image dissector tube (September 1927) and Vladimir Zworykin's iconoscope (1929) used cathode-ray-tube scanning to capture images at hundreds of lines of resolution. Resolution improved each decade; broadcast TV began in the 1930s; mass adoption came after WWII. The first sustained-scale moving-image transmission.",
+
+  'voder':
+    "Pre-Voder synthesized speech had been impossible. Bell Labs's Homer Dudley demonstrated the Voder at the 1939 New York World's Fair — a hand-controlled electronic instrument that produced recognizable English phrases. The first electronic speech synthesizer. The principle (separating excitation from articulation, then synthesizing each electronically) underlies all subsequent speech synthesis — vocoders, formant synthesizers, modern neural TTS systems all build on Dudley's framework.",
+
+  'z3-computer-programmable':
+    "Pre-Z3 computation had been mechanical (Babbage, never completed at full scale) or electromechanical (Aiken's Mark I, 1944). Konrad Zuse, working alone in his parents' Berlin apartment, completed the Z3 on May 12, 1941: 2,600 relays, 22-bit floating-point arithmetic, programs stored on punched film. The first working programmable digital computer. Destroyed in an Allied bombing raid in 1943; rediscovered postwar as having predated ENIAC and Mark I.",
+
+  'sputnik-1-launches':
+    "Earth orbit had been theoretical — von Braun's V-2 had reached space in test flights but never orbited. The Soviet Union's Sputnik 1 (October 4, 1957) was the first artificial satellite — a 58-cm aluminum sphere transmitting radio beeps from a 215×939 km orbit for 22 days. The shock to the West produced NASA (1958), DARPA (1958), and the National Defense Education Act. Sputnik's beep is the practical start of the Space Age and one of the most consequential single broadcasts in history.",
+
+  'bravo-editor':
+    "Pre-Bravo text editing on computers had been line-oriented — type a line of text, press enter, no formatting. Charles Simonyi and Butler Lampson's Bravo editor (Xerox PARC, September 1974) ran on the Xerox Alto with bitmapped display and mouse — what you saw on screen was what would print on the laser printer. The first WYSIWYG document editor. Microsoft Word (1983) was Simonyi's later commercial implementation of the same ideas. Modern word processing descends from Bravo.",
+
+  'erwise':
+    "Pre-Erwise web access had required Tim Berners-Lee's NeXT-only browser or text-only line-mode browsers on Unix. Erwise (April 1992, by four Helsinki University of Technology students) was the first graphical browser for X Window System Unix workstations. Used briefly, abandoned when the original team graduated. NCSA Mosaic (Andreessen and Bina, January 1993) became the dominant graphical browser. Erwise has the chronological precedence; Mosaic had the staying power.",
+
+  'ncsa-mosaic-released':
+    "Same Mosaic, alternate ID. Marc Andreessen and Eric Bina's January 1993 release added inline images, tabbed history, and a clean install on Mac, Windows, and Unix. The web went from technical-Unix-only to mainstream within 18 months of Mosaic's debut. Andreessen later founded Netscape (1994). The browser as the ubiquitous internet client begins here.",
+
+  'dancing-baby':
+    "Pre-Dancing Baby viral content had spread by chain email and floppy disk. The Dancing Baby (1996, originally a 3D Studio Max sample animation by Michael Girard, repackaged as a Cha-Cha video by Ron Lussier) was forwarded by email to millions worldwide. The first documented viral internet meme to reach mass audiences. Featured on Ally McBeal (1997), making it culturally mainstream. Modern memes, viral marketing, and the entire internet-culture-as-a-thing trace back to the Dancing Baby's mid-1990s spread.",
+
+  'google-pagerank-algorithm-launched':
+    "Pre-PageRank web search (AltaVista, Lycos, HotBot) had ranked results by keyword frequency on the page itself — easily gamed by keyword stuffing. Larry Page and Sergey Brin's PageRank algorithm (Stanford 1996, formal Google launch September 1998) ranked pages by link structure — a page is important if many other important pages link to it. Search results dramatically improved. Within five years Google had 80% of US web search market share. Modern information retrieval and the entire digital advertising economy run on links-as-votes.",
+
+  'wi-fi-standard-802-11b-ratified-2':
+    "Same Wi-Fi standardization, alternate ID. The 802.11b amendment (ratified 1999) brought wireless LAN to 11 Mbit/s on the unlicensed 2.4 GHz band at consumer-grade pricing. The Apple iBook (July 1999) shipped with built-in 802.11b. Within five years every laptop had Wi-Fi. The mobile internet's first scaffold and a textbook case of standardization breaking a market open.",
+
+  'i-mode':
+    "Pre-i-mode mobile internet had been WAP-based — slow, awkward, walled-garden, almost nobody used it. NTT DoCoMo's i-mode (Japan, February 1999) was the first sustained-scale mobile internet service: packet-switched always-on data, an open content ecosystem, micropayment billing through the carrier. By 2002, 30 million Japanese subscribers. The smartphone era (iPhone 2007) eventually displaced it, but i-mode demonstrated for a decade what mobile internet could look like before the rest of the world caught up.",
+
+  'attention-mechanism-proposed':
+    "Pre-attention recurrent neural networks (LSTMs, GRUs) had compressed input sequences into fixed-length context vectors — losing information in long sequences. Bahdanau, Cho, and Bengio's neural machine translation paper (September 2014) introduced attention: at each output step, the model attends to relevant input positions adaptively. Translation quality improved sharply. Three years later, Vaswani et al.'s Transformer (2017) used attention without recurrence at all. Modern AI's foundational architecture begins here.",
 };
 
 async function main(){
