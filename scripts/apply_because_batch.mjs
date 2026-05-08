@@ -3025,6 +3025,96 @@ const BECAUSE_BATCH = {
 
   'bahai-faith-founded-by-bahaullah':
     "Pre-Baháʼí monotheistic religions had each claimed exclusive final truth. Baháʼu'lláh's declaration in Baghdad (April 1863) founded the Baháʼí Faith — universalist, accepting all major religions as successive revelations of one God. Baháʼu'lláh's writings (over 100 volumes) established the new religion's canon. The first sustained-scale modern religion explicitly built on the unity of all previous religions. Now claims 5-7 million members worldwide, with notable presence in Iran (where Baháʼís face persecution), India, Africa. Modern interreligious-dialogue movements often invoke Baháʼí precedent.",
+
+  'theosophical-society-reaches-global-prominence':
+    "Pre-Theosophical-Society Eastern esoteric traditions had been inaccessible to Western audiences. Helena Blavatsky and Henry Steel Olcott's Theosophical Society (founded New York 1875, headquarters moved to Adyar India 1882) synthesized Western occultism with Hindu and Buddhist concepts — karma, reincarnation, the Akashic records — packaged for Western mass-audience consumption. The first sustained-scale Western popularization of Eastern religious-philosophical concepts. Influenced subsequent Western occultism, the New Age movement, and indirect aspects of modern alternative-medicine traditions.",
+
+  'first-edition-of-the-watchtower-magazine':
+    "Pre-Watchtower mass-produced Bible-study literature for laypeople had been limited. Charles Taze Russell's Zion's Watch Tower (first issue July 1879) combined detailed biblical exegesis with millennarian timeline calculations. The first sustained-scale popular Bible-study magazine that became foundational for a major religious movement. The Watchtower remains the primary publication of Jehovah's Witnesses (the movement that grew from Russell's Bible-study groups). Modern American religious publishing's mass-market popular-Bible-study tradition runs partly through the Watchtower.",
+
+  'jehovahs-witnesses-founded-as-legal-entity':
+    "Pre-1881 Russell's Bible-study movement had been informal. Zion's Watch Tower Tract Society (incorporated 1881, in Pittsburgh) gave the movement a legal entity for property holding, publishing, and tax-exempt status. The first sustained-scale legal incorporation of the movement that became Jehovah's Witnesses. JW's distinctive practices — door-to-door evangelism, refusal of military service, refusal of blood transfusions — were institutionalized after this incorporation. Modern global JW membership (~8.7 million) operates legally through corporations descended from the 1881 founding.",
+
+  'mormon-church-renounces-polygamy':
+    "The 1882 Edmunds Act and 1887 Edmunds-Tucker Act had escalated federal pressure against Mormon polygamy. LDS President Wilford Woodruff's Manifesto (October 1890) officially renounced plural marriage. Utah statehood followed (1896), as had been blocked by ongoing polygamy. The first sustained-scale modern American religious abandonment of a distinctive practice under state pressure. Most Mormons accepted the change; fundamentalist Mormon offshoots (FLDS, AUB) continue plural marriage to this day. Modern LDS Church and US Mormon culture are essentially post-1890 institutions.",
+
+  'parliament-of-the-worlds-religions':
+    "Pre-1893 interfaith global dialogue had been rare and informal. The Parliament of the World's Religions (Chicago, September 11-27 1893, sponsored by the Columbian Exposition) brought representatives of major world religions to a common forum for the first time — Vivekananda introduced Vedanta to the West, the Buddhist abbot Soyen Shaku presented Zen, etc. The first sustained-scale international interfaith conference. Inspired the modern interfaith movement; Parliament of World's Religions revived in 1993 and continues with periodic global gatherings.",
+
+  'rudolf-otto-publishes-the-idea-of-the-holy':
+    "Pre-Otto religious experience had been mostly studied for theological or moral content. Rudolf Otto's Das Heilige (1917) introduced 'the numinous' — the experience of the holy as mysterium tremendum et fascinans (terrifying and fascinating mystery), distinct from rational theological content. The first sustained-scale phenomenological-experiential approach to religion. Influenced Mircea Eliade, comparative-religion scholarship, and modern psychology of religion. The vocabulary 'numinous' and 'mysterium tremendum' entered general religious-studies discourse.",
+
+  'bhaktisiddhanta-sarasvatis-gaudiya-math':
+    "Chaitanya's bhakti movement (16th century Bengal) had been informally transmitted for 400 years without unified institutional structure. Bhaktisiddhanta Sarasvati's Gaudiya Math (founded 1920, Kolkata) gave the Chaitanya tradition formal monastic-institutional structure with branches across India. The first sustained-scale institutional Gaudiya Vaishnavism. Bhaktisiddhanta's disciple Bhaktivedanta Swami later founded ISKCON (1966), bringing the tradition globally. Modern ISKCON's 800+ centers worldwide trace institutional ancestry to Bhaktisiddhanta's 1920 organizational reform.",
+
+  'bahai-administrative-order-established':
+    "Baháʼu'lláh's writings (1860s-1892) had described an administrative order without operationalizing it. Shoghi Effendi's accession as Guardian (1921, after the death of his grandfather Abdu'l-Bahá) initiated the systematic build-out of the Baháʼí Administrative Order — Local Spiritual Assemblies, National Assemblies, and ultimately the Universal House of Justice (elected 1963). The first sustained-scale unified global governance for a new world religion. Modern Baháʼí community life runs entirely on this administrative architecture.",
+
+  'oxford-group-founded':
+    "Pre-Oxford-Group lay Christian movements had focused on conventional church renewal. Frank Buchman's Oxford Group (founded 1921, working in international university contexts) emphasized 'Four Absolutes' (honesty, purity, unselfishness, love), confession in small groups, divine guidance through meditative listening. The first sustained-scale 20th-century lay-Christian renewal-movement focused on personal moral transformation. Influenced subsequent movements (Moral Re-Armament, Alcoholics Anonymous — Bill Wilson explicitly credits the Oxford Group's structure for AA's first three steps).",
+
+  'scopes-trial':
+    "Pre-Scopes American religious-cultural conflicts had been mostly local. The Scopes Trial (Tennessee, July 1925) tested the state's anti-evolution law — Clarence Darrow defending biology teacher John Scopes, William Jennings Bryan prosecuting. Massive national press coverage. The first sustained-scale American religious-public-square media event. Scopes was convicted but the law was repealed; the trial reshaped American religious-secular discourse for the rest of the century. Modern church-state debates over public-school curriculum trace conceptual roots here.",
+
+  'sigmund-freud-publishes-the-future-of-an-illusion':
+    "Pre-Freud psychological critique of religion had been existential (Nietzsche, Feuerbach) or sociological (Marx, Durkheim). Freud's Die Zukunft einer Illusion (The Future of an Illusion, 1927) argued religion is a collective neurosis — wish-fulfillment projection of childhood dependency on parental figures onto the cosmos. The first sustained-scale psychoanalytic critique of religion. Influenced subsequent psychological-religious-studies (William James, Erich Fromm) and the broader 20th-century secular intellectual rejection of religious belief.",
+
+  'muslim-brotherhood-founding':
+    "Pre-Brotherhood Egyptian political life had been mostly secular-nationalist (Wafd Party). Hassan al-Banna's Muslim Brotherhood (founded 1928, in Ismailia) combined religious revival with political organization — 'Islam is the solution.' The first sustained-scale modern political-Islamic mass movement. Spread across the Arab world; produced offshoots (Hamas, Tunisia's Ennahda). Sayyid Qutb's prison-era radicalization (1950s-60s) within the Brotherhood eventually seeded Salafi-jihadist movements. Modern political Islam (Erdogan's AKP, Iranian post-revolution governance) all engages with the Muslim Brotherhood's intellectual-organizational legacy.",
+
+  'rastafari-movement-begins':
+    "Pre-Rastafari Afrocentric messianism had been folk-religious and unstructured. The 1930 coronation of Haile Selassie I as Emperor of Ethiopia inspired the Rastafari movement — Selassie identified as the messiah, repatriation to Africa as religious imperative, Bible re-read through Afrocentric lens. The first sustained-scale Afrocentric messianic religious movement. Spread from Jamaica through reggae music (Bob Marley) to global awareness. Modern Rastafari communities exist worldwide; the movement remains theologically diverse and decentralized.",
+
+  'dead-sea-scrolls-discovery':
+    "Pre-discovery the oldest substantially complete Hebrew Bible manuscripts had been ~10th century AD (Aleppo Codex, Leningrad Codex). The Dead Sea Scrolls (discovered 1947 onward, in caves near Qumran on the Dead Sea) included Hebrew biblical manuscripts dating ~250 BC to 70 AD — pushing back textual evidence by 1,200 years. The first sustained-scale pre-medieval Hebrew biblical manuscript trove. Confirmed remarkable textual stability of the Hebrew Bible across the millennium. Provided unprecedented evidence of Second-Temple-period Jewish sectarianism (the Qumran community).",
+
+  'opus-dei-approved-by-vatican':
+    "Pre-Opus-Dei lay Catholic spirituality had been secondary to clerical and monastic forms. Josemaría Escrivá's Opus Dei (founded 1928, granted personal-prelature status by John Paul II 1982 after years of provisional approvals — initial Vatican approval came 1950) sanctified ordinary work as a path to holiness for lay Catholics. The first sustained-scale modern Catholic institution explicitly for lay-spirituality through everyday occupation. Now claims ~95,000 members; controversial within Catholicism for its discipline and political profile.",
+
+  'scientology-founded':
+    "Pre-Scientology psychological self-improvement movements (Dianetics) had been described as therapy. L. Ron Hubbard's Church of Scientology (founded 1953, after Dianetics 1950) repackaged Hubbard's psychological framework as religion — auditing, the thetan, OT levels, Xenu cosmology in upper-level teachings. The first sustained-scale 20th-century new religious movement built on a psychotherapeutic foundation. Tax-exempt religious status in the US (1993). Modern controversies (allegations of cult abuses, harassment of critics, the Sea Org practices) continue to shape public perception.",
+
+  'wicca-public-emergence':
+    "Pre-Wicca modern witchcraft had been folkloric or hidden. Gerald Gardner's Witchcraft Today (1954, after Britain's repeal of the Witchcraft Act in 1951 made public practice safe) revealed Wicca to the public — modern pagan religion centered on a horned god and goddess, eight sabbats, ritual magic, coven structure. The first sustained-scale modern public pagan religion. Spread from Britain to America (Raymond Buckland) and globally; combined with feminist spirituality (Z. Budapest, Starhawk) into Wiccan and broader Neopagan traditions. Modern Western occulture's mainstream branch traces back here.",
+
+  'tibetan-diaspora-and-exile':
+    "Pre-1959 Tibetan Buddhism had been geographically confined to Tibet and the Himalayan region. The 14th Dalai Lama's exile (March 1959, after the failed Tibetan uprising against Chinese rule) and subsequent global Tibetan diaspora brought Tibetan Buddhism to worldwide audiences for the first time. Major Tibetan teachers established centers in India, North America, Europe. The first sustained-scale global spread of Tibetan Buddhism. Modern Western interest in Tibetan Buddhism (Trungpa, Sogyal Rinpoche, the Dalai Lama himself) all dates from this exile.",
+
+  'pentecostal-charismatic-renewal':
+    "Pre-1960 Pentecostal-charismatic practice (speaking in tongues, faith healing, prophetic gifts) had been confined to Pentecostal denominations. The Charismatic Movement (begun 1960, when Episcopalian priest Dennis Bennett spoke in tongues at his Van Nuys parish) brought Pentecostal practice into mainline denominations. The first sustained-scale Pentecostal renewal in mainline Christianity. Spread to Catholic Charismatic Renewal (1967, at Duquesne University). Now estimated 600+ million Christians globally are charismatic in some form.",
+
+  'second-vatican-council-ends':
+    "Vatican II (October 11, 1962 - December 8, 1965) had run for four sessions, ending under Pope Paul VI. The 16 documents the council produced (especially Lumen Gentium on the Church, Gaudium et Spes on the Church and the modern world, and Nostra Aetate on non-Christian religions) opened Catholic liturgy to vernacular languages, expanded the role of laity, redefined Catholic ecumenical and interreligious relationships. The largest sustained-scale institutional reform in Christian history.",
+
+  'iskcon-founded':
+    "Bhaktivedanta Swami's arrival in New York (1965, age 69, with $7 in his pocket) and ISKCON's incorporation (July 1966) brought Gaudiya Vaishnavism to the West. Hare Krishna chanting, vegetarian temple kitchens, Bhagavad-Gita As It Is (translation 1968). The first sustained-scale Western institutional Gaudiya Vaishnav movement. Now ~600 centers worldwide. Influenced Beatles (especially George Harrison's My Sweet Lord). Modern Western interest in Hinduism owes a substantial debt to ISKCON's distinctive brand of bhakti devotion.",
+
+  'good-news-bible':
+    "Pre-Good-News English Bibles (KJV, NIV) had used elevated traditional language. The Good News Bible (released 1966 as a New Testament, full Bible 1976, by the American Bible Society) used everyday language accessible to people with limited education and to non-native English speakers. The first sustained-scale dynamic-equivalence English Bible translation aimed at maximally accessible language. Influenced subsequent functional-equivalence translations (NIV, NLT, The Message). Modern accessible-language Bible distribution traces approach to the Good News.",
+
+  'lds-church-lifts-priesthood-ban':
+    "Pre-1978 LDS Church teaching had barred Black men from priesthood ordination and Black families from temple ordinances — a doctrine traced to Brigham Young's mid-1800s leadership. President Spencer W. Kimball's 1978 revelation (Official Declaration 2) extended priesthood ordination to all worthy male members regardless of race. The first sustained-scale modern racial reform of an American religious community's restrictive doctrine. The Church grew rapidly in Africa and Latin America after the change.",
+
+  'vatican-website-launched':
+    "Pre-Vatican.va papal documents had been distributed primarily through diocesan channels with significant lag. The Vatican.va website (launched December 1995, in Latin, Italian, English, and Spanish initially; now expanded to multiple languages) made papal encyclicals, audiences, and Curia documents instantly globally accessible. The first sustained-scale online Catholic-magisterial publication system. Modern Catholic communications, Vatican social media presence, and Pope's tweets all build on this 1995 institutional online turn.",
+
+  'internet-archive-founded':
+    "Pre-Internet-Archive web preservation had been ad hoc. Brewster Kahle's Internet Archive (founded 1996, in San Francisco) systematically archived snapshots of the web, digital books, audio, video, and software. The first sustained-scale digital-content preservation institution. Wayback Machine (the public-facing Web archive interface, launched 2001) preserves billions of web pages — essential research and legal-evidence resource. Modern digital preservation, particularly of religious websites and online religious movements, runs partly on Internet Archive infrastructure.",
+
+  'twitter-launched':
+    "Pre-Twitter real-time global public discourse had been impossible at scale. Twitter (launched July 2006, by Jack Dorsey, Noah Glass, Biz Stone, Evan Williams) constrained posts to 140 characters with a public-by-default model. The first sustained-scale microblogging platform. Hashtag activism (#MeToo, #BLM), real-time crisis updates (2008 Mumbai attacks), live-tweeted political events (2009 Iranian election protests, Arab Spring 2011) all became possible. Modern political discourse, journalism, and public communication still run partly on Twitter (rebranded X 2023).",
+
+  'relu-activation-popularized':
+    "Pre-ReLU deep neural networks had used sigmoid or tanh activation functions, with the vanishing-gradient problem limiting practical depth. Nair and Hinton's 2010 paper showing rectified linear units (ReLU = max(0, x)) accelerated training; AlexNet (2012, Krizhevsky-Sutskever-Hinton) made ReLU's effectiveness publicly undeniable. The first sustained-scale activation function for deep neural networks. Modern deep learning's ability to train hundred-layer networks rests on ReLU and its variants (LeakyReLU, GeLU, SwiGLU).",
+
+  'word2vec-embeddings':
+    "Same word2vec, alternate ID. Mikolov et al.'s 2013 paper introduced two efficient architectures (CBOW and Skip-gram) for learning dense word representations from large text corpora. Semantic relations appeared as vector arithmetic — 'king' minus 'man' plus 'woman' approximated 'queen'. The first sustained-scale dense-vector word representation. Foundational for the entire embedding-then-attention pipeline of modern NLP.",
+
+  'generative-adversarial-network':
+    "Pre-GAN generative models had been likelihood-based — explicitly modeling probability distributions. Ian Goodfellow's Generative Adversarial Networks (2014, NIPS paper after a famous bar napkin sketch) trained two neural networks against each other — generator producing fake data, discriminator distinguishing fake from real, in a minimax game. The first sustained-scale adversarial-training framework for generation. Produced increasingly realistic image generation (StyleGAN 2018, BigGAN 2018) until diffusion models displaced GANs as the leading image-generation approach (~2021).",
+
+  'batch-normalization-proposed':
+    "Pre-batch-normalization training very deep neural networks had been unstable due to internal covariate shift — the changing distribution of activations between layers. Ioffe and Szegedy's batch normalization (2015) normalized layer activations to zero mean and unit variance during training. The first sustained-scale activation-normalization technique. Made training networks of 100+ layers practical. Almost every modern neural network uses batch norm or one of its variants (LayerNorm, GroupNorm). The post-2015 deep learning era runs on normalization tricks.",
 };
 
 async function main(){
