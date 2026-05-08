@@ -2230,6 +2230,81 @@ const BECAUSE_BATCH = {
 
   'first-recorded-lithotomy':
     "Pre-lithotomy bladder stones had been agonizing and slowly fatal. Sushruta's lithotomy (~600 BC, in the Sushruta Samhita) extracted bladder stones via perineal incision — high-mortality but better than no treatment. The first sustained-scale surgical procedure for bladder stones. Greek, Roman, Arabic, and European medieval medicine all preserved variants of the procedure. The 'cutting for the stone' that European travelers and medical students wrote about for two millennia is essentially Sushruta's technique.",
+
+  'pythagorean-theory-of-health-as-harmony':
+    "Pre-Pythagorean Greek medicine had attributed disease to divine displeasure or magic. Pythagoras and his school (~530 BC, at Croton) framed health as harmony — proper proportions of dietary elements, balanced exposure to music and seasons, mathematical relations between body and cosmos. The first sustained naturalistic theory of health linked to mathematical principles. Influenced Hippocratic humoral theory and Galenic medicine for two millennia. Modern dietary-balance and mind-body integrative-medicine traditions trace back to this Pythagorean root.",
+
+  'first-known-bloodletting':
+    "Pre-bloodletting Greek medicine had been mostly herbal and dietary. The Hippocratic school (~500-400 BC) applied bloodletting based on humoral theory — withdraw blood to restore balance among the four humors. The first sustained surgical-medical intervention based on a theoretical framework. Persisted in Western medicine for 2,500 years. Mostly harmful, occasionally helpful (in genuine polycythemia vera, hemochromatosis). Finally retired by mid-19th-century evidence-based medicine, though therapeutic phlebotomy survives for specific conditions.",
+
+  'alcmaeon-of-croton-dissects-animals':
+    "Pre-Alcmaeon Greek anatomy had been speculative — guesses about internal structure based on external observation. Alcmaeon of Croton (~500 BC) performed animal dissections, identified the optic nerves, distinguished veins from arteries, and located cognition in the brain rather than the heart. The first sustained empirical anatomy in the Greek tradition. Influenced Hippocrates and Aristotle. The path of Western anatomical tradition runs from Alcmaeon to Vesalius.",
+
+  'greek-concept-of-pneuma-and-humors':
+    "Pre-Hippocratic Greek medical theory had been fragmentary. The Hippocratic Corpus (~400 BC, ascribed to Hippocrates and his school) systematized the humoral theory: four humors (blood, phlegm, yellow bile, black bile) corresponding to four elements and four qualities; disease as humoral imbalance. The first sustained-scale Greek systematic medical theory. Galen elaborated and dominated European and Islamic medicine for 1,400 years. Modern medicine fully displaced humoral theory only in the late 19th century.",
+
+  'first-recorded-trepanation-greece':
+    "Pre-Hippocratic trepanation had been folk practice. The Hippocratic corpus (~400 BC) included detailed surgical instructions for trepanation — when to perform it, technique, post-operative care. The first sustained-scale documented surgical neurosurgery. Greek and Roman surgical schools elaborated; medieval European trepanation was sometimes literally Hippocratic by the book. Modern craniotomy uses much-refined instruments but the same basic procedure.",
+
+  'first-recorded-hospital-sri-lanka':
+    "Pre-hospital sick care had been individual or temple-based — care varied by household resources. King Pandukabhaya of Sri Lanka (~400 BC, by traditional dating) is credited with establishing dedicated public hospitals for the sick. The first sustained-scale dedicated healing institutions in the historical record. Buddhist monastic medical care in the early-Common-Era Indian and Sri Lankan worlds extended the model. The bimaristan (Islamic-Persian hospital) and eventually European medieval hospitals all build on the principle of dedicated public-care institutions.",
+
+  'hippocrates-clubbing':
+    "Pre-Hippocrates the link between visible body signs and internal disease had been mostly mystical. Hippocrates' description of nail clubbing (~400 BC, in the Hippocratic corpus) explicitly correlated a visible finger deformity with chronic lung and heart disease. The first sustained empirical disease-sign correlation. The principle that surface signs reveal internal pathology runs through every subsequent medical-diagnosis tradition. 'Hippocratic fingers' is still the standard medical term for advanced clubbing.",
+
+  'first-description-of-puerperal-fever':
+    "Pre-Hippocrates postpartum infection had been a leading cause of maternal death without diagnostic recognition. Hippocrates' description of puerperal fever (~400 BC) identified it as a distinct condition. The first sustained recognition of childbed fever as a medical entity. Semmelweis (1847) finally identified the causative agent (transmission via doctors' unwashed hands) — but the disease had been identified as a category 2,250 years earlier.",
+
+  'asclepieion-first-healing-temple':
+    "Pre-Asclepieion Greek healing had been practiced in homes, marketplaces, and on the battlefield. The Asclepieion at Epidaurus (formal cult complex from ~400 BC, with sustained operation through ~350 BC reformations) was a dedicated temple-healing-center combining ritual sleep (incubation), prescribed regimens, surgical procedures, and athletic recreation. The first sustained-scale dedicated healing institution in the Greek world. Modern hospital architecture, holistic-medicine practice, and even the snake-and-staff caduceus (originally Asclepius's rod) all trace back to the Asclepieion model.",
+
+  'charaka-samhita-compendium-of-medicine':
+    "Pre-Charaka Indian medical knowledge had been transmitted orally through guru-shishya (teacher-student) lineage. The Charaka Samhita (compiled ~100 BC-200 AD by Charaka, redacted by Dridhabala) is a 120-chapter foundational text of Ayurveda — internal medicine, doshic theory, pharmacology, ethics. The first sustained-scale Indian internal-medicine text. Sushruta Samhita (surgery) and Charaka Samhita (medicine) together constitute the founding canon of Ayurveda. Modern Indian medical schools still teach from these texts.",
+
+  'han-dynasty-rhubarb-laxative':
+    "Pre-Han Chinese herbal medicine had used many plant remedies without specialized indication. Han-era systematic Chinese pharmacology (~100 AD) identified rhubarb root as a reliable laxative — its anthraquinone glycosides stimulate intestinal motility. The first sustained-scale documented use of a specific plant for a specific condition. Chinese herbal medicine and Western pharmacopoeia both adopted rhubarb. Modern pharmacology eventually identified the active compounds; rhubarb is still in pharmaceutical use as senna's milder cousin.",
+
+  'huangdi-neijing':
+    "Pre-Huangdi-Neijing Chinese medicine had been a collection of empirical practices. The Huangdi Neijing (Yellow Emperor's Inner Canon, compiled ~111 BC-200 AD) is the foundational theoretical text of Traditional Chinese Medicine — yin-yang, five elements, qi flow, meridians, organ networks, acupuncture points. The first sustained-scale theoretical framework for Chinese medicine. Stayed canonical for over 2,000 years. Modern TCM education still teaches from the Neijing as primary source.",
+
+  'antyllus-pioneers-aneurysm-surgery':
+    "Pre-Antyllus arterial aneurysms had been untreatable — patients suffered or died as the bulge grew. Antyllus (~150 AD, Greek-Roman surgeon) described the first sustained surgical technique for aneurysms — proximal and distal arterial ligation, then excision of the diseased segment. The first sustained vascular surgery technique. The procedure remained essentially unchanged until the modern vascular-surgery era. Modern AAA repair (open and endovascular) is the eventual successor of Antyllus's basic logic.",
+
+  'galen-identifies-recurrent-laryngeal-nerve':
+    "Pre-Galen voice production had been a mystery. Galen (~170 AD, while practicing on gladiators in Pergamon) identified the recurrent laryngeal nerve — a branch of the vagus that loops around the great vessels and supplies the vocal cords. Demonstrated by sectioning experiments on pigs. The first sustained empirical understanding of the brain-larynx pathway. Modern thyroid surgery still pays close attention to the recurrent laryngeal nerve — damage causes vocal-cord paralysis.",
+
+  'hua-tuo-uses-anesthesia-for-surgery':
+    "Pre-Hua-Tuo Chinese surgery had been done without anesthesia — patients endured or died. Hua Tuo (~208 AD, in the Han-Three Kingdoms transition period) used 'mafeisan' — a wine-and-herbs preparation, possibly containing datura, cannabis, or aconite — as a general anesthetic. The first sustained-scale general anesthesia. Hua Tuo's techniques were lost when Cao Cao executed him; mafeisan recipes don't survive. Western surgical anesthesia (ether, 1846; chloroform, 1847) emerged independently 1,600 years later.",
+
+  'hospital-system-in-baghdad':
+    "Pre-Islamic hospital care had been temple-based or domestic. Caliph al-Walid I's bimaristan in Damascus (707 AD) and the subsequent Baghdad hospitals (especially the Adudi Hospital, 982 AD) established a sustained Islamic hospital tradition: free care, separate wards by disease, organized teaching, paid physician staff. The first sustained-scale public-hospital system. Models for European medieval hospitals, the Crusader hospital orders, and eventually the modern Western hospital all trace through the Islamic bimaristan.",
+
+  'alchemical-distillation-of-alcohol':
+    "Pre-Jabirian distillation had been crude — separation by simple boiling. The Jabirian corpus (~850 AD, attributed to Jabir ibn Hayyan and his school) systematized chemical distillation with alembic stills, producing concentrated alcohols, mineral acids, and ethers for medical and chemical use. The first sustained-scale systematic chemical distillation. European alchemy and eventually modern chemistry all build on the Arabic distillation tradition. The English word 'alcohol' comes from Arabic al-kuḥl.",
+
+  'surgical-cautery-and-ligature':
+    "Pre-Al-Zahrawi surgery had been bloody — uncontrolled hemorrhage was the leading cause of operative death. Al-Zahrawi (Andalusia, ~1000 AD, in Kitab al-Tasrif) systematized surgical hemostasis — cautery for small vessels, ligature with catgut sutures for larger ones. Designed surgical instruments still in modern use. The first sustained-scale systematic surgical-instrument-and-technique compendium. Translated into Latin as Albucasis; standard reference for European surgery from the 12th century until the 18th.",
+
+  'alcohol-distillation-for-antiseptic':
+    "Pre-distillation antiseptics had been honey, vinegar, herbs. Refinement of distillation in the medieval Islamic world (~1100 AD) produced concentrated ethanol (aqua vitae, water of life). High-proof alcohol kills most bacteria. Used in medical practice for wound cleaning and tincture preparation. The first sustained-scale chemical antiseptic. Modern alcohol-based hand sanitizers, surgical-prep solutions, and ethanol-based pharmaceutical formulations all derive from this medieval tradition.",
+
+  'hildegard-of-bingens-medicine':
+    "Pre-Hildegard medical writing had been almost exclusively male-authored, mostly translated from Greek and Arabic. Hildegard of Bingen's Physica and Causae et Curae (~1150 AD) compiled herbal, mineral, and humoral medical knowledge — drawing on monastic infirmary practice, German folk medicine, and Hildegard's own visionary insights. The first sustained-scale medical writings by a known female author in the European tradition. Influenced subsequent monastic medicine and German folk-medical practice through the early modern period.",
+
+  'first-successful-cesarean-section':
+    "Pre-modern caesarean section had been fatal to the mother — performed only on already-deceased women to save the baby. Jakob Nufer's caesarean on his wife (1500, in Sigershausen, Switzerland) produced the first credibly recorded living-mother caesarean. Nufer was a sow-gelder by trade — he had surgical experience with farm animals. The first sustained-evidence successful caesarean on a living woman. Living-mother caesareans remained rare and deadly until the 19th-century antiseptic-and-anesthetic revolution.",
+
+  'first-successful-tracheostomy-fabricius':
+    "Pre-tracheostomy airway obstruction had been universally fatal — no way to bypass blocked airway. Hieronymus Fabricius (Padua, ~1600 AD) described and successfully performed the first sustained-evidence tracheostomy — a surgical opening in the trachea below the obstruction. The first sustained-scale airway-rescue procedure. Modern emergency-medicine cricothyroidotomy and elective tracheostomy still use Fabricius's basic anatomical approach.",
+
+  'first-description-of-beriberi':
+    "Beriberi had been endemic across rice-eating Asia for centuries — a wasting disease without recognized cause. Jacob Bonitus (1642, Dutch physician in the East Indies) provided the first European medical description and named the condition (from Sinhalese 'beri-beri,' meaning 'I cannot, I cannot'). The first sustained Western recognition. Eijkman's Java experiments (1880s-1890s) eventually demonstrated the dietary cause — vitamin B1 deficiency. Beriberi is now treatable with thiamine.",
+
+  'first-description-of-rickets-whistler':
+    "Bone deformities in children had been folk-medical observations without formal name. Daniel Whistler (1645, Oxford medical student) provided the first sustained Western medical description of rickets — bowed legs, enlarged joints, soft skull bones. The first sustained Western recognition. Glisson's De Rachitide (1650) elaborated. Vitamin D deficiency (the actual cause) wasn't identified until 1920s. Cod liver oil (vitamin-D-rich) was used for centuries before anyone understood why.",
+
+  'discovery-of-oxygen-priestley':
+    "Pre-Priestley combustion theory had attributed both burning and breathing to release of phlogiston — a hypothetical fire-substance. Joseph Priestley (1774) heated mercuric oxide and collected the gas it released — pure oxygen. Demonstrated that the gas supported combustion (a candle burned brighter) and respiration (mice survived longer). The first sustained-scale isolation of a chemically distinct atmospheric gas. Lavoisier's quantitative analysis (1778) overthrew phlogiston theory. Modern chemistry's foundational discovery.",
 };
 
 async function main(){
