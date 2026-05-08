@@ -2080,6 +2080,81 @@ const BECAUSE_BATCH = {
 
   'judiciary-act-of-1789':
     "The US Constitution (1787) had created a Supreme Court and authorized Congress to establish lower federal courts but hadn't done so. The Judiciary Act of 1789 (signed September 24, 1789) created district courts, circuit courts, and the office of Attorney General. Federal law enforcement against state interpositions became practical. Marbury v. Madison (1803) — the foundational case of judicial review — turned on Section 13 of the Judiciary Act. Modern US federal courts trace their entire institutional structure to the 1789 Act.",
+
+  'patent-act-of-1790':
+    "The US Constitution had authorized Congress to grant patents 'to promote the Progress of Science and useful Arts' but the legislation was needed. The Patent Act of 1790 (signed by Washington April 10, 1790) gave inventors 14-year exclusive rights to make, use, and sell their inventions. Patents were granted by a board of three (Secretary of State, Secretary of War, Attorney General). Thomas Jefferson personally reviewed the first applications. The first sustained federal IP regime in the US. Modern patent law traces its institutional structure here.",
+
+  'reform-act-1832':
+    "Pre-1832 British parliamentary representation had been a corrupt patchwork: 'rotten boroughs' with handfuls of voters elected MPs, while industrial cities (Manchester, Birmingham) had none. The Great Reform Act (June 7, 1832) abolished 56 rotten boroughs, redistributed seats to industrial cities, and standardized property qualifications for voting (£10 householders in towns, expanded rural qualifications). The first sustained reform of British parliamentary representation. Subsequent acts (1867, 1884, 1918, 1928) extended the franchise progressively to universal adult suffrage.",
+
+  'mines-act-1842':
+    "Pre-1842 British coal mines had employed women, girls, and boys as young as 4 underground — pulling tubs, opening trapdoors, in conditions even adult miners found brutal. The Royal Commission's 1842 report (with shocking illustrations of women working naked in narrow seams) provoked public revulsion. The Mines and Collieries Act 1842 banned underground employment of women and girls, and set a minimum age of 10 for boys. The first sustained British workplace-safety legislation. Subsequent Factory Acts extended protections to other industries.",
+
+  'development-of-mortuary-rituals-inheritance-norms':
+    "Pre-mortuary urban populations had stored corpses in homes or temporary spaces — public-health hazard especially during epidemics. The dedicated mortuary as a building type (mid-19th century, 'mortuary' first recorded in English 1865) gave cities organized facilities for short-term corpse storage between death and burial. Combined with new urban cemetery legislation, registry-of-deaths requirements, and modern coroner systems. The institutional infrastructure of urban death management as a distinct civic function begins here.",
+
+  'fourteenth-amendment':
+    "Pre-Reconstruction the US Bill of Rights had constrained only the federal government, not states. The Fourteenth Amendment (ratified July 9, 1868) extended due process and equal protection guarantees to state governments — preventing states from denying citizenship or constitutional rights to former slaves and any other persons within their jurisdiction. The first sustained constitutional restraint on state-level rights violations. Brown v. Board (1954), Loving v. Virginia (1967), Roe v. Wade (1973), Obergefell (2015) — the modern civil-rights jurisprudence is largely Fourteenth Amendment doctrine.",
+
+  'workers-compensation-laws-germany':
+    "Pre-Bismarck workplace injuries had required workers to sue their employers — an expensive, uncertain process most workers couldn't afford. Bismarck's Workers' Accident Insurance Law (1884) created a state-mandated, employer-funded, no-fault insurance system covering medical care and disability for injured workers. The first sustained social insurance system in any modern state. Sickness insurance (1883) and old-age insurance (1889) followed. The German welfare state and its many imitators (Beveridge in Britain, FDR's New Deal) all build on Bismarck's pioneering legislation.",
+
+  'german-civil-code-bgb-enacted':
+    "Pre-1900 Germany's diverse legal regions had each used different civil codes — Roman, Prussian, Saxon, French (Napoleonic Code in the Rhineland). The German Civil Code (Bürgerliches Gesetzbuch, BGB, drafted 1881-1896, effective January 1, 1900) unified German civil law into a single 2,385-section code organized by abstract concepts. The most influential 20th-century civil-law codification. Japanese (1896-98), Greek (1940), Brazilian (2002), and Chinese (2020) civil codes all draw heavily on BGB structure.",
+
+  'nuremberg-laws':
+    "Pre-1935 German Jews had had full civil rights as German citizens. The Nuremberg Laws (Reich Citizenship Law and Law for the Protection of German Blood and German Honor, September 15, 1935) stripped German Jews of citizenship and prohibited marriage between Jews and non-Jews. The first sustained racial-citizenship legislation in a modern European state. Set the legal foundation for subsequent Nazi persecution. The Wannsee Conference (1942) and the Holocaust were lawful in Nazi Germany because of the Nuremberg Laws.",
+
+  'fair-labor-standards-act':
+    "Pre-FLSA US labor had no federal floor — workers in unregulated states earned what employers chose to pay, worked hours employers chose, with no overtime premium. The Fair Labor Standards Act (June 25, 1938, FDR's last major New Deal labor reform) set the federal minimum wage at $0.25/hour, mandated time-and-a-half for overtime above 40 hours/week, and prohibited oppressive child labor. The first sustained federal wage-and-hour law in US history. Modern US employment law's basic framework traces to FLSA.",
+
+  'international-military-tribunal-for-the-far-east-charter':
+    "Pre-IMTFE there had been no legal framework for prosecuting Japanese leaders for Asian-theater war crimes. The IMTFE Charter (April 26, 1946) and the subsequent Tokyo Tribunal (May 1946 - November 1948) tried 28 Class A defendants — including former Prime Minister Tojo — under the same general legal framework as Nuremberg. The first sustained Asian-theater war-crimes prosecution. Controversial then and now (Emperor Hirohito's exemption, the death-by-natural-causes of Class A suspects pre-trial), but established that Japanese leaders, like German ones, faced individual criminal responsibility under international law.",
+
+  'mccarran-internal-security-act':
+    "Cold War legal frameworks for handling Communist organizations in the US had been ad hoc. The McCarran Internal Security Act (September 1950, passed over Truman's veto) required Communist organizations to register with the federal government, established the Subversive Activities Control Board, and authorized internment camps for emergencies. The first sustained Cold War-era anti-Communist legislative framework. Largely struck down by subsequent Supreme Court decisions (Albertson v. SACB, 1965); the registration requirements were judged self-incrimination.",
+
+  'griswold-v-connecticut':
+    "Connecticut's 1879 anti-contraception law had banned the use (not just sale) of contraceptives — even by married couples. Griswold v. Connecticut (June 7, 1965) struck down the law on a 7-2 ruling, with Justice Douglas writing that the Bill of Rights creates 'penumbras' implying a constitutional right to privacy. The first sustained constitutional doctrine of privacy. Eisenstadt v. Baird (1972, contraceptives for unmarried), Roe v. Wade (1973, abortion), Lawrence v. Texas (2003, same-sex intimacy), and Obergefell (2015, same-sex marriage) all build on Griswold's privacy framework.",
+
+  'emergence-of-reciprocal-altruism-enforcement':
+    "Inclusive-fitness theory (Hamilton, 1964) had explained altruism toward kin (genes shared by descent). It couldn't explain the cooperation observed between non-kin in many species. Robert Trivers's 'The Evolution of Reciprocal Altruism' (1971) showed that repeated interactions with the same partners could sustain cooperation through tit-for-tat strategies — even between unrelated individuals. The first sustained Darwinian theory of non-kin cooperation. Game theory, evolutionary psychology, and cultural evolution all built on Trivers's framework.",
+
+  'helsinki-accords':
+    "Cold War East-West relations had handled human rights, security, and economics in separate channels. The Helsinki Final Act (August 1, 1975, signed by 35 states including the US, USSR, and most of Europe) bundled all three into a single agreement: respect for sovereignty, non-aggression, peaceful settlement of disputes, AND respect for human rights. The first sustained inclusion of human rights as a binding component of inter-state relations. Soviet dissident movements used Helsinki to demand domestic compliance; the eventual Soviet collapse owes more to Helsinki than the agreement's original signers anticipated.",
+
+  'national-minimum-drinking-age-act':
+    "US states had set their own drinking ages — many at 18 after the Vietnam-era 'old enough to fight, old enough to drink' arguments. Drunk-driving statistics were terrible. The National Minimum Drinking Age Act (signed July 17, 1984) tied 10% of federal highway funds to state-level enforcement of a 21-year-old minimum. Within five years all 50 states complied. The first sustained federal use of conditional spending to drive state-level public-health regulation. Drunk-driving fatalities dropped substantially.",
+
+  'world-wide-web':
+    "Pre-WWW internet protocols had been task-specific — FTP for files, NNTP for news, SMTP for email. No general-purpose hypertext system tied them together. Tim Berners-Lee at CERN (1989 proposal, 1990 prototype) combined HTTP, HTML, and URL into a unified hypertext system. Released to the public domain by CERN (1993). The first sustained-scale general-purpose hypertext network. Within five years, the web had displaced proprietary online services as the dominant consumer internet experience. Modern internet identity is web identity.",
+
+  'immigration-act-of-1990':
+    "Pre-1990 US immigration had been controlled by 1965 quota system that did not provide much for skilled workers. The Immigration Act of 1990 (signed November 29, 1990) created the H-1B visa for skilled foreign workers in 'specialty occupations' (initially capped at 65,000 annually, raised over time). The first sustained US immigration channel for high-skill technology workers. Silicon Valley's late-20th-century growth was substantially powered by H-1B-admitted Indian, Chinese, and other foreign-born engineers.",
+
+  'european-union-data-protection-directive':
+    "Pre-1995 European data protection had been a patchwork of national laws — multinational companies had to comply with each separately. The EU Data Protection Directive (95/46/EC, October 1995) harmonized rules across the EU: legal grounds for processing personal data, data-subject rights, cross-border transfer limits. The first sustained pan-European data protection regime. GDPR (2018) replaced and substantially expanded it. The single EU regulatory voice on data privacy that gives Brussels-style global influence on tech-company practice begins here.",
+
+  'reno-v-aclu':
+    "The Communications Decency Act (1996) had criminalized 'indecent' online speech — vague enough that the law would chill normal adult discourse. Reno v. ACLU (June 26, 1997) struck down the indecency provisions unanimously, with Justice Stevens writing that the internet deserved the highest level of First Amendment protection. The first sustained Supreme Court ruling on internet speech. Established the legal framework that has held since: online speech receives the same Constitutional protection as print speech.",
+
+  'human-rights-act-1998':
+    "Pre-1998 UK citizens claiming European Convention on Human Rights violations had to litigate at the European Court of Human Rights in Strasbourg — slow, expensive, intimidating. The Human Rights Act 1998 (royal assent November 9, 1998, in force October 2, 2000) made the Convention rights directly enforceable in UK courts. UK judges could (and did) interpret legislation compatibly with Convention rights or, if impossible, declare it incompatible. The first sustained domestic UK incorporation of the Convention. Significantly altered British constitutional practice.",
+
+  'anticybersquatting-consumer-protection-act':
+    "Late-1990s domain-name disputes had grown — speculators registered company names, celebrity names, and trademarks as .com domains and demanded ransom. Trademark law before the ACPA had been ill-suited to address the problem. The Anticybersquatting Consumer Protection Act (signed November 29, 1999) created a federal cause of action against bad-faith domain-name registration and provided streamlined arbitration through ICANN's UDRP process. The first sustained legal regime against domain-name speculation. The web's brand-and-trademark equilibrium has run on these mechanisms since.",
+
+  'sarbanes-oxley-act-2':
+    "Enron (2001) and WorldCom (2002) had collapsed with billions in undetected accounting fraud — Andersen, the auditor, dissolved. Investor confidence in US financial reporting cratered. The Sarbanes-Oxley Act (signed July 30, 2002) required CEO and CFO certification of financial reports, established the Public Company Accounting Oversight Board, and prohibited accounting firms from offering both audit and consulting services to the same client. The first sustained-scale US corporate-accountability legislation since the 1930s. Corporate governance and audit practice have been SOX-shaped ever since.",
+
+  'creative-commons-licenses-launched':
+    "Pre-Creative-Commons content sharing online had been a copyright minefield — every work was 'all rights reserved' by default, with no easy way for creators to grant specific permissions. Lawrence Lessig and the Creative Commons team launched a suite of standardized licenses (December 16, 2002): attribution, share-alike, non-commercial, no-derivatives in various combinations. The first sustained-scale standardized open-content licensing. Wikipedia, Flickr, Khan Academy, and the entire open-education-resources movement run on Creative Commons licenses.",
+
+  'eldred-v-ashcroft':
+    "The Sonny Bono Copyright Term Extension Act (1998) had retroactively added 20 years to existing copyrights — keeping early-1920s works out of public domain. Eric Eldred and a coalition of digital archivists challenged the act under the Copyright Clause's 'limited times' provision. Eldred v. Ashcroft (January 15, 2003) upheld the act 7-2. The Supreme Court ruled that Congress's power to set copyright terms was not constitutionally bounded by efficiency considerations. The decision largely closed off Constitutional challenges to copyright extensions. Modern public-domain advocacy has been operating in the shadow of Eldred for two decades.",
+
+  'un-convention-on-the-rights-of-persons-with-disabilities':
+    "Pre-2006 international human rights treaties had not specifically addressed disability — disabled persons were covered by general non-discrimination provisions only. The UN Convention on the Rights of Persons with Disabilities (adopted December 13, 2006, in force May 3, 2008) shifted the framework from medical treatment to human rights, with explicit obligations on accessibility, autonomy, and full participation. The first sustained international human-rights treaty specifically for disabled persons. Now ratified by 180+ states; the first treaty in which the EU acceded as a party in its own right.",
 };
 
 async function main(){
