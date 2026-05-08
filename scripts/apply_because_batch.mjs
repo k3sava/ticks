@@ -2755,6 +2755,96 @@ const BECAUSE_BATCH = {
 
   'plato-describes-the-five-platonic-solids':
     "Pre-Platonic geometry had identified individual regular polyhedra without classification. Plato's Timaeus (~360 BC) described the five regular convex polyhedra — tetrahedron, cube, octahedron, dodecahedron, icosahedron — and assigned each to a classical element. The first sustained-scale Greek systematic enumeration of regular polyhedra. Euclid's Elements Book XIII (~300 BC) proved formally that there are exactly five. Modern crystallography, virology (icosahedral viruses), and architecture all use Platonic-solid geometry.",
+
+  'aristarchus-heliocentrism':
+    "Pre-Aristarchus Greek astronomy had assumed geocentric cosmology — Earth at center, sun and stars revolving around. Aristarchus of Samos (~270 BC) proposed that Earth orbits the sun and rotates on its axis. The first sustained-scale Greek heliocentric model. Rejected by his contemporaries (parallax wasn't observable; physics seemed to contradict). Survived as a minor tradition through Hellenistic and Islamic astronomy. Copernicus (1543) cited Aristarchus as precedent. The first major Western move from observer-centered to absolute-position-based cosmology.",
+
+  'philo-of-byzantium-pneumatics':
+    "Pre-Philo Greek mechanics had focused on statics. Philo of Byzantium (~250 BC) wrote treatises on pneumatics — air pressure, vacuums, fluid behavior in tubes. The first sustained-scale Greek pneumatic engineering text. Lost in original; survived in Arabic translation. Hero of Alexandria (~62 AD) elaborated and made pneumatics a foundation for Hellenistic automaton design. Modern engineering thermodynamics traces conceptual ancestry through this Hellenistic tradition.",
+
+  'archimedes-screw-for-irrigation':
+    "Pre-Archimedean water-lifting had been by bucket-and-rope or by chain pumps. The Archimedes screw (~250 BC, attributed to Archimedes by tradition though possibly older Egyptian origin) — a helical screw inside a hollow tube, rotated to lift water — gave continuous mechanical water-lifting. The first sustained-scale screw-based water-lifting device. Used in Hellenistic and Roman irrigation, Renaissance Dutch land reclamation, and modern wastewater-treatment plants. The Archimedean principle still works.",
+
+  'archimedes-formulates-buoyancy-law':
+    "Pre-Archimedean fluid behavior had been qualitative. Archimedes's Principle (~246 BC, stated in his On Floating Bodies) gave the law: an object in a fluid experiences an upward buoyant force equal to the weight of fluid it displaces. The first sustained-scale Greek quantitative fluid-statics law. The Eureka story (Archimedes detecting fraud in Hiero's gold crown by measuring water displacement) is probably apocryphal but illustrates the principle. Modern naval architecture, hydraulic engineering, and atmospheric physics all run on Archimedes's principle.",
+
+  'hipparchus-star-catalog':
+    "Pre-Hipparchus Greek astronomy had recorded individual stars without systematic catalog. Hipparchus of Nicaea (~129 BC, working at Rhodes) compiled the first known systematic Greek star catalog — 850+ stars with positions and magnitudes. The first sustained-scale Greek positional astronomy. Discovered the precession of the equinoxes by comparing his observations to older Babylonian records. Lost in original; preserved through Ptolemy's Almagest (~150 AD). Modern astronomy treats Hipparchus's work as the foundational precision-observation tradition.",
+
+  'vitruvius-water-wheel':
+    "Pre-Vitruvian water mills had been horizontal-axis, low-efficiency. Vitruvius's De Architectura (~30 BC, Book X) described the vertical undershot water wheel — water flowed beneath a paddle wheel, turning it. Higher efficiency, easier integration with grinding stones via right-angle gear. The first sustained-scale Roman water-mill engineering description. Roman provincial mills (Barbegal, 100 AD; Hierapolis, 3rd century AD) implemented the design. Medieval European water-power expansion (~9th-12th centuries) ran on Vitruvian-derived watermill technology.",
+
+  'heros-automatic-temple-door':
+    "Pre-Hero automated devices had been simple. Hero of Alexandria's automatic temple door (~62 AD, in his Pneumatica) used fire on a temple altar to heat air in a hidden chamber, expanding it to push water that pulled ropes opening the temple doors. The first sustained-scale Greek thermodynamic automation. Demonstrated principles that were rediscovered nearly two millennia later in steam-engine engineering. Greek and Roman temples used such devices to produce 'miracles' that reinforced religious authority.",
+
+  'zhang-heng-armillary-sphere':
+    "Pre-Zhang-Heng Chinese astronomy had used static armillary spheres for observation. Zhang Heng (Eastern Han China, ~117 AD) built a water-powered armillary sphere — a clockwork-like mechanism that rotated the sphere automatically to track celestial motion. The first sustained-scale Chinese mechanical astronomical clock. Su Song's much more elaborate water-powered astronomical clock (~1090 AD) descends from Zhang Heng's tradition. The Western mechanical-clock tradition (~13th century) also has armillary-sphere ancestors.",
+
+  'zhang-hengs-seismoscope':
+    "Pre-Zhang-Heng earthquakes could only be detected by direct experience. Zhang Heng's seismoscope (~132 AD, in Han China) was a bronze vessel with eight dragons facing eight compass directions, each holding a ball that would drop into a frog's mouth below when an earthquake's seismic waves arrived from that direction. The first sustained-scale earthquake-detection instrument. Allowed remote detection of distant earthquakes. The principle (a pendulum that responds to seismic motion) is still the foundation of modern seismographs.",
+
+  'ptolemys-almagest-star-catalog':
+    "Hipparchus's star catalog (~129 BC) had been lost. Ptolemy's Almagest (~150 AD, in Alexandria) compiled and extended the Greco-Babylonian astronomical tradition into a 13-book treatise — geocentric model, planetary motion via deferents and epicycles, 1,022-star catalog, eclipse predictions. The first sustained-scale Western complete astronomical synthesis. Standard astronomy reference for 1,400 years. Translated into Arabic (al-Majisti, hence 'Almagest'); recovered through Arabic into Latin (12th century). Copernicus's De Revolutionibus (1543) is essentially a heliocentric Almagest.",
+
+  'philoponus-theory-of-impetus':
+    "Aristotelian physics had explained projectile motion through antiperistasis — the air rushing in behind a thrown object pushed it forward. Philoponus (~510 AD, Christian commentator on Aristotle in Alexandria) rejected antiperistasis and proposed impetus theory — the thrower imparts to the projectile an internal impulse that gradually exhausts. The first sustained-scale Western challenge to Aristotelian projectile motion. Influenced medieval Islamic physics (Avicenna, Ibn Bajja) and 14th-century Parisian Buridan-Oresme impetus theory. Galileo's law of inertia (~1610) eventually displaced it.",
+
+  'al-battani-trigonometric-tables':
+    "Pre-Al-Battani astronomical calculations had used cumbersome chord-of-arc geometry. Al-Battani (~900 AD, in Raqqa, Iraq) compiled extensive trigonometric tables — sine, cosine, tangent — replacing chord computations. Improved accuracy of solar-position predictions; refined Ptolemaic constants; introduced standardized astronomical method. The first sustained-scale Islamic trigonometric astronomy. Copernicus and the Renaissance European astronomers used Al-Battani's tables and method. Modern trigonometric notation runs on the conventions Al-Battani helped fix.",
+
+  'al-biruni-specific-gravity-method':
+    "Pre-Al-Biruni density measurement had been by weight estimation. Al-Biruni (~1020 AD, in Khwarezm and India) developed a precise water-displacement method for measuring specific gravity of irregular objects — measured 18 metals and gemstones to four decimal places. The first sustained-scale precision specific-gravity measurement. Influenced subsequent Islamic and European mineralogy. The method itself is essentially what high-school physics students still do.",
+
+  'alhazens-problem-of-reflection':
+    "Pre-Alhazen optics had treated reflection only from flat surfaces. Alhazen's problem (~1021 AD, in his Book of Optics) — given a light source, an observer, and a curved reflecting surface, find the point where the light reflects to reach the observer — was a fundamental geometric optics problem. Alhazen's solution used quartic equations. The first sustained-scale geometric-optics problem about curved-mirror reflection. Major influence on Renaissance European optics (Witelo, Kepler) and the modern study of reflection geometry.",
+
+  'ibn-sinas-canon-of-medicine':
+    "Pre-Ibn-Sina Islamic medicine had been a sprawl of Galenic, Hippocratic, and Indian sources. Ibn Sina (Avicenna)'s Canon of Medicine (~1025 AD, in five books) systematized the lot — anatomy, physiology, pharmacology, pathology, therapeutics — into a single treatise. The first sustained-scale comprehensive Islamic medical encyclopedia. Translated into Latin (Gerard of Cremona, ~1170); standard medical textbook in European universities for 600 years (Padua used it until 1650). Modern medical education's institutional roots run partly through Avicennian Galenism.",
+
+  'song-dynasty-gunpowder-formula':
+    "Pre-Song Chinese pyrotechnics had been folk practice. The Wujing Zongyao (1044 AD, military encyclopedia compiled under imperial sponsorship) recorded three gunpowder formulas — first systematic written records of saltpeter-sulfur-charcoal mixtures with stated proportions for incendiary use. The first sustained-scale recorded gunpowder formulation. Spread west through the Mongol Empire; reached Europe ~1250-1300 AD. Modern firearms, military explosives, and the entire post-medieval transformation of warfare descend from this Song military manual.",
+
+  'averroes-critique-of-ptolemaic-astronomy':
+    "Pre-Averroes Islamic philosophy had been on the defensive after Al-Ghazali's Incoherence (1095). Averroes (Ibn Rushd, ~1170 AD, Cordoba) wrote three philosophical commentaries on Aristotle and the Incoherence of the Incoherence (1180), defending Aristotelian rationalism against Ghazalian theological critique. The first sustained-scale Islamic philosophical defense of philosophy as legitimate against theological objections. Translated into Latin and Hebrew; influenced European Latin Averroism and Jewish philosophy (Maimonides). Mainstream Islamic theology after Averroes generally followed Al-Ghazali, not him.",
+
+  'tusi-couple':
+    "Pre-Tusi Greek astronomy had used the equant — a mathematical construct that violated the principle of uniform circular motion. Nasir al-Din al-Tusi's Tusi couple (1247, in Maragheh observatory) used two circular motions to produce linear motion without an equant. The first sustained-scale geometric construction generating linear motion from circular motion alone. Mathematically equivalent to construction Copernicus would use 250 years later. Whether Copernicus knew Tusi's work is debated; the geometric overlap is striking.",
+
+  'malpighi-capillary-discovery':
+    "Harvey's circulation theory (1628) had required tiny vessels connecting arteries to veins but couldn't observe them — too small for the naked eye. Marcello Malpighi (1661, using newly improved microscopes) directly observed capillaries in the lungs of frogs. The first sustained-scale direct observation of capillary blood flow. Completed the Harvey circulation hypothesis empirically. Modern microscopy, histology, and the cellular-level vascular research that followed all build on Malpighi's foundation.",
+
+  'fahrenheit-mercury-thermometer':
+    "Pre-Fahrenheit thermometers had used water or alcohol — limited temperature range, inconsistent calibration. Daniel Fahrenheit (1714, in the Netherlands) used mercury — wide temperature range, consistent expansion behavior — and standardized a calibration scale (zero at the freezing point of brine, 96 at body temperature, refined to 32/212 for water freezing/boiling). The first sustained-scale precision thermometer. Modern thermometry, calorimetry, and the entire modern temperature-measurement tradition trace through Fahrenheit's mercury innovation.",
+
+  'linnaeus-systema-naturae':
+    "Pre-Linnaean naturalists had labeled species with multi-word descriptive Latin phrases that varied by author. Linnaeus's Systema Naturae (1735, expanded across editions) introduced binomial nomenclature — every species gets a unique two-word Latin name (Genus species). The 10th edition (1758) extended consistent binomial usage to all known animals. The taxonomic Big Bang. Every species, living or fossil, since carries a Linnaean binomial. The 1758 edition is the official starting point for zoological nomenclature.",
+
+  'leblanc-process':
+    "Pre-Leblanc soda ash (sodium carbonate, used for glass, soap, and textiles) had been derived from plant ashes (barilla, kelp) — limited supply, expensive, geographically constrained. Nicolas Leblanc's process (1791, in Paris) used sulfuric acid on salt to make sodium sulfate, then heated with charcoal and limestone. The first sustained-scale industrial soda-ash production. Underpinned the early-19th-century European chemical industry. Solvay process (1861) eventually displaced Leblanc, but the principle of mass-producing essential industrial chemicals begins here.",
+
+  'daguerreotype-photography':
+    "Same daguerreotype, alternate ID. Louis Daguerre's 1839 announcement of his photographic process — silver-iodide-coated copper plates exposed in a camera obscura, developed with mercury vapor — produced sharp images in twenty-minute exposures. Within a decade, portrait studios in every major city. The first commercially viable photographic technology. Hand-drawing as the only way to record a visual scene was over.",
+
+  'joules-paddle-wheel-experiment':
+    "Pre-Joule heat and work had been treated as separate phenomena — heat as the conserved 'caloric' fluid, mechanical work as something different. James Joule's paddle-wheel experiment (1843, refined through 1849) measured the mechanical work needed to raise the temperature of water — established the mechanical equivalent of heat. The first sustained-scale empirical proof that heat is a form of energy. Foundation of the first law of thermodynamics. Modern energy concepts and the entire physical chemistry of energy transformations rest on Joule's experiments.",
+
+  'teslas-polyphase-ac-induction-motor':
+    "Pre-Tesla AC power had been impractical — early AC generators couldn't drive useful motors. Nikola Tesla's polyphase AC induction motor (patented 1888, sold to Westinghouse) used rotating magnetic fields produced by multi-phase AC to induce currents in a rotor, producing torque without brushes or commutators. The first sustained-scale practical AC motor. Made long-distance AC power transmission economically viable. The 1893 Niagara Falls hydroelectric project demonstrated the system at scale; modern global electric power generation runs on Tesla's AC architecture.",
+
+  'millikans-oil-drop-experiment':
+    "Pre-Millikan electron charge had been estimated theoretically. Robert Millikan's oil-drop experiment (1909, with Harvey Fletcher) measured electron charge directly — observing how electric fields affected falling charged oil droplets. The charge was quantized at multiples of a fundamental unit. The first sustained-scale precision measurement of fundamental electric charge. Confirmed the quantization of electricity at the elementary level. Modern atomic physics and our understanding of charge as discrete unit rest on this experimental foundation.",
+
+  'dirac-equation-formulated':
+    "Schrödinger's wave equation (1926) had been non-relativistic. Paul Dirac's 1928 equation combined quantum mechanics with special relativity for the electron — and predicted the existence of antiparticles (the positron, observed by Anderson in 1932) as a consequence of the equation's negative-energy solutions. The first sustained-scale relativistic quantum-mechanical equation. Foundational for quantum field theory and the Standard Model. Modern particle physics and quantum electrodynamics all rest on Dirac's framework.",
+
+  'discovery-of-technetium':
+    "Pre-Perrier-Segrè every chemical element had been a natural occurrence. Carlo Perrier and Emilio Segrè (1937, at the University of Palermo) artificially synthesized technetium — element 43 — by bombarding molybdenum with deuterons. The first artificially synthesized chemical element. Subsequent transuranium elements (neptunium, plutonium, on through to oganesson at 118) all extended the artificial-synthesis tradition. Modern nuclear chemistry's foundational achievement.",
+
+  'josephson-effect':
+    "Pre-Josephson superconducting quantum effects had been understood individually. Brian Josephson's prediction (1962, while a Cambridge graduate student) showed that quantum tunneling across a thin insulating barrier between two superconductors produces a supercurrent at zero applied voltage and an alternating current at constant voltage. The first sustained-scale practical exploitation of macroscopic quantum effects. SQUID magnetometers, the volt standard, and modern quantum-computing qubits all use Josephson junctions. Nobel 1973.",
+
+  'geostationary-satellite':
+    "Pre-geostationary satellite communications had relied on ground relays. Syncom 2 (1963, Hughes Aircraft, NASA) was the first satellite to achieve geostationary orbit — 35,786 km altitude, where orbital period matches Earth's rotation, so the satellite appears stationary. The first sustained-scale geostationary communications platform. Continuous global communication links became practical with three or four geostationary satellites covering the globe. Modern television broadcast, weather monitoring, and many GPS-replacement positioning systems all run on geostationary infrastructure.",
 };
 
 async function main(){
