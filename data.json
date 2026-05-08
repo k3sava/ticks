@@ -31815,7 +31815,7 @@
           "url": "https://en.wikipedia.org/wiki/Egyptian_numerals"
         }
       ],
-      "because": "Pre-Egyptian numeration had been tally marks on bone (Lebombo, Ishango). Egyptian hieroglyphic numerals (~3000 BC) used distinct signs for 1, 10, 100, 1,000, 10,000, 100,000, and 1,000,000 — a base-10 additive system that could represent arbitrarily large numbers. The first systematic numeration with explicit place values. Egyptian state record-keeping (taxation, granary inventories, pharaonic monumental construction) all depended on the new numeric infrastructure."
+      "because": "Pre-Egyptian numeration had been tally marks on bone (Lebombo, Ishango). Egyptian hieroglyphic numerals (~3000 BC) used distinct signs for 1, 10, 100, 1,000, 10,000, 100,000, and 1,000,000 — a base-10 additive system (not yet positional) that could represent arbitrarily large numbers. The first sustained-scale state numeration with named powers of ten. Egyptian state record-keeping (taxation, granary inventories, pharaonic monumental construction) all depended on the new numeric infrastructure."
     },
     {
       "id": "abacus",
