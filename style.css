@@ -310,33 +310,49 @@ img,svg{display:block;max-width:100%}
 #nav a:hover{color:var(--ink)}
 #nav a.active{color:var(--ink);background:color-mix(in oklab,var(--accent) 12%,transparent)}
 .hdr-right{display:flex;align-items:center;gap:10px}
-#randomBtn,#randomBtnMobile{
-  font-family:var(--sans);font-size:.82rem;color:var(--ink-2);
-  padding:7px 14px;border-radius:999px;
+#randomBtn{
+  width:34px;height:34px;display:flex;align-items:center;justify-content:center;
+  color:var(--ink-2);border-radius:999px;
   background:var(--glass-thin-bg);
   -webkit-backdrop-filter:var(--glass-thin-blur);
           backdrop-filter:var(--glass-thin-blur);
   box-shadow:inset 0 1px 0 0 var(--glass-edge), inset 0 0 0 1px var(--line-2);
-  transition:color .15s, background .2s, box-shadow .2s;
+  transition:color .15s, background .2s, box-shadow .2s, transform .25s var(--ease-quick);
 }
-#randomBtn:hover,#randomBtnMobile:hover{
+#randomBtn:hover{
   color:var(--accent);
   background:color-mix(in oklab, var(--accent) 14%, var(--glass-thin-bg));
   box-shadow:
     inset 0 1px 0 0 var(--glass-edge-strong),
     inset 0 0 0 1px color-mix(in oklab, var(--accent) 35%, var(--line-2)),
     0 6px 18px -8px color-mix(in oklab, var(--accent) 50%, transparent);
+  transform:rotate(-14deg);
 }
+#randomBtn:active{transform:rotate(-24deg) scale(.95)}
+#randomBtnMobile{
+  font-family:var(--sans);font-size:.95rem;color:var(--ink-2);
+  padding:10px 14px;border-radius:8px;text-align:left;
+  background:transparent;
+  transition:color .15s, background .2s;
+}
+#randomBtnMobile:hover{color:var(--accent)}
 #themeBtn{
-  width:34px;height:34px;display:flex;align-items:center;justify-content:center;
-  color:var(--muted);border-radius:999px;transition:color .15s,background .15s;
+  height:34px;display:flex;align-items:center;justify-content:center;gap:6px;
+  padding:0 12px;color:var(--muted);border-radius:999px;
+  transition:color .15s,background .15s,box-shadow .15s;
+}
+.theme-label{
+  font-family:var(--mono);font-size:.7rem;letter-spacing:.04em;
+  color:var(--ink-2);
 }
 #themeBtn:hover{
   color:var(--ink);
   background:var(--glass-thin-bg);
   -webkit-backdrop-filter:var(--glass-thin-blur);
           backdrop-filter:var(--glass-thin-blur);
+  box-shadow:inset 0 0 0 1px var(--line-2);
 }
+#themeBtn:hover .theme-label{color:var(--accent)}
 #menuBtn{display:none;width:36px;height:36px;align-items:center;justify-content:center;color:var(--ink-2);border-radius:8px}
 
 /* Mobile menu */

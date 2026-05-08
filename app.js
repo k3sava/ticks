@@ -2151,6 +2151,7 @@ const THEMES = ['light', 'dark', 'matrix', 'drone'];
 const THEME_BG = { light: '#F4EFE6', dark: '#0A0A0F', matrix: '#040806', drone: '#D5E0E8' };
 function bindTheme(){
   const btn = document.getElementById('themeBtn');
+  const label = document.getElementById('themeLabel');
   const apply = (t) => {
     if (t) document.documentElement.dataset.theme = t;
     else delete document.documentElement.dataset.theme;
@@ -2162,6 +2163,10 @@ function bindTheme(){
       const sysDark = matchMedia('(prefers-color-scheme: dark)').matches;
       const eff = t || (sysDark ? 'dark' : 'light');
       meta.setAttribute('content', THEME_BG[eff] || THEME_BG.dark);
+    }
+    if (label){
+      const sysDark = matchMedia('(prefers-color-scheme: dark)').matches;
+      label.textContent = t || (sysDark ? 'dark' : 'light');
     }
   };
   try { const saved = localStorage.getItem('ticks-theme'); if (saved) apply(saved); else apply(null); } catch(e){}
