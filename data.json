@@ -46731,7 +46731,8 @@
           "label": "Wikipedia: Ethernet commercial introduction",
           "url": "https://en.wikipedia.org/wiki/Ethernet"
         }
-      ]
+      ],
+      "because": "Pre-Ethernet local-area networking had been a Babel of incompatible proprietary protocols (DECnet, Token Ring, ARCnet). Ethernet (developed at Xerox PARC by Metcalfe and Boggs, 1973; commercialized via the DEC-Intel-Xerox standard, 1980) used a shared cable with collision detection (CSMA/CD). The first sustained-scale open LAN standard. By the late 1980s most office networks ran Ethernet; the IEEE 802.3 standard (1983) and Gigabit/10G/100G extensions kept it dominant. Modern LANs and the campus-network internet edge run on Ethernet."
     },
     {
       "id": "fullerenes-discovered",
@@ -46797,7 +46798,8 @@
           "label": "Wikipedia: Shor's algorithm for integer factorization",
           "url": "https://en.wikipedia.org/wiki/Shor%27s_algorithm"
         }
-      ]
+      ],
+      "because": "Pre-Shor RSA encryption had been considered secure because integer factorization on classical computers takes super-polynomial time. Peter Shor's algorithm (1994) showed that a quantum computer could factor large integers in polynomial time — breaking RSA in principle. The first sustained-scale practical demonstration of quantum computational advantage. Built-out quantum computers capable of running Shor on cryptographically meaningful integers don't yet exist (2024), but the algorithm sparked the post-quantum cryptography research program. Modern cryptographic agility planning treats Shor as an inevitable threat."
     },
     {
       "id": "bose-einstein-condensate-created",
@@ -46915,7 +46917,8 @@
           "label": "Wikipedia: LIGO directly observes gravitational waves",
           "url": "https://en.wikipedia.org/wiki/First_observation_of_gravitational_waves"
         }
-      ]
+      ],
+      "because": "Einstein's general relativity (1915) had predicted gravitational waves — ripples in spacetime caused by accelerating masses — but they were too weak to detect for a century. LIGO (Laser Interferometer Gravitational-Wave Observatory, after Advanced LIGO upgrade) detected the merger of two black holes on September 14, 2015 (announced February 2016). The first sustained-scale direct gravitational-wave observation. Subsequent LIGO and Virgo detections have observed dozens of black-hole and neutron-star mergers. Multi-messenger astronomy (gravitational waves plus electromagnetic) opened in August 2017. 2017 Nobel."
     },
     {
       "id": "deepminds-wavenet-generates-human-like-speech",
@@ -46981,7 +46984,8 @@
           "label": "Wikipedia: Burial with grave goods at Qafzeh Cave",
           "url": "https://en.wikipedia.org/wiki/Qafzeh_Cave"
         }
-      ]
+      ],
+      "because": "Pre-Qafzeh-Skhul burials had been simple inhumation. The Qafzeh Cave burials (~100,000 BC, Mount Carmel, Israel) included anatomically modern humans interred with deer-antler grave goods — possibly the oldest evidence of intentional burial with grave goods. The first sustained archaeological evidence of symbolic afterlife belief among modern humans. Whether earlier Neanderthals also buried their dead deliberately is debated; the Qafzeh evidence is the deepest unambiguous case for modern-human ritual burial."
     },
     {
       "id": "murujuga-petroglyphs",
@@ -47013,7 +47017,8 @@
           "label": "Wikipedia: Lion-man figurine",
           "url": "https://en.wikipedia.org/wiki/Lion-man"
         }
-      ]
+      ],
+      "because": "Same Lion-man, alternate ID. The Löwenmensch figurine from Hohlenstein-Stadel cave (~40,000 BC, southern Germany) is the oldest confirmed three-dimensional anthropozoomorphic sculpture — a human body with a lion's head, carved from mammoth ivory. The first depicted being that doesn't exist in nature. Indicates fully developed symbolic and counterfactual cognition in Aurignacian Europe."
     },
     {
       "id": "venus-figurines-tradition",
@@ -47097,7 +47102,8 @@
           "label": "Wikipedia: Göbekli Tepe monumental complex built",
           "url": "https://en.wikipedia.org/wiki/G%C3%B6bekli_Tepe"
         }
-      ]
+      ],
+      "because": "Pre-Göbekli-Tepe monumental architecture had been associated with settled agriculture. Göbekli Tepe (~9500 BC, southeastern Turkey) was a massive megalithic enclosure — multi-ton T-shaped pillars carved with animals — built by hunter-gatherers. The first sustained-scale ritual architecture, predating agriculture by 2,000 years. Inverted the standard 'agriculture causes civilization' narrative. Excavations from 1995, popularized by Klaus Schmidt, transformed our understanding of Neolithic origins."
     },
     {
       "id": "domestication-of-cattle-for-ritual-sacrifice",
@@ -47164,7 +47170,8 @@
           "label": "Wikipedia: Plastered human skulls at Jericho",
           "url": "https://en.wikipedia.org/wiki/Plastered_human_skulls"
         }
-      ]
+      ],
+      "because": "Pre-plastered-skull burials had inhumated bodies whole or excarnated for secondary burial. Jericho's PPNB community (~7000 BC) removed the skulls of select dead, plastered the faces with lime to model lifelike features, set cowrie shells in the eye sockets, and kept the skulls in the houses of the living. The first sustained-scale evidence of ancestor veneration through physical preservation. Practice spread across the Levantine PPNB. Modern archaeological research treats it as the deepest known evidence of named-ancestor cults."
     },
     {
       "id": "first-known-priestly-class-temple-of-eridu",
@@ -47180,7 +47187,8 @@
           "label": "Wikipedia: Priestly class at Temple of Eridu",
           "url": "https://en.wikipedia.org/wiki/Eridu"
         }
-      ]
+      ],
+      "because": "Pre-Eridu sacred specialists had been part-time, non-hierarchical. The Temple of Eridu (~5400 BC, in southern Sumer, the world's oldest known continuously occupied city) had a dedicated priesthood — full-time religious specialists separate from agricultural production. The first sustained-scale priestly class in the historical record. Eridu's priesthood-and-temple model became the template for later Mesopotamian city-states; the institutional structure of all subsequent Eurasian temple-religious traditions traces back here."
     },
     {
       "id": "first-known-writing-of-religious-texts-uruk-iv",
@@ -47281,7 +47289,8 @@
           "label": "Wikipedia: Code of Hammurabi enshrines divine mandate for law",
           "url": "https://en.wikipedia.org/wiki/Code_of_Hammurabi"
         }
-      ]
+      ],
+      "because": "Pre-Hammurabi Mesopotamian law had been written but lacked explicit divine grounding. The Code of Hammurabi (~1754 BC, on a black stone stele) is prefaced with a depiction of the king receiving the laws from the sun-god Shamash. The first sustained-scale explicit framing of human legal authority as divine mandate. Subsequent Near Eastern legal codes (Hittite, Mosaic, Canaanite) all use the divine-mandate framing. Modern political theology's longest-running rhetorical move (the divine-right of kings, 'In God We Trust' on coinage) traces conceptually here."
     },
     {
       "id": "babylonian-atrahasis-epic",
@@ -47314,7 +47323,8 @@
           "label": "Wikipedia: Rigveda compilation",
           "url": "https://en.wikipedia.org/wiki/Rigveda"
         }
-      ]
+      ],
+      "because": "Pre-Rigveda Indo-Aryan religious practice had been transmitted orally without canonical fixation. The Rigveda (compiled ~1500 BC, in 1,028 hymns to various deities) was the first canonical Vedic text — preserved through unparalleled feats of oral transmission (the Padapatha and Krama Patha memorization techniques) for over 3,000 years before any written copy. The first sustained-scale Indian religious canon. Foundation of Vedic ritual, Sanskrit philology, Hindu metaphysics. The longest-preserved oral tradition in human history."
     },
     {
       "id": "akhenaten-egyptian-solar-monotheism",
@@ -47330,7 +47340,8 @@
           "label": "Wikipedia: Akhenaten introduces Atenism",
           "url": "https://en.wikipedia.org/wiki/Akhenaten"
         }
-      ]
+      ],
+      "because": "Pre-Akhenaten Egyptian religion had been polytheistic — hundreds of gods with distinct cults and temples. Akhenaten (Pharaoh ~1353-1336 BC) imposed exclusive worship of Aten (the solar disk), closed traditional temples, and moved the capital to a new city (Akhetaten/Amarna). The first sustained-scale state-imposed exclusive monotheism in any ancient society. His successors restored polytheism almost immediately. Whether Akhenaten's brief monotheism influenced later Hebrew theology (Freud's Moses and Monotheism, 1939) is debated."
     },
     {
       "id": "zoroasters-revelation",
@@ -47346,7 +47357,8 @@
           "label": "Wikipedia: Zoroaster's revelation of cosmic dualism",
           "url": "https://en.wikipedia.org/wiki/Zoroaster"
         }
-      ]
+      ],
+      "because": "Pre-Zoroastrian Iranian religion had been polytheistic. Zoroaster (Zarathustra, preaching probably ~1500-1000 BC, with traditional date now revised) taught a cosmic dualism — Ahura Mazda (truth) opposing Angra Mainyu (the lie), with humans choosing sides through their actions. The first sustained-scale ethical-cosmic dualism. Influenced Second-Temple Judaism, Christianity, Islam, and Manichaeism. Concepts including heaven, hell, judgment, and the messiah have Zoroastrian fingerprints."
     },
     {
       "id": "zarathustras-gathas",
@@ -47379,7 +47391,8 @@
           "label": "Wikipedia: Yijing (I Ching) divination text",
           "url": "https://en.wikipedia.org/wiki/I_Ching"
         }
-      ]
+      ],
+      "because": "Pre-Yijing Chinese divination had used oracle bones (Shang dynasty) — restricted to royal-court specialists. The Yijing (~750 BC, with hexagram-based system attributed to King Wen and Duke Zhou) gave commoners a divination tool — sixty-four hexagrams, accessed by random procedures (yarrow stalks, then coins). The first sustained-scale democratized Chinese divination system. Confucius edited the Ten Wings commentaries (~500 BC). The Yijing has remained in continuous use for 2,500+ years; modern East Asian decision-making and even some Western applications use it."
     },
     {
       "id": "sramana-movement-emergence",
@@ -47395,7 +47408,8 @@
           "label": "Wikipedia: Śramaṇa movement emergence",
           "url": "https://en.wikipedia.org/wiki/%C5%9Arama%E1%B9%87a"
         }
-      ]
+      ],
+      "because": "Pre-Śramaṇa Indian religious life had been controlled by hereditary Brahmin priesthood. The Śramaṇa movement (~700 BC, includes Buddhist, Jain, Ajivika, Cārvāka traditions) opened spiritual practice to renunciants from any caste — the heterodox traditions that rejected Vedic authority and the caste system. The first sustained-scale challenge to Brahmin spiritual monopoly. Buddhism and Jainism (both ~500 BC) emerged from this milieu. Indian religious diversity and the eventual Buddhist-Jain spread across Asia all begin in the Śramaṇa wave."
     },
     {
       "id": "deuteronomy-law-code",
@@ -47411,7 +47425,8 @@
           "label": "Wikipedia: Deuteronomy law code centralizes worship",
           "url": "https://en.wikipedia.org/wiki/Book_of_Deuteronomy"
         }
-      ]
+      ],
+      "because": "Pre-Deuteronomy Israelite religious practice had been local — many altars, many regional cults. King Josiah's reform (~622 BC, after a 'discovered' law scroll claimed during temple repairs — likely an early version of Deuteronomy) centralized all sacrificial worship at the Jerusalem temple. The first sustained-scale Israelite religious centralization. Prepared the institutional structure that survived the Babylonian exile (587 BC) and the Second-Temple period. The Deuteronomistic theology of Yahwistic exclusivity becomes the dominant Israelite religious framework."
     },
     {
       "id": "babylonian-ishtar-gate-dedication",
@@ -47427,7 +47442,8 @@
           "label": "Wikipedia: Ishtar Gate dedicated by Nebuchadnezzar II",
           "url": "https://en.wikipedia.org/wiki/Ishtar_Gate"
         }
-      ]
+      ],
+      "because": "Pre-Ishtar-Gate Mesopotamian gates had been functional. Nebuchadnezzar II's Ishtar Gate (dedicated 569 BC) was a public religious-political statement — glazed-brick gateway covered with depictions of Ishtar's lion, Marduk's mushhushshu dragon, Adad's bull. The first sustained-scale fully decorated city gate as integrated religious-political art. Pergamon Museum reconstruction shows the original; influenced Persian, Hellenistic, and Roman triumphal-arch architecture. Modern monumental civic design's rich ancestry traces partly here."
     },
     {
       "id": "pythagorean-community",
@@ -47443,7 +47459,8 @@
           "label": "Wikipedia: Pythagorean community founded at Croton",
           "url": "https://en.wikipedia.org/wiki/Pythagoreanism"
         }
-      ]
+      ],
+      "because": "Pre-Pythagorean Greek philosophy had separated mathematical and religious practice. Pythagoras's community at Croton (~530 BC) integrated rational mathematics, dietary discipline, music, and ascetic spiritual practice into a single way of life. The first sustained-scale Western mathematical-religious community. Influenced Plato heavily (the Academy adopted Pythagorean elements). Modern monastic-academic combinations (Cluny in the medieval West, Buddhist universities in India) all have functional resemblance to the Pythagorean model."
     },
     {
       "id": "ajivika-fatalism-school",
@@ -47459,7 +47476,8 @@
           "label": "Wikipedia: Ājīvika school of absolute fatalism",
           "url": "https://en.wikipedia.org/wiki/%C4%80j%C4%ABvika"
         }
-      ]
+      ],
+      "because": "Pre-Ajivika Indian religious-philosophical traditions had treated karma as moral causality — actions producing consequences for the actor. The Ājīvika school (~500 BC, founded by Makkhali Gosala) taught absolute fatalism — niyati determines all events, ethical effort is futile. The first sustained-scale absolute-fatalism doctrine in Indian philosophy. Buddhist and Jain texts treat the Ajivikas as one of the major rival schools of the Śramaṇa era. Although Ajivika traditions died out by the 14th century, modern scholarship recovers them as one of the ancient world's most uncompromising determinist positions."
     },
     {
       "id": "first-buddhist-council-rajgir",
@@ -47475,7 +47493,8 @@
           "label": "Wikipedia: First Buddhist council at Rajgir",
           "url": "https://en.wikipedia.org/wiki/Buddhist_councils"
         }
-      ]
+      ],
+      "because": "The Buddha's parinirvana (~486 BC) had left his teachings without canonical fixation. The First Buddhist Council at Rajgir (~483 BC, sponsored by Magadhan king Ajatashatru) gathered 500 senior monks to compile the Vinaya (monastic code) and Sutta (discourses). Ananda recited the Suttas; Upali recited the Vinaya. The first sustained-scale canonization of Buddhist teaching. Subsequent councils (Vaishali ~383 BC; Pataliputra ~250 BC; Sri Lanka ~29 BC) extended the canon. The Pali Canon's eventual written form (Sri Lanka, 1st century BC) builds on this council tradition."
     },
     {
       "id": "dao-de-jing-composed",
@@ -47491,7 +47510,8 @@
           "label": "Wikipedia: Dao De Jing composed",
           "url": "https://en.wikipedia.org/wiki/Tao_Te_Ching"
         }
-      ]
+      ],
+      "because": "Pre-Daoist Chinese spiritual practice had been Confucian ritualism. The Dao De Jing (~400 BC, traditionally attributed to Laozi but probably compiled from earlier oral tradition) was the first sustained-scale Daoist philosophical text — wu wei (effortless action), naturalness (ziran), the way (dao) as the source of all things. The first sustained-scale Daoist-philosophical canon. Combined with the Zhuangzi (~350 BC), provides the philosophical foundation of religious Daoism. Modern global Western interest in Daoism (Watts, Capra, ecological thinking) draws primarily on the Dao De Jing."
     },
     {
       "id": "cynic-cosmopolitanism",
@@ -47507,7 +47527,8 @@
           "label": "Wikipedia: Cynic rejection of polis-based identity",
           "url": "https://en.wikipedia.org/wiki/Cynicism_%28philosophy%29"
         }
-      ]
+      ],
+      "because": "Pre-Cynic Greek religious-civic identity had been polis-based — religious obligations and ethical norms tied to specific city-states. Diogenes the Cynic (~400 BC, in Athens and Corinth) declared himself a kosmopolites — citizen of the world — and rejected polis-based identity entirely. The first sustained-scale cosmopolitan ethical-religious stance in the Western tradition. Influenced Stoic universalism; the modern liberal-cosmopolitan tradition (from Kant onward) treats Diogenes as institutional ancestor."
     },
     {
       "id": "second-buddhist-council-vaishali",
@@ -47523,7 +47544,8 @@
           "label": "Wikipedia: Second Buddhist council resolves Vinaya disputes",
           "url": "https://en.wikipedia.org/wiki/Buddhist_councils"
         }
-      ]
+      ],
+      "because": "The First Buddhist Council (~483 BC) had compiled the Buddha's teachings. The Second Council at Vaishali (~383 BC, ~100 years after the Buddha's death) addressed disputes about ten Vinaya rules — what monastic practices were acceptable. The first sustained-scale Buddhist schism: traditionalist Sthaviravada vs. reformist Mahasamghika. Out of the Mahasamghika tradition eventually emerged Mahayana Buddhism (~1st century BC), which would become the dominant form in East Asia. The Sthaviravada tradition gave rise to Theravada (Sri Lanka, Southeast Asia)."
     },
     {
       "id": "tao-te-ching-composed",
@@ -47539,7 +47561,8 @@
           "label": "Wikipedia: Tao Te Ching composed",
           "url": "https://en.wikipedia.org/wiki/Tao_Te_Ching"
         }
-      ]
+      ],
+      "because": "Same Daoist canon, alternate ID. The Dao De Jing (~350 BC, in its surviving form) — 81 short verses on the Way, virtue, governance through non-coercion. Standard Daoist scripture for 2,400 years. The most-translated work of Chinese literature. Modern Daoist religious practice, Chan/Zen Buddhism, and Western environmental ethics all draw on Dao De Jing's metaphysics of natural spontaneity."
     },
     {
       "id": "aristotles-unmoved-mover",
@@ -47555,7 +47578,8 @@
           "label": "Wikipedia: Aristotle's unmoved mover",
           "url": "https://en.wikipedia.org/wiki/Unmoved_mover"
         }
-      ]
+      ],
+      "because": "Pre-Aristotelian Greek theology had imagined gods as anthropomorphic beings with passions and family relationships. Aristotle's Metaphysics Book Lambda (~340 BC) proposed an Unmoved Mover — an immaterial, eternal, perfect being that causes motion not by acting but by being the object of love and aspiration. The first sustained-scale Western philosophical-theological abstraction. Influenced Christian, Islamic, and Jewish medieval theology (Aquinas, Avicenna, Maimonides all adapt the Unmoved Mover for monotheistic purposes). Modern philosophical theology still treats Aristotle's Unmoved Mover as a foundational reference."
     },
     {
       "id": "septuagint-translation-begun",
@@ -47571,7 +47595,8 @@
           "label": "Wikipedia: Septuagint translation begun",
           "url": "https://en.wikipedia.org/wiki/Septuagint"
         }
-      ]
+      ],
+      "because": "Pre-Septuagint Hebrew scripture had been accessible only to Hebrew readers. The Septuagint translation (begun ~250 BC under Ptolemy II Philadelphus, completed by ~150 BC) rendered the Hebrew Bible into koine Greek for Alexandria's Greek-speaking Jewish community. The first sustained-scale Bible translation. Made the Hebrew scriptures accessible to Hellenistic-Jewish, then early Christian, and eventually global audiences. Modern biblical scholarship still uses the Septuagint as a key textual witness alongside the Masoretic Hebrew."
     },
     {
       "id": "confucian-analects-compiled",
@@ -47587,7 +47612,8 @@
           "label": "Wikipedia: Analects achieve final form",
           "url": "https://en.wikipedia.org/wiki/Analects"
         }
-      ]
+      ],
+      "because": "Same Confucian Analects, alternate ID. By the early Han period (~206 BC), the Analects had reached its final canonical form — twenty books of sayings and dialogues. Standard examination text for Chinese imperial bureaucracy from Han through Qing. Modern East Asian ethical-political thought still draws directly on Analects vocabulary (junzi, ren, li, xiao)."
     },
     {
       "id": "skeptic-epoche-suspension",
@@ -47603,7 +47629,8 @@
           "label": "Wikipedia: Aenesidemus founds Pyrrhonism",
           "url": "https://en.wikipedia.org/wiki/Pyrrhonism"
         }
-      ]
+      ],
+      "because": "Pre-Aenesidemus Greek skepticism had been Academic — uncertain about specific knowledge claims. Aenesidemus (~100 BC, in Alexandria) revived Pyrrhonian skepticism — argued that all dogmatic claims could be balanced with equally good counterarguments, leading to epoche (suspension of judgment) and ataraxia (tranquility). The first sustained-scale Western philosophical handbook of skeptical method. Sextus Empiricus's later codification (~150 AD) is the surviving form. The modern philosophical-skepticism tradition (Montaigne, Hume) directly descends from Aenesidemus's revival."
     },
     {
       "id": "pali-canon-written-down-in-sri-lanka",
@@ -47636,7 +47663,8 @@
           "label": "Wikipedia: Excommunication",
           "url": "https://en.wikipedia.org/wiki/Excommunication"
         }
-      ]
+      ],
+      "because": "Pre-Christian religious communities had no formal expulsion mechanism. Pauline letters (~50-60 AD) describe the practice of expelling unrepentant sinners from the Christian community — the institutional ancestor of formal excommunication. The first sustained-scale formalized religious-community expulsion. Catholic, Orthodox, and Protestant traditions all developed elaborated excommunication procedures. Modern sociological theories of community boundary maintenance treat excommunication as the deepest case of religious-institutional sanction."
     },
     {
       "id": "montanism-founded-by-montanus",
@@ -47652,7 +47680,8 @@
           "label": "Wikipedia: Montanism founded by Montanus",
           "url": "https://en.wikipedia.org/wiki/Montanism"
         }
-      ]
+      ],
+      "because": "Pre-Montanist Christianity had become institutionally regularized — bishops, episcopal succession, doctrinal authority. Montanus's prophetic movement (~156 AD, in Phrygia) reasserted continuing direct prophetic revelation against episcopal authority — Montanus and his followers (especially Maximilla and Priscilla) claimed direct possession by the Paraclete. The first sustained-scale Christian charismatic-prophetic challenge to institutional authority. Tertullian eventually joined Montanism. Mainline Christianity declared Montanism heretical, but the prophetic-charismatic tradition has recurred (Quaker direct inspiration, Pentecostal speaking in tongues)."
     },
     {
       "id": "zoroastrian-avesta-compiled",
@@ -47668,7 +47697,8 @@
           "label": "Wikipedia: Sasanian compilation of the Avesta",
           "url": "https://en.wikipedia.org/wiki/Avesta"
         }
-      ]
+      ],
+      "because": "Pre-compilation Zoroastrian scripture had been transmitted orally for over a millennium — at risk of corruption or loss. The Sasanian dynasty (224 AD onward, especially under Shapur I) commissioned the systematic compilation of Zoroastrian oral tradition into the Avesta. The first sustained-scale Zoroastrian written scripture. Most of the original Avesta was destroyed by the Arab-Islamic conquest (7th century AD); roughly a quarter survives. Modern Zoroastrian practice and scholarship rest on this surviving fraction of the Sasanian compilation."
     },
     {
       "id": "plotinus-founds-neoplatonism",
