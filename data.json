@@ -37605,14 +37605,14 @@
       "name": "Spear-thrower",
       "domain": "computing",
       "constraint": "before, humans could not throw spears with enough velocity for long-range hunting",
-      "detail": "The spear-thrower was invented, using leverage to impart speeds over 150 km/h to a dart. This dissolved the constraint of short-range hunting, allowing humans to hunt from a safer distance. The weapon spread across multiple continents and remained in use into modern times.",
+      "detail": "The spear-thrower used leverage to impart speeds over 150 km/h to a dart, dissolving the constraint of short-range hunting. Direct archaeological evidence comes from Solutrean atlatls in France (17,500 BP); skeletal evidence — Mungo Man's 'atlatl elbow' arthritis dated to 42,000 BP in Australia — hints at much earlier use. The weapon spread across multiple continents and remained in use into modern times among Inuit hunters and Mesoamerican peoples.",
       "links": [
         {
           "label": "Wikipedia: Spear-thrower",
           "url": "https://en.wikipedia.org/wiki/Spear-thrower"
         }
       ],
-      "because": "Pre-spear-thrower hunting projectiles had been hand-thrown — short range, modest force. The atlatl or spear-thrower (~40,000 BC, in Eurasia and the Americas) used a hooked stick to extend the throwing arm — doubling velocity and tripling kinetic energy. Hunting from distance became safer; large-game collapse in the Late Pleistocene tracks the spread of atlatls. The first projectile-amplification technology. Bows replaced atlatls in most regions but they persisted in Mesoamerica and Inuit Arctic hunting."
+      "because": "Pre-spear-thrower hunting projectiles had been hand-thrown — short range, modest force. The atlatl or spear-thrower used a hooked stick to extend the throwing arm — doubling velocity and tripling kinetic energy. Confirmed atlatls come from European Solutrean sites (17,500 BP); Mungo Man's 'atlatl elbow' arthritis at 42,000 BP in Australia hints at much earlier use. The first projectile-amplification technology. Bows replaced atlatls in most regions but they persisted in Mesoamerica and Inuit Arctic hunting."
     },
     {
       "id": "first-known-burial-with-grave-goods",
