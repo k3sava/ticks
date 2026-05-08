@@ -8523,7 +8523,7 @@
       "name": "Money as abstract exchange medium",
       "domain": "society",
       "constraint": "exchange requiring coincidence of wants between trading parties",
-      "detail": "The first coins in Lydia (600 BC) formalized what Mesopotamia had been doing with silver shekels for millennia. Abstract exchange — trading a cow for a claim on future goods — unlocked specialization, markets, and long-distance trade. Money as a social technology solved the double coincidence of wants problem and enabled civilization's complexity.",
+      "detail": "The first coins in Lydia (600 BC) formalized what Mesopotamia had been doing with silver shekels for millennia. Abstract exchange — trading a cow for a claim on future goods — opened specialization, markets, and long-distance trade. Money as a social technology solved the double coincidence of wants problem and enabled civilization's complexity.",
       "links": [
         {
           "label": "van der Spek — Money, Silver and Trust in Mesopotamia (Academia)",
@@ -19841,7 +19841,7 @@
       "name": "Olive oil production (Mediterranean)",
       "domain": "agriculture",
       "constraint": "cooking fat and light requiring animal sources",
-      "detail": "Olive cultivation transformed the Mediterranean economy. Olive oil was simultaneously food, fuel (lamps), medicine, soap, and trade good. The ability to store and ship oil in amphorae created the first Mediterranean commodity trade network. Minoan, Greek, and Roman economies were deeply structured around the olive press. The Mediterranean diet and much of Western food culture trace to this tick.",
+      "detail": "Olive cultivation reorganized the Mediterranean economy from 3000 BC. Olive oil served as food, lamp fuel, medicine, soap, and long-distance trade good in one commodity. Storage and shipment in amphorae built the first Mediterranean commodity trade network. Minoan, Greek, and Roman economies organized around the olive press. The Mediterranean diet and much of Western food culture trace to this lineage.",
       "links": [
         {
           "label": "Koh — Wine and Olive Oil from Early Minoan I Hilltop Fort (Academia)",
@@ -20157,7 +20157,7 @@
       "name": "Afterlife theology (Egyptian Book of the Dead precursor)",
       "domain": "religion",
       "constraint": "death as simply the end of the person",
-      "detail": "Egyptian elaboration of afterlife theology — judgment of the soul, the weighing of the heart against a feather, eternal reward or punishment — gave moral structure to human life. Every monotheistic tradition's heaven/hell theology is downstream of Egyptian afterlife concepts. The ethical consequences of eternal judgment transformed how societies conceptualized justice and personal morality.",
+      "detail": "Egyptian elaboration of afterlife theology — judgment of the soul, the weighing of the heart against a feather, eternal reward or punishment — gave moral structure to human life. Every monotheistic tradition's heaven/hell theology is downstream of Egyptian afterlife concepts. The ethical consequences of eternal judgment changed how societies conceptualized justice and personal morality.",
       "links": [
         {
           "label": "British Museum — Book of the Dead",
@@ -28085,7 +28085,7 @@
       "name": "Aulos and lyre as standard instruments",
       "domain": "art",
       "constraint": "melody and accompaniment could not be separated in performance",
-      "detail": "The aulos, a double-reeded wind instrument, became a standard accompaniment for elegiac poetry, drama, and physical activities in ancient Greece. Its penetrating sound allowed melody to be played independently from the lyre's accompaniment, enabling complex choral and solo performances. This separation unlocked new forms of musical expression, such as the passionate elegiac poetry and dramatic choruses.",
+      "detail": "The aulos, a double-reeded wind instrument, became a standard accompaniment for elegiac poetry, drama, and physical activities in ancient Greece. Its penetrating sound allowed melody to be played independently from the lyre's accompaniment, enabling complex choral and solo performances. This separation opened new forms of musical expression, such as the passionate elegiac poetry and dramatic choruses.",
       "links": [
         {
           "label": "Wikipedia: Aulos and lyre as standard instruments",
@@ -33787,7 +33787,7 @@
           "url": "https://en.wikipedia.org/wiki/Palace_economy"
         }
       ],
-      "because": "Bronze smelting (3500 BC) and Mesopotamian clay-tablet record-keeping (3000 BC) had just given Sumerian cities both metallurgy and accounting. The temple economy combined them: priests as administrators, redistributing grain, livestock, and craft goods from temple storehouses according to record-keeping that legitimated their authority — the first centralized economic redistribution at city scale."
+      "because": "Bronze smelting (3500 BC) and Mesopotamian clay-tablet record-keeping (3000 BC) gave Sumerian cities both metallurgy and accounting. The temple economy combined them: priests as administrators, redistributing grain, livestock, and craft goods from temple storehouses according to record-keeping that legitimated their authority — the first centralized economic redistribution at city scale."
     },
     {
       "id": "standardized-weights-balance-scale",
@@ -35814,20 +35814,20 @@
     },
     {
       "id": "invention-of-the-sundial",
-      "year": "3500 BC",
-      "yearN": -3500,
+      "year": "1500 BC",
+      "yearN": -1500,
       "zone": "settled-world",
       "name": "Sundial",
       "domain": "physics",
       "constraint": "daylight could not be divided into hours",
-      "detail": "The sundial uses a gnomon to cast a shadow on a dial, indicating the time of day by the Sun's apparent position. This dissolved the constraint of measuring daylight without a device, enabling the division of daylight into hours. A stick placed in sand could serve as a simple sundial, marking shadow intervals.",
+      "detail": "The earliest known sundials are Egyptian and Babylonian shadow clocks dated to about 1500 BC. A vertical gnomon casts a shadow whose moving position tracks the Sun across the sky, dissolving the constraint that daylight could not be divided into measurable units. The Egyptian shadow clock from the Valley of the Kings is among the oldest surviving examples; Greek (Anaximander, c.550 BC) and Roman refinement built directly on this Bronze Age tradition.",
       "links": [
         {
           "label": "Wikipedia: Sundial",
           "url": "https://en.wikipedia.org/wiki/Sundial"
         }
       ],
-      "because": "Pre-sundial daytime had been undivided. Egyptian and Babylonian sundials (~3500-1500 BC) divided daylight into hours by tracking the moving shadow of a vertical gnomon. The first sustained-scale daytime time-measuring device. Greek refinement (Anaximander ~550 BC) added hour-line accuracy. Roman urban sundials standardized civic time. Modern hour-divisions of the day descend conceptually from this Bronze Age innovation."
+      "because": "Pre-sundial daytime had been undivided beyond crude noon estimates. Egyptian and Babylonian shadow clocks (~1500 BC) divided daylight into hours by tracking the moving shadow of a vertical gnomon. The first sustained daytime time-measuring device. Greek refinement (Anaximander ~550 BC) added hour-line accuracy. Roman urban sundials standardized civic time. Modern hour-divisions of the day descend conceptually from this Bronze Age innovation."
     },
     {
       "id": "cuneiform-writing-invented",
@@ -35888,7 +35888,7 @@
       "name": "Syllabic writing at Ebla",
       "domain": "language",
       "constraint": "no phonetic representation of a Semitic language using Sumerian cuneiform",
-      "detail": "Scribes at Ebla used Sumerian cuneiform logograms purely phonetically to write the local Eblaite language, a previously unknown Semitic tongue. This dissolved the constraint that Sumerian script could only represent Sumerian or use a mixed logographic-phonetic system. It unlocked the ability to write Semitic languages phonetically centuries before the Canaanite alphabets.",
+      "detail": "Scribes at Ebla used Sumerian cuneiform logograms purely phonetically to write the local Eblaite language, a previously unknown Semitic tongue. This dissolved the constraint that Sumerian script could only represent Sumerian or use a mixed logographic-phonetic system. It opened the ability to write Semitic languages phonetically centuries before the Canaanite alphabets.",
       "links": [
         {
           "label": "Wikipedia: Syllabic writing at Ebla",
@@ -39724,20 +39724,20 @@
     },
     {
       "id": "first-known-enema",
-      "year": "3500 BC",
-      "yearN": -3500,
+      "year": "1550 BC",
+      "yearN": -1550,
       "zone": "settled-world",
       "name": "Enema",
       "domain": "medicine",
       "constraint": "constipation and bowel toxins were untreatable by rectal infusion",
-      "detail": "The enema, a rectal administration of fluid via the anus, was developed. It dissolved the constraint that constipation and bowel toxins could not be treated by rectal infusion. This unlocked bowel cleansing before medical procedures and relief of fecal impaction.",
+      "detail": "The earliest documented enema appears in the Egyptian Ebers Papyrus (c.1550 BC), describing rectal administration of fluid for bowel cleansing and toxin removal. This dissolved the constraint that intestinal disorders had no internal-medicine intervention beyond herbal infusion. Babylonian medical texts (c.600 BC) and later Chinese practice (c.200 AD) preserved the technique across millennia.",
       "links": [
         {
           "label": "Wikipedia: Enema",
           "url": "https://en.wikipedia.org/wiki/Enema"
         }
       ],
-      "because": "Trepanation (6500 BC) had demonstrated that surgical penetration of the body was possible. The earliest known circumcision (4000 BC) showed that ritual bodily modification was practiced. The enema's development — rectal fluid administration — is the first systemic internal medicine. Bowel cleansing before procedures and relief of impaction become standard practice across ancient civilizations."
+      "because": "Trepanation (6500 BC) had demonstrated that surgical penetration of the body was possible. The earliest known circumcision (c.2400 BC, Egypt) showed that ritual bodily modification was practiced. The Ebers Papyrus (c.1550 BC) records the first documented enema — rectal fluid administration for bowel cleansing and the relief of intestinal complaints. The first systematic internal-medicine intervention. Bowel cleansing before procedures and the treatment of fecal impaction become standard practice across ancient civilizations."
     },
     {
       "id": "domestication-of-opium-poppy",
@@ -50950,7 +50950,7 @@
       "name": "Chariot with spoked wheel",
       "domain": "war",
       "constraint": "fast mobile shock platforms for battle were impossible",
-      "detail": "The oldest known chariots were found in Sintashta culture burials, dated to c. 1950–1880 BC. The critical invention that allowed light, horse-drawn chariots was the spoked wheel. This dissolved the constraint of slow, heavy ox carts, enabling rapid shock warfare that transformed Bronze Age battlefields.",
+      "detail": "The oldest known chariots were found in Sintashta culture burials, dated to c. 1950–1880 BC. The critical invention that allowed light, horse-drawn chariots was the spoked wheel. This dissolved the constraint of slow, heavy ox carts, enabling rapid shock warfare that reordered Bronze Age battlefields.",
       "links": [
         {
           "label": "Wikipedia: Chariot with spoked wheel",
