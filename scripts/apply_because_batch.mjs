@@ -2935,6 +2935,96 @@ const BECAUSE_BATCH = {
 
   'zoroastrian-avesta-compiled':
     "Pre-compilation Zoroastrian scripture had been transmitted orally for over a millennium — at risk of corruption or loss. The Sasanian dynasty (224 AD onward, especially under Shapur I) commissioned the systematic compilation of Zoroastrian oral tradition into the Avesta. The first sustained-scale Zoroastrian written scripture. Most of the original Avesta was destroyed by the Arab-Islamic conquest (7th century AD); roughly a quarter survives. Modern Zoroastrian practice and scholarship rest on this surviving fraction of the Sasanian compilation.",
+
+  'plotinus-founds-neoplatonism':
+    "Pre-Plotinus pagan philosophical theology had been a sprawl of Platonic, Stoic, Aristotelian schools. Plotinus's Enneads (244 AD onward, edited by Porphyry) systematized Platonism into a hierarchy: the One, Nous (intellect), Soul, the material world — with the philosopher's task as ascent through the levels toward unity with the One. The first sustained-scale Western mystical-monistic philosophical theology. Influenced Augustine, medieval Christian mysticism, Renaissance Neoplatonism (Ficino), and modern phenomenology.",
+
+  'donatist-schism-begins':
+    "The Diocletian persecution (303-311) had forced some Christians (traditores) to surrender scriptures. After the Edict of Milan (313), Donatist communities in North Africa argued that bishops who had been traditores could not validly administer sacraments — sacramental validity depends on the moral state of the minister. The first sustained-scale ecclesial purity movement. Augustine's responses (~405-420) developed the orthodox position: sacraments are valid regardless of the minister's moral state. Modern Catholic-Donatist theology of sacramental validity dates to this debate.",
+
+  'nalanda-mahavihara-peak':
+    "Pre-Nalanda Buddhist learning had been monastery-based, regional, and small-scale. Nalanda (founded ~427 AD in Magadha, with sustained operation through the 12th century) became a major Buddhist learning center — 10,000 students, 2,000 teachers, library of millions of manuscripts, students from across Buddhist Asia. The first sustained-scale international Buddhist university. Destroyed by Muslim invasions (1193, by Bakhtiyar Khalji). Mahayana, Vajrayana, and East Asian Buddhist traditions all received transmission through Nalanda. Modern revival: the new Nalanda University opened in 2014.",
+
+  'bhagavata-purana-compiled':
+    "Pre-Bhagavata-Purana bhakti devotion had been niche or caste-restricted in Hindu practice. The Bhagavata Purana (compiled ~500 AD or later, in Sanskrit) systematized devotion to Krishna as the supreme path — bhakti yoga as accessible to all castes and genders, including the lowest. The first sustained-scale democratized Hindu devotional canon. Foundational for Vaishnava bhakti movements (Chaitanya, ISKCON), most South Asian devotional Hinduism, and the modern Hare Krishna movement.",
+
+  'talmudic-academies-in-babylonia':
+    "Pre-Babylonian-Talmud Jewish oral law had been transmitted in scattered yeshivot. The Babylonian Talmud (compiled in academies at Sura and Pumbedita over ~550-650 AD) consolidated centuries of rabbinic discussion of the Mishnah into a single 6,200-page text. The first sustained-scale comprehensive Jewish legal-philosophical encyclopedia. Standard reference for Jewish law and theology for 1,400 years. Modern Jewish religious practice, halakhic decision-making, and Jewish intellectual life still run primarily on Talmudic tradition.",
+
+  'karaite-judaism-emerges':
+    "Pre-Karaite Jewish religious authority had been Talmudic — rabbis interpreting written and oral Torah together. The Karaite movement (~760 AD, in Babylonia, traditionally credited to Anan ben David) rejected oral Torah and rabbinic authority — only the written Torah counted as authoritative. The first sustained-scale challenge to rabbinic Judaism. Significant medieval Karaite communities in Egypt, Byzantium, Crimea. Modern Karaite Judaism remains as a small minority tradition, but its medieval critique forced rabbinic Judaism to formalize and defend its position.",
+
+  'al-mamun-founds-house-of-wisdom':
+    "Greek philosophical and scientific texts had been preserved scattered across Christian and Jewish communities. Al-Ma'mun's House of Wisdom (founded ~830 AD in Baghdad, expanding earlier translation work) became the largest sustained-scale translation institute — Greek, Sanskrit, Persian, Syriac into Arabic. Hundreds of philosophical, mathematical, medical, and astronomical works translated. Foundation of the Islamic Golden Age (~830-1258 AD). Many Greek works survive only through this Arabic translation tradition, then re-translated into Latin in 12th-13th-century Europe.",
+
+  'diamond-sutra-printed':
+    "Pre-Diamond-Sutra Buddhist scriptures had been hand-copied. Tang Dynasty woodblock printing produced the Diamond Sutra (May 11, 868 AD, Dunhuang) — the first known dated printed book. Distributed for 'universal free distribution.' The first sustained-scale Buddhist printed-scripture project. Block-print scripture distribution preceded Gutenberg by 600 years and was a routine East Asian Buddhist religious practice for centuries before European movable type emerged.",
+
+  'cordoba-caliphate-declares-religious-tolerance':
+    "Christian-Muslim relations in early medieval Iberia had been hostile after the 711 conquest. Abd al-Rahman III's proclamation of the Caliphate of Córdoba (929 AD) institutionalized the convivencia model — protected dhimmi status for Christians and Jews, with restrictions but not persecution. The first sustained-scale Iberian religious-pluralism arrangement. Cordovan caliphate became the largest center of European Jewish learning (Maimonides was born there 200 years later). The Reconquista (especially after 1492) ended the convivencia, but the medieval model influenced subsequent ideals of religious tolerance.",
+
+  'rumis-masnavi-composed':
+    "Pre-Rumi Persian Sufi poetry had been short lyrical pieces. Rumi's Masnavi-ye Ma'navi (begun 1258, dictated to his disciple Husam Chalabi over 12 years until Rumi's death in 1273) is a 25,000-couplet didactic poem combining Sufi theology, parables, Quranic exegesis, and personal mysticism. The first sustained-scale Persian Sufi poetic synthesis. Standard Sufi text for 750 years; widely translated into Western languages (Coleman Barks's translations alone sold millions). Modern global interest in Sufism draws primarily on Rumi.",
+
+  'thomas-aquinas-summa-theologica':
+    "Pre-Aquinas medieval Catholic theology had been a sprawl of Augustinian, Boethian, and patristic sources. Aquinas's Summa Theologica (1265-1274, unfinished at Aquinas's death) systematized Catholic theology using Aristotelian categories — over 3,000 articles in scholastic Question-Article-Objection-Reply form. The first sustained-scale Catholic philosophical-theological synthesis. Council of Trent (1545-1563) elevated Aquinas to authoritative status; Leo XIII's Aeterni Patris (1879) made Thomism the official Catholic philosophy. Modern Catholic theology still works in Thomistic vocabulary.",
+
+  'zhu-xi-neo-confucian-synthesis':
+    "Pre-Zhu-Xi Confucianism had been one school among many in Chinese intellectual life. Zhu Xi's Neo-Confucian synthesis (1313 AD, when Yuan dynasty made Zhu Xi's commentaries on the Four Books the official examination canon) elevated Zhu Xi's particular Neo-Confucian reading to state orthodoxy. The first sustained-scale Chinese state-orthodox Neo-Confucianism. Standard examination curriculum for 600 years (until 1905 abolition of the imperial examination system). Modern Chinese intellectual culture still works partly in Zhu-Xi-shaped categories.",
+
+  'council-of-constance':
+    "The Western Schism (1378-1417) had produced multiple rival popes claiming legitimacy — at one point three simultaneously. The Council of Constance (1414-1418, the largest Council in medieval European history) deposed all three claimants and elected Martin V as sole legitimate pope. The first sustained-scale conciliar resolution of papal-succession crisis. Established the conciliar tradition: ecumenical councils have authority over individual popes in extreme cases. The conciliar tradition was eventually subordinated to papal supremacy (Pius II's Execrabilis, 1460) but not eliminated.",
+
+  'witchcraft-act-1541':
+    "Pre-1541 witchcraft accusations in England had been ecclesiastical court matters with limited penalties. Henry VIII's Witchcraft Act 1541 made witchcraft a felony punishable by death — under royal-civil rather than ecclesiastical jurisdiction. The first sustained-scale English secular criminalization of witchcraft. Triggered (and was triggered by) European witch-hunting peak (~1500-1700), which killed an estimated 40,000-60,000 mostly women across Europe. Repealed 1547, reinstated 1563, finally repealed 1736 with the Witchcraft Act recognizing witchcraft as fraud rather than reality.",
+
+  'petrus-ramus-logic-theology':
+    "Pre-Ramus Protestant theological education had used scholastic Aristotelian logic. Petrus Ramus (appointed regius professor 1551 at Collège de France) replaced scholastic logic with simplified dialectic — binary divisions, dichotomous trees, anti-Aristotelian. The first sustained-scale Protestant alternative to scholastic logic-training. Influenced 16th-17th-century Protestant universities (Cambridge, Heidelberg, Harvard's early curriculum); Ramism's clarity-and-simplification ethos influenced Puritan theology and Reformed pedagogy. Murdered in the 1572 St. Bartholomew's Day Massacre as a Huguenot sympathizer.",
+
+  'mughal-din-i-ilahi':
+    "Pre-Akbar Mughal India had distinct Muslim, Hindu, Jain, Christian, and Zoroastrian communities. Akbar's Din-i-Ilahi (1582, the 'Religion of God') was a syncretic religious framework drawing elements from each tradition — universal monotheism, ethics, ascetic practice. The first sustained-scale state-sponsored syncretic religion in early-modern South Asia. Dissolved within decades of Akbar's death. Modern interest in Akbar's syncretic project as model for religious pluralism (especially in Indian secular discourse) recovers a tradition that didn't survive its founder.",
+
+  'rembrandt-religious-paintings':
+    "Pre-Rembrandt biblical-scene painting had used iconographic conventions — saints with halos, abstract sacred light. Rembrandt van Rijn (active ~1625-1669) treated biblical scenes with psychological realism — Old Testament patriarchs as visibly aged, divine encounters with intimate human emotion, sacred narrative as dramatic life-experience. The first sustained-scale psychological realism in Dutch religious painting. Influenced subsequent religious art away from icon-derived conventions toward narrative realism. Modern museum-going Western publics encounter biblical narrative primarily through Rembrandt-influenced visual conventions.",
+
+  'pugio-fidei-rediscovery':
+    "Pre-rediscovery the medieval polemical tradition's most learned anti-Jewish text (Raymond Martí's Pugio Fidei, 1278) had been forgotten. Joseph Justus Scaliger's rediscovery (1650) of the manuscript and subsequent printed editions made Christian access to medieval Jewish-Talmudic-Kabbalistic sources widespread. The first sustained-scale early-modern Christian engagement with the medieval Jewish polemical literature. Influenced subsequent Christian Hebraists (de Rossi, Surenhusius) and the Christian-Hebrew scholarly tradition that fed early-modern biblical criticism.",
+
+  'sabbatai-zevis-messianic-movement':
+    "Pre-Sabbatai-Zevi Jewish messianism had been theoretical or small-scale. Sabbatai Zevi's messianic claim (1666, in Smyrna and Constantinople) attracted mass following across European and Mediterranean Jewish communities — many sold property in anticipation of return to Israel. Zevi's forced conversion to Islam (1666, by Sultan Mehmed IV) shattered the movement, but Sabbatean sub-traditions persisted. The first sustained-scale early-modern mass Jewish messianic movement. Hasidism (~1740s) emerged partly as response. Modern Jewish-religious historiography treats Sabbateanism as defining trauma.",
+
+  'kabbala-denudata-published':
+    "Pre-Kabbala-Denudata Christian access to Kabbalistic texts had been spotty. Christian Knorr von Rosenroth's Kabbala Denudata (published 1677-1684, in two large folio volumes) translated major Kabbalistic texts (Zohar excerpts, Lurianic Kabbalah) into Latin with Christian commentary. The first sustained-scale early-modern Latin Kabbalah anthology. Influenced Christian Kabbalah (Pico della Mirandola, Reuchlin had been earlier; Knorr von Rosenroth was the systematic synthesis). Newton, Leibniz, and the Cambridge Platonists all read it. Modern academic Kabbalah scholarship traces some of its categories back here.",
+
+  'bayles-historical-and-critical-dictionary':
+    "Pre-Bayle the encyclopedic tradition had been mostly orthodox in theological content. Pierre Bayle's Dictionnaire Historique et Critique (first edition 1697) used the encyclopedia format to skeptically critique religious dogma — long footnotes raising philosophical objections to received doctrine, religious history's contradictions and absurdities. The first sustained-scale skeptical-encyclopedic project in the early-modern Western tradition. Influenced Voltaire's Philosophical Dictionary (1764), Diderot's Encyclopédie (1751-1772), and the entire Enlightenment-skeptical tradition.",
+
+  'william-careys-missionary-voyage-to-india':
+    "Pre-Carey Protestant missions outside Europe had been rare and unorganized. William Carey's voyage to India (1793, founding the Baptist Missionary Society of England the same year) launched the modern Protestant missionary movement. Carey translated the Bible into Bengali and other Indian languages; founded the Serampore mission. The first sustained-scale Protestant missionary effort to non-Christian populations. Inspired the broader 19th-century Protestant missionary expansion (LMS, ABCFM, China Inland Mission) that produced modern global Christianity demographics.",
+
+  'american-bible-society-founded':
+    "Pre-ABS Bible distribution in the US had been by individual booksellers — limited supply, expensive copies. The American Bible Society (founded 1816, in New York City, ecumenical Protestant) coordinated mass Bible distribution across the US — a Bible in every household, in multiple languages. The first sustained-scale US national-religious-publishing infrastructure. Distributed billions of Bibles globally over its 200-year history. Influenced subsequent religious-publishing organizations (Christian publishing, Mormon Church distribution networks). Modern American religious culture's saturation with Bible texts traces partly here.",
+
+  'plymouth-brethren-founded':
+    "Pre-Plymouth-Brethren Christian denominations had typically had clergy, sacraments, and formal church structures. The Plymouth Brethren movement (founded ~1825-1830, in Dublin and Plymouth, with John Nelson Darby a key figure) rejected clergy entirely — every member could lead worship, weekly communion was open to all believers. The first sustained-scale lay-led non-denominational Christian movement in modern Britain. Influenced subsequent Christian movements (Bible Churches, dispensationalist theology, modern evangelical free churches). Darby's dispensationalism shaped 20th-century American evangelical eschatology.",
+
+  'first-printed-edition-of-the-book-of-mormon':
+    "Pre-1830 Mormon revelation had been in manuscript only. The first printed edition of the Book of Mormon (1830, Palmyra New York, 5,000 copies) made the new scripture broadly accessible to potential converts. The first sustained-scale new American religious canon claiming ancient origin. Combined with Joseph Smith's continuing revelations and the formation of the LDS Church (April 6, 1830), launched a religious movement that now claims 17 million members worldwide. The third-largest American-origin religious tradition (after African Methodism and Pentecostalism).",
+
+  'william-millers-prophetic-timeline-published':
+    "Pre-Miller Christian eschatology had used vague language about the end times. William Miller (preaching from 1831, with public timeline 1832 onward) calculated a precise return-of-Christ date — between March 1843 and March 1844, eventually narrowed to October 22, 1844. The first sustained-scale specific date-based Christian apocalyptic movement. The Great Disappointment (failure of Christ to return) shattered the movement, but successor groups (Seventh-day Adventists, Jehovah's Witnesses) emerged. Modern Christian rapture-theology and end-times prediction culture all draw on the Millerite tradition.",
+
+  'oxford-movement':
+    "Pre-Oxford-Movement the Church of England had been low-church Protestant in tone. The Oxford Movement (begun 1833, with Newman, Pusey, Keble) advocated high-church renewal — Catholic-leaning theology of sacramental validity, episcopal succession, liturgical formality. The first sustained-scale Anglican high-church revival. Newman's eventual conversion to Catholicism (1845) was the most dramatic outcome; many Tractarians remained Anglican. Modern Anglo-Catholic spirituality and the High Church tradition descend directly from this Oxford-centered movement.",
+
+  'mormon-exodus-to-utah':
+    "Pre-Mormon-exodus large-scale religious migration to settle a remote territory had been rare in modern Western history. The Mormon migration to the Salt Lake Valley (1846-1848, after Joseph Smith's 1844 murder, led by Brigham Young) settled 70,000+ Mormons in what is now Utah. The first sustained-scale 19th-century religious diaspora settlement. Established Mormon political-cultural dominance in the Intermountain West that persists today. Modern Utah's religious-political character runs on the Mormon-pioneer foundation.",
+
+  'mormon-polygamy-publicly-announced':
+    "Pre-1852 Mormon polygamy (plural marriage) had been practiced privately. Brigham Young's 1852 public announcement made it official LDS practice. The first sustained-scale legal polygamy in a modern Western religious community. Triggered federal anti-polygamy legislation (Edmunds Act 1882, Edmunds-Tucker 1887) and the Mormon manifesto (1890) abandoning polygamy as official LDS doctrine. Fundamentalist Mormon offshoots continue plural marriage. Modern legal-religious debates about plural marriage trace back to this 19th-century Mormon precedent.",
+
+  'bahai-faith-founded-by-bahaullah':
+    "Pre-Baháʼí monotheistic religions had each claimed exclusive final truth. Baháʼu'lláh's declaration in Baghdad (April 1863) founded the Baháʼí Faith — universalist, accepting all major religions as successive revelations of one God. Baháʼu'lláh's writings (over 100 volumes) established the new religion's canon. The first sustained-scale modern religion explicitly built on the unity of all previous religions. Now claims 5-7 million members worldwide, with notable presence in Iran (where Baháʼís face persecution), India, Africa. Modern interreligious-dialogue movements often invoke Baháʼí precedent.",
 };
 
 async function main(){
