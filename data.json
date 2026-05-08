@@ -22878,7 +22878,7 @@
           "url": "https://www.nature.com/articles/d41586-024-02122-w"
         }
       ],
-      "because": "Pre-AlphaProof formal mathematical proof had been considered beyond AI capability. Google DeepMind's AlphaProof (announced July 2024) achieved silver-medal performance on the 2024 International Mathematical Olympiad — solving 4 of 6 problems by formalizing in Lean and searching the proof tree with reinforcement learning. The first sustained-scale AI mathematical-proof system at human-competition level. Mathematical-proof automation, theorem proving, and formal verification all stand to be reshaped. Modern AI's capability frontier expanded into mathematical reasoning visibly here."
+      "because": "Pre-AlphaProof formal mathematical proof had been considered beyond AI capability. Google DeepMind's AlphaProof (announced July 2024) achieved silver-medal performance on the 2024 International Mathematical Olympiad — solving 4 of 6 problems by formalizing in Lean and searching the proof tree with reinforcement learning. The first sustained-scale AI mathematical-proof system at human-competition level. Mathematical-proof automation, theorem proving, and formal verification all stand to be remade. Modern AI's capability frontier expanded into mathematical reasoning visibly here."
     },
     {
       "id": "claude-3-7-sonnet-hybrid-reasoning-models",
@@ -22969,7 +22969,7 @@
           "url": "https://en.wikipedia.org/wiki/Drug_discovery#Artificial_intelligence"
         }
       ],
-      "because": "Pre-2025 drug discovery had required years of wet-lab experimentation. The first AI-designed-drug clinical trials (~2025, with Insilico Medicine, Recursion, BenevolentAI) demonstrated that AI could identify drug candidates, predict their properties, and shepherd them into clinical trials in dramatically compressed timelines. The first sustained-scale AI-driven drug discovery pipeline. Combined with AlphaFold 3's protein-structure predictions, modern pharmacology is being reshaped. Whether AI-discovered drugs significantly improve clinical outcomes remains under evaluation."
+      "because": "Pre-2025 drug discovery had required years of wet-lab experimentation. The first AI-designed-drug clinical trials (~2025, with Insilico Medicine, Recursion, BenevolentAI) demonstrated that AI could identify drug candidates, predict their properties, and shepherd them into clinical trials in dramatically compressed timelines. The first sustained-scale AI-driven drug discovery pipeline. Combined with AlphaFold 3's protein-structure predictions, modern pharmacology is being remade. Whether AI-discovered drugs significantly improve clinical outcomes remains under evaluation."
     },
     {
       "id": "deepseek-r1-china-reaches-frontier-ai",
