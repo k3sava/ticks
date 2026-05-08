@@ -1930,6 +1930,81 @@ const BECAUSE_BATCH = {
 
   'attention-mechanism-proposed':
     "Pre-attention recurrent neural networks (LSTMs, GRUs) had compressed input sequences into fixed-length context vectors — losing information in long sequences. Bahdanau, Cho, and Bengio's neural machine translation paper (September 2014) introduced attention: at each output step, the model attends to relevant input positions adaptively. Translation quality improved sharply. Three years later, Vaswani et al.'s Transformer (2017) used attention without recurrence at all. Modern AI's foundational architecture begins here.",
+
+  'gpt-1-introduced':
+    "Pre-GPT NLP models had been task-specific — separate architectures for translation, classification, named-entity recognition. OpenAI's GPT-1 (June 2018, 117 million parameters) demonstrated unsupervised generative pretraining on the BooksCorpus, then task-specific fine-tuning. Strong on multiple downstream tasks with one underlying model. The first sustained-scale demonstration that next-token prediction could produce general language understanding. GPT-2 (2019), GPT-3 (2020), and the entire LLM era follow this template.",
+
+  'development-of-counting-systems-proto-accounting':
+    "Pre-tally counting had been tied to spoken numbers — limited to what a single person could remember. The Lebombo bone (~44,000 BC, Southern Africa) carries 29 notches that almost certainly count something — possibly lunar cycles. The Ishango bone (~20,000 BC, Congo) has more elaborate notation. The first external durable quantitative records. Quantities became transmittable across people and time without continuous human chain. Numerical record-keeping as a category begins here.",
+
+  'invention-of-the-spear-thrower':
+    "Pre-spear-thrower hunting projectiles had been hand-thrown — short range, modest force. The atlatl or spear-thrower (~40,000 BC, in Eurasia and the Americas) used a hooked stick to extend the throwing arm — doubling velocity and tripling kinetic energy. Hunting from distance became safer; large-game collapse in the Late Pleistocene tracks the spread of atlatls. The first projectile-amplification technology. Bows replaced atlatls in most regions but they persisted in Mesoamerica and Inuit Arctic hunting.",
+
+  'first-known-burial-with-grave-goods':
+    "Earlier hominin burials had been simple inhumation — body placed in a grave. The Sungir burials (~24,000 BC, in Russia) included thousands of carved beads, mammoth-ivory figurines, and a sustained burial program with distinct items per grave. The first sustained archaeological evidence for posthumous status — the goods buried with the dead reflected (or projected) social standing. The first religious-and-social-status signal preserved through burial archaeology.",
+
+  'fire':
+    "Fire control by humans is much older than 18,000 BC (Wonderwerk Cave evidence pushes back to 1 million years). The corpus's date here likely refers to a specific behavior — controlled landscape burning by Pleistocene Europeans for game management, or the systematic use of fire to mark territory. Either way, fire's transformative role in human evolution is settled — cooked food, predator deterrence, warmth, social-gathering focal points, eventually ceramic and metallurgical transformations. The single deepest technology.",
+
+  'first-evidence-of-long-distance-trade-in-shells-contractual-trust':
+    "Pre-shell-bead trade had been gift exchange between adjacent groups. Olivella shell beads from the Pacific coast appear at inland sites in California and the Great Basin (~10,000 BC) hundreds of miles from any source. The first sustained-scale long-distance trade requiring trust networks across territorial boundaries. Shells, obsidian, and amber dominate the long-distance trade objects of the Pleistocene-Holocene boundary. Money's prehistory begins here — durable transferable valuables that could store and transmit value across distance and time.",
+
+  'nippur-as-legal-center':
+    "Sumerian city-states had been politically rival, each with its own patron god and royal house. Nippur (~3000 BC, in central Sumer) became the cult center of Enlil, the chief god of the Mesopotamian pantheon. Kingship in any Sumerian city was acknowledged only when the king's title was confirmed at Nippur. The first sustained 'sacred capital' separate from political-administrative capitals. Mecca's role in later Islamic legitimacy and Rome's role in medieval European imperial coronation echo the Nippur model.",
+
+  'first-written-marriage-contract-mesopotamia':
+    "Pre-contract marriages had been informal arrangements between families — protections for the wife depended on family standing. Mesopotamian written marriage contracts (~2000 BC, attested in Old Babylonian period) specified bride-price, dowry, divorce conditions, inheritance rights for children. The first sustained legal protection of women in marriage. Codified in Hammurabi's Code (1754 BC) and persisted as a Mesopotamian institution. Modern marriage law's documentary tradition descends from this.",
+
+  'babylonian-land-registration':
+    "Pre-Babylonian land tenure had relied on oral memory and witness testimony. Babylonian state land registration (~1800 BC, attested in Old Babylonian land sale tablets) recorded property boundaries, ownership transfers, and inheritance on cuneiform tablets stored in temple archives. Disputes could be resolved by reference to the archive rather than dueling witnesses. The first sustained-scale formal land record system. Roman provincial registers, Domesday Book, and modern cadastral systems all build on this principle.",
+
+  'kudurru-boundary-stones':
+    "Pre-Kudurru land grants had been recorded on perishable clay tablets. Kassite Babylonian kudurru (boundary stones, ~1600 BC) inscribed land grants on stone — durable, visible at the boundary itself, with curses on anyone disturbing the stone. The first sustained-scale durable land-grant medium. Boundary stones in Roman, medieval European, and other later legal traditions all draw on the kudurru model — physical permanent markers backed by legal sanction against tampering.",
+
+  'egyptian-hittite-peace-treaty':
+    "Pre-treaty wars had ended by annihilation, vassalage, or temporary truce — never by mutual recognition. The Egyptian-Hittite peace treaty (1259 BC, after the Battle of Kadesh, signed between Ramesses II and Hattusili III) is the oldest known surviving peace treaty between two recognized sovereign states. Mutual non-aggression, prisoner exchange, defensive alliance. Both copies survive (Egyptian hieroglyphic at Karnak, Hittite cuneiform at Hattusa). The first international law instrument we can read.",
+
+  'oracle-bone-legal-records-shang':
+    "Pre-Shang Chinese governance had been oral — decisions made in council, transmitted by memory. Shang dynasty oracle-bone divination texts (~1254 BC and earlier) recorded royal queries to the ancestors and the diviners' interpretations. The first systematic Chinese state record-keeping. Oracle bones recorded military campaigns, harvest divinations, royal hunts, and legal disputes. The earliest stratum of Chinese writing and the deepest layer of Chinese statecraft documentation.",
+
+  'covenant-code':
+    "Pre-Covenant ancient Near Eastern law had used unlimited retaliation — eye for eye, life for life. The Covenant Code (Exodus 21-23, ~1200 BC textual stratum) capped retaliation at the original injury level — lex talionis as a CEILING on revenge, not a floor. Combined with restitutionary remedies for property crimes, it represents an early move from open-ended feud to bounded justice. The model influenced subsequent Israelite, Christian, and Islamic legal traditions.",
+
+  'neo-babylonian-legal-reforms-nabopolassar':
+    "Pre-Nabopolassar Babylonia had been an Assyrian province for centuries, with Assyrian law imposed. Nabopolassar's revolt (626 BC) and his founding of the Neo-Babylonian Empire restored Babylonian legal autonomy — local courts, local judges, Babylonian law codes. The reforms persisted for almost a century until Persian conquest (539 BC). The first major restoration of indigenous Mesopotamian legal traditions after sustained foreign rule. The institutional substrate of late-Babylonian commercial law (the Murashû archive, etc.) rests on Nabopolassar's restoration.",
+
+  'cyrus-cylinder':
+    "Pre-Cyrus conquerors had typically deported populations and destroyed local cults. The Cyrus Cylinder (539 BC, after Cyrus's conquest of Babylon) is a clay foundation deposit declaring religious tolerance, restoration of cults, and repatriation of deported peoples. Sometimes called the first declaration of human rights — with anachronism, but with real historical weight. Set the Achaemenid imperial template: tolerate local custom, leave administration intact, extract tribute. The Persian model influenced Hellenistic and Roman imperial governance.",
+
+  'cleisthenes-isonomia':
+    "Pre-Cleisthenes Athenian politics had been controlled by the four Ionian tribes — clan-based, with old aristocratic families dominating. Cleisthenes's reforms (508 BC) replaced the four tribes with ten artificial tribes, each drawn from three regional units (city, coast, inland). Citizens were registered by deme rather than family. The reforms broke aristocratic clan power and created a citizenry whose identity was civic rather than kin-based. The institutional foundation of Athenian democracy.",
+
+  'confucius-edits-the-five-classics':
+    "Pre-Confucian Chinese ethics and statecraft had been local — different domains, different customs. Confucius (551-479 BC) and his disciples codified an ethical system grounded in the Five Classics (Poetry, Documents, Rites, Changes, Spring and Autumn Annals). Tradition credits Confucius with editing the canon; modern scholarship treats the editorial program as collective. The first sustained ethical-political teaching that persisted as a state-curriculum tradition. Han imperial Confucianism (from 134 BC) and the imperial examination system (from 605 AD) institutionalized the Five Classics for two millennia.",
+
+  'mosaic-law-codified-torah-as-law':
+    "Pre-Torah Israelite religious practice had varied across tribal groups. Persian-period priestly redactors (~450 BC, after the return from Babylonian exile) codified earlier oral and documentary traditions into the Torah — five books treated as a single authoritative law-text. The first sustained scriptural canon for a religious community. Christian and Islamic scriptures took the Torah as paradigm. The 'people of the book' as a self-conception begins with the Persian-era codification.",
+
+  'twelve-tables-codified':
+    "Pre-Twelve-Tables Roman law had been unwritten and known only to patrician priests. Plebeian agitation (~451-449 BC) forced the appointment of a decemvirate (board of ten) to write down the laws. The result, the Twelve Tables (449 BC, displayed in the Forum), made Roman law publicly accessible. The first sustained Roman written legal code. Subsequent Roman jurisprudence (the praetor's edict, the senatusconsulta, imperial constitutions) all built on the Twelve Tables. Modern civil-law codifications still trace ancestry through it.",
+
+  'institution-of-the-roman-census':
+    "Pre-census Roman tax and military service had been by clan estimate. The censorship as a regular magistracy (institutionalized 443 BC) registered all Roman citizens and their property every five years — assessed for taxation, voting class, and military service. The first sustained-scale state-level demographic accounting. The Augustan census (~28 BC) extended the practice to the empire. Modern census infrastructure descends from this Roman model.",
+
+  'trial-of-socrates':
+    "Pre-Socrates Athenian philosophical inquiry had been tolerated as elite leisure activity. Socrates's trial and execution (399 BC) on charges of impiety and corrupting Athenian youth demonstrated that philosophical questioning of authority had consequences. Plato's later mistrust of democracy (in The Republic) is a direct response. The first sustained example of state suppression of philosophy. The trial also founded the genre of philosophical martyrdom — Boethius, Bruno, and modern dissidents all invoke Socrates.",
+
+  'aristotles-constitution-of-athens':
+    "Pre-Aristotelian political theory had been normative — Plato's ideal state, Xenophon's Spartan and Persian models. Aristotle's Constitution of Athens (~330 BC, attributed to Aristotle or his school, papyrus rediscovered 1879) was a descriptive empirical study of how Athenian democracy actually worked — magistrates, councils, courts, festivals. The first sustained empirical political-science study. Modern constitutional law and comparative-government scholarship treats it as ancestral.",
+
+  'mencius-on-right-to-revolt':
+    "Pre-Mencius Chinese political philosophy had grounded political authority in Heaven's mandate without specifying when it could be withdrawn. Mencius (372-289 BC) argued that a tyrannical ruler forfeits the mandate and that subjects have the right (and duty) to revolt. The first sustained Chinese theory of legitimate revolution. The mandate-of-heaven concept and Mencius's revolt principle remained the dominant Chinese political theory for two thousand years — invoked by every successful dynastic founder to legitimize the new regime.",
+
+  'lex-hortensia':
+    "Pre-Hortensian Roman class politics had given patricians veto over plebeian assembly decisions — patrician interests ultimately prevailed. The lex Hortensia (287 BC, passed under Quintus Hortensius) made plebiscita (decisions of the plebeian assembly) binding on all Roman citizens, including patricians. The first sustained democratization of Roman lawmaking. The class struggles of the early Republic were essentially settled with this law; subsequent Roman political conflict shifted to other axes.",
+
+  'asokas-edicts':
+    "Pre-Ashokan Indian governance had been administrative, with little explicit moral or religious content. Ashoka (after the Kalinga War, ~268-232 BC) inscribed dharma — moral and religious teaching — on rock and pillar edicts across his empire. Buddhist non-violence, religious tolerance, animal welfare, the duty of rulers to their subjects. The first sustained moral-policy proclamation by a state at imperial scale. Buddhist missions to Sri Lanka and the Hellenistic world (sent by Ashoka) carried the dharma further.",
 };
 
 async function main(){
