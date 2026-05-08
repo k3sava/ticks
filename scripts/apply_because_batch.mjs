@@ -2485,6 +2485,96 @@ const BECAUSE_BATCH = {
 
   'leibnizs-monadology-and-unconscious-perceptions':
     "Pre-Leibniz Western thought had treated mental states as either fully conscious or absent. Leibniz's Monadology (1714) proposed that mental life includes 'petites perceptions' — unconscious perceptions too small to enter awareness individually but contributing to the felt-quality of experience. The first sustained-scale Western theory of unconscious mental contents. Influenced Romantic-era German psychology, eventually Freud's unconscious. Modern cognitive psychology's distinctions between explicit and implicit processes work in territory Leibniz opened.",
+
+  'linnaeus-classifies-homo-sapiens-in-systema-naturae':
+    "Pre-Linnaean classification had set humans apart from other animals as a special divine creation. Linnaeus's Systema Naturae (1735, expanded over subsequent editions) placed Homo sapiens in the order Primates alongside apes and monkeys. The first sustained-scale taxonomic placement of humans within the animal kingdom. Quietly subversive — implied a biological continuity with non-human animals that would become explosive 124 years later in Darwin's Origin of Species.",
+
+  'hartleys-observations-on-man-associates-brain-vibrations-with-ideas':
+    "Lockean associationism (1689) had been purely psychological — ideas connect by similarity and contiguity. David Hartley's Observations on Man (1749) added a physiological mechanism: vibrations in nerve fibers, transmitted to the brain, produce ideas through mechanical association. The first sustained-scale physiological theory of mind. Influenced Joseph Priestley, James Mill, and the British associationist school. Modern neural-network theories of cognition treat Hartley as a remote ancestor.",
+
+  'reid-founds-scottish-common-sense-philosophy':
+    "Hume's skepticism (1739) had threatened to dissolve all knowledge — induction, causation, even self. Thomas Reid's Inquiry into the Human Mind on the Principles of Common Sense (1764) defended common-sense beliefs as foundational, not derived. The first sustained-scale Scottish Common Sense response to Humean skepticism. Influenced 19th-century American intellectual life heavily (Princeton, Witherspoon's Yale). Modern direct-realist philosophies of perception draw on Reid's framework.",
+
+  'galls-phrenology-system':
+    "Pre-Gall mental faculties had been treated as faculties of a unitary soul, not localized to brain regions. Franz Joseph Gall's phrenology (~1796 onward, in Vienna and Paris) proposed that distinct mental faculties (combativeness, language, memory) were localized to specific brain regions whose size could be inferred from skull bumps. The first sustained-scale brain-function localization theory. Empirically wrong in detail (skull bumps don't reflect underlying brain regions), but the localization principle was correct. Influenced subsequent cortical-mapping research (Broca, Wernicke).",
+
+  'cabanis-brain-secretes-thought':
+    "Pre-Cabanis Western thought had treated mind as immaterial. Pierre Jean Georges Cabanis's On the Relations between the Physical and the Moral in Man (1802) proposed that thought is a biological product — 'the brain secretes thought as the liver secretes bile.' The first sustained-scale Western materialist theory of thought as biological function. Scandalized contemporaries; influenced subsequent physiological psychology (Lotze, Fechner) and modern neuroscience.",
+
+  'flourens-brain-ablation-experiments':
+    "Pre-Flourens brain function had been speculated about with no experimental basis. Pierre Flourens's lesion experiments (1820s, on rabbits and pigeons) systematically removed specific brain regions and observed the resulting deficits — concluded that the cerebellum coordinates movement and the cerebrum supports perception and memory. The first sustained-scale experimental brain-lesion methodology. Established the experimental approach that continues through modern animal-model neuroscience.",
+
+  'mullers-law-of-specific-nerve-energies':
+    "Pre-Müller sensory experience had been thought to depend on the stimulus type. Johannes Müller's law of specific nerve energies (1835) showed that the same stimulus produces different sensations in different sensory nerves, and different stimuli produce the same sensation in a given nerve — sensory quality depends on which nerve carries the signal, not the stimulus type. The first sustained-scale insight that perception is fundamentally constructed by the nervous system. Modern neuroscience of perception runs on Müller's foundational insight.",
+
+  'edouard-seguin-physiological-education':
+    "Pre-Séguin intellectual disability had been treated as untrainable — 'idiots' were institutionalized and forgotten. Édouard Séguin's physiological method (1846) systematically trained sensory perception, motor control, and graduated cognitive tasks for intellectually disabled children — many showed substantial improvement. The first sustained-scale special-education approach. Influenced Maria Montessori's later early-childhood pedagogy (1907) and the entire field of special education.",
+
+  'maudsleys-physiology-of-mind':
+    "Pre-Maudsley mental illness had been treated as moral or spiritual failing. Henry Maudsley's The Physiology and Pathology of Mind (1867) framed mental illness as physiological dysfunction — disease of the brain rather than corruption of the soul. The first sustained-scale British neuropsychiatric framework. Influenced subsequent biological psychiatry; the Maudsley Hospital in London is named for him. Modern psychiatry's biomedical model traces back to this 19th-century shift.",
+
+  'wernickes-aphasia-discovery':
+    "Broca (1861) had identified a frontal-lobe area whose lesion produced expressive aphasia — patients understood language but couldn't produce it. Carl Wernicke's 1874 description of fluent-but-incomprehensible aphasia from temporal-lobe lesions identified what's now called Wernicke's area. The first sustained-scale dual-region model of language localization. Wernicke's broader connectionist framework (specific functions in specific regions, connected by tracts) anticipated modern brain-network neuroscience.",
+
+  'theodor-meynert-psychiatry-anatomy':
+    "Pre-Meynert psychiatric diagnosis had been symptom-based without anatomical anchoring. Theodor Meynert's anatomy textbooks (1880s, especially Psychiatry: A Clinical Treatise on Diseases of the Fore-Brain, 1884) explicitly grounded psychiatric symptoms in cortical anatomy — the orientation that Wernicke had pioneered. The first sustained-scale anatomically-grounded psychiatry textbook. Trained Wernicke and Freud (briefly). Modern biological psychiatry's institutional roots run through Meynert's Vienna laboratory.",
+
+  'galton-statistical-correlation':
+    "Pre-Galton individual differences in mental abilities had been observed but not measured systematically. Francis Galton's anthropometric measurements (1880s, with thousands of London visitors) produced quantitative data; his concept of statistical correlation (1888) gave a mathematical tool to measure relationships between any two variables. The first sustained-scale statistical method for psychological data. Karl Pearson formalized the correlation coefficient (1896). Modern psychometrics, statistics, and most quantitative social science run on Galton-Pearson correlation.",
+
+  'brodmanns-cytoarchitectonic-map':
+    "Pre-Brodmann cortical anatomy had identified gross regions (frontal, parietal, etc.) without microscopic structural distinctions. Korbinian Brodmann's Vergleichende Lokalisationslehre der Grosshirnrinde (1909) used cell-staining and microscopic structure to map 52 distinct cortical areas. The first sustained-scale cytoarchitectonic atlas of the human cortex. Brodmann areas (BA1, BA17, BA44, etc.) remain the standard reference framework for cortical-region naming in neuroscience and clinical neurology.",
+
+  'gestalt-laws-of-perceptual-organization':
+    "Wundt's structuralism had treated perception as a sum of sensory atoms. Wertheimer, Köhler, and Koffka's Gestalt psychology (1912 onward) showed that perception is structurally holistic — figure-ground, closure, common fate, proximity, similarity all reflect global organizing principles that elementary sensations couldn't explain. The first sustained-scale holistic perception theory. Modern visual neuroscience and cognitive science still use Gestalt vocabulary; design and information visualization both run on Gestalt principles.",
+
+  'stanford-binet-intelligence-scale':
+    "Binet's 1905 test had been calibrated for French schoolchildren only. Lewis Terman's Stanford-Binet (1916) standardized the test for American populations and introduced the IQ score (mental age divided by chronological age × 100). The first sustained-scale standardized intelligence test in America. Used widely in school placement, military classification (WWI Army Alpha and Beta), and personnel selection. The modern intelligence-testing industry — controversies and all — runs on the Stanford-Binet model.",
+
+  'watsons-psychology-as-the-behaviorist-views-it':
+    "Pre-Watson psychology had relied on introspection and theoretical mental constructs. John B. Watson's 'Psychology as the Behaviorist Views It' (1913, expanded in his 1924 manifesto) rejected introspection entirely — psychology should study only observable behavior, stimulus-response associations, and learning histories. The first sustained-scale behaviorist research program. Dominated US academic psychology for forty years. Modern applied behavior analysis (autism therapy, organizational behavior management) runs on Watsonian-Skinnerian foundations.",
+
+  'skinner-box-development':
+    "Pavlov had used classical conditioning (pairing stimuli to elicit reflexes). B.F. Skinner's operant chamber (developed 1930s, formalized 1938 in The Behavior of Organisms) studied the opposite — how consequences shape new behaviors. Variable-ratio reinforcement schedules produced the most resistant-to-extinction behaviors. The first sustained-scale automated apparatus for behavior modification research. Modern educational technology, slot machines, video games, and social-media engagement design all run on Skinnerian reinforcement principles.",
+
+  'mcculloch-pitts-neuron-model':
+    "Pre-McCulloch-Pitts neural computation had been speculated about without formal mathematical treatment. Warren McCulloch and Walter Pitts's 1943 paper modeled a neuron as a binary threshold device — fires if weighted inputs exceed threshold — and proved that networks of such units can compute any logical function. The first sustained-scale formal mathematical model of neural computation. Foundational for cybernetics, artificial neural networks, and modern deep learning. The modern AI revolution traces formally to this 1943 paper.",
+
+  'transistor-invention':
+    "Vacuum tubes had been the dominant electronic-amplification technology — bulky, hot, unreliable, power-hungry. The transistor (Bell Labs, December 1947, Bardeen, Brattain, Shockley) used semiconductor physics to amplify and switch with no moving parts and minimal power. The first sustained-scale solid-state electronic device. Within a decade transistors had displaced vacuum tubes; integrated circuits (1958) put millions on a chip. The modern computer, smartphone, and entire digital civilization run on transistors.",
+
+  'wieners-cybernetics':
+    "Pre-Wiener feedback systems had been studied separately in engineering, biology, and psychology. Norbert Wiener's Cybernetics (1948, subtitled 'Or Control and Communication in the Animal and the Machine') unified them under common mathematical principles — feedback, control, information. The first sustained-scale unified theory of self-regulating systems. Influenced computer science, AI, biology (especially homeostasis), psychotherapy, management, and operations research. The modern systems-thinking tradition is mostly Wienerian.",
+
+  'turing-test-proposal':
+    "Pre-Turing thinking had been considered exclusively a biological phenomenon. Alan Turing's 'Computing Machinery and Intelligence' (1950) proposed an operational test: if a machine can converse with a human judge indistinguishably from another human, the machine should be considered to think. The first sustained-scale operational definition of machine intelligence. Sparked seventy years of philosophical argument and AI benchmark design. Every subsequent AI capability evaluation — from ELIZA to ChatGPT — is a Turing-test variant.",
+
+  'integrated-circuit':
+    "Discrete transistors (post-1947) had been individually packaged — circuits required hand-soldering each component. The integrated circuit (Jack Kilby at TI, 1958, and Robert Noyce at Fairchild, 1959) put multiple transistors and connections on a single semiconductor chip. The first sustained-scale monolithic electronic circuit. Combined with Moore's Law (1965), produced exponential improvement in computing for sixty years. Modern computers, smartphones, cars, and toasters all run on integrated circuits.",
+
+  'hubel-and-wiesels-visual-cortex-work':
+    "Pre-Hubel-and-Wiesel visual cortex function had been opaque. Their microelectrode recordings from cat visual cortex (1958-1962) showed that V1 neurons respond selectively to oriented edges at specific retinal positions, with hierarchical organization — simple cells, complex cells, hypercomplex cells. The first sustained-scale single-cell recording of cortical sensory function. Foundational for modern visual neuroscience. Convolutional neural networks (LeCun, 1989-1998, Krizhevsky 2012) explicitly model the Hubel-Wiesel hierarchy. Nobel 1981.",
+
+  'working-memory-model-baddeley':
+    "Atkinson-Shiffrin's modal model (1968) had treated short-term memory as a unitary store. Alan Baddeley and Graham Hitch (1974) showed working memory comprises distinct components: phonological loop (verbal), visuospatial sketchpad (spatial), and central executive (attention controller; the episodic buffer was added later). The first sustained-scale multi-component working-memory model. Standard framework in modern cognitive psychology and neuroscience. Cognitive-load theory in education and aphasia rehabilitation both draw on Baddeley.",
+
+  'flow-state-theory-csikszentmihalyi':
+    "Pre-Csikszentmihalyi optimal experience had been undefined. Mihaly Csikszentmihalyi's flow theory (developed from 1975, popularized by his 1990 book Flow) characterized the optimal experience as a state of complete absorption in a task — clear goals, immediate feedback, balanced challenge and skill, loss of self-consciousness, time distortion. The first sustained-scale phenomenological theory of optimal experience. Influenced positive psychology, sports psychology, video game design, and workplace research. Pop-culture vocabulary borrowed 'flow state' wholesale.",
+
+  'mindfulness-based-stress-reduction':
+    "Buddhist meditation had been practiced in religious contexts for 2,500 years but lacked a standardized clinical-research protocol. Jon Kabat-Zinn's Mindfulness-Based Stress Reduction (founded 1979 at UMass Medical School) packaged Buddhist mindfulness into an 8-week secular program with measurable outcomes. The first sustained-scale standardized clinical mindfulness program. Generated thousands of empirical studies; led to MBCT (Mindfulness-Based Cognitive Therapy) and the modern medical-mindfulness movement. Mainstream Western therapeutic acceptance of meditation runs on Kabat-Zinn's secular packaging.",
+
+  'self-determination-theory':
+    "Behaviorist psychology had treated motivation as response to extrinsic rewards. Edward Deci and Richard Ryan's self-determination theory (formalized 1985 in Intrinsic Motivation and Self-Determination in Human Behavior) identified three psychological needs — autonomy, competence, relatedness — whose satisfaction produces intrinsic motivation. The first sustained-scale intrinsic-motivation theory. Influences modern educational design, workplace management, health promotion, and parenting research. Among the most empirically validated motivational theories.",
+
+  'cognitive-load-theory-sweller':
+    "Pre-Sweller instructional design had used various intuitive methods. John Sweller's cognitive load theory (developed 1988) applied working-memory limits to learning: instruction should manage intrinsic load (task complexity), reduce extraneous load (presentation overhead), and support germane load (schema construction). The first sustained-scale formal framework for designing instruction around working-memory constraints. Modern educational psychology, instructional design, and effective-teaching research all use cognitive load theory as primary framework.",
+
+  'world-wide-web-invention':
+    "Pre-WWW internet protocols had been task-specific (FTP, NNTP, SMTP). Tim Berners-Lee's WWW proposal (March 1989, refined 1990 prototype on a NeXT machine at CERN) combined HTTP, HTML, and URL into a unified hypertext system. The first sustained-scale general-purpose hypertext protocol. CERN released it to the public domain in 1993. Within five years the web had displaced proprietary online services as the dominant consumer internet experience.",
+
+  'neural-correlates-of-consciousness':
+    "Pre-NCC consciousness had been considered a philosophical or even unscientific question. Francis Crick and Christof Koch's NCC framework (1990 paper, expanded in subsequent decades) proposed that the neural correlates of conscious experience could be identified empirically — what brain activity is necessary and sufficient for any specific conscious state. The first sustained-scale empirical research program for consciousness. Foundational for modern consciousness science (IIT, Global Workspace Theory). Whether the 'hard problem' (why physical processes give rise to subjective experience at all) is solvable remains open.",
 };
 
 async function main(){
