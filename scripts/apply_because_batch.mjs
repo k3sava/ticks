@@ -805,6 +805,81 @@ const BECAUSE_BATCH = {
 
   'bandura-bobo-doll-social-learning':
     "Skinnerian behaviorism had explained learning through direct reinforcement — a behavior repeats because it was rewarded. Albert Bandura's Bobo doll experiments (1961-1963 at Stanford) showed children acquired novel aggressive behaviors by mere observation of adult models — no reinforcement involved, sometimes no opportunity to imitate until much later. The first hard evidence for social learning. Bandura's social cognitive theory and the concept of modeling are downstream — and so is much of educational and developmental psychology since.",
+
+  'loftus-palmer-misinformation-effect':
+    "Eyewitness memory had been treated by courts as essentially a video replay. Tversky and Kahneman's heuristics-and-biases program (1972) had shown that judgment was systematically distorted by question framing. Loftus and Palmer (1974) showed memory itself was: subjects shown a film of a car accident, asked 'how fast were the cars going when they smashed/hit/contacted each other,' gave higher speed estimates and (a week later) falsely remembered broken glass when 'smashed' was used. Eyewitness testimony's legal status has been recovering ever since.",
+
+  'ampere-electrodynamics-formula':
+    "Oersted's 1820 demonstration had shown a current-carrying wire deflected a compass needle — electricity and magnetism were connected. Ampère's Théorie des phénomènes électrodynamiques (1826) gave the connection mathematical form: a force law between current elements, the principle that magnets reduce to circulating currents, and the right-hand rule. The first quantitative theory of electrodynamics. Faraday's experimental work and Maxwell's equations (1865) build on Ampère's foundation.",
+
+  'edict-of-thessalonica-christianity-state-religion':
+    "The Edict of Milan (313) had legalized Christianity as one tolerated cult among others. Sixty-seven years of imperial preference (Constantine onward) had built Christian institutional weight. Theodosius I's Edict of Thessalonica (380) made Nicene Christianity the official Roman state religion and banned other forms of worship. Pagan temples closed, sacrifice was outlawed, the pagan priesthood lost legal standing. The Roman religious settlement that defined European civilization for the next millennium.",
+
+  'constitutio-antoniniana-universal-roman-citizenship':
+    "Roman citizenship had been a privileged legal status for two and a half centuries — gradually extended (Lex Julia, 90 BC) but always limited to specific groups. Caracalla's Constitutio Antoniniana (212 AD) granted Roman citizenship to all free inhabitants of the empire — perhaps 30 million people overnight. Imperial subjecthood and citizenship merged. Tax revenue jumped. The legal distinction that had organized Roman society dissolved into a uniform imperial subject, an inflection point on the road to the late-Empire bureaucratic state.",
+
+  'smoking-and-drying-of-meat-over-fire':
+    "Hunter-gatherer protein had been mostly fresh — meat that wasn't eaten within days spoiled. Smoking over wood fire (~40,000 BC, demonstrated archaeologically at multiple Eurasian sites) and sun-drying both reduced the water content that bacteria need. Smoked meat lasted weeks; dried meat lasted months. The first food-preservation technology. Long-distance hunting trips and seasonal storage became practical. Pemmican, jerky, and biltong are direct descendants.",
+
+  'harvesting-of-wild-cereals-with-sickles':
+    "Hand-stripping of wild grain seedheads had been slow — a person might harvest enough for a few days' food in a long day. Natufian stone sickles (~12,000 BC) — flint blades hafted into bone or wood handles — multiplied harvest speed by perhaps tenfold. Glossed sickle blades appear at sites across the Levantine corridor. The pre-agricultural processing technology that made grain a viable staple before any plant was domesticated.",
+
+  'first-cultivation-of-wild-emmer-wheat':
+    "Wild wheat seedheads shatter at maturity to disperse seeds — useful for the plant, terrible for harvest. Natufians collecting wheat naturally selected for non-shattering mutants (the seeds remained on the stalk and were carried home). Within a few thousand years, emmer wheat (Triticum dicoccum, ~10,000 BC) was reproductively dependent on humans to disperse its seeds. The first crop. Domestication runs the same way for almost every grain that followed.",
+
+  'first-cultivation-of-barley':
+    "Wild barley, like wild wheat, had shattering spikelets. Levantine farmers (~9000 BC) selected the non-shattering mutants — Hordeum vulgare. Barley tolerates drier soil and shorter growing seasons than wheat, which let it spread north and east. By 5000 BC barley was grown from Egypt to the Indus. Beer, bread, and animal feed all run on it. Mesopotamian agricultural surplus and the cities that followed depended primarily on barley.",
+
+  'sumerian-barley-as-staple-crop':
+    "Wild grasses with shattering spikelets had been gathered in the Levant for ten millennia before domestication. Selection for non-shattering mutants (~9000 BC) created Hordeum vulgare — domesticated barley. Mesopotamian Sumer (4500-1900 BC) ran on barley: it grew in salinated soils that wheat couldn't tolerate, paid wages, fed armies, brewed beer. The world's earliest urban civilization stood on a single annual grass crop.",
+
+  'systematic-collection-of-honey':
+    "Honey had been one of the few concentrated calorie sources available to Pleistocene humans, but acquisition involved climbing trees and being repeatedly stung. Mesolithic rock paintings at Cuevas de la Araña (~8000 BC, Spain) show humans using smoke to pacify wild bee colonies and ladders or ropes to access them. The first technique for routinizing honey collection. Sweet calories joined the diet; the fermentation of honey-water gave us mead, the oldest known alcoholic beverage.",
+
+  'domestication-of-chickpeas':
+    "Wild chickpeas (Cicer reticulatum) grow only in a small region of southeastern Turkey and produce toxic compounds in their seeds. Neolithic farmers (~8000 BC) selected for low-toxicity, larger-seed mutants — Cicer arietinum, the domesticated chickpea. Joined wheat, barley, peas, and lentils as one of the founder crops of southwest Asian agriculture. High-protein legumes gave the early agricultural diet what cereals alone couldn't.",
+
+  'yam-domestication-in-west-africa':
+    "Tropical West African forest peoples had no native domesticated cereal staple — the cereals of the Fertile Crescent didn't grow in the rainforest. Yam (Dioscorea spp.) cultivation, beginning around 6000 BC in the forest belt, gave forest populations a high-yield carbohydrate staple. The Bantu expansion (from ~3000 BC) carried yam-and-oil-palm agriculture across Central and Southern Africa. The reason West Africa supported dense populations long before any imported grain.",
+
+  'chicken-domestication-in-southeast-asia':
+    "The red junglefowl (Gallus gallus) of Southeast Asia laid eggs and could be kept on table scraps. Domestication around 6000 BC gave humans a small livestock animal that produced both daily eggs and occasional meat without large pasture requirements. Chickens spread from Southeast Asia across Eurasia by the Bronze Age. The most numerous domesticated bird in history — and now, by biomass, the most numerous bird on Earth.",
+
+  'salt-production':
+    "Pre-salt food preservation had been smoking, drying, and fermentation. Salt — from coastal evaporation pans (Poiana Slatinei, ~6000 BC, in modern Romania, is the earliest known production site) — could preserve meat, fish, and dairy for months without refrigeration. Salt also enabled long-distance food transport. The trade networks that grew up around salt sources (Hallein, the Sahara salt routes, Cheshire) shaped European geography for millennia. 'Salary' is etymologically Roman salt-pay.",
+
+  'grape-domestication':
+    "Wild grapes (Vitis vinifera sylvestris) had been gathered across Eurasia for thousands of years. Domestication at Gadachrili Gora (Georgia, ~6000 BC) selected for hermaphroditic vines (most wild grapes are dioecious) — easier to propagate and higher-yielding. Wine residue in pottery from the same era confirms early winemaking. Grape cultivation followed the spread of viticulture across the Mediterranean. The single most important non-cereal crop of the ancient Mediterranean economy.",
+
+  'rice-paddy-field-terracing':
+    "Hilly and mountainous land had been unsuited to irrigated agriculture — water rolled off slopes. Terrace farming, developed independently in multiple regions (Andes, Yemen, Southeast Asia, southern China; the earliest known examples date to ~4000 BC), cut hillsides into stepped flat platforms with retaining walls. Rice paddies on terraces fed densely populated mountain regions. Bali, the Philippine Cordilleras, and the southern Chinese provinces still farm with the same technique.",
+
+  'fig-domestication-in-near-east':
+    "Wild figs were available across the Levant but produced unpredictably. Domestication of Ficus carica (~4000 BC, eastern Mediterranean) selected for parthenocarpic mutants — figs that fruit without pollination. The first high-sugar, dryable, storable tree fruit. Figs spread with the Phoenicians; Roman provincial agriculture relied on them. Mediterranean diet's tree-fruit foundation begins here.",
+
+  'sorghum-domestication-in-africa':
+    "Wheat and barley were the cereals of the Fertile Crescent — neither tolerated the heat or drought of the African savanna. Sorghum bicolor, domesticated in eastern Sudan around 3500 BC, did. The first heat-and-drought-resistant cereal staple for the African belt. Combined with millet and yam, sorghum supported the dense Sahelian populations that built the Iron Age West African states (Ghana, Mali, Songhai). Today the world's fifth-most-grown cereal.",
+
+  'sumerian-pomegranate-cultivation':
+    "Mediterranean fruit had been mostly seasonal and short-storing. The pomegranate (Punica granatum), domesticated on the Iranian plateau around 3000 BC, kept for months in a cool dry place and provided seeds high in vitamin C and antioxidants. Symbolic resonance followed — the pomegranate appears in Persian, Hebrew, and Greek religious iconography (Persephone's seeds, the temple of Solomon's columns). The first long-storing tree fruit of the ancient Near East.",
+
+  'sumerian-pomegranate-cultivation-2':
+    "Mediterranean fruit had been mostly seasonal and short-storing. The pomegranate (Punica granatum), domesticated on the Iranian plateau around 3000 BC, kept for months in a cool dry place. The duplicate corpus entry shares the parent ID with the canonical one above; the contribution is the same. (Both Hebrew Bible and Greek myth treat pomegranate seeds as the symbol of return-from-death.)",
+
+  'no-till-farming-with-glyphosate':
+    "Conventional agriculture had assumed soil must be tilled before planting — to bury weeds, aerate, and prepare a seedbed. Tillage degrades soil structure, releases stored carbon, and erodes topsoil. No-till farming (modern revival from the 1940s, mass adoption after Roundup commercialization in 1974) leaves the soil intact and uses herbicide for weed control. Soil organic matter recovers. Tractor diesel use drops 60%. The corpus's date of 3000 BC reflects ancient pre-tillage hand-planting; the modern recovery is what made it scalable.",
+
+  'han-dynasty-silk-mulberry-cultivation':
+    "Wild silkworm cocoons had been gathered for centuries. Chinese sericulture (~2700 BC, traditionally credited to the legendary Empress Leizu) tied silk production to managed mulberry orchards: mulberry leaves fed cultivated Bombyx mori silkworms whose cocoons were unwound into silk thread. The first systematized animal-plant agro-industry. Silk became China's pre-eminent export. The Silk Road (from ~200 BC) was named for the commodity that made the journey from Han China to Roman markets economically rational.",
+
+  'sumerian-fish-farming-in-ponds':
+    "Wild river and marsh fishing had supplied Sumerian protein since the Ubaid period. Mesopotamian temple records from ~2500 BC document deliberate stocking of artificial ponds with carp and other species — the world's first known aquaculture. Pond yields exceeded what wild fishing could produce per labor-hour. Ancient Egyptians and Han Chinese followed with their own pond systems. Modern fish farming is a recovery of this Bronze Age practice at industrial scale.",
+
+  'sumerian-cheese-production':
+    "Fresh milk spoiled within hours in Mesopotamian heat. Sumerian dairy practice (~2300 BC, attested in the Frieze of Tell al-'Ubaid and contemporary clay tablets) used rennet — likely from kid stomach — to curdle milk into a long-storing cheese. Cheese stretched dairy nutrition into the dry season. The technology spread across the Near East and Mediterranean; modern hard cheeses (Parmesan, Pecorino) descend from this Bronze Age preservation breakthrough.",
+
+  'horse-domestication-in-eurasian-steppe':
+    "The Pontic-Caspian steppe was rich in wild horse herds. Domestication evidence — bit-wear on horse teeth, settlement organization around horse corrals — appears at Botai-culture sites (modern Kazakhstan) by ~3500 BC. Genetic evidence for the modern domestic horse's ancestry points to the Volga-Don region around 2200 BC. Horses gave steppe peoples the speed and range that produced the Indo-European migrations, chariot warfare, the cavalry doctrines of Bronze and Iron Age empires, and the steppe-nomad dominance of Eurasia until firearms.",
 };
 
 async function main(){
