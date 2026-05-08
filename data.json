@@ -9217,7 +9217,7 @@
       "name": "Zoroaster's teaching / cosmic dualism",
       "domain": "religion",
       "constraint": "morality as tribal custom rather than cosmic struggle",
-      "detail": "Zoroaster (Zarathustra) preached an ethical religion centred on a cosmic struggle between Ahura Mazda (truth, asha) and Angra Mainyu (the lie, druj), with humans choosing sides through their actions. Linguistic dating of his Gathas (the oldest Avestan hymns) places him between 1500 and 1000 BCE; the traditional Greek date of 628 BC is now rejected. Zoroaster gave the world the first sustained ethical monotheism with a cosmic theodicy, judgement after death, and a messianic future — direct upstream of Jewish, Christian, and Islamic eschatology.",
+      "detail": "Zoroaster (Zarathustra) preached an ethical religion centred on a cosmic struggle between Ahura Mazda (truth, asha) and Angra Mainyu (the lie, druj), with humans choosing sides through their actions. Linguistic dating of his Gathas (the oldest Avestan hymns) places him between 1500 and 1000 BC; the traditional Greek date of 628 BC is now rejected, though the corpus retains 600 BC as a placeholder. Zoroastrianism became the first sustained ethical monotheism with a cosmic theodicy, judgement after death, and a messianic future — direct upstream of Jewish, Christian, and Islamic eschatology.",
       "links": [
         {
           "label": "Britannica: Zoroastrianism",
@@ -39588,20 +39588,20 @@
     },
     {
       "id": "first-known-use-of-clay-for-figurines",
-      "year": "35,000 BC",
-      "yearN": -35000,
+      "year": "29,000 BC",
+      "yearN": -29000,
       "zone": "cognitive-leap",
-      "name": "Clay used for Venus figurines",
+      "name": "Fired clay Venus figurines (Dolní Věstonice)",
       "domain": "society",
       "constraint": "before, no durable symbolic objects; after, ritual and social tools emerged",
-      "detail": "The Venus of Hohle Fels, dating to at least 35,000 years ago, was formed from clay and fired, making it among the oldest known ceramics. This dissolved the constraint of impermanent symbolic expression, enabling durable ritual or social objects. Over 200 similar figurines later appeared across Eurasia, some used for healing or cohesion.",
+      "detail": "The Venus of Dolní Věstonice and related Gravettian figurines from Moravia, dated to 29,000 BC, were formed from local loess clay mixed with powdered animal bone and fired at 500-800°C. They are the oldest known ceramic objects, predating functional pottery by 11,000 years. Earlier Aurignacian figurines (Hohle Fels, ~38,000 BC) had been carved from mammoth ivory; clay added a moldable medium that could be shaped while wet, then fired hard.",
       "links": [
         {
-          "label": "Wikipedia: Clay used for Venus figurines",
-          "url": "https://en.wikipedia.org/wiki/Venus_figurine"
+          "label": "Wikipedia: Venus of Dolní Věstonice",
+          "url": "https://en.wikipedia.org/wiki/Venus_of_Doln%C3%AD_V%C4%9Bstonice"
         }
       ],
-      "because": "Pre-ceramic figurines had been carved from bone, ivory, or stone — material-bound by what the carver could shape. Earliest fired-clay figurines (Venus of Dolní Věstonice and related Gravettian sites, ~29,000 BC) used a moldable medium that could be shaped while wet, then fired hard. The first sustained ceramic art. The same firing technology was eventually applied to functional pottery (~18,000 BC in East Asia, ~9000 BC in the Levant). Figurines preceded pottery as ceramic application."
+      "because": "Earlier Aurignacian figurines (Hohle Fels, ~38,000 BC) had been carved from mammoth ivory or stone — material-bound by what the carver could subtract. The Dolní Věstonice clay figurines (~29,000 BC, Moravia) used a moldable medium that could be shaped while wet, then fired hard. The first sustained ceramic art. The same firing technology was eventually applied to functional pottery (~18,000 BC in East Asia, ~9000 BC in the Levant). Figurines preceded pottery as ceramic application."
     },
     {
       "id": "first-known-use-of-antler-picks-for-mining",
@@ -39771,7 +39771,7 @@
           "url": "https://en.wikipedia.org/wiki/Cataract_surgery"
         }
       ],
-      "because": "Cataracts had been a leading cause of preventable blindness for as long as humans have lived long enough to develop them. Mesopotamian and Egyptian (~3000 BC) practitioners performed couching — a needle pushed through the cornea displaced the cloudy lens into the vitreous body, restoring some vision. Crude, dangerous, but sometimes successful. The first sustained intentional surgical intervention to restore sight. Sushruta's Indian rhinoplasty-style cataract techniques (~600 BC) refined the procedure. Modern phacoemulsification cataract surgery is the very-distant descendant."
+      "because": "Cataracts had blinded long-lived humans since prehistory. Babylonian medical tablets (c.1700 BC) carry the earliest documented description of couching — a needle through the cornea displacing the cloudy lens into the vitreous body, restoring partial sight. The Mesopotamian-and-Egyptian 3000 BC date traces to scholarly compilations rather than primary sources, and Sushruta's later Indian elaboration (mid-1st millennium BC) is itself contested. Crude, dangerous, sometimes successful — and the first surgical attempt to restore sight on record. Modern phacoemulsification descends, distantly, from this lineage."
     },
     {
       "id": "first-known-sutures",
@@ -39798,14 +39798,14 @@
       "name": "First known caesarean section",
       "domain": "medicine",
       "constraint": "obstructed labor killed mother and child; abdominal delivery was unknown",
-      "detail": "The first known caesarean section was performed around 3000 BC. This surgical delivery through an incision in the mother's abdomen dissolved the constraint that obstructed labor inevitably led to the death of both mother and child. Afterward, abdominal delivery could save the baby when vaginal delivery was impossible.",
+      "detail": "Legendary references to abdominal delivery appear in Ancient Chinese myth (Luzhong's six sons, c.3000 BC) and other early traditions, though no contemporary documentation survives. The earliest historically attested caesarean dates to 715 BC under Numa Pompilius's lex regia, requiring postmortem extraction from a deceased mother to save the child. Living-mother survival waited until antisepsis, anesthesia, and modern obstetrics in the 1800s.",
       "links": [
         {
           "label": "Wikipedia: First known caesarean section",
           "url": "https://en.wikipedia.org/wiki/Caesarean_section"
         }
       ],
-      "because": "Pre-caesarean obstructed labor had been almost universally fatal — both mother and infant died. Earliest evidence of intentional caesarean surgery (~3000 BC, in some Egyptian and Mesopotamian texts; Roman lex regia required postmortem caesarean) was performed on already-deceased mothers to save the baby. The first sustained surgical alternative to natural birth. Living-mother caesareans became survivable only with antiseptics (Lister 1865), anesthesia (1846), and modern obstetric technique. Modern C-section (now ~30% of US births) is the eventual successor."
+      "because": "Obstructed labor had killed both mother and infant for as long as humans gave birth. Legendary Chinese references to caesarean-style births predate the historical record by centuries; the first documented caesarean appears in Roman lex regia (715 BC), performed on already-deceased mothers to save the child. A surgical alternative to natural birth, recorded in law before it could be recorded in medicine. Living-mother caesareans became survivable only with Lister's antisepsis (1865) and modern anesthesia. Modern C-section is the late descendant of the ancient postmortem rite."
     },
     {
       "id": "imhoteps-surgical-texts",
@@ -49159,20 +49159,20 @@
     },
     {
       "id": "venus-figurine-3",
-      "year": "35,000 BC",
-      "yearN": -35000,
+      "year": "29,000 BC",
+      "yearN": -29000,
       "zone": "cognitive-leap",
       "name": "Venus figurine (clay fired figurine)",
       "domain": "society",
       "constraint": "portable three-dimensional representation was absent",
-      "detail": "The Venus of Hohle Fels, a clay figurine, dates back at least 35,000 years to the Aurignacian period. It is among the oldest ceramics known to historians, dissolving the prior absence of portable three-dimensional symbolic representation. Over 200 such figurines have since been found across Eurasia, recognized as some of the earliest works of prehistoric art.",
+      "detail": "The Venus of Dolní Věstonice, a fired clay figurine from Moravia, dates to 29,000 BC during the Gravettian period. Made from local loess mixed with powdered animal bone and fired at 500-800°C, it is among the oldest ceramic objects known. Earlier Aurignacian Venus figurines (Hohle Fels, ~38,000 BC) were carved from mammoth ivory; the Dolní Věstonice tradition added the moldable-medium-then-fire method that later powered all ceramic art.",
       "links": [
         {
-          "label": "Wikipedia: Venus figurine (clay fired figurine)",
-          "url": "https://en.wikipedia.org/wiki/Venus_figurine"
+          "label": "Wikipedia: Venus of Dolní Věstonice",
+          "url": "https://en.wikipedia.org/wiki/Venus_of_Doln%C3%AD_V%C4%9Bstonice"
         }
       ],
-      "because": "Two-dimensional cave art (Chauvet, ~32,000 BC) and personal ornament (perforated shells, ~75,000 BC) had been the earliest representational practices. The Venus of Hohle Fels — a 6-cm mammoth-ivory figurine of an exaggerated female form, ~35,000 BC — is among the earliest known three-dimensional human depictions. Venus figurines from this and the next twenty millennia show consistent stylistic conventions across Europe. The first portable, durable, anthropomorphic art form."
+      "because": "Mammoth-ivory Venus figurines (Hohle Fels, ~38,000 BC) had carried the earliest three-dimensional human depictions. Dolní Věstonice in Moravia (~29,000 BC) added the fired-clay technique — local loess mixed with bone powder, modeled wet, fired at 500-800°C. The first ceramic art and the oldest known fired-clay objects, predating functional pottery by 11,000 years. The same firing technology was eventually applied to functional pottery (~18,000 BC in East Asia, ~9000 BC in the Levant)."
     },
     {
       "id": "invention-of-pottery",
