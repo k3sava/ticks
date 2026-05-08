@@ -39985,14 +39985,14 @@
       "name": "Chinese acupuncture (earliest evidence)",
       "domain": "medicine",
       "constraint": "pain and disease had no non-pharmacological intervention",
-      "detail": "Thin needles are inserted into the body as a component of traditional Chinese medicine. This dissolved the constraint that pain and disease could only be treated pharmacologically, offering a new therapeutic system. By 2017, the global acupuncture market was worth US$24.55 billion.",
+      "detail": "Acupuncture inserts fine needles at specific body points, an offshoot of traditional Chinese medicine. Some historians trace possible origins to ~600 BC; the earliest archaeological evidence (gold and silver needles in a tomb) and the first systematic textual description (Inner Classic of Huang Di) both date to ~100 BC. The 1000 BC date is a corpus placeholder for the long folk-practice substrate before any documentation survived.",
       "links": [
         {
-          "label": "Wikipedia: Chinese acupuncture (earliest evidence)",
+          "label": "Wikipedia: Acupuncture",
           "url": "https://en.wikipedia.org/wiki/Acupuncture"
         }
       ],
-      "because": "Pre-acupuncture Chinese medicine had used herbal medicine, moxibustion, and massage. The earliest archaeological evidence for acupuncture (~1000 BC, with explicit textual descriptions in the Huangdi Neijing ~200 BC) used fine needles inserted at specific points to influence qi flow through meridians. The first sustained non-pharmacological pain-management technique. Modern Western medical acceptance has been gradual; clinical evidence supports use for several pain conditions, less for others. The tradition's depth and persistence make it a major branch of world medicine regardless of biomedical-validation status."
+      "because": "Pre-acupuncture Chinese medicine had used herbal remedies, moxibustion, and massage. The earliest archaeological evidence for acupuncture is gold-and-silver needles in a tomb dated c.100 BC; the Huangdi Neijing (Inner Classic of Huang Di, c.100 BC) supplies the first systematic textual description of needling at meridian points to regulate qi flow. The 1000 BC headline reflects pre-documentation folk practice rather than confirmed history. Modern Western clinical evidence supports acupuncture for some pain conditions, less for others. The tradition's depth and persistence make it a major branch of world medicine regardless of biomedical-validation status."
     },
     {
       "id": "first-recorded-cataract-surgery-india",
@@ -45602,7 +45602,7 @@
           "url": "https://en.wikipedia.org/wiki/Egyptian_calendar"
         }
       ],
-      "because": "Same Egyptian solar calendar, alternate ID. Egyptian astronomers (~3000 BC) tracked the heliacal rising of Sirius and developed a 365-day civil calendar — twelve 30-day months plus five epagomenal days. The first sustained-scale solar calendar. Drifted slightly each century but stayed close enough for agricultural planning. The Julian calendar (46 BC) and the modern Gregorian calendar (1582) both descend from the Egyptian solar-365 model."
+      "because": "Pre-Egyptian timekeeping had relied on lunar months and seasonal observation, drifting against the agricultural year. Egyptian astronomers (early Old Kingdom, with confirmed evidence by c.2510 BC and probable origins in the early third millennium BC) tracked the heliacal rising of Sirius and built a 365-day civil calendar — twelve 30-day months plus five epagomenal days. The first sustained-scale solar calendar. Drifted slightly each century but stayed close enough for agricultural planning. The Julian calendar (46 BC) and the modern Gregorian calendar (1582) both descend from this Egyptian solar-365 model."
     },
     {
       "id": "invention-of-the-pulley",
@@ -47238,20 +47238,20 @@
     },
     {
       "id": "nabta-playa-stone-circle",
-      "year": "7500 BC",
-      "yearN": -7500,
+      "year": "4800 BC",
+      "yearN": -4800,
       "zone": "settled-world",
       "name": "Nabta Playa stone circle",
       "domain": "religion",
       "constraint": "timekeeping for seasonal religious observances",
-      "detail": "A stone circle was constructed at Nabta Playa around 7500 BC, one of the earliest known astronomical alignments. This dissolved the constraint of lacking a fixed calendar for seasonal rituals, enabling coordinated religious observances tied to solstices or rains. The site's alignment with celestial events suggests it was used to mark the summer solstice, a key moment for pastoralist communities dependent on seasonal water availability.",
+      "detail": "A stone circle with narrow slabs aligned to the summer solstice was constructed at Nabta Playa around 4800 BC, during the megalithic period of the site (4500-3600 BC). This dissolved the constraint of lacking a fixed calendar for seasonal rituals, enabling coordinated religious observances tied to solstices and the monsoon. The cattle-herding pastoralists who built it had occupied the area in seasonal camps from 7500 BC onward; the megaliths came much later, once the communities settled.",
       "links": [
         {
-          "label": "Wikipedia: Nabta Playa stone circle",
+          "label": "Wikipedia: Nabta Playa",
           "url": "https://en.wikipedia.org/wiki/Nabta_Playa"
         }
       ],
-      "because": "Pre-Nabta time-keeping had been lunar (notched bones, ~28,000 BC). Nabta Playa (south of the Egyptian-Sudanese border, ~7500 BC) is a stone circle aligned to the summer solstice — the date of monsoon arrival, critical for the cattle-herding communities of the Neolithic Sahara. The first known megalithic alignment to a solar event. Stonehenge (~3000 BC) is downstream of the same idea."
+      "because": "Pre-Nabta time-keeping had been lunar (notched bones, ~28,000 BC). Nabta Playa (south of the Egyptian-Sudanese border, ~4800 BC) is a stone circle aligned to the summer solstice — the date of monsoon arrival, critical for the cattle-herding communities of the Neolithic Sahara. Among the earliest known megalithic alignments to a solar event. Stonehenge (~3100 BC) is downstream of the same idea, and the Goseck Circle (4900 BC) is an almost-contemporary parallel in central Europe."
     },
     {
       "id": "plastered-human-skulls-jericho",
