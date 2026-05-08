@@ -1555,6 +1555,81 @@ const BECAUSE_BATCH = {
 
   'mechanical-multiplication-machine':
     "Pascal's Pascaline (1642) had handled addition and subtraction. Multiplication had been by repeated addition — slow. Leibniz's stepped reckoner (1673, refined to working form 1694) used his eponymous Leibniz wheel — a stepped cylinder with variable-length cogs — to mechanize multiplication directly. The first calculator that could perform all four basic arithmetic operations in one machine. The Leibniz wheel remained the standard mechanical multiplier for two centuries; appeared in Curta, Friden, and similar 20th-century mechanical calculators.",
+
+  'punched-card-data-storage':
+    "Pre-Bouchon looms had been hand-operated for pattern weaving — each row programmed by a human drawboy. Basile Bouchon's punched-paper-tape control (1725, Lyon) automated the lifting of warp threads — holes in the paper either passed through or blocked needles. Falcon (1728) extended the idea to punched cards. The first machine-readable instruction medium. Jacquard (1804) refined it into the Jacquard loom; Babbage (1837) borrowed the same punched cards for his Analytical Engine; Hollerith (1890) for census tabulation. A two-century thread from Bouchon's loom to the IBM punch card.",
+
+  'vaucansons-automaton-flute-player':
+    "Pre-Vaucanson automata had been simple repetitive devices — a striking clockwork knight, a moving statue. Jacques de Vaucanson's Flute Player (1737, Paris) was a life-size automaton that played twelve real flute tunes — air pumped from bellows, fingers moved by cam-driven cylinders, lips and tongue independently controlled. The first programmable automaton with sustained variable behavior. Vaucanson's Digesting Duck (1739) added (faked) digestive function. Modern industrial robotics' design tradition descends from these 18th-century proofs of concept.",
+
+  'mechanical-logic-gates-concept':
+    "Pre-Stanhope logical reasoning had been analytical — Aristotelian syllogistic worked on paper or in the head. Charles Stanhope's logical demonstrator (1786, refined into the 1815 Stanhope demonstrator) was a sliding-rule device that mechanically computed syllogisms — set the premises, read off the valid conclusion. The first mechanical logic device. Mostly an intellectual curiosity in its day. Foreshadowed Boolean algebra (1854) and electronic logic gates by 150 years.",
+
+  'morse-code':
+    "Pre-telegraph long-distance communication had been semaphore (line-of-sight) or post (days to weeks). Samuel Morse's electromagnetic telegraph (operational 1844) needed an encoding for text. Morse's code (developed with Alfred Vail, 1837-1844) assigned dots and dashes to each letter, with shorter codes for common letters (E = dot, T = dash). The first sustained binary-like encoding for text. Marine and military communication ran on Morse code for 150 years. International Morse Code is still recognized today.",
+
+  'first-computer-program-bernoulli-numbers':
+    "Babbage's Analytical Engine (1837) had been a hardware design with no software. Ada Lovelace's translation of Menabrea's account (1843) included her own elaborate Note G — an algorithm for computing Bernoulli numbers using the Engine's loops, conditionals, and variable storage. The first published computer program. Lovelace also wrote that the Engine could in principle 'weave algebraical patterns just as the Jacquard-loom weaves flowers and leaves' — an early statement of general-purpose computation.",
+
+  'punched-tape':
+    "Punched cards (Falcon 1728, Jacquard 1804) had stored programs row by row on rigid paper. Alexander Bain's punched paper tape (1846) used a continuous strip — the first sequential-access machine-readable data medium. Used initially in automated telegraphy. Tape later became the standard input/output medium for early computers (the IBM 711 read paper tape; Whirlwind I used it heavily). The roll of holey paper running through a tape reader was the iconic image of mid-20th-century computing.",
+
+  'boolean-algebra-formalized':
+    "Aristotelian syllogistic had been verbal logic for two millennia. Leibniz had imagined an algebra of thought. George Boole's An Investigation of the Laws of Thought (1854) made it real: logical operations (AND, OR, NOT) became algebraic operations on truth-values, with rules of manipulation as rigorous as ordinary algebra. The first algebraic logic system. Frege and Russell's foundational work, Shannon's electrical-circuit logic (1937), and every modern computer all run on Boolean algebra.",
+
+  'hollerith-tabulating-machine':
+    "The 1880 US Census had taken seven years to count by hand. Herman Hollerith's electromechanical tabulating machine (1884 patent, deployed for the 1890 census) used punched cards passed through electrical contacts — each pin closing a circuit if there was a hole — to tabulate at machine speeds. The 1890 census results came out in two years instead of seven. Hollerith's company eventually became IBM. The first sustained-scale electromechanical data processing.",
+
+  'hollerith-punched-card':
+    "Bouchon and Jacquard's punched cards had encoded loom programs. Hollerith's redesigned punch card (1890 census deployment) encoded census data at one card per person — discrete fields for age, sex, race, occupation, etc. The first punched card designed for data rather than program. The IBM card (12 rows × 80 columns) standardized the format and held it for ninety years. Generations of business-data processing ran on Hollerith's card design before disk storage displaced it.",
+
+  'differential-analyser':
+    "Linear and simple differential equations had been analytically tractable; nonlinear systems had been hand-tabulated, slowly and approximately. Vannevar Bush and Harold Hazen's MIT differential analyser (1931) used six interconnected mechanical integrators — disc-and-wheel friction integrators — to solve real differential equations in real time. Used through WWII for ballistics, hydrodynamics, fire-control. The first general-purpose analog computer. Electronic analog computers (1940s-60s) eventually displaced it, but the design idea persisted: connect specialized solvers to compute differential equations.",
+
+  'hedy-lamarr-frequency-hopping':
+    "Wartime radio-controlled torpedoes had been jammable on a single frequency. Hedy Lamarr (Hollywood actress and inventor) and George Antheil (avant-garde composer) co-patented frequency-hopping spread spectrum (1942) — sender and receiver simultaneously change frequency on a synchronized schedule, jamming-resistant because the jammer can't follow. The Navy ignored it during WWII. Rediscovered in the 1960s; adopted as the basis for CDMA cellular, Wi-Fi, and Bluetooth in the 1980s-90s. Lamarr finally credited in her 80s.",
+
+  'arpanet-ncp':
+    "ARPANET's first connection (UCLA-Stanford, 1969) had no host-to-host protocol. The Network Control Program (NCP, finalized 1970) gave hosts a uniform way to establish connections, send and receive data, and recover from errors. The first sustained host-to-host networking protocol. Replaced by TCP/IP in 1983 (the famous 'flag day' transition). Modern internet protocols all build on the layered-protocol concept NCP introduced.",
+
+  'rsa-cryptosystem':
+    "Symmetric cryptography had required both parties to share a secret key — distribution was the hard part. Diffie and Hellman (1976) had shown public-key cryptography was possible in theory. Rivest, Shamir, and Adleman's RSA (1977) made it practical: the difficulty of factoring large semiprimes provides a cryptographic asymmetry. Anyone can encrypt with the public key; only the holder of the private key can decrypt. The internet's secure-communication infrastructure — TLS, HTTPS, signed software — all rests on RSA or its elliptic-curve cousins.",
+
+  'macintosh-128k':
+    "Pre-Mac personal computers had been character-mode boxes — keyboard input, scrolling text. Xerox PARC's Alto (1973) had pioneered the GUI but never shipped commercially; the Apple Lisa (1983) was too expensive at $9,995. The Macintosh 128K (January 1984) put the GUI in a $2,495 all-in-one box — bitmap display, mouse, integrated apps. The first commercially successful personal computer with a graphical interface. Steve Jobs's Super Bowl ad (Ridley Scott's 1984) defined the launch. Window-icon-mouse computing became the consumer default.",
+
+  'internet-engineering-task-force':
+    "Pre-IETF internet protocol development had been ad hoc — researchers and engineers coordinated through email and meetings. The IETF (formalized 1986) gave the internet its consensus-driven open-standards body. Working groups, RFCs (Requests for Comments), 'rough consensus and running code' as the deciding principle. Most of the modern internet protocol stack (TCP/IP refinements, HTTP, SMTP, DNS, BGP) was either developed at the IETF or ratified there. Open standards as the default mode of internet evolution.",
+
+  'java-1-0-released':
+    "Pre-Java cross-platform development had required recompiling source for each target. Sun's Java (released May 1995) compiled source to bytecode that ran on a virtual machine — write once, run anywhere. Browser-embedded applets brought interactive content to the web before JavaScript matured. Enterprise server-side Java (Servlets, EJBs, Spring) became a dominant platform for the next two decades. Android's runtime (Dalvik, then ART) is a Java derivative. Twenty-eight years on, Java is still in the top five most-used programming languages.",
+
+  'mozilla-firefox-1-0-released':
+    "Internet Explorer 6 (2001) had had 95% browser market share by 2003 — and was a slow, insecure, non-extensible browser that Microsoft had stopped developing. Mozilla Firefox 1.0 (November 2004), built on the open-source Gecko engine, brought tabbed browsing, fast page rendering, pop-up blocking, and a thriving extension ecosystem. Firefox's market share grew to 30% by 2009. The first sustained challenge to Microsoft's browser dominance. Chrome (2008) eventually displaced Firefox at the top, but the browser-monoculture era ended with Firefox.",
+
+  'google-maps-launched':
+    "Pre-Google-Maps web mapping had been static — request a route from MapQuest, wait, get a still image. Google Maps (February 2005) used JavaScript, AJAX, and tile-based delivery — pan and zoom in real time, click anywhere for details, get satellite imagery and street view (2007) on demand. The first sustained-scale interactive web map. Mobile Google Maps (iOS 2007, Android 2008) made smartphone navigation a routine activity. Lyft, Uber, DoorDash, and the entire location-aware app economy run on Google Maps' API.",
+
+  'youtube-launched':
+    "Pre-YouTube online video had required custom encoding, server hosting, and viewer plugins — too much friction for casual creators. YouTube (founded February 2005, acquired by Google October 2006) hosted any video as a Flash-embedded player playable in any browser. Upload, share, embed in seconds. By 2010, 24 hours of video uploaded per minute; by 2020, 500 hours per minute. The first sustained-scale democratized video distribution platform. Replaced television as the default video medium for under-25s within a decade.",
+
+  'stack-overflow-launched':
+    "Programming questions had been answered (often badly) on Experts Exchange, mailing lists, and IRC. Stack Overflow (Jeff Atwood and Joel Spolsky, launched September 2008) used reputation-based moderation, structured Q&A format, and Creative Commons licensing to build the largest crowdsourced programming reference. By 2015, programmers globally were spending more time on Stack Overflow than on official docs. Now: training data for code-completion AIs (GitHub Copilot, Codex). Programming as a discipline became a public conversation rather than a private apprenticeship.",
+
+  'django-1-0-released':
+    "Pre-Django Python web development had used custom code or low-level frameworks (Zope). Django (originally developed at the Lawrence Journal-World, open-sourced 2005, 1.0 in September 2008) provided an opinionated batteries-included framework: ORM, templating, admin interface, URL routing, security defaults. The first major Python web framework with broad adoption. Instagram, Pinterest, Disqus, and many YC startups built on Django. The competitive landscape (Flask, FastAPI) followed Django's broad-and-opinionated template even when reacting against it.",
+
+  'diffusion-models-popularized':
+    "Generative models pre-2020 had been GANs (unstable, mode-collapse-prone) and VAEs (blurry outputs). Sohl-Dickstein's 2015 paper had introduced diffusion models — slowly destroy data with noise, learn to reverse the process — but they were impractical at the time. Ho, Jain, and Abbeel's DDPM paper (June 2020) and subsequent improvements made diffusion the dominant generative-model paradigm. DALL-E 2 (2022), Stable Diffusion (2022), Midjourney all run diffusion. The technical heart of the generative-AI image revolution.",
+
+  'use-of-poison-on-weapons':
+    "Pre-poison stone-tipped weapons had relied on the wound itself for kill — close-range strikes to vital organs. Plant alkaloids on arrowheads (residue confirmed at Border Cave and Umhlatuzana Rock Shelter, ~60,000 BC) made even glancing wounds lethal. Smaller hunters could now bring down larger prey. African San hunting kits (and many other tropical traditions) preserve the practice into the modern era. The first chemical augmentation of weapons.",
+
+  'pottery-kilns':
+    "Pre-kiln pottery had been low-fired in open hearths — soft, porous, easily cracked. Pottery kilns (~18,000 BC, in Jiangxi China; later in Levantine and other Eurasian sites) reached temperatures above 800°C, vitrifying the clay into hard durable ware. The first sustained controlled high-temperature manufacturing. Hard ceramic vessels could store grain, transport oil, ferment beer. Bronze smelting (~3500 BC) and later iron working (~1200 BC) all use kiln-derived high-temperature techniques.",
+
+  'natufian-culture':
+    "Pre-Natufian Levantine populations had been mobile hunter-gatherers, never staying in one place for more than a season. Natufian culture (13,000-9,500 BC) built sustained settlements at sites like Ain Mallaha and Wadi Hammeh — semi-subterranean stone houses, sustained burial grounds, intensive wild-grain harvesting using stone sickles. The first sustained sedentary or semi-sedentary lifestyle preceding agriculture by at least three thousand years. Sedentism preceded farming, not the other way around.",
 };
 
 async function main(){
