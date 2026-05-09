@@ -52620,21 +52620,21 @@
       "year": "2025 AD",
       "yearN": 2025,
       "zone": "ai-era",
-      "name": "Operation Spiderweb: drone swarm launched from inside Russia hits four airbases",
+      "name": "Operation Spiderweb: drones pre-positioned inside Russia hit five strategic airbases",
       "domain": "war",
       "constraint": "attacks on an adversary's strategic bomber fleet required penetrating layered air defenses, demanding expensive cruise missiles or manned aircraft",
-      "detail": "On June 1, 2025, Ukrainian forces executed Operation Spiderweb, deploying 117 first-person-view (FPV) drones that had been pre-positioned inside Russia. In a single night, the swarm struck four Russian airbases, damaging 41 aircraft. President Zelensky stated that approximately 34% of Russia's strategic bomber fleet was struck. The operation required no aircraft or missiles crossing the border; drones were smuggled in advance and activated remotely, exploiting the gap between air defense systems designed for aerial threats and ground-level low-signature platforms.",
+      "detail": "On June 1, 2025, Ukrainian SBU forces executed Operation Spiderweb: 117 drones smuggled inside Russia inside trucks, driven by unwitting Russian drivers, activated remotely when the trucks reached their destinations. The swarm struck five Russian airbases including Belaya in eastern Siberia, 4,300 km from Ukraine. About 20 aircraft were hit, 10 confirmed destroyed, with Ukraine claiming $7 billion in damage to approximately 34% of Russia's strategic cruise missile carriers. No Ukrainian aircraft crossed the border; the attack came entirely from within Russian territory.",
       "links": [
         {
-          "label": "Ukraine Drone Warfare Key Trends 2025",
-          "url": "https://ukrainesarmsmonitor.substack.com/p/drone-warfare-in-ukraine-key-trends"
+          "label": "CNN: Operation Spiderweb — Ukraine hits air bases deep inside Russia",
+          "url": "https://www.cnn.com/2025/06/01/europe/ukraine-drones-russia-airbases-intl"
         },
         {
-          "label": "IEEE Spectrum: Autonomous drone warfare in Ukraine",
-          "url": "https://spectrum.ieee.org/autonomous-drone-warfare"
+          "label": "Wikipedia: Operation Spiderweb",
+          "url": "https://en.wikipedia.org/wiki/Operation_Spiderweb"
         }
       ],
-      "because": "Ukraine's drone program grew from improvised commercial quadcopters in 2022 to industrialized FPV production of over 2 million units in 2024. Russia's Shahed loitering munitions (beginning 2022) validated the mass attrition model against fixed targets. Operation Spiderweb dissolved the assumption that strategic airbase strikes required air superiority or expensive cruise missiles. The operation also demonstrated that pre-positioning small autonomous weapons inside an adversary's territory is logistically feasible, shifting military planning assumptions for both defense and offense."
+      "because": "Ukraine's drone program scaled from improvised commercial quadcopters in 2022 to industrial FPV production of over 2 million units in 2024. Russia's Shahed loitering munition program (beginning 2022) validated the mass attrition model against fixed targets. Operation Spiderweb dissolved the assumption that strategic airbase strikes required air superiority or cruise missiles. It established that pre-positioning small autonomous weapons deep inside an adversary's territory months in advance is logistically feasible, a shift that changes defensive planning for every military worldwide."
     },
     {
       "id": "germany-election-2025-far-right-enters-coalition-math",
@@ -52658,14 +52658,14 @@
       "because": "The 2022 Russian invasion of Ukraine, a migration crisis, and the collapse of the Scholz coalition government created the conditions for the February 2025 snap election. The AfD's rise from 10.3% in 2021 to 20% in 2025 crossed the threshold at which the traditional firewall (the commitment by all mainstream parties not to work with the AfD) became arithmetically difficult to maintain without forming Grand Coalitions. The result reflected a broader 2024-2025 pattern across Europe: right-populist parties surging in France, Italy, Sweden, and Hungary. German political consensus, which had shaped EU policy since 1990, now operates under a new constraint."
     },
     {
-      "id": "ukraine-peace-framework-90-percent-agreed",
+      "id": "ukraine-us-peace-framework-20-points-2025",
       "year": "2025 AD",
       "yearN": 2025,
       "zone": "ai-era",
-      "name": "Ukraine-Russia peace framework reaches 90% agreement",
+      "name": "Ukraine-US 20-point peace framework / first formal peace architecture since 2022",
       "domain": "society",
       "constraint": "the Russia-Ukraine war had no formal diplomatic framework accepted by both sides since Istanbul talks collapsed in April 2022, with full-scale war continuing as the only operative condition",
-      "detail": "By December 28, 2025, US and Ukrainian negotiators had agreed on approximately 90% of a 20-point peace framework following talks in Florida. The Easter truce of April 19-20, 2025 was the first official pause in ground hostilities since the full-scale invasion began in February 2022. A prisoner-of-war exchange of thousands was completed. The outstanding 10% centered on territorial control of the Donbas region. Trump and Zelensky jointly declared the deal in its final stages, though Russia had not formally accepted the framework by year-end.",
+      "detail": "By December 2025, Ukraine and the United States had agreed on approximately 90% of a 20-point peace framework following months of US-brokered talks. The Easter truce of April 19-20, 2025 was the first official pause in ground hostilities since February 2022. The framework included security guarantees and addressed territory, but Russia had not formally accepted it by year-end — the outstanding 10% centered on Donbas control. The existence of a written 20-point document accepted by Ukraine and the US marked the first genuine written peace architecture since the Istanbul talks collapsed in April 2022.",
       "links": [
         {
           "label": "Al Jazeera: Trump and Zelensky hail progress toward peace deal",
@@ -52676,7 +52676,7 @@
           "url": "https://www.npr.org/2025/12/24/g-s1-103618/u-s-and-ukraine-reach-consensus-on-key-issues"
         }
       ],
-      "because": "The Istanbul peace talks of March-April 2022 collapsed after reports of Russian atrocities at Bucha, and no formal framework survived until 2025. The change in US administration in January 2025, with Trump explicitly prioritizing a negotiated end, reactivated diplomacy that had been frozen for three years. The first Easter truce dissolved the symbolic constraint that any pause constituted capitulation. Russia's rejection of every US-brokered proposal through 2025 left the framework incomplete, but the existence of a written 20-point document accepted by Ukraine marks the first genuine peace architecture since 2022."
+      "because": "The Istanbul peace talks of March-April 2022 collapsed after Bucha, and no formal framework survived until 2025. The change in US administration in January 2025, with Trump explicitly prioritizing a negotiated end, reactivated diplomacy frozen for three years. Russia's refusal of every proposal through 2025 left the framework incomplete, but the shift from no-document to a written 20-point plan accepted by two of three parties is a structural change in the war's diplomatic state — the constraint was the absence of any written framework, not the absence of peace itself."
     },
     {
       "id": "firefly-blue-ghost-first-fully-successful-commercial-moon-landing",
