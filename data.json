@@ -2780,7 +2780,7 @@
         }
       ],
       "_origZone": "victorian-era",
-      "because": "John Snow's cholera-and-epidemiology work (1854) and Broca's localization of language in the brain (1861) demonstrated that systematic empirical investigation could identify specific causes of complex problems. Pasteur and Koch's parallel work in the 1860s — anthrax bacillus, Koch's postulates, the rabies vaccine — establishes that specific microbes cause specific diseases. Life expectancy doubles in the century after this tick."
+      "because": "John Snow's cholera-and-epidemiology work (1854) and Broca's localization of language in the brain (1861) demonstrated that systematic empirical investigation could identify specific causes of complex problems. Pasteur's swan-neck flask experiments (1861) established that microbes cause fermentation and disease; Koch extended the framework — isolating the anthrax bacillus (1876) and formalizing Koch's postulates (1884) — confirming that specific microbes cause specific diseases. Life expectancy doubles in the century after this tick."
     },
     {
       "id": "manet-salon-des-refus-s",
@@ -3576,7 +3576,7 @@
         }
       ],
       "_origZone": "wwi-interwar",
-      "because": "Saussure's synchronic linguistics (1916) and Plessy v. Ferguson's separate-but-equal doctrine (1896) had each addressed the question of who counts in a system. Women's suffrage — the UK Representation of the People Act (1918) and the US Nineteenth Amendment (1920) — adds half the population to the political subject formally. The political consequences ripple for the rest of the century."
+      "because": "Saussure's synchronic linguistics (1916) and Plessy v. Ferguson's separate-but-equal doctrine (1896) had each addressed the question of who counts in a system. Women's suffrage — the UK Representation of the People Act (1918, enfranchising women over 30 meeting property qualifications) and the US Nineteenth Amendment (1920, universal female suffrage) — opens the franchise to women for the first time in the world's two largest democracies. The political consequences ripple for the rest of the century."
     },
     {
       "id": "radio-broadcasting-of-music",
@@ -25172,7 +25172,7 @@
           "label": "history.aip.org"
         }
       ],
-      "because": "Becquerel's discovery of radioactivity (1896) showed that uranium emitted a strange spontaneous radiation, and the cathode-ray tube (1897) was demonstrating that electrons existed as discrete particles. The Curies's chemical fractionation of pitchblende isolated polonium and radium — vastly more radioactive than uranium — and proved that radioactivity was an atomic property, not a uranium-specific quirk."
+      "because": "Becquerel's discovery of radioactivity (1896) showed that uranium emitted a strange spontaneous radiation, and the cathode-ray tube (1897) was demonstrating that electrons existed as discrete particles. The Curies's chemical fractionation of pitchblende identified and named polonium (July 1898) and radium (December 1898) — both vastly more radioactive than uranium — and proved that radioactivity was an atomic property, not a uranium-specific quirk."
     },
     {
       "id": "schrodinger-wave-equation",
@@ -35045,7 +35045,7 @@
           "url": "https://en.wikipedia.org/wiki/De_Havilland_Comet"
         }
       ],
-      "because": "Pre-Comet commercial aviation had used piston-engine aircraft — slow, low-altitude, unpressurized. The de Havilland Comet (entered service May 1952, first jet airliner) flew at 35,000 ft at 720 km/h — twice the speed of contemporary airliners. The first sustained-scale jet airliner service. Initial fatal crashes (1953-54) revealed metal fatigue at pressurization stress points; the Comet was redesigned. Modern jet aviation's safety analysis traces directly to lessons from the Comet failures. The Boeing 707 (1958) eventually dominated."
+      "because": "Pre-Comet commercial aviation had used piston-engine aircraft — slow, low-altitude, unpressurized. The de Havilland Comet (entered service May 2, 1952, world's first jet airliner) cruised at 35,000 ft at roughly 790 km/h (490 mph) — about twice the speed of contemporary piston airliners like the Douglas DC-6. The first sustained-scale jet airliner service. Initial fatal crashes (1953-54) revealed metal fatigue at pressurization stress points; the Comet was redesigned. Modern jet aviation's safety analysis traces directly to lessons from the Comet failures. The Boeing 707 (1958) eventually dominated."
     },
     {
       "id": "containerization",
