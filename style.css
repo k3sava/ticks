@@ -2517,38 +2517,43 @@ a[href*="issues/new"]{
 :root[data-theme="matrix"] .walk-stage::after,
 :root[data-theme="matrix"] .home-show::after{opacity:0}
 
-/* Body: flat black + full-page horizontal scanlines */
-:root[data-theme="matrix"] body::before{
-  background:#020402;
+/* Body: pitch black — kill all halo/gradient */
+:root[data-theme="matrix"] body{
+  background:#000 !important;
 }
+:root[data-theme="matrix"] body::before{
+  background:#000 !important;
+  /* Kill cursor-follow halo and all domain gradients */
+  background-image:none !important;
+}
+/* Full-page scanlines overlay — hard 1px lines every 3px */
 :root[data-theme="matrix"] body::after{
-  background-image:
-    repeating-linear-gradient(180deg,
-      rgba(0,0,0,.55) 0,
-      rgba(0,0,0,.55) 1px,
-      transparent 1px,
-      transparent 3px);
-  background-size:auto;
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:9998;
+  pointer-events:none;
+  background-image:repeating-linear-gradient(
+    180deg,
+    rgba(0,0,0,.65) 0px,
+    rgba(0,0,0,.65) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  background-size:100% 3px;
   -webkit-mask-image:none;
           mask-image:none;
   opacity:1;
-  pointer-events:none;
-  z-index:9999;
-  position:fixed;
-  inset:0;
 }
 
-/* Walk stage: solid panel, phosphor border, terminal glow */
+/* Walk stage: hard terminal panel, zero radius */
 :root[data-theme="matrix"] .walk-stage{
   background:#050d07;
   -webkit-backdrop-filter:none;
   backdrop-filter:none;
-  border:1px solid rgba(40,224,122,.40);
-  border-radius:2px;
-  box-shadow:
-    0 0 0 1px rgba(40,224,122,.15),
-    0 0 24px rgba(40,224,122,.08),
-    inset 0 0 60px rgba(40,224,122,.03);
+  border:1px solid rgba(40,224,122,.45);
+  border-radius:0 !important;
+  box-shadow:0 0 0 1px rgba(40,224,122,.12);
 }
 
 /* Walk year: solid phosphor, no gradient fill, strong glow */
