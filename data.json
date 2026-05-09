@@ -16782,7 +16782,7 @@
       "name": "Rosa Parks / Montgomery Bus Boycott",
       "domain": "society",
       "constraint": "racial bus segregation as an immovable social fact in Montgomery, Alabama",
-      "detail": "Rosa Parks' December 1, 1955 refusal to give up her seat launched the 381-day Montgomery Bus Boycott, the first mass civil disobedience action of the modern civil rights movement. It demonstrated that economic pressure combined with legal challenge could desegregate public facilities. Martin Luther King's emergence as a national leader, the SCLC's founding, and the movement's tactics all trace to Montgomery.",
+      "detail": "Rosa Parks' December 1, 1955 refusal to give up her seat launched the 382-day Montgomery Bus Boycott, the first mass civil disobedience action of the modern civil rights movement. It demonstrated that economic pressure combined with legal challenge could desegregate public facilities. Martin Luther King's emergence as a national leader, the SCLC's founding, and the movement's tactics all trace to Montgomery.",
       "links": [
         {
           "label": "Library of Congress: Rosa Parks Papers — Montgomery Bus Boycott notebook",
@@ -16794,7 +16794,7 @@
         }
       ],
       "_origZone": "post-wwii",
-      "because": "Brown v. Board (1954) had outlawed school segregation in principle. Implementation was slow and bitter. Rosa Parks's December 1, 1955 refusal to give up her seat — coordinated with the local NAACP, planned for legal-test-case viability — launched the 381-day Montgomery Bus Boycott. The boycott broke the bus company's finances, broke the segregation ordinance in court, and made Martin Luther King Jr. a national figure. The Civil Rights Movement's modern phase begins here."
+      "because": "Brown v. Board (1954) had outlawed school segregation in principle. Implementation was slow and bitter. Rosa Parks's December 1, 1955 refusal to give up her seat — coordinated with the local NAACP, planned for legal-test-case viability — launched the 382-day Montgomery Bus Boycott. The boycott broke the bus company's finances, broke the segregation ordinance in court, and made Martin Luther King Jr. a national figure. The Civil Rights Movement's modern phase begins here."
     },
     {
       "id": "stonewall-inn-riots-gay-liberation",
@@ -20569,7 +20569,7 @@
       "name": "Montgomery Bus Boycott / Civil Rights Movement",
       "domain": "society",
       "constraint": "Jim Crow segregation as a fixed feature of Southern life",
-      "detail": "Rosa Parks's arrest and the subsequent 381-day boycott — organized through Black churches and the newly formed MIA with MLK as spokesman — proved that nonviolent mass action could defeat legal segregation economically. The boycott's success launched the Civil Rights Movement as a national force. The strategic toolkit (boycotts, sit-ins, marches, legal challenges) was developed and proven here.",
+      "detail": "Rosa Parks's arrest and the subsequent 382-day boycott — organized through Black churches and the newly formed MIA with MLK as spokesman — proved that nonviolent mass action could defeat legal segregation economically. The boycott's success launched the Civil Rights Movement as a national force. The strategic toolkit (boycotts, sit-ins, marches, legal challenges) was developed and proven here.",
       "links": [
         {
           "label": "National Park Service — Montgomery Bus Boycott",
@@ -46758,7 +46758,7 @@
           "url": "https://en.wikipedia.org/wiki/Geostationary_orbit"
         }
       ],
-      "because": "Pre-geostationary satellite communications had relied on ground relays. Syncom 2 (1963, Hughes Aircraft, NASA) was the first satellite to achieve geostationary orbit — 35,786 km altitude, where orbital period matches Earth's rotation, so the satellite appears stationary. The first sustained-scale geostationary communications platform. Continuous global communication links became practical with three or four geostationary satellites covering the globe. Modern television broadcast, weather monitoring, and many GPS-replacement positioning systems all run on geostationary infrastructure."
+      "because": "Pre-geostationary satellite communications had relied on ground relays. Syncom 2 (1963, Hughes Aircraft, NASA) achieved geosynchronous orbit — matching Earth's rotation period — but its 33-degree inclination meant ground antennas had to track a figure-eight path. Syncom 3 (1964) was the first satellite in true geostationary orbit at 35,786 km above the equator, appearing stationary from any point on Earth below. Continuous global communication links became practical with three or four such satellites. Modern television broadcast, weather monitoring, and navigation infrastructure all run on geostationary platforms descended from this design."
     },
     {
       "id": "moores-law",
@@ -52164,7 +52164,7 @@
           "url": "https://en.wikipedia.org/wiki/T-64"
         }
       ],
-      "because": "Cold War tanks (M60, T-55) had bolted thicker steel onto the same basic 1940s chassis. The Soviet T-64 (entered service 1963) combined three innovations in one platform: composite armor (steel-glass-steel sandwich), an autoloader replacing the human loader (cutting crew from four to three), and a 125mm smoothbore gun firing APFSDS rounds. The first true main battle tank to achieve all three. Western tank designers spent the 1970s catching up — the M1 Abrams (1980) is the Western answer to the T-64."
+      "because": "Cold War tanks (M60, T-55) had bolted thicker steel onto the same basic 1940s chassis. The Soviet T-64 — production began at Kharkiv in 1963, formally entering Soviet army service in December 1966 — combined three innovations in one platform: composite armor (steel-glass-steel sandwich), an autoloader replacing the human loader (cutting crew from four to three), and a 125mm smoothbore gun firing APFSDS rounds. The first true main battle tank to achieve all three simultaneously. Western tank designers spent the 1970s catching up — the M1 Abrams (1980) is the Western answer to the T-64."
     },
     {
       "id": "vietnam-war-body-count-metric",
