@@ -1375,13 +1375,11 @@ function browse(){
   // While searching or zone-filtered, force-expand all eras so hits are visible.
   const allCollapsed = !q && !az && BROWSE_STATE.collapsed.size === ZONES.filter(z => byZone[z.id]).length;
 
-  // Build timeline segments proportional to yearN span per zone
-  const totalSpan = ZONES.reduce((s,z) => s + (z.to - z.from || 1), 0);
+  // Build timeline segments — equal width so every era is legible
   const timelineSegs = ZONES.map(z => {
-    const pct = ((z.to - z.from || 1) / totalSpan * 100).toFixed(2);
     const active = az === z.id;
-    const label = z.name.length > 14 ? z.name.split(' ')[0] : z.name;
-    return `<button class='browse-tl-seg${active ? ' is-active' : ''}' data-zone='${z.id}' style='flex:0 0 ${pct}%' title='${escapeHtml(z.name)} (${z.from < 0 ? Math.abs(z.from)+'BC' : z.from} – ${z.to < 0 ? Math.abs(z.to)+'BC' : z.to})'>
+    const label = z.name.length > 12 ? z.name.split(' ').slice(0,2).join(' ') : z.name;
+    return `<button class='browse-tl-seg${active ? ' is-active' : ''}' data-zone='${z.id}' title='${escapeHtml(z.name)} (${z.from < 0 ? Math.abs(z.from)+'BC' : z.from} – ${z.to < 0 ? Math.abs(z.to)+'BC' : z.to})'>
       <span class='browse-tl-label'>${escapeHtml(label)}</span>
     </button>`;
   }).join('');
