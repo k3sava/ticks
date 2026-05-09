@@ -2449,106 +2449,147 @@ a[href*="issues/new"]{
 :root[data-theme="brutalist"] .dom .ob-tetra{display:none}
 
 /* ============================================================
-   MATRIX THEME — phosphor-green dark
-   Near-black ground with a green tint, phosphor accent, scanline
-   texture on glass. Body keeps the dot grid but recolors it green
-   and adds horizontal scanlines so the whole field feels CRT.
+   MATRIX THEME — hard CRT terminal, no glass, no blur
+   Pure phosphor green on near-black. Every surface is solid.
+   Scanlines at the body level. No backdrop-filter anywhere.
+   Domain colors killed — everything is #28E07A or black.
    ============================================================ */
 :root[data-theme="matrix"]{
-  --bg:#040806;
-  --bg-2:#081410;
-  --paper:rgba(0,255,140,.04);
-  --paper-2:rgba(0,255,140,.07);
-  --line:rgba(0,255,140,.10);
-  --line-2:rgba(0,255,140,.18);
-  --ink:#D7F8E0;
-  --ink-2:rgba(215,248,224,.80);
-  --muted:rgba(215,248,224,.55);
-  --faint:rgba(215,248,224,.30);
+  --bg:#020402;
+  --bg-2:#020402;
+  --paper:#050d07;
+  --paper-2:#071009;
+  --line:rgba(40,224,122,.20);
+  --line-2:rgba(40,224,122,.35);
+  --ink:#39FF6E;
+  --ink-2:rgba(57,255,110,.75);
+  --muted:rgba(57,255,110,.45);
+  --faint:rgba(57,255,110,.22);
   --accent:#28E07A;
-  --accent-2:#6BFFA5;
+  --accent-2:#39FF6E;
 
-  --glass-thin-bg:rgba(8,28,18,.42);
-  --glass-thin-blur:saturate(140%) blur(14px);
-  --glass-bg:rgba(8,28,18,.52);
-  --glass-blur:saturate(160%) blur(20px);
-  --glass-thick-bg:rgba(8,28,18,.68);
-  --glass-thick-blur:saturate(180%) blur(28px);
-  --glass-edge:rgba(40,224,122,.22);
-  --glass-edge-strong:rgba(40,224,122,.40);
-  --glass-shadow:0 22px 50px -28px rgba(0,40,20,.7), 0 6px 18px -10px rgba(0,40,20,.6);
-  --glass-shadow-hi:0 30px 70px -28px rgba(0,80,40,.85), 0 10px 24px -10px rgba(0,80,40,.7);
-  --halo:rgba(40,224,122,.18);
+  /* No glass — solid panels only */
+  --glass-thin-bg:#050d07;
+  --glass-thin-blur:none;
+  --glass-bg:#071009;
+  --glass-blur:none;
+  --glass-thick-bg:#0a160c;
+  --glass-thick-blur:none;
+  --glass-edge:rgba(40,224,122,.35);
+  --glass-edge-strong:rgba(40,224,122,.60);
+  --glass-shadow:0 0 0 1px rgba(40,224,122,.25);
+  --glass-shadow-hi:0 0 0 1px rgba(40,224,122,.50), 0 0 16px rgba(40,224,122,.12);
+  --halo:transparent;
 
-  /* Scanlines — 1px every 3px. Plus a finer 2px stripe for that
-     interlace feel. The horizontal cadence is what reads as CRT. */
-  --glass-texture:
-    repeating-linear-gradient(180deg,
-      rgba(0,255,140,.06) 0,
-      rgba(0,255,140,.06) 1px,
-      transparent 1px,
-      transparent 3px),
-    repeating-linear-gradient(180deg,
-      rgba(0,0,0,.18) 0,
-      rgba(0,0,0,.18) 1px,
-      transparent 1px,
-      transparent 2px);
-  --glass-texture-size:auto, auto;
-  --glass-texture-repeat:repeat, repeat;
+  /* No glass texture on surfaces — scanlines handled at body level */
+  --glass-texture:none;
+  --glass-texture-size:auto;
+  --glass-texture-repeat:no-repeat;
 
-  --ob-line:rgba(40,224,122,.55);
-  --ob-line-dim:rgba(40,224,122,.32);
-  --ob-line-soft:rgba(40,224,122,.16);
-  --ob-glow:0 0 6px rgba(40,224,122,.45);
+  --ob-line:rgba(40,224,122,.60);
+  --ob-line-dim:rgba(40,224,122,.35);
+  --ob-line-soft:rgba(40,224,122,.18);
+  --ob-glow:0 0 8px rgba(40,224,122,.55);
+
+  /* Force domain color to phosphor green everywhere */
+  --dc:#28E07A;
 }
-/* Matrix: dark blooms on glass — let the green tint dominate, not warm */
+
+/* Kill all backdrop-filter in matrix — solid panels only */
+:root[data-theme="matrix"] .glass,
+:root[data-theme="matrix"] .glass-thin,
+:root[data-theme="matrix"] .glass-thick{
+  -webkit-backdrop-filter:none !important;
+  backdrop-filter:none !important;
+}
+
+/* Kill domain blooms and specular sweeps — all glass pseudo-elements off */
 :root[data-theme="matrix"] .glass::before,
 :root[data-theme="matrix"] .glass-thin::before,
 :root[data-theme="matrix"] .glass-thick::before,
 :root[data-theme="matrix"] .walk-stage::before,
 :root[data-theme="matrix"] .home-show::before,
 :root[data-theme="matrix"] .walk-flow-card::before,
-:root[data-theme="matrix"] .hunt-suggest-grid button::before{opacity:.45}
+:root[data-theme="matrix"] .hunt-suggest-grid button::before{opacity:0}
 :root[data-theme="matrix"] .glass::after,
 :root[data-theme="matrix"] .glass-thin::after,
-:root[data-theme="matrix"] .glass-thick::after{
-  background:linear-gradient(135deg,
-    rgba(40,224,122,.22) 0%, transparent 18%,
-    transparent 82%, color-mix(in oklab, var(--dc, var(--accent)) 35%, transparent) 100%);
-  opacity:.5;mix-blend-mode:screen;
-}
+:root[data-theme="matrix"] .glass-thick::after,
+:root[data-theme="matrix"] .walk-stage::after,
+:root[data-theme="matrix"] .home-show::after{opacity:0}
+
+/* Body: flat black + full-page horizontal scanlines */
 :root[data-theme="matrix"] body::before{
-  /* Phosphor halo + green field. Dim background gradients so the green
-     accent + scanlines do the work. */
-  background:
-    radial-gradient(60vmax 60vmax at calc(var(--cx)*100%) calc(var(--cy)*100%),
-      var(--halo) 0%, transparent 50%),
-    radial-gradient(50vmax 60vmax at 18% 12%,
-      color-mix(in oklab, var(--dc, var(--accent)) 14%, transparent) 0%,
-      transparent 60%),
-    radial-gradient(60vmax 60vmax at 82% 88%,
-      color-mix(in oklab, var(--accent-2) 12%, transparent) 0%,
-      transparent 60%),
-    linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+  background:#020402;
 }
-/* Matrix body texture — full-page scanlines + faint phosphor dot grid */
 :root[data-theme="matrix"] body::after{
   background-image:
     repeating-linear-gradient(180deg,
-      rgba(0,255,140,.04) 0,
-      rgba(0,255,140,.04) 1px,
+      rgba(0,0,0,.55) 0,
+      rgba(0,0,0,.55) 1px,
       transparent 1px,
-      transparent 3px),
-    radial-gradient(circle at center,
-      rgba(40,224,122,.18) 1px, transparent 1.4px);
-  background-size:auto, 32px 32px;
-  -webkit-mask-image:radial-gradient(70vmax 70vmax at 50% 50%, black 0%, transparent 80%);
-          mask-image:radial-gradient(70vmax 70vmax at 50% 50%, black 0%, transparent 80%);
-  opacity:.5;
+      transparent 3px);
+  background-size:auto;
+  -webkit-mask-image:none;
+          mask-image:none;
+  opacity:1;
+  pointer-events:none;
+  z-index:9999;
+  position:fixed;
+  inset:0;
 }
-/* Matrix: rings glow phosphor-green */
-:root[data-theme="matrix"] .ob-rings{opacity:.85;color:color-mix(in oklab, var(--dc, var(--accent)) 70%, var(--accent))}
-/* Matrix: nudge body toward mono — all text surfaces go terminal */
+
+/* Walk stage: solid panel, phosphor border, terminal glow */
+:root[data-theme="matrix"] .walk-stage{
+  background:#050d07;
+  -webkit-backdrop-filter:none;
+  backdrop-filter:none;
+  border:1px solid rgba(40,224,122,.40);
+  border-radius:2px;
+  box-shadow:
+    0 0 0 1px rgba(40,224,122,.15),
+    0 0 24px rgba(40,224,122,.08),
+    inset 0 0 60px rgba(40,224,122,.03);
+}
+
+/* Walk year: solid phosphor, no gradient fill, strong glow */
+:root[data-theme="matrix"] .walk-year{
+  background:none;
+  -webkit-text-fill-color:#39FF6E;
+  color:#39FF6E;
+  text-shadow:
+    0 0 8px rgba(57,255,110,.90),
+    0 0 24px rgba(57,255,110,.55),
+    0 0 60px rgba(57,255,110,.25);
+  filter:none;
+  font-style:normal;
+  font-family:var(--mono);
+  letter-spacing:-.02em;
+}
+
+/* Walk year: CRT flicker */
+@keyframes matrix-crt-flicker{
+  0%,100%{opacity:1}
+  8%{opacity:.85}
+  9%{opacity:1}
+  42%{opacity:.92}
+  43%{opacity:1}
+  67%{opacity:.88}
+  68%{opacity:1}
+}
+:root[data-theme="matrix"] .walk-year,
+:root[data-theme="matrix"] .play-year{
+  animation:matrix-crt-flicker 4s step-end infinite;
+}
+
+/* Walk name: phosphor, mono */
+:root[data-theme="matrix"] .walk-name{
+  font-family:var(--mono);
+  font-weight:600;
+  color:#39FF6E;
+  text-shadow:0 0 12px rgba(57,255,110,.40);
+}
+
+/* All body text: mono terminal */
 :root[data-theme="matrix"] .walk-body,
 :root[data-theme="matrix"] .walk-before,
 :root[data-theme="matrix"] .walk-detail,
@@ -2557,61 +2598,132 @@ a[href*="issues/new"]{
 :root[data-theme="matrix"] .browse-row .nm,
 :root[data-theme="matrix"] .browse-row .be{
   font-family:var(--mono);
-  font-size:.9em;
-  letter-spacing:.02em;
+  font-size:.88em;
+  letter-spacing:.01em;
+  line-height:1.6;
 }
+
+/* Because panel: solid terminal block */
+:root[data-theme="matrix"] .walk-because{
+  background:#050d07;
+  -webkit-backdrop-filter:none;
+  backdrop-filter:none;
+  border:1px solid rgba(40,224,122,.30);
+  border-left:3px solid rgba(40,224,122,.80);
+  border-radius:0;
+  box-shadow:none;
+}
+
+/* Nav: mono, no glass */
 :root[data-theme="matrix"] #nav a,
 :root[data-theme="matrix"] #nav button,
-:root[data-theme="matrix"] .browse-meta{
+:root[data-theme="matrix"] .browse-meta,
+:root[data-theme="matrix"] .footer-meta{
   font-family:var(--mono);
   letter-spacing:.04em;
 }
-/* Matrix: walk-year CRT flicker at ~8Hz — alive but not seizure-inducing */
-@keyframes matrix-crt-flicker{
-  0%,100%{opacity:1}
-  6%{opacity:.98}
-  12%{opacity:1}
-  18%{opacity:.97}
-  25%{opacity:1}
-  31%{opacity:.99}
-  50%{opacity:.98}
-  56%{opacity:1}
-  75%{opacity:.97}
-  87%{opacity:1}
+:root[data-theme="matrix"] #nav a.active{
+  background:rgba(40,224,122,.15);
+  box-shadow:none;
+  border:1px solid rgba(40,224,122,.40);
+  border-radius:2px;
 }
-:root[data-theme="matrix"] .walk-year,
-:root[data-theme="matrix"] .play-year{
-  animation:matrix-crt-flicker 0.125s step-end infinite;
+
+/* Header: solid black */
+:root[data-theme="matrix"] #hdr{
+  background:#020402;
+  -webkit-backdrop-filter:none;
+  backdrop-filter:none;
+  border-bottom:1px solid rgba(40,224,122,.25);
+  box-shadow:0 0 16px rgba(40,224,122,.08);
 }
-/* Matrix: phosphor glow on years */
-:root[data-theme="matrix"] .walk-year,
-:root[data-theme="matrix"] .play-year,
-:root[data-theme="matrix"] .home-year{
-  text-shadow:0 0 14px rgba(40,224,122,.40), 0 0 36px rgba(40,224,122,.22);
+
+/* Trail steps: solid dark, phosphor border */
+:root[data-theme="matrix"] .walk-trail-step{
+  background:#050d07;
+  -webkit-backdrop-filter:none;
+  backdrop-filter:none;
+  border:1px solid rgba(40,224,122,.35);
+  border-radius:2px;
+  box-shadow:none;
+  opacity:.9;
 }
-/* Matrix: cursor → crosshair */
-:root[data-theme="matrix"] body{cursor:crosshair}
-/* Matrix: flow cards — terminal list aesthetic */
+:root[data-theme="matrix"] .walk-trail-step:hover{
+  background:rgba(40,224,122,.10);
+  border-color:rgba(40,224,122,.70);
+  box-shadow:0 0 12px rgba(40,224,122,.15);
+  transform:none;
+}
+
+/* Domain chip: phosphor-tinted solid */
+:root[data-theme="matrix"] .dom{
+  background:#050d07;
+  -webkit-backdrop-filter:none;
+  backdrop-filter:none;
+  border:1px solid rgba(40,224,122,.45);
+  border-radius:2px;
+  color:#39FF6E;
+  box-shadow:none;
+}
+
+/* Flow cards: terminal rows */
 :root[data-theme="matrix"] .walk-flow-card{
-  background:rgba(8,28,18,.7);
+  background:#050d07;
   -webkit-backdrop-filter:none;
   backdrop-filter:none;
   border:none;
-  border-left:2px solid rgba(40,224,122,.5);
+  border-left:2px solid rgba(40,224,122,.55);
+  border-bottom:1px solid rgba(40,224,122,.12);
   border-radius:0;
   box-shadow:none;
 }
 :root[data-theme="matrix"] .walk-flow-card:hover,
 :root[data-theme="matrix"] .walk-flow-card:focus-visible{
-  background:rgba(40,224,122,.10);
-  border-left-color:rgba(40,224,122,1);
+  background:rgba(40,224,122,.08);
+  border-left-color:#39FF6E;
+  box-shadow:0 0 12px rgba(40,224,122,.12);
   transform:none;
+}
+:root[data-theme="matrix"] .walk-flow-card .nm{color:#39FF6E}
+
+/* Controls strip: solid terminal bar */
+:root[data-theme="matrix"] .walk-controls{
+  background:#020402;
+  -webkit-backdrop-filter:none;
+  backdrop-filter:none;
+  border:1px solid rgba(40,224,122,.22);
+  border-radius:0;
   box-shadow:none;
 }
-/* Matrix: brand mark glows */
-:root[data-theme="matrix"] .brand-mark{
-  text-shadow:0 0 8px rgba(40,224,122,.35);
+:root[data-theme="matrix"] .walk-controls button{
+  background:transparent;
+  border:1px solid rgba(40,224,122,.30);
+  border-radius:2px;
+  color:var(--accent);
+  box-shadow:none;
 }
+:root[data-theme="matrix"] .walk-controls button:hover:not(:disabled){
+  background:rgba(40,224,122,.12);
+  border-color:rgba(40,224,122,.70);
+  box-shadow:0 0 8px rgba(40,224,122,.20);
+  transform:none;
+}
+
+/* Rings: phosphor, full opacity */
+:root[data-theme="matrix"] .ob-rings{
+  opacity:.7;
+  color:#28E07A;
+}
+
+/* Brand mark */
+:root[data-theme="matrix"] .brand-mark{
+  font-family:var(--mono);
+  color:#39FF6E;
+  text-shadow:0 0 8px rgba(57,255,110,.45);
+}
+
+/* Cursor */
+:root[data-theme="matrix"] body{cursor:crosshair}
 
 /* ============================================================
    PRIMITIVE 1 — .ob-rings  (three concentric hairline circles)
