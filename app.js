@@ -715,22 +715,24 @@ function renderWalk(){
         <span class='walk-trail-here' aria-hidden="true"></span>
       </nav>` : `<span class='walk-trail-empty'>a starting tick · nothing recorded before</span>`}</div>
       <div class='walk-stage'>
-        <div class='walk-hero'>
-          <div class='dom walk-domain' style='${domStyle(t.domain)}'>${obTetraHtml()}${t.domain}</div>
+        <div class='walk-header'>
           <div class='walk-year-host'>
-            ${obRingsHtml({size: 80, spin: 'cw'})}
+            ${obRingsHtml({size: 60, spin: 'cw'})}
             <div class='walk-year'>${escapeHtml(t.year)}</div>
           </div>
           <div class='walk-name'>${escapeHtml(t.name)}</div>
+          <div class='dom walk-domain' style='${domStyle(t.domain)}'>${obTetraHtml()}${t.domain}</div>
         </div>
         <div class='walk-body'>
-          <div class='walk-before'>
-            <span class='label'>before this</span>
-            ${escapeHtml(cleanConstraint(t.constraint).toLowerCase())}.
+          <div class='walk-prose'>
+            <div class='walk-before'>
+              <span class='label'>before this</span>
+              ${escapeHtml(cleanConstraint(t.constraint).toLowerCase())}.
+            </div>
+            ${t.because ? `<div class='walk-because' aria-label='What this came from'><span class='label'>this came from</span>${escapeHtml(t.because)}</div>` : ''}
+            ${EDITORIAL_NOTES[t.id] ? `<aside class='walk-note' aria-label='Editorial note'>${escapeHtml(EDITORIAL_NOTES[t.id])}</aside>` : ''}
+            ${t.detail ? `<div class='walk-detail'>${escapeHtml(t.detail)}</div>` : ''}
           </div>
-          ${t.because ? `<div class='walk-because' aria-label='What this came from'><span class='label'>this came from</span>${escapeHtml(t.because)}</div>` : ''}
-          ${EDITORIAL_NOTES[t.id] ? `<aside class='walk-note' aria-label='Editorial note'>${escapeHtml(EDITORIAL_NOTES[t.id])}</aside>` : ''}
-          ${t.detail ? `<div class='walk-detail'>${escapeHtml(t.detail)}</div>` : ''}
           ${t.links?.length ? `<div class='walk-links'>${t.links.map(l => `<a href='${escapeHtml(l.url)}' target='_blank' rel='noopener'>→ ${escapeHtml(l.label)}</a>`).join('')}</div>` : ''}
           <div class='walk-actions'>
             <button class='walk-action' data-act='share' aria-label='Share this tick'>
@@ -1355,22 +1357,42 @@ function drawMap(){
 }
 
 /* ========== browse ========== */
-const BROWSE_STATE = { q: '', collapsed: new Set() };
+const BROWSE_STATE = { q: '', collapsed: new Set(), activeZone: null };
 function browse(){
   const q = BROWSE_STATE.q.toLowerCase();
-  const filtered = q ? TICKS.filter(t => t.name.toLowerCase().includes(q) || t.constraint.toLowerCase().includes(q) || (t.detail||'').toLowerCase().includes(q)) : TICKS;
+  const az = BROWSE_STATE.activeZone;
+
+  // Zone filter + search filter
+  const filtered = TICKS.filter(t => {
+    const matchQ = !q || t.name.toLowerCase().includes(q) || t.constraint.toLowerCase().includes(q) || (t.detail||'').toLowerCase().includes(q);
+    const matchZ = !az || t.zone === az;
+    return matchQ && matchZ;
+  });
   const byZone = {};
   filtered.forEach(t => { (byZone[t.zone] = byZone[t.zone] || []).push(t); });
   ZONES.forEach(z => { if (byZone[z.id]) byZone[z.id].sort((a,b) => (a.yearN||0)-(b.yearN||0)); });
 
-  // While searching, force-expand all eras so hits are visible.
-  const allCollapsed = !q && BROWSE_STATE.collapsed.size === ZONES.filter(z => byZone[z.id]).length;
+  // While searching or zone-filtered, force-expand all eras so hits are visible.
+  const allCollapsed = !q && !az && BROWSE_STATE.collapsed.size === ZONES.filter(z => byZone[z.id]).length;
+
+  // Build timeline segments proportional to yearN span per zone
+  const totalSpan = ZONES.reduce((s,z) => s + (z.to - z.from || 1), 0);
+  const timelineSegs = ZONES.map(z => {
+    const pct = ((z.to - z.from || 1) / totalSpan * 100).toFixed(2);
+    const active = az === z.id;
+    const label = z.name.length > 14 ? z.name.split(' ')[0] : z.name;
+    return `<button class='browse-tl-seg${active ? ' is-active' : ''}' data-zone='${z.id}' style='flex:0 0 ${pct}%' title='${escapeHtml(z.name)} (${z.from < 0 ? Math.abs(z.from)+'BC' : z.from} – ${z.to < 0 ? Math.abs(z.to)+'BC' : z.to})'>
+      <span class='browse-tl-label'>${escapeHtml(label)}</span>
+    </button>`;
+  }).join('');
+
   app.innerHTML = `
     <section class='browse-page'>
       <div class='browse-head'>
         <h1>Browse all ${TICKS.length.toLocaleString()}</h1>
         <p>Grouped by era. Click any tick to open it. Search to narrow.</p>
       </div>
+      <nav class='browse-timeline' aria-label='Filter by era'>${timelineSegs}</nav>
       <div class='browse-toolbar'>
         <div class='browse-search'>
           ${obBracketsHtml()}
@@ -1439,6 +1461,18 @@ function browse(){
     else ZONES.forEach(z => BROWSE_STATE.collapsed.add(z.id));
     browse();
   };
+
+  // Timeline segment click: set/clear active zone filter
+  app.querySelectorAll('.browse-tl-seg').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const z = btn.dataset.zone;
+      BROWSE_STATE.activeZone = BROWSE_STATE.activeZone === z ? null : z;
+      BROWSE_STATE.collapsed.clear();
+      browse();
+      // Scroll list into view
+      setTimeout(() => app.querySelector('.browse-zone')?.scrollIntoView({behavior:'smooth', block:'nearest'}), 80);
+    });
+  });
 }
 
 /* ========== play (acceleration reels) ==========
