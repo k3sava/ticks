@@ -2034,6 +2034,17 @@ window.addEventListener('keydown', (e) => {
       if (t) location.hash = '#/hunt/' + t.id;
     }
   }
+  if (location.hash.startsWith('#/hunt')){
+    // ArrowDown returns to walk at this tick; Escape pops back too
+    if (e.key === 'ArrowDown' || e.key === 'Escape'){
+      const id = location.hash.replace('#/hunt/', '').split('/')[0];
+      const t = TICK_BY_ID[id];
+      if (t){
+        e.preventDefault();
+        location.hash = '#/walk/' + t.id;
+      }
+    }
+  }
 });
 
 /* ========== keyboard help dialog ========== */
