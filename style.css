@@ -626,11 +626,14 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
   }
 }
 .walk-hero{
-  display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;
+  display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;
   gap:14px;
   position:relative;
   min-width:0;
   overflow:hidden;
+}
+@media (max-width:919px){
+  .walk-hero{justify-content:flex-start}
 }
 @media (min-width:920px){
   .walk-hero{grid-area:hero;overflow:hidden;justify-content:space-between;height:100%}
@@ -848,8 +851,8 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 .walk-flow-card{
   position:relative;
   flex:none;
-  max-width:180px;
-  width:180px;
+  max-width:240px;
+  width:240px;
   scroll-snap-align:start;
   display:flex;flex-direction:column;gap:4px;padding:8px 10px;
   border-radius:10px;
@@ -2034,7 +2037,7 @@ main:focus,main:focus-visible{outline:none}
    below) so the page can vertical-scroll like before — the walk-flow strip
    itself stays horizontal because that's the JTBD that survived. */
 @media (max-width:520px){
-  .walk-flow-card{min-height:56px;padding:8px 10px;width:160px}
+  .walk-flow-card{min-height:56px;padding:8px 10px;width:200px}
 }
 
 /* Suggest-an-edit link: bigger touch target */
@@ -2739,30 +2742,30 @@ a[href*="issues/new"]{
 /* Walk trail polyline + travelling dot — replaces the ↓ separator */
 .walk-trail-link{
   position:relative;
-  width:1px;height:24px;
-  background:linear-gradient(180deg,
+  display:inline-block;flex:none;width:18px;height:1px;
+  background:linear-gradient(90deg,
     transparent 0%,
-    color-mix(in oklab, var(--dc, var(--accent)) 50%, transparent) 50%,
+    color-mix(in oklab, var(--dc, var(--accent)) 60%, transparent) 50%,
     transparent 100%);
   font-size:0;line-height:0;color:transparent;
-  box-shadow:0 0 6px 1px color-mix(in oklab, var(--dc, var(--accent)) 25%, transparent);
+  box-shadow:0 0 8px 1px color-mix(in oklab, var(--dc, var(--accent)) 30%, transparent);
 }
 .walk-trail-link::after{
-  content:"";position:absolute;left:50%;top:0;
+  content:"";position:absolute;top:50%;left:0;
   width:3px;height:3px;border-radius:50%;
-  transform:translateX(-50%);
+  transform:translateY(-50%);
   background:color-mix(in oklab, var(--dc, var(--accent)) 90%, var(--ink));
   box-shadow:0 0 8px 1px color-mix(in oklab, var(--dc, var(--accent)) 80%, transparent);
   animation:trail-dot 2.4s var(--ease-cinema) infinite;
 }
 @keyframes trail-dot{
-  0%{top:-4px;opacity:0}
+  0%{left:-4px;opacity:0}
   10%{opacity:1}
   90%{opacity:1}
-  100%{top:calc(100% + 4px);opacity:0}
+  100%{left:calc(100% + 4px);opacity:0}
 }
 @media (prefers-reduced-motion:reduce){
-  .walk-trail-link::after{animation:none;top:50%}
+  .walk-trail-link::after{animation:none;left:50%}
 }
 
 /* Focused/hovered flow-card brackets via .ob-brackets primitive */
