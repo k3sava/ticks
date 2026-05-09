@@ -633,7 +633,7 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
   overflow:hidden;
 }
 @media (min-width:920px){
-  .walk-hero{grid-area:hero;overflow:hidden}
+  .walk-hero{grid-area:hero;overflow:hidden;justify-content:space-between;height:100%}
   .walk-hero::after{
     content:"";position:absolute;
     right:-22px;top:6%;bottom:6%;width:1px;
