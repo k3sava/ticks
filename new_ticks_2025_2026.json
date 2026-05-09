@@ -1,0 +1,385 @@
+[
+  {
+    "id": "eu-ai-act-prohibited-practices-enforceable",
+    "year": "2025 AD",
+    "yearN": 2025,
+    "zone": "ai-era",
+    "name": "EU AI Act: first prohibitions become enforceable",
+    "domain": "law",
+    "constraint": "AI systems could be deployed across Europe with no binding legal floor on what was permissible",
+    "detail": "On February 2, 2025, the EU AI Act's first wave of prohibitions became legally binding across all 27 member states. Banned practices included social scoring by governments, real-time remote biometric identification in public spaces, and subliminal manipulation targeting vulnerable groups. August 2, 2025 brought a second wave: the EU AI Office became operational, and fines up to EUR 35 million or 7% of global annual turnover activated for violations. This marked the first binding national-level AI law of any major economy.",
+    "links": [
+      {
+        "label": "EU AI Act implementation timeline",
+        "url": "https://artificialintelligenceact.eu/implementation-timeline/"
+      },
+      {
+        "label": "DLA Piper: Latest wave of EU AI Act obligations",
+        "url": "https://www.dlapiper.com/en-us/insights/publications/2025/08/latest-wave-of-obligations-under-the-eu-ai-act-take-effect"
+      }
+    ],
+    "because": "The EU AI Act was proposed in 2021 and passed in 2024, building on GDPR (2018) which showed the EU could set binding global tech standards. The 2023 US Executive Order 14110 created a parallel but voluntary framework. February 2025 dissolved the gap between AI law existing on paper and AI law with teeth. Companies deploying AI in Europe now face the same compliance logic that shaped cookie banners and GDPR notices globally. The August 2026 full applicability date will extend enforcement to high-risk AI systems including medical devices and critical infrastructure."
+  },
+  {
+    "id": "ai-art-copyright-human-authorship-rule-settled",
+    "year": "2025 AD",
+    "yearN": 2025,
+    "zone": "ai-era",
+    "name": "US appeals court rules AI-only art cannot be copyrighted",
+    "domain": "law",
+    "constraint": "legal ownership of AI-generated works was unresolved, leaving the entire generative AI output economy in a property rights vacuum",
+    "detail": "In March 2025, a US federal appeals court affirmed that artwork created autonomously by AI cannot be copyrighted under US law. The ruling in Thaler v. Perlmutter held that at least initial human authorship is required, and that the human who operates or directs AI can be the author but the AI system itself cannot. In March 2026, the US Supreme Court declined to hear the case, making the ruling final. The decision affected the legal status of millions of AI-generated works produced annually.",
+    "links": [
+      {
+        "label": "CNBC: AI art cannot have copyright, appeals court rules",
+        "url": "https://www.cnbc.com/2025/03/19/ai-art-cannot-be-copyrighted-appeals-court-rules.html"
+      },
+      {
+        "label": "Supreme Court declines AI copyright case",
+        "url": "https://www.cnbc.com/2026/03/02/us-supreme-court-declines-to-hear-dispute-over-copyrights-for-ai-generated-material.html"
+      }
+    ],
+    "because": "Copyright law had required human authorship since the Burrow-Giles lithograph case of 1884, but the explosion of AI image generators like Midjourney v4 (2022) and Stable Diffusion (2022) produced billions of images whose authorship was legally contested. The Copyright Office had rejected Thaler's registration in 2022; the 2025 appellate ruling settled the rule for US law. The ruling established that the operator of AI tools, not the tools themselves, holds creative rights, shaping how every AI-assisted work product is licensed and sold."
+  },
+  {
+    "id": "genius-act-first-federal-stablecoin-law",
+    "year": "2025 AD",
+    "yearN": 2025,
+    "zone": "ai-era",
+    "name": "GENIUS Act: first US federal stablecoin framework signed into law",
+    "domain": "economics",
+    "constraint": "dollar-backed stablecoins operated in a regulatory void, with no federal reserve requirements, disclosure mandates, or chartering rules",
+    "detail": "On July 18, 2025, President Trump signed the GENIUS Act (Guiding and Establishing National Innovation for US Stablecoins), the first federal law establishing a regulatory framework for stablecoin issuers in the United States. Issuers must hold liquid assets equal to 100% of token value, disclose reserves monthly, and obtain either a federal charter or work under an approved state regulator. The same legislative week saw the Strategic Bitcoin Reserve executive order take effect, directing the US government to hold seized Bitcoin as a national asset.",
+    "links": [
+      {
+        "label": "Crypto Week 2025: US digital asset regulation",
+        "url": "https://www.ocorian.com/knowledge-hub/insights/crypto-week-2025-uncertainty-regulation-us-digital-asset-space"
+      },
+      {
+        "label": "Latham & Watkins US Crypto Policy Tracker",
+        "url": "https://www.lw.com/en/us-crypto-policy-tracker/regulatory-developments"
+      }
+    ],
+    "because": "The collapse of TerraUSD in 2022 and FTX in 2022 demonstrated the systemic risk of unregulated crypto assets and pushed Congress toward stablecoin-first legislation. Trump's 2024 election on a crypto-friendly platform broke the multi-year legislative deadlock. The GENIUS Act dissolved the ambiguity that had kept major banks from issuing tokenized deposits and cleared the path for JPMorgan, Bank of America, and others to launch compliant stablecoins. It is the first time the US government explicitly recognized a private digital dollar as a regulated financial instrument."
+  },
+  {
+    "id": "crispr-personalized-therapy-first-human-cps1",
+    "year": "2025 AD",
+    "yearN": 2025,
+    "zone": "ai-era",
+    "name": "First personalized CRISPR therapy cures an infant with a unique mutation",
+    "domain": "medicine",
+    "constraint": "gene therapy required years of clinical development for a single disease variant, making treatment of rare individual mutations economically and logistically impossible",
+    "detail": "In February 2025, KJ Muldoon, an infant with carbamoyl phosphate synthetase 1 (CPS1) deficiency, received the world's first bespoke CRISPR base-editing therapy designed for his specific genetic variant. The therapy was developed in six months from diagnosis. Delivered via lipid nanoparticles to the liver, it corrected the mutation without cutting the genome's double strand. After 307 days of hospitalization, KJ was discharged in May 2025. The results were published in the New England Journal of Medicine on May 15, 2025.",
+    "links": [
+      {
+        "label": "NIH: Infant first to receive personalized gene editing therapy",
+        "url": "https://www.nih.gov/news-events/news-releases/infant-rare-incurable-disease-first-successfully-receive-personalized-gene-therapy-treatment"
+      },
+      {
+        "label": "CHOP: World's first personalized CRISPR therapy",
+        "url": "https://www.chop.edu/news/worlds-first-patient-treated-personalized-crispr-gene-editing-therapy-childrens-hospital"
+      }
+    ],
+    "because": "CRISPR-Cas9 was demonstrated in human cells in 2012 and the first approved CRISPR therapy (Casgevy for sickle cell disease) arrived in December 2023. Casgevy targeted a common disease variant shared by thousands of patients; KJ's therapy targeted one child's unique mutation. The six-month development cycle was made possible by base editing (a CRISPR variant that makes single-letter DNA changes without double-strand cuts), lipid nanoparticle delivery platforms developed during the COVID mRNA vaccine era, and reduced regulatory risk from Casgevy's precedent. This tick dissolved the constraint that rare disease treatment required a large patient pool to justify development costs."
+  },
+  {
+    "id": "crispr-cholesterol-one-shot-reduces-ldl-50-percent",
+    "year": "2025 AD",
+    "yearN": 2025,
+    "zone": "ai-era",
+    "name": "Single CRISPR infusion cuts LDL cholesterol 50% in human trial",
+    "domain": "medicine",
+    "constraint": "chronic cardiovascular disease required lifelong daily medication because the underlying genetic expression could not be durably modified in adults",
+    "detail": "Results presented at the American Heart Association Scientific Sessions in November 2025 showed that a single infusion of an investigational CRISPR-Cas9 therapy safely reduced LDL cholesterol by 50% and triglycerides by approximately 55% in a Phase 1 trial of patients with lipid disorders resistant to existing medications. The trial was run at Cleveland Clinic. The therapy edited liver cells in vivo to permanently reduce the production of PCSK9, a protein that normally degrades LDL receptors.",
+    "links": [
+      {
+        "label": "Cleveland Clinic: First-in-human CRISPR cholesterol trial results",
+        "url": "https://newsroom.clevelandclinic.org/2025/11/08/cleveland-clinic-first-in-human-trial-of-crispr-gene-editing-therapy-shown-to-safely-lower-cholesterol-and-triglycerides"
+      }
+    ],
+    "because": "PCSK9-inhibiting monoclonal antibodies (approved 2015) reduced LDL by 50-60% but required injections every two weeks indefinitely. RNA interference therapy inclisiran (approved 2021) cut dosing to twice yearly. The Cleveland Clinic trial showed that one CRISPR edit to liver cells produced equivalent reduction with no need for repeat dosing. The personalized CPS1 infant therapy (2025) established the safety logic; the COVID mRNA platform supplied the lipid nanoparticle delivery system. This dissolved the constraint that cardiovascular disease management was necessarily chronic."
+  },
+  {
+    "id": "oral-glp1-wegovy-pill-approved-fda",
+    "year": "2025 AD",
+    "yearN": 2025,
+    "zone": "ai-era",
+    "name": "FDA approves first oral GLP-1 weight loss drug",
+    "domain": "medicine",
+    "constraint": "GLP-1 receptor agonist obesity treatment required weekly injections, limiting adoption to patients willing and able to self-inject",
+    "detail": "On December 22, 2025, the FDA approved Novo Nordisk's oral semaglutide pill (brand name Wegovy) as the first oral GLP-1 drug approved specifically for weight loss in adults. In Phase III OASIS 4 trials, the highest dose produced 16.6% weight loss at 64 weeks versus 2.7% for placebo, comparable to injectable Wegovy's 17.4% reduction. The oral formulation uses sodium N-(8-[2-hydroxybenzoyl]amino)caprylate (SNAC) to enable intestinal absorption of a peptide that normally breaks down in the stomach.",
+    "links": [
+      {
+        "label": "FDA approves oral Wegovy for weight loss",
+        "url": "https://www.prnewswire.com/news-releases/fda-approves-novo-nordisks-wegovy-pill-the-first-and-only-oral-glp-1-for-weight-loss-in-adults-302648344.html"
+      },
+      {
+        "label": "CNN: Wegovy pill approval",
+        "url": "https://www.cnn.com/2025/12/22/health/wegovy-pill-glp1-weight-loss-drugs"
+      }
+    ],
+    "because": "Injectable semaglutide (Ozempic, approved 2017 for diabetes; Wegovy, approved 2021 for obesity) reduced body weight by up to 17% and cardiovascular event risk by 20%. The injection barrier limited global adoption despite massive demand. Oral semaglutide already existed for diabetes (Rybelsus, 2019) but at lower doses. The SNAC absorption technology developed for Rybelsus was scaled to the obesity dose range in OASIS 4. The approval converts a needle-dependent treatment into a pill, expanding the addressable patient population by an estimated 10x. The WHO issued its first global GLP-1 guidance in late 2025."
+  },
+  {
+    "id": "nif-fusion-target-gain-four-record",
+    "year": "2025 AD",
+    "yearN": 2025,
+    "zone": "ai-era",
+    "name": "NIF achieves fusion target gain greater than four",
+    "domain": "physics",
+    "constraint": "laser fusion energy output had never exceeded four times the energy delivered to the fuel target, making commercial gain ratios appear decades away",
+    "detail": "On April 7, 2025, the National Ignition Facility at Lawrence Livermore National Laboratory fired 2.08 megajoules of laser energy into a target capsule and produced 8.6 megajoules of fusion energy, achieving a target gain of more than four. This more than doubled the previous record of 3.88 MJ set in July 2023. The same year, France's WEST tokamak sustained plasma for 1,337 seconds (22 minutes 17 seconds) on February 12, 2025, beating China's EAST record of 1,066 seconds set just weeks earlier.",
+    "links": [
+      {
+        "label": "NIF: Target breakthrough enabled fusion record",
+        "url": "https://lasers.llnl.gov/news/target-breakthrough-enabled-fusion-record-nif"
+      },
+      {
+        "label": "French WEST reactor breaks plasma duration record",
+        "url": "https://www.advancedsciencenews.com/french-west-reactor-breaks-record-in-nuclear-fusion/"
+      }
+    ],
+    "because": "NIF achieved ignition (energy out exceeding energy in to the capsule) for the first time in December 2022, then 3.15 MJ in 2022 and 3.88 MJ in July 2023. The 2025 result of 8.6 MJ at a gain above 4 is the sharpest single improvement in fusion yield in the facility's history, driven by capsule geometry improvements that reduce mixing instabilities. Separately, the WEST and EAST plasma duration records show that steady-state plasma confinement is extending toward the minutes required for power plants. Neither result yet accounts for the energy required to power the lasers, but the target gain curve now slopes steeply upward."
+  },
+  {
+    "id": "lhcb-baryonic-cp-violation-first-observation",
+    "year": "2025 AD",
+    "yearN": 2025,
+    "zone": "ai-era",
+    "name": "LHCb observes CP violation in baryons for the first time",
+    "domain": "physics",
+    "constraint": "CP violation (matter-antimatter asymmetry) had only been observed in mesons, leaving the baryogenesis puzzle without a known mechanism that could operate in matter-dominant particles",
+    "detail": "In 2025, the LHCb detector at CERN reported the first observation of baryonic CP violation, the asymmetric behavior between baryons and their antimatter counterparts. Prior to this result, CP violation had only been established in meson particles. Baryons make up essentially all visible matter in the universe, so demonstrating that baryons and antibaryons behave differently in decay is a direct step toward explaining why the early universe produced more matter than antimatter.",
+    "links": [
+      {
+        "label": "LHCb best 2025 discovery points to new physics",
+        "url": "https://bigthink.com/starts-with-a-bang/lhc-best-2025-discovery-new-physics/"
+      }
+    ],
+    "because": "CP violation in kaons was discovered in 1964 (Nobel 1980) and in B-mesons confirmed in 2001 (Nobel 2008). These meson results showed that nature does not treat matter and antimatter symmetrically, but the scale of meson CP violation is far too small to explain the observed matter dominance of the universe. The LHCb's Run 3 data-taking at higher luminosity, combined with improved analysis techniques developed through a decade of B-meson studies, made it possible to detect the subtler asymmetry in baryons. The result opens a new experimental avenue in the search for physics beyond the Standard Model."
+  },
+  {
+    "id": "operation-spiderweb-drones-inside-russia",
+    "year": "2025 AD",
+    "yearN": 2025,
+    "zone": "ai-era",
+    "name": "Operation Spiderweb: drone swarm launched from inside Russia hits four airbases",
+    "domain": "war",
+    "constraint": "attacks on an adversary's strategic bomber fleet required penetrating layered air defenses, demanding expensive cruise missiles or manned aircraft",
+    "detail": "On June 1, 2025, Ukrainian forces executed Operation Spiderweb, deploying 117 first-person-view (FPV) drones that had been pre-positioned inside Russia. In a single night, the swarm struck four Russian airbases, damaging 41 aircraft. President Zelensky stated that approximately 34% of Russia's strategic bomber fleet was struck. The operation required no aircraft or missiles crossing the border; drones were smuggled in advance and activated remotely, exploiting the gap between air defense systems designed for aerial threats and ground-level low-signature platforms.",
+    "links": [
+      {
+        "label": "Ukraine Drone Warfare Key Trends 2025",
+        "url": "https://ukrainesarmsmonitor.substack.com/p/drone-warfare-in-ukraine-key-trends"
+      },
+      {
+        "label": "IEEE Spectrum: Autonomous drone warfare in Ukraine",
+        "url": "https://spectrum.ieee.org/autonomous-drone-warfare"
+      }
+    ],
+    "because": "Ukraine's drone program grew from improvised commercial quadcopters in 2022 to industrialized FPV production of over 2 million units in 2024. Russia's Shahed loitering munitions (beginning 2022) validated the mass attrition model against fixed targets. Operation Spiderweb dissolved the assumption that strategic airbase strikes required air superiority or expensive cruise missiles. The operation also demonstrated that pre-positioning small autonomous weapons inside an adversary's territory is logistically feasible, shifting military planning assumptions for both defense and offense."
+  },
+  {
+    "id": "germany-election-2025-far-right-enters-coalition-math",
+    "year": "2025 AD",
+    "yearN": 2025,
+    "zone": "ai-era",
+    "name": "2025 German federal election: AfD reaches 20%, reshapes European coalition math",
+    "domain": "society",
+    "constraint": "far-right parties in Germany had been constitutionally isolated from coalition power by a postwar consensus among mainstream parties, limiting their policy influence regardless of vote share",
+    "detail": "On February 23, 2025, Germany held federal elections with 84% voter turnout, the highest since reunification. The CDU/CSU alliance won 34% of the vote; the AfD (Alternative for Germany, far-right) doubled its vote share to 20%, becoming the second-largest party in the Bundestag. Friedrich Merz was elected chancellor on May 6, 2025, heading a CDU/SPD coalition. The AfD's 20% share made it impossible to form any majority without addressing its policy positions, even as a firewall against formal coalition kept it from government.",
+    "links": [
+      {
+        "label": "Germany 2025 election: political shift and record turnout",
+        "url": "https://makevotesmatter.org.uk/news/2025/2/25/germanys-2025-election-a-political-shift-and-record-voter-turnout/"
+      },
+      {
+        "label": "Wikipedia: 2025 German federal election",
+        "url": "https://en.wikipedia.org/wiki/2025_German_federal_election"
+      }
+    ],
+    "because": "The 2022 Russian invasion of Ukraine, a migration crisis, and the collapse of the Scholz coalition government created the conditions for the February 2025 snap election. The AfD's rise from 10.3% in 2021 to 20% in 2025 crossed the threshold at which the traditional firewall (the commitment by all mainstream parties not to work with the AfD) became arithmetically difficult to maintain without forming Grand Coalitions. The result reflected a broader 2024-2025 pattern across Europe: right-populist parties surging in France, Italy, Sweden, and Hungary. German political consensus, which had shaped EU policy since 1990, now operates under a new constraint."
+  },
+  {
+    "id": "ukraine-peace-framework-90-percent-agreed",
+    "year": "2025 AD",
+    "yearN": 2025,
+    "zone": "ai-era",
+    "name": "Ukraine-Russia peace framework reaches 90% agreement",
+    "domain": "society",
+    "constraint": "the Russia-Ukraine war had no formal diplomatic framework accepted by both sides since Istanbul talks collapsed in April 2022, with full-scale war continuing as the only operative condition",
+    "detail": "By December 28, 2025, US and Ukrainian negotiators had agreed on approximately 90% of a 20-point peace framework following talks in Florida. The Easter truce of April 19-20, 2025 was the first official pause in ground hostilities since the full-scale invasion began in February 2022. A prisoner-of-war exchange of thousands was completed. The outstanding 10% centered on territorial control of the Donbas region. Trump and Zelensky jointly declared the deal in its final stages, though Russia had not formally accepted the framework by year-end.",
+    "links": [
+      {
+        "label": "Al Jazeera: Trump and Zelensky hail progress toward peace deal",
+        "url": "https://www.aljazeera.com/news/2025/12/28/trump-welcomes-zelenskyy-claims-russia-ukraine-truce-in-final-stages"
+      },
+      {
+        "label": "NPR: US and Ukraine reach consensus on key issues",
+        "url": "https://www.npr.org/2025/12/24/g-s1-103618/u-s-and-ukraine-reach-consensus-on-key-issues"
+      }
+    ],
+    "because": "The Istanbul peace talks of March-April 2022 collapsed after reports of Russian atrocities at Bucha, and no formal framework survived until 2025. The change in US administration in January 2025, with Trump explicitly prioritizing a negotiated end, reactivated diplomacy that had been frozen for three years. The first Easter truce dissolved the symbolic constraint that any pause constituted capitulation. Russia's rejection of every US-brokered proposal through 2025 left the framework incomplete, but the existence of a written 20-point document accepted by Ukraine marks the first genuine peace architecture since 2022."
+  },
+  {
+    "id": "firefly-blue-ghost-first-fully-successful-commercial-moon-landing",
+    "year": "2025 AD",
+    "yearN": 2025,
+    "zone": "ai-era",
+    "name": "Firefly Blue Ghost: first fully successful commercial Moon landing",
+    "domain": "society",
+    "constraint": "lunar surface access required a national space agency; all prior private Moon landing attempts had crashed or tipped over on touchdown",
+    "detail": "On March 2, 2025, Firefly Aerospace's Blue Ghost lander touched down in the Mare Crisium basin, completing the first fully successful soft landing by a commercial spacecraft on the Moon. The mission launched January 15, 2025. Blue Ghost operated for 14 days on the lunar surface (346 hours of daylight), conducting 10 NASA scientific experiments under the Commercial Lunar Payload Services (CLPS) program, and survived 5 hours into the lunar night before losing power. The mission established a commercial cost-per-kilogram-to-surface roughly 10x below Apollo-era estimates.",
+    "links": [
+      {
+        "label": "NASA: Blue Ghost lands on Moon",
+        "url": "https://www.nasa.gov/news-release/touchdown-carrying-nasa-science-fireflys-blue-ghost-lands-on-moon/"
+      },
+      {
+        "label": "Al Jazeera: Firefly achieves first Moon landing",
+        "url": "https://www.aljazeera.com/news/2025/3/2/us-firm-firefly-achieves-its-first-moon-landing-with-blue-ghost-spacecraft"
+      }
+    ],
+    "because": "Apollo was the last reliable Moon landing system until Chandrayaan-3 (India, 2023). The Astrobotic Peregrine (January 2024) and Intuitive Machines IM-1 (February 2024) both encountered problems. Blue Ghost's success validated the NASA CLPS commercial acquisition model, where NASA acts as a customer rather than an operator. SpaceX's Starship, which flew five test missions in 2025 and achieved booster catch with mechanical arms, is the next-generation lunar transport for Artemis. Firefly's success means commercial lunar delivery is now repeatable, opening the Moon to scientific and eventually industrial use without national agency missions."
+  },
+  {
+    "id": "openai-o3-frontier-math-benchmark-25-percent",
+    "year": "2025 AD",
+    "yearN": 2025,
+    "zone": "ai-era",
+    "name": "OpenAI o3 solves 25% of FrontierMath, where all prior AI had solved under 2%",
+    "domain": "computing",
+    "constraint": "AI mathematics was limited to textbook problems; expert-level research mathematics involving novel multi-step proofs remained entirely beyond AI reach",
+    "detail": "Released on April 16, 2025, OpenAI's o3 scored 25.2% on FrontierMath, a benchmark of expert-level research mathematics problems that no other model had exceeded 2% on. O3 also scored 87.7% on GPQA Diamond (expert-level graduate science) and achieved 75.7% on ARC-AGI, triple the score of o1. The model extended the chain-of-thought-at-inference-time approach from o1, spending variable compute on harder problems. O3-pro, released June 10, 2025, pushed these benchmarks further.",
+    "links": [
+      {
+        "label": "OpenAI: Introducing o3 and o4-mini",
+        "url": "https://openai.com/index/introducing-o3-and-o4-mini/"
+      },
+      {
+        "label": "ARC Prize: OpenAI o3 breakthrough on ARC-AGI",
+        "url": "https://arcprize.org/blog/oai-o3-pub-breakthrough"
+      }
+    ],
+    "because": "AlphaProof (2024) solved problems from the International Math Olympiad, but those are structured competition problems with known solution types. FrontierMath contains novel problems requiring researchers to synthesize multiple areas of mathematics. O3 achieved 25.2% where all prior models were below 2%, a jump of more than an order of magnitude on the same benchmark. This followed reasoning-model work from o1 (2024), which established that test-time compute scaling produces qualitative capability jumps. The result reframed AI mathematics from pattern recall to genuine problem-solving across a subset of research-grade problems."
+  },
+  {
+    "id": "wef-future-of-jobs-2025-ai-displacement-scale",
+    "year": "2025 AD",
+    "yearN": 2025,
+    "zone": "ai-era",
+    "name": "WEF Future of Jobs 2025: 92 million roles displaced, 170 million created by 2030",
+    "domain": "economics",
+    "constraint": "AI's labor market impact was modeled only theoretically; no authoritative cross-industry forecast had quantified displacement and creation at scale with sector-level granularity",
+    "detail": "The World Economic Forum's Future of Jobs Report 2025 projected that by 2030, AI automation would displace 92 million roles globally while creating 170 million new ones, for a net addition of 78 million jobs. Computer and mathematical occupations, scored at roughly 80% AI exposure, showed the steepest unemployment rises in the first half of 2025. For the first seven months of 2025, Challenger, Gray & Christmas recorded over 10,000 US layoffs explicitly attributed to AI adoption. Goldman Sachs estimated 11 million US workers and 300 million full-time equivalents globally at long-term displacement risk.",
+    "links": [
+      {
+        "label": "WEF Future of Jobs Report 2025",
+        "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/"
+      },
+      {
+        "label": "CBS News: AI is leading to thousands of job losses",
+        "url": "https://www.cbsnews.com/news/ai-jobs-layoffs-us-2025/"
+      }
+    ],
+    "because": "The OECD's 2013 Oxford study (Frey and Osborne) estimated 47% of US jobs at high automation risk but was theoretical. GPT-3 (2020), GitHub Copilot (2021), and ChatGPT (2022) made AI displacement concrete rather than projected. By 2025, the combination of reasoning models capable of coding, legal research, and data analysis with vibe-coding tools (2025) made the displacement of knowledge-worker tasks measurable in corporate filings. The 2025 WEF report is the first to combine revealed displacement data from 2024-2025 layoffs with a jobs-creation model, dissolving the constraint that AI's labor impact was purely speculative."
+  },
+  {
+    "id": "deepl-voice-to-voice-real-time-spoken-translation",
+    "year": "2025 AD",
+    "yearN": 2025,
+    "zone": "ai-era",
+    "name": "Real-time spoken translation reaches commercial deployment at enterprise scale",
+    "domain": "language",
+    "constraint": "live multilingual communication required human interpreters or introduced seconds of latency, making simultaneous real-time cross-language conversation impossible at scale",
+    "detail": "In 2025, DeepL launched Voice-to-Voice real-time spoken translation for live communication. Cresta launched multilingual AI agent capabilities across 30+ languages in November 2025. CAMB.AI deployed real-time multilingual news translation for broadcast at IBC 2025. By year-end, over 75% of businesses offering global services were projected to use AI translation tools. Translated's Lara system released new benchmarks claiming to approach language singularity, the point where machine translation is indistinguishable from professional human translation across major language pairs.",
+    "links": [
+      {
+        "label": "DeepL unveils Voice-to-Voice real-time translation",
+        "url": "https://www.prnewswire.com/news-releases/deepl-unveils-real-time-spoken-translation-breaking-the-next-language-barrier-with-voice-to-voice-302744050.html"
+      },
+      {
+        "label": "Slator: Top ten language AI use cases in 2025",
+        "url": "https://slator.com/top-ten-language-ai-use-cases-in-2025/"
+      }
+    ],
+    "because": "Google Translate (2006) and DeepL (2017) solved written translation for major language pairs at near-human quality. Whisper (OpenAI, 2022) solved speech-to-text across 97 languages. The 2025 products combined streaming speech recognition, neural machine translation, and text-to-speech synthesis fast enough to run in real-time conversation. Edge AI developments moved processing onto devices, reducing latency below the threshold of conversational tolerance. The constraint dissolved is not translation quality, which had been near-human since 2020, but the latency and coverage required for live spoken interaction across language barriers."
+  },
+  {
+    "id": "mcp-model-context-protocol-97-million-installs",
+    "year": "2025 AD",
+    "yearN": 2025,
+    "zone": "ai-era",
+    "name": "Model Context Protocol becomes the universal agent-to-tool connection standard",
+    "domain": "computing",
+    "constraint": "AI agents had no standard way to connect to external tools and data sources; every agent-tool integration required custom code and broke across model upgrades",
+    "detail": "Anthropic's Model Context Protocol (MCP), released in late 2024, crossed 97 million installs by March 2026 with every major AI provider including OpenAI, Google, and Microsoft shipping MCP-compatible tooling. The protocol defines a standard JSON-RPC interface through which any AI model can call any external tool, database, or API without custom integration code. By early 2026, MCP had become the default mechanism by which agents connected to enterprise systems, making it analogous to what TCP/IP did for network communication.",
+    "links": [
+      {
+        "label": "Anthropic MCP 97 million installs milestone",
+        "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates"
+      }
+    ],
+    "because": "Every major AI coding assistant, agent, and enterprise deployment between 2023 and 2024 required proprietary integration layers to connect models to tools. LangChain (2022) and LlamaIndex (2022) created Python frameworks for this but were not interoperable across models. Anthropic's MCP proposed a model-agnostic protocol in November 2024; OpenAI adopted it in early 2025, turning a single vendor's proposal into an industry standard. The constraint dissolved: agent capabilities are now composable and portable across models, enabling a new market of MCP-compatible tools built independently of any specific AI provider."
+  },
+  {
+    "id": "starship-booster-catch-mechazilla-demonstrated",
+    "year": "2025 AD",
+    "yearN": 2025,
+    "zone": "ai-era",
+    "name": "SpaceX catches Starship Super Heavy booster with mechanical arms at the pad",
+    "domain": "society",
+    "constraint": "rocket first-stage recovery required dedicated landing legs and flat landing zones; full booster refurbishment at the launch tower was considered mechanically implausible",
+    "detail": "SpaceX flew five Starship test missions in 2025, with two of them (approximately August and October) achieving a milestone where the Super Heavy booster returned to the launch tower and was caught by mechanical arms (the 'Mechazilla' catch system) while the upper stage reached orbit, deployed dummy Starlink satellites, and splashed down as planned. SpaceX set a launch record of 170 flights in 2025, up from 144 in 2024, the sixth consecutive year of a new record. Elon Musk stated a first uncrewed Mars mission was targeted for the 2026-27 launch window.",
+    "links": [
+      {
+        "label": "Top 10 spaceflight stories of 2025",
+        "url": "https://www.space.com/space-exploration/starship-success-a-private-moon-landing-and-more-the-top-10-spaceflight-stories-of-2025"
+      }
+    ],
+    "because": "Falcon 9's propulsive booster landing (first successful December 2015) established vertical rocket recovery as practical. Starship's design eliminates landing legs entirely: the booster is caught by the tower's mechanical arms to enable rapid reuse. The October 2024 catch attempt succeeded for the first time; 2025's multiple successful catches made it a routine procedure. Starship's full-stack reusability is the enabling technology for the cost reduction required to make lunar cargo delivery and eventual Mars missions economically viable, with NASA's Artemis moon lander depending on a Starship variant."
+  },
+  {
+    "id": "gpt-5-general-purpose-reasoning-standard",
+    "year": "2025 AD",
+    "yearN": 2025,
+    "zone": "ai-era",
+    "name": "GPT-5 released as general-purpose frontier reasoning standard",
+    "domain": "computing",
+    "constraint": "frontier AI capability required choosing between broad generalist models and specialized reasoning models; no single architecture handled both everyday tasks and hard multi-step problems at the same level",
+    "detail": "OpenAI released GPT-5 in mid-2025, integrating the chain-of-thought reasoning approach from the o-series into a general-purpose model. GPT-5 topped benchmarks across coding, mathematics, science, and instruction-following simultaneously, dissolving the trade-off between reasoning depth and conversational breadth. By December 2025, OpenAI released GPT-5.2-Codex, targeting 'long-horizon' software engineering tasks over multi-day sessions, and the model could manage complex repositories, refactor entire codebases, and resolve security vulnerabilities autonomously.",
+    "links": [
+      {
+        "label": "OpenAI for Developers 2025",
+        "url": "https://developers.openai.com/blog/openai-for-developers-2025"
+      },
+      {
+        "label": "GPT-5.2 Codex launch: agentic coding",
+        "url": "https://mlq.ai/news/openai-launches-gpt-55-as-its-most-advanced-ai-model-yet/"
+      }
+    ],
+    "because": "GPT-4 (2023) and Claude 3 (2024) established the frontier of general-purpose capability. The o1/o3 reasoning model line (2024) showed that test-time compute scaling produced qualitative jumps on hard problems but at the cost of conversational speed. GPT-5 collapsed the distinction by applying reasoning modes adaptively. DeepSeek R1 (2025) demonstrated that a Chinese lab could reach o1-level reasoning at a fraction of training cost, intensifying the competitive pressure that accelerated GPT-5's release. The result made frontier general-purpose AI accessible at API pricing that placed it within reach of any developer."
+  },
+  {
+    "id": "ai-white-collar-displacement-measurable-2025",
+    "year": "2025 AD",
+    "yearN": 2025,
+    "zone": "ai-era",
+    "name": "AI white-collar displacement becomes statistically measurable for the first time",
+    "domain": "economics",
+    "constraint": "AI's impact on knowledge-worker employment was theoretical and modeled; no authoritative empirical dataset showed AI as a primary cause of professional job losses at scale",
+    "detail": "In 2025, the first empirical evidence of AI-driven professional employment displacement emerged in US data. Unemployment among 20- to 30-year-olds in AI-exposed occupations rose by approximately 3 percentage points from the start of 2025. Computer and mathematical occupations, with AI exposure scores around 80%, showed steeper unemployment rises than blue-collar categories. Challenger, Gray & Christmas recorded more than 10,000 explicitly AI-attributed US layoffs in the first seven months of 2025. The BLS incorporated AI exposure variables into its 2025 occupational projections for the first time.",
+    "links": [
+      {
+        "label": "St. Louis Fed: Is AI contributing to unemployment?",
+        "url": "https://www.stlouisfed.org/on-the-economy/2025/aug/is-ai-contributing-unemployment-evidence-occupational-variation"
+      },
+      {
+        "label": "BLS: Incorporating AI impacts in employment projections",
+        "url": "https://www.bls.gov/opub/mlr/2025/article/incorporating-ai-impacts-in-bls-employment-projections.htm"
+      }
+    ],
+    "because": "The fear of technological unemployment has appeared with every labor-displacing technology from the power loom (1812 Luddite riots) to the personal computer. GPT-3 (2020), Copilot (2021), and ChatGPT (2022) were widely predicted to displace knowledge workers but the 2022-2024 US labor market remained tight. By 2025, vibe-coding tools, AI agents capable of routine legal research and financial analysis, and the scaling of AI-first companies with high revenue-per-employee ratios produced the first statistically separable AI displacement signal. The constraint that dissolved: the future of AI's labor impact could no longer be deferred as speculation."
+  }
+]
