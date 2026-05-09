@@ -557,6 +557,33 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 
 @media (max-width:760px){
   .walk-trail-step .nm{font-size:.82rem;max-width:24ch}
+
+  /* On mobile the walk switches from viewport-locked to natural scroll.
+     All overflow:hidden / flex:1 / min-height:0 constraints that work
+     on desktop clip content on small screens — release them here. */
+  .walk{
+    height:auto;
+    overflow:visible;
+  }
+  .walk-stage{
+    flex:none;
+    overflow:visible;
+    min-height:0;
+  }
+  .walk-body{
+    overflow:visible;
+    min-height:0;
+  }
+  .walk-prose{
+    overflow:visible;
+    min-height:0;
+  }
+  .walk-prose::after{
+    display:none; /* fade-out mask is meaningless when prose isn't clipped */
+  }
+  .walk-flow{
+    max-height:none; /* let the downstream strip breathe */
+  }
 }
 .walk-meta .zone-name{color:var(--ink-2);text-decoration:none;cursor:pointer}
 .walk-meta .zone-name:hover{color:var(--accent);text-decoration:underline}
