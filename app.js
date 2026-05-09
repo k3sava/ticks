@@ -250,6 +250,7 @@ const routes = {
   '/walk': () => walk(),
   '/walk/:id': (id) => walk(id),
   '/map': map,
+  '/map/:id': (zone) => map(zone),
   '/hunt': () => hunt(),
   '/hunt/:id': (id) => hunt(id),
   '/browse': browse,
@@ -715,7 +716,7 @@ function renderWalk(){
   app.innerHTML = `
     <section class='walk' style='${domStyle(t.domain)}'>
       <div class='walk-meta'>
-        <a class='zone-name' href='#/browse' onclick='BROWSE_STATE.activeZone=${JSON.stringify(t.zone)};BROWSE_STATE.collapsed.clear()'>${escapeHtml(zone?.name || t.zone)}</a>
+        <a class='zone-name' href='#/map/${t.zone}'>${escapeHtml(zone?.name || t.zone)}</a>
         <span class='pos'>${walkIdx+1} / ${TICKS_SORTED.length}</span>
         <div class='walk-progress' style='width:${((walkIdx+1)/TICKS_SORTED.length*100).toFixed(2)}%'></div>
       </div>
@@ -1055,8 +1056,9 @@ function renderHuntSuggest(){
 }
 
 /* ========== map — log-time canvas with swim lanes ========== */
-const MAP_STATE = { domain: 'all' };
-function map(){
+const MAP_STATE = { domain: 'all', zone: null };
+function map(zoneArg){
+  if (zoneArg !== undefined) MAP_STATE.zone = zoneArg || null;
   const domains = Object.keys(DOMAINS);
   app.innerHTML = `
     <section class='map-page'>
@@ -1149,19 +1151,32 @@ function drawMap(){
   ZONES.forEach((z, i) => {
     const x1 = padL + i*zoneW;
     const x2 = padL + (i+1)*zoneW;
-    if (i % 2 === 0){
+    const isActive = MAP_STATE.zone && z.id === MAP_STATE.zone;
+    if (isActive){
+      const style = getComputedStyle(document.documentElement);
+      const accent = style.getPropertyValue('--accent').trim() || '#5a82ff';
+      ctx.save();
+      ctx.globalAlpha = 0.10;
+      ctx.fillStyle = accent;
+      ctx.fillRect(x1, padT, x2-x1, innerH);
+      ctx.globalAlpha = 0.35;
+      ctx.strokeStyle = accent;
+      ctx.lineWidth = 1.5;
+      ctx.strokeRect(x1 + 0.75, padT, x2-x1 - 1.5, innerH);
+      ctx.restore();
+    } else if (i % 2 === 0){
       ctx.fillStyle = 'rgba(0,0,0,.018)';
       ctx.fillRect(x1, padT, x2-x1, innerH);
     }
     // vertical separator
     if (i > 0){
-      ctx.strokeStyle = 'rgba(0,0,0,.06)';
+      ctx.strokeStyle = isActive ? 'rgba(0,0,0,.0)' : 'rgba(0,0,0,.06)';
       ctx.lineWidth = 1;
       ctx.beginPath(); ctx.moveTo(x1, padT); ctx.lineTo(x1, padT+innerH); ctx.stroke();
     }
     // era label container (HTML for crisp rotated text)
     const lbl = document.createElement('div');
-    lbl.className = 'map-era-label';
+    lbl.className = 'map-era-label' + (isActive ? ' is-active' : '');
     lbl.style.left = x1 + 'px';
     lbl.style.width = (x2-x1) + 'px';
     lbl.style.top = '8px';
@@ -1815,6 +1830,7 @@ function renderPlayFrame(){
   const frame = document.createElement('div');
   frame.className = 'play-frame' + (isBeat ? ' is-beat' : '');
   frame.style.cssText = domStyle(t.domain);
+  const playZone = ZONES.find(z => z.id === t.zone);
   frame.innerHTML = `
     <div class='play-dom dom' style='${domStyle(t.domain)}'>${obTetraHtml()}${t.domain}</div>
     <div class='play-year-host'>
@@ -1826,6 +1842,7 @@ function renderPlayFrame(){
     <div class='play-name'>${escapeHtml(t.name)}</div>
     <div class='play-constraint'>before this, ${escapeHtml(cleanConstraint(t.constraint).toLowerCase())}.</div>
     ${isBeat ? '<div class="play-beat-mark">the world inverted here</div>' : ''}
+    <a class='play-era-tag zone-name' href='#/map/${t.zone}'>${escapeHtml(playZone?.name || t.zone)}</a>
   `;
   // Replace the old frame (preserve the .play-stage-scan element).
   const oldFrame = stage.querySelector('.play-frame');
