@@ -2149,28 +2149,27 @@ function closeMobileMenu(){
    cycle, we persist. */
 const THEMES = ['dark', 'light', 'brutalist', 'matrix'];
 const THEME_BG = { light: '#F4EFE6', dark: '#0A0A0F', matrix: '#040806', brutalist: '#FAFAFA' };
-// Human-readable theme names for the label
-const THEME_LABEL = { light: 'oblivion', dark: 'oblivion', brutalist: 'brutalist', matrix: 'matrix' };
+// Per-theme icons (inline SVG strings)
+const THEME_ICON = {
+  dark:     '<svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M13 8.5A5 5 0 0 1 7.5 3a.5.5 0 0 0-.7-.5A6 6 0 1 0 13.5 9.2a.5.5 0 0 0-.5-.7Z"/></svg>',
+  light:    '<svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1v2M8 13v2M1 8h2M13 8h2M3.05 3.05l1.41 1.41M11.54 11.54l1.41 1.41M3.05 12.95l1.41-1.41M11.54 4.46l1.41-1.41"/></svg>',
+  brutalist:'<svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="2" width="5" height="5"/><rect x="9" y="2" width="5" height="5"/><rect x="2" y="9" width="5" height="5"/><rect x="9" y="9" width="5" height="5"/></svg>',
+  matrix:   '<svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M2 5l3 3-3 3"/><path d="M8 11h6"/></svg>',
+};
 function bindTheme(){
   const btn = document.getElementById('themeBtn');
-  const label = document.getElementById('themeLabel');
+  const icon = document.getElementById('themeIcon');
   const apply = (t) => {
     if (t) document.documentElement.dataset.theme = t;
     else delete document.documentElement.dataset.theme;
     try { if (t) localStorage.setItem('ticks-theme', t); else localStorage.removeItem('ticks-theme'); } catch(e){}
-    // Sync the active <meta name="theme-color"> so the iOS/Android chrome
-    // matches the active theme, including brutalist.
+    const sysDark = matchMedia('(prefers-color-scheme: dark)').matches;
+    const eff = t || (sysDark ? 'dark' : 'light');
+    // Sync theme-color meta
     const meta = document.getElementById('themeColorActive');
-    if (meta){
-      const sysDark = matchMedia('(prefers-color-scheme: dark)').matches;
-      const eff = t || (sysDark ? 'dark' : 'light');
-      meta.setAttribute('content', THEME_BG[eff] || THEME_BG.dark);
-    }
-    if (label){
-      const sysDark = matchMedia('(prefers-color-scheme: dark)').matches;
-      const eff = t || (sysDark ? 'dark' : 'light');
-      label.textContent = THEME_LABEL[eff] || eff;
-    }
+    if (meta) meta.setAttribute('content', THEME_BG[eff] || THEME_BG.dark);
+    // Swap icon
+    if (icon) icon.innerHTML = THEME_ICON[eff] || THEME_ICON.dark;
   };
   try { const saved = localStorage.getItem('ticks-theme'); if (saved) apply(saved); else apply(null); } catch(e){}
   const toggle = () => {
