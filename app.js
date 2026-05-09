@@ -704,23 +704,12 @@ function walk(id){
   renderWalk();
 }
 
-function renderWalk(){
-  const t = TICKS_SORTED[walkIdx];
-  if (!t){ app.innerHTML = '<p style="padding:48px">No tick.</p>'; return; }
-  setAmbient(t.domain);
-  const zone = ZONES.find(z => z.id === t.zone);
-  const flow = (UNLOCKS[t.id] || []).map(id => TICK_BY_ID[id]).filter(Boolean);
-  const ancestors = pickAncestors(t.id, 3);
-  const flowDepth2 = countDepth2(t.id);
-
-  app.innerHTML = `
-    <section class='walk' style='${domStyle(t.domain)}'>
-      <div class='walk-meta'>
-        <a class='zone-name' href='#/map/${t.zone}'>${escapeHtml(zone?.name || t.zone)}</a>
+function walkStageHTML(t, zone, flow, ancestors, flowDepth2){
+  return {
+    meta: `<a class='zone-name' href='#/map/${t.zone}'>${escapeHtml(zone?.name || t.zone)}</a>
         <span class='pos'>${walkIdx+1} / ${TICKS_SORTED.length}</span>
-        <div class='walk-progress' style='width:${((walkIdx+1)/TICKS_SORTED.length*100).toFixed(2)}%'></div>
-      </div>
-      <div class='walk-trail-area'>${ancestors.length ? `
+        <div class='walk-progress' style='width:${((walkIdx+1)/TICKS_SORTED.length*100).toFixed(2)}%'></div>`,
+    trail: ancestors.length ? `
       <nav class='walk-trail' aria-label='What had to dissolve before this'>
         ${ancestors.map(a => `
           <a class='walk-trail-step' href='#/walk/${a.id}' style='${domStyle(a.domain)}' data-hover-pulse>
@@ -729,8 +718,8 @@ function renderWalk(){
           </a>`).join('<span class="walk-trail-link" aria-hidden="true"></span>')}
         <span class='walk-trail-link' aria-hidden="true"></span>
         <span class='walk-trail-here' aria-hidden="true"></span>
-      </nav>` : `<span class='walk-trail-empty'>a starting tick · nothing recorded before</span>`}</div>
-      <div class='walk-stage'>
+      </nav>` : `<span class='walk-trail-empty'>a starting tick · nothing recorded before</span>`,
+    stage: `
         <div class='walk-header'>
           <div class='walk-year-host'>
             ${obRingsHtml({size: 60, spin: 'cw'})}
@@ -761,19 +750,66 @@ function renderWalk(){
             </a>
             <a class='walk-action' href='https://github.com/k3sava/ticks/issues/new?title=${encodeURIComponent('Edit: ' + t.name)}&body=${encodeURIComponent('Tick: ' + t.id + '\\n\\nWhat needs fixing:\\n\\nSource:')}' target='_blank' rel='noopener'>↗ suggest an edit</a>
           </div>
-        </div>
-      </div>
-
-      <div class='walk-flow'>
-        <div class='walk-flow-head'>${flow.length ? `everything that flowed from this (${flow.length}${flowDepth2 ? `, ${flowDepth2.toLocaleString()} more two steps out` : ''})` : 'no recorded downstream. a quiet tick.'}</div>
+        </div>`,
+    flow: `<div class='walk-flow-head'>${flow.length ? `everything that flowed from this (${flow.length}${flowDepth2 ? `, ${flowDepth2.toLocaleString()} more two steps out` : ''})` : 'no recorded downstream. a quiet tick.'}</div>
         ${flow.length ? `<div class='walk-flow-strip' role='list'>${flow.map(f => `
           <a class='walk-flow-card' role='listitem' href='#/walk/${f.id}' style='${domStyle(f.domain)}' data-hover-pulse data-track-focus>
             ${obBracketsHtml()}
             <span class='yr'>${escapeHtml(f.year)}</span>
             <span class='nm'>${escapeHtml(f.name)}</span>
-          </a>`).join('')}</div>` : '<div class="walk-flow-empty">A frontier tick. What flows from this hasn\'t been written yet. Press → to keep walking.</div>'}
-      </div>
+          </a>`).join('')}</div>` : '<div class="walk-flow-empty">A frontier tick. What flows from this hasn\'t been written yet. Press → to keep walking.</div>'}`
+  };
+}
 
+function attachWalkHandlers(t){
+  document.getElementById('wPrev').onclick = () => walkStep(-1);
+  document.getElementById('wNext').onclick = () => walkStep(+1);
+  const shareBtn = app.querySelector('[data-act="share"]');
+  if (shareBtn) shareBtn.onclick = (e) => { e.stopPropagation(); shareTick(t, shareBtn); };
+}
+
+function renderWalk(){
+  const t = TICKS_SORTED[walkIdx];
+  if (!t){ app.innerHTML = '<p style="padding:48px">No tick.</p>'; return; }
+  setAmbient(t.domain);
+  const zone = ZONES.find(z => z.id === t.zone);
+  const flow = (UNLOCKS[t.id] || []).map(id => TICK_BY_ID[id]).filter(Boolean);
+  const ancestors = pickAncestors(t.id, 3);
+  const flowDepth2 = countDepth2(t.id);
+
+  const existing = app.querySelector('.walk');
+  if (existing){
+    // In-place update: update only the parts that change per-tick.
+    // This keeps the shell (and its fixed height) intact — no layout jump.
+    const html = walkStageHTML(t, zone, flow, ancestors, flowDepth2);
+    const metaEl = existing.querySelector('.walk-meta');
+    const trailEl = existing.querySelector('.walk-trail-area');
+    const stageEl = existing.querySelector('.walk-stage');
+    const flowEl = existing.querySelector('.walk-flow');
+    const prevBtn = existing.querySelector('#wPrev');
+    const nextBtn = existing.querySelector('#wNext');
+    if (metaEl) metaEl.innerHTML = html.meta;
+    if (trailEl) trailEl.innerHTML = html.trail;
+    if (stageEl){
+      stageEl.style.cssText = '';
+      stageEl.setAttribute('style', domStyle(t.domain));
+      stageEl.innerHTML = html.stage;
+    }
+    if (flowEl) flowEl.innerHTML = html.flow;
+    if (prevBtn) prevBtn.disabled = walkIdx === 0;
+    if (nextBtn) nextBtn.disabled = walkIdx === TICKS_SORTED.length - 1;
+    existing.setAttribute('style', domStyle(t.domain));
+    attachWalkHandlers(t);
+    return;
+  }
+
+  const html = walkStageHTML(t, zone, flow, ancestors, flowDepth2);
+  app.innerHTML = `
+    <section class='walk' style='${domStyle(t.domain)}'>
+      <div class='walk-meta'>${html.meta}</div>
+      <div class='walk-trail-area'>${html.trail}</div>
+      <div class='walk-stage' style='${domStyle(t.domain)}'>${html.stage}</div>
+      <div class='walk-flow'>${html.flow}</div>
       <div class='walk-controls'>
         <button id='wPrev' ${walkIdx===0?'disabled':''}>← previous</button>
         <div class='walk-keys'>
@@ -785,11 +821,7 @@ function renderWalk(){
       </div>
     </section>
   `;
-  document.getElementById('wPrev').onclick = () => walkStep(-1);
-  document.getElementById('wNext').onclick = () => walkStep(+1);
-  // Share button: opens the share menu anchored under the trigger.
-  const shareBtn = app.querySelector('[data-act="share"]');
-  if (shareBtn) shareBtn.onclick = (e) => { e.stopPropagation(); shareTick(t, shareBtn); };
+  attachWalkHandlers(t);
   // Touch swipe (left/right) on the walk stage. Skips when the swipe begins
   // inside a horizontally-scrollable strip (the trail or the flow carousel)
   // so dragging cards sideways doesn't accidentally navigate to a sibling

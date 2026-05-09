@@ -635,7 +635,7 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
   flex:1;min-height:0;
   overflow:hidden;
   position:relative;
-  display:flex;flex-direction:column;gap:12px;
+  display:flex;flex-direction:column;gap:8px;
   padding-bottom:4px;
 }
 /* Children must not shrink — parent clips overflow via overflow:hidden */
@@ -718,7 +718,7 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
   white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
 }
 .walk-before{
-  font-family:var(--serif);font-style:italic;font-size:clamp(1rem,1.4vw,1.2rem);
+  font-family:var(--serif);font-style:italic;font-size:clamp(.9rem,1.1vw,1.05rem);
   color:var(--ink-2);line-height:1.4;
   /* The right column inherently constrains width on desktop. On mobile we
      keep a friendlier reading line for prose. */
@@ -735,10 +735,10 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
    reader is currently inspecting in the precrime sense. */
 .walk-because{
   position:relative;
-  font-family:var(--serif);font-size:clamp(.98rem,1.25vw,1.1rem);
-  color:var(--ink);line-height:1.55;text-wrap:pretty;
+  font-family:var(--serif);font-size:clamp(.875rem,1.05vw,.97rem);
+  color:var(--ink);line-height:1.5;text-wrap:pretty;
   width:100%;max-width:none;
-  padding:14px 18px 14px 22px;
+  padding:10px 16px 10px 18px;
   border-radius:14px;
   background:var(--glass-thin-bg);
   -webkit-backdrop-filter:var(--glass-thin-blur);
@@ -752,7 +752,7 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
   .walk-because{max-width:64ch}
 }
 .walk-because::before{
-  content:"";position:absolute;left:0;top:14px;bottom:14px;width:2px;
+  content:"";position:absolute;left:0;top:10px;bottom:10px;width:2px;
   background:linear-gradient(180deg,
     transparent 0%,
     color-mix(in oklab, var(--dc, var(--accent)) 90%, transparent) 30%,
@@ -763,10 +763,10 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 .walk-because .label{
   font-family:var(--mono);font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;
   color:color-mix(in oklab, var(--dc, var(--accent)) 75%, var(--muted));
-  display:block;margin-bottom:8px;
+  display:block;margin-bottom:5px;
   text-shadow:0 0 10px color-mix(in oklab, var(--dc, var(--accent)) 30%, transparent);
 }
-.walk-detail{font-family:var(--serif);font-size:1rem;color:var(--ink-2);width:100%;max-width:none;line-height:1.55;text-wrap:pretty;hyphens:auto}
+.walk-detail{font-family:var(--serif);font-size:.92rem;color:var(--ink-2);width:100%;max-width:none;line-height:1.5;text-wrap:pretty;hyphens:auto}
 @media (max-width:919px){
   .walk-detail{max-width:64ch}
 }
@@ -774,7 +774,7 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
    ticks. One italic sentence saying what the tick feels like in retrospect. */
 .walk-note{
   font-family:var(--serif);font-style:italic;font-weight:500;
-  font-size:clamp(1.05rem,1.7vw,1.25rem);line-height:1.45;
+  font-size:clamp(.92rem,1.3vw,1.08rem);line-height:1.45;
   color:var(--ink);max-width:50ch;
   padding:8px 0 8px 18px;
   border-left:2px solid var(--accent);
