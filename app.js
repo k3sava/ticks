@@ -155,6 +155,21 @@ function fireRouteScan(){
   }, { passive: true });
 })();
 
+// Domain chips: click navigates to domain-filtered browse
+document.addEventListener('click', (e) => {
+  const chip = e.target.closest('.dom[style]');
+  if (!chip) return;
+  // Don't intercept if already inside an anchor or if the chip itself is a link
+  if (e.target.closest('a[href]') || chip.tagName === 'A') return;
+  const domain = chip.textContent.trim().replace(/^\[|\]$/g, '');
+  if (!domain) return;
+  e.preventDefault();
+  BROWSE_STATE.q = domain;
+  BROWSE_STATE.activeZone = null;
+  BROWSE_STATE.collapsed.clear();
+  location.hash = '#/browse';
+});
+
 (function initFocusBracketTracker(){
   if (reduced) return;
   const fb = document.getElementById('focusBracket');
@@ -700,7 +715,7 @@ function renderWalk(){
   app.innerHTML = `
     <section class='walk' style='${domStyle(t.domain)}'>
       <div class='walk-meta'>
-        <span class='zone-name'>${escapeHtml(zone?.name || t.zone)}</span>
+        <a class='zone-name' href='#/browse' onclick='BROWSE_STATE.activeZone=${JSON.stringify(t.zone)};BROWSE_STATE.collapsed.clear()'>${escapeHtml(zone?.name || t.zone)}</a>
         <span class='pos'>${walkIdx+1} / ${TICKS_SORTED.length}</span>
         <div class='walk-progress' style='width:${((walkIdx+1)/TICKS_SORTED.length*100).toFixed(2)}%'></div>
       </div>

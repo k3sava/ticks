@@ -433,6 +433,7 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
   display:inline-flex;align-items:center;gap:7px;
   font-family:var(--mono);font-size:.65rem;text-transform:lowercase;letter-spacing:.04em;
   padding:5px 11px;border-radius:999px;
+  cursor:pointer;
   background:color-mix(in oklab,var(--dc,var(--accent)) 22%, var(--glass-thin-bg));
   -webkit-backdrop-filter:var(--glass-thin-blur);
           backdrop-filter:var(--glass-thin-blur);
@@ -557,7 +558,8 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 @media (max-width:760px){
   .walk-trail-step .nm{font-size:.82rem;max-width:24ch}
 }
-.walk-meta .zone-name{color:var(--ink-2)}
+.walk-meta .zone-name{color:var(--ink-2);text-decoration:none;cursor:pointer}
+.walk-meta .zone-name:hover{color:var(--accent);text-decoration:underline}
 .walk-meta .pos{font-variant-numeric:tabular-nums}
 /* hairline progress bar across the walk position */
 .walk-meta::after{
@@ -2425,15 +2427,23 @@ a[href*="issues/new"]{
   color:#fff;
 }
 
-/* Brutalist: domain chip — solid border, no glass */
+/* Brutalist: domain chip — black text label, no color tinting */
 :root[data-theme="brutalist"] .dom{
-  background:color-mix(in oklab, var(--dc, var(--accent)) 18%, #fff);
+  background:transparent;
   -webkit-backdrop-filter:none;
   backdrop-filter:none;
-  border:1.5px solid color-mix(in oklab, var(--dc, var(--accent)) 60%, #000);
+  border:1.5px solid rgba(0,0,0,.70);
   border-radius:0;
   box-shadow:none;
+  color:#0a0a0a;
+  font-family:var(--mono);
+  text-transform:uppercase;
+  letter-spacing:.07em;
+  font-size:.65rem;
 }
+/* Kill the colored tetrahedron icon — not in brutalism */
+:root[data-theme="brutalist"] .ob-tetra{display:none}
+:root[data-theme="brutalist"] .dom .ob-tetra{display:none}
 
 /* Brutalist: header */
 :root[data-theme="brutalist"] #hdr{
@@ -2443,18 +2453,143 @@ a[href*="issues/new"]{
   border-bottom:2px solid #000;
 }
 
-/* Brutalist: because panel */
-:root[data-theme="brutalist"] .walk-because{
-  background:#f8f8f8;
-  -webkit-backdrop-filter:none;
-  backdrop-filter:none;
-  border:1.5px solid rgba(0,0,0,.22);
-  border-radius:0;
-  box-shadow:none;
+/* Brutalist: typography — sans-serif (Inter) everywhere */
+/* In Swiss style, Helvetica/Univers is the only typeface. We use Inter. */
+:root[data-theme="brutalist"] .walk-before,
+:root[data-theme="brutalist"] .walk-detail,
+:root[data-theme="brutalist"] .walk-because,
+:root[data-theme="brutalist"] .walk-name,
+:root[data-theme="brutalist"] .hunt-step-before,
+:root[data-theme="brutalist"] .hunt-step-name,
+:root[data-theme="brutalist"] .browse-row .nm,
+:root[data-theme="brutalist"] .browse-row .be,
+:root[data-theme="brutalist"] .play-name,
+:root[data-theme="brutalist"] .play-constraint,
+:root[data-theme="brutalist"] .home-show-tick .name,
+:root[data-theme="brutalist"] .home-show-tick .yr,
+:root[data-theme="brutalist"] .walk-trail-step .nm,
+:root[data-theme="brutalist"] .walk-flow-card .nm{
+  font-family:var(--sans);
+  font-style:normal;
 }
 
-/* Brutalist: ob-rings recede */
-:root[data-theme="brutalist"] .ob-rings{opacity:.15}
+/* Brutalist: year — heavy grotesque headline, not ornate serif */
+:root[data-theme="brutalist"] .walk-year{
+  font-family:var(--sans) !important;
+  font-style:normal !important;
+  font-weight:900 !important;
+  letter-spacing:-.07em !important;
+  background:none !important;
+  -webkit-background-clip:initial !important;
+  background-clip:initial !important;
+  -webkit-text-fill-color:#000 !important;
+  text-shadow:none !important;
+  filter:none !important;
+  animation:none !important;
+}
+:root[data-theme="brutalist"] .play-year{
+  font-family:var(--sans) !important;
+  font-style:normal !important;
+  font-weight:900 !important;
+  letter-spacing:-.06em !important;
+  background:none !important;
+  -webkit-text-fill-color:#000 !important;
+  text-shadow:none !important;
+  filter:none !important;
+  animation:none !important;
+  color:#000 !important;
+}
+
+/* Brutalist: walk name — bold grotesque subtitle */
+:root[data-theme="brutalist"] .walk-name{
+  font-family:var(--sans) !important;
+  font-style:normal !important;
+  font-weight:700 !important;
+  color:#0a0a0a !important;
+}
+
+/* Brutalist: because panel — blockquote, not glass card */
+:root[data-theme="brutalist"] .walk-because{
+  background:transparent;
+  -webkit-backdrop-filter:none;
+  backdrop-filter:none;
+  border:none;
+  border-left:4px solid #000;
+  border-radius:0;
+  box-shadow:none;
+  padding:6px 16px 6px 18px;
+}
+:root[data-theme="brutalist"] .walk-because::before{display:none}
+:root[data-theme="brutalist"] .walk-because .label{
+  color:#000;
+  font-weight:700;
+  text-shadow:none;
+}
+
+/* Brutalist: browse era headers — newspaper section style */
+:root[data-theme="brutalist"] .browse-zone-head{
+  border-top:3px solid #000 !important;
+  padding-top:14px !important;
+}
+:root[data-theme="brutalist"] .browse-zone-head h2{
+  font-family:var(--sans) !important;
+  font-weight:900 !important;
+  text-transform:uppercase !important;
+  letter-spacing:-.03em !important;
+}
+
+/* Brutalist: nav — uppercase, no capsule backgrounds */
+:root[data-theme="brutalist"] #nav a,
+:root[data-theme="brutalist"] #nav button{
+  text-transform:uppercase !important;
+  letter-spacing:.07em !important;
+  font-size:.78rem !important;
+}
+
+/* Brutalist: zone name — uppercase weight */
+:root[data-theme="brutalist"] .zone-name{
+  font-weight:700 !important;
+  text-transform:uppercase !important;
+  letter-spacing:.06em !important;
+  font-family:var(--mono) !important;
+}
+
+/* Brutalist: play beat mark — red typographic rule */
+:root[data-theme="brutalist"] .play-beat-mark{
+  font-family:var(--mono) !important;
+  font-weight:700 !important;
+  font-size:.7rem !important;
+  color:#C0392B !important;
+  text-transform:uppercase !important;
+  letter-spacing:.12em !important;
+  border-top:2px solid #C0392B !important;
+  border-bottom:2px solid #C0392B !important;
+  padding:4px 0 !important;
+}
+
+/* Brutalist: browse section — kill ob-scan-tick decoration */
+:root[data-theme="brutalist"] .ob-scan-tick{display:none !important}
+
+/* Brutalist: ob-rings — hide entirely */
+:root[data-theme="brutalist"] .ob-rings{display:none !important}
+
+/* Brutalist: hunt steps — dense reference style */
+:root[data-theme="brutalist"] .hunt-step{
+  border:1.5px solid #000 !important;
+  box-shadow:3px 3px 0 #000 !important;
+}
+
+/* Brutalist: play progress fill — no smooth transition */
+:root[data-theme="brutalist"] .play-progress-fill{
+  background:#000 !important;
+  border-radius:0 !important;
+}
+
+/* Brutalist: walk name  */
+:root[data-theme="brutalist"] .walk-header{
+  border-bottom:2px solid #000 !important;
+}
+
 
 /* Brutalist: tetrahedron stays hidden (drone-only feature) */
 :root[data-theme="brutalist"] .dom::before{display:inline-block}
@@ -2748,6 +2883,155 @@ a[href*="issues/new"]{
 /* Matrix: zero radius everywhere — terminals have no curves */
 :root[data-theme="matrix"] *{border-radius:0 !important}
 
+/* Matrix: ONE FONT — monospace everywhere. No exceptions. */
+:root[data-theme="matrix"] .walk-name,
+:root[data-theme="matrix"] .walk-before,
+:root[data-theme="matrix"] .walk-detail,
+:root[data-theme="matrix"] .browse-zone-head h2,
+:root[data-theme="matrix"] .browse-row .nm,
+:root[data-theme="matrix"] .play-name,
+:root[data-theme="matrix"] .play-constraint,
+:root[data-theme="matrix"] .hunt-step-name,
+:root[data-theme="matrix"] .home-show-tick .name,
+:root[data-theme="matrix"] .walk-trail-step .nm,
+:root[data-theme="matrix"] .walk-flow-card .nm,
+:root[data-theme="matrix"] .walk-flow-card .yr,
+:root[data-theme="matrix"] .walk-trail-step .yr{
+  font-family:var(--mono) !important;
+  font-style:normal !important;
+}
+
+/* Matrix: walk name — terminal identifier, not a title */
+:root[data-theme="matrix"] .walk-name{
+  color:#39FF6E !important;
+  font-weight:600 !important;
+  font-size:clamp(.9rem,1.4vw,1.15rem) !important;
+  text-shadow:0 0 10px rgba(57,255,110,.40) !important;
+}
+
+/* Matrix: domain chips — phosphor terminal format [domain] */
+/* Kill all domain color tinting — terminal only knows green */
+:root[data-theme="matrix"] .dom{
+  background:#050d07 !important;
+  -webkit-backdrop-filter:none !important;
+  backdrop-filter:none !important;
+  border:1px solid rgba(40,224,122,.45) !important;
+  color:#28E07A !important;
+  font-family:var(--mono) !important;
+  text-transform:lowercase !important;
+  letter-spacing:.04em !important;
+  font-size:.7rem !important;
+  box-shadow:none !important;
+}
+/* Wrap domain text with brackets via pseudo */
+:root[data-theme="matrix"] .dom::before{
+  content:"[" !important;
+  opacity:.75;
+}
+:root[data-theme="matrix"] .dom::after{
+  content:"]" !important;
+  opacity:.75;
+}
+/* But ob-tetra uses ::before — kill it and use text brackets instead */
+:root[data-theme="matrix"] .ob-tetra{display:none !important}
+
+/* Matrix: walk-before label — terminal prompt style */
+:root[data-theme="matrix"] .walk-before .label{
+  color:rgba(40,224,122,.55) !important;
+  text-shadow:none !important;
+}
+:root[data-theme="matrix"] .walk-before .label::before{
+  content:"$ ";
+  opacity:.6;
+}
+
+/* Matrix: because panel label — quoted output style */
+:root[data-theme="matrix"] .walk-because .label{
+  color:rgba(40,224,122,.55) !important;
+  text-shadow:none !important;
+}
+:root[data-theme="matrix"] .walk-because .label::before{
+  content:"> ";
+  opacity:.6;
+}
+
+/* Matrix: because ::before accent rail → phosphor */
+:root[data-theme="matrix"] .walk-because::before{
+  background:linear-gradient(180deg,
+    transparent 0%,
+    rgba(40,224,122,.90) 30%,
+    rgba(40,224,122,.90) 70%,
+    transparent 100%) !important;
+  box-shadow:0 0 8px 1px rgba(40,224,122,.50) !important;
+}
+
+/* Matrix: browse zone headers — terminal section divider */
+:root[data-theme="matrix"] .browse-zone-head{
+  background:rgba(40,224,122,.04) !important;
+  border-top:1px solid rgba(40,224,122,.30) !important;
+  border-bottom:none !important;
+}
+:root[data-theme="matrix"] .browse-zone-head h2{
+  font-family:var(--mono) !important;
+  text-transform:uppercase !important;
+  color:#39FF6E !important;
+  text-shadow:0 0 8px rgba(57,255,110,.40) !important;
+}
+:root[data-theme="matrix"] .browse-zone-head .range,
+:root[data-theme="matrix"] .browse-zone-head .rule{
+  font-family:var(--mono) !important;
+  color:rgba(40,224,122,.55) !important;
+}
+:root[data-theme="matrix"] .browse-zone-head .ct{
+  font-family:var(--mono) !important;
+  color:rgba(40,224,122,.55) !important;
+}
+
+/* Matrix: browse rows — terminal record rows */
+:root[data-theme="matrix"] .browse-row{
+  border-bottom:1px solid rgba(40,224,122,.08) !important;
+}
+:root[data-theme="matrix"] .browse-row .yr{
+  font-family:var(--mono) !important;
+  color:rgba(40,224,122,.60) !important;
+}
+
+/* Matrix: nav active item — terminal cursor bracket */
+:root[data-theme="matrix"] #nav a.active{
+  background:rgba(40,224,122,.12) !important;
+  border:1px solid rgba(40,224,122,.40) !important;
+  color:#39FF6E !important;
+}
+:root[data-theme="matrix"] #nav a,
+:root[data-theme="matrix"] #nav button{
+  font-family:var(--mono) !important;
+}
+
+/* Matrix: play beat mark — critical node terminal syntax */
+:root[data-theme="matrix"] .play-beat-mark{
+  font-family:var(--mono) !important;
+  color:#39FF6E !important;
+  text-transform:uppercase !important;
+  letter-spacing:.10em !important;
+  font-size:.75rem !important;
+  text-shadow:0 0 8px rgba(57,255,110,.60) !important;
+}
+:root[data-theme="matrix"] .play-beat-mark::before{content:">>> "}
+:root[data-theme="matrix"] .play-beat-mark::after{content:" <<<"}
+
+/* Matrix: play name — terminal output identifier */
+:root[data-theme="matrix"] .play-name{
+  color:#39FF6E !important;
+  text-shadow:0 0 10px rgba(57,255,110,.40) !important;
+}
+
+/* Matrix: hunt steps — terminal record blocks */
+:root[data-theme="matrix"] .hunt-step{
+  border:1px solid rgba(40,224,122,.25) !important;
+  border-left:3px solid rgba(40,224,122,.70) !important;
+  background:#050d07 !important;
+}
+
 /* Matrix: full glass kill on ALL views */
 :root[data-theme="matrix"] [class*="glass"],
 :root[data-theme="matrix"] .hunt-step,
@@ -2758,6 +3042,203 @@ a[href*="issues/new"]{
   -webkit-backdrop-filter:none !important;
   backdrop-filter:none !important;
   background:var(--paper) !important;
+}
+
+/* ============================================================
+   BRUTALIST MOTION — no animation, no transition, hard cuts
+   Bauhaus: form follows function; motion without purpose is noise.
+   ============================================================ */
+
+/* Kill all transitions and decorative animations globally */
+:root[data-theme="brutalist"] *{
+  transition:none !important;
+}
+:root[data-theme="brutalist"] body::before,
+:root[data-theme="brutalist"] .walk-year,
+:root[data-theme="brutalist"] .walk-stage,
+:root[data-theme="brutalist"] .play-frame,
+:root[data-theme="brutalist"] .play-pulse-ring,
+:root[data-theme="brutalist"] .ob-rings > svg,
+:root[data-theme="brutalist"] .walk-flow-card,
+:root[data-theme="brutalist"] .walk-trail-step,
+:root[data-theme="brutalist"] .home-show-flow .row{
+  animation:none !important;
+}
+
+/* Hide decorative overlays entirely */
+:root[data-theme="brutalist"] #ringOverlay,
+:root[data-theme="brutalist"] .play-stage-scan,
+:root[data-theme="brutalist"] #routeScan,
+:root[data-theme="brutalist"] .ob-rings,
+:root[data-theme="brutalist"] .play-pulse-ring,
+:root[data-theme="brutalist"] .ob-brackets{
+  display:none !important;
+}
+
+/* Walk tick transitions: hard cut, zero motion */
+:root[data-theme="brutalist"] .walk-stage[data-walk-anim]{
+  animation:none !important;
+  opacity:1 !important;
+  transform:none !important;
+}
+
+/* Play frame: appears instantly, no fade-up */
+:root[data-theme="brutalist"] .play-frame{
+  animation:none !important;
+  opacity:1 !important;
+}
+
+/* Hover: pure background invert, no transform, no scale */
+:root[data-theme="brutalist"] .browse-row:hover,
+:root[data-theme="brutalist"] .browse-zone-head:hover,
+:root[data-theme="brutalist"] .hunt-step:hover,
+:root[data-theme="brutalist"] .hunt-suggest-grid button:hover,
+:root[data-theme="brutalist"] .home-show-flow .row:hover,
+:root[data-theme="brutalist"] .walk-trail-step:hover,
+:root[data-theme="brutalist"] .walk-controls button:hover:not(:disabled){
+  transform:none !important;
+}
+
+/* Beat: outline flash instead of ring — typographic emphasis */
+:root[data-theme="brutalist"] .play-frame.is-beat .play-card,
+:root[data-theme="brutalist"] .play-stage{
+  outline:none;
+}
+:root[data-theme="brutalist"] .play-frame.is-beat{
+  border-left:4px solid #000;
+}
+
+/* Progress bar: step fill — no smooth animation */
+:root[data-theme="brutalist"] .play-progress-fill{
+  transition:none !important;
+}
+
+/* Play year: heavy weight, no glow */
+:root[data-theme="brutalist"] .play-year{
+  animation:none !important;
+  background:none !important;
+  -webkit-text-fill-color:#000 !important;
+  text-shadow:none !important;
+  filter:none !important;
+  font-weight:900 !important;
+  font-style:normal !important;
+}
+
+/* Focus bracket: snap in/out, no opacity transition */
+:root[data-theme="brutalist"] #focusBracket{
+  transition:none !important;
+}
+
+/* ============================================================
+   MATRIX MOTION — CRT terminal, data transmission aesthetic
+   Glitch cuts, phosphor beam, typewriter character reveals.
+   ============================================================ */
+
+/* Walk transitions: glitch flash instead of cinematic slide */
+:root[data-theme="matrix"] .walk-stage[data-walk-anim="out-right"],
+:root[data-theme="matrix"] .walk-stage[data-walk-anim="out-left"]{
+  animation:matrix-walk-out 180ms step-end forwards !important;
+}
+:root[data-theme="matrix"] .walk-stage[data-walk-anim="in-from-left"],
+:root[data-theme="matrix"] .walk-stage[data-walk-anim="in-from-right"]{
+  animation:matrix-walk-in 180ms step-end forwards !important;
+}
+@keyframes matrix-walk-out{
+  0%  {opacity:1;filter:none}
+  33% {opacity:.6;filter:brightness(1.8) hue-rotate(20deg)}
+  66% {opacity:.2;filter:brightness(.5)}
+  100%{opacity:0;filter:none}
+}
+@keyframes matrix-walk-in{
+  0%  {opacity:0;filter:brightness(2)}
+  25% {opacity:.5;filter:brightness(1.4)}
+  60% {opacity:.85;filter:none}
+  100%{opacity:1;filter:none}
+}
+
+/* Play stage scan: hard phosphor beam — faster, brighter */
+:root[data-theme="matrix"] .play-stage-scan{
+  background:linear-gradient(180deg,
+    transparent 0%,
+    rgba(57,255,110,.15) 5%,
+    #39FF6E 40%,
+    #39FF6E 60%,
+    rgba(57,255,110,.15) 95%,
+    transparent 100%) !important;
+  box-shadow:
+    0 0 6px 1px rgba(57,255,110,1),
+    0 0 20px 3px rgba(57,255,110,.70) !important;
+  width:2px !important;
+}
+:root[data-theme="matrix"] .play-stage-scan.run{
+  animation:matrix-scan 160ms linear forwards !important;
+}
+@keyframes matrix-scan{
+  0%  {opacity:0;left:-3px}
+  8%  {opacity:1}
+  92% {opacity:1}
+  100%{opacity:0;left:calc(100% + 3px)}
+}
+
+/* Route scan: phosphor green beam */
+:root[data-theme="matrix"] #routeScan{
+  background:linear-gradient(90deg,
+    transparent 0%,
+    rgba(57,255,110,.20) 10%,
+    #39FF6E 50%,
+    rgba(57,255,110,.20) 90%,
+    transparent 100%) !important;
+  box-shadow:
+    0 0 10px 2px rgba(57,255,110,.80),
+    0 0 40px 8px rgba(57,255,110,.30) !important;
+  height:2px !important;
+}
+
+/* Hover ring: phosphor color override */
+:root[data-theme="matrix"] #ringOverlay circle{
+  stroke:#39FF6E !important;
+  stroke-width:1.5 !important;
+}
+
+/* Kill hover transforms — phosphor glow only, no physical movement */
+:root[data-theme="matrix"] [data-hover-pulse]:hover,
+:root[data-theme="matrix"] [data-hover-pulse]:focus-visible,
+:root[data-theme="matrix"] .walk-flow-card:hover,
+:root[data-theme="matrix"] .walk-trail-step:hover,
+:root[data-theme="matrix"] .browse-row:hover,
+:root[data-theme="matrix"] .hunt-step:hover{
+  transform:none !important;
+}
+
+/* Play year: CRT flicker + phosphor */
+:root[data-theme="matrix"] .play-year{
+  font-family:var(--mono) !important;
+  animation:matrix-crt-flicker 4s step-end infinite !important;
+  background:none !important;
+  -webkit-text-fill-color:#39FF6E !important;
+  text-shadow:
+    0 0 8px rgba(57,255,110,.90),
+    0 0 20px rgba(57,255,110,.55),
+    0 0 40px rgba(57,255,110,.25) !important;
+  filter:none !important;
+}
+
+/* Beat pulse ring: phosphor burst */
+:root[data-theme="matrix"] .play-pulse-ring{
+  border:1.5px solid rgba(57,255,110,.70) !important;
+  box-shadow:0 0 16px 4px rgba(57,255,110,.40) !important;
+}
+
+/* Play frame entrance: data-load flicker */
+:root[data-theme="matrix"] .play-frame{
+  animation:matrix-frame-in .22s step-end forwards !important;
+}
+@keyframes matrix-frame-in{
+  0%  {opacity:0}
+  25% {opacity:.4}
+  50% {opacity:.8}
+  75% {opacity:.6}
+  100%{opacity:1}
 }
 
 /* ============================================================
