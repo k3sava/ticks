@@ -1,6 +1,6 @@
 # Voice audit · because-text
 
-Generated 2026-05-08 from `data.json`. Flags entries containing recognizable AI-tic templates. Sorted by hit count desc, then by tick weight desc (highest-load-bearing first).
+Generated 2026-05-09 from `data.json`. Flags entries containing recognizable AI-tic templates. Sorted by hit count desc, then by tick weight desc (highest-load-bearing first).
 
 ## Summary
 
