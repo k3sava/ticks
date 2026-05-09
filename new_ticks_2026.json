@@ -1,0 +1,196 @@
+[
+  {
+    "id": "claude-cowork-launch-ai-knowledge-worker",
+    "year": "2026 AD",
+    "yearN": 2026,
+    "zone": "ai-era",
+    "name": "Claude Cowork: AI for the knowledge worker",
+    "domain": "computing",
+    "constraint": "ai coding tools existed only for software developers; office workers had no equivalent agentic layer in their daily tools",
+    "detail": "Anthropic launched Claude Cowork in a research preview in late January 2026 and made it generally available on February 24, 2026. The product connects to Google Drive, Gmail, DocuSign, and other enterprise tools, letting non-technical workers delegate recurring tasks to an AI that runs autonomously. Within weeks of launch, it sparked comparisons to what Claude Code had done for developers in 2025.",
+    "links": [
+      {"label": "CNBC: Claude Cowork enterprise launch", "url": "https://www.cnbc.com/2026/02/24/anthropic-claude-cowork-office-worker.html"},
+      {"label": "VentureBeat: Cowork vs Code", "url": "https://venturebeat.com/orchestration/anthropic-says-claude-code-transformed-programming-now-claude-cowork-is"}
+    ],
+    "because": "Claude Code demonstrated in 2025 that an agentic CLI could become the primary surface for an entire profession. Cowork applies the same architecture to knowledge work by wiring a context-aware agent directly into the tools where office work actually lives. The February 2026 enterprise launch marked the first time a major AI lab shipped an agentic product explicitly designed to replace the productivity software layer, not supplement it."
+  },
+  {
+    "id": "claude-code-computer-use-cli",
+    "year": "2026 AD",
+    "yearN": 2026,
+    "zone": "ai-era",
+    "name": "Claude Code gains computer use in the CLI",
+    "domain": "computing",
+    "constraint": "ai coding agents could read and write files but could not see or operate native graphical interfaces, leaving gui-only apps and visual verification outside the loop",
+    "detail": "Computer use landed in the Claude Code CLI during the week of March 30 to April 3, 2026, after shipping in the Desktop app the prior week. Claude can open native macOS and Windows apps, click through UI, and test and fix its own changes, all from the terminal. The feature shipped as a research preview for Pro and Max subscribers, with multi-monitor support.",
+    "links": [
+      {"label": "Claude Code Docs: Week 14", "url": "https://code.claude.com/docs/en/whats-new/2026-w14"},
+      {"label": "DevOps.com: Claude Code runs desktop", "url": "https://devops.com/claude-code-can-now-run-your-desktop/"}
+    ],
+    "because": "The gap between writing code and verifying it visually had always required a human to open an app and look. Combining the code-generation loop with native UI control in one terminal session collapses that verification step. Model Context Protocol (November 2024) built the tool-calling substrate; Opus 4.7's improved vision (April 2026) provided the resolution needed for reliable UI parsing."
+  },
+  {
+    "id": "claude-mythos-zero-day-project-glasswing",
+    "year": "2026 AD",
+    "yearN": 2026,
+    "zone": "ai-era",
+    "name": "Claude Mythos finds thousands of zero-day vulnerabilities",
+    "domain": "computing",
+    "constraint": "finding previously unknown software vulnerabilities required months of expert human analysis and luck; no ai system had demonstrated capability to autonomously discover critical zero-days at scale",
+    "detail": "On April 7, 2026, Anthropic announced Project Glasswing: a $100 million initiative involving 12 organizations including AWS, Apple, Google, and Microsoft that used the unreleased Claude Mythos Preview to scan critical software. The model autonomously found thousands of zero-day vulnerabilities across every major operating system and browser, including a 17-year-old remote code execution flaw in FreeBSD (CVE-2026-4747). Anthropic deemed the model too capable for general release and restricted access to critical infrastructure partners.",
+    "links": [
+      {"label": "Anthropic: Project Glasswing", "url": "https://www.anthropic.com/glasswing"},
+      {"label": "The Hacker News: Mythos zero-days", "url": "https://thehackernews.com/2026/04/anthropics-claude-mythos-finds.html"}
+    ],
+    "because": "Security research had always been gated by the scarcity of experts who can hold complex software state in their heads. Mythos dissolves that constraint by running exhaustive, stateful analysis at machine speed. The decision to withhold the model from general release and route it only through a controlled partner program created a new category of AI governance challenge: models whose raw capability is too dangerous to ship openly."
+  },
+  {
+    "id": "figma-canvas-open-to-ai-agents",
+    "year": "2026 AD",
+    "yearN": 2026,
+    "zone": "ai-era",
+    "name": "Figma opens canvas to AI agents with write access",
+    "domain": "computing",
+    "constraint": "ai design tools could suggest or generate code but could not write directly into a live design file using the actual component system, variables, and design tokens",
+    "detail": "On March 24, 2026, Figma announced that the Figma canvas is open to agents via the new use_figma MCP tool, giving coding agents such as Claude Code, Cursor, and GitHub Copilot direct write access to design files. Agents can create frames, apply components, set variables, and wire auto layout while respecting an organization's existing design system. Nine community-built skills launched simultaneously, including /apply-design-system and /sync-figma-token. The feature launched in open beta at no cost.",
+    "links": [
+      {"label": "Figma Blog: Canvas open to agents", "url": "https://www.figma.com/blog/the-figma-canvas-is-now-open-to-agents/"},
+      {"label": "Muzli: What it means for designers", "url": "https://muz.li/blog/figma-just-opened-the-canvas-to-ai-agents-heres-what-it-means-for-designers/"}
+    ],
+    "because": "Figma's MCP server (launched 2024) proved that agents could read design context. Write access required solving a harder problem: maintaining design system coherence when an agent mutates the file. The skills framework, where agents receive markdown instructions encoding the intent behind a design system, was the key enabling abstraction. This is the moment design tooling crossed from AI-assisted to AI-executed."
+  },
+  {
+    "id": "claude-design-prompt-to-prototype",
+    "year": "2026 AD",
+    "yearN": 2026,
+    "zone": "ai-era",
+    "name": "Claude Design: natural language to interactive prototype",
+    "domain": "computing",
+    "constraint": "creating an interactive prototype or pitch deck required knowing a design tool; going from idea to shareable visual artifact took hours of expert work",
+    "detail": "Anthropic launched Claude Design on April 17, 2026, as a research preview under Anthropic Labs. Powered by Claude Opus 4.7, the tool lets users describe what they want and receive editable prototypes, pitch decks, one-pagers, and mockups. Outputs can be exported as PDF, URL, PPTX, or sent to Canva. The launch caused Figma stock to fall 7 percent. The tool is available to Pro, Max, Team, and Enterprise subscribers.",
+    "links": [
+      {"label": "TechCrunch: Claude Design launch", "url": "https://techcrunch.com/2026/04/17/anthropic-launches-claude-design-a-new-product-for-creating-quick-visuals/"},
+      {"label": "Anthropic: Claude Design", "url": "https://www.anthropic.com/news/claude-design-anthropic-labs"}
+    ],
+    "because": "v0 (Vercel, 2023) proved that prompting could generate frontend code. Claude Design targets the earlier step: the idea-to-visual-artifact moment that previously required Figma or PowerPoint proficiency. The 2x vision resolution jump in Opus 4.7 (2,576px vs 1,568px in Opus 4.6) was a direct enabler, allowing the model to interpret reference images accurately enough to produce consistent branded output."
+  },
+  {
+    "id": "github-copilot-autonomous-issue-to-pr",
+    "year": "2026 AD",
+    "yearN": 2026,
+    "zone": "ai-era",
+    "name": "GitHub Copilot coding agent: autonomous issue-to-PR workflow",
+    "domain": "computing",
+    "constraint": "every ai coding tool required a developer to remain in the loop, translating an issue into steps and monitoring execution; there was no way to assign work to an ai and simply wait for a finished pull request",
+    "detail": "GitHub's Copilot coding agent reached general availability in March 2026 for all paid Copilot subscribers. The agent accepts a GitHub issue as input, researches the repository, writes code, runs tests, and opens a draft pull request without a developer in the loop. Copilot's agentic code review, which shipped on March 5, 2026, adds a downstream loop: when review flags issues, the coding agent generates fix PRs automatically.",
+    "links": [
+      {"label": "GitHub Community: Coding agent GA", "url": "https://github.com/orgs/community/discussions/159068"},
+      {"label": "GitHub Changelog: Agentic code review", "url": "https://github.com/blog/changelog/2026-03-05"}
+    ],
+    "because": "GitHub Copilot (2021) established AI as a line-completion tool. Agent Mode (2025) made it multi-step. The GA of the autonomous coding agent closes the loop from issue triage to merged code, removing the developer as the required runtime. This makes software engineering the first profession where the review-not-write posture is commercially mainstream, not experimental."
+  },
+  {
+    "id": "notion-custom-agents-autonomous-teammates",
+    "year": "2026 AD",
+    "yearN": 2026,
+    "zone": "ai-era",
+    "name": "Notion Custom Agents: AI teammates that run 24/7",
+    "domain": "computing",
+    "constraint": "ai in productivity tools was invoked on demand by a human; no mainstream workspace shipped a persistent, scheduled ai agent that executed recurring work without a prompt",
+    "detail": "Notion launched Custom Agents on February 24, 2026, as part of Notion 3.3. Agents run on a schedule or trigger, connect to Slack, Figma, Linear, and HubSpot via MCP, and require no manual prompting after setup. The beta attracted 21,000 agents built by early testers; Notion runs 2,800 agents internally. Remote's IT Ops team reported saving 20 hours per week with agents resolving over 25 percent of tickets autonomously.",
+    "links": [
+      {"label": "Notion releases: Custom Agents", "url": "https://www.notion.com/releases/2026-02-24"},
+      {"label": "Notion Blog: Introducing Custom Agents", "url": "https://www.notion.com/blog/introducing-custom-agents"}
+    ],
+    "because": "MCP (November 2024) gave AI agents a standard way to connect to external tools. Notion Custom Agents are the first mass-market application of that substrate, shipping agents to millions of non-technical users inside software they already open every day. The shift from on-demand AI to scheduled, persistent AI teammates happened not in a developer tool but in a notes app."
+  },
+  {
+    "id": "v0-git-integration-production-platform",
+    "year": "2026 AD",
+    "yearN": 2026,
+    "zone": "ai-era",
+    "name": "v0 gains Git, database, and agentic deployment",
+    "domain": "computing",
+    "constraint": "ai ui generators produced code snippets that required manual integration into a real project; the path from prompted ui to deployed production app still required a developer to wire things together",
+    "detail": "In February 2026, Vercel's v0 added Git integration, a VS Code-style editor, database connectivity, and agentic deployment workflows, closing the gap between generated component and production app. Users can describe a multi-page SaaS application and receive a full project with routing, layout components, and placeholder data that deploys directly to Vercel. The update repositioned v0 from a code-snippet tool to a full application builder.",
+    "links": [
+      {"label": "Vercel: Introducing the new v0", "url": "https://vercel.com/blog/introducing-the-new-v0"},
+      {"label": "NxCode: v0 complete guide 2026", "url": "https://www.nxcode.io/resources/news/v0-by-vercel-complete-guide-2026"}
+    ],
+    "because": "v0's initial 2023 launch proved demand for prompt-to-React-component generation. The gap was always the last mile: connecting the generated code to a real project, a database, and a deploy pipeline. The February 2026 update removes each of those manual handoff steps, completing the path from natural language to live URL without switching tools."
+  },
+  {
+    "id": "us-military-captures-maduro-venezuela-2026",
+    "year": "2026 AD",
+    "yearN": 2026,
+    "zone": "ai-era",
+    "name": "US military captures Venezuelan President Maduro",
+    "domain": "war",
+    "constraint": "foreign heads of state, regardless of US indictments or sanctions, operated with practical immunity from direct military apprehension on their own soil",
+    "detail": "On January 3, 2026, US special operations forces launched Operation Absolute Resolve, striking air defenses across northern Venezuela before extracting President Nicolas Maduro and his wife Cilia Flores from a fortified compound in Caracas. More than 150 military aircraft were involved; seven US service members were injured. Venezuelan Interior Minister Diosdado Cabello reported over 100 killed. Maduro was transferred to custody in New York to face drug trafficking charges.",
+    "links": [
+      {"label": "CNBC: Venezuela 100 killed", "url": "https://www.cnbc.com/2026/01/07/us-venezuela-military-operation-maduro-injuries-casualties.html"},
+      {"label": "CNN: Inside the Maduro capture", "url": "https://www.cnn.com/2026/01/03/politics/nicolas-maduro-capture-venezuela"}
+    ],
+    "because": "The operation followed years of US indictments, maximum-pressure sanctions, and failed negotiated transitions. The Trump administration treated the Maduro government as a narco-criminal enterprise subject to law enforcement logic rather than diplomatic immunity. The capture sets a precedent that other sanctioned heads of state are watching: the distance between a US indictment and a US extraction operation may have narrowed."
+  },
+  {
+    "id": "us-israel-strike-iran-kills-khamenei",
+    "year": "2026 AD",
+    "yearN": 2026,
+    "zone": "ai-era",
+    "name": "US-Israel strike kills Iranian Supreme Leader Khamenei",
+    "domain": "war",
+    "constraint": "iran's supreme leader had survived four decades without direct military targeting by any adversary, making the position functionally untouchable and the iranian nuclear program negotiable rather than eliminable by force",
+    "detail": "On February 28, 2026, the United States and Israel launched approximately 900 strikes in 12 hours targeting Iranian missiles, air defenses, military infrastructure, and senior leadership. Supreme Leader Ali Khamenei was killed along with Defense Minister Aziz Nasirzadeh and over 40 senior officials. Iran responded by closing the Strait of Hormuz on March 2, cutting roughly 20 percent of global oil supply and stranding 2,000 ships in the Persian Gulf.",
+    "links": [
+      {"label": "Al Jazeera: US-Israel strike live updates", "url": "https://www.aljazeera.com/news/liveblog/2026/2/28/live-israel-launches-attacks-on-iran-multiple-explosions-heard-in-tehran"},
+      {"label": "Wikipedia: 2026 Iran war", "url": "https://en.wikipedia.org/wiki/2026_Iran_war"}
+    ],
+    "because": "Decades of Israeli doctrine held that Iranian nuclear infrastructure was the target, not the leadership. The February 2026 strike reflected a different calculation: that decapitating the political-military command during active nuclear negotiations was strategically achievable. The resulting Hormuz closure demonstrated that the constraint on striking Iranian leadership was not capability but consequence-tolerance."
+  },
+  {
+    "id": "strait-of-hormuz-closure-2026-oil-shock",
+    "year": "2026 AD",
+    "yearN": 2026,
+    "zone": "ai-era",
+    "name": "Strait of Hormuz closure triggers global oil shock",
+    "domain": "economics",
+    "constraint": "the strait had remained open through every modern middle east conflict, including iran-iraq war, gulf war, and prior us-iran confrontations, making closure a theoretical scenario rather than a lived economic reality",
+    "detail": "Iran officially closed the Strait of Hormuz on March 2, 2026, following the US-Israeli strikes. Tanker traffic fell 70 percent; over 20,000 mariners and 2,000 ships were stranded in the Persian Gulf by April 21. The IEA and IMF projected WTI oil would reach $110 per barrel for a single-quarter closure and $132 per barrel if the closure extended two quarters. Fertilizer shipments, which account for one third of global supply transiting the strait, raised food security concerns as Northern Hemisphere planting season began.",
+    "links": [
+      {"label": "Wikipedia: 2026 Strait of Hormuz crisis", "url": "https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis"},
+      {"label": "Dallas Fed: Hormuz closure oil impact", "url": "https://www.dallasfed.org/research/economics/2026/0320"}
+    ],
+    "because": "Every prior modelling of a Hormuz closure treated it as a black-swan stress test, not a planning scenario. The February 2026 strikes removed the political constraint that had kept Iran from using the choke point as leverage. The closure exposed the degree to which global food and energy supply chains had been built on the implicit assumption that the strait would remain open regardless of regional conflict."
+  },
+  {
+    "id": "pakistan-declares-open-war-afghanistan-2026",
+    "year": "2026 AD",
+    "yearN": 2026,
+    "zone": "ai-era",
+    "name": "Pakistan-Afghanistan open war: first inter-state war since Taliban takeover",
+    "domain": "war",
+    "constraint": "despite years of cross-border militant attacks and retaliatory strikes, both countries had avoided declaring an open military conflict, treating hostilities as sub-threshold operations",
+    "detail": "On February 21, 2026, Pakistan launched airstrikes targeting seven militant camps in Nangarhar, Paktika, and Khost provinces linked to the Pakistani Taliban (TTP) and ISIS-K. Taliban forces retaliated on February 26; Pakistan struck Kabul, Kandahar, and Paktia on February 27 in what officials called an open war. By March 16, Pakistani airstrikes on a Kabul hospital killed at least 400 people and injured over 250. A China-mediated ceasefire was reached during Eid al-Fitr in March, though cross-border violence continued into April.",
+    "links": [
+      {"label": "Wikipedia: 2026 Afghanistan-Pakistan war", "url": "https://en.wikipedia.org/wiki/2026_Afghanistan%E2%80%93Pakistan_war"},
+      {"label": "NPR: Pakistan declares open war", "url": "https://www.npr.org/2026/02/26/g-s1-111783/airstrikes-afghanistan-pakistan-war"}
+    ],
+    "because": "The Taliban's 2021 takeover removed the Afghan government as a counterterrorism partner for Pakistan, allowing TTP attacks to accelerate. Pakistan exhausted diplomatic options over four years before escalating to open military action. The conflict marks the first formal inter-state war on the Afghanistan-Pakistan border since the Soviet era, and tests whether the Taliban can govern as a state actor bound by international norms."
+  },
+  {
+    "id": "milano-cortina-2026-winter-olympics",
+    "year": "2026 AD",
+    "yearN": 2026,
+    "zone": "ai-era",
+    "name": "Milano Cortina 2026: US hockey gold, Klaebo six golds",
+    "domain": "art",
+    "constraint": "no athlete in olympic winter sports history had ever won six gold medals at a single winter games, and us men's ice hockey had not won olympic gold since the 1980 miracle on ice",
+    "detail": "The Milano Cortina 2026 Winter Olympics ran from February 6 to 22 across 116 events. Norwegian cross-country skier Johannes Hosflot Klaebo won six gold medals at a single games, becoming the all-time winter olympic gold leader with 11 across three games. The United States men's hockey team defeated Canada 2-1 in overtime for their first gold since the 1980 Lake Placid games, with Jack Hughes scoring the winner. American speed skater Jordan Stolz won both the 500m and 1000m, matching a feat not achieved since Lake Placid 1980.",
+    "links": [
+      {"label": "Olympics.com: Daily highlights", "url": "https://www.olympics.com/en/milano-cortina-2026/news/winter-olympics-2026-highlights-daily-results-milano-cortina-22-february"}
+    ],
+    "because": "Italy's failed 2006 Turin infrastructure gave way to a distributed competition spanning Milan, Cortina d'Ampezzo, and four other venues, itself a study in logistics that almost collapsed during construction delays. The games marked the end of Norway's uninterrupted cross-country dominance narrative (Klaebo extended it rather than breaking it) and the resurgence of US hockey after a 46-year gap at the elite level."
+  }
+]
