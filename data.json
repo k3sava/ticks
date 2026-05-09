@@ -1670,7 +1670,7 @@
         }
       ],
       "_origZone": "age-of-exploration",
-      "because": "The VOC's establishment as the first multinational corporation (1602), its annual dividend (1602), and the first corporate dividend distribution (1610) demonstrated that early-seventeenth-century Dutch finance was institutionalizing rapidly. The Amsterdam Stock Exchange in 1611 adds secondary-market trading — investors buying and selling existing shares — making capital liquid at unprecedented scale. The institutional template every later stock exchange adapts."
+      "because": "The VOC's establishment as the first multinational corporation (1602) and the first corporate dividend distribution (1610) demonstrated that early-seventeenth-century Dutch finance was institutionalizing rapidly. The Amsterdam Stock Exchange in 1611 adds secondary-market trading — investors buying and selling existing shares — making capital liquid at unprecedented scale. The institutional template every later stock exchange adapts."
     },
     {
       "id": "compound-microscope",
@@ -6814,7 +6814,7 @@
         }
       ],
       "_origZone": "scientific-revolution",
-      "because": "The Battle of Lepanto (1571) and pike-and-shot formation (1534) demonstrated gunpowder warfare's evolution. Galileo's Two New Sciences (1589) showed that quantitative thinking could organize practical engineering. Gustavus Adolphus's reforms — lighter mobile artillery, standardized regimental units, drilled volley fire — combine all of it into coherent doctrine. The Swedish army becomes early-modern Europe's most effective; modern combined-arms doctrine traces here."
+      "because": "Pike-and-shot formation (1534) and Maurice of Nassau's volley fire (1599) demonstrated gunpowder warfare's evolution toward disciplined combined arms. Galileo's kinematics (~1589) and Kepler's laws (1609) showed that quantitative thinking could organize practical engineering. Gustavus Adolphus's reforms — lighter mobile artillery, standardized regimental units, drilled volley fire — combine all of it into coherent doctrine. The Swedish army becomes early-modern Europe's most effective; modern combined-arms doctrine traces here."
     },
     {
       "id": "lev-e-en-masse-french-revolutionary-army",
@@ -17015,7 +17015,7 @@
         }
       ],
       "_origZone": "age-of-exploration",
-      "because": "The Battle of Lepanto (1571) had ended Ottoman naval dominance with broadside warfare and shown the value of disciplined coordinated fire at sea. Maurice of Nassau's Dutch reforms applied the same logic on land: countermarch volley fire turned individually slow muskets into a continuous wall of rounds — and required the close-order drill that defined infantry combat."
+      "because": "The Battle of Lepanto (1571) had demonstrated the value of coordinated broadside fire at sea, and pike-and-shot formation (1534) had established combined-arms infantry doctrine on land. Maurice of Nassau's Dutch reforms applied the same disciplined-fire logic to musketry: countermarch volley fire turned individually slow muskets into a continuous wall of rounds — and required the close-order drill that defined infantry combat for two centuries."
     },
     {
       "id": "battle-of-quebec-amphibious-operational-art",
@@ -26681,7 +26681,7 @@
           "url": "https://en.wikipedia.org/wiki/Norfolk_four-course_system"
         }
       ],
-      "because": "Three-field rotation had still required a fallow year. Norfolk-county farmers (16th-17th century) developed the four-course rotation: wheat, turnips, barley, clover. Turnips fed sheep through winter (fewer slaughters); clover fixed nitrogen and fed cattle. No fallow year required. Yields rose, livestock numbers grew, manure increased, fertility cycled. The British Agricultural Revolution's central technology and one of the foundations on which later urbanization stood."
+      "because": "Three-field rotation had still required a fallow year. Farmers in Waasland (present-day northern Belgium) developed the four-course rotation in the early 16th century: wheat, turnips, barley, clover. Turnips fed sheep through winter (fewer slaughters); clover fixed nitrogen and fed cattle. No fallow year required. Yields rose, livestock numbers grew, manure increased, fertility cycled. Charles Townshend popularized the technique in English Norfolk in the 18th century — 'Norfolk four-course' named after its English adoption, not its Flemish origin. The British Agricultural Revolution's central technology."
     },
     {
       "id": "introduction-of-tomato-to-europe",
@@ -51603,7 +51603,7 @@
           "url": "https://en.wikipedia.org/wiki/Bayonet"
         }
       ],
-      "because": "The Battle of Lepanto (1571) had ended Ottoman naval dominance through coordinated firepower, and Maurice's musket-and-pike drill (1599) had shown that combined-arms infantry could replace cavalry as the decisive arm. The plug bayonet — and later the socket bayonet — let a single soldier serve as both musketeer and pikeman, ending the need for separate pike formations and turning every infantryman into a melee fighter as well."
+      "because": "The Battle of Lepanto (1571) had demonstrated the decisive power of coordinated broadside firepower, and Maurice's musket-and-pike drill (1599) had shown that combined-arms infantry could replace cavalry as the decisive arm. The plug bayonet — and later the socket bayonet — let a single soldier serve as both musketeer and pikeman, ending the need for separate pike formations and turning every infantryman into a melee fighter as well."
     },
     {
       "id": "flintlock-musket-standardised",
