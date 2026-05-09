@@ -87,7 +87,7 @@
   --glass-texture-repeat:repeat, repeat, repeat;
 }
 @media (prefers-color-scheme:light){
-  :root:not([data-theme="dark"]):not([data-theme="drone"]):not([data-theme="matrix"]){
+  :root:not([data-theme="dark"]):not([data-theme="brutalist"]):not([data-theme="matrix"]){
     --bg:#F4EFE6;
     --bg-2:#FAF6EE;
     --paper:rgba(255,253,247,.6);
@@ -452,18 +452,18 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 }
 
 /* ========== WALK ========== */
-/* Layout discipline: the year + name anchor on the left, the prose stack
-   on the right. The flow strip is the only horizontal scroller — sideways
-   navigation by design. Page scrolls vertically if content is long; two
-   columns cut height roughly in half so most ticks fit one screen on
-   desktop. Mobile collapses to a single readable column. */
+/* Layout discipline: the walk view is fully viewport-contained — no page
+   scroll. The year + name anchor on the left, the prose stack on the right.
+   The flow strip is the only horizontal scroller. walk-stage fills remaining
+   space, walk-body scrolls internally when content is long. */
 .walk{
   display:flex;flex-direction:column;
-  gap:12px;
-  padding:14px var(--gut) 24px;
+  gap:8px;
+  padding:10px var(--gut) 10px;
   position:relative;
-  min-height:calc(100vh - var(--hdr-h) - 200px);
-  min-height:calc(100dvh - var(--hdr-h) - 200px);
+  height:calc(100vh - var(--hdr-h));
+  height:calc(100dvh - var(--hdr-h));
+  overflow:hidden;
   animation:walk-in .55s var(--ease-stage);
 }
 @keyframes walk-in{
@@ -476,17 +476,18 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 .walk-meta{
   display:flex;align-items:center;justify-content:space-between;gap:16px;
   font-family:var(--mono);font-size:.7rem;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;
-  position:relative;padding-bottom:8px;
+  position:relative;padding-bottom:6px;
+  flex:none;
 }
 
 /* Walk ancestry trail: a single horizontal strip of parent capsules with
-   thin connector traces. Compact (~52px) so the year stays above the fold.
-   Always renders, even when there are no ancestors (an empty placeholder
-   keeps the row height stable so navigating between ticks doesn't bounce
-   the year around). */
+   thin connector traces. Fixed 52px so it never grows when there are many
+   ancestors. Always renders — the empty placeholder keeps row height stable. */
 .walk-trail-area{
-  min-height:48px;display:flex;align-items:center;justify-content:flex-start;
+  height:52px;flex:none;
+  display:flex;align-items:center;justify-content:flex-start;
   max-width:1280px;margin:0 auto;width:100%;
+  overflow:hidden;
 }
 .walk-trail{
   display:flex;flex-direction:row;align-items:center;gap:8px;
@@ -583,13 +584,15 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
    scroll for readability. */
 .walk-stage{
   position:relative;
+  /* Grows to fill the remaining vertical space between trail and flow.
+     flex:1 + min-height:0 is the canonical "fill and allow inner scroll" pattern. */
+  flex:1;min-height:0;
   /* Default (narrow): flex column. Hero and body stack vertically.
      Promoted to grid in the min-width:920px media query below. */
   display:flex;flex-direction:column;align-items:stretch;
-  gap:clamp(16px, 2.4vw, 24px);
+  gap:clamp(12px, 2vw, 20px);
   max-width:1280px;margin:0 auto;width:100%;
-  padding:clamp(20px, 4vw, 32px) clamp(20px, 4vw, 36px);
-  min-height:0;
+  padding:clamp(14px, 3vw, 24px) clamp(16px, 3vw, 32px);
   border-radius:var(--radius-lg);
   background:var(--glass-bg);
   -webkit-backdrop-filter:var(--glass-blur);
@@ -604,11 +607,21 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 @media (min-width:920px){
   .walk-stage{
     display:grid;
-    grid-template-columns:minmax(320px, 1.05fr) minmax(0, 1.3fr);
+    grid-template-columns:minmax(300px, 1.05fr) minmax(0, 1.3fr);
+    grid-template-rows:1fr;
     grid-template-areas:"hero body";
     align-items:start;
     gap:0 40px;
-    padding:28px 40px 26px;
+    padding:22px 36px 22px;
+  }
+  /* On desktop grid, hero and body each need to be able to scroll independently */
+  .walk-hero{
+    overflow:hidden;
+    height:100%;
+  }
+  .walk-body{
+    height:100%;
+    align-self:stretch;
   }
 }
 .walk-hero{
@@ -616,9 +629,10 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
   gap:14px;
   position:relative;
   min-width:0;
+  overflow:hidden;
 }
 @media (min-width:920px){
-  .walk-hero{grid-area:hero}
+  .walk-hero{grid-area:hero;overflow:hidden}
   .walk-hero::after{
     content:"";position:absolute;
     right:-22px;top:6%;bottom:6%;width:1px;
@@ -634,10 +648,17 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
   display:flex;flex-direction:column;align-items:flex-start;
   gap:12px;
   min-width:0;
+  /* On desktop (inside grid), body column gets its own scroll.
+     On mobile (flex column), stage itself clips and body scrolls within it. */
+  overflow-y:auto;
+  scrollbar-width:thin;
+  scrollbar-color:color-mix(in oklab, var(--dc, var(--accent)) 30%, var(--line-2)) transparent;
+  min-height:0;
 }
-/* Keep body children at their natural height — without flex-shrink:0 the
-   flex container squeezes long text out of view rather than letting the
-   body column scroll. */
+.walk-body::-webkit-scrollbar{width:4px}
+.walk-body::-webkit-scrollbar-thumb{background:color-mix(in oklab, var(--dc, var(--accent)) 30%, var(--line-2));border-radius:999px}
+.walk-body::-webkit-scrollbar-track{background:transparent}
+/* Keep body children at their natural height */
 .walk-body > *{flex-shrink:0}
 @media (min-width:920px){
   .walk-body{
@@ -679,12 +700,12 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 .walk-year{
   position:relative;
   font-family:var(--serif);font-style:italic;font-weight:500;
-  font-size:clamp(2.4rem,7.5vw,6rem);line-height:1.02;letter-spacing:-.045em;
+  font-size:clamp(2rem,5.5vw,4.8rem);line-height:1.02;letter-spacing:-.045em;
   color:var(--ink);
   font-feature-settings:'lnum','tnum';
   padding:.06em .16em .04em 0;
-  overflow:visible;
-  width:fit-content;
+  overflow:hidden;
+  width:100%;
   max-width:100%;
   background:linear-gradient(180deg,
     var(--ink) 0%,
@@ -779,19 +800,20 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 }
 .walk-domain{align-self:flex-start}
 
-/* Downstream flow is a horizontal scroll strip — the only sideways motion
-   on the walk page. The strip itself has a fixed height that doesn't push
-   anything below the fold; cards spill RIGHT on overflow, never DOWN. The
-   header label sits above the strip, the strip snaps to card boundaries on
-   trackpad / wheel. Keyboard users can tab through cards normally. */
+/* Downstream flow is a horizontal scroll strip — always visible at the bottom,
+   fixed max-height so it never pushes anything out of view. Cards spill RIGHT
+   on overflow, never DOWN. */
 .walk-flow{
   position:relative;
-  display:flex;flex-direction:column;gap:6px;
+  display:flex;flex-direction:column;gap:4px;
   max-width:1280px;margin:0 auto;width:100%;
-  min-height:0;
+  max-height:110px;
+  flex:none;
+  overflow:hidden;
 }
 .walk-flow-head{
-  font-family:var(--mono);font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);
+  font-family:var(--mono);font-size:.65rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);
+  flex:none;
 }
 .walk-flow-strip{
   display:flex;flex-direction:row;align-items:stretch;gap:10px;
@@ -825,10 +847,11 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 .walk-flow-card{
   position:relative;
   flex:none;
-  width:220px;
+  max-width:180px;
+  width:180px;
   scroll-snap-align:start;
-  display:flex;flex-direction:column;gap:8px;padding:12px 14px;
-  border-radius:14px;
+  display:flex;flex-direction:column;gap:4px;padding:8px 10px;
+  border-radius:10px;
   background:var(--glass-thin-bg);
   -webkit-backdrop-filter:var(--glass-thin-blur);
           backdrop-filter:var(--glass-thin-blur);
@@ -887,8 +910,9 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 
 .walk-controls{
   display:flex;align-items:center;justify-content:space-between;gap:16px;
-  max-width:1280px;margin:0 auto;width:100%;padding:10px 20px;
-  border-radius:14px;
+  max-width:1280px;margin:0 auto;width:100%;padding:8px 16px;
+  border-radius:12px;
+  flex:none;
   background:var(--glass-thin-bg);
   -webkit-backdrop-filter:var(--glass-thin-blur);
           backdrop-filter:var(--glass-thin-blur);
@@ -2009,7 +2033,7 @@ main:focus,main:focus-visible{outline:none}
    below) so the page can vertical-scroll like before — the walk-flow strip
    itself stays horizontal because that's the JTBD that survived. */
 @media (max-width:520px){
-  .walk-flow-card{min-height:64px;padding:14px 16px;width:200px}
+  .walk-flow-card{min-height:56px;padding:8px 10px;width:160px}
 }
 
 /* Suggest-an-edit link: bigger touch target */
@@ -2209,7 +2233,7 @@ a[href*="issues/new"]{
   --ob-glow:0 0 6px rgba(14,17,32,.16);
 }
 @media (prefers-color-scheme:light){
-  :root:not([data-theme="dark"]):not([data-theme="drone"]){
+  :root:not([data-theme="dark"]):not([data-theme="brutalist"]){
     --ob-line:rgba(14,17,32,.30);
     --ob-line-dim:rgba(14,17,32,.18);
     --ob-line-soft:rgba(14,17,32,.10);
@@ -2218,88 +2242,207 @@ a[href*="issues/new"]{
 }
 
 /* ============================================================
-   DRONE THEME — third theme alongside light/dark
-   Cool sky-cloud near-white. Thinner glass, recede the bloom,
-   amp the hairline geometry. Cyan halo replaces warm halo.
+   BRUTALIST THEME — third theme (replaces drone)
+   Solid white/black. No glass, no blur, no bloom. Sharp edges,
+   heavy borders, print-like typography. Bold domain color accents.
    ============================================================ */
-:root[data-theme="drone"]{
-  --bg:#D5E0E8;
-  --bg-2:#E2EBF1;
-  --paper:rgba(245,250,253,.4);
-  --paper-2:rgba(245,250,253,.55);
-  --line:rgba(20,45,62,.14);
-  --line-2:rgba(20,45,62,.24);
-  --ink:#0B1E2C;
-  --ink-2:rgba(11,30,44,.82);
-  --muted:rgba(11,30,44,.58);
-  --faint:rgba(11,30,44,.36);
-  --accent:#256B86;
-  --accent-2:#3F8DA9;
+:root[data-theme="brutalist"]{
+  --bg:#FAFAFA;
+  --bg-2:#F0F0F0;
+  --paper:rgba(255,255,255,1);
+  --paper-2:rgba(245,245,245,1);
+  --line:rgba(0,0,0,.18);
+  --line-2:rgba(0,0,0,.30);
+  --ink:#0A0A0A;
+  --ink-2:rgba(10,10,10,.78);
+  --muted:rgba(10,10,10,.52);
+  --faint:rgba(10,10,10,.30);
+  --accent:#C0392B;
+  --accent-2:#922B21;
 
-  --glass-thin-bg:rgba(225,238,246,.34);
-  --glass-thin-blur:saturate(115%) blur(14px);
-  --glass-bg:rgba(225,238,246,.42);
-  --glass-blur:saturate(120%) blur(18px);
-  --glass-thick-bg:rgba(225,238,246,.58);
-  --glass-thick-blur:saturate(130%) blur(24px);
-  --glass-edge:rgba(255,255,255,.6);
-  --glass-edge-strong:rgba(255,255,255,.85);
-  --glass-shadow:0 18px 40px -28px rgba(15,35,48,.20), 0 4px 14px -10px rgba(15,35,48,.12);
-  --glass-shadow-hi:0 26px 60px -28px rgba(15,35,48,.28), 0 8px 20px -10px rgba(15,35,48,.18);
-  --halo:rgba(37,107,134,.10);
+  --glass-thin-bg:rgba(255,255,255,1);
+  --glass-thin-blur:none;
+  --glass-bg:rgba(255,255,255,1);
+  --glass-blur:none;
+  --glass-thick-bg:rgba(255,255,255,1);
+  --glass-thick-blur:none;
+  --glass-edge:rgba(0,0,0,.18);
+  --glass-edge-strong:rgba(0,0,0,.30);
+  --glass-shadow:none;
+  --glass-shadow-hi:none;
+  --halo:rgba(0,0,0,0);
 
-  /* Hairline blueprint grid — drone register's signature texture.
-     Cross-stripes at 24px with a finer 6px sub-grid for the technical feel. */
-  --glass-texture:
-    linear-gradient(0deg, rgba(20,45,62,.07) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(20,45,62,.07) 1px, transparent 1px),
-    linear-gradient(0deg, rgba(20,45,62,.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(20,45,62,.035) 1px, transparent 1px);
-  --glass-texture-size:24px 24px, 24px 24px, 6px 6px, 6px 6px;
-  --glass-texture-repeat:repeat, repeat, repeat, repeat;
+  --radius:2px;
+  --radius-lg:2px;
 
-  /* Drone register: hairline geometry takes the lead */
-  --ob-line:rgba(11,30,44,.60);
-  --ob-line-dim:rgba(11,30,44,.36);
-  --ob-line-soft:rgba(11,30,44,.18);
-  --ob-glow:0 0 4px rgba(37,107,134,.34);
+  --ob-line:rgba(0,0,0,.60);
+  --ob-line-dim:rgba(0,0,0,.36);
+  --ob-line-soft:rgba(0,0,0,.18);
+  --ob-glow:none;
 }
-/* Drone: domain blooms recede further (10%) so the cool palette holds.
-   Specular highlight nearly off — let the grid texture be the hero. */
-:root[data-theme="drone"] .glass::before,
-:root[data-theme="drone"] .glass-thin::before,
-:root[data-theme="drone"] .glass-thick::before,
-:root[data-theme="drone"] .walk-stage::before,
-:root[data-theme="drone"] .home-show::before,
-:root[data-theme="drone"] .walk-flow-card::before,
-:root[data-theme="drone"] .hunt-suggest-grid button::before{opacity:.10}
-:root[data-theme="drone"] .glass::after,
-:root[data-theme="drone"] .glass-thin::after,
-:root[data-theme="drone"] .glass-thick::after,
-:root[data-theme="drone"] .walk-stage::after,
-:root[data-theme="drone"] .home-show::after{mix-blend-mode:overlay;opacity:.18}
-:root[data-theme="drone"] body::before{
-  /* Cyan halo, warm tones suppressed almost entirely */
-  background:
-    radial-gradient(60vmax 60vmax at calc(var(--cx)*100%) calc(var(--cy)*100%),
-      var(--halo) 0%, transparent 45%),
-    radial-gradient(50vmax 60vmax at 18% 12%,
-      color-mix(in oklab, var(--dc, var(--accent)) 4%, transparent) 0%,
-      transparent 60%),
-    radial-gradient(60vmax 60vmax at 82% 88%,
-      color-mix(in oklab, var(--accent-2) 4%, transparent) 0%,
-      transparent 60%),
-    linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+
+/* Brutalist: strip all glass surfaces */
+:root[data-theme="brutalist"] .glass,
+:root[data-theme="brutalist"] .glass-thin,
+:root[data-theme="brutalist"] .glass-thick{
+  background:var(--paper);
+  -webkit-backdrop-filter:none;
+  backdrop-filter:none;
+  box-shadow:none;
+  border:1.5px solid var(--line);
+  border-radius:0;
 }
-/* Drone body grid — full-page cross-hatch under the glass.
-   Replaces the warm dot grid with a cooler instrument-panel feel. */
-:root[data-theme="drone"] body::after{
+:root[data-theme="brutalist"] .glass::before,
+:root[data-theme="brutalist"] .glass-thin::before,
+:root[data-theme="brutalist"] .glass-thick::before,
+:root[data-theme="brutalist"] .walk-stage::before,
+:root[data-theme="brutalist"] .home-show::before,
+:root[data-theme="brutalist"] .walk-flow-card::before,
+:root[data-theme="brutalist"] .hunt-suggest-grid button::before{opacity:0}
+:root[data-theme="brutalist"] .glass::after,
+:root[data-theme="brutalist"] .glass-thin::after,
+:root[data-theme="brutalist"] .glass-thick::after,
+:root[data-theme="brutalist"] .walk-stage::after,
+:root[data-theme="brutalist"] .home-show::after{opacity:0}
+
+/* Brutalist: walk stage — flat card, bold offset shadow */
+:root[data-theme="brutalist"] .walk-stage{
+  background:#fff;
+  border:2px solid #000;
+  border-radius:0;
+  box-shadow:4px 4px 0 #000;
+  -webkit-backdrop-filter:none;
+  backdrop-filter:none;
+}
+
+/* Brutalist: year — solid black, no gradient, no glow, no animation */
+:root[data-theme="brutalist"] .walk-year{
+  background:none;
+  -webkit-text-fill-color:#000;
+  color:#000;
+  text-shadow:none;
+  filter:none;
+  animation:none;
+  font-style:normal;
+  font-weight:900;
+  letter-spacing:-.06em;
+}
+
+/* Brutalist: trail steps — flat capsules, solid border */
+:root[data-theme="brutalist"] .walk-trail-step{
+  background:#f5f5f5;
+  -webkit-backdrop-filter:none;
+  backdrop-filter:none;
+  border:1.5px solid #000;
+  border-radius:0;
+  box-shadow:2px 2px 0 #000;
+}
+
+/* Brutalist: controls strip */
+:root[data-theme="brutalist"] .walk-controls{
+  background:#fff;
+  -webkit-backdrop-filter:none;
+  backdrop-filter:none;
+  border:1.5px solid #000;
+  border-radius:0;
+  box-shadow:none;
+}
+:root[data-theme="brutalist"] .walk-controls button{
+  background:#fff;
+  -webkit-backdrop-filter:none;
+  backdrop-filter:none;
+  border:1px solid #000;
+  border-radius:0;
+  box-shadow:none;
+}
+:root[data-theme="brutalist"] .walk-controls button:hover:not(:disabled){
+  background:#000;
+  color:#fff;
+  transform:none;
+  box-shadow:none;
+}
+
+/* Brutalist: nav links — plain underlines, no capsules */
+:root[data-theme="brutalist"] #nav a{
+  border-radius:0;
+}
+:root[data-theme="brutalist"] #nav a.active{
+  background:transparent;
+  border-bottom:2px solid var(--ink);
+  border-radius:0;
+}
+
+/* Brutalist: body background */
+:root[data-theme="brutalist"] body::before{
+  background:linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+}
+:root[data-theme="brutalist"] body::after{
   background-image:
-    linear-gradient(0deg, rgba(20,45,62,.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(20,45,62,.08) 1px, transparent 1px);
-  background-size:64px 64px, 64px 64px;
-  opacity:.45;
+    linear-gradient(0deg, rgba(0,0,0,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,.04) 1px, transparent 1px);
+  background-size:40px 40px, 40px 40px;
+  -webkit-mask-image:none;
+  mask-image:none;
+  opacity:.6;
 }
+
+/* Brutalist: flow cards */
+:root[data-theme="brutalist"] .walk-flow-card{
+  background:#fff;
+  -webkit-backdrop-filter:none;
+  backdrop-filter:none;
+  border:1.5px solid #000;
+  border-radius:0;
+  box-shadow:2px 2px 0 #000;
+}
+:root[data-theme="brutalist"] .walk-flow-card:hover,
+:root[data-theme="brutalist"] .walk-flow-card:focus-visible{
+  background:#000;
+  color:#fff;
+  transform:none;
+  box-shadow:none;
+}
+:root[data-theme="brutalist"] .walk-flow-card:hover .nm,
+:root[data-theme="brutalist"] .walk-flow-card:focus-visible .nm,
+:root[data-theme="brutalist"] .walk-flow-card:hover .yr,
+:root[data-theme="brutalist"] .walk-flow-card:focus-visible .yr{
+  color:#fff;
+}
+
+/* Brutalist: domain chip — solid border, no glass */
+:root[data-theme="brutalist"] .dom{
+  background:color-mix(in oklab, var(--dc, var(--accent)) 18%, #fff);
+  -webkit-backdrop-filter:none;
+  backdrop-filter:none;
+  border:1.5px solid color-mix(in oklab, var(--dc, var(--accent)) 60%, #000);
+  border-radius:0;
+  box-shadow:none;
+}
+
+/* Brutalist: header */
+:root[data-theme="brutalist"] #hdr{
+  background:#fafafa;
+  -webkit-backdrop-filter:none;
+  backdrop-filter:none;
+  border-bottom:2px solid #000;
+}
+
+/* Brutalist: because panel */
+:root[data-theme="brutalist"] .walk-because{
+  background:#f8f8f8;
+  -webkit-backdrop-filter:none;
+  backdrop-filter:none;
+  border:1.5px solid rgba(0,0,0,.22);
+  border-radius:0;
+  box-shadow:none;
+}
+
+/* Brutalist: ob-rings recede */
+:root[data-theme="brutalist"] .ob-rings{opacity:.15}
+
+/* Brutalist: tetrahedron stays hidden (drone-only feature) */
+:root[data-theme="brutalist"] .dom::before{display:inline-block}
+:root[data-theme="brutalist"] .dom .ob-tetra{display:none}
 
 /* ============================================================
    MATRIX THEME — phosphor-green dark
@@ -2401,19 +2544,65 @@ a[href*="issues/new"]{
 }
 /* Matrix: rings glow phosphor-green */
 :root[data-theme="matrix"] .ob-rings{opacity:.85;color:color-mix(in oklab, var(--dc, var(--accent)) 70%, var(--accent))}
-/* Matrix: nudge body toward mono in technical surfaces */
-:root[data-theme="matrix"] .nav a,
-:root[data-theme="matrix"] .nav button,
-:root[data-theme="matrix"] .footer-meta,
+/* Matrix: nudge body toward mono — all text surfaces go terminal */
+:root[data-theme="matrix"] .walk-body,
+:root[data-theme="matrix"] .walk-before,
+:root[data-theme="matrix"] .walk-detail,
+:root[data-theme="matrix"] .walk-because,
+:root[data-theme="matrix"] .hunt-step-before,
+:root[data-theme="matrix"] .browse-row .nm,
+:root[data-theme="matrix"] .browse-row .be{
+  font-family:var(--mono);
+  font-size:.9em;
+  letter-spacing:.02em;
+}
+:root[data-theme="matrix"] #nav a,
+:root[data-theme="matrix"] #nav button,
 :root[data-theme="matrix"] .browse-meta{
   font-family:var(--mono);
   letter-spacing:.04em;
 }
-/* Matrix: subtle phosphor glow on the year glyph and accent type */
+/* Matrix: walk-year CRT flicker at ~8Hz — alive but not seizure-inducing */
+@keyframes matrix-crt-flicker{
+  0%,100%{opacity:1}
+  6%{opacity:.98}
+  12%{opacity:1}
+  18%{opacity:.97}
+  25%{opacity:1}
+  31%{opacity:.99}
+  50%{opacity:.98}
+  56%{opacity:1}
+  75%{opacity:.97}
+  87%{opacity:1}
+}
+:root[data-theme="matrix"] .walk-year,
+:root[data-theme="matrix"] .play-year{
+  animation:matrix-crt-flicker 0.125s step-end infinite;
+}
+/* Matrix: phosphor glow on years */
 :root[data-theme="matrix"] .walk-year,
 :root[data-theme="matrix"] .play-year,
 :root[data-theme="matrix"] .home-year{
-  text-shadow:0 0 14px rgba(40,224,122,.30), 0 0 36px rgba(40,224,122,.18);
+  text-shadow:0 0 14px rgba(40,224,122,.40), 0 0 36px rgba(40,224,122,.22);
+}
+/* Matrix: cursor → crosshair */
+:root[data-theme="matrix"] body{cursor:crosshair}
+/* Matrix: flow cards — terminal list aesthetic */
+:root[data-theme="matrix"] .walk-flow-card{
+  background:rgba(8,28,18,.7);
+  -webkit-backdrop-filter:none;
+  backdrop-filter:none;
+  border:none;
+  border-left:2px solid rgba(40,224,122,.5);
+  border-radius:0;
+  box-shadow:none;
+}
+:root[data-theme="matrix"] .walk-flow-card:hover,
+:root[data-theme="matrix"] .walk-flow-card:focus-visible{
+  background:rgba(40,224,122,.10);
+  border-left-color:rgba(40,224,122,1);
+  transform:none;
+  box-shadow:none;
 }
 /* Matrix: brand mark glows */
 :root[data-theme="matrix"] .brand-mark{
@@ -2445,8 +2634,8 @@ a[href*="issues/new"]{
 @media (prefers-reduced-motion:reduce){
   .ob-rings--spin-cw > svg,.ob-rings--spin-ccw > svg{animation:none}
 }
-/* Drone: rings feel more present */
-:root[data-theme="drone"] .ob-rings{opacity:.95;color:color-mix(in oklab, var(--dc, var(--accent)) 60%, var(--ink))}
+/* Brutalist: rings recede (almost hidden) */
+:root[data-theme="brutalist"] .ob-rings{opacity:.12;color:#000}
 /* Light/dark: rings recede, color tints with domain */
 :root[data-theme="dark"] .ob-rings,
 :root:not([data-theme]) .ob-rings,
@@ -2582,27 +2771,16 @@ a[href*="issues/new"]{
   color:color-mix(in oklab, var(--dc, var(--accent)) 80%, var(--ink));
 }
 
-/* Drone-only: domain chip prefix swaps from orb to tetrahedron */
+/* No theme currently uses tetrahedron chip prefix (was drone-only) */
 .dom .ob-tetra{display:none;width:10px;height:10px;margin-right:1px}
-:root[data-theme="drone"] .dom::before{display:none}
-:root[data-theme="drone"] .dom .ob-tetra{display:inline-block}
 
 /* ============================================================
    PER-VIEW — MAP
    Era column dividers go to 0.5px hairline; technical row labels;
    crosshair guide lines + bracketed tooltip handled in JS.
    ============================================================ */
-/* Map y-labels: hide the tetra prefix outside drone, show it in drone with
-   the technical look. */
+/* Map y-labels: tetra prefix hidden — no theme currently uses it */
 .map-y-label .ob-tetra{display:none;margin-right:6px}
-:root[data-theme="drone"] .map-y-label{
-  font-family:var(--mono);font-size:.62rem;
-  text-transform:uppercase;letter-spacing:.08em;
-  color:var(--ink-2);
-  padding-bottom:6px;
-  border-bottom:1px solid var(--ob-line-soft) !important;
-}
-:root[data-theme="drone"] .map-y-label .ob-tetra{display:inline-block}
 .map-tooltip{position:relative}
 .map-tooltip > .ob-brackets{opacity:1;transform:scale(1);inset:-4px}
 .map-tooltip.show > .ob-brackets{opacity:1}
@@ -2670,7 +2848,7 @@ a[href*="issues/new"]{
   padding-left:42px;margin:-4px 0 14px;
   display:none;
 }
-:root[data-theme="drone"] .hunt-trace{display:block}
+/* hunt-trace: hidden by default; no theme currently enables it */
 .hunt-arrow{padding-left:42px !important}
 @media (max-width:560px){
   .hunt-step{padding-left:36px !important}
@@ -2697,12 +2875,7 @@ a[href*="issues/new"]{
   opacity:.45;pointer-events:none;
 }
 .browse-zone-head .ct-zid{display:none;color:var(--muted)}
-:root[data-theme="drone"] .browse-zone-head .ct{
-  font-family:var(--mono);font-size:.68rem;
-  text-transform:uppercase;letter-spacing:.06em;
-}
-:root[data-theme="drone"] .browse-zone-head .ct-zid{display:inline}
-:root[data-theme="drone"] .browse-meta{font-family:var(--mono);font-size:.7rem}
+/* drone-specific browse overrides removed (theme renamed to brutalist) */
 
 /* ============================================================
    PER-VIEW — PLAY

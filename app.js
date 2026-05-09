@@ -2140,15 +2140,17 @@ function closeMobileMenu(){
 }
 
 /* ========== theme ==========
-   Four-theme cycle: light → dark → matrix → drone → light.
-   - light: warm paper, sienna accent, pebbled grain on glass
-   - dark: graphite + warm bloom, the photon-glass baseline
-   - matrix: phosphor green on near-black, scanline texture
-   - drone: cool blueprint, hairline grid texture, cyan accent
+   Four-theme cycle: dark → light → brutalist → matrix → dark.
+   - dark: graphite + warm bloom, the photon-glass baseline (Oblivion Dark)
+   - light: warm paper, sienna accent, pebbled grain on glass (Oblivion Light)
+   - brutalist: solid white/black, no glass, no blur, print-like
+   - matrix: phosphor green on near-black, scanline texture, CRT flicker
    The user's system preference wins on first paint; once they
    cycle, we persist. */
-const THEMES = ['light', 'dark', 'matrix', 'drone'];
-const THEME_BG = { light: '#F4EFE6', dark: '#0A0A0F', matrix: '#040806', drone: '#D5E0E8' };
+const THEMES = ['dark', 'light', 'brutalist', 'matrix'];
+const THEME_BG = { light: '#F4EFE6', dark: '#0A0A0F', matrix: '#040806', brutalist: '#FAFAFA' };
+// Human-readable theme names for the label
+const THEME_LABEL = { light: 'oblivion', dark: 'oblivion', brutalist: 'brutalist', matrix: 'matrix' };
 function bindTheme(){
   const btn = document.getElementById('themeBtn');
   const label = document.getElementById('themeLabel');
@@ -2157,7 +2159,7 @@ function bindTheme(){
     else delete document.documentElement.dataset.theme;
     try { if (t) localStorage.setItem('ticks-theme', t); else localStorage.removeItem('ticks-theme'); } catch(e){}
     // Sync the active <meta name="theme-color"> so the iOS/Android chrome
-    // matches the active theme, including drone.
+    // matches the active theme, including brutalist.
     const meta = document.getElementById('themeColorActive');
     if (meta){
       const sysDark = matchMedia('(prefers-color-scheme: dark)').matches;
@@ -2166,7 +2168,8 @@ function bindTheme(){
     }
     if (label){
       const sysDark = matchMedia('(prefers-color-scheme: dark)').matches;
-      label.textContent = t || (sysDark ? 'dark' : 'light');
+      const eff = t || (sysDark ? 'dark' : 'light');
+      label.textContent = THEME_LABEL[eff] || eff;
     }
   };
   try { const saved = localStorage.getItem('ticks-theme'); if (saved) apply(saved); else apply(null); } catch(e){}
