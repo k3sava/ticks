@@ -610,14 +610,15 @@ footer a:hover{color:var(--accent);border-bottom-color:var(--accent)}
     grid-template-columns:minmax(300px, 1.05fr) minmax(0, 1.3fr);
     grid-template-rows:1fr;
     grid-template-areas:"hero body";
-    align-items:start;
+    align-items:stretch;
     gap:0 40px;
     padding:22px 36px 22px;
   }
-  /* On desktop grid, hero and body each need to be able to scroll independently */
+  /* Hero stretches to match body height; content distributes top-to-bottom */
   .walk-hero{
     overflow:hidden;
     height:100%;
+    justify-content:space-between;
   }
   .walk-body{
     height:100%;
